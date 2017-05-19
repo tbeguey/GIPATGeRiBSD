@@ -62,7 +62,7 @@ public class PostGreSQL {
      */
     public void createTable(String table){
         try {
-            String sql = "CREATE TABLE " + table + " (id serial, uuid text, title text, data xml, isharvested character(1), source text); "; // notre requete
+            String sql = "CREATE TABLE " + table + " (id serial PRIMARY KEY, uuid text, title text, data xml, isharvested character(1), source text); "; // notre requete
             stmt.executeUpdate(sql); // est éxécuté sur le statement
             System.out.println("Table created");
         } catch (SQLException e) {

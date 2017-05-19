@@ -30,7 +30,7 @@ public class PostGreSQL {
         try {
             Class.forName("org.postgresql.Driver");
             c = DriverManager.getConnection("jdbc:postgresql://" + database, // url comportant le nom de l'hote, le port et la base qu'on souhaite accéder (ici elle est créer automatiquement)
-                    "postgres", "postgres"); // nom d'utilisateur + mot de passe
+                    "admpostgres", "admpostgres"); // nom d'utilisateur + mot de passe
 
             stmt = c.createStatement();
 

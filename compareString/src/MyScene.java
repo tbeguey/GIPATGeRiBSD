@@ -611,7 +611,7 @@ public class MyScene extends Scene {
         PostGreSQL postGreSQL = new PostGreSQL();
         postGreSQL.connection("172.30.100.12:5432/bsd?currentSchema=communs");
 
-        String tableName = (comboBoxSource.getValue().toString() + comboBoxDestination.getValue().toString() + "check").toLowerCase();
+        /*String tableName = (comboBoxSource.getValue().toString() + comboBoxDestination.getValue().toString() + "check").toLowerCase();
 
         if (!postGreSQL.tableExits(tableName))
             postGreSQL.createTable(tableName);
@@ -623,7 +623,7 @@ public class MyScene extends Scene {
         if (!postGreSQL.tableExits(tableName))
             postGreSQL.createTable(tableName);
         else
-            postGreSQL.addLines(arrayListNotCheckedToExport, tableName);
+            postGreSQL.addLines(arrayListNotCheckedToExport, tableName);*/
 
         postGreSQL.deconnection();
     }

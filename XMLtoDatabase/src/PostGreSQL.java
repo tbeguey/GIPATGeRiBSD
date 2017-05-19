@@ -73,7 +73,9 @@ public class PostGreSQL {
      */
     public void createTable(){
         try {
-            String sql = "CREATE TABLE geoserver.geoserver_xml (idCouche text," +
+            String sql = "CREATE TABLE geoserver.geoserver_xml (" +
+                    "id serial PRIMARY KEY," +
+                    "idCouche text," +
                     "idNamespace text," +
                     "FEATURETYPE text," +
                     "NAME text," +
@@ -171,7 +173,8 @@ public class PostGreSQL {
                 e.printStackTrace();
             }
 
-            String sql = "INSERT INTO geoserver.geoserver_xml VALUES ('" + idCouche + "', '" + idNameSpace + "', '" + content + "', '" + name + "', '" + title + "', '" + abstr + "', '" + workspace + "');";
+            String sql = "INSERT INTO geoserver.geoserver_xml (idCouche, idNamespace, FEATURETYPE, NAME, TITLE, ABSTRACT, WORKSPACE) " +
+                    "VALUES ('" + idCouche + "', '" + idNameSpace + "', '" + content + "', '" + name + "', '" + title + "', '" + abstr + "', '" + workspace + "');";
 
             stmt.executeUpdate(sql);
 
