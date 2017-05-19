@@ -93,14 +93,17 @@ public class PostGreSQL {
                     "select data::xml as data,\n" +
                     path +
                     "isharvested as harvested,\n" +
-                    "source as source\n" +
-                    "from metadata)\n" +
+                    "source as source,\n" +
+                    "id as id \n" +
+                    "from metadata_init)\n" +
                     "\n" +
-                    "select uuid, title, data, harvested, source from template where uuid is not null AND title is not null;";
+                    "select uuid, title, data, harvested, source, id from template where uuid is not null AND title is not null;";
 
+            System.out.println(sql);
             PreparedStatement pst = c.prepareStatement(sql);
             ResultSet rs = pst.executeQuery();
             while (rs.next()){
+                System.out.println("Une ligne ajouté");
                 String uuid = rs.getString(1);
                 uuid = uuid.replace("'", "''");
 
@@ -118,6 +121,11 @@ public class PostGreSQL {
 
                 String source = rs.getString(5);
                 source = source.replace("'", "''");
+
+                int id = rs.getInt(6);
+
+                String query = "DELETE FROM metadata_init where id = '" + id + "';";
+                stmt.executeUpdate(query);
 
                 Line line = new Line(uuid, title, data, harvested, source);
                 lines.add(line);

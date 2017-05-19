@@ -7,7 +7,7 @@ public class Main {
         postGreSqlBSD.createTable("metadata");
 
         PostGreSQL postGreSQLGeorchestra = new PostGreSQL();
-        postGreSQLGeorchestra.connection("www.pigma.org:5432/georchestra?currentSchema=geonetwork", "pigma", "Eixo1ob5");
+        postGreSQLGeorchestra.connection("172.30.100.12:5432/bsd?currentSchema=geonetwork", "admpostgres", "admpostgres");
 
         String[] paths = {"(xpath('/gmd:MD_Metadata/gmd:fileIdentifier/gco:CharacterString/text()', data::xml, '{{gmd,http://www.isotc211.org/2005/gmd},{gco,http://www.isotc211.org/2005/gco}}'))[1]::text as uuid,\n" +
                 "(xpath('/gmd:MD_Metadata/gmd:identificationInfo/fra:FRA_DataIdentification/gmd:citation/gmd:CI_Citation/gmd:title/gco:CharacterString/text()', data::xml, '{{gmd,http://www.isotc211.org/2005/gmd},{gco,http://www.isotc211.org/2005/gco}, {fra,http://www.cnig.gouv.fr/2005/fra}}'))[1]::text as title,\n",
@@ -27,8 +27,11 @@ public class Main {
                 "'INDISPONIBLE' as title,\n"};
 
         for (String path : paths) {
+            System.out.println("PATH SUIVANT");
             postGreSQLGeorchestra.getLines(path);
         }
+
+        System.out.println(postGreSQLGeorchestra.getLines().size());
 
         for (Line l : postGreSQLGeorchestra.getLines()) {
             postGreSqlBSD.addLine("metadata", l);
