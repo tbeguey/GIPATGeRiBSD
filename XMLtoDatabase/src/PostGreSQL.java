@@ -42,7 +42,7 @@ public class PostGreSQL {
     public void connection(){
         try {
             Class.forName("org.postgresql.Driver");
-            c = DriverManager.getConnection("jdbc:postgresql://172.30.100.12:5432/bsd", // url comportant le nom de l'hote, le port et la base qu'on souhaite accéder (ici elle est créer automatiquement)
+            c = DriverManager.getConnection("jdbc:postgresql://172.30.100.12:5432/bsd?currentSchema=geoserver", // url comportant le nom de l'hote, le port et la base qu'on souhaite accéder (ici elle est créer automatiquement)
                     "admpostgres", "admpostgres"); // nom d'utilisateur + mot de passe
 
             stmt = c.createStatement();
@@ -73,9 +73,7 @@ public class PostGreSQL {
      */
     public void createTable(){
         try {
-            String sql = "CREATE TABLE geoserver.geoserver_xml (" +
-                    "id serial PRIMARY KEY," +
-                    "idCouche text," +
+            String sql = "CREATE TABLE geoserver_xml (idCouche text UNIQUE," +
                     "idNamespace text," +
                     "FEATURETYPE text," +
                     "NAME text," +
@@ -94,7 +92,7 @@ public class PostGreSQL {
      */
     public void dropTable(){
         try {
-            String sql = "DROP TABLE geoserver.geoserver_xml";
+            String sql = "DROP TABLE geoserver_xml";
             stmt.executeUpdate(sql);
             System.out.println("Table droped");
         } catch (SQLException e) {
@@ -173,8 +171,8 @@ public class PostGreSQL {
                 e.printStackTrace();
             }
 
-            String sql = "INSERT INTO geoserver.geoserver_xml (idCouche, idNamespace, FEATURETYPE, NAME, TITLE, ABSTRACT, WORKSPACE) " +
-                    "VALUES ('" + idCouche + "', '" + idNameSpace + "', '" + content + "', '" + name + "', '" + title + "', '" + abstr + "', '" + workspace + "');";
+
+            String sql = "INSERT INTO geoserver_xml VALUES ('" + idCouche + "', '" + idNameSpace + "', '" + content + "', '" + name + "', '" + title + "', '" + abstr + "', '" + workspace + "');";
 
             stmt.executeUpdate(sql);
 

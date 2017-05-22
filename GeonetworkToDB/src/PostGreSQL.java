@@ -62,7 +62,7 @@ public class PostGreSQL {
      */
     public void createTable(String table){
         try {
-            String sql = "CREATE TABLE " + table + " (id serial PRIMARY KEY, uuid text, title text, data xml, isharvested character(1), source text); "; // notre requete
+            String sql = "CREATE TABLE " + table + " (id serial PRIMARY KEY, uuid text UNIQUE, title text, data xml, isharvested character(1), source text); "; // notre requete
             stmt.executeUpdate(sql); // est éxécuté sur le statement
             System.out.println("Table created");
         } catch (SQLException e) {
@@ -99,18 +99,19 @@ public class PostGreSQL {
                     "\n" +
                     "select uuid, title, data, harvested, source, id from template where uuid is not null AND title is not null;";
 
-            System.out.println(sql);
+            // La requete précendente crée un template où nous pouvons trouvé nos données, le path (le chemin d'acces des données dans le XML) est le seul a changé, dans tout cela nous recuperons uniquement
+            // ceux dont l'uuid et le titre (les deux champs récupérés grâce au path) ne sont pas nuls.
+
             PreparedStatement pst = c.prepareStatement(sql);
             ResultSet rs = pst.executeQuery();
             while (rs.next()){
-                System.out.println("Une ligne ajouté");
                 String uuid = rs.getString(1);
                 uuid = uuid.replace("'", "''");
 
                 String title = rs.getString(2);
                 title = title.replace("'", "''");
 
-                SQLXML dataTMP = rs.getSQLXML(3);
+                SQLXML dataTMP = rs.getSQLXML(3); // Passe par l'intermédire d'une donnée temporaire pour effectué le replace
                 String dataString = dataTMP.getString();
                 dataString = dataString.replace("'", "''");
                 SQLXML data = c.createSQLXML();
@@ -124,7 +125,7 @@ public class PostGreSQL {
 
                 int id = rs.getInt(6);
 
-                String query = "DELETE FROM metadata_init where id = '" + id + "';";
+                String query = "DELETE FROM metadata_init where id = '" + id + "';"; //supprime de metadata_id la ligne qu'on vient d'ajouter dans metadata.
                 stmt.executeUpdate(query);
 
                 Line line = new Line(uuid, title, data, harvested, source);

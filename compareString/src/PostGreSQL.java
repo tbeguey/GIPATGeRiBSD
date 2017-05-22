@@ -3,7 +3,7 @@ import java.util.ArrayList;
 
 
 /**
- * Classe de Manipulation de PostGre (PENSER A RAJOUTER LE JAR AU PROJET SI CE N'EST PAS FAIT)
+ * Classe de Manipulation de PostGre
  */
 public class PostGreSQL {
 
@@ -73,7 +73,7 @@ public class PostGreSQL {
                 sql = "SELECT couche_libelle, id_couche, couche_schema FROM couche";
                 break;
             case "BSD":
-                sql = "SELECT type_donnees_echange_libelle, no_type_donnees_echange FROM type_donnee_echange";
+                sql = "SELECT type_donnees_echange_libelle, no_type_donnees_echange FROM type_donnees_echange";
                 break;
         }
 
@@ -114,7 +114,7 @@ public class PostGreSQL {
         return compareds;
     }
 
-    public boolean tableExits(String tableName){
+    /*public boolean tableExits(String tableName){
         String sql = "select exists ( select 1 from information_schema.tables where table_name = '" + tableName + "');";
 
         try {
@@ -128,9 +128,9 @@ public class PostGreSQL {
             e.printStackTrace();
         }
         return false;
-    }
+    }*/
 
-    public void createTable(String tableName){
+    /*public void createTable(String tableName){
         try {
             String sql = "CREATE TABLE " + tableName +
                     "(id SERIAL," +
@@ -143,11 +143,13 @@ public class PostGreSQL {
         } catch (SQLException e) {
             e.printStackTrace();
         }
-    }
+    }*/
 
-    public boolean rowExists(String tableName, String sourceTitle, String sourceId, String destinationTitle, String destinationId){
-        String query = "select exists(select 1 from " + tableName + " where sourceTitle = " + sourceTitle + " AND sourceId = " + sourceId
-                + " AND destinationTitle = " + destinationTitle + " AND destinationId = " + destinationId + ");";
+    public boolean rowExists(String tableName, String columnName, String id){
+        /*String query = "select exists(select 1 from " + tableName + " where sourceTitle = " + sourceTitle + " AND sourceId = " + sourceId
+                + " AND destinationTitle = " + destinationTitle + " AND destinationId = " + destinationId + ");";*/
+
+        String query = "select exists(select 1 from " + tableName + " where " + columnName + " = '" + id + "');";
         try {
             PreparedStatement pst = c.prepareStatement(query);
             ResultSet rs = pst.executeQuery();
@@ -160,7 +162,7 @@ public class PostGreSQL {
         return false;
     }
 
-    public void addLines(ArrayList<ArrayList<String>> arrayListWriter, String tableName){
+    /*public void addLines(ArrayList<ArrayList<String>> arrayListWriter, String tableName){
         try {
             for (int i = 0; i < arrayListWriter.size(); i++){
                 ArrayList<String> arrayList = arrayListWriter.get(i);
@@ -184,6 +186,40 @@ public class PostGreSQL {
         }
     } catch (SQLException e) {
             e.printStackTrace();
+        }
+    }*/
+
+    public void insertUpdateLines(ArrayList<ArrayList<String>> arrayListCheckedToExport, String columnNameSource, String columnNameDestination){
+        for (int i = 0; i < arrayListCheckedToExport.size(); i++){
+            ArrayList<String> arrayList = arrayListCheckedToExport.get(i);
+            for (int j = 0; j < arrayList.size(); j++) {
+                arrayList.set(j, arrayList.get(j).replace("'", "''"));
+            }
+
+            String sourceId = arrayList.get(1);
+            String destinationId = arrayList.get(3);
+
+            boolean exists = rowExists("correspondance", columnNameSource, sourceId);
+
+            String sql;
+
+            if(!exists){
+                exists = rowExists("correspondance", columnNameDestination, destinationId);
+
+                if (!exists)
+                    sql = "INSERT INTO correspondance (" + columnNameSource + ", " + columnNameDestination + ") VALUES('" + sourceId + "', '" + destinationId + "');"; //insert
+                else
+                    sql = "UPDATE correspondance SET " + columnNameSource + " = '" + sourceId + "' where " + columnNameDestination + " = '" + destinationId + "';"; // update selon la destination
+            }
+            else
+                sql = "UPDATE correspondance SET " + columnNameDestination + " = '" + destinationId + "' where " + columnNameSource + " = '" + sourceId + "';"; // update selon la source
+
+
+            try {
+                stmt.executeUpdate(sql);
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
         }
     }
 }

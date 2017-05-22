@@ -1,0 +1,1 @@
+﻿ALTER TABLE bsd.type_donnees_echange ADD CONSTRAINT no_unique UNIQUE (no_type_donnees_echange);

@@ -1,0 +1,99 @@
+Cartogip,ID Cartogip,GeoServer,ID GeoServer
+erdf - Appareil de coupure sous terrain moyenne tension,1149,ERDF - Appareil de coupure sous terrain moyenne tension,FeatureTypeInfoImpl--433409c9:133c599c9af:-7d2e
+erdf - Réseau aérien moyenne tension (15KV - 20Kv),1162,ERDF - Réseau aérien moyenne tension (15kv - 20kv),FeatureTypeInfoImpl-50da8329:133db20c97a:-7955
+erdf - Réseau enterré moyenne tension (15KV - 20Kv),1164,ERDF - Réseau enterré moyenne tension (15kv - 20kv),FeatureTypeInfoImpl-50da8329:133db20c97a:-7951
+erdf - Appareil de coupure aérien moyenne tension,416,ERDF - Appareil de coupure aérien moyenne tension,FeatureTypeInfoImpl--433409c9:133c599c9af:-7cf8
+erdf - Poste de transformation RTE - ERDF,1159,ERDF - Poste de transformation RTE - ERDF,FeatureTypeInfoImpl--433409c9:133c599c9af:-7d35
+wms_externe - ONF : Forêts relevant du régime forestier,1819,ONF - Forêts relevant du régime forestier,FeatureTypeInfoImpl--2f77feef:134c1e338be:5417
+erdf - Réseau enterré basse tension <=400V,936,ERDF - Réseau enterré basse tension (<=400V),FeatureTypeInfoImpl-50da8329:133db20c97a:-7953
+erdf - Réseau aérien basse tension <=400V,1161,ERDF - Réseau aérien basse tension (<=400V),FeatureTypeInfoImpl-50da8329:133db20c97a:-7957
+socio_economique - Part des actifs 15-64 ans par rapport à la population totale,464,PIGMA - Part des actifs 15-64 ans / population totale en 2009,FeatureTypeInfoImpl-43d64256:13adb3c847f:-fff
+socio_economique - Part des 15-24 ans dans la population totale,550,PIGMA - Part des 15-24 ans dans la population totale 2009,FeatureTypeInfoImpl-43d64256:13adafc165f:-4dd5
+socio_economique - Part des 55-64 ans dans la population totale,699,PIGMA - Part des 55-64 ans dans la population totale en 2009,FeatureTypeInfoImpl-43d64256:13adaa976ed:-5520
+socio_economique - Part des 25-54 ans dans la population totale,1043,PIGMA - Part des 25-54 ans dans la population totale 2009,FeatureTypeInfoImpl-43d64256:13ada8f133b:42c2
+Densité population - Carroyage 200m,651,INSEE - Densité population carroyage 200m,FeatureTypeInfoImpl--6dc19e29:136a16cf456:-7ea
+wms_externe - Dreal-TRI-Hauteur eau Aléa Forte Proba-Subm,1992,Dreal-TRI-Hauteur eau Aléa Forte Proba-Subm,FeatureTypeInfoImpl-5a07631d:14d667a418d:-4999
+wms_externe - Dreal-TRI-Hauteur eau Aléa Faible Proba-Subm,1995,Dreal-TRI-Hauteur eau Aléa Faible Proba-Subm,FeatureTypeInfoImpl-5a07631d:14d667a418d:-49ef
+socio_economique - Part des actifs de 25-54 ans par rapport aux actifs de 15-64 ans,744,PIGMA - Part des actifs 25-54 ans / actifs 15-64 ans en 2009,FeatureTypeInfoImpl-43d64256:13adb8ea577:-19e7
+socio_economique - Part des actifs de 55-64 ans par rapport aux actifs de 15-64 ans,1016,PIGMA - Part des actifs 55-64 ans / actifs 15-64 ans en 2009,FeatureTypeInfoImpl-43d64256:13adb8ea577:-21aa
+socio_economique - Part des actifs de 15-24 ans par rapport aux actifs de 15-64 ans,1018,PIGMA - Part des actifs 15-24 ans / actifs 15-64 ans en 2009,FeatureTypeInfoImpl-43d64256:13adb8ea577:-58f4
+Vue aérienne CUB 2008,134,Vue Aérienne CUB 2008 20cm,CoverageInfoImpl-17928462:1343c2469d3:-726f
+insee - Population par arrondissements 2007,164,INSEE - Population par arrondissements,FeatureTypeInfoImpl-48337e3e:150c868ce7e:376d
+insee - Population communes 1962,177,INSEE - Population par communes,FeatureTypeInfoImpl-48337e3e:150c868ce7e:3cfa
+insee - Population iris 2007,307,INSEE - Population par iris,FeatureTypeInfoImpl-48337e3e:150c868ce7e:3d12
+insee - Population par départements 2008,375,INSEE - Population par départements,FeatureTypeInfoImpl-48337e3e:150c868ce7e:3eff
+insee - Population par départements (2008),391,INSEE - Population par départements,FeatureTypeInfoImpl-48337e3e:150c868ce7e:3eff
+insee - Population par cantons 2008,426,INSEE - Population par cantons,FeatureTypeInfoImpl-48337e3e:150c868ce7e:3b7a
+tigf - Postes de livraison (TIGF),437,TIGF -  Postes de livraison,FeatureTypeInfoImpl-24a8bf94:13846bea89d:-78ae
+tigf - Postes de sectionnement et robinets de sécurité (TIGF),438,TIGF - Sectionnement robinets,FeatureTypeInfoImpl-24a8bf94:13846bea89d:-7890
+Scan 1000 IGN,583,IGN - Scan 1000,CoverageInfoImpl-1b853102:1405956ab90:5983
+insee - Carroyage 200m,616,INSEE - Densité population carroyage 200m,FeatureTypeInfoImpl--6dc19e29:136a16cf456:-7ea
+erdf - Poste électrique,1158,ERDF - Poste électrique,FeatureTypeInfoImpl--433409c9:133c599c9af:-7d0f
+insee - Population par arrondissements (2007),1189,INSEE - Population par arrondissements,FeatureTypeInfoImpl-48337e3e:150c868ce7e:376d
+insee - Population par arrondissements (2007),1191,INSEE - Population par arrondissements,FeatureTypeInfoImpl-48337e3e:150c868ce7e:376d
+insee - Population par EPCI (2007),1194,INSEE - Population par EPCI,FeatureTypeInfoImpl-48337e3e:150c868ce7e:3da9
+insee - Population communes 1962,1211,INSEE - Population par communes,FeatureTypeInfoImpl-48337e3e:150c868ce7e:3cfa
+insee - Population par cantons (2008),1251,INSEE - Population par cantons,FeatureTypeInfoImpl-48337e3e:150c868ce7e:3b7a
+insee - Population par cantons (2008),1272,INSEE - Population par cantons,FeatureTypeInfoImpl-48337e3e:150c868ce7e:3b7a
+insee - Population par départements (2008),1331,INSEE - Population par départements,FeatureTypeInfoImpl-48337e3e:150c868ce7e:3eff
+insee - Population communes 1962,1334,INSEE - Population par communes,FeatureTypeInfoImpl-48337e3e:150c868ce7e:3cfa
+insee - Population par EPCI (2007),1341,INSEE - Population par EPCI,FeatureTypeInfoImpl-48337e3e:150c868ce7e:3da9
+insee - Population Iris 2012 cercle,1639,INSEE - Population par iris,FeatureTypeInfoImpl-48337e3e:150c868ce7e:3d12
+insee - Population iris 2012,1651,INSEE - Population par iris,FeatureTypeInfoImpl-48337e3e:150c868ce7e:3d12
+insee - Population Iris 2012 surface,1655,INSEE - Population par iris,FeatureTypeInfoImpl-48337e3e:150c868ce7e:3d12
+wms_externe - Dreal-TRI-Hauteur eau Aléa Moy Proba-Subm,2005,Dreal-TRI-Hauteur eau Aléa Moy Proba-Subm,FeatureTypeInfoImpl-5a07631d:14d667a418d:-49d5
+Dreal-TRI-Proba crue Moy-Debord,2011,Dreal-TRI-Proba crue Moy-Debord,FeatureTypeInfoImpl--6dc709cf:14d4de3c19f:-576c
+Dreal-TRI-Proba crue Fort-Debord,2020,Dreal-TRI-Proba crue Fort-Debord,FeatureTypeInfoImpl--6dc709cf:14d4de3c19f:-5740
+Dreal-TRI-Proba crue faible-Debord,2022,Dreal-TRI-Proba crue faible-Debord,FeatureTypeInfoImpl--6dc709cf:14d4de3c19f:-57e4
+PIGMA zonages urbanisme - Lot-et-Garonne,2036,Urbanisme - Lot-et-Garonne Zonages,FeatureTypeInfoImpl--266e24e3:148595bbbc6:-6928
+raster - BD ORTHO 2015 25cm,1717,BD ORTHO 47 - 2015,CoverageInfoImpl--4bbfe513:15789a5a242:1888
+geofla - Départements Nouvelle Aquitaine,1856,GIP ATGeRi - Départements Nouvelle Aquitaine,FeatureTypeInfoImpl--2c77ddf1:14bda25249b:-1f13
+erdf - Appareil de coupure sous terrain moyenne tension,1149,ERDF - Appareil de coupure sous terrain moyenne tension,FeatureTypeInfoImpl--433409c9:133c599c9af:-7d2e
+erdf - Réseau aérien moyenne tension (15KV - 20Kv),1162,ERDF - Réseau aérien moyenne tension (15kv - 20kv),FeatureTypeInfoImpl-50da8329:133db20c97a:-7955
+erdf - Réseau enterré moyenne tension (15KV - 20Kv),1164,ERDF - Réseau enterré moyenne tension (15kv - 20kv),FeatureTypeInfoImpl-50da8329:133db20c97a:-7951
+erdf - Appareil de coupure aérien moyenne tension,416,ERDF - Appareil de coupure aérien moyenne tension,FeatureTypeInfoImpl--433409c9:133c599c9af:-7cf8
+erdf - Poste de transformation RTE - ERDF,1159,ERDF - Poste de transformation RTE - ERDF,FeatureTypeInfoImpl--433409c9:133c599c9af:-7d35
+wms_externe - ONF : Forêts relevant du régime forestier,1819,ONF - Forêts relevant du régime forestier,FeatureTypeInfoImpl--2f77feef:134c1e338be:5417
+erdf - Réseau enterré basse tension <=400V,936,ERDF - Réseau enterré basse tension (<=400V),FeatureTypeInfoImpl-50da8329:133db20c97a:-7953
+erdf - Réseau aérien basse tension <=400V,1161,ERDF - Réseau aérien basse tension (<=400V),FeatureTypeInfoImpl-50da8329:133db20c97a:-7957
+socio_economique - Part des actifs 15-64 ans par rapport à la population totale,464,PIGMA - Part des actifs 15-64 ans / population totale en 2009,FeatureTypeInfoImpl-43d64256:13adb3c847f:-fff
+socio_economique - Part des 15-24 ans dans la population totale,550,PIGMA - Part des 15-24 ans dans la population totale 2009,FeatureTypeInfoImpl-43d64256:13adafc165f:-4dd5
+socio_economique - Part des 55-64 ans dans la population totale,699,PIGMA - Part des 55-64 ans dans la population totale en 2009,FeatureTypeInfoImpl-43d64256:13adaa976ed:-5520
+socio_economique - Part des 25-54 ans dans la population totale,1043,PIGMA - Part des 25-54 ans dans la population totale 2009,FeatureTypeInfoImpl-43d64256:13ada8f133b:42c2
+Densité population - Carroyage 200m,651,INSEE - Densité population carroyage 200m,FeatureTypeInfoImpl--6dc19e29:136a16cf456:-7ea
+wms_externe - Dreal-TRI-Hauteur eau Aléa Forte Proba-Subm,1992,Dreal-TRI-Hauteur eau Aléa Forte Proba-Subm,FeatureTypeInfoImpl-5a07631d:14d667a418d:-4999
+wms_externe - Dreal-TRI-Hauteur eau Aléa Faible Proba-Subm,1995,Dreal-TRI-Hauteur eau Aléa Faible Proba-Subm,FeatureTypeInfoImpl-5a07631d:14d667a418d:-49ef
+socio_economique - Part des actifs de 25-54 ans par rapport aux actifs de 15-64 ans,744,PIGMA - Part des actifs 25-54 ans / actifs 15-64 ans en 2009,FeatureTypeInfoImpl-43d64256:13adb8ea577:-19e7
+socio_economique - Part des actifs de 55-64 ans par rapport aux actifs de 15-64 ans,1016,PIGMA - Part des actifs 55-64 ans / actifs 15-64 ans en 2009,FeatureTypeInfoImpl-43d64256:13adb8ea577:-21aa
+socio_economique - Part des actifs de 15-24 ans par rapport aux actifs de 15-64 ans,1018,PIGMA - Part des actifs 15-24 ans / actifs 15-64 ans en 2009,FeatureTypeInfoImpl-43d64256:13adb8ea577:-58f4
+Vue aérienne CUB 2008,134,Vue Aérienne CUB 2008 20cm,CoverageInfoImpl-17928462:1343c2469d3:-726f
+insee - Population par arrondissements 2007,164,INSEE - Population par arrondissements,FeatureTypeInfoImpl-48337e3e:150c868ce7e:376d
+insee - Population communes 1962,177,INSEE - Population par communes,FeatureTypeInfoImpl-48337e3e:150c868ce7e:3cfa
+insee - Population iris 2007,307,INSEE - Population par iris,FeatureTypeInfoImpl-48337e3e:150c868ce7e:3d12
+insee - Population par départements 2008,375,INSEE - Population par départements,FeatureTypeInfoImpl-48337e3e:150c868ce7e:3eff
+insee - Population par départements (2008),391,INSEE - Population par départements,FeatureTypeInfoImpl-48337e3e:150c868ce7e:3eff
+insee - Population par cantons 2008,426,INSEE - Population par cantons,FeatureTypeInfoImpl-48337e3e:150c868ce7e:3b7a
+tigf - Postes de livraison (TIGF),437,TIGF -  Postes de livraison,FeatureTypeInfoImpl-24a8bf94:13846bea89d:-78ae
+tigf - Postes de sectionnement et robinets de sécurité (TIGF),438,TIGF - Sectionnement robinets,FeatureTypeInfoImpl-24a8bf94:13846bea89d:-7890
+Scan 1000 IGN,583,IGN - Scan 1000,CoverageInfoImpl-1b853102:1405956ab90:5983
+insee - Carroyage 200m,616,INSEE - Densité population carroyage 200m,FeatureTypeInfoImpl--6dc19e29:136a16cf456:-7ea
+erdf - Poste électrique,1158,ERDF - Poste électrique,FeatureTypeInfoImpl--433409c9:133c599c9af:-7d0f
+insee - Population par arrondissements (2007),1189,INSEE - Population par arrondissements,FeatureTypeInfoImpl-48337e3e:150c868ce7e:376d
+insee - Population par arrondissements (2007),1191,INSEE - Population par arrondissements,FeatureTypeInfoImpl-48337e3e:150c868ce7e:376d
+insee - Population par EPCI (2007),1194,INSEE - Population par EPCI,FeatureTypeInfoImpl-48337e3e:150c868ce7e:3da9
+insee - Population communes 1962,1211,INSEE - Population par communes,FeatureTypeInfoImpl-48337e3e:150c868ce7e:3cfa
+insee - Population par cantons (2008),1251,INSEE - Population par cantons,FeatureTypeInfoImpl-48337e3e:150c868ce7e:3b7a
+insee - Population par cantons (2008),1272,INSEE - Population par cantons,FeatureTypeInfoImpl-48337e3e:150c868ce7e:3b7a
+insee - Population par départements (2008),1331,INSEE - Population par départements,FeatureTypeInfoImpl-48337e3e:150c868ce7e:3eff
+insee - Population communes 1962,1334,INSEE - Population par communes,FeatureTypeInfoImpl-48337e3e:150c868ce7e:3cfa
+insee - Population par EPCI (2007),1341,INSEE - Population par EPCI,FeatureTypeInfoImpl-48337e3e:150c868ce7e:3da9
+insee - Population Iris 2012 cercle,1639,INSEE - Population par iris,FeatureTypeInfoImpl-48337e3e:150c868ce7e:3d12
+insee - Population iris 2012,1651,INSEE - Population par iris,FeatureTypeInfoImpl-48337e3e:150c868ce7e:3d12
+insee - Population Iris 2012 surface,1655,INSEE - Population par iris,FeatureTypeInfoImpl-48337e3e:150c868ce7e:3d12
+wms_externe - Dreal-TRI-Hauteur eau Aléa Moy Proba-Subm,2005,Dreal-TRI-Hauteur eau Aléa Moy Proba-Subm,FeatureTypeInfoImpl-5a07631d:14d667a418d:-49d5
+Dreal-TRI-Proba crue Moy-Debord,2011,Dreal-TRI-Proba crue Moy-Debord,FeatureTypeInfoImpl--6dc709cf:14d4de3c19f:-576c
+Dreal-TRI-Proba crue Fort-Debord,2020,Dreal-TRI-Proba crue Fort-Debord,FeatureTypeInfoImpl--6dc709cf:14d4de3c19f:-5740
+Dreal-TRI-Proba crue faible-Debord,2022,Dreal-TRI-Proba crue faible-Debord,FeatureTypeInfoImpl--6dc709cf:14d4de3c19f:-57e4
+PIGMA zonages urbanisme - Lot-et-Garonne,2036,Urbanisme - Lot-et-Garonne Zonages,FeatureTypeInfoImpl--266e24e3:148595bbbc6:-6928
+raster - BD ORTHO 2015 25cm,1717,BD ORTHO 47 - 2015,CoverageInfoImpl--4bbfe513:15789a5a242:1888
+geofla - Départements Nouvelle Aquitaine,1856,GIP ATGeRi - Départements Nouvelle Aquitaine,FeatureTypeInfoImpl--2c77ddf1:14bda25249b:-1f13

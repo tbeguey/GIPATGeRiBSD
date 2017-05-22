@@ -110,7 +110,7 @@ public class MyScene extends Scene {
         ComboBox comboBoxSearch = new ComboBox(optionsDatabase);
         comboBoxSearch.getSelectionModel().selectFirst();
 
-        Button searchButton = new Button("Chercher");
+        Button searchButton = new Button("Comparer");
 
         searchBox.getChildren().addAll(searchField, comboBoxSearch, searchButton);
 
@@ -570,7 +570,7 @@ public class MyScene extends Scene {
     /**
      * Lance l'écriture dans le fichier csv
      */
-    private void                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              exportToCSV(){
+    private void exportToCSV(){
         try {
             OutputStreamWriter writer;
             writer = new OutputStreamWriter(
@@ -611,6 +611,13 @@ public class MyScene extends Scene {
         PostGreSQL postGreSQL = new PostGreSQL();
         postGreSQL.connection("172.30.100.12:5432/bsd?currentSchema=communs");
 
+        String columnNameSource = "id" + comboBoxSource.getValue().toString();
+        String columnNameDestination = "id" + comboBoxDestination.getValue().toString();
+
+        postGreSQL.insertUpdateLines(arrayListCheckedToExport, columnNameSource, columnNameDestination);
+
+        postGreSQL.deconnection();
+
         /*String tableName = (comboBoxSource.getValue().toString() + comboBoxDestination.getValue().toString() + "check").toLowerCase();
 
         if (!postGreSQL.tableExits(tableName))
@@ -624,7 +631,5 @@ public class MyScene extends Scene {
             postGreSQL.createTable(tableName);
         else
             postGreSQL.addLines(arrayListNotCheckedToExport, tableName);*/
-
-        postGreSQL.deconnection();
     }
 }
