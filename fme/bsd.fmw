@@ -5,54 +5,54 @@
 #    Ligne de commande pour exécuter le projet :
 #    
 #    
-#    "C:\Program Files\FME_2015\fme.exe" "D:\sebastien_dias\projets\bsd _stage\fme\bsd.fmw"
+#    "C:\Program Files\FME_2015\fme.exe" "D:\sebastien_dias\projets\bsd _stage\GITUB_BSD\fme\bsd.fmw"
 #          --SourceDataset_MDB_ADO "Y:\20. BASE_ASA\ASA\2k_ASA.mdb"
 #          --DestDataset_POSTGRES "bsd"
 #    
 #    
-#! SHOW_ANNOTATIONS="true"
-#! WARN_INVALID_XFORM_PARAM="Yes"
-#! USAGE=""
-#! LOG_MAX_PRECISION="Yes"
-#! MULTI_WRITER_DATASET_ORDER="BY_ID"
-#! FME_GEOMETRY_HANDLING="Enhanced"
-#! HISTORY=""
-#! FME_DOCUMENT_PRIORGUID=""
-#! LAST_SAVE_DATE="2017-05-19T12:58:19"
-#! END_PYTHON=""
-#! SHOW_INFO_NODES="true"
-#! ATTR_TYPE_ENCODING="SDF"
-#! PASSWORD=""
-#! ZOOM_SCALE="100"
-#! REQUIREMENTS_KEYWORD=""
-#! LOG_FILE=""
-#! BEGIN_TCL=""
-#! FME_SERVER_SERVICES=""
-#! END_TCL=""
-#! FME_STROKE_MAX_DEVIATION="0"
-#! DESTINATION="NONE"
-#! SOURCE="NONE"
-#! REDIRECT_TERMINATORS="NONE"
-#! FME_REPROJECTION_ENGINE="FME"
-#! DESCRIPTION=""
-#! SOURCE_ROUTING_FILE=""
-#! FME_BUILD_NUM="15485"
-#! LAST_SAVE_BUILD="FME(R) 2015.1.0.3 (20150623 - Build 15485 - WIN64)"
-#! LEGAL_TERMS_CONDITIONS=""
-#! DOC_TOP_LEFT="100 -511.501"
-#! TITLE=""
 #! REQUIREMENTS=""
-#! WORKSPACE_VERSION="1"
-#! FME_DOCUMENT_GUID="5fc24453-9ae3-4b28-9180-ca2f612ac48c"
-#! IGNORE_READER_FAILURE="No"
-#! VIEW_POSITION="0 0"
-#! DESTINATION_ROUTING_FILE=""
-#! CATEGORY=""
-#! MAX_LOG_FEATURES="200"
-#! LOG_MAX_RECORDED_FEATURES="200"
+#! WARN_INVALID_XFORM_PARAM="Yes"
+#! FME_SERVER_SERVICES=""
+#! SHOW_INFO_NODES="true"
+#! END_TCL=""
+#! FME_DOCUMENT_PRIORGUID="5fc24453-9ae3-4b28-9180-ca2f612ac48c"
+#! SOURCE_ROUTING_FILE=""
+#! ATTR_TYPE_ENCODING="SDF"
 #! BEGIN_PYTHON=""
+#! FME_BUILD_NUM="15485"
+#! LOG_MAX_RECORDED_FEATURES="200"
+#! LOG_MAX_PRECISION="Yes"
+#! DESTINATION="NONE"
+#! FME_GEOMETRY_HANDLING="Enhanced"
+#! WORKSPACE_VERSION="1"
+#! TITLE=""
+#! DESCRIPTION=""
+#! PASSWORD=""
+#! FME_STROKE_MAX_DEVIATION="0"
+#! FME_REPROJECTION_ENGINE="FME"
+#! DOC_TOP_LEFT="100 -514.501"
+#! HISTORY=""
+#! LAST_SAVE_DATE="2017-05-23T09:28:00"
+#! LAST_SAVE_BUILD="FME(R) 2015.1.0.3 (20150623 - Build 15485 - WIN64)"
+#! MULTI_WRITER_DATASET_ORDER="BY_ID"
 #! FME_IMPLICIT_CSMAP_REPROJECTION_MODE="Auto"
-#! DOC_EXTENTS="2542 481.501"
+#! BEGIN_TCL=""
+#! SOURCE="NONE"
+#! MAX_LOG_FEATURES="200"
+#! LEGAL_TERMS_CONDITIONS=""
+#! REQUIREMENTS_KEYWORD=""
+#! SHOW_ANNOTATIONS="true"
+#! DESTINATION_ROUTING_FILE=""
+#! REDIRECT_TERMINATORS="NONE"
+#! END_PYTHON=""
+#! IGNORE_READER_FAILURE="No"
+#! USAGE=""
+#! DOC_EXTENTS="2542 484.501"
+#! FME_DOCUMENT_GUID="c78ce760-9583-4656-ac18-a28dd06137d4"
+#! ZOOM_SCALE="100"
+#! VIEW_POSITION="0 0"
+#! LOG_FILE=""
+#! CATEGORY=""
 #! >
 #! <DATASETS>
 #! <DATASET
@@ -68,7 +68,7 @@
 #! WRITE_DEFS="true"
 #! DEFLINE_TEMPLATE="mdb_sql_statement &quot;&quot; mdb_where_clause &quot;&quot;"
 #! DEFLINE_ATTRS="true"
-#! EXPOSABLE_ATTRS="fme_sweep_angle double fme_feature_type text(50) fme_type text(50) multi_reader_full_id long fme_text_string text(50) fme_rotation double db_type text(254) fme_color text(50) fme_secondary_axis double multi_reader_type text(50) fme_basename text(50) multi_reader_id long fme_fill_color text(50) fme_text_size double fme_geometry fme_char(50) fme_start_angle double fme_dataset text(50) multi_reader_keyword text(50) fme_primary_axis double"
+#! EXPOSABLE_ATTRS="fme_geometry fme_char(50) fme_color text(50) fme_sweep_angle double multi_reader_keyword text(50) fme_primary_axis double fme_fill_color text(50) fme_text_string text(50) fme_rotation double fme_dataset text(50) multi_reader_full_id long fme_secondary_axis double multi_reader_id long fme_text_size double fme_basename text(50) multi_reader_type text(50) db_type text(254) fme_feature_type text(50) fme_start_angle double fme_type text(50)"
 #! DEFLINE_PARMS="&quot;GUI OPTIONAL TEXT mdb_where_clause  WHERE Clause&quot; &quot;&quot; &quot;GUI OPTIONAL TEXT mdb_sql_statement     SELECT Statement&quot; &quot;&quot; "
 #! ATTR_INDEX_TYPES="indexed unique"
 #! ATTR_NAME_INVALID_CHARS=""
@@ -77,28 +77,16 @@
 #! DYNAMIC_FEATURE_TYPES_LIST_ON_MERGE="true"
 #! DATASET_TYPE="FILE"
 #! GENERATE_FME_BUILD_NUM="15485"
-#! MAX_FEATURES=""
-#! COORDSYS=""
 #! FEATURE_TYPES=""
+#! MIN_FEATURES=""
 #! MAX_FEATURES_PER_FEATURE_TYPE=""
 #! START_FEATURE=""
-#! MIN_FEATURES=""
+#! COORDSYS=""
+#! MAX_FEATURES=""
 #! >
-#! <METAFILE_PARAMETER
-#! NAME="MIME_TYPE"
-#! VALUE="application/x-msaccess ADD_DISPOSITION"
-#! />
-#! <METAFILE_PARAMETER
-#! NAME="WRITER_DATASET_HINT"
-#! VALUE="Specify the MDB_ADO file"
-#! />
 #! <METAFILE_PARAMETER
 #! NAME="DATASET_NAME"
 #! VALUE="Database"
-#! />
-#! <METAFILE_PARAMETER
-#! NAME="FEATURE_TYPE_DEFAULT_NAME"
-#! VALUE="Table1"
 #! />
 #! <METAFILE_PARAMETER
 #! NAME="READER_DATASET_HINT"
@@ -107,6 +95,18 @@
 #! <METAFILE_PARAMETER
 #! NAME="FEATURE_TYPE_NAME"
 #! VALUE="Table"
+#! />
+#! <METAFILE_PARAMETER
+#! NAME="MIME_TYPE"
+#! VALUE="application/x-msaccess ADD_DISPOSITION"
+#! />
+#! <METAFILE_PARAMETER
+#! NAME="FEATURE_TYPE_DEFAULT_NAME"
+#! VALUE="Table1"
+#! />
+#! <METAFILE_PARAMETER
+#! NAME="WRITER_DATASET_HINT"
+#! VALUE="Specify the MDB_ADO file"
 #! />
 #! </DATASET>
 #! <DATASET
@@ -122,7 +122,7 @@
 #! WRITE_DEFS="true"
 #! DEFLINE_TEMPLATE="postgres_type {FME_GEN_GEOMETRY} postgres_mode INHERIT_FROM_WRITER postgres_sql_key_columns &quot;&quot; postgres_drop_table NO postgres_truncate_table NO postgres_create_with_oids NO postgres_vacuum_analyze NO postgres_allow_serial_writing NO"
 #! DEFLINE_ATTRS="true"
-#! EXPOSABLE_ATTRS="fme_text_size float8 fme_text_string char(50) fme_geometry fme_char(50) fme_rotation float8 fme_color char(50) fme_start_angle float8 fme_sweep_angle float8 fme_primary_axis float8 fme_secondary_axis float8 fme_feature_type char(50) fme_dataset char(50) fme_where char(254) fme_basename char(50) fme_type char(50) postgres_type char(50) fme_db_operation char(8) fme_fill_color char(50)"
+#! EXPOSABLE_ATTRS="fme_text_size float8 fme_db_operation char(8) fme_type char(50) fme_dataset char(50) fme_secondary_axis float8 fme_text_string char(50) fme_color char(50) fme_basename char(50) fme_primary_axis float8 fme_start_angle float8 fme_sweep_angle float8 fme_feature_type char(50) fme_geometry fme_char(50) fme_rotation float8 fme_fill_color char(50) fme_where char(254) postgres_type char(50)"
 #! DEFLINE_PARMS="&quot;GUI CHOICE postgres_drop_table YES%NO Drop Table First&quot; NO &quot;GUI CHOICE postgres_truncate_table YES%NO Truncate Table First&quot; NO &quot;GUI CHOICE postgres_mode INHERIT_FROM_WRITER%INSERT%UPDATE%DELETE Writer Mode&quot; INHERIT_FROM_WRITER &quot;GUI OPTIONAL ATTRLIST_COMMAS postgres_sql_key_columns SQL Key Columns&quot; &quot;&quot; &quot;GUI CHOICE postgres_create_with_oids YES%NO Create With OIDs&quot; NO &quot;GUI CHOICE postgres_vacuum_analyze YES%NO Vacuum Analyze Table&quot; NO &quot;GUI CHOICE postgres_allow_serial_writing YES%NO Allow Serial Column Writing&quot; NO "
 #! ATTR_INDEX_TYPES="BTREE RTREE HASH PRIKEY"
 #! ATTR_NAME_INVALID_CHARS=". %-#[]&quot;()!?*&apos;&amp;+\/"
@@ -131,32 +131,32 @@
 #! DYNAMIC_FEATURE_TYPES_LIST_ON_MERGE="true"
 #! DATASET_TYPE="DATABASE"
 #! GENERATE_FME_BUILD_NUM="15485"
-#! COORDSYS=""
-#! FANOUT="No"
-#! FANOUT_SUFFIX=""
-#! FANOUT_ID_ATTR=""
-#! FANOUT_PREFIX=""
 #! FANOUT_DIRECTORY=""
+#! FANOUT="No"
+#! FANOUT_ID_ATTR=""
+#! COORDSYS=""
+#! FANOUT_SUFFIX=""
+#! FANOUT_PREFIX=""
 #! >
-#! <METAFILE_PARAMETER
-#! NAME="NETWORK_AUTHENTICATION"
-#! VALUE="NO"
-#! />
 #! <METAFILE_PARAMETER
 #! NAME="DATASET_NAME"
 #! VALUE="Database"
 #! />
 #! <METAFILE_PARAMETER
-#! NAME="NETWORK_PROXY"
-#! VALUE="NO"
+#! NAME="FEATURE_TYPE_NAME"
+#! VALUE="Table"
 #! />
 #! <METAFILE_PARAMETER
 #! NAME="FEATURE_TYPE_DEFAULT_NAME"
 #! VALUE="Table1"
 #! />
 #! <METAFILE_PARAMETER
-#! NAME="FEATURE_TYPE_NAME"
-#! VALUE="Table"
+#! NAME="NETWORK_PROXY"
+#! VALUE="NO"
+#! />
+#! <METAFILE_PARAMETER
+#! NAME="NETWORK_AUTHENTICATION"
+#! VALUE="NO"
 #! />
 #! </DATASET>
 #! </DATASETS>
@@ -707,12 +707,12 @@
 #! <FEAT_ATTRIBUTE ATTR_NAME="donnees_metier_etat" ATTR_TYPE="bool" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
 #! <FEAT_ATTRIBUTE ATTR_NAME="nature_donneegip" ATTR_TYPE="int4" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
 #! <DEFLINE_PARM PARM_NAME="postgres_truncate_table" PARM_VALUE="YES"/>
-#! <DEFLINE_PARM PARM_NAME="postgres_drop_table" PARM_VALUE="YES"/>
+#! <DEFLINE_PARM PARM_NAME="postgres_drop_table" PARM_VALUE="NO"/>
 #! <DEFLINE_PARM PARM_NAME="postgres_create_with_oids" PARM_VALUE="NO"/>
-#! <DEFLINE_PARM PARM_NAME="postgres_sql_key_columns" PARM_VALUE=""/>
 #! <DEFLINE_PARM PARM_NAME="postgres_vacuum_analyze" PARM_VALUE="NO"/>
 #! <DEFLINE_PARM PARM_NAME="postgres_allow_serial_writing" PARM_VALUE="NO"/>
 #! <DEFLINE_PARM PARM_NAME="postgres_mode" PARM_VALUE="INHERIT_FROM_WRITER"/>
+#! <DEFLINE_PARM PARM_NAME="postgres_sql_key_columns" PARM_VALUE=""/>
 #! </FEATURE_TYPE>
 #! <FEATURE_TYPE
 #! IS_SOURCE="true"
@@ -784,12 +784,12 @@
 #! <FEAT_ATTRIBUTE ATTR_NAME="pigma_zone_competence_geoconcept" ATTR_TYPE="int4" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
 #! <FEAT_ATTRIBUTE ATTR_NAME="pigma_strategie_animation" ATTR_TYPE="varchar(50)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
 #! <DEFLINE_PARM PARM_NAME="postgres_truncate_table" PARM_VALUE="YES"/>
-#! <DEFLINE_PARM PARM_NAME="postgres_drop_table" PARM_VALUE="YES"/>
+#! <DEFLINE_PARM PARM_NAME="postgres_drop_table" PARM_VALUE="NO"/>
 #! <DEFLINE_PARM PARM_NAME="postgres_create_with_oids" PARM_VALUE="NO"/>
-#! <DEFLINE_PARM PARM_NAME="postgres_sql_key_columns" PARM_VALUE=""/>
 #! <DEFLINE_PARM PARM_NAME="postgres_vacuum_analyze" PARM_VALUE="NO"/>
 #! <DEFLINE_PARM PARM_NAME="postgres_allow_serial_writing" PARM_VALUE="NO"/>
 #! <DEFLINE_PARM PARM_NAME="postgres_mode" PARM_VALUE="INHERIT_FROM_WRITER"/>
+#! <DEFLINE_PARM PARM_NAME="postgres_sql_key_columns" PARM_VALUE=""/>
 #! </FEATURE_TYPE>
 #! <FEATURE_TYPE
 #! IS_SOURCE="true"
@@ -883,12 +883,12 @@
 #! <FEAT_ATTRIBUTE ATTR_NAME="format_donnees" ATTR_TYPE="varchar(255)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
 #! <FEAT_ATTRIBUTE ATTR_NAME="projection_donnees" ATTR_TYPE="varchar(255)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
 #! <DEFLINE_PARM PARM_NAME="postgres_truncate_table" PARM_VALUE="YES"/>
-#! <DEFLINE_PARM PARM_NAME="postgres_drop_table" PARM_VALUE="YES"/>
+#! <DEFLINE_PARM PARM_NAME="postgres_drop_table" PARM_VALUE="NO"/>
 #! <DEFLINE_PARM PARM_NAME="postgres_create_with_oids" PARM_VALUE="NO"/>
-#! <DEFLINE_PARM PARM_NAME="postgres_sql_key_columns" PARM_VALUE=""/>
 #! <DEFLINE_PARM PARM_NAME="postgres_vacuum_analyze" PARM_VALUE="NO"/>
 #! <DEFLINE_PARM PARM_NAME="postgres_allow_serial_writing" PARM_VALUE="NO"/>
 #! <DEFLINE_PARM PARM_NAME="postgres_mode" PARM_VALUE="INHERIT_FROM_WRITER"/>
+#! <DEFLINE_PARM PARM_NAME="postgres_sql_key_columns" PARM_VALUE=""/>
 #! </FEATURE_TYPE>
 #! <FEATURE_TYPE
 #! IS_SOURCE="true"
@@ -952,8 +952,8 @@
 #! IS_EDITABLE="true"
 #! IDENTIFIER="8"
 #! FEAT_GEOMTYPE="All"
-#! POSITION="2604 -511.501"
-#! BOUNDING_RECT="2604 -511.501 -1 -1"
+#! POSITION="2604 -514.501"
+#! BOUNDING_RECT="2604 -514.501 -1 -1"
 #! ORDER="5e+014"
 #! COLLAPSED="true"
 #! KEYWORD="POSTGRES_1"
@@ -992,12 +992,12 @@
 #! <FEAT_ATTRIBUTE ATTR_NAME="civb" ATTR_TYPE="int2" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
 #! <FEAT_ATTRIBUTE ATTR_NAME="cvi_evv" ATTR_TYPE="varchar(255)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
 #! <DEFLINE_PARM PARM_NAME="postgres_truncate_table" PARM_VALUE="YES"/>
-#! <DEFLINE_PARM PARM_NAME="postgres_drop_table" PARM_VALUE="YES"/>
+#! <DEFLINE_PARM PARM_NAME="postgres_drop_table" PARM_VALUE="NO"/>
 #! <DEFLINE_PARM PARM_NAME="postgres_create_with_oids" PARM_VALUE="NO"/>
-#! <DEFLINE_PARM PARM_NAME="postgres_sql_key_columns" PARM_VALUE=""/>
 #! <DEFLINE_PARM PARM_NAME="postgres_vacuum_analyze" PARM_VALUE="NO"/>
 #! <DEFLINE_PARM PARM_NAME="postgres_allow_serial_writing" PARM_VALUE="NO"/>
 #! <DEFLINE_PARM PARM_NAME="postgres_mode" PARM_VALUE="INHERIT_FROM_WRITER"/>
+#! <DEFLINE_PARM PARM_NAME="postgres_sql_key_columns" PARM_VALUE=""/>
 #! </FEATURE_TYPE>
 #! </FEATURE_TYPES>
 #! <FMESERVER>
@@ -1017,7 +1017,7 @@
 #! <COMMENTS>
 #! <COMMENT
 #! IDENTIFIER="13"
-#! COMMENT_VALUE="Types d&apos;entités source"
+#! COMMENT_VALUE="&lt;html&gt;&lt;body&gt;Types d&apos;entités source&lt;/body&gt;&lt;/html&gt;"
 #! POSITION="100 -30"
 #! TOP_LEFT="100 -30"
 #! BOTTOM_RIGHT="99 -29"
@@ -1025,14 +1025,14 @@
 #! ORDER="5e+014"
 #! FOLLOW_ANCHOR="true"
 #! INFO_NODE="false"
-#! COLOUR="1,1,0.784314,0.196078"
+#! COLOUR="1,1,0.784314,0.192157"
 #! SIZE_POLICY="10"
 #! COMMENT_TYPE="SOURCE_HEADER"
 #! ANCHORED_NODE="0"
 #! />
 #! <COMMENT
 #! IDENTIFIER="14"
-#! COMMENT_VALUE="Flux de données"
+#! COMMENT_VALUE="&lt;html&gt;&lt;body&gt;Flux de données&lt;/body&gt;&lt;/html&gt;"
 #! POSITION="1444.5 -30"
 #! TOP_LEFT="1444.5 -30"
 #! BOTTOM_RIGHT="1443.5 -29"
@@ -1040,14 +1040,14 @@
 #! ORDER="5e+014"
 #! FOLLOW_ANCHOR="true"
 #! INFO_NODE="false"
-#! COLOUR="1,1,0.784314,0.196078"
+#! COLOUR="1,1,0.784314,0.192157"
 #! SIZE_POLICY="10"
-#! COMMENT_TYPE="DATAFLOW_HEADER"
+#! COMMENT_TYPE="REGULAR"
 #! ANCHORED_NODE="0"
 #! />
 #! <COMMENT
 #! IDENTIFIER="15"
-#! COMMENT_VALUE="Types d&apos;entités destination"
+#! COMMENT_VALUE="&lt;html&gt;&lt;body&gt;Types d&apos;entités destination&lt;/body&gt;&lt;/html&gt;"
 #! POSITION="2642 -30"
 #! TOP_LEFT="2642 -30"
 #! BOTTOM_RIGHT="2641 -29"
@@ -1055,7 +1055,7 @@
 #! ORDER="5e+014"
 #! FOLLOW_ANCHOR="true"
 #! INFO_NODE="false"
-#! COLOUR="1,1,0.784314,0.196078"
+#! COLOUR="1,1,0.784314,0.192157"
 #! SIZE_POLICY="10"
 #! COMMENT_TYPE="DEST_HEADER"
 #! ANCHORED_NODE="0"
@@ -1112,116 +1112,81 @@
 #! IDENTIFIER="262153"
 #! SOURCE_NODE="1"
 #! TARGET_NODE="2"
-#! SOURCE_PORT_DESC="6"
-#! TARGET_PORT_DESC="6"
-#! />
-#! <ATTR_LINK
-#! IDENTIFIER="327689"
-#! SOURCE_NODE="1"
-#! TARGET_NODE="2"
-#! SOURCE_PORT_DESC="8"
-#! TARGET_PORT_DESC="8"
-#! />
-#! <ATTR_LINK
-#! IDENTIFIER="458761"
-#! SOURCE_NODE="1"
-#! TARGET_NODE="2"
-#! SOURCE_PORT_DESC="2"
-#! TARGET_PORT_DESC="2"
-#! />
-#! <ATTR_LINK
-#! IDENTIFIER="65545"
-#! SOURCE_NODE="1"
-#! TARGET_NODE="2"
 #! SOURCE_PORT_DESC="3"
 #! TARGET_PORT_DESC="3"
-#! />
-#! <ATTR_LINK
-#! IDENTIFIER="393225"
-#! SOURCE_NODE="1"
-#! TARGET_NODE="2"
-#! SOURCE_PORT_DESC="0"
-#! TARGET_PORT_DESC="0"
 #! />
 #! <ATTR_LINK
 #! IDENTIFIER="655369"
 #! SOURCE_NODE="1"
 #! TARGET_NODE="2"
-#! SOURCE_PORT_DESC="5"
-#! TARGET_PORT_DESC="5"
+#! SOURCE_PORT_DESC="7"
+#! TARGET_PORT_DESC="7"
 #! />
 #! <ATTR_LINK
-#! IDENTIFIER="589833"
-#! SOURCE_NODE="1"
-#! TARGET_NODE="2"
-#! SOURCE_PORT_DESC="4"
-#! TARGET_PORT_DESC="4"
-#! />
-#! <ATTR_LINK
-#! IDENTIFIER="131081"
+#! IDENTIFIER="524297"
 #! SOURCE_NODE="1"
 #! TARGET_NODE="2"
 #! SOURCE_PORT_DESC="9"
 #! TARGET_PORT_DESC="9"
 #! />
 #! <ATTR_LINK
-#! IDENTIFIER="524297"
+#! IDENTIFIER="65545"
+#! SOURCE_NODE="1"
+#! TARGET_NODE="2"
+#! SOURCE_PORT_DESC="6"
+#! TARGET_PORT_DESC="6"
+#! />
+#! <ATTR_LINK
+#! IDENTIFIER="196617"
+#! SOURCE_NODE="1"
+#! TARGET_NODE="2"
+#! SOURCE_PORT_DESC="2"
+#! TARGET_PORT_DESC="2"
+#! />
+#! <ATTR_LINK
+#! IDENTIFIER="393225"
+#! SOURCE_NODE="1"
+#! TARGET_NODE="2"
+#! SOURCE_PORT_DESC="5"
+#! TARGET_PORT_DESC="5"
+#! />
+#! <ATTR_LINK
+#! IDENTIFIER="131081"
+#! SOURCE_NODE="1"
+#! TARGET_NODE="2"
+#! SOURCE_PORT_DESC="8"
+#! TARGET_PORT_DESC="8"
+#! />
+#! <ATTR_LINK
+#! IDENTIFIER="327689"
+#! SOURCE_NODE="1"
+#! TARGET_NODE="2"
+#! SOURCE_PORT_DESC="0"
+#! TARGET_PORT_DESC="0"
+#! />
+#! <ATTR_LINK
+#! IDENTIFIER="458761"
+#! SOURCE_NODE="1"
+#! TARGET_NODE="2"
+#! SOURCE_PORT_DESC="4"
+#! TARGET_PORT_DESC="4"
+#! />
+#! <ATTR_LINK
+#! IDENTIFIER="589833"
 #! SOURCE_NODE="1"
 #! TARGET_NODE="2"
 #! SOURCE_PORT_DESC="1"
 #! TARGET_PORT_DESC="1"
 #! />
 #! <ATTR_LINK
-#! IDENTIFIER="196617"
-#! SOURCE_NODE="1"
-#! TARGET_NODE="2"
-#! SOURCE_PORT_DESC="7"
-#! TARGET_PORT_DESC="7"
-#! />
-#! <ATTR_LINK
-#! IDENTIFIER="262154"
+#! IDENTIFIER="65546"
 #! SOURCE_NODE="3"
 #! TARGET_NODE="4"
 #! SOURCE_PORT_DESC="10"
 #! TARGET_PORT_DESC="10"
 #! />
 #! <ATTR_LINK
-#! IDENTIFIER="65546"
-#! SOURCE_NODE="3"
-#! TARGET_NODE="4"
-#! SOURCE_PORT_DESC="6"
-#! TARGET_PORT_DESC="6"
-#! />
-#! <ATTR_LINK
-#! IDENTIFIER="917514"
-#! SOURCE_NODE="3"
-#! TARGET_NODE="4"
-#! SOURCE_PORT_DESC="2"
-#! TARGET_PORT_DESC="2"
-#! />
-#! <ATTR_LINK
-#! IDENTIFIER="327690"
-#! SOURCE_NODE="3"
-#! TARGET_NODE="4"
-#! SOURCE_PORT_DESC="7"
-#! TARGET_PORT_DESC="7"
-#! />
-#! <ATTR_LINK
-#! IDENTIFIER="589834"
-#! SOURCE_NODE="3"
-#! TARGET_NODE="4"
-#! SOURCE_PORT_DESC="12"
-#! TARGET_PORT_DESC="12"
-#! />
-#! <ATTR_LINK
-#! IDENTIFIER="131082"
-#! SOURCE_NODE="3"
-#! TARGET_NODE="4"
-#! SOURCE_PORT_DESC="5"
-#! TARGET_PORT_DESC="5"
-#! />
-#! <ATTR_LINK
-#! IDENTIFIER="393226"
+#! IDENTIFIER="458762"
 #! SOURCE_NODE="3"
 #! TARGET_NODE="4"
 #! SOURCE_PORT_DESC="0"
@@ -1231,29 +1196,29 @@
 #! IDENTIFIER="655370"
 #! SOURCE_NODE="3"
 #! TARGET_NODE="4"
-#! SOURCE_PORT_DESC="1"
-#! TARGET_PORT_DESC="1"
+#! SOURCE_PORT_DESC="4"
+#! TARGET_PORT_DESC="4"
+#! />
+#! <ATTR_LINK
+#! IDENTIFIER="851978"
+#! SOURCE_NODE="3"
+#! TARGET_NODE="4"
+#! SOURCE_PORT_DESC="13"
+#! TARGET_PORT_DESC="13"
+#! />
+#! <ATTR_LINK
+#! IDENTIFIER="327690"
+#! SOURCE_NODE="3"
+#! TARGET_NODE="4"
+#! SOURCE_PORT_DESC="12"
+#! TARGET_PORT_DESC="12"
 #! />
 #! <ATTR_LINK
 #! IDENTIFIER="524298"
 #! SOURCE_NODE="3"
 #! TARGET_NODE="4"
-#! SOURCE_PORT_DESC="9"
-#! TARGET_PORT_DESC="9"
-#! />
-#! <ATTR_LINK
-#! IDENTIFIER="720906"
-#! SOURCE_NODE="3"
-#! TARGET_NODE="4"
-#! SOURCE_PORT_DESC="4"
-#! TARGET_PORT_DESC="4"
-#! />
-#! <ATTR_LINK
-#! IDENTIFIER="196618"
-#! SOURCE_NODE="3"
-#! TARGET_NODE="4"
-#! SOURCE_PORT_DESC="3"
-#! TARGET_PORT_DESC="3"
+#! SOURCE_PORT_DESC="1"
+#! TARGET_PORT_DESC="1"
 #! />
 #! <ATTR_LINK
 #! IDENTIFIER="786442"
@@ -1263,35 +1228,98 @@
 #! TARGET_PORT_DESC="8"
 #! />
 #! <ATTR_LINK
-#! IDENTIFIER="458762"
+#! IDENTIFIER="262154"
 #! SOURCE_NODE="3"
 #! TARGET_NODE="4"
-#! SOURCE_PORT_DESC="13"
-#! TARGET_PORT_DESC="13"
+#! SOURCE_PORT_DESC="7"
+#! TARGET_PORT_DESC="7"
 #! />
 #! <ATTR_LINK
-#! IDENTIFIER="851978"
+#! IDENTIFIER="393226"
+#! SOURCE_NODE="3"
+#! TARGET_NODE="4"
+#! SOURCE_PORT_DESC="5"
+#! TARGET_PORT_DESC="5"
+#! />
+#! <ATTR_LINK
+#! IDENTIFIER="720906"
+#! SOURCE_NODE="3"
+#! TARGET_NODE="4"
+#! SOURCE_PORT_DESC="3"
+#! TARGET_PORT_DESC="3"
+#! />
+#! <ATTR_LINK
+#! IDENTIFIER="131082"
+#! SOURCE_NODE="3"
+#! TARGET_NODE="4"
+#! SOURCE_PORT_DESC="6"
+#! TARGET_PORT_DESC="6"
+#! />
+#! <ATTR_LINK
+#! IDENTIFIER="917514"
 #! SOURCE_NODE="3"
 #! TARGET_NODE="4"
 #! SOURCE_PORT_DESC="11"
 #! TARGET_PORT_DESC="11"
 #! />
 #! <ATTR_LINK
-#! IDENTIFIER="524299"
-#! SOURCE_NODE="5"
-#! TARGET_NODE="6"
-#! SOURCE_PORT_DESC="4"
-#! TARGET_PORT_DESC="4"
+#! IDENTIFIER="196618"
+#! SOURCE_NODE="3"
+#! TARGET_NODE="4"
+#! SOURCE_PORT_DESC="2"
+#! TARGET_PORT_DESC="2"
 #! />
 #! <ATTR_LINK
-#! IDENTIFIER="1507339"
+#! IDENTIFIER="589834"
+#! SOURCE_NODE="3"
+#! TARGET_NODE="4"
+#! SOURCE_PORT_DESC="9"
+#! TARGET_PORT_DESC="9"
+#! />
+#! <ATTR_LINK
+#! IDENTIFIER="131083"
 #! SOURCE_NODE="5"
 #! TARGET_NODE="6"
 #! SOURCE_PORT_DESC="22"
 #! TARGET_PORT_DESC="22"
 #! />
 #! <ATTR_LINK
-#! IDENTIFIER="1572875"
+#! IDENTIFIER="1245195"
+#! SOURCE_NODE="5"
+#! TARGET_NODE="6"
+#! SOURCE_PORT_DESC="0"
+#! TARGET_PORT_DESC="0"
+#! />
+#! <ATTR_LINK
+#! IDENTIFIER="1638411"
+#! SOURCE_NODE="5"
+#! TARGET_NODE="6"
+#! SOURCE_PORT_DESC="11"
+#! TARGET_PORT_DESC="11"
+#! />
+#! <ATTR_LINK
+#! IDENTIFIER="1441803"
+#! SOURCE_NODE="5"
+#! TARGET_NODE="6"
+#! SOURCE_PORT_DESC="19"
+#! TARGET_PORT_DESC="19"
+#! />
+#! <ATTR_LINK
+#! IDENTIFIER="786443"
+#! SOURCE_NODE="5"
+#! TARGET_NODE="6"
+#! SOURCE_PORT_DESC="7"
+#! TARGET_PORT_DESC="7"
+#! />
+#! <ATTR_LINK
+#! IDENTIFIER="720907"
+#! SOURCE_NODE="5"
+#! TARGET_NODE="6"
+#! SOURCE_PORT_DESC="16"
+#! TARGET_PORT_DESC="16"
+#! />
+#! <ATTR_LINK
+#! IDENTIFIER="196619"
 #! SOURCE_NODE="5"
 #! TARGET_NODE="6"
 #! SOURCE_PORT_DESC="20"
@@ -1301,15 +1329,50 @@
 #! IDENTIFIER="589835"
 #! SOURCE_NODE="5"
 #! TARGET_NODE="6"
-#! SOURCE_PORT_DESC="1"
-#! TARGET_PORT_DESC="1"
+#! SOURCE_PORT_DESC="21"
+#! TARGET_PORT_DESC="21"
 #! />
 #! <ATTR_LINK
-#! IDENTIFIER="983051"
+#! IDENTIFIER="524299"
 #! SOURCE_NODE="5"
 #! TARGET_NODE="6"
-#! SOURCE_PORT_DESC="12"
-#! TARGET_PORT_DESC="12"
+#! SOURCE_PORT_DESC="2"
+#! TARGET_PORT_DESC="2"
+#! />
+#! <ATTR_LINK
+#! IDENTIFIER="1376267"
+#! SOURCE_NODE="5"
+#! TARGET_NODE="6"
+#! SOURCE_PORT_DESC="23"
+#! TARGET_PORT_DESC="23"
+#! />
+#! <ATTR_LINK
+#! IDENTIFIER="65547"
+#! SOURCE_NODE="5"
+#! TARGET_NODE="6"
+#! SOURCE_PORT_DESC="4"
+#! TARGET_PORT_DESC="4"
+#! />
+#! <ATTR_LINK
+#! IDENTIFIER="655371"
+#! SOURCE_NODE="5"
+#! TARGET_NODE="6"
+#! SOURCE_PORT_DESC="6"
+#! TARGET_PORT_DESC="6"
+#! />
+#! <ATTR_LINK
+#! IDENTIFIER="1179659"
+#! SOURCE_NODE="5"
+#! TARGET_NODE="6"
+#! SOURCE_PORT_DESC="10"
+#! TARGET_PORT_DESC="10"
+#! />
+#! <ATTR_LINK
+#! IDENTIFIER="458763"
+#! SOURCE_NODE="5"
+#! TARGET_NODE="6"
+#! SOURCE_PORT_DESC="15"
+#! TARGET_PORT_DESC="15"
 #! />
 #! <ATTR_LINK
 #! IDENTIFIER="393227"
@@ -1319,53 +1382,53 @@
 #! TARGET_PORT_DESC="14"
 #! />
 #! <ATTR_LINK
+#! IDENTIFIER="983051"
+#! SOURCE_NODE="5"
+#! TARGET_NODE="6"
+#! SOURCE_PORT_DESC="17"
+#! TARGET_PORT_DESC="17"
+#! />
+#! <ATTR_LINK
+#! IDENTIFIER="1310731"
+#! SOURCE_NODE="5"
+#! TARGET_NODE="6"
+#! SOURCE_PORT_DESC="8"
+#! TARGET_PORT_DESC="8"
+#! />
+#! <ATTR_LINK
 #! IDENTIFIER="1114123"
 #! SOURCE_NODE="5"
 #! TARGET_NODE="6"
-#! SOURCE_PORT_DESC="15"
-#! TARGET_PORT_DESC="15"
-#! />
-#! <ATTR_LINK
-#! IDENTIFIER="458763"
-#! SOURCE_NODE="5"
-#! TARGET_NODE="6"
-#! SOURCE_PORT_DESC="2"
-#! TARGET_PORT_DESC="2"
-#! />
-#! <ATTR_LINK
-#! IDENTIFIER="1179659"
-#! SOURCE_NODE="5"
-#! TARGET_NODE="6"
-#! SOURCE_PORT_DESC="21"
-#! TARGET_PORT_DESC="21"
+#! SOURCE_PORT_DESC="24"
+#! TARGET_PORT_DESC="24"
 #! />
 #! <ATTR_LINK
 #! IDENTIFIER="1048587"
 #! SOURCE_NODE="5"
 #! TARGET_NODE="6"
-#! SOURCE_PORT_DESC="6"
-#! TARGET_PORT_DESC="6"
+#! SOURCE_PORT_DESC="3"
+#! TARGET_PORT_DESC="3"
 #! />
 #! <ATTR_LINK
-#! IDENTIFIER="1441803"
-#! SOURCE_NODE="5"
-#! TARGET_NODE="6"
-#! SOURCE_PORT_DESC="16"
-#! TARGET_PORT_DESC="16"
-#! />
-#! <ATTR_LINK
-#! IDENTIFIER="327691"
-#! SOURCE_NODE="5"
-#! TARGET_NODE="6"
-#! SOURCE_PORT_DESC="7"
-#! TARGET_PORT_DESC="7"
-#! />
-#! <ATTR_LINK
-#! IDENTIFIER="65547"
+#! IDENTIFIER="851979"
 #! SOURCE_NODE="5"
 #! TARGET_NODE="6"
 #! SOURCE_PORT_DESC="13"
 #! TARGET_PORT_DESC="13"
+#! />
+#! <ATTR_LINK
+#! IDENTIFIER="1507339"
+#! SOURCE_NODE="5"
+#! TARGET_NODE="6"
+#! SOURCE_PORT_DESC="18"
+#! TARGET_PORT_DESC="18"
+#! />
+#! <ATTR_LINK
+#! IDENTIFIER="262155"
+#! SOURCE_NODE="5"
+#! TARGET_NODE="6"
+#! SOURCE_PORT_DESC="1"
+#! TARGET_PORT_DESC="1"
 #! />
 #! <ATTR_LINK
 #! IDENTIFIER="917515"
@@ -1375,291 +1438,228 @@
 #! TARGET_PORT_DESC="9"
 #! />
 #! <ATTR_LINK
-#! IDENTIFIER="1310731"
-#! SOURCE_NODE="5"
-#! TARGET_NODE="6"
-#! SOURCE_PORT_DESC="17"
-#! TARGET_PORT_DESC="17"
-#! />
-#! <ATTR_LINK
-#! IDENTIFIER="1376267"
-#! SOURCE_NODE="5"
-#! TARGET_NODE="6"
-#! SOURCE_PORT_DESC="3"
-#! TARGET_PORT_DESC="3"
-#! />
-#! <ATTR_LINK
-#! IDENTIFIER="786443"
-#! SOURCE_NODE="5"
-#! TARGET_NODE="6"
-#! SOURCE_PORT_DESC="24"
-#! TARGET_PORT_DESC="24"
-#! />
-#! <ATTR_LINK
-#! IDENTIFIER="851979"
-#! SOURCE_NODE="5"
-#! TARGET_NODE="6"
-#! SOURCE_PORT_DESC="10"
-#! TARGET_PORT_DESC="10"
-#! />
-#! <ATTR_LINK
-#! IDENTIFIER="262155"
-#! SOURCE_NODE="5"
-#! TARGET_NODE="6"
-#! SOURCE_PORT_DESC="0"
-#! TARGET_PORT_DESC="0"
-#! />
-#! <ATTR_LINK
-#! IDENTIFIER="131083"
-#! SOURCE_NODE="5"
-#! TARGET_NODE="6"
-#! SOURCE_PORT_DESC="8"
-#! TARGET_PORT_DESC="8"
-#! />
-#! <ATTR_LINK
-#! IDENTIFIER="1638411"
-#! SOURCE_NODE="5"
-#! TARGET_NODE="6"
-#! SOURCE_PORT_DESC="23"
-#! TARGET_PORT_DESC="23"
-#! />
-#! <ATTR_LINK
-#! IDENTIFIER="720907"
-#! SOURCE_NODE="5"
-#! TARGET_NODE="6"
-#! SOURCE_PORT_DESC="19"
-#! TARGET_PORT_DESC="19"
-#! />
-#! <ATTR_LINK
-#! IDENTIFIER="196619"
-#! SOURCE_NODE="5"
-#! TARGET_NODE="6"
-#! SOURCE_PORT_DESC="18"
-#! TARGET_PORT_DESC="18"
-#! />
-#! <ATTR_LINK
-#! IDENTIFIER="655371"
+#! IDENTIFIER="1572875"
 #! SOURCE_NODE="5"
 #! TARGET_NODE="6"
 #! SOURCE_PORT_DESC="5"
 #! TARGET_PORT_DESC="5"
 #! />
 #! <ATTR_LINK
-#! IDENTIFIER="1245195"
+#! IDENTIFIER="327691"
 #! SOURCE_NODE="5"
 #! TARGET_NODE="6"
-#! SOURCE_PORT_DESC="11"
-#! TARGET_PORT_DESC="11"
-#! />
-#! <ATTR_LINK
-#! IDENTIFIER="1572876"
-#! SOURCE_NODE="7"
-#! TARGET_NODE="8"
-#! SOURCE_PORT_DESC="16"
-#! TARGET_PORT_DESC="16"
-#! />
-#! <ATTR_LINK
-#! IDENTIFIER="1638412"
-#! SOURCE_NODE="7"
-#! TARGET_NODE="8"
-#! SOURCE_PORT_DESC="9"
-#! TARGET_PORT_DESC="9"
-#! />
-#! <ATTR_LINK
-#! IDENTIFIER="1507340"
-#! SOURCE_NODE="7"
-#! TARGET_NODE="8"
-#! SOURCE_PORT_DESC="18"
-#! TARGET_PORT_DESC="18"
-#! />
-#! <ATTR_LINK
-#! IDENTIFIER="1703948"
-#! SOURCE_NODE="7"
-#! TARGET_NODE="8"
-#! SOURCE_PORT_DESC="19"
-#! TARGET_PORT_DESC="19"
-#! />
-#! <ATTR_LINK
-#! IDENTIFIER="458764"
-#! SOURCE_NODE="7"
-#! TARGET_NODE="8"
-#! SOURCE_PORT_DESC="17"
-#! TARGET_PORT_DESC="17"
-#! />
-#! <ATTR_LINK
-#! IDENTIFIER="327692"
-#! SOURCE_NODE="7"
-#! TARGET_NODE="8"
-#! SOURCE_PORT_DESC="14"
-#! TARGET_PORT_DESC="14"
-#! />
-#! <ATTR_LINK
-#! IDENTIFIER="393228"
-#! SOURCE_NODE="7"
-#! TARGET_NODE="8"
-#! SOURCE_PORT_DESC="21"
-#! TARGET_PORT_DESC="21"
-#! />
-#! <ATTR_LINK
-#! IDENTIFIER="1441804"
-#! SOURCE_NODE="7"
-#! TARGET_NODE="8"
-#! SOURCE_PORT_DESC="29"
-#! TARGET_PORT_DESC="29"
-#! />
-#! <ATTR_LINK
-#! IDENTIFIER="262156"
-#! SOURCE_NODE="7"
-#! TARGET_NODE="8"
-#! SOURCE_PORT_DESC="22"
-#! TARGET_PORT_DESC="22"
-#! />
-#! <ATTR_LINK
-#! IDENTIFIER="983052"
-#! SOURCE_NODE="7"
-#! TARGET_NODE="8"
-#! SOURCE_PORT_DESC="25"
-#! TARGET_PORT_DESC="25"
-#! />
-#! <ATTR_LINK
-#! IDENTIFIER="1048588"
-#! SOURCE_NODE="7"
-#! TARGET_NODE="8"
-#! SOURCE_PORT_DESC="5"
-#! TARGET_PORT_DESC="5"
-#! />
-#! <ATTR_LINK
-#! IDENTIFIER="1900556"
-#! SOURCE_NODE="7"
-#! TARGET_NODE="8"
-#! SOURCE_PORT_DESC="0"
-#! TARGET_PORT_DESC="0"
-#! />
-#! <ATTR_LINK
-#! IDENTIFIER="1966092"
-#! SOURCE_NODE="7"
-#! TARGET_NODE="8"
-#! SOURCE_PORT_DESC="24"
-#! TARGET_PORT_DESC="24"
-#! />
-#! <ATTR_LINK
-#! IDENTIFIER="196620"
-#! SOURCE_NODE="7"
-#! TARGET_NODE="8"
-#! SOURCE_PORT_DESC="20"
-#! TARGET_PORT_DESC="20"
+#! SOURCE_PORT_DESC="12"
+#! TARGET_PORT_DESC="12"
 #! />
 #! <ATTR_LINK
 #! IDENTIFIER="851980"
 #! SOURCE_NODE="7"
 #! TARGET_NODE="8"
-#! SOURCE_PORT_DESC="12"
-#! TARGET_PORT_DESC="12"
+#! SOURCE_PORT_DESC="24"
+#! TARGET_PORT_DESC="24"
 #! />
 #! <ATTR_LINK
-#! IDENTIFIER="917516"
+#! IDENTIFIER="1703948"
 #! SOURCE_NODE="7"
 #! TARGET_NODE="8"
-#! SOURCE_PORT_DESC="23"
-#! TARGET_PORT_DESC="23"
+#! SOURCE_PORT_DESC="3"
+#! TARGET_PORT_DESC="3"
 #! />
 #! <ATTR_LINK
-#! IDENTIFIER="786444"
-#! SOURCE_NODE="7"
-#! TARGET_NODE="8"
-#! SOURCE_PORT_DESC="28"
-#! TARGET_PORT_DESC="28"
-#! />
-#! <ATTR_LINK
-#! IDENTIFIER="1376268"
-#! SOURCE_NODE="7"
-#! TARGET_NODE="8"
-#! SOURCE_PORT_DESC="11"
-#! TARGET_PORT_DESC="11"
-#! />
-#! <ATTR_LINK
-#! IDENTIFIER="1310732"
-#! SOURCE_NODE="7"
-#! TARGET_NODE="8"
-#! SOURCE_PORT_DESC="7"
-#! TARGET_PORT_DESC="7"
-#! />
-#! <ATTR_LINK
-#! IDENTIFIER="1769484"
-#! SOURCE_NODE="7"
-#! TARGET_NODE="8"
-#! SOURCE_PORT_DESC="2"
-#! TARGET_PORT_DESC="2"
-#! />
-#! <ATTR_LINK
-#! IDENTIFIER="1835020"
-#! SOURCE_NODE="7"
-#! TARGET_NODE="8"
-#! SOURCE_PORT_DESC="10"
-#! TARGET_PORT_DESC="10"
-#! />
-#! <ATTR_LINK
-#! IDENTIFIER="1179660"
-#! SOURCE_NODE="7"
-#! TARGET_NODE="8"
-#! SOURCE_PORT_DESC="26"
-#! TARGET_PORT_DESC="26"
-#! />
-#! <ATTR_LINK
-#! IDENTIFIER="655372"
+#! IDENTIFIER="1507340"
 #! SOURCE_NODE="7"
 #! TARGET_NODE="8"
 #! SOURCE_PORT_DESC="6"
 #! TARGET_PORT_DESC="6"
 #! />
 #! <ATTR_LINK
-#! IDENTIFIER="720908"
+#! IDENTIFIER="786444"
 #! SOURCE_NODE="7"
 #! TARGET_NODE="8"
-#! SOURCE_PORT_DESC="13"
-#! TARGET_PORT_DESC="13"
+#! SOURCE_PORT_DESC="0"
+#! TARGET_PORT_DESC="0"
 #! />
 #! <ATTR_LINK
-#! IDENTIFIER="1114124"
+#! IDENTIFIER="1441804"
 #! SOURCE_NODE="7"
 #! TARGET_NODE="8"
-#! SOURCE_PORT_DESC="1"
-#! TARGET_PORT_DESC="1"
+#! SOURCE_PORT_DESC="26"
+#! TARGET_PORT_DESC="26"
+#! />
+#! <ATTR_LINK
+#! IDENTIFIER="393228"
+#! SOURCE_NODE="7"
+#! TARGET_NODE="8"
+#! SOURCE_PORT_DESC="14"
+#! TARGET_PORT_DESC="14"
+#! />
+#! <ATTR_LINK
+#! IDENTIFIER="327692"
+#! SOURCE_NODE="7"
+#! TARGET_NODE="8"
+#! SOURCE_PORT_DESC="17"
+#! TARGET_PORT_DESC="17"
+#! />
+#! <ATTR_LINK
+#! IDENTIFIER="196620"
+#! SOURCE_NODE="7"
+#! TARGET_NODE="8"
+#! SOURCE_PORT_DESC="18"
+#! TARGET_PORT_DESC="18"
 #! />
 #! <ATTR_LINK
 #! IDENTIFIER="131084"
 #! SOURCE_NODE="7"
 #! TARGET_NODE="8"
-#! SOURCE_PORT_DESC="3"
-#! TARGET_PORT_DESC="3"
+#! SOURCE_PORT_DESC="9"
+#! TARGET_PORT_DESC="9"
 #! />
 #! <ATTR_LINK
-#! IDENTIFIER="524300"
-#! SOURCE_NODE="7"
-#! TARGET_NODE="8"
-#! SOURCE_PORT_DESC="15"
-#! TARGET_PORT_DESC="15"
-#! />
-#! <ATTR_LINK
-#! IDENTIFIER="1245196"
-#! SOURCE_NODE="7"
-#! TARGET_NODE="8"
-#! SOURCE_PORT_DESC="27"
-#! TARGET_PORT_DESC="27"
-#! />
-#! <ATTR_LINK
-#! IDENTIFIER="589836"
+#! IDENTIFIER="1900556"
 #! SOURCE_NODE="7"
 #! TARGET_NODE="8"
 #! SOURCE_PORT_DESC="8"
 #! TARGET_PORT_DESC="8"
 #! />
 #! <ATTR_LINK
-#! IDENTIFIER="65548"
+#! IDENTIFIER="1966092"
 #! SOURCE_NODE="7"
 #! TARGET_NODE="8"
 #! SOURCE_PORT_DESC="4"
 #! TARGET_PORT_DESC="4"
+#! />
+#! <ATTR_LINK
+#! IDENTIFIER="1048588"
+#! SOURCE_NODE="7"
+#! TARGET_NODE="8"
+#! SOURCE_PORT_DESC="23"
+#! TARGET_PORT_DESC="23"
+#! />
+#! <ATTR_LINK
+#! IDENTIFIER="1310732"
+#! SOURCE_NODE="7"
+#! TARGET_NODE="8"
+#! SOURCE_PORT_DESC="2"
+#! TARGET_PORT_DESC="2"
+#! />
+#! <ATTR_LINK
+#! IDENTIFIER="262156"
+#! SOURCE_NODE="7"
+#! TARGET_NODE="8"
+#! SOURCE_PORT_DESC="19"
+#! TARGET_PORT_DESC="19"
+#! />
+#! <ATTR_LINK
+#! IDENTIFIER="1376268"
+#! SOURCE_NODE="7"
+#! TARGET_NODE="8"
+#! SOURCE_PORT_DESC="10"
+#! TARGET_PORT_DESC="10"
+#! />
+#! <ATTR_LINK
+#! IDENTIFIER="589836"
+#! SOURCE_NODE="7"
+#! TARGET_NODE="8"
+#! SOURCE_PORT_DESC="22"
+#! TARGET_PORT_DESC="22"
+#! />
+#! <ATTR_LINK
+#! IDENTIFIER="65548"
+#! SOURCE_NODE="7"
+#! TARGET_NODE="8"
+#! SOURCE_PORT_DESC="16"
+#! TARGET_PORT_DESC="16"
+#! />
+#! <ATTR_LINK
+#! IDENTIFIER="1114124"
+#! SOURCE_NODE="7"
+#! TARGET_NODE="8"
+#! SOURCE_PORT_DESC="28"
+#! TARGET_PORT_DESC="28"
+#! />
+#! <ATTR_LINK
+#! IDENTIFIER="917516"
+#! SOURCE_NODE="7"
+#! TARGET_NODE="8"
+#! SOURCE_PORT_DESC="20"
+#! TARGET_PORT_DESC="20"
+#! />
+#! <ATTR_LINK
+#! IDENTIFIER="1179660"
+#! SOURCE_NODE="7"
+#! TARGET_NODE="8"
+#! SOURCE_PORT_DESC="11"
+#! TARGET_PORT_DESC="11"
+#! />
+#! <ATTR_LINK
+#! IDENTIFIER="1245196"
+#! SOURCE_NODE="7"
+#! TARGET_NODE="8"
+#! SOURCE_PORT_DESC="7"
+#! TARGET_PORT_DESC="7"
+#! />
+#! <ATTR_LINK
+#! IDENTIFIER="983052"
+#! SOURCE_NODE="7"
+#! TARGET_NODE="8"
+#! SOURCE_PORT_DESC="12"
+#! TARGET_PORT_DESC="12"
+#! />
+#! <ATTR_LINK
+#! IDENTIFIER="720908"
+#! SOURCE_NODE="7"
+#! TARGET_NODE="8"
+#! SOURCE_PORT_DESC="5"
+#! TARGET_PORT_DESC="5"
+#! />
+#! <ATTR_LINK
+#! IDENTIFIER="655372"
+#! SOURCE_NODE="7"
+#! TARGET_NODE="8"
+#! SOURCE_PORT_DESC="25"
+#! TARGET_PORT_DESC="25"
+#! />
+#! <ATTR_LINK
+#! IDENTIFIER="1769484"
+#! SOURCE_NODE="7"
+#! TARGET_NODE="8"
+#! SOURCE_PORT_DESC="15"
+#! TARGET_PORT_DESC="15"
+#! />
+#! <ATTR_LINK
+#! IDENTIFIER="1835020"
+#! SOURCE_NODE="7"
+#! TARGET_NODE="8"
+#! SOURCE_PORT_DESC="27"
+#! TARGET_PORT_DESC="27"
+#! />
+#! <ATTR_LINK
+#! IDENTIFIER="524300"
+#! SOURCE_NODE="7"
+#! TARGET_NODE="8"
+#! SOURCE_PORT_DESC="29"
+#! TARGET_PORT_DESC="29"
+#! />
+#! <ATTR_LINK
+#! IDENTIFIER="458764"
+#! SOURCE_NODE="7"
+#! TARGET_NODE="8"
+#! SOURCE_PORT_DESC="21"
+#! TARGET_PORT_DESC="21"
+#! />
+#! <ATTR_LINK
+#! IDENTIFIER="1572876"
+#! SOURCE_NODE="7"
+#! TARGET_NODE="8"
+#! SOURCE_PORT_DESC="13"
+#! TARGET_PORT_DESC="13"
+#! />
+#! <ATTR_LINK
+#! IDENTIFIER="1638412"
+#! SOURCE_NODE="7"
+#! TARGET_NODE="8"
+#! SOURCE_PORT_DESC="1"
+#! TARGET_PORT_DESC="1"
 #! />
 #! </ATTR_LINKS>
 #! <SUBDOCUMENTS>
@@ -1860,24 +1860,24 @@ MACRO WORKSPACE_NAME bsd
 MACRO FME_VIEWER_APP fmedatainspector
 # -------------------------------------------------------------------------
 
-FACTORY_DEF * RoutingFactory   FACTORY_NAME "Router and Unexpected Input Remover"   INPUT FEATURE_TYPE *       @SupplyAttributes(multi_reader_keyword,MDB_ADO_1)    ROUTE MDB_ADO MDB_ADO_1::ENTREPRISE TO FME_GENERIC ::ENTREPRISE ALIAS_GEOMETRY    ROUTE MDB_ADO MDB_ADO_1::TYPE_DONNEES_ECHANGE TO FME_GENERIC ::TYPE_DONNEES_ECHANGE ALIAS_GEOMETRY    ROUTE MDB_ADO MDB_ADO_1::TB_PIGMA_SUIVI TO FME_GENERIC ::TB_PIGMA_SUIVI ALIAS_GEOMETRY    ROUTE MDB_ADO MDB_ADO_1::PIGMA_DONNEES_A_DISPO TO FME_GENERIC ::PIGMA_DONNEES_A_DISPO ALIAS_GEOMETRY    MERGE_INPUT Yes   OUTPUT ROUTED FEATURE_TYPE *
+FACTORY_DEF * RoutingFactory   FACTORY_NAME "Router and Unexpected Input Remover"   INPUT FEATURE_TYPE *       @SupplyAttributes(multi_reader_keyword,MDB_ADO_1)    ROUTE MDB_ADO MDB_ADO_1::ENTREPRISE TO FME_GENERIC ::ENTREPRISE ALIAS_GEOMETRY    ROUTE MDB_ADO MDB_ADO_1::PIGMA_DONNEES_A_DISPO TO FME_GENERIC ::PIGMA_DONNEES_A_DISPO ALIAS_GEOMETRY    ROUTE MDB_ADO MDB_ADO_1::TYPE_DONNEES_ECHANGE TO FME_GENERIC ::TYPE_DONNEES_ECHANGE ALIAS_GEOMETRY    ROUTE MDB_ADO MDB_ADO_1::TB_PIGMA_SUIVI TO FME_GENERIC ::TB_PIGMA_SUIVI ALIAS_GEOMETRY    MERGE_INPUT Yes   OUTPUT ROUTED FEATURE_TYPE *
 MDB_ADO_1_MERGE_DEF MDB_ADO_1::ENTREPRISE EXACT ENTREPRISE DEFLINE mdb_sql_statement,,mdb_where_clause,,No<space>Entreprise,long,Entreprise,text<openparen>100<closeparen>,Entreprise_Abrege,text<openparen>100<closeparen>,Codeactivit<u00e9>,long,Code<space>postalE,text<openparen>5<closeparen>,VilleE,text<openparen>30<closeparen>,Adres1E,text<openparen>40<closeparen>,Adres2E,text<openparen>40<closeparen>,CodePays,long,T<u00e9>lE,text<openparen>16<closeparen>,FaxE,text<openparen>16<closeparen>,Article<space>entreprise,text<openparen>20<closeparen>,Code<space>STATUT<space>entreprise,long,No<space>TRESORERIE,long,RIB1,text<openparen>30<closeparen>,RIB2,text<openparen>30<closeparen>,N_MAIRIE_SIEGE_ASA,long,Compterr_id,long,whocreated,text<openparen>30<closeparen>,xl93,double,yl93,double,foretdata,yesno,CODE_SIREN,text<openparen>254<closeparen>,CODE_NAF,text<openparen>254<closeparen>,NUM_TVA_INTRA,text<openparen>254<closeparen>,pefc,yesno,astreinte,yesno,ami,yesno,civb,integer,cvi_evv,text<openparen>255<closeparen>
+MDB_ADO_1_MERGE_DEF MDB_ADO_1::PIGMA_DONNEES_A_DISPO EXACT PIGMA_DONNEES_A_DISPO DEFLINE mdb_sql_statement,,mdb_where_clause,,id_entreprise,long,type_donnee,long,conventionnee,yesno,catalogue,yesno,livree,yesno,non_publiee,yesno,fichier_geographique,yesno,it_geonetwork,yesno,it_geoserver,yesno,integree_ids_wms_externe,yesno,date_integration,datetime,autre_ids,yesno,membregip,yesno,serviceetat,yesno,colect_territ,yesno,etab_public,yesno,secteur_associatif,yesno,grand_public,yesno,autre,memo,Nom_autre_ids,text<openparen>255<closeparen>,minifiche,yesno,opendata,yesno,date_reception,datetime,format_donnees,text<openparen>255<closeparen>,projection_donnees,text<openparen>255<closeparen>
 MDB_ADO_1_MERGE_DEF MDB_ADO_1::TYPE_DONNEES_ECHANGE EXACT TYPE_DONNEES_ECHANGE DEFLINE mdb_sql_statement,,mdb_where_clause,,no_type_donnees_echange,long,type_donnees_echange_libelle,text<openparen>255<closeparen>,ThemeInspireAbrege,text<openparen>50<closeparen>,CategorieIso19115,long,ThemeInspire,text<openparen>255<closeparen>,Gestionnaire,text<openparen>255<closeparen>,Observation,text<openparen>255<closeparen>,Donnees_metier_CDC,yesno,Donnees_metier_etat,yesno,NATURE_DONNEEGIP,long
 MDB_ADO_1_MERGE_DEF MDB_ADO_1::TB_PIGMA_SUIVI EXACT TB_PIGMA_SUIVI DEFLINE mdb_sql_statement,,mdb_where_clause,,pigma_NoEntreprise,long,pigma_cible,yesno,pigma_date_1er_contact,datetime,pigma_date_dernier_contact,datetime,pigma_interesse,text<openparen>3<closeparen>,pigma_id,autonumber,pigma_segmentation,long,pigma_interet_couchebasse,yesno,pigma_interet_web,yesno,pigma_interet_grouptravail,yesno,pigma_interet_catalogage,yesno,pigma_convention_date_relance,datetime,pigma_zone_competence_geoconcept,long,pigma_strategie_animation,text<openparen>50<closeparen>
-MDB_ADO_1_MERGE_DEF MDB_ADO_1::PIGMA_DONNEES_A_DISPO EXACT PIGMA_DONNEES_A_DISPO DEFLINE mdb_sql_statement,,mdb_where_clause,,id_entreprise,long,type_donnee,long,conventionnee,yesno,catalogue,yesno,livree,yesno,non_publiee,yesno,fichier_geographique,yesno,it_geonetwork,yesno,it_geoserver,yesno,integree_ids_wms_externe,yesno,date_integration,datetime,autre_ids,yesno,membregip,yesno,serviceetat,yesno,colect_territ,yesno,etab_public,yesno,secteur_associatif,yesno,grand_public,yesno,autre,memo,Nom_autre_ids,text<openparen>255<closeparen>,minifiche,yesno,opendata,yesno,date_reception,datetime,format_donnees,text<openparen>255<closeparen>,projection_donnees,text<openparen>255<closeparen>
 DEFAULT_MACRO WB_CURRENT_CONTEXT
 # -------------------------------------------------------------------------
 
-FACTORY_DEF * RoutingFactory FACTORY_NAME "Destination Feature Type Routing Correlator"   INPUT FEATURE_TYPE *    ROUTE FME_GENERIC TYPE_DONNEES_ECHANGE TO POSTGRES __GO_TO_FINAL_OUTPUT_ROUTER__ <at>CopyAttributes<openparen>ENCODED<comma>themeinspireabrege<comma>ThemeInspireAbrege<comma>categorieiso19115<comma>CategorieIso19115<comma>themeinspire<comma>ThemeInspire<comma>gestionnaire<comma>Gestionnaire<comma>observation<comma>Observation<comma>donnees_metier_cdc<comma>Donnees_metier_CDC<comma>donnees_metier_etat<comma>Donnees_metier_etat<comma>nature_donneegip<comma>NATURE_DONNEEGIP<closeparen>,multi_writer_id,0,<at>SupplyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>bsd.type_donnees_echange<closeparen> GEOMETRY    ROUTE FME_GENERIC TB_PIGMA_SUIVI TO POSTGRES __GO_TO_FINAL_OUTPUT_ROUTER__ <at>CopyAttributes<openparen>ENCODED<comma>pigma_noentreprise<comma>pigma_NoEntreprise<closeparen>,multi_writer_id,0,<at>SupplyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>bsd.tb_pigma_suivi<closeparen> GEOMETRY    ROUTE FME_GENERIC ENTREPRISE TO POSTGRES __GO_TO_FINAL_OUTPUT_ROUTER__ <at>CopyAttributes<openparen>ENCODED<comma>no_entreprise<comma>No<lt>space<gt>Entreprise<comma>entreprise<comma>Entreprise<comma>entreprise_abrege<comma>Entreprise_Abrege<comma>codeactivit<lt>u00e9<gt><comma>Codeactivit<lt>u00e9<gt><comma>code_postale<comma>Code<lt>space<gt>postalE<comma>villee<comma>VilleE<comma>adres1e<comma>Adres1E<comma>adres2e<comma>Adres2E<comma>codepays<comma>CodePays<comma>t<lt>u00e9<gt>le<comma>T<lt>u00e9<gt>lE<comma>faxe<comma>FaxE<comma>article_entreprise<comma>Article<lt>space<gt>entreprise<comma>code_statut_entreprise<comma>Code<lt>space<gt>STATUT<lt>space<gt>entreprise<comma>no_tresorerie<comma>No<lt>space<gt>TRESORERIE<comma>rib1<comma>RIB1<comma>rib2<comma>RIB2<comma>n_mairie_siege_asa<comma>N_MAIRIE_SIEGE_ASA<comma>compterr_id<comma>Compterr_id<comma>code_siren<comma>CODE_SIREN<comma>code_naf<comma>CODE_NAF<comma>num_tva_intra<comma>NUM_TVA_INTRA<closeparen>,multi_writer_id,0,<at>SupplyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>bsd.entreprise_contact<closeparen> GEOMETRY    ROUTE FME_GENERIC PIGMA_DONNEES_A_DISPO TO POSTGRES __GO_TO_FINAL_OUTPUT_ROUTER__ <at>CopyAttributes<openparen>ENCODED<comma>nom_autre_ids<comma>Nom_autre_ids<closeparen>,multi_writer_id,0,<at>SupplyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>bsd.pigma_donnees_a_dispo<closeparen> GEOMETRY   OUTPUT ROUTED FEATURE_TYPE * @FeatureType(ENCODED,@Value(__wb_out_feat_type__)) @RemoveAttributes(__wb_out_feat_type__)   OUTPUT NOT_ROUTED FEATURE_TYPE __nuke_me__ @Tcl2("FME_StatMessage 818059 [FME_GetAttribute fme_template_feature_type] 818060 818061 fme_warn")
+FACTORY_DEF * RoutingFactory FACTORY_NAME "Destination Feature Type Routing Correlator"   INPUT FEATURE_TYPE *    ROUTE FME_GENERIC ENTREPRISE TO POSTGRES __GO_TO_FINAL_OUTPUT_ROUTER__ <at>CopyAttributes<openparen>ENCODED<comma>no_entreprise<comma>No<lt>space<gt>Entreprise<comma>entreprise<comma>Entreprise<comma>entreprise_abrege<comma>Entreprise_Abrege<comma>codeactivit<lt>u00e9<gt><comma>Codeactivit<lt>u00e9<gt><comma>code_postale<comma>Code<lt>space<gt>postalE<comma>villee<comma>VilleE<comma>adres1e<comma>Adres1E<comma>adres2e<comma>Adres2E<comma>codepays<comma>CodePays<comma>t<lt>u00e9<gt>le<comma>T<lt>u00e9<gt>lE<comma>faxe<comma>FaxE<comma>article_entreprise<comma>Article<lt>space<gt>entreprise<comma>code_statut_entreprise<comma>Code<lt>space<gt>STATUT<lt>space<gt>entreprise<comma>no_tresorerie<comma>No<lt>space<gt>TRESORERIE<comma>rib1<comma>RIB1<comma>rib2<comma>RIB2<comma>n_mairie_siege_asa<comma>N_MAIRIE_SIEGE_ASA<comma>compterr_id<comma>Compterr_id<comma>code_siren<comma>CODE_SIREN<comma>code_naf<comma>CODE_NAF<comma>num_tva_intra<comma>NUM_TVA_INTRA<closeparen>,multi_writer_id,0,<at>SupplyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>bsd.entreprise_contact<closeparen> GEOMETRY    ROUTE FME_GENERIC PIGMA_DONNEES_A_DISPO TO POSTGRES __GO_TO_FINAL_OUTPUT_ROUTER__ <at>CopyAttributes<openparen>ENCODED<comma>nom_autre_ids<comma>Nom_autre_ids<closeparen>,multi_writer_id,0,<at>SupplyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>bsd.pigma_donnees_a_dispo<closeparen> GEOMETRY    ROUTE FME_GENERIC TB_PIGMA_SUIVI TO POSTGRES __GO_TO_FINAL_OUTPUT_ROUTER__ <at>CopyAttributes<openparen>ENCODED<comma>pigma_noentreprise<comma>pigma_NoEntreprise<closeparen>,multi_writer_id,0,<at>SupplyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>bsd.tb_pigma_suivi<closeparen> GEOMETRY    ROUTE FME_GENERIC TYPE_DONNEES_ECHANGE TO POSTGRES __GO_TO_FINAL_OUTPUT_ROUTER__ <at>CopyAttributes<openparen>ENCODED<comma>themeinspireabrege<comma>ThemeInspireAbrege<comma>categorieiso19115<comma>CategorieIso19115<comma>themeinspire<comma>ThemeInspire<comma>gestionnaire<comma>Gestionnaire<comma>observation<comma>Observation<comma>donnees_metier_cdc<comma>Donnees_metier_CDC<comma>donnees_metier_etat<comma>Donnees_metier_etat<comma>nature_donneegip<comma>NATURE_DONNEEGIP<closeparen>,multi_writer_id,0,<at>SupplyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>bsd.type_donnees_echange<closeparen> GEOMETRY   OUTPUT ROUTED FEATURE_TYPE * @FeatureType(ENCODED,@Value(__wb_out_feat_type__)) @RemoveAttributes(__wb_out_feat_type__)   OUTPUT NOT_ROUTED FEATURE_TYPE __nuke_me__ @Tcl2("FME_StatMessage 818059 [FME_GetAttribute fme_template_feature_type] 818060 818061 fme_warn")
 # -------------------------------------------------------------------------
 
 FACTORY_DEF * TeeFactory   FACTORY_NAME "Final Output Nuker"   INPUT FEATURE_TYPE __nuke_me__
 
 # -------------------------------------------------------------------------
-POSTGRES_1_DEF bsd.type_donnees_echange   postgres_type                All   postgres_mode                INHERIT_FROM_WRITER   postgres_sql_key_columns     ""   postgres_drop_table          YES   postgres_truncate_table      YES   postgres_create_with_oids    NO   postgres_vacuum_analyze      NO   postgres_allow_serial_writing NO   no_type_donnees_echange      int4   type_donnees_echange_libelle varchar(255)   themeinspireabrege           varchar(50)   categorieiso19115            int4   themeinspire                 varchar(255)   gestionnaire                 varchar(255)   observation                  varchar(255)   donnees_metier_cdc           bool   donnees_metier_etat          bool   nature_donneegip             int4
+POSTGRES_1_DEF bsd.entreprise_contact   postgres_type                All   postgres_mode                INHERIT_FROM_WRITER   postgres_sql_key_columns     ""   postgres_drop_table          NO   postgres_truncate_table      YES   postgres_create_with_oids    NO   postgres_vacuum_analyze      NO   postgres_allow_serial_writing NO   no_entreprise                int4   entreprise                   varchar(100)   entreprise_abrege            varchar(100)   codeactivité                 int4   code_postale                 varchar(5)   villee                       varchar(30)   adres1e                      varchar(40)   adres2e                      varchar(40)   codepays                     int4   téle                         varchar(16)   faxe                         varchar(16)   article_entreprise           varchar(20)   code_statut_entreprise       int4   no_tresorerie                int4   rib1                         varchar(30)   rib2                         varchar(30)   n_mairie_siege_asa           int4   compterr_id                  int4   whocreated                   varchar(30)   xl93                         float8   yl93                         float8   foretdata                    bool   code_siren                   varchar(254)   code_naf                     varchar(254)   num_tva_intra                varchar(254)   pefc                         bool   astreinte                    bool   ami                          bool   civb                         int2   cvi_evv                      varchar(255)
 # -------------------------------------------------------------------------
-POSTGRES_1_DEF bsd.tb_pigma_suivi   postgres_type                All   postgres_mode                INHERIT_FROM_WRITER   postgres_sql_key_columns     ""   postgres_drop_table          YES   postgres_truncate_table      YES   postgres_create_with_oids    NO   postgres_vacuum_analyze      NO   postgres_allow_serial_writing NO   pigma_noentreprise           int4   pigma_cible                  bool   pigma_date_1er_contact       timestamp   pigma_date_dernier_contact   timestamp   pigma_interesse              varchar(3)   pigma_id                     int4   pigma_segmentation           int4   pigma_interet_couchebasse    bool   pigma_interet_web            bool   pigma_interet_grouptravail   bool   pigma_interet_catalogage     bool   pigma_convention_date_relance timestamp   pigma_zone_competence_geoconcept int4   pigma_strategie_animation    varchar(50)
+POSTGRES_1_DEF bsd.pigma_donnees_a_dispo   postgres_type                All   postgres_mode                INHERIT_FROM_WRITER   postgres_sql_key_columns     ""   postgres_drop_table          NO   postgres_truncate_table      YES   postgres_create_with_oids    NO   postgres_vacuum_analyze      NO   postgres_allow_serial_writing NO   id_entreprise                int4   type_donnee                  int4   conventionnee                bool   catalogue                    bool   livree                       bool   non_publiee                  bool   fichier_geographique         bool   it_geonetwork                bool   it_geoserver                 bool   integree_ids_wms_externe     bool   date_integration             timestamp   autre_ids                    bool   membregip                    bool   serviceetat                  bool   colect_territ                bool   etab_public                  bool   secteur_associatif           bool   grand_public                 bool   autre                        text   nom_autre_ids                varchar(255)   minifiche                    bool   opendata                     bool   date_reception               timestamp   format_donnees               varchar(255)   projection_donnees           varchar(255)
 # -------------------------------------------------------------------------
-POSTGRES_1_DEF bsd.entreprise_contact   postgres_type                All   postgres_mode                INHERIT_FROM_WRITER   postgres_sql_key_columns     ""   postgres_drop_table          YES   postgres_truncate_table      YES   postgres_create_with_oids    NO   postgres_vacuum_analyze      NO   postgres_allow_serial_writing NO   no_entreprise                int4   entreprise                   varchar(100)   entreprise_abrege            varchar(100)   codeactivité                 int4   code_postale                 varchar(5)   villee                       varchar(30)   adres1e                      varchar(40)   adres2e                      varchar(40)   codepays                     int4   téle                         varchar(16)   faxe                         varchar(16)   article_entreprise           varchar(20)   code_statut_entreprise       int4   no_tresorerie                int4   rib1                         varchar(30)   rib2                         varchar(30)   n_mairie_siege_asa           int4   compterr_id                  int4   whocreated                   varchar(30)   xl93                         float8   yl93                         float8   foretdata                    bool   code_siren                   varchar(254)   code_naf                     varchar(254)   num_tva_intra                varchar(254)   pefc                         bool   astreinte                    bool   ami                          bool   civb                         int2   cvi_evv                      varchar(255)
+POSTGRES_1_DEF bsd.tb_pigma_suivi   postgres_type                All   postgres_mode                INHERIT_FROM_WRITER   postgres_sql_key_columns     ""   postgres_drop_table          NO   postgres_truncate_table      YES   postgres_create_with_oids    NO   postgres_vacuum_analyze      NO   postgres_allow_serial_writing NO   pigma_noentreprise           int4   pigma_cible                  bool   pigma_date_1er_contact       timestamp   pigma_date_dernier_contact   timestamp   pigma_interesse              varchar(3)   pigma_id                     int4   pigma_segmentation           int4   pigma_interet_couchebasse    bool   pigma_interet_web            bool   pigma_interet_grouptravail   bool   pigma_interet_catalogage     bool   pigma_convention_date_relance timestamp   pigma_zone_competence_geoconcept int4   pigma_strategie_animation    varchar(50)
 # -------------------------------------------------------------------------
-POSTGRES_1_DEF bsd.pigma_donnees_a_dispo   postgres_type                All   postgres_mode                INHERIT_FROM_WRITER   postgres_sql_key_columns     ""   postgres_drop_table          YES   postgres_truncate_table      YES   postgres_create_with_oids    NO   postgres_vacuum_analyze      NO   postgres_allow_serial_writing NO   id_entreprise                int4   type_donnee                  int4   conventionnee                bool   catalogue                    bool   livree                       bool   non_publiee                  bool   fichier_geographique         bool   it_geonetwork                bool   it_geoserver                 bool   integree_ids_wms_externe     bool   date_integration             timestamp   autre_ids                    bool   membregip                    bool   serviceetat                  bool   colect_territ                bool   etab_public                  bool   secteur_associatif           bool   grand_public                 bool   autre                        text   nom_autre_ids                varchar(255)   minifiche                    bool   opendata                     bool   date_reception               timestamp   format_donnees               varchar(255)   projection_donnees           varchar(255)
+POSTGRES_1_DEF bsd.type_donnees_echange   postgres_type                All   postgres_mode                INHERIT_FROM_WRITER   postgres_sql_key_columns     ""   postgres_drop_table          NO   postgres_truncate_table      YES   postgres_create_with_oids    NO   postgres_vacuum_analyze      NO   postgres_allow_serial_writing NO   no_type_donnees_echange      int4   type_donnees_echange_libelle varchar(255)   themeinspireabrege           varchar(50)   categorieiso19115            int4   themeinspire                 varchar(255)   gestionnaire                 varchar(255)   observation                  varchar(255)   donnees_metier_cdc           bool   donnees_metier_etat          bool   nature_donneegip             int4
