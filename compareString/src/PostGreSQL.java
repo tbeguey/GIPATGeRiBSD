@@ -114,41 +114,8 @@ public class PostGreSQL {
         return compareds;
     }
 
-    /*public boolean tableExits(String tableName){
-        String sql = "select exists ( select 1 from information_schema.tables where table_name = '" + tableName + "');";
-
-        try {
-            PreparedStatement pst = c.prepareStatement(sql);
-            ResultSet rs = pst.executeQuery();
-            while (rs.next()){
-                return rs.getBoolean(1);
-            }
-
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
-        return false;
-    }*/
-
-    /*public void createTable(String tableName){
-        try {
-            String sql = "CREATE TABLE " + tableName +
-                    "(id SERIAL," +
-                    "sourceTitle text," +
-                    "sourceId text," +
-                    "destinationTitle text," +
-                    "destinationId text)";
-            stmt.executeUpdate(sql); // est éxécuté sur le statement
-            System.out.println("Table created");
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
-    }*/
 
     public boolean rowExists(String tableName, String columnName, String id){
-        /*String query = "select exists(select 1 from " + tableName + " where sourceTitle = " + sourceTitle + " AND sourceId = " + sourceId
-                + " AND destinationTitle = " + destinationTitle + " AND destinationId = " + destinationId + ");";*/
-
         String query = "select exists(select 1 from " + tableName + " where " + columnName + " = '" + id + "');";
         try {
             PreparedStatement pst = c.prepareStatement(query);
@@ -161,33 +128,6 @@ public class PostGreSQL {
         }
         return false;
     }
-
-    /*public void addLines(ArrayList<ArrayList<String>> arrayListWriter, String tableName){
-        try {
-            for (int i = 0; i < arrayListWriter.size(); i++){
-                ArrayList<String> arrayList = arrayListWriter.get(i);
-                for (int j = 0; j < arrayList.size(); j++) {
-                    arrayList.set(j, arrayList.get(j).replace("'", "''"));
-                }
-
-                String sourceTitle = "'" + arrayList.get(0) + "'";
-                String sourceId = "'" + arrayList.get(1) + "'";
-                String destinationTitle = "'" + arrayList.get(2) + "'";
-                String destinationId = "'" + arrayList.get(3) + "'";
-
-                if(!rowExists(tableName, sourceTitle, sourceId, destinationTitle, destinationId)){
-                    String sql = "INSERT INTO " + tableName + "(sourceTitle, sourceId, destinationTitle, destinationId)" +
-                            " VALUES(" + sourceTitle + ", " +
-                            sourceId + ", " +
-                            destinationTitle + ", " +
-                            destinationId  + ");";
-                    stmt.executeUpdate(sql);
-                }
-        }
-    } catch (SQLException e) {
-            e.printStackTrace();
-        }
-    }*/
 
     public void insertUpdateLines(ArrayList<ArrayList<String>> arrayListCheckedToExport, String columnNameSource, String columnNameDestination){
         for (int i = 0; i < arrayListCheckedToExport.size(); i++){

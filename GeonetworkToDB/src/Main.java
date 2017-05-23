@@ -3,7 +3,6 @@ public class Main {
     public static void main(String args[]) {
         PostGreSQL postGreSqlBSD = new PostGreSQL();
         postGreSqlBSD.connection("172.30.100.12:5432/bsd?currentSchema=geonetwork", "admpostgres", "admpostgres");
-        postGreSqlBSD.dropTable("metadata");
         postGreSqlBSD.createTable("metadata");
 
         PostGreSQL postGreSQLGeorchestra = new PostGreSQL();

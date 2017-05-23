@@ -62,7 +62,7 @@ public class PostGreSQL {
      */
     public void createTable(String table){
         try {
-            String sql = "CREATE TABLE " + table + " (id serial PRIMARY KEY, uuid text UNIQUE, title text, data xml, isharvested character(1), source text); "; // notre requete
+            String sql = "CREATE TABLE IF NOT EXISTS" + table + " (id serial PRIMARY KEY, uuid text UNIQUE, title text, data xml, isharvested character(1), source text); "; // notre requete
             stmt.executeUpdate(sql); // est éxécuté sur le statement
             System.out.println("Table created");
         } catch (SQLException e) {
@@ -70,17 +70,18 @@ public class PostGreSQL {
         }
     }
 
-    /**
-     * Détruit la table
-     */
-    public void dropTable(String table){
+    public boolean rowExists(String id){
+        String query = "select exists(select 1 from metadata where uuid = '" + id + "');";
         try {
-            String sql = "DROP TABLE " + table;
-            stmt.executeUpdate(sql);
-            System.out.println("Table droped");
+            PreparedStatement pst = c.prepareStatement(query);
+            ResultSet rs = pst.executeQuery();
+            while (rs.next()){
+                return rs.getBoolean(1);
+            }
         } catch (SQLException e) {
             e.printStackTrace();
         }
+        return false;
     }
 
     /**
@@ -143,9 +144,11 @@ public class PostGreSQL {
      */
     public void addLine(String table, Line line){
         try {
-            String sql = "INSERT INTO " + table + "(uuid, title, data, isharvested, source) VALUES( '" + line.getUuid() + "', '" + line.getTitle() + "', '" + line.getData()
-                    + "', '" + line.getHarvested() + "', '" + line.getSource() + "');";
-            stmt.executeUpdate(sql);
+            if(!rowExists(line.getUuid())){
+                String sql = "INSERT INTO " + table + "(uuid, title, data, isharvested, source) VALUES( '" + line.getUuid() + "', '" + line.getTitle() + "', '" + line.getData()
+                        + "', '" + line.getHarvested() + "', '" + line.getSource() + "');";
+                stmt.executeUpdate(sql);
+            }
         } catch (SQLException e) {
             e.printStackTrace();
         }

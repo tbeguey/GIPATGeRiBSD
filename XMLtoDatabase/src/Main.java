@@ -18,8 +18,7 @@ public class Main extends Application{
     public void start(Stage primaryStage) throws Exception {
         PostGreSQL postGreSQL = new PostGreSQL(); // On créer un objet de type PostGreSQL (classe que j'ai créer)
         postGreSQL.connection(); // On se connecte
-        postGreSQL.dropTable(); // On détruit la table
-        postGreSQL.createTable(); // On la recrée
+        postGreSQL.createTable(); // On la recrée si elle existe pas
 
         DirectoryChooser directoryChooser = new DirectoryChooser();
         directoryChooser.setTitle("Choisir le dossier à parcourir");
