@@ -1,10 +1,7 @@
-import javafx.beans.value.ChangeListener;
-import javafx.beans.value.ObservableValue;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.concurrent.Task;
 import javafx.geometry.Insets;
-import javafx.geometry.Pos;
 import javafx.scene.Group;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
@@ -97,7 +94,6 @@ public class MyScene extends Scene {
 
         Button okButton = new Button("Comparer");
         okButton.setOnMouseClicked(event -> {
-            if(!comboBoxSource.getValue().equals(comboBoxDestination.getValue()))
                 start();
         });
 
@@ -323,7 +319,7 @@ public class MyScene extends Scene {
                     if(i%100 == 0 || i == strings.size()){
                         comparaisonDialog.drawGraphics(values);
                         Optional<ArrayList<ArrayList<Pair<StringCompared, StringCompared>>>> result = comparaisonDialog.showAndWait();
-                        if(i == strings.size() || comparaisonDialog.getExport()){
+                        if(i == strings.size() || comparaisonDialog.getExportBD()){
                             for (int j = i; j <= strings.size(); j++)
                                 comparaisonDialog.add(strings.get(j-1).getKey(), strings.get(j-1).getValue().getKey());
                             comparaisonDialog.sortIfCheckOrNot();
@@ -348,7 +344,9 @@ public class MyScene extends Scene {
                             });
 
                             exportToCSV();
-                            exportToPostGre();
+                            if(comboBoxSource.getValue() != comboBoxDestination.getValue())
+                                exportToPostGre();
+
                             arrayListCheckedToExport.clear();
                             arrayListNotCheckedToExport.clear();
                         }
@@ -617,19 +615,5 @@ public class MyScene extends Scene {
         postGreSQL.insertUpdateLines(arrayListCheckedToExport, columnNameSource, columnNameDestination);
 
         postGreSQL.deconnection();
-
-        /*String tableName = (comboBoxSource.getValue().toString() + comboBoxDestination.getValue().toString() + "check").toLowerCase();
-
-        if (!postGreSQL.tableExits(tableName))
-            postGreSQL.createTable(tableName);
-        else
-            postGreSQL.addLines(arrayListCheckedToExport, tableName);
-
-        tableName = (comboBoxSource.getValue().toString() + comboBoxDestination.getValue().toString() + "notcheck").toLowerCase();
-
-        if (!postGreSQL.tableExits(tableName))
-            postGreSQL.createTable(tableName);
-        else
-            postGreSQL.addLines(arrayListNotCheckedToExport, tableName);*/
     }
 }

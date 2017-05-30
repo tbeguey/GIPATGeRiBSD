@@ -370,5 +370,5 @@ public class ComparaisonDialog extends Dialog<ArrayList<ArrayList<Pair<StringCom
     }
 
     public boolean getFinish() { return finish; }
-    public boolean getExport() { return  export; }
+    public boolean getExportBD() { return export; }
 }
