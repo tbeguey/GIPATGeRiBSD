@@ -2,59 +2,59 @@
 #! <WORKSPACE
 #    
 #    
-#    Ligne de commande pour exécuter le projet :
+#    Command-line to run this workspace:
 #    
 #    
-#    "C:\Program Files\FME_2015\fme.exe" "D:\sebastien_dias\projets\bsd _stage\fme\cartogip.fmw"
+#    C:\apps\FME_2015_32_bits\fme.exe C:\Users\tbeguey\Documents\GitHub\GIPATGeRiBSD\fme\cartogip.fmw
 #          --SourceDataset_POSTGRES "gip"
 #          --DestDataset_POSTGRES "bsd"
-#          --SourceDataset_POSTGRES_2 "gip"
-#          --DestDataset_POSTGRES_3 "bsd"
+#          --DestDataset_POSTGRES_2 "bsd"
+#          --SourceDataset_POSTGRES_4 "cartogip<at>46.105.215.183:5432<solidus>gip"
 #    
 #    
-#! DESTINATION="NONE"
-#! DESCRIPTION=""
-#! CATEGORY=""
-#! LAST_SAVE_DATE="2017-05-19T12:27:14"
-#! DOC_TOP_LEFT="100 -658"
-#! END_TCL=""
-#! FME_GEOMETRY_HANDLING="Enhanced"
-#! FME_STROKE_MAX_DEVIATION="0"
-#! MAX_LOG_FEATURES="200"
-#! TITLE=""
-#! REQUIREMENTS_KEYWORD=""
-#! VIEW_POSITION="-93.0009 99.001"
-#! FME_SERVER_SERVICES=""
-#! LOG_MAX_PRECISION="Yes"
-#! WORKSPACE_VERSION="1"
-#! REDIRECT_TERMINATORS="NONE"
-#! FME_REPROJECTION_ENGINE="FME"
-#! HISTORY=""
-#! DESTINATION_ROUTING_FILE=""
-#! SOURCE_ROUTING_FILE=""
-#! PASSWORD=""
-#! DOC_EXTENTS="2542 628"
-#! LOG_FILE=""
-#! MULTI_WRITER_DATASET_ORDER="BY_ID"
-#! LEGAL_TERMS_CONDITIONS=""
-#! END_PYTHON=""
-#! ATTR_TYPE_ENCODING="SDF"
-#! FME_BUILD_NUM="15485"
-#! FME_DOCUMENT_PRIORGUID="123328d5-14b2-4f52-823b-99ac9c20e92c"
-#! REQUIREMENTS=""
-#! ZOOM_SCALE="100"
-#! IGNORE_READER_FAILURE="No"
-#! USAGE=""
 #! WARN_INVALID_XFORM_PARAM="Yes"
-#! LAST_SAVE_BUILD="FME(R) 2015.1.0.3 (20150623 - Build 15485 - WIN64)"
-#! BEGIN_TCL=""
-#! SHOW_ANNOTATIONS="true"
-#! FME_IMPLICIT_CSMAP_REPROJECTION_MODE="Auto"
-#! FME_DOCUMENT_GUID="d7fab661-a711-472a-bb5c-085ae8e1c3cd"
-#! LOG_MAX_RECORDED_FEATURES="200"
+#! DOC_TOP_LEFT="100 -1009"
+#! DESCRIPTION=""
+#! HISTORY=""
+#! LAST_SAVE_DATE="2017-06-06T16:34:57"
+#! FME_BUILD_NUM="15482"
+#! FME_GEOMETRY_HANDLING="Enhanced"
+#! ZOOM_SCALE="100"
+#! LOG_MAX_PRECISION="Yes"
+#! VIEW_POSITION="21.0002 66.0007"
+#! WORKSPACE_VERSION="1"
+#! ATTR_TYPE_ENCODING="SDF"
+#! END_TCL=""
+#! TITLE=""
+#! PASSWORD=""
+#! CATEGORY=""
 #! SOURCE="NONE"
-#! BEGIN_PYTHON=""
+#! REQUIREMENTS_KEYWORD=""
+#! FME_DOCUMENT_PRIORGUID="123328d5-14b2-4f52-823b-99ac9c20e92c,d7fab661-a711-472a-bb5c-085ae8e1c3cd,b03eb3c8-e4cf-4c2b-a68f-225f144c6c48,6d31b888-b542-40c4-b2d9-d2086c3b434b,ee87243b-4d90-42a8-a9fd-abbedfc0280f,3ad7a51c-a7f7-4328-b506-7d310f92976c,bfb249a5-0e94-498d-a941-184322d8f92f"
+#! FME_STROKE_MAX_DEVIATION="0"
+#! DOC_EXTENTS="2542 979.001"
+#! FME_REPROJECTION_ENGINE="FME"
+#! FME_SERVER_SERVICES=""
+#! REDIRECT_TERMINATORS="NONE"
+#! MULTI_WRITER_DATASET_ORDER="BY_ID"
+#! END_PYTHON=""
+#! REQUIREMENTS=""
+#! IGNORE_READER_FAILURE="No"
+#! LAST_SAVE_BUILD="FME(R) 2015.1.0.2 (20150525 - Build 15482 - WIN32)"
+#! FME_IMPLICIT_CSMAP_REPROJECTION_MODE="Auto"
+#! SOURCE_ROUTING_FILE=""
+#! BEGIN_TCL=""
+#! FME_DOCUMENT_GUID="e73fb61f-1b10-4c2b-bf6c-03488a8bd0b7"
+#! MAX_LOG_FEATURES="200"
+#! DESTINATION_ROUTING_FILE=""
+#! USAGE=""
 #! SHOW_INFO_NODES="true"
+#! BEGIN_PYTHON=""
+#! LEGAL_TERMS_CONDITIONS=""
+#! SHOW_ANNOTATIONS="true"
+#! LOG_FILE=""
+#! DESTINATION="NONE"
+#! LOG_MAX_RECORDED_FEATURES="200"
 #! >
 #! <DATASETS>
 #! <DATASET
@@ -70,7 +70,7 @@
 #! WRITE_DEFS="true"
 #! DEFLINE_TEMPLATE="postgres_type {FME_GEN_GEOMETRY} postgres_sql_where_clause &quot;&quot; postgres_sql_statement &quot;&quot;"
 #! DEFLINE_ATTRS="true"
-#! EXPOSABLE_ATTRS="fme_fill_color char(50) multi_reader_keyword char(50) multi_reader_id int4 multi_reader_type char(50) fme_start_angle float8 fme_feature_type char(50) fme_rotation float8 fme_type char(50) fme_text_size float8 fme_color char(50) fme_basename char(50) multi_reader_full_id int4 fme_geometry fme_char(50) fme_sweep_angle float8 postgres_oid int4 fme_primary_axis float8 fme_dataset char(50) fme_secondary_axis float8 fme_text_string char(50) postgres_type char(50)"
+#! EXPOSABLE_ATTRS="fme_basename char(50) fme_start_angle float8 fme_geometry fme_char(50) postgres_oid int4 fme_sweep_angle float8 multi_reader_keyword char(50) fme_type char(50) fme_primary_axis float8 fme_dataset char(50) postgres_type char(50) fme_text_string char(50) multi_reader_type char(50) fme_color char(50) multi_reader_id int4 multi_reader_full_id int4 fme_secondary_axis float8 fme_fill_color char(50) fme_text_size float8 fme_rotation float8 fme_feature_type char(50)"
 #! DEFLINE_PARMS="&quot;GUI OPTIONAL TEXT_EDIT_SQL_CFG postgres_sql_where_clause MODE,WHERE WHERE Clause&quot; &quot;&quot; &quot;GUI OPTIONAL TEXT_EDIT_SQL_CFG postgres_sql_statement MODE,SQL SELECT Statement&quot; &quot;&quot; "
 #! ATTR_INDEX_TYPES="BTREE RTREE HASH PRIKEY"
 #! ATTR_NAME_INVALID_CHARS=""
@@ -79,40 +79,40 @@
 #! DYNAMIC_FEATURE_TYPES_LIST_ON_MERGE="true"
 #! DATASET_TYPE="DATABASE"
 #! GENERATE_FME_BUILD_NUM="15485"
-#! COORDSYS=""
+#! MAX_FEATURES_PER_FEATURE_TYPE=""
 #! FEATURE_TYPES=""
-#! MIN_FEATURES=""
 #! START_FEATURE=""
 #! MAX_FEATURES=""
-#! MAX_FEATURES_PER_FEATURE_TYPE=""
+#! COORDSYS=""
+#! MIN_FEATURES=""
 #! >
 #! <METAFILE_PARAMETER
-#! NAME="NETWORK_AUTHENTICATION"
-#! VALUE="NO"
+#! NAME="FEATURE_TYPE_NAME"
+#! VALUE="Table"
 #! />
 #! <METAFILE_PARAMETER
 #! NAME="NETWORK_PROXY"
 #! VALUE="NO"
 #! />
 #! <METAFILE_PARAMETER
-#! NAME="FEATURE_TYPE_NAME"
-#! VALUE="Table"
+#! NAME="DATASET_NAME"
+#! VALUE="Database"
 #! />
 #! <METAFILE_PARAMETER
 #! NAME="FEATURE_TYPE_DEFAULT_NAME"
 #! VALUE="Table1"
 #! />
 #! <METAFILE_PARAMETER
-#! NAME="DATASET_NAME"
-#! VALUE="Database"
+#! NAME="NETWORK_AUTHENTICATION"
+#! VALUE="NO"
 #! />
 #! </DATASET>
 #! <DATASET
 #! IS_SOURCE="true"
 #! ROLE="READER"
 #! FORMAT="POSTGRES"
-#! DATASET="$(SourceDataset_POSTGRES_2)"
-#! KEYWORD="POSTGRES_3"
+#! DATASET="$(SourceDataset_POSTGRES_4)"
+#! KEYWORD="POSTGRES_5"
 #! MULTI_GEOM_ALLOWED="false"
 #! ATTR_MAX_LENGTH="60"
 #! ATTR_CASE="ANY"
@@ -120,7 +120,7 @@
 #! WRITE_DEFS="true"
 #! DEFLINE_TEMPLATE="postgres_type {FME_GEN_GEOMETRY} postgres_sql_where_clause &quot;&quot; postgres_sql_statement &quot;&quot;"
 #! DEFLINE_ATTRS="true"
-#! EXPOSABLE_ATTRS="fme_fill_color char(50) multi_reader_keyword char(50) multi_reader_id int4 multi_reader_type char(50) fme_start_angle float8 fme_feature_type char(50) fme_rotation float8 fme_type char(50) fme_text_size float8 fme_color char(50) fme_basename char(50) multi_reader_full_id int4 fme_geometry fme_char(50) fme_sweep_angle float8 postgres_oid int4 fme_primary_axis float8 fme_dataset char(50) fme_secondary_axis float8 fme_text_string char(50) postgres_type char(50)"
+#! EXPOSABLE_ATTRS="fme_basename char(50) fme_start_angle float8 fme_geometry fme_char(50) postgres_oid int4 fme_sweep_angle float8 multi_reader_keyword char(50) fme_type char(50) fme_primary_axis float8 fme_dataset char(50) postgres_type char(50) fme_text_string char(50) multi_reader_type char(50) fme_color char(50) multi_reader_id int4 multi_reader_full_id int4 fme_secondary_axis float8 fme_fill_color char(50) fme_text_size float8 fme_rotation float8 fme_feature_type char(50)"
 #! DEFLINE_PARMS="&quot;GUI OPTIONAL TEXT_EDIT_SQL_CFG postgres_sql_where_clause MODE,WHERE WHERE Clause&quot; &quot;&quot; &quot;GUI OPTIONAL TEXT_EDIT_SQL_CFG postgres_sql_statement MODE,SQL SELECT Statement&quot; &quot;&quot; "
 #! ATTR_INDEX_TYPES="BTREE RTREE HASH PRIKEY"
 #! ATTR_NAME_INVALID_CHARS=""
@@ -128,18 +128,14 @@
 #! ENABLED="true"
 #! DYNAMIC_FEATURE_TYPES_LIST_ON_MERGE="true"
 #! DATASET_TYPE="DATABASE"
-#! GENERATE_FME_BUILD_NUM="15485"
-#! COORDSYS=""
+#! GENERATE_FME_BUILD_NUM="15482"
+#! MAX_FEATURES_PER_FEATURE_TYPE=""
 #! FEATURE_TYPES=""
-#! MIN_FEATURES=""
 #! START_FEATURE=""
 #! MAX_FEATURES=""
-#! MAX_FEATURES_PER_FEATURE_TYPE=""
+#! COORDSYS=""
+#! MIN_FEATURES=""
 #! >
-#! <METAFILE_PARAMETER
-#! NAME="NETWORK_AUTHENTICATION"
-#! VALUE="NO"
-#! />
 #! <METAFILE_PARAMETER
 #! NAME="NETWORK_PROXY"
 #! VALUE="NO"
@@ -149,12 +145,16 @@
 #! VALUE="Table"
 #! />
 #! <METAFILE_PARAMETER
+#! NAME="DATASET_NAME"
+#! VALUE="Database"
+#! />
+#! <METAFILE_PARAMETER
 #! NAME="FEATURE_TYPE_DEFAULT_NAME"
 #! VALUE="Table1"
 #! />
 #! <METAFILE_PARAMETER
-#! NAME="DATASET_NAME"
-#! VALUE="Database"
+#! NAME="NETWORK_AUTHENTICATION"
+#! VALUE="NO"
 #! />
 #! </DATASET>
 #! <DATASET
@@ -162,7 +162,7 @@
 #! ROLE="WRITER"
 #! FORMAT="POSTGRES"
 #! DATASET="$(DestDataset_POSTGRES)"
-#! KEYWORD="POSTGRES_2"
+#! KEYWORD="POSTGRES_3"
 #! MULTI_GEOM_ALLOWED="true"
 #! ATTR_MAX_LENGTH="63"
 #! ATTR_CASE="LOWER"
@@ -170,7 +170,7 @@
 #! WRITE_DEFS="true"
 #! DEFLINE_TEMPLATE="postgres_type {FME_GEN_GEOMETRY} postgres_mode INHERIT_FROM_WRITER postgres_sql_key_columns &quot;&quot; postgres_drop_table NO postgres_truncate_table NO postgres_create_with_oids NO postgres_vacuum_analyze NO postgres_allow_serial_writing NO"
 #! DEFLINE_ATTRS="true"
-#! EXPOSABLE_ATTRS="fme_start_angle float8 fme_color char(50) fme_fill_color char(50) fme_sweep_angle float8 fme_primary_axis float8 fme_basename char(50) fme_feature_type char(50) fme_where char(254) fme_dataset char(50) fme_type char(50) fme_geometry fme_char(50) fme_db_operation char(8) fme_rotation float8 fme_text_string char(50) postgres_type char(50) fme_secondary_axis float8 fme_text_size float8"
+#! EXPOSABLE_ATTRS="fme_type char(50) fme_feature_type char(50) fme_basename char(50) fme_text_string char(50) fme_color char(50) fme_db_operation char(8) fme_secondary_axis float8 fme_geometry fme_char(50) fme_rotation float8 fme_dataset char(50) fme_start_angle float8 fme_sweep_angle float8 postgres_type char(50) fme_where char(254) fme_fill_color char(50) fme_text_size float8 fme_primary_axis float8"
 #! DEFLINE_PARMS="&quot;GUI CHOICE postgres_drop_table YES%NO Drop Table First&quot; NO &quot;GUI CHOICE postgres_truncate_table YES%NO Truncate Table First&quot; NO &quot;GUI CHOICE postgres_mode INHERIT_FROM_WRITER%INSERT%UPDATE%DELETE Writer Mode&quot; INHERIT_FROM_WRITER &quot;GUI OPTIONAL ATTRLIST_COMMAS postgres_sql_key_columns SQL Key Columns&quot; &quot;&quot; &quot;GUI CHOICE postgres_create_with_oids YES%NO Create With OIDs&quot; NO &quot;GUI CHOICE postgres_vacuum_analyze YES%NO Vacuum Analyze Table&quot; NO &quot;GUI CHOICE postgres_allow_serial_writing YES%NO Allow Serial Column Writing&quot; NO "
 #! ATTR_INDEX_TYPES="BTREE RTREE HASH PRIKEY"
 #! ATTR_NAME_INVALID_CHARS=". %-#[]&quot;()!?*&apos;&amp;+\/"
@@ -179,39 +179,39 @@
 #! DYNAMIC_FEATURE_TYPES_LIST_ON_MERGE="true"
 #! DATASET_TYPE="DATABASE"
 #! GENERATE_FME_BUILD_NUM="15485"
-#! COORDSYS=""
 #! FANOUT="No"
-#! FANOUT_SUFFIX=""
 #! FANOUT_DIRECTORY=""
-#! FANOUT_PREFIX=""
+#! COORDSYS=""
+#! FANOUT_SUFFIX=""
 #! FANOUT_ID_ATTR=""
+#! FANOUT_PREFIX=""
 #! >
 #! <METAFILE_PARAMETER
-#! NAME="NETWORK_AUTHENTICATION"
-#! VALUE="NO"
+#! NAME="FEATURE_TYPE_NAME"
+#! VALUE="Table"
 #! />
 #! <METAFILE_PARAMETER
 #! NAME="NETWORK_PROXY"
 #! VALUE="NO"
 #! />
 #! <METAFILE_PARAMETER
-#! NAME="FEATURE_TYPE_NAME"
-#! VALUE="Table"
+#! NAME="DATASET_NAME"
+#! VALUE="Database"
 #! />
 #! <METAFILE_PARAMETER
 #! NAME="FEATURE_TYPE_DEFAULT_NAME"
 #! VALUE="Table1"
 #! />
 #! <METAFILE_PARAMETER
-#! NAME="DATASET_NAME"
-#! VALUE="Database"
+#! NAME="NETWORK_AUTHENTICATION"
+#! VALUE="NO"
 #! />
 #! </DATASET>
 #! <DATASET
 #! IS_SOURCE="false"
 #! ROLE="WRITER"
 #! FORMAT="POSTGRES"
-#! DATASET="$(DestDataset_POSTGRES_3)"
+#! DATASET="$(DestDataset_POSTGRES_2)"
 #! KEYWORD="POSTGRES_4"
 #! MULTI_GEOM_ALLOWED="true"
 #! ATTR_MAX_LENGTH="63"
@@ -220,7 +220,7 @@
 #! WRITE_DEFS="true"
 #! DEFLINE_TEMPLATE="postgres_type {FME_GEN_GEOMETRY} postgres_mode INHERIT_FROM_WRITER postgres_sql_key_columns &quot;&quot; postgres_drop_table NO postgres_truncate_table NO postgres_create_with_oids NO postgres_vacuum_analyze NO postgres_allow_serial_writing NO"
 #! DEFLINE_ATTRS="true"
-#! EXPOSABLE_ATTRS="fme_start_angle float8 fme_color char(50) fme_fill_color char(50) fme_sweep_angle float8 fme_primary_axis float8 fme_basename char(50) fme_feature_type char(50) fme_where char(254) fme_dataset char(50) fme_type char(50) fme_geometry fme_char(50) fme_db_operation char(8) fme_rotation float8 fme_text_string char(50) postgres_type char(50) fme_secondary_axis float8 fme_text_size float8"
+#! EXPOSABLE_ATTRS="fme_type char(50) fme_feature_type char(50) fme_basename char(50) fme_text_string char(50) fme_color char(50) fme_db_operation char(8) fme_secondary_axis float8 fme_geometry fme_char(50) fme_rotation float8 fme_dataset char(50) fme_start_angle float8 fme_sweep_angle float8 postgres_type char(50) fme_where char(254) fme_fill_color char(50) fme_text_size float8 fme_primary_axis float8"
 #! DEFLINE_PARMS="&quot;GUI CHOICE postgres_drop_table YES%NO Drop Table First&quot; NO &quot;GUI CHOICE postgres_truncate_table YES%NO Truncate Table First&quot; NO &quot;GUI CHOICE postgres_mode INHERIT_FROM_WRITER%INSERT%UPDATE%DELETE Writer Mode&quot; INHERIT_FROM_WRITER &quot;GUI OPTIONAL ATTRLIST_COMMAS postgres_sql_key_columns SQL Key Columns&quot; &quot;&quot; &quot;GUI CHOICE postgres_create_with_oids YES%NO Create With OIDs&quot; NO &quot;GUI CHOICE postgres_vacuum_analyze YES%NO Vacuum Analyze Table&quot; NO &quot;GUI CHOICE postgres_allow_serial_writing YES%NO Allow Serial Column Writing&quot; NO "
 #! ATTR_INDEX_TYPES="BTREE RTREE HASH PRIKEY"
 #! ATTR_NAME_INVALID_CHARS=". %-#[]&quot;()!?*&apos;&amp;+\/"
@@ -229,32 +229,32 @@
 #! DYNAMIC_FEATURE_TYPES_LIST_ON_MERGE="true"
 #! DATASET_TYPE="DATABASE"
 #! GENERATE_FME_BUILD_NUM="15485"
-#! COORDSYS=""
 #! FANOUT="No"
-#! FANOUT_SUFFIX=""
 #! FANOUT_DIRECTORY=""
-#! FANOUT_PREFIX=""
+#! COORDSYS=""
+#! FANOUT_SUFFIX=""
 #! FANOUT_ID_ATTR=""
+#! FANOUT_PREFIX=""
 #! >
 #! <METAFILE_PARAMETER
-#! NAME="NETWORK_AUTHENTICATION"
-#! VALUE="NO"
+#! NAME="FEATURE_TYPE_NAME"
+#! VALUE="Table"
 #! />
 #! <METAFILE_PARAMETER
 #! NAME="NETWORK_PROXY"
 #! VALUE="NO"
 #! />
 #! <METAFILE_PARAMETER
-#! NAME="FEATURE_TYPE_NAME"
-#! VALUE="Table"
+#! NAME="DATASET_NAME"
+#! VALUE="Database"
 #! />
 #! <METAFILE_PARAMETER
 #! NAME="FEATURE_TYPE_DEFAULT_NAME"
 #! VALUE="Table1"
 #! />
 #! <METAFILE_PARAMETER
-#! NAME="DATASET_NAME"
-#! VALUE="Database"
+#! NAME="NETWORK_AUTHENTICATION"
+#! VALUE="NO"
 #! />
 #! </DATASET>
 #! </DATASETS>
@@ -818,7 +818,7 @@
 #! BOUNDING_RECT="2604 -153.001 -1 -1"
 #! ORDER="5e+014"
 #! COLLAPSED="true"
-#! KEYWORD="POSTGRES_2"
+#! KEYWORD="POSTGRES_3"
 #! PARMS_EDITED="true"
 #! ENABLED="true"
 #! SCHEMA_ATTRIBUTE_SOURCE="1"
@@ -839,12 +839,12 @@
 #! <FEAT_ATTRIBUTE ATTR_NAME="libelle_chapitre" ATTR_TYPE="varchar(255)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
 #! <FEAT_ATTRIBUTE ATTR_NAME="couche_annuelle" ATTR_TYPE="bool" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
 #! <DEFLINE_PARM PARM_NAME="postgres_create_with_oids" PARM_VALUE="NO"/>
-#! <DEFLINE_PARM PARM_NAME="postgres_allow_serial_writing" PARM_VALUE="NO"/>
-#! <DEFLINE_PARM PARM_NAME="postgres_truncate_table" PARM_VALUE="YES"/>
-#! <DEFLINE_PARM PARM_NAME="postgres_mode" PARM_VALUE="INHERIT_FROM_WRITER"/>
-#! <DEFLINE_PARM PARM_NAME="postgres_sql_key_columns" PARM_VALUE=""/>
 #! <DEFLINE_PARM PARM_NAME="postgres_drop_table" PARM_VALUE="YES"/>
+#! <DEFLINE_PARM PARM_NAME="postgres_sql_key_columns" PARM_VALUE=""/>
 #! <DEFLINE_PARM PARM_NAME="postgres_vacuum_analyze" PARM_VALUE="NO"/>
+#! <DEFLINE_PARM PARM_NAME="postgres_allow_serial_writing" PARM_VALUE="NO"/>
+#! <DEFLINE_PARM PARM_NAME="postgres_mode" PARM_VALUE="INHERIT_FROM_WRITER"/>
+#! <DEFLINE_PARM PARM_NAME="postgres_truncate_table" PARM_VALUE="YES"/>
 #! </FEATURE_TYPE>
 #! <FEATURE_TYPE
 #! IS_SOURCE="true"
@@ -889,7 +889,7 @@
 #! BOUNDING_RECT="2604 -272.501 -1 -1"
 #! ORDER="5e+014"
 #! COLLAPSED="true"
-#! KEYWORD="POSTGRES_2"
+#! KEYWORD="POSTGRES_3"
 #! PARMS_EDITED="true"
 #! ENABLED="true"
 #! SCHEMA_ATTRIBUTE_SOURCE="1"
@@ -902,12 +902,12 @@
 #! <FEAT_ATTRIBUTE ATTR_NAME="sys_date_maj" ATTR_TYPE="date" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
 #! <FEAT_ATTRIBUTE ATTR_NAME="en_service" ATTR_TYPE="bool" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
 #! <DEFLINE_PARM PARM_NAME="postgres_create_with_oids" PARM_VALUE="NO"/>
-#! <DEFLINE_PARM PARM_NAME="postgres_allow_serial_writing" PARM_VALUE="NO"/>
-#! <DEFLINE_PARM PARM_NAME="postgres_truncate_table" PARM_VALUE="YES"/>
-#! <DEFLINE_PARM PARM_NAME="postgres_mode" PARM_VALUE="INHERIT_FROM_WRITER"/>
-#! <DEFLINE_PARM PARM_NAME="postgres_sql_key_columns" PARM_VALUE=""/>
 #! <DEFLINE_PARM PARM_NAME="postgres_drop_table" PARM_VALUE="YES"/>
+#! <DEFLINE_PARM PARM_NAME="postgres_sql_key_columns" PARM_VALUE=""/>
 #! <DEFLINE_PARM PARM_NAME="postgres_vacuum_analyze" PARM_VALUE="NO"/>
+#! <DEFLINE_PARM PARM_NAME="postgres_allow_serial_writing" PARM_VALUE="NO"/>
+#! <DEFLINE_PARM PARM_NAME="postgres_mode" PARM_VALUE="INHERIT_FROM_WRITER"/>
+#! <DEFLINE_PARM PARM_NAME="postgres_truncate_table" PARM_VALUE="YES"/>
 #! </FEATURE_TYPE>
 #! <FEATURE_TYPE
 #! IS_SOURCE="true"
@@ -959,7 +959,7 @@
 #! BOUNDING_RECT="2604 -392.001 -1 -1"
 #! ORDER="5e+014"
 #! COLLAPSED="true"
-#! KEYWORD="POSTGRES_2"
+#! KEYWORD="POSTGRES_3"
 #! PARMS_EDITED="true"
 #! ENABLED="true"
 #! SCHEMA_ATTRIBUTE_SOURCE="1"
@@ -979,12 +979,12 @@
 #! <FEAT_ATTRIBUTE ATTR_NAME="ordre" ATTR_TYPE="int4" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
 #! <FEAT_ATTRIBUTE ATTR_NAME="couche_annuelle" ATTR_TYPE="bool" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
 #! <DEFLINE_PARM PARM_NAME="postgres_create_with_oids" PARM_VALUE="NO"/>
-#! <DEFLINE_PARM PARM_NAME="postgres_allow_serial_writing" PARM_VALUE="NO"/>
-#! <DEFLINE_PARM PARM_NAME="postgres_truncate_table" PARM_VALUE="YES"/>
-#! <DEFLINE_PARM PARM_NAME="postgres_mode" PARM_VALUE="INHERIT_FROM_WRITER"/>
-#! <DEFLINE_PARM PARM_NAME="postgres_sql_key_columns" PARM_VALUE=""/>
 #! <DEFLINE_PARM PARM_NAME="postgres_drop_table" PARM_VALUE="YES"/>
+#! <DEFLINE_PARM PARM_NAME="postgres_sql_key_columns" PARM_VALUE=""/>
 #! <DEFLINE_PARM PARM_NAME="postgres_vacuum_analyze" PARM_VALUE="NO"/>
+#! <DEFLINE_PARM PARM_NAME="postgres_allow_serial_writing" PARM_VALUE="NO"/>
+#! <DEFLINE_PARM PARM_NAME="postgres_mode" PARM_VALUE="INHERIT_FROM_WRITER"/>
+#! <DEFLINE_PARM PARM_NAME="postgres_truncate_table" PARM_VALUE="YES"/>
 #! </FEATURE_TYPE>
 #! <FEATURE_TYPE
 #! IS_SOURCE="true"
@@ -999,7 +999,7 @@
 #! ORDER="5e+014"
 #! COLLAPSED="true"
 #! KEYWORD="POSTGRES_1"
-#! PARMS_EDITED="false"
+#! PARMS_EDITED="true"
 #! ENABLED="true"
 #! HIDDEN_USER_ATTRS=""
 #! MERGE_FILTER=""
@@ -1033,7 +1033,7 @@
 #! BOUNDING_RECT="2604 -511.501 -1 -1"
 #! ORDER="5e+014"
 #! COLLAPSED="true"
-#! KEYWORD="POSTGRES_2"
+#! KEYWORD="POSTGRES_3"
 #! PARMS_EDITED="true"
 #! ENABLED="true"
 #! SCHEMA_ATTRIBUTE_SOURCE="1"
@@ -1050,12 +1050,12 @@
 #! <FEAT_ATTRIBUTE ATTR_NAME="en_service" ATTR_TYPE="bool" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
 #! <FEAT_ATTRIBUTE ATTR_NAME="couche_annuelle" ATTR_TYPE="bool" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
 #! <DEFLINE_PARM PARM_NAME="postgres_create_with_oids" PARM_VALUE="NO"/>
-#! <DEFLINE_PARM PARM_NAME="postgres_allow_serial_writing" PARM_VALUE="NO"/>
-#! <DEFLINE_PARM PARM_NAME="postgres_truncate_table" PARM_VALUE="YES"/>
-#! <DEFLINE_PARM PARM_NAME="postgres_mode" PARM_VALUE="INHERIT_FROM_WRITER"/>
-#! <DEFLINE_PARM PARM_NAME="postgres_sql_key_columns" PARM_VALUE=""/>
 #! <DEFLINE_PARM PARM_NAME="postgres_drop_table" PARM_VALUE="YES"/>
+#! <DEFLINE_PARM PARM_NAME="postgres_sql_key_columns" PARM_VALUE=""/>
 #! <DEFLINE_PARM PARM_NAME="postgres_vacuum_analyze" PARM_VALUE="NO"/>
+#! <DEFLINE_PARM PARM_NAME="postgres_allow_serial_writing" PARM_VALUE="NO"/>
+#! <DEFLINE_PARM PARM_NAME="postgres_mode" PARM_VALUE="INHERIT_FROM_WRITER"/>
+#! <DEFLINE_PARM PARM_NAME="postgres_truncate_table" PARM_VALUE="YES"/>
 #! </FEATURE_TYPE>
 #! <FEATURE_TYPE
 #! IS_SOURCE="true"
@@ -1065,17 +1065,17 @@
 #! IS_EDITABLE="false"
 #! IDENTIFIER="19"
 #! FEAT_GEOMTYPE="postgres_none"
-#! POSITION="100 -658"
-#! BOUNDING_RECT="100 -658 -1 -1"
+#! POSITION="100 -1009"
+#! BOUNDING_RECT="100 -1009 -1 -1"
 #! ORDER="5e+014"
 #! COLLAPSED="true"
-#! KEYWORD="POSTGRES_3"
+#! KEYWORD="POSTGRES_5"
 #! PARMS_EDITED="false"
 #! ENABLED="true"
 #! HIDDEN_USER_ATTRS=""
 #! MERGE_FILTER=""
 #! MERGE_FILTER_TYPE="FILTER_TYPE_GLOB"
-#! MERGE_FILTER_CASE_SENSITIVE="true"
+#! MERGE_FILTER_CASE_SENSITIVE="false"
 #! DYNAMIC_SCHEMA="false"
 #! >
 #! <FEAT_ATTRIBUTE ATTR_NAME="id_couche" ATTR_TYPE="serial,PRIKEY" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
@@ -1132,62 +1132,62 @@
 #! </FEATURE_TYPE>
 #! <FEATURE_TYPE
 #! IS_SOURCE="false"
-#! NODE_NAME="cartogip.couche"
+#! NODE_NAME="cartogip.couche_init"
 #! FEATURE_TYPE_NAME=""
 #! FEATURE_TYPE_NAME_QUALIFIER="cartogip"
 #! IS_EDITABLE="true"
-#! IDENTIFIER="20"
+#! IDENTIFIER="21"
 #! FEAT_GEOMTYPE="All"
-#! POSITION="2604 -658"
-#! BOUNDING_RECT="2604 -658 -1 -1"
+#! POSITION="2419.03 -1009"
+#! BOUNDING_RECT="2419.03 -1009 -1 -1"
 #! ORDER="5e+014"
-#! COLLAPSED="false"
-#! KEYWORD="POSTGRES_4"
-#! PARMS_EDITED="true"
+#! COLLAPSED="true"
+#! KEYWORD="POSTGRES_3"
+#! PARMS_EDITED="false"
 #! ENABLED="true"
 #! SCHEMA_ATTRIBUTE_SOURCE="1"
 #! >
 #! <FEAT_ATTRIBUTE ATTR_NAME="id_couche" ATTR_TYPE="serial,PRIKEY" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#! <FEAT_ATTRIBUTE ATTR_NAME="nom_couche" ATTR_TYPE="varchar(254)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#! <FEAT_ATTRIBUTE ATTR_NAME="couche_libelle" ATTR_TYPE="varchar(254)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#! <FEAT_ATTRIBUTE ATTR_NAME="format" ATTR_TYPE="varchar(254)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="nom_couche" ATTR_TYPE="varchar(50)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="couche_libelle" ATTR_TYPE="varchar(70)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="format" ATTR_TYPE="varchar(50)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
 #! <FEAT_ATTRIBUTE ATTR_NAME="transparent" ATTR_TYPE="bool" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
 #! <FEAT_ATTRIBUTE ATTR_NAME="isbaselayer" ATTR_TYPE="bool" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
 #! <FEAT_ATTRIBUTE ATTR_NAME="minscale" ATTR_TYPE="int4" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
 #! <FEAT_ATTRIBUTE ATTR_NAME="maxscale" ATTR_TYPE="int4" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#! <FEAT_ATTRIBUTE ATTR_NAME="icon" ATTR_TYPE="varchar(254)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="icon" ATTR_TYPE="varchar(20)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
 #! <FEAT_ATTRIBUTE ATTR_NAME="id_couche_parent" ATTR_TYPE="int4" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#! <FEAT_ATTRIBUTE ATTR_NAME="couche_schema" ATTR_TYPE="varchar(254)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#! <FEAT_ATTRIBUTE ATTR_NAME="couche_table" ATTR_TYPE="varchar(254)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#! <FEAT_ATTRIBUTE ATTR_NAME="couche_vue_metadata" ATTR_TYPE="varchar(254)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#! <FEAT_ATTRIBUTE ATTR_NAME="couche_champs_geom" ATTR_TYPE="varchar(254)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#! <FEAT_ATTRIBUTE ATTR_NAME="geom_type" ATTR_TYPE="varchar(254)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#! <FEAT_ATTRIBUTE ATTR_NAME="table_clef" ATTR_TYPE="varchar(254)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#! <FEAT_ATTRIBUTE ATTR_NAME="copyright" ATTR_TYPE="varchar(254)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#! <FEAT_ATTRIBUTE ATTR_NAME="lien_fichier_externe" ATTR_TYPE="varchar(254)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="couche_schema" ATTR_TYPE="varchar(80)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="couche_table" ATTR_TYPE="varchar(80)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="couche_vue_metadata" ATTR_TYPE="varchar(80)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="couche_champs_geom" ATTR_TYPE="varchar(80)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="geom_type" ATTR_TYPE="varchar(80)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="table_clef" ATTR_TYPE="varchar(80)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="copyright" ATTR_TYPE="varchar(80)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="lien_fichier_externe" ATTR_TYPE="varchar(80)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
 #! <FEAT_ATTRIBUTE ATTR_NAME="opacity" ATTR_TYPE="int4" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#! <FEAT_ATTRIBUTE ATTR_NAME="classitem" ATTR_TYPE="varchar(254)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="classitem" ATTR_TYPE="varchar(80)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
 #! <FEAT_ATTRIBUTE ATTR_NAME="taille_proportionnelle_echelle" ATTR_TYPE="bool" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
 #! <FEAT_ATTRIBUTE ATTR_NAME="ponctuel_pour_poligon" ATTR_TYPE="int4" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#! <FEAT_ATTRIBUTE ATTR_NAME="couche_champs_libelle" ATTR_TYPE="varchar(254),BTREE" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#! <FEAT_ATTRIBUTE ATTR_NAME="labelitem" ATTR_TYPE="varchar(254)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#! <FEAT_ATTRIBUTE ATTR_NAME="labelmaxscale" ATTR_TYPE="varchar(254)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#! <FEAT_ATTRIBUTE ATTR_NAME="wms_couches" ATTR_TYPE="varchar(254)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="couche_champs_libelle" ATTR_TYPE="varchar(80),BTREE" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="labelitem" ATTR_TYPE="varchar(80)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="labelmaxscale" ATTR_TYPE="varchar(80)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="wms_couches" ATTR_TYPE="varchar(255)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
 #! <FEAT_ATTRIBUTE ATTR_NAME="id_serveur_wms" ATTR_TYPE="int4" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#! <FEAT_ATTRIBUTE ATTR_NAME="filter" ATTR_TYPE="varchar(254)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#! <FEAT_ATTRIBUTE ATTR_NAME="filter_session" ATTR_TYPE="varchar(254)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="filter" ATTR_TYPE="varchar(255)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="filter_session" ATTR_TYPE="varchar(255)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
 #! <FEAT_ATTRIBUTE ATTR_NAME="copyright_annee_min" ATTR_TYPE="int4" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
 #! <FEAT_ATTRIBUTE ATTR_NAME="copyright_annee_max" ATTR_TYPE="int4" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#! <FEAT_ATTRIBUTE ATTR_NAME="couche_base" ATTR_TYPE="varchar(254)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="couche_base" ATTR_TYPE="varchar(20)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
 #! <FEAT_ATTRIBUTE ATTR_NAME="id_geosource" ATTR_TYPE="int4" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#! <FEAT_ATTRIBUTE ATTR_NAME="tooltip" ATTR_TYPE="varchar(254)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="tooltip" ATTR_TYPE="varchar(255)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
 #! <FEAT_ATTRIBUTE ATTR_NAME="raster" ATTR_TYPE="bool" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
 #! <FEAT_ATTRIBUTE ATTR_NAME="en_cache" ATTR_TYPE="bool" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#! <FEAT_ATTRIBUTE ATTR_NAME="extent" ATTR_TYPE="varchar(254)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#! <FEAT_ATTRIBUTE ATTR_NAME="ajout_saisie_id_visionneuse" ATTR_TYPE="varchar(254)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="extent" ATTR_TYPE="varchar(80)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="ajout_saisie_id_visionneuse" ATTR_TYPE="varchar(80)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
 #! <FEAT_ATTRIBUTE ATTR_NAME="afficher_dans_arbre_couche" ATTR_TYPE="bool" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
 #! <FEAT_ATTRIBUTE ATTR_NAME="wmts" ATTR_TYPE="bool" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#! <FEAT_ATTRIBUTE ATTR_NAME="epsg" ATTR_TYPE="varchar(254)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="epsg" ATTR_TYPE="varchar(80)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
 #! <FEAT_ATTRIBUTE ATTR_NAME="sys_date_create" ATTR_TYPE="date" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
 #! <FEAT_ATTRIBUTE ATTR_NAME="sys_date_maj" ATTR_TYPE="date" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
 #! <FEAT_ATTRIBUTE ATTR_NAME="en_service" ATTR_TYPE="bool" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
@@ -1197,12 +1197,12 @@
 #! <FEAT_ATTRIBUTE ATTR_NAME="actualiser_on" ATTR_TYPE="bool" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
 #! <FEAT_ATTRIBUTE ATTR_NAME="actualiser_delai_defaut" ATTR_TYPE="int4" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
 #! <DEFLINE_PARM PARM_NAME="postgres_create_with_oids" PARM_VALUE="NO"/>
-#! <DEFLINE_PARM PARM_NAME="postgres_allow_serial_writing" PARM_VALUE="NO"/>
-#! <DEFLINE_PARM PARM_NAME="postgres_truncate_table" PARM_VALUE="YES"/>
-#! <DEFLINE_PARM PARM_NAME="postgres_mode" PARM_VALUE="INHERIT_FROM_WRITER"/>
+#! <DEFLINE_PARM PARM_NAME="postgres_drop_table" PARM_VALUE="NO"/>
 #! <DEFLINE_PARM PARM_NAME="postgres_sql_key_columns" PARM_VALUE=""/>
-#! <DEFLINE_PARM PARM_NAME="postgres_drop_table" PARM_VALUE="YES"/>
 #! <DEFLINE_PARM PARM_NAME="postgres_vacuum_analyze" PARM_VALUE="NO"/>
+#! <DEFLINE_PARM PARM_NAME="postgres_allow_serial_writing" PARM_VALUE="NO"/>
+#! <DEFLINE_PARM PARM_NAME="postgres_mode" PARM_VALUE="INHERIT_FROM_WRITER"/>
+#! <DEFLINE_PARM PARM_NAME="postgres_truncate_table" PARM_VALUE="NO"/>
 #! </FEATURE_TYPE>
 #! </FEATURE_TYPES>
 #! <FMESERVER>
@@ -1219,20 +1219,20 @@
 #! IS_STAND_ALONE="false"
 #! />
 #! <GLOBAL_PARAMETER
-#! GUI_LINE="GUI TEXT SourceDataset_POSTGRES_2 Base de données :"
-#! DEFAULT_VALUE="gip"
+#! GUI_LINE="GUI TEXT DestDataset_POSTGRES_2 Base de données :"
+#! DEFAULT_VALUE="bsd"
 #! IS_STAND_ALONE="false"
 #! />
 #! <GLOBAL_PARAMETER
-#! GUI_LINE="GUI TEXT DestDataset_POSTGRES_3 Base de données :"
-#! DEFAULT_VALUE="bsd"
+#! GUI_LINE="GUI NAMED_DB_CONNECTION_ENCODED SourceDataset_POSTGRES_4 FMT:POSTGRES Connection:"
+#! DEFAULT_VALUE="cartogip&lt;at&gt;46.105.215.183:5432&lt;solidus&gt;gip"
 #! IS_STAND_ALONE="false"
 #! />
 #! </GLOBAL_PARAMETERS>
 #! <COMMENTS>
 #! <COMMENT
 #! IDENTIFIER="16"
-#! COMMENT_VALUE="Types d&apos;entités source"
+#! COMMENT_VALUE="&lt;html&gt;&lt;body&gt;Types d&apos;entités source&lt;/body&gt;&lt;/html&gt;"
 #! POSITION="100 -30"
 #! TOP_LEFT="100 -30"
 #! BOTTOM_RIGHT="99 -29"
@@ -1240,14 +1240,14 @@
 #! ORDER="5e+014"
 #! FOLLOW_ANCHOR="true"
 #! INFO_NODE="false"
-#! COLOUR="1,1,0.784314,0.196078"
+#! COLOUR="1,1,0.784314,0.192157"
 #! SIZE_POLICY="10"
 #! COMMENT_TYPE="SOURCE_HEADER"
 #! ANCHORED_NODE="0"
 #! />
 #! <COMMENT
 #! IDENTIFIER="17"
-#! COMMENT_VALUE="Flux de données"
+#! COMMENT_VALUE="&lt;html&gt;&lt;body&gt;Flux de données&lt;/body&gt;&lt;/html&gt;"
 #! POSITION="1444.5 -30"
 #! TOP_LEFT="1444.5 -30"
 #! BOTTOM_RIGHT="1443.5 -29"
@@ -1255,14 +1255,14 @@
 #! ORDER="5e+014"
 #! FOLLOW_ANCHOR="true"
 #! INFO_NODE="false"
-#! COLOUR="1,1,0.784314,0.196078"
+#! COLOUR="1,1,0.784314,0.192157"
 #! SIZE_POLICY="10"
-#! COMMENT_TYPE="DATAFLOW_HEADER"
+#! COMMENT_TYPE="REGULAR"
 #! ANCHORED_NODE="0"
 #! />
 #! <COMMENT
 #! IDENTIFIER="18"
-#! COMMENT_VALUE="Types d&apos;entités destination"
+#! COMMENT_VALUE="&lt;html&gt;&lt;body&gt;Types d&apos;entités destination&lt;/body&gt;&lt;/html&gt;"
 #! POSITION="2642 -30"
 #! TOP_LEFT="2642 -30"
 #! BOTTOM_RIGHT="2641 -29"
@@ -1270,7 +1270,7 @@
 #! ORDER="5e+014"
 #! FOLLOW_ANCHOR="true"
 #! INFO_NODE="false"
-#! COLOUR="1,1,0.784314,0.196078"
+#! COLOUR="1,1,0.784314,0.192157"
 #! SIZE_POLICY="10"
 #! COMMENT_TYPE="DEST_HEADER"
 #! ANCHORED_NODE="0"
@@ -1320,9 +1320,9 @@
 #! EXTRA_POINTS=""
 #! />
 #! <FEAT_LINK
-#! IDENTIFIER="21"
+#! IDENTIFIER="24"
 #! SOURCE_NODE="19"
-#! TARGET_NODE="20"
+#! TARGET_NODE="21"
 #! SOURCE_PORT_DESC="-1"
 #! TARGET_PORT_DESC="-1"
 #! ENABLED="true"
@@ -1333,74 +1333,88 @@
 #! </BREAKPOINTS>
 #! <ATTR_LINKS>
 #! <ATTR_LINK
-#! IDENTIFIER="196619"
-#! SOURCE_NODE="1"
-#! TARGET_NODE="2"
-#! SOURCE_PORT_DESC="14"
-#! TARGET_PORT_DESC="14"
-#! />
-#! <ATTR_LINK
 #! IDENTIFIER="65547"
 #! SOURCE_NODE="1"
 #! TARGET_NODE="2"
-#! SOURCE_PORT_DESC="11"
-#! TARGET_PORT_DESC="11"
+#! SOURCE_PORT_DESC="6"
+#! TARGET_PORT_DESC="6"
 #! />
 #! <ATTR_LINK
-#! IDENTIFIER="458763"
+#! IDENTIFIER="393227"
 #! SOURCE_NODE="1"
 #! TARGET_NODE="2"
 #! SOURCE_PORT_DESC="2"
 #! TARGET_PORT_DESC="2"
 #! />
 #! <ATTR_LINK
-#! IDENTIFIER="917515"
-#! SOURCE_NODE="1"
-#! TARGET_NODE="2"
-#! SOURCE_PORT_DESC="9"
-#! TARGET_PORT_DESC="9"
-#! />
-#! <ATTR_LINK
-#! IDENTIFIER="131083"
+#! IDENTIFIER="720907"
 #! SOURCE_NODE="1"
 #! TARGET_NODE="2"
 #! SOURCE_PORT_DESC="13"
 #! TARGET_PORT_DESC="13"
 #! />
 #! <ATTR_LINK
-#! IDENTIFIER="983051"
+#! IDENTIFIER="262155"
 #! SOURCE_NODE="1"
 #! TARGET_NODE="2"
-#! SOURCE_PORT_DESC="3"
-#! TARGET_PORT_DESC="3"
+#! SOURCE_PORT_DESC="0"
+#! TARGET_PORT_DESC="0"
 #! />
 #! <ATTR_LINK
-#! IDENTIFIER="327691"
+#! IDENTIFIER="589835"
+#! SOURCE_NODE="1"
+#! TARGET_NODE="2"
+#! SOURCE_PORT_DESC="5"
+#! TARGET_PORT_DESC="5"
+#! />
+#! <ATTR_LINK
+#! IDENTIFIER="917515"
+#! SOURCE_NODE="1"
+#! TARGET_NODE="2"
+#! SOURCE_PORT_DESC="14"
+#! TARGET_PORT_DESC="14"
+#! />
+#! <ATTR_LINK
+#! IDENTIFIER="786443"
 #! SOURCE_NODE="1"
 #! TARGET_NODE="2"
 #! SOURCE_PORT_DESC="10"
 #! TARGET_PORT_DESC="10"
 #! />
 #! <ATTR_LINK
-#! IDENTIFIER="786443"
+#! IDENTIFIER="131083"
+#! SOURCE_NODE="1"
+#! TARGET_NODE="2"
+#! SOURCE_PORT_DESC="3"
+#! TARGET_PORT_DESC="3"
+#! />
+#! <ATTR_LINK
+#! IDENTIFIER="458763"
 #! SOURCE_NODE="1"
 #! TARGET_NODE="2"
 #! SOURCE_PORT_DESC="1"
 #! TARGET_PORT_DESC="1"
 #! />
 #! <ATTR_LINK
-#! IDENTIFIER="720907"
+#! IDENTIFIER="327691"
 #! SOURCE_NODE="1"
 #! TARGET_NODE="2"
 #! SOURCE_PORT_DESC="4"
 #! TARGET_PORT_DESC="4"
 #! />
 #! <ATTR_LINK
-#! IDENTIFIER="262155"
+#! IDENTIFIER="655371"
 #! SOURCE_NODE="1"
 #! TARGET_NODE="2"
-#! SOURCE_PORT_DESC="6"
-#! TARGET_PORT_DESC="6"
+#! SOURCE_PORT_DESC="11"
+#! TARGET_PORT_DESC="11"
+#! />
+#! <ATTR_LINK
+#! IDENTIFIER="983051"
+#! SOURCE_NODE="1"
+#! TARGET_NODE="2"
+#! SOURCE_PORT_DESC="9"
+#! TARGET_PORT_DESC="9"
 #! />
 #! <ATTR_LINK
 #! IDENTIFIER="524299"
@@ -1413,50 +1427,57 @@
 #! IDENTIFIER="851979"
 #! SOURCE_NODE="1"
 #! TARGET_NODE="2"
-#! SOURCE_PORT_DESC="0"
-#! TARGET_PORT_DESC="0"
-#! />
-#! <ATTR_LINK
-#! IDENTIFIER="589835"
-#! SOURCE_NODE="1"
-#! TARGET_NODE="2"
 #! SOURCE_PORT_DESC="7"
 #! TARGET_PORT_DESC="7"
 #! />
 #! <ATTR_LINK
-#! IDENTIFIER="393227"
-#! SOURCE_NODE="1"
-#! TARGET_NODE="2"
-#! SOURCE_PORT_DESC="5"
-#! TARGET_PORT_DESC="5"
-#! />
-#! <ATTR_LINK
-#! IDENTIFIER="655371"
+#! IDENTIFIER="196619"
 #! SOURCE_NODE="1"
 #! TARGET_NODE="2"
 #! SOURCE_PORT_DESC="8"
 #! TARGET_PORT_DESC="8"
 #! />
 #! <ATTR_LINK
-#! IDENTIFIER="131084"
+#! IDENTIFIER="262156"
+#! SOURCE_NODE="3"
+#! TARGET_NODE="4"
+#! SOURCE_PORT_DESC="3"
+#! TARGET_PORT_DESC="3"
+#! />
+#! <ATTR_LINK
+#! IDENTIFIER="458764"
 #! SOURCE_NODE="3"
 #! TARGET_NODE="4"
 #! SOURCE_PORT_DESC="2"
 #! TARGET_PORT_DESC="2"
 #! />
 #! <ATTR_LINK
-#! IDENTIFIER="458764"
+#! IDENTIFIER="131084"
+#! SOURCE_NODE="3"
+#! TARGET_NODE="4"
+#! SOURCE_PORT_DESC="0"
+#! TARGET_PORT_DESC="0"
+#! />
+#! <ATTR_LINK
+#! IDENTIFIER="327692"
+#! SOURCE_NODE="3"
+#! TARGET_NODE="4"
+#! SOURCE_PORT_DESC="5"
+#! TARGET_PORT_DESC="5"
+#! />
+#! <ATTR_LINK
+#! IDENTIFIER="196620"
 #! SOURCE_NODE="3"
 #! TARGET_NODE="4"
 #! SOURCE_PORT_DESC="6"
 #! TARGET_PORT_DESC="6"
 #! />
 #! <ATTR_LINK
-#! IDENTIFIER="327692"
+#! IDENTIFIER="393228"
 #! SOURCE_NODE="3"
 #! TARGET_NODE="4"
-#! SOURCE_PORT_DESC="0"
-#! TARGET_PORT_DESC="0"
+#! SOURCE_PORT_DESC="4"
+#! TARGET_PORT_DESC="4"
 #! />
 #! <ATTR_LINK
 #! IDENTIFIER="65548"
@@ -1466,84 +1487,28 @@
 #! TARGET_PORT_DESC="1"
 #! />
 #! <ATTR_LINK
-#! IDENTIFIER="196620"
-#! SOURCE_NODE="3"
-#! TARGET_NODE="4"
-#! SOURCE_PORT_DESC="5"
-#! TARGET_PORT_DESC="5"
-#! />
-#! <ATTR_LINK
-#! IDENTIFIER="262156"
-#! SOURCE_NODE="3"
-#! TARGET_NODE="4"
-#! SOURCE_PORT_DESC="4"
-#! TARGET_PORT_DESC="4"
-#! />
-#! <ATTR_LINK
-#! IDENTIFIER="393228"
-#! SOURCE_NODE="3"
-#! TARGET_NODE="4"
-#! SOURCE_PORT_DESC="3"
-#! TARGET_PORT_DESC="3"
-#! />
-#! <ATTR_LINK
-#! IDENTIFIER="458765"
-#! SOURCE_NODE="5"
-#! TARGET_NODE="6"
-#! SOURCE_PORT_DESC="12"
-#! TARGET_PORT_DESC="12"
-#! />
-#! <ATTR_LINK
-#! IDENTIFIER="655373"
-#! SOURCE_NODE="5"
-#! TARGET_NODE="6"
-#! SOURCE_PORT_DESC="4"
-#! TARGET_PORT_DESC="4"
-#! />
-#! <ATTR_LINK
-#! IDENTIFIER="917517"
-#! SOURCE_NODE="5"
-#! TARGET_NODE="6"
-#! SOURCE_PORT_DESC="3"
-#! TARGET_PORT_DESC="3"
-#! />
-#! <ATTR_LINK
-#! IDENTIFIER="262157"
-#! SOURCE_NODE="5"
-#! TARGET_NODE="6"
-#! SOURCE_PORT_DESC="10"
-#! TARGET_PORT_DESC="10"
-#! />
-#! <ATTR_LINK
-#! IDENTIFIER="851981"
-#! SOURCE_NODE="5"
-#! TARGET_NODE="6"
-#! SOURCE_PORT_DESC="9"
-#! TARGET_PORT_DESC="9"
-#! />
-#! <ATTR_LINK
-#! IDENTIFIER="524301"
-#! SOURCE_NODE="5"
-#! TARGET_NODE="6"
-#! SOURCE_PORT_DESC="7"
-#! TARGET_PORT_DESC="7"
-#! />
-#! <ATTR_LINK
-#! IDENTIFIER="327693"
-#! SOURCE_NODE="5"
-#! TARGET_NODE="6"
-#! SOURCE_PORT_DESC="5"
-#! TARGET_PORT_DESC="5"
-#! />
-#! <ATTR_LINK
-#! IDENTIFIER="786445"
+#! IDENTIFIER="131085"
 #! SOURCE_NODE="5"
 #! TARGET_NODE="6"
 #! SOURCE_PORT_DESC="0"
 #! TARGET_PORT_DESC="0"
 #! />
 #! <ATTR_LINK
-#! IDENTIFIER="589837"
+#! IDENTIFIER="458765"
+#! SOURCE_NODE="5"
+#! TARGET_NODE="6"
+#! SOURCE_PORT_DESC="1"
+#! TARGET_PORT_DESC="1"
+#! />
+#! <ATTR_LINK
+#! IDENTIFIER="917517"
+#! SOURCE_NODE="5"
+#! TARGET_NODE="6"
+#! SOURCE_PORT_DESC="5"
+#! TARGET_PORT_DESC="5"
+#! />
+#! <ATTR_LINK
+#! IDENTIFIER="327693"
 #! SOURCE_NODE="5"
 #! TARGET_NODE="6"
 #! SOURCE_PORT_DESC="8"
@@ -1553,74 +1518,95 @@
 #! IDENTIFIER="196621"
 #! SOURCE_NODE="5"
 #! TARGET_NODE="6"
-#! SOURCE_PORT_DESC="6"
-#! TARGET_PORT_DESC="6"
-#! />
-#! <ATTR_LINK
-#! IDENTIFIER="131085"
-#! SOURCE_NODE="5"
-#! TARGET_NODE="6"
 #! SOURCE_PORT_DESC="13"
 #! TARGET_PORT_DESC="13"
 #! />
 #! <ATTR_LINK
+#! IDENTIFIER="786445"
+#! SOURCE_NODE="5"
+#! TARGET_NODE="6"
+#! SOURCE_PORT_DESC="7"
+#! TARGET_PORT_DESC="7"
+#! />
+#! <ATTR_LINK
+#! IDENTIFIER="589837"
+#! SOURCE_NODE="5"
+#! TARGET_NODE="6"
+#! SOURCE_PORT_DESC="12"
+#! TARGET_PORT_DESC="12"
+#! />
+#! <ATTR_LINK
+#! IDENTIFIER="851981"
+#! SOURCE_NODE="5"
+#! TARGET_NODE="6"
+#! SOURCE_PORT_DESC="3"
+#! TARGET_PORT_DESC="3"
+#! />
+#! <ATTR_LINK
+#! IDENTIFIER="393229"
+#! SOURCE_NODE="5"
+#! TARGET_NODE="6"
+#! SOURCE_PORT_DESC="10"
+#! TARGET_PORT_DESC="10"
+#! />
+#! <ATTR_LINK
 #! IDENTIFIER="65549"
+#! SOURCE_NODE="5"
+#! TARGET_NODE="6"
+#! SOURCE_PORT_DESC="9"
+#! TARGET_PORT_DESC="9"
+#! />
+#! <ATTR_LINK
+#! IDENTIFIER="655373"
 #! SOURCE_NODE="5"
 #! TARGET_NODE="6"
 #! SOURCE_PORT_DESC="11"
 #! TARGET_PORT_DESC="11"
 #! />
 #! <ATTR_LINK
-#! IDENTIFIER="720909"
+#! IDENTIFIER="262157"
 #! SOURCE_NODE="5"
 #! TARGET_NODE="6"
-#! SOURCE_PORT_DESC="1"
-#! TARGET_PORT_DESC="1"
+#! SOURCE_PORT_DESC="4"
+#! TARGET_PORT_DESC="4"
 #! />
 #! <ATTR_LINK
-#! IDENTIFIER="393229"
+#! IDENTIFIER="524301"
+#! SOURCE_NODE="5"
+#! TARGET_NODE="6"
+#! SOURCE_PORT_DESC="6"
+#! TARGET_PORT_DESC="6"
+#! />
+#! <ATTR_LINK
+#! IDENTIFIER="720909"
 #! SOURCE_NODE="5"
 #! TARGET_NODE="6"
 #! SOURCE_PORT_DESC="2"
 #! TARGET_PORT_DESC="2"
 #! />
 #! <ATTR_LINK
-#! IDENTIFIER="65550"
-#! SOURCE_NODE="7"
-#! TARGET_NODE="8"
-#! SOURCE_PORT_DESC="6"
-#! TARGET_PORT_DESC="6"
-#! />
-#! <ATTR_LINK
-#! IDENTIFIER="262158"
-#! SOURCE_NODE="7"
-#! TARGET_NODE="8"
-#! SOURCE_PORT_DESC="7"
-#! TARGET_PORT_DESC="7"
-#! />
-#! <ATTR_LINK
-#! IDENTIFIER="131086"
-#! SOURCE_NODE="7"
-#! TARGET_NODE="8"
-#! SOURCE_PORT_DESC="8"
-#! TARGET_PORT_DESC="8"
-#! />
-#! <ATTR_LINK
-#! IDENTIFIER="655374"
+#! IDENTIFIER="327694"
 #! SOURCE_NODE="7"
 #! TARGET_NODE="8"
 #! SOURCE_PORT_DESC="1"
 #! TARGET_PORT_DESC="1"
 #! />
 #! <ATTR_LINK
-#! IDENTIFIER="524302"
+#! IDENTIFIER="720910"
 #! SOURCE_NODE="7"
 #! TARGET_NODE="8"
-#! SOURCE_PORT_DESC="10"
-#! TARGET_PORT_DESC="10"
+#! SOURCE_PORT_DESC="2"
+#! TARGET_PORT_DESC="2"
 #! />
 #! <ATTR_LINK
-#! IDENTIFIER="393230"
+#! IDENTIFIER="262158"
+#! SOURCE_NODE="7"
+#! TARGET_NODE="8"
+#! SOURCE_PORT_DESC="4"
+#! TARGET_PORT_DESC="4"
+#! />
+#! <ATTR_LINK
+#! IDENTIFIER="65550"
 #! SOURCE_NODE="7"
 #! TARGET_NODE="8"
 #! SOURCE_PORT_DESC="5"
@@ -1630,13 +1616,6 @@
 #! IDENTIFIER="589838"
 #! SOURCE_NODE="7"
 #! TARGET_NODE="8"
-#! SOURCE_PORT_DESC="9"
-#! TARGET_PORT_DESC="9"
-#! />
-#! <ATTR_LINK
-#! IDENTIFIER="327694"
-#! SOURCE_NODE="7"
-#! TARGET_NODE="8"
 #! SOURCE_PORT_DESC="0"
 #! TARGET_PORT_DESC="0"
 #! />
@@ -1644,22 +1623,43 @@
 #! IDENTIFIER="458766"
 #! SOURCE_NODE="7"
 #! TARGET_NODE="8"
-#! SOURCE_PORT_DESC="3"
-#! TARGET_PORT_DESC="3"
+#! SOURCE_PORT_DESC="6"
+#! TARGET_PORT_DESC="6"
+#! />
+#! <ATTR_LINK
+#! IDENTIFIER="131086"
+#! SOURCE_NODE="7"
+#! TARGET_NODE="8"
+#! SOURCE_PORT_DESC="9"
+#! TARGET_PORT_DESC="9"
 #! />
 #! <ATTR_LINK
 #! IDENTIFIER="196622"
 #! SOURCE_NODE="7"
 #! TARGET_NODE="8"
-#! SOURCE_PORT_DESC="4"
-#! TARGET_PORT_DESC="4"
+#! SOURCE_PORT_DESC="7"
+#! TARGET_PORT_DESC="7"
 #! />
 #! <ATTR_LINK
-#! IDENTIFIER="720910"
+#! IDENTIFIER="655374"
 #! SOURCE_NODE="7"
 #! TARGET_NODE="8"
-#! SOURCE_PORT_DESC="2"
-#! TARGET_PORT_DESC="2"
+#! SOURCE_PORT_DESC="3"
+#! TARGET_PORT_DESC="3"
+#! />
+#! <ATTR_LINK
+#! IDENTIFIER="524302"
+#! SOURCE_NODE="7"
+#! TARGET_NODE="8"
+#! SOURCE_PORT_DESC="8"
+#! TARGET_PORT_DESC="8"
+#! />
+#! <ATTR_LINK
+#! IDENTIFIER="393230"
+#! SOURCE_NODE="7"
+#! TARGET_NODE="8"
+#! SOURCE_PORT_DESC="10"
+#! TARGET_PORT_DESC="10"
 #! />
 #! </ATTR_LINKS>
 #! <SUBDOCUMENTS>
@@ -1668,19 +1668,19 @@
 #! </LOOKUP_TABLES>
 #! </WORKSPACE>
 #! 
-GUI IGNORE SourceDataset_POSTGRES_1,POSTGRES_IN_HOST_POSTGRES_1,POSTGRES_IN_PORT_POSTGRES_1,POSTGRES_IN_USER_NAME_POSTGRES_1,POSTGRES_IN_PASSWORD_POSTGRES_1,POSTGRES_IN_EXPOSE_ATTRS_GROUP_POSTGRES_1,POSTGRES_IN_FEATURES_PER_FETCH_POSTGRES_1,POSTGRES_IN_BEGIN_SQL_POSTGRES_1,POSTGRES_IN_END_SQL_POSTGRES_1,SourceDataset_POSTGRES_3,POSTGRES_IN_HOST_POSTGRES_3,POSTGRES_IN_PORT_POSTGRES_3,POSTGRES_IN_USER_NAME_POSTGRES_3,POSTGRES_IN_PASSWORD_POSTGRES_3,POSTGRES_IN_EXPOSE_ATTRS_GROUP_POSTGRES_3,POSTGRES_IN_FEATURES_PER_FETCH_POSTGRES_3,POSTGRES_IN_BEGIN_SQL_POSTGRES_3,POSTGRES_IN_END_SQL_POSTGRES_3,DestDataset_POSTGRES_2,POSTGRES_OUT_HOST_POSTGRES_2,POSTGRES_OUT_PORT_POSTGRES_2,POSTGRES_OUT_USER_NAME_POSTGRES_2,POSTGRES_OUT_PASSWORD_POSTGRES_2,POSTGRES_OUT_WRITER_MODE_POSTGRES_2,POSTGRES_OUT_START_TRANSACTION_POSTGRES_2,POSTGRES_OUT_TRANSACTION_INTERVAL_POSTGRES_2,POSTGRES_OUT_BULK_COPY_POSTGRES_2,POSTGRES_OUT_BEGIN_SQL_POSTGRES_2,POSTGRES_OUT_END_SQL_POSTGRES_2,DestDataset_POSTGRES_4,POSTGRES_OUT_HOST_POSTGRES_4,POSTGRES_OUT_PORT_POSTGRES_4,POSTGRES_OUT_USER_NAME_POSTGRES_4,POSTGRES_OUT_PASSWORD_POSTGRES_4,POSTGRES_OUT_WRITER_MODE_POSTGRES_4,POSTGRES_OUT_START_TRANSACTION_POSTGRES_4,POSTGRES_OUT_TRANSACTION_INTERVAL_POSTGRES_4,POSTGRES_OUT_BULK_COPY_POSTGRES_4,POSTGRES_OUT_BEGIN_SQL_POSTGRES_4,POSTGRES_OUT_END_SQL_POSTGRES_4
+GUI IGNORE SourceDataset_POSTGRES_1,POSTGRES_IN_HOST_POSTGRES_1,POSTGRES_IN_PORT_POSTGRES_1,POSTGRES_IN_USER_NAME_POSTGRES_1,POSTGRES_IN_PASSWORD_POSTGRES_1,POSTGRES_IN_EXPOSE_ATTRS_GROUP_POSTGRES_1,POSTGRES_IN_FEATURES_PER_FETCH_POSTGRES_1,POSTGRES_IN_BEGIN_SQL_POSTGRES_1,POSTGRES_IN_END_SQL_POSTGRES_1,SourceDataset_POSTGRES_5,POSTGRES_IN_EXPOSE_ATTRS_GROUP_POSTGRES_5,POSTGRES_IN_FEATURES_PER_FETCH_POSTGRES_5,POSTGRES_IN_BEGIN_SQL_POSTGRES_5,POSTGRES_IN_END_SQL_POSTGRES_5,DestDataset_POSTGRES_3,POSTGRES_OUT_HOST_POSTGRES_3,POSTGRES_OUT_PORT_POSTGRES_3,POSTGRES_OUT_USER_NAME_POSTGRES_3,POSTGRES_OUT_PASSWORD_POSTGRES_3,POSTGRES_OUT_WRITER_MODE_POSTGRES_3,POSTGRES_OUT_START_TRANSACTION_POSTGRES_3,POSTGRES_OUT_TRANSACTION_INTERVAL_POSTGRES_3,POSTGRES_OUT_BULK_COPY_POSTGRES_3,POSTGRES_OUT_BEGIN_SQL_POSTGRES_3,POSTGRES_OUT_END_SQL_POSTGRES_3,DestDataset_POSTGRES_4,POSTGRES_OUT_HOST_POSTGRES_4,POSTGRES_OUT_PORT_POSTGRES_4,POSTGRES_OUT_USER_NAME_POSTGRES_4,POSTGRES_OUT_PASSWORD_POSTGRES_4,POSTGRES_OUT_WRITER_MODE_POSTGRES_4,POSTGRES_OUT_START_TRANSACTION_POSTGRES_4,POSTGRES_OUT_TRANSACTION_INTERVAL_POSTGRES_4,POSTGRES_OUT_BULK_COPY_POSTGRES_4,POSTGRES_OUT_BEGIN_SQL_POSTGRES_4,POSTGRES_OUT_END_SQL_POSTGRES_4
 DEFAULT_MACRO SourceDataset_POSTGRES gip
 GUI TEXT SourceDataset_POSTGRES Base de données :
 DEFAULT_MACRO DestDataset_POSTGRES bsd
 GUI TEXT DestDataset_POSTGRES Base de données :
-DEFAULT_MACRO SourceDataset_POSTGRES_2 gip
-GUI TEXT SourceDataset_POSTGRES_2 Base de données :
-DEFAULT_MACRO DestDataset_POSTGRES_3 bsd
-GUI TEXT DestDataset_POSTGRES_3 Base de données :
+DEFAULT_MACRO DestDataset_POSTGRES_2 bsd
+GUI TEXT DestDataset_POSTGRES_2 Base de données :
+DEFAULT_MACRO SourceDataset_POSTGRES_4 cartogip<at>46.105.215.183:5432<solidus>gip
+GUI NAMED_DB_CONNECTION_ENCODED SourceDataset_POSTGRES_4 FMT:POSTGRES Connection:
 INCLUDE [ if {{$(SourceDataset_POSTGRES)} == {}} { puts_real {Parameter 'SourceDataset_POSTGRES' must be given a value.}; exit 1; }; ]
 INCLUDE [ if {{$(DestDataset_POSTGRES)} == {}} { puts_real {Parameter 'DestDataset_POSTGRES' must be given a value.}; exit 1; }; ]
-INCLUDE [ if {{$(SourceDataset_POSTGRES_2)} == {}} { puts_real {Parameter 'SourceDataset_POSTGRES_2' must be given a value.}; exit 1; }; ]
-INCLUDE [ if {{$(DestDataset_POSTGRES_3)} == {}} { puts_real {Parameter 'DestDataset_POSTGRES_3' must be given a value.}; exit 1; }; ]
+INCLUDE [ if {{$(DestDataset_POSTGRES_2)} == {}} { puts_real {Parameter 'DestDataset_POSTGRES_2' must be given a value.}; exit 1; }; ]
+INCLUDE [ if {{$(SourceDataset_POSTGRES_4)} == {}} { puts_real {Parameter 'SourceDataset_POSTGRES_4' must be given a value.}; exit 1; }; ]
 #! START_HEADER
 #! encoding="utf-8"
 #! WORKSPACE_VERSION 1
@@ -1737,13 +1737,13 @@ MULTI_READER_TYPE{0} POSTGRES
 MULTI_READER_KEYWORD{0} POSTGRES_1
 MULTI_READER_GEN_DIRECTIVES{0} QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS,Yes,SCHEMALIST,administration_visionneuse,HOST,46.105.215.183,PORT,5432,USER_NAME,cartogip,SourceDataset,gip,FME_GEOMETRY_HANDLING,Enhanced
 MULTI_READER_TYPE{1} POSTGRES
-MULTI_READER_KEYWORD{1} POSTGRES_3
-MULTI_READER_GEN_DIRECTIVES{1} PORT,5432,USER_NAME,cartogip,QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS,Yes,FME_CONNECTION_GROUP,,_MERGE_SCHEMAS,YES,EXPOSE_ATTRS_GROUP,,HOST,46.105.215.183,TABLELIST,administration_visionneuse.couche,SCHEMALIST,administration_visionneuse,POSTGRES_EXPOSE_FORMAT_ATTRS,
+MULTI_READER_KEYWORD{1} POSTGRES_5
+MULTI_READER_GEN_DIRECTIVES{1} TABLELIST,administration_visionneuse.couche,_MERGE_SCHEMAS,YES,EXPOSE_ATTRS_GROUP,,FME_CONNECTION_GROUP,,SCHEMALIST,administration_visionneuse,QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS,Yes,POSTGRES_EXPOSE_FORMAT_ATTRS,,NAMED_CONNECTION,cartogip<lt>at<gt>46.105.215.183:5432<lt>solidus<gt>gip
 WRITER_TYPE MULTI_WRITER
 MULTI_WRITER_DATASET_ORDER BY_ID
 MULTI_WRITER_FIRST_WRITER_ID 0
 MULTI_WRITER_TYPE{0} POSTGRES
-MULTI_WRITER_KEYWORD{0} POSTGRES_2
+MULTI_WRITER_KEYWORD{0} POSTGRES_3
 MULTI_WRITER_TYPE{1} POSTGRES
 MULTI_WRITER_KEYWORD{1} POSTGRES_4
 #! END_WB_HEADER
@@ -1791,98 +1791,86 @@ POSTGRES_1_END_SQL "$(POSTGRES_IN_END_SQL_POSTGRES_1)"
 POSTGRES_1_DATASET "$(SourceDataset_POSTGRES_1)"
 #! END_SOURCE_HEADER
 #! START_WB_HEADER
-MACRO WB_KEYWORD "POSTGRES_3"
+MACRO WB_KEYWORD "POSTGRES_5"
 #! END_WB_HEADER
-#! START_SOURCE_HEADER POSTGRES POSTGRES_3
+#! START_SOURCE_HEADER POSTGRES POSTGRES_5
 # The dataset this mapping file was generated from was:
 #! END_SOURCE_HEADER
 #! START_WB_HEADER
 DEFAULT_MACRO SourceDataset
 INCLUDE [ if {{$(SourceDataset)} != ""} {                        \
- puts {DEFAULT_MACRO SourceDataset_POSTGRES_3 $(SourceDataset)}     \
+ puts {DEFAULT_MACRO SourceDataset_POSTGRES_5 $(SourceDataset)}     \
  } ]
 #! END_WB_HEADER
-#! START_SOURCE_HEADER POSTGRES POSTGRES_3
-DEFAULT_MACRO SourceDataset_POSTGRES_3 $(SourceDataset_POSTGRES_2)
-GUI TEXT SourceDataset_POSTGRES_3 Database:
-DEFAULT_MACRO POSTGRES_IN_QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS_POSTGRES_3 Yes
-POSTGRES_3_QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS "$(POSTGRES_IN_QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS_POSTGRES_3)"
-DEFAULT_MACRO POSTGRES_IN_HOST_POSTGRES_3 46.105.215.183
-POSTGRES_3_HOST "$(POSTGRES_IN_HOST_POSTGRES_3)"
-GUI TEXT POSTGRES_IN_HOST_POSTGRES_3 Host:
-DEFAULT_MACRO POSTGRES_IN_PORT_POSTGRES_3 5432
-POSTGRES_3_PORT "$(POSTGRES_IN_PORT_POSTGRES_3)"
-GUI INTEGER POSTGRES_IN_PORT_POSTGRES_3 Port:
-DEFAULT_MACRO POSTGRES_IN_USER_NAME_POSTGRES_3 cartogip
-POSTGRES_3_USER_NAME "$(POSTGRES_IN_USER_NAME_POSTGRES_3)"
-GUI TEXT POSTGRES_IN_USER_NAME_POSTGRES_3 Username:
-DEFAULT_MACRO POSTGRES_IN_PASSWORD_POSTGRES_3 fme_decrypt(MDowfCN8I3xcG3GQ/TeRRUJUZ5LDPtdvpscbh7Nj9gG/INBkAGA+fkaDrNbhZtfa3rmkUUrCxKWaAFwiYsKgWJNl/0mRpxUuP+IT2c+Qhh26JEZtUWAmpuoaQCdQ3ykKWm2zaoAM5MBCGaGEuYe+6AS07/nLNRJwqp1jdwP1FgVCbXRvZtWfKjEZlNJYQ+EicVc6cv2DxCYJyTljvXwF8mKxenML6FKJiHARQCO8OMJidKKZQJP1SeYIhqB0YrtGw4cGV2ZquQKifvRjB2Tl6wBAWDmeCg+R1jvft1tR17SISyTDv77K+mV80w2aaUSgybbF7coM0BrQPcpehfjlW+YxV73+9mPMFXKQeznZ22T8MJor57O44p8U2NQCw35HiFBs0oVP9VkkY0D/WzGRevseyX1pIEWJSQSFwkJVhiyXavMDz5E5SEYgTZHfVeGBXCDuIEEbfRRkPU5yD2nw2ZAVimDRD7UQhEEY6PosGqU17He4y35WEfAggQ40+EKuupOQSZRsKotTTqlYGHJtX49ymuKqfyZzOAUSUzDMcj8gfDgzOCcuhw2sK3fJaMszRCNOUeJRk1kGQKV0sC4DL2dKev2JDoUvr/zs6inQUDQuygssRYHwZwGzUS/tYmXR3m3vIaUd/Bhmj1L5IVk7PxAltqvYYEtqKIJ3wtXPPup2Blg8Z0LQLP6BIGTVYuDTBZf+Kl0pGWiA1FC0DksGfG7lrUosauh1z+UTV8GqmodcC9/7je/hcmmv+oZ28RbRViGw4oqjrUo19BnLdO7vjtFDfwyra4PGELMHFAT4XHrwq7weqx0Vo1LhU4TtCdPaTUsp0xNWgdAC93nuqfllp0H5P31aIzhnJqPNY0ViTLTwPlXkd48YWW3Iu93YczihnHqBwi+m/1s3nbxJo0dqDLwAfhTVXWp0)
-POSTGRES_3_PASSWORD "$(POSTGRES_IN_PASSWORD_POSTGRES_3)"
-GUI OPTIONAL PASSWORD POSTGRES_IN_PASSWORD_POSTGRES_3 Password:
-DEFAULT_MACRO POSTGRES_IN_EXPOSE_ATTRS_GROUP_POSTGRES_3 
-POSTGRES_3_EXPOSE_ATTRS_GROUP "$(POSTGRES_IN_EXPOSE_ATTRS_GROUP_POSTGRES_3)"
-GUI DISCLOSUREGROUP POSTGRES_IN_EXPOSE_ATTRS_GROUP_POSTGRES_3 POSTGRES_EXPOSE_FORMAT_ATTRS Schema Attributes
-DEFAULT_MACRO POSTGRES_IN_FEATURES_PER_FETCH_POSTGRES_3 10000
-GUI FLOAT POSTGRES_IN_FEATURES_PER_FETCH_POSTGRES_3 Number Of Records To Fetch At A Time:
-POSTGRES_3_FEATURES_PER_FETCH $(POSTGRES_IN_FEATURES_PER_FETCH_POSTGRES_3)
-DEFAULT_MACRO POSTGRES_IN_BEGIN_SQL_POSTGRES_3 
-GUI OPTIONAL TEXT_EDIT_SQL POSTGRES_IN_BEGIN_SQL_POSTGRES_3 SQL Statement to Execute Before Translation:
-POSTGRES_3_BEGIN_SQL "$(POSTGRES_IN_BEGIN_SQL_POSTGRES_3)"
-DEFAULT_MACRO POSTGRES_IN_END_SQL_POSTGRES_3 
-GUI OPTIONAL TEXT_EDIT_SQL POSTGRES_IN_END_SQL_POSTGRES_3 SQL Statement to Execute After Translation:
-POSTGRES_3_END_SQL "$(POSTGRES_IN_END_SQL_POSTGRES_3)"
-POSTGRES_3_DATASET "$(SourceDataset_POSTGRES_3)"
+#! START_SOURCE_HEADER POSTGRES POSTGRES_5
+DEFAULT_MACRO SourceDataset_POSTGRES_5 $(SourceDataset_POSTGRES_4)
+GUI NAMED_DB_CONNECTION_ENCODED SourceDataset_POSTGRES_5 FMT:POSTGRES Connection:
+DEFAULT_MACRO POSTGRES_IN_QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS_POSTGRES_5 Yes
+POSTGRES_5_QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS "$(POSTGRES_IN_QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS_POSTGRES_5)"
+DEFAULT_MACRO POSTGRES_IN_EXPOSE_ATTRS_GROUP_POSTGRES_5 
+POSTGRES_5_EXPOSE_ATTRS_GROUP "$(POSTGRES_IN_EXPOSE_ATTRS_GROUP_POSTGRES_5)"
+GUI DISCLOSUREGROUP POSTGRES_IN_EXPOSE_ATTRS_GROUP_POSTGRES_5 POSTGRES_EXPOSE_FORMAT_ATTRS Schema Attributes
+DEFAULT_MACRO POSTGRES_IN_FEATURES_PER_FETCH_POSTGRES_5 10000
+GUI FLOAT POSTGRES_IN_FEATURES_PER_FETCH_POSTGRES_5 Number Of Records To Fetch At A Time:
+POSTGRES_5_FEATURES_PER_FETCH $(POSTGRES_IN_FEATURES_PER_FETCH_POSTGRES_5)
+DEFAULT_MACRO POSTGRES_IN_BEGIN_SQL_POSTGRES_5 
+GUI OPTIONAL TEXT_EDIT_SQL POSTGRES_IN_BEGIN_SQL_POSTGRES_5 SQL Statement to Execute Before Translation:
+POSTGRES_5_BEGIN_SQL "$(POSTGRES_IN_BEGIN_SQL_POSTGRES_5)"
+DEFAULT_MACRO POSTGRES_IN_END_SQL_POSTGRES_5 
+GUI OPTIONAL TEXT_EDIT_SQL POSTGRES_IN_END_SQL_POSTGRES_5 SQL Statement to Execute After Translation:
+POSTGRES_5_END_SQL "$(POSTGRES_IN_END_SQL_POSTGRES_5)"
+POSTGRES_5_DATASET "$(SourceDataset_POSTGRES_5)"
 #! END_SOURCE_HEADER
 #! START_WB_HEADER
-MACRO WB_KEYWORD "POSTGRES_2"
+MACRO WB_KEYWORD "POSTGRES_3"
 #! END_WB_HEADER
-#! START_DEST_HEADER POSTGRES POSTGRES_2
+#! START_DEST_HEADER POSTGRES POSTGRES_3
 # The dataset this mapping file was generated for was:
 #! END_DEST_HEADER
 #! START_WB_HEADER
 DEFAULT_MACRO DestDataset
 INCLUDE [ if {"$(DestDataset)" != ""} {                          \
- puts {DEFAULT_MACRO DestDataset_POSTGRES_2 $(DestDataset)}         \
+ puts {DEFAULT_MACRO DestDataset_POSTGRES_3 $(DestDataset)}         \
  } ]
 #! END_WB_HEADER
-#! START_DEST_HEADER POSTGRES POSTGRES_2
-DEFAULT_MACRO DestDataset_POSTGRES_2 $(DestDataset_POSTGRES)
-GUI TEXT DestDataset_POSTGRES_2 Database:
-DEFAULT_MACRO POSTGRES_OUT_HOST_POSTGRES_2 172.30.100.12
-POSTGRES_2_HOST "$(POSTGRES_OUT_HOST_POSTGRES_2)"
-GUI TEXT POSTGRES_OUT_HOST_POSTGRES_2 Host:
-DEFAULT_MACRO POSTGRES_OUT_PORT_POSTGRES_2 5432
-POSTGRES_2_PORT "$(POSTGRES_OUT_PORT_POSTGRES_2)"
-GUI INTEGER POSTGRES_OUT_PORT_POSTGRES_2 Port:
-DEFAULT_MACRO POSTGRES_OUT_USER_NAME_POSTGRES_2 admpostgres
-POSTGRES_2_USER_NAME "$(POSTGRES_OUT_USER_NAME_POSTGRES_2)"
-GUI TEXT POSTGRES_OUT_USER_NAME_POSTGRES_2 Username:
-DEFAULT_MACRO POSTGRES_OUT_PASSWORD_POSTGRES_2 fme_decrypt(MDowfCN8I3xcG3GQ/TeRRUJUZ5LDPtdvpscbh7Nj9gG/INBkAGA+fkaDrNbhZtfa3rmkUUrCxKWaAFwiYsKgWJNl/0mRpxUuP+IT2c+Qhh26JEZtUWAmpuoaQCdQ3ykKWm2zaoAM5MBCGaGEuYe+6AS07/nLNRJwqp1jdwP1FgVCbXRvZtWfKjEZlNJYQ+EicVc6cv2DxCYJyTljvXwF8mKxenML6FKJiHARQCO8OMJidKKZQJP1SeYIhqB0YrtGw4cGV2ZquQKifvRjB2Tl6wBAWDmeCg+R1jvft1tR17SISyTDv77K+mV80w2aaUSgybbF7coM0BrQPcpehfjlW+YxV73+9mPMFXKQeznZ22T8MJor57O44p8U2NQCw35HiFBs0oVP9VkkY0D/WzGRevseyX1pIEWJSQSFwkJVhiyXavMDz5E5SEYgTZHfVeGBXCDuIEEbfRRkPU5yD2nw2ZAVimDRD7UQhEEY6PosGqU17He4y35WEfAggQ40+EKuupOQSZRsKotTTqlYGHJtX49ymuKqfyZzOAUSUzDMcj8gfDgzOCcuhw2sK3fJaMszuwSd6d0m5Drf2FTBYLssA/T+ZHGV7m1piFHTKqbAXdHhBcoXPVovsyCA3JHi80sJAuNfrFdIXGkAWY1PJcDumDCGRoFSgAyUgUg29fT7CA52mZ6YMmHA3XnWe6AOOg7UbwQOSoUoJPpzTxFfIUvuzGSbdAWGNmbkz3xK8KYN8ULzu0JbGKj/BJoaqxkN5b27ZmEpxmifOfXI1d6Z+NEmnXZX7rK4KD9Pla+WEko4QIiCrKLlu1E5lA8tEgZRSNi8QUiam9SI6Ottiujf3s3gszo96Tz0DB0oMjgHCboCOik5QsfO9An6nSQK0XbAKILoCf3hE/R0f9aiGfvw5Dp50ID4osul1p+g)
-POSTGRES_2_PASSWORD "$(POSTGRES_OUT_PASSWORD_POSTGRES_2)"
-GUI OPTIONAL PASSWORD POSTGRES_OUT_PASSWORD_POSTGRES_2 Password:
+#! START_DEST_HEADER POSTGRES POSTGRES_3
+DEFAULT_MACRO DestDataset_POSTGRES_3 $(DestDataset_POSTGRES)
+GUI TEXT DestDataset_POSTGRES_3 Database:
+DEFAULT_MACRO POSTGRES_OUT_HOST_POSTGRES_3 172.30.100.12
+POSTGRES_3_HOST "$(POSTGRES_OUT_HOST_POSTGRES_3)"
+GUI TEXT POSTGRES_OUT_HOST_POSTGRES_3 Host:
+DEFAULT_MACRO POSTGRES_OUT_PORT_POSTGRES_3 5432
+POSTGRES_3_PORT "$(POSTGRES_OUT_PORT_POSTGRES_3)"
+GUI INTEGER POSTGRES_OUT_PORT_POSTGRES_3 Port:
+DEFAULT_MACRO POSTGRES_OUT_USER_NAME_POSTGRES_3 admpostgres
+POSTGRES_3_USER_NAME "$(POSTGRES_OUT_USER_NAME_POSTGRES_3)"
+GUI TEXT POSTGRES_OUT_USER_NAME_POSTGRES_3 Username:
+DEFAULT_MACRO POSTGRES_OUT_PASSWORD_POSTGRES_3 fme_decrypt(MDowfCN8I3xcG3GQ/TeRRUJUZ5LDPtdvpscbh7Nj9gG/INBkAGA+fkaDrNbhZtfa3rmkUUrCxKWaAFwiYsKgWJNl/0mRpxUuP+IT2c+Qhh26JEZtUWAmpuoaQCdQ3ykKWm2zaoAM5MBCGaGEuYe+6AS07/nLNRJwqp1jdwP1FgVCbXRvZtWfKjEZlNJYQ+EicVc6cv2DxCYJyTljvXwF8mKxenML6FKJiHARQCO8OMJidKKZQJP1SeYIhqB0YrtGw4cGV2ZquQKifvRjB2Tl6wBAWDmeCg+R1jvft1tR17SISyTDv77K+mV80w2aaUSgybbF7coM0BrQPcpehfjlW+YxV73+9mPMFXKQeznZ22T8MJor57O44p8U2NQCw35HiFBs0oVP9VkkY0D/WzGRevseyX1pIEWJSQSFwkJVhiyXavMDz5E5SEYgTZHfVeGBXCDuIEEbfRRkPU5yD2nw2ZAVimDRD7UQhEEY6PosGqU17He4y35WEfAggQ40+EKuupOQSZRsKotTTqlYGHJtX49ymuKqfyZzOAUSUzDMcj8gfDgzOCcuhw2sK3fJaMszuwSd6d0m5Drf2FTBYLssA/T+ZHGV7m1piFHTKqbAXdHhBcoXPVovsyCA3JHi80sJAuNfrFdIXGkAWY1PJcDumDCGRoFSgAyUgUg29fT7CA52mZ6YMmHA3XnWe6AOOg7UbwQOSoUoJPpzTxFfIUvuzGSbdAWGNmbkz3xK8KYN8ULzu0JbGKj/BJoaqxkN5b27ZmEpxmifOfXI1d6Z+NEmnXZX7rK4KD9Pla+WEko4QIiCrKLlu1E5lA8tEgZRSNi8QUiam9SI6Ottiujf3s3gszo96Tz0DB0oMjgHCboCOik5QsfO9An6nSQK0XbAKILoCf3hE/R0f9aiGfvw5Dp50ID4osul1p+g)
+POSTGRES_3_PASSWORD "$(POSTGRES_OUT_PASSWORD_POSTGRES_3)"
+GUI OPTIONAL PASSWORD POSTGRES_OUT_PASSWORD_POSTGRES_3 Password:
 # ============================================================================
 # Opt in for destination dataset type vs format type validation
-DEFAULT_MACRO POSTGRES_OUT_DESTINATION_DATASETTYPE_VALIDATION_POSTGRES_2 Yes
-POSTGRES_2_DESTINATION_DATASETTYPE_VALIDATION "$(POSTGRES_OUT_DESTINATION_DATASETTYPE_VALIDATION_POSTGRES_2)"
-DEFAULT_MACRO POSTGRES_OUT_WRITER_MODE_POSTGRES_2 INSERT
-GUI CHOICE POSTGRES_OUT_WRITER_MODE_POSTGRES_2 INSERT%UPDATE%DELETE Writer Mode:
-POSTGRES_2_WRITER_MODE $(POSTGRES_OUT_WRITER_MODE_POSTGRES_2)
-DEFAULT_MACRO POSTGRES_OUT_START_TRANSACTION_POSTGRES_2 0
-GUI TEXT POSTGRES_OUT_START_TRANSACTION_POSTGRES_2 Starting Feature:
-POSTGRES_2_START_TRANSACTION $(POSTGRES_OUT_START_TRANSACTION_POSTGRES_2)
-DEFAULT_MACRO POSTGRES_OUT_TRANSACTION_INTERVAL_POSTGRES_2 1000
-GUI TEXT POSTGRES_OUT_TRANSACTION_INTERVAL_POSTGRES_2 Features Per Transaction:
-POSTGRES_2_TRANSACTION_INTERVAL $(POSTGRES_OUT_TRANSACTION_INTERVAL_POSTGRES_2)
-DEFAULT_MACRO POSTGRES_OUT_BULK_COPY_POSTGRES_2 YES
-GUI CHOICE POSTGRES_OUT_BULK_COPY_POSTGRES_2 YES%NO Bulk Copy Insert:
-POSTGRES_2_BULK_COPY $(POSTGRES_OUT_BULK_COPY_POSTGRES_2)
-DEFAULT_MACRO POSTGRES_OUT_BEGIN_SQL_POSTGRES_2 
-GUI OPTIONAL TEXT_EDIT_SQL POSTGRES_OUT_BEGIN_SQL_POSTGRES_2 SQL Statement to Execute Before Translation:
-POSTGRES_2_BEGIN_SQL "$(POSTGRES_OUT_BEGIN_SQL_POSTGRES_2)"
-DEFAULT_MACRO POSTGRES_OUT_END_SQL_POSTGRES_2 
-GUI OPTIONAL TEXT_EDIT_SQL POSTGRES_OUT_END_SQL_POSTGRES_2 SQL Statement to Execute After Translation:
-POSTGRES_2_END_SQL "$(POSTGRES_OUT_END_SQL_POSTGRES_2)"
-POSTGRES_2_DATASET "$(DestDataset_POSTGRES_2)"
+DEFAULT_MACRO POSTGRES_OUT_DESTINATION_DATASETTYPE_VALIDATION_POSTGRES_3 Yes
+POSTGRES_3_DESTINATION_DATASETTYPE_VALIDATION "$(POSTGRES_OUT_DESTINATION_DATASETTYPE_VALIDATION_POSTGRES_3)"
+DEFAULT_MACRO POSTGRES_OUT_WRITER_MODE_POSTGRES_3 INSERT
+GUI CHOICE POSTGRES_OUT_WRITER_MODE_POSTGRES_3 INSERT%UPDATE%DELETE Writer Mode:
+POSTGRES_3_WRITER_MODE $(POSTGRES_OUT_WRITER_MODE_POSTGRES_3)
+DEFAULT_MACRO POSTGRES_OUT_START_TRANSACTION_POSTGRES_3 0
+GUI TEXT POSTGRES_OUT_START_TRANSACTION_POSTGRES_3 Starting Feature:
+POSTGRES_3_START_TRANSACTION $(POSTGRES_OUT_START_TRANSACTION_POSTGRES_3)
+DEFAULT_MACRO POSTGRES_OUT_TRANSACTION_INTERVAL_POSTGRES_3 1000
+GUI TEXT POSTGRES_OUT_TRANSACTION_INTERVAL_POSTGRES_3 Features Per Transaction:
+POSTGRES_3_TRANSACTION_INTERVAL $(POSTGRES_OUT_TRANSACTION_INTERVAL_POSTGRES_3)
+DEFAULT_MACRO POSTGRES_OUT_BULK_COPY_POSTGRES_3 YES
+GUI CHOICE POSTGRES_OUT_BULK_COPY_POSTGRES_3 YES%NO Bulk Copy Insert:
+POSTGRES_3_BULK_COPY $(POSTGRES_OUT_BULK_COPY_POSTGRES_3)
+DEFAULT_MACRO POSTGRES_OUT_BEGIN_SQL_POSTGRES_3 
+GUI OPTIONAL TEXT_EDIT_SQL POSTGRES_OUT_BEGIN_SQL_POSTGRES_3 SQL Statement to Execute Before Translation:
+POSTGRES_3_BEGIN_SQL "$(POSTGRES_OUT_BEGIN_SQL_POSTGRES_3)"
+DEFAULT_MACRO POSTGRES_OUT_END_SQL_POSTGRES_3 
+GUI OPTIONAL TEXT_EDIT_SQL POSTGRES_OUT_END_SQL_POSTGRES_3 SQL Statement to Execute After Translation:
+POSTGRES_3_END_SQL "$(POSTGRES_OUT_END_SQL_POSTGRES_3)"
+POSTGRES_3_DATASET "$(DestDataset_POSTGRES_3)"
 #! END_DEST_HEADER
 #! START_WB_HEADER
 MACRO WB_KEYWORD "POSTGRES_4"
@@ -1896,7 +1884,7 @@ INCLUDE [ if {"$(DestDataset)" != ""} {                          \
  } ]
 #! END_WB_HEADER
 #! START_DEST_HEADER POSTGRES POSTGRES_4
-DEFAULT_MACRO DestDataset_POSTGRES_4 $(DestDataset_POSTGRES_3)
+DEFAULT_MACRO DestDataset_POSTGRES_4 $(DestDataset_POSTGRES_2)
 GUI TEXT DestDataset_POSTGRES_4 Database:
 DEFAULT_MACRO POSTGRES_OUT_HOST_POSTGRES_4 172.30.100.12
 POSTGRES_4_HOST "$(POSTGRES_OUT_HOST_POSTGRES_4)"
@@ -1947,8 +1935,8 @@ FME_GEOMETRY_HANDLING Enhanced
 FME_STROKE_MAX_DEVIATION 0
 LOG_FILTER_MASK -1
 DEFAULT_MACRO DATASET_KEYWORD_POSTGRES_1 POSTGRES_1
+DEFAULT_MACRO DATASET_KEYWORD_POSTGRES_5 POSTGRES_5
 DEFAULT_MACRO DATASET_KEYWORD_POSTGRES_3 POSTGRES_3
-DEFAULT_MACRO DATASET_KEYWORD_POSTGRES_2 POSTGRES_2
 DEFAULT_MACRO DATASET_KEYWORD_POSTGRES_4 POSTGRES_4
 # -------------------------------------------------------------------------
 
@@ -1956,7 +1944,7 @@ POSTGRES_1_READER_META_ATTRIBUTES fme_feature_type
 
 # -------------------------------------------------------------------------
 
-POSTGRES_3_READER_META_ATTRIBUTES fme_feature_type
+POSTGRES_5_READER_META_ATTRIBUTES fme_feature_type
 
 # -------------------------------------------------------------------------
 
@@ -1968,27 +1956,27 @@ MACRO WORKSPACE_NAME cartogip
 MACRO FME_VIEWER_APP fmedatainspector
 # -------------------------------------------------------------------------
 
-FACTORY_DEF * RoutingFactory   FACTORY_NAME "Router and Unexpected Input Remover"   INPUT FEATURE_TYPE *    ROUTE POSTGRES POSTGRES_1::administration_visionneuse.sys_info_viso_couche_chapitre_export multi_reader_keyword,$(DATASET_KEYWORD_POSTGRES_1) TO FME_GENERIC ::administration_visionneuse.sys_info_viso_couche_chapitre_export ALIAS_GEOMETRY    ROUTE POSTGRES POSTGRES_1::administration_visionneuse.sys_info_visionnseuse_export multi_reader_keyword,$(DATASET_KEYWORD_POSTGRES_1) TO FME_GENERIC ::administration_visionneuse.sys_info_visionnseuse_export ALIAS_GEOMETRY    ROUTE POSTGRES POSTGRES_1::administration_visionneuse.sys_info_couche_export multi_reader_keyword,$(DATASET_KEYWORD_POSTGRES_1) TO FME_GENERIC ::administration_visionneuse.sys_info_couche_export ALIAS_GEOMETRY    ROUTE POSTGRES POSTGRES_1::administration_visionneuse.sys_info_visio_couche_export multi_reader_keyword,$(DATASET_KEYWORD_POSTGRES_1) TO FME_GENERIC ::administration_visionneuse.sys_info_visio_couche_export ALIAS_GEOMETRY    ROUTE POSTGRES POSTGRES_3::administration_visionneuse.couche multi_reader_keyword,$(DATASET_KEYWORD_POSTGRES_3) TO FME_GENERIC ::administration_visionneuse.couche ALIAS_GEOMETRY    MERGE_INPUT Yes   OUTPUT ROUTED FEATURE_TYPE *
-POSTGRES_1_MERGE_DEF POSTGRES_1::administration_visionneuse.sys_info_viso_couche_chapitre_export EXACT administration_visionneuse.sys_info_viso_couche_chapitre_export DEFLINE postgres_type,postgres_none,postgres_sql_where_clause,,postgres_sql_statement,,visionneuse_id,int4,visionneuse_nom,varchar<openparen>40<closeparen>,description,varchar<openparen>200<closeparen>,id_couche,int4,nom_couche,varchar<openparen>50<closeparen>,couche_libelle,varchar<openparen>70<closeparen>,copyright,varchar<openparen>80<closeparen>,copyright_annee_min,int4,copyright_annee_max,int4,sys_date_create,date,sys_date_maj,date,visio_couche_id,int4,ordre,int4,libelle_chapitre,varchar<openparen>255<closeparen>,couche_annuelle,bool
+FACTORY_DEF * RoutingFactory   FACTORY_NAME "Router and Unexpected Input Remover"   INPUT FEATURE_TYPE *    ROUTE POSTGRES POSTGRES_1::administration_visionneuse.sys_info_visionnseuse_export multi_reader_keyword,$(DATASET_KEYWORD_POSTGRES_1) TO FME_GENERIC ::administration_visionneuse.sys_info_visionnseuse_export ALIAS_GEOMETRY    ROUTE POSTGRES POSTGRES_1::administration_visionneuse.sys_info_visio_couche_export multi_reader_keyword,$(DATASET_KEYWORD_POSTGRES_1) TO FME_GENERIC ::administration_visionneuse.sys_info_visio_couche_export ALIAS_GEOMETRY    ROUTE POSTGRES POSTGRES_1::administration_visionneuse.sys_info_couche_export multi_reader_keyword,$(DATASET_KEYWORD_POSTGRES_1) TO FME_GENERIC ::administration_visionneuse.sys_info_couche_export ALIAS_GEOMETRY    ROUTE POSTGRES POSTGRES_1::administration_visionneuse.sys_info_viso_couche_chapitre_export multi_reader_keyword,$(DATASET_KEYWORD_POSTGRES_1) TO FME_GENERIC ::administration_visionneuse.sys_info_viso_couche_chapitre_export ALIAS_GEOMETRY    ROUTE POSTGRES POSTGRES_5::administration_visionneuse.couche multi_reader_keyword,$(DATASET_KEYWORD_POSTGRES_5) TO FME_GENERIC ::administration_visionneuse.couche ALIAS_GEOMETRY    MERGE_INPUT Yes   OUTPUT ROUTED FEATURE_TYPE *
 POSTGRES_1_MERGE_DEF POSTGRES_1::administration_visionneuse.sys_info_visionnseuse_export EXACT administration_visionneuse.sys_info_visionnseuse_export DEFLINE postgres_type,postgres_none,postgres_sql_where_clause,,postgres_sql_statement,,visionneuse_id,int4,visionneuse_nom,varchar<openparen>40<closeparen>,description,varchar<openparen>200<closeparen>,publique,bool,sys_date_create,date,sys_date_maj,date,en_service,bool
-POSTGRES_1_MERGE_DEF POSTGRES_1::administration_visionneuse.sys_info_couche_export EXACT administration_visionneuse.sys_info_couche_export DEFLINE postgres_type,postgres_none,postgres_sql_where_clause,,postgres_sql_statement,,id_couche,int4,nom_couche,varchar<openparen>50<closeparen>,couche_libelle,varchar<openparen>70<closeparen>,raster,bool,copyright,varchar<openparen>80<closeparen>,copyright_annee_min,int4,copyright_annee_max,int4,sys_date_create,date,sys_date_maj,date,en_service,bool,couche_annuelle,bool
 POSTGRES_1_MERGE_DEF POSTGRES_1::administration_visionneuse.sys_info_visio_couche_export EXACT administration_visionneuse.sys_info_visio_couche_export DEFLINE postgres_type,postgres_none,postgres_sql_where_clause,,postgres_sql_statement,,visionneuse_id,int4,visionneuse_nom,varchar<openparen>40<closeparen>,description,varchar<openparen>200<closeparen>,id_couche,int4,nom_couche,varchar<openparen>50<closeparen>,couche_libelle,varchar<openparen>70<closeparen>,copyright,varchar<openparen>80<closeparen>,copyright_annee_min,int4,copyright_annee_max,int4,sys_date_create,date,sys_date_maj,date,visio_couche_id,int4,ordre,int4,couche_annuelle,bool
-POSTGRES_3_MERGE_DEF POSTGRES_3::administration_visionneuse.couche EXACT administration_visionneuse.couche DEFLINE postgres_type,postgres_none,postgres_sql_where_clause,,postgres_sql_statement,,id_couche,serial<comma>PRIKEY,nom_couche,varchar<openparen>50<closeparen>,couche_libelle,varchar<openparen>70<closeparen>,format,varchar<openparen>50<closeparen>,transparent,bool,isbaselayer,bool,minscale,int4,maxscale,int4,icon,varchar<openparen>20<closeparen>,id_couche_parent,int4,couche_schema,varchar<openparen>80<closeparen>,couche_table,varchar<openparen>80<closeparen>,couche_vue_metadata,varchar<openparen>80<closeparen>,couche_champs_geom,varchar<openparen>80<closeparen>,geom_type,varchar<openparen>80<closeparen>,table_clef,varchar<openparen>80<closeparen>,copyright,varchar<openparen>80<closeparen>,lien_fichier_externe,varchar<openparen>80<closeparen>,opacity,int4,classitem,varchar<openparen>80<closeparen>,taille_proportionnelle_echelle,bool,ponctuel_pour_poligon,int4,couche_champs_libelle,varchar<openparen>80<closeparen><comma>BTREE,labelitem,varchar<openparen>80<closeparen>,labelmaxscale,varchar<openparen>80<closeparen>,wms_couches,varchar<openparen>80<closeparen>,id_serveur_wms,int4,filter,varchar<openparen>80<closeparen>,filter_session,varchar<openparen>80<closeparen>,copyright_annee_min,int4,copyright_annee_max,int4,couche_base,varchar<openparen>20<closeparen>,id_geosource,int4,tooltip,varchar<openparen>80<closeparen>,raster,bool,en_cache,bool,extent,varchar<openparen>80<closeparen>,ajout_saisie_id_visionneuse,varchar<openparen>80<closeparen>,afficher_dans_arbre_couche,bool,wmts,bool,epsg,varchar<openparen>80<closeparen>,sys_date_create,date,sys_date_maj,date,en_service,bool,filtre_groupe,bool,couche_annuelle,bool,wfs,bool,actualiser_on,bool,actualiser_delai_defaut,int4
+POSTGRES_1_MERGE_DEF POSTGRES_1::administration_visionneuse.sys_info_couche_export EXACT administration_visionneuse.sys_info_couche_export DEFLINE postgres_type,postgres_none,postgres_sql_where_clause,,postgres_sql_statement,,id_couche,int4,nom_couche,varchar<openparen>50<closeparen>,couche_libelle,varchar<openparen>70<closeparen>,raster,bool,copyright,varchar<openparen>80<closeparen>,copyright_annee_min,int4,copyright_annee_max,int4,sys_date_create,date,sys_date_maj,date,en_service,bool,couche_annuelle,bool
+POSTGRES_1_MERGE_DEF POSTGRES_1::administration_visionneuse.sys_info_viso_couche_chapitre_export EXACT administration_visionneuse.sys_info_viso_couche_chapitre_export DEFLINE postgres_type,postgres_none,postgres_sql_where_clause,,postgres_sql_statement,,visionneuse_id,int4,visionneuse_nom,varchar<openparen>40<closeparen>,description,varchar<openparen>200<closeparen>,id_couche,int4,nom_couche,varchar<openparen>50<closeparen>,couche_libelle,varchar<openparen>70<closeparen>,copyright,varchar<openparen>80<closeparen>,copyright_annee_min,int4,copyright_annee_max,int4,sys_date_create,date,sys_date_maj,date,visio_couche_id,int4,ordre,int4,libelle_chapitre,varchar<openparen>255<closeparen>,couche_annuelle,bool
+POSTGRES_5_MERGE_DEF POSTGRES_5::administration_visionneuse.couche EXACT administration_visionneuse.couche DEFLINE postgres_type,postgres_none,postgres_sql_where_clause,,postgres_sql_statement,,id_couche,serial<comma>PRIKEY,nom_couche,varchar<openparen>50<closeparen>,couche_libelle,varchar<openparen>70<closeparen>,format,varchar<openparen>50<closeparen>,transparent,bool,isbaselayer,bool,minscale,int4,maxscale,int4,icon,varchar<openparen>20<closeparen>,id_couche_parent,int4,couche_schema,varchar<openparen>80<closeparen>,couche_table,varchar<openparen>80<closeparen>,couche_vue_metadata,varchar<openparen>80<closeparen>,couche_champs_geom,varchar<openparen>80<closeparen>,geom_type,varchar<openparen>80<closeparen>,table_clef,varchar<openparen>80<closeparen>,copyright,varchar<openparen>80<closeparen>,lien_fichier_externe,varchar<openparen>80<closeparen>,opacity,int4,classitem,varchar<openparen>80<closeparen>,taille_proportionnelle_echelle,bool,ponctuel_pour_poligon,int4,couche_champs_libelle,varchar<openparen>80<closeparen><comma>BTREE,labelitem,varchar<openparen>80<closeparen>,labelmaxscale,varchar<openparen>80<closeparen>,wms_couches,varchar<openparen>80<closeparen>,id_serveur_wms,int4,filter,varchar<openparen>80<closeparen>,filter_session,varchar<openparen>80<closeparen>,copyright_annee_min,int4,copyright_annee_max,int4,couche_base,varchar<openparen>20<closeparen>,id_geosource,int4,tooltip,varchar<openparen>80<closeparen>,raster,bool,en_cache,bool,extent,varchar<openparen>80<closeparen>,ajout_saisie_id_visionneuse,varchar<openparen>80<closeparen>,afficher_dans_arbre_couche,bool,wmts,bool,epsg,varchar<openparen>80<closeparen>,sys_date_create,date,sys_date_maj,date,en_service,bool,filtre_groupe,bool,couche_annuelle,bool,wfs,bool,actualiser_on,bool,actualiser_delai_defaut,int4
 DEFAULT_MACRO WB_CURRENT_CONTEXT
 # -------------------------------------------------------------------------
 
-FACTORY_DEF * RoutingFactory FACTORY_NAME "Destination Feature Type Routing Correlator"   INPUT FEATURE_TYPE *    ROUTE FME_GENERIC administration_visionneuse.sys_info_viso_couche_chapitre_export TO POSTGRES __GO_TO_FINAL_OUTPUT_ROUTER__ multi_writer_id,0,<at>SupplyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>cartogip.sys_info_viso_couche_chapitre_export<closeparen> GEOMETRY    ROUTE FME_GENERIC administration_visionneuse.sys_info_visionnseuse_export TO POSTGRES __GO_TO_FINAL_OUTPUT_ROUTER__ multi_writer_id,0,<at>SupplyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>cartogip.sys_info_visionnseuse_export<closeparen> GEOMETRY    ROUTE FME_GENERIC administration_visionneuse.sys_info_couche_export TO POSTGRES __GO_TO_FINAL_OUTPUT_ROUTER__ multi_writer_id,0,<at>SupplyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>cartogip.sys_info_couche_export<closeparen> GEOMETRY    ROUTE FME_GENERIC administration_visionneuse.sys_info_visio_couche_export TO POSTGRES __GO_TO_FINAL_OUTPUT_ROUTER__ multi_writer_id,0,<at>SupplyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>cartogip.sys_info_visio_couche_export<closeparen> GEOMETRY    ROUTE FME_GENERIC administration_visionneuse.couche TO POSTGRES __GO_TO_FINAL_OUTPUT_ROUTER__ multi_writer_id,1,<at>SupplyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>cartogip.couche<closeparen> GEOMETRY   OUTPUT ROUTED FEATURE_TYPE * @FeatureType(ENCODED,@Value(__wb_out_feat_type__)) @RemoveAttributes(__wb_out_feat_type__)   OUTPUT NOT_ROUTED FEATURE_TYPE __nuke_me__ @Tcl2("FME_StatMessage 818059 [FME_GetAttribute fme_template_feature_type] 818060 818061 fme_warn")
+FACTORY_DEF * RoutingFactory FACTORY_NAME "Destination Feature Type Routing Correlator"   INPUT FEATURE_TYPE *    ROUTE FME_GENERIC administration_visionneuse.couche TO POSTGRES __GO_TO_FINAL_OUTPUT_ROUTER__ multi_writer_id,0,<at>SupplyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>cartogip.couche_init<closeparen> GEOMETRY    ROUTE FME_GENERIC administration_visionneuse.sys_info_couche_export TO POSTGRES __GO_TO_FINAL_OUTPUT_ROUTER__ multi_writer_id,0,<at>SupplyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>cartogip.sys_info_couche_export<closeparen> GEOMETRY    ROUTE FME_GENERIC administration_visionneuse.sys_info_visionnseuse_export TO POSTGRES __GO_TO_FINAL_OUTPUT_ROUTER__ multi_writer_id,0,<at>SupplyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>cartogip.sys_info_visionnseuse_export<closeparen> GEOMETRY    ROUTE FME_GENERIC administration_visionneuse.sys_info_viso_couche_chapitre_export TO POSTGRES __GO_TO_FINAL_OUTPUT_ROUTER__ multi_writer_id,0,<at>SupplyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>cartogip.sys_info_viso_couche_chapitre_export<closeparen> GEOMETRY    ROUTE FME_GENERIC administration_visionneuse.sys_info_visio_couche_export TO POSTGRES __GO_TO_FINAL_OUTPUT_ROUTER__ multi_writer_id,0,<at>SupplyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>cartogip.sys_info_visio_couche_export<closeparen> GEOMETRY   OUTPUT ROUTED FEATURE_TYPE * @FeatureType(ENCODED,@Value(__wb_out_feat_type__)) @RemoveAttributes(__wb_out_feat_type__)   OUTPUT NOT_ROUTED FEATURE_TYPE __nuke_me__ @Tcl2("FME_StatMessage 818059 [FME_GetAttribute fme_template_feature_type] 818060 818061 fme_warn")
 # -------------------------------------------------------------------------
 
 FACTORY_DEF * TeeFactory   FACTORY_NAME "Final Output Nuker"   INPUT FEATURE_TYPE __nuke_me__
 
 # -------------------------------------------------------------------------
-POSTGRES_2_DEF cartogip.sys_info_viso_couche_chapitre_export   postgres_type                All   postgres_mode                INHERIT_FROM_WRITER   postgres_sql_key_columns     ""   postgres_drop_table          YES   postgres_truncate_table      YES   postgres_create_with_oids    NO   postgres_vacuum_analyze      NO   postgres_allow_serial_writing NO   visionneuse_id               int4   visionneuse_nom              varchar(40)   description                  varchar(200)   id_couche                    int4   nom_couche                   varchar(50)   couche_libelle               varchar(70)   copyright                    varchar(80)   copyright_annee_min          int4   copyright_annee_max          int4   sys_date_create              date   sys_date_maj                 date   visio_couche_id              int4   ordre                        int4   libelle_chapitre             varchar(255)   couche_annuelle              bool
+POSTGRES_3_DEF cartogip.couche_init   postgres_type                All   postgres_mode                INHERIT_FROM_WRITER   postgres_sql_key_columns     ""   postgres_drop_table          NO   postgres_truncate_table      NO   postgres_create_with_oids    NO   postgres_vacuum_analyze      NO   postgres_allow_serial_writing NO   id_couche                    serial,PRIKEY   nom_couche                   varchar(50)   couche_libelle               varchar(70)   format                       varchar(50)   transparent                  bool   isbaselayer                  bool   minscale                     int4   maxscale                     int4   icon                         varchar(20)   id_couche_parent             int4   couche_schema                varchar(80)   couche_table                 varchar(80)   couche_vue_metadata          varchar(80)   couche_champs_geom           varchar(80)   geom_type                    varchar(80)   table_clef                   varchar(80)   copyright                    varchar(80)   lien_fichier_externe         varchar(80)   opacity                      int4   classitem                    varchar(80)   taille_proportionnelle_echelle bool   ponctuel_pour_poligon        int4   couche_champs_libelle        varchar(80),BTREE   labelitem                    varchar(80)   labelmaxscale                varchar(80)   wms_couches                  varchar(255)   id_serveur_wms               int4   filter                       varchar(255)   filter_session               varchar(255)   copyright_annee_min          int4   copyright_annee_max          int4   couche_base                  varchar(20)   id_geosource                 int4   tooltip                      varchar(255)   raster                       bool   en_cache                     bool   extent                       varchar(80)   ajout_saisie_id_visionneuse  varchar(80)   afficher_dans_arbre_couche   bool   wmts                         bool   epsg                         varchar(80)   sys_date_create              date   sys_date_maj                 date   en_service                   bool   filtre_groupe                bool   couche_annuelle              bool   wfs                          bool   actualiser_on                bool   actualiser_delai_defaut      int4
 # -------------------------------------------------------------------------
-POSTGRES_2_DEF cartogip.sys_info_visionnseuse_export   postgres_type                All   postgres_mode                INHERIT_FROM_WRITER   postgres_sql_key_columns     ""   postgres_drop_table          YES   postgres_truncate_table      YES   postgres_create_with_oids    NO   postgres_vacuum_analyze      NO   postgres_allow_serial_writing NO   visionneuse_id               int4   visionneuse_nom              varchar(40)   description                  varchar(200)   publique                     bool   sys_date_create              date   sys_date_maj                 date   en_service                   bool
+POSTGRES_3_DEF cartogip.sys_info_couche_export   postgres_type                All   postgres_mode                INHERIT_FROM_WRITER   postgres_sql_key_columns     ""   postgres_drop_table          YES   postgres_truncate_table      YES   postgres_create_with_oids    NO   postgres_vacuum_analyze      NO   postgres_allow_serial_writing NO   id_couche                    int4   nom_couche                   varchar(50)   couche_libelle               varchar(70)   raster                       bool   copyright                    varchar(80)   copyright_annee_min          int4   copyright_annee_max          int4   sys_date_create              date   sys_date_maj                 date   en_service                   bool   couche_annuelle              bool
 # -------------------------------------------------------------------------
-POSTGRES_2_DEF cartogip.sys_info_couche_export   postgres_type                All   postgres_mode                INHERIT_FROM_WRITER   postgres_sql_key_columns     ""   postgres_drop_table          YES   postgres_truncate_table      YES   postgres_create_with_oids    NO   postgres_vacuum_analyze      NO   postgres_allow_serial_writing NO   id_couche                    int4   nom_couche                   varchar(50)   couche_libelle               varchar(70)   raster                       bool   copyright                    varchar(80)   copyright_annee_min          int4   copyright_annee_max          int4   sys_date_create              date   sys_date_maj                 date   en_service                   bool   couche_annuelle              bool
+POSTGRES_3_DEF cartogip.sys_info_visionnseuse_export   postgres_type                All   postgres_mode                INHERIT_FROM_WRITER   postgres_sql_key_columns     ""   postgres_drop_table          YES   postgres_truncate_table      YES   postgres_create_with_oids    NO   postgres_vacuum_analyze      NO   postgres_allow_serial_writing NO   visionneuse_id               int4   visionneuse_nom              varchar(40)   description                  varchar(200)   publique                     bool   sys_date_create              date   sys_date_maj                 date   en_service                   bool
 # -------------------------------------------------------------------------
-POSTGRES_2_DEF cartogip.sys_info_visio_couche_export   postgres_type                All   postgres_mode                INHERIT_FROM_WRITER   postgres_sql_key_columns     ""   postgres_drop_table          YES   postgres_truncate_table      YES   postgres_create_with_oids    NO   postgres_vacuum_analyze      NO   postgres_allow_serial_writing NO   visionneuse_id               int4   visionneuse_nom              varchar(40)   description                  varchar(200)   id_couche                    int4   nom_couche                   varchar(50)   couche_libelle               varchar(70)   copyright                    varchar(80)   copyright_annee_min          int4   copyright_annee_max          int4   sys_date_create              date   sys_date_maj                 date   visio_couche_id              int4   ordre                        int4   couche_annuelle              bool
+POSTGRES_3_DEF cartogip.sys_info_viso_couche_chapitre_export   postgres_type                All   postgres_mode                INHERIT_FROM_WRITER   postgres_sql_key_columns     ""   postgres_drop_table          YES   postgres_truncate_table      YES   postgres_create_with_oids    NO   postgres_vacuum_analyze      NO   postgres_allow_serial_writing NO   visionneuse_id               int4   visionneuse_nom              varchar(40)   description                  varchar(200)   id_couche                    int4   nom_couche                   varchar(50)   couche_libelle               varchar(70)   copyright                    varchar(80)   copyright_annee_min          int4   copyright_annee_max          int4   sys_date_create              date   sys_date_maj                 date   visio_couche_id              int4   ordre                        int4   libelle_chapitre             varchar(255)   couche_annuelle              bool
 # -------------------------------------------------------------------------
-POSTGRES_4_DEF cartogip.couche   postgres_type                All   postgres_mode                INHERIT_FROM_WRITER   postgres_sql_key_columns     ""   postgres_drop_table          YES   postgres_truncate_table      YES   postgres_create_with_oids    NO   postgres_vacuum_analyze      NO   postgres_allow_serial_writing NO   id_couche                    serial,PRIKEY   nom_couche                   varchar(254)   couche_libelle               varchar(254)   format                       varchar(254)   transparent                  bool   isbaselayer                  bool   minscale                     int4   maxscale                     int4   icon                         varchar(254)   id_couche_parent             int4   couche_schema                varchar(254)   couche_table                 varchar(254)   couche_vue_metadata          varchar(254)   couche_champs_geom           varchar(254)   geom_type                    varchar(254)   table_clef                   varchar(254)   copyright                    varchar(254)   lien_fichier_externe         varchar(254)   opacity                      int4   classitem                    varchar(254)   taille_proportionnelle_echelle bool   ponctuel_pour_poligon        int4   couche_champs_libelle        varchar(254),BTREE   labelitem                    varchar(254)   labelmaxscale                varchar(254)   wms_couches                  varchar(254)   id_serveur_wms               int4   filter                       varchar(254)   filter_session               varchar(254)   copyright_annee_min          int4   copyright_annee_max          int4   couche_base                  varchar(254)   id_geosource                 int4   tooltip                      varchar(254)   raster                       bool   en_cache                     bool   extent                       varchar(254)   ajout_saisie_id_visionneuse  varchar(254)   afficher_dans_arbre_couche   bool   wmts                         bool   epsg                         varchar(254)   sys_date_create              date   sys_date_maj                 date   en_service                   bool   filtre_groupe                bool   couche_annuelle              bool   wfs                          bool   actualiser_on                bool   actualiser_delai_defaut      int4
+POSTGRES_3_DEF cartogip.sys_info_visio_couche_export   postgres_type                All   postgres_mode                INHERIT_FROM_WRITER   postgres_sql_key_columns     ""   postgres_drop_table          YES   postgres_truncate_table      YES   postgres_create_with_oids    NO   postgres_vacuum_analyze      NO   postgres_allow_serial_writing NO   visionneuse_id               int4   visionneuse_nom              varchar(40)   description                  varchar(200)   id_couche                    int4   nom_couche                   varchar(50)   couche_libelle               varchar(70)   copyright                    varchar(80)   copyright_annee_min          int4   copyright_annee_max          int4   sys_date_create              date   sys_date_maj                 date   visio_couche_id              int4   ordre                        int4   couche_annuelle              bool

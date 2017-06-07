@@ -70,10 +70,10 @@ public class PostGreSQL {
                 sql = "SELECT title, idcouche FROM geoserver_xml";
                 break;
             case "Cartogip":
-                sql = "SELECT couche_libelle, id_couche, couche_schema FROM couche";
+                sql = "SELECT titre, id, couche_schema FROM couche";
                 break;
             case "BSD":
-                sql = "SELECT type_donnees_echange_libelle, no_type_donnees_echange FROM type_donnees_echange";
+                sql = "SELECT titre, id FROM type_donnees_echange";
                 break;
         }
 

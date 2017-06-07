@@ -17,12 +17,13 @@ public class PostGreSQL {
      */
     private Statement stmt;
 
-    private ArrayList<Line> lines;
+    private ArrayList<Line> linesInit, linesFinal;
 
     public PostGreSQL(){
         c = null;
         stmt = null;
-        lines = new ArrayList<>();
+        linesInit = new ArrayList<>();
+        linesFinal = new ArrayList<>();
     }
 
     /**
@@ -57,12 +58,22 @@ public class PostGreSQL {
         }
     }
 
+    public void dropTable(String table){
+        try {
+            String sql = "DROP TABLE " + table;
+            stmt.executeUpdate(sql); // est éxécuté sur le statement
+            System.out.println("Table drop");
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
+
     /**
      * Créer la table test
      */
     public void createTable(String table){
         try {
-            String sql = "CREATE TABLE IF NOT EXISTS" + table + " (id serial PRIMARY KEY, uuid text UNIQUE, title text, data xml, isharvested character(1), source text); "; // notre requete
+            String sql = "CREATE TABLE IF NOT EXISTS " + table + " (id serial PRIMARY KEY, uuid text UNIQUE, title text, data xml, isharvested character(1), source text); "; // notre requete
             stmt.executeUpdate(sql); // est éxécuté sur le statement
             System.out.println("Table created");
         } catch (SQLException e) {
@@ -70,8 +81,8 @@ public class PostGreSQL {
         }
     }
 
-    public boolean rowExists(String id){
-        String query = "select exists(select 1 from metadata where uuid = '" + id + "');";
+    public boolean rowExists(String id, String table){
+        String query = "select exists(select 1 from " + table + " where uuid = '" + id + "');";
         try {
             PreparedStatement pst = c.prepareStatement(query);
             ResultSet rs = pst.executeQuery();
@@ -88,17 +99,16 @@ public class PostGreSQL {
      * Stocke les lignes récupéré grâce au template passé en parametre
      * @param path
      */
-    public void getLines(String path){
+    public void getLinesOnInit(String path){
         try {
             String sql = "with template as(\n" +
                     "select data::xml as data,\n" +
                     path +
                     "isharvested as harvested,\n" +
-                    "source as source,\n" +
-                    "id as id \n" +
-                    "from metadata_init)\n" +
+                    "source as source\n" +
+                    "from geonetwork.metadata_init)\n" +
                     "\n" +
-                    "select uuid, title, data, harvested, source, id from template where uuid is not null AND title is not null;";
+                    "select uuid, title, data, harvested, source from template where uuid is not null AND title is not null;";
 
             // La requete précendente crée un template où nous pouvons trouvé nos données, le path (le chemin d'acces des données dans le XML) est le seul a changé, dans tout cela nous recuperons uniquement
             // ceux dont l'uuid et le titre (les deux champs récupérés grâce au path) ne sont pas nuls.
@@ -119,18 +129,12 @@ public class PostGreSQL {
                 data.setString(dataString);
 
                 String harvested = rs.getString(4);
-                harvested = harvested.replace("'", "''");
 
                 String source = rs.getString(5);
                 source = source.replace("'", "''");
 
-                int id = rs.getInt(6);
-
-                String query = "DELETE FROM metadata_init where id = '" + id + "';"; //supprime de metadata_id la ligne qu'on vient d'ajouter dans metadata.
-                stmt.executeUpdate(query);
-
                 Line line = new Line(uuid, title, data, harvested, source);
-                lines.add(line);
+                linesInit.add(line);
             }
         } catch (SQLException e) {
             e.printStackTrace();
@@ -140,19 +144,65 @@ public class PostGreSQL {
     /**
      * Ajoute une ligne à la nouvelle table
      * @param table
-     * @param line
      */
-    public void addLine(String table, Line line){
-        try {
-            if(!rowExists(line.getUuid())){
-                String sql = "INSERT INTO " + table + "(uuid, title, data, isharvested, source) VALUES( '" + line.getUuid() + "', '" + line.getTitle() + "', '" + line.getData()
-                        + "', '" + line.getHarvested() + "', '" + line.getSource() + "');";
+    public void insertLine(String table){
+        for (Line l : linesInit) {
+            try {
+                String sql;
+                if(!rowExists(l.getUuid(), table)){
+                    sql = "INSERT INTO " + table + "(uuid, title, data, isharvested, source) VALUES( '" + l.getUuid() + "', '" + l.getTitle() + "', '" + l.getData()
+                            + "', '" + l.getHarvested() + "', '" + l.getSource() + "');";
+                }
+                else{
+                    sql = "UPDATE " + table + " SET title = '" + l.getTitle() + "' where uuid = '" + l.getUuid() + "';";
+                }
                 stmt.executeUpdate(sql);
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+
+    public void getLinesOnFinal(){
+        String sql = "SELECT uuid from geonetwork.metadata;";
+        try {
+            PreparedStatement pst = c.prepareStatement(sql);
+            ResultSet rs = pst.executeQuery();
+            while(rs.next()){
+                String id = rs.getString(1);
+                Line l = new Line(id, null, null, null, null);
+                linesFinal.add(l);
             }
         } catch (SQLException e) {
             e.printStackTrace();
         }
     }
 
-    public ArrayList<Line> getLines() { return lines; }
+    public void deleteLinesOnFinal(){
+        for (Line lineFinal : linesFinal) {
+            boolean exists = false;
+            for (Line lineInit :linesInit) {
+                if(lineFinal.getUuid().equals(lineInit.getUuid())){
+                    exists = true;
+                    break;
+                }
+            }
+            if(!exists){
+                String sql = "UPDATE communs.correspondance SET idgeonetwork = null where idgeonetwork = '" + lineFinal.getUuid() + "';";
+                try {
+                    stmt.executeUpdate(sql);
+                } catch (SQLException e) {
+                    e.printStackTrace();
+                }
+
+                sql = "DELETE FROM geonetwork.metadata where uuid = '" + lineFinal.getUuid() + "';";
+                try {
+                    stmt.executeUpdate(sql);
+                } catch (SQLException e) {
+                    e.printStackTrace();
+                }
+                System.out.println("Donnée supprimée");
+            }
+        }
+    }
 }

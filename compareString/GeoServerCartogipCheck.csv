@@ -1,0 +1,83 @@
+GeoServer,ID GeoServer,Cartogip,ID Cartogip
+ERDF - Appareil de coupure sous terrain moyenne tension,FeatureTypeInfoImpl--433409c9:133c599c9af:-7d2e,erdf - Appareil de coupure sous terrain moyenne tension,1148
+ERDF - Réseau aérien moyenne tension (15kv - 20kv),FeatureTypeInfoImpl-50da8329:133db20c97a:-7955,erdf - Réseau aérien moyenne tension (15KV - 20Kv),1161
+ERDF - Réseau enterré moyenne tension (15kv - 20kv),FeatureTypeInfoImpl-50da8329:133db20c97a:-7951,erdf - Réseau enterré moyenne tension (15KV - 20Kv),1163
+PIGMA - Part des actifs occupés 15 ans et plus travaillant hors de leurs communes de résidence en 2009,FeatureTypeInfoImpl-2af25b80:13ab1de8d76:-6cf0,insee - Part des actifs occupés travaillant hors communes de résidence en 2007,729
+ERDF - Appareil de coupure aérien moyenne tension,FeatureTypeInfoImpl--433409c9:133c599c9af:-7cf8,erdf - Appareil de coupure aérien moyenne tension,416
+ERDF - Poste de transformation RTE - ERDF,FeatureTypeInfoImpl--433409c9:133c599c9af:-7d35,erdf - Poste de transformation RTE - ERDF,1158
+ONF - Forêts relevant du régime forestier,FeatureTypeInfoImpl--2f77feef:134c1e338be:5417,wms_externe - ONF : Forêts relevant du régime forestier,1836
+ERDF - Réseau aérien basse tension (<=400V),FeatureTypeInfoImpl-50da8329:133db20c97a:-7957,erdf - Réseau aérien basse tension <=400V,1160
+ERDF - Réseau enterré basse tension (<=400V),FeatureTypeInfoImpl-50da8329:133db20c97a:-7953,erdf - Réseau enterré basse tension <=400V,935
+PIGMA - Part des 15-24 ans dans la population totale 2009,FeatureTypeInfoImpl-43d64256:13adafc165f:-4dd5,socio_economique - Part des 15-24 ans dans la population totale,549
+PIGMA - Part des 25-54 ans dans la population totale 2009,FeatureTypeInfoImpl-43d64256:13ada8f133b:42c2,socio_economique - Part des 25-54 ans dans la population totale,1042
+PIGMA - Part des 55-64 ans dans la population totale en 2009,FeatureTypeInfoImpl-43d64256:13adaa976ed:-5520,socio_economique - Part des 55-64 ans dans la population totale,698
+PIGMA - Part des actifs 15-64 ans / population totale en 2009,FeatureTypeInfoImpl-43d64256:13adb3c847f:-fff,socio_economique - Part des actifs 15-64 ans par rapport à la population totale,463
+Dreal-TRI-Hauteur eau Aléa Faible Proba-Subm,FeatureTypeInfoImpl-5a07631d:14d667a418d:-49ef,wms_externe - Dreal-TRI-Hauteur eau Aléa Faible Proba-Subm,2010
+Dreal-TRI-Hauteur eau Aléa Forte Proba-Subm,FeatureTypeInfoImpl-5a07631d:14d667a418d:-4999,wms_externe - Dreal-TRI-Hauteur eau Aléa Forte Proba-Subm,2007
+DREAL - Accidents de 2004 à 2014 en Aquitaine,FeatureTypeInfoImpl--6a74e5bd:15027ff6da0:4cb,dreal - Accidents 2004 2014 rd 33,1757
+PIGMA - Part des actifs 15-24 ans / actifs 15-64 ans en 2009,FeatureTypeInfoImpl-43d64256:13adb8ea577:-58f4,socio_economique - Part des actifs de 15-24 ans par rapport aux actifs de 15-64 ans,1017
+PIGMA - Part des actifs 25-54 ans / actifs 15-64 ans en 2009,FeatureTypeInfoImpl-43d64256:13adb8ea577:-19e7,socio_economique - Part des actifs de 25-54 ans par rapport aux actifs de 15-64 ans,743
+PIGMA - Part des actifs 55-64 ans / actifs 15-64 ans en 2009,FeatureTypeInfoImpl-43d64256:13adb8ea577:-21aa,socio_economique - Part des actifs de 55-64 ans par rapport aux actifs de 15-64 ans,1015
+INSEE - Population par iris,FeatureTypeInfoImpl-48337e3e:150c868ce7e:3d12,insee - Population iris 2007,307
+INSEE - Population par communes,FeatureTypeInfoImpl-48337e3e:150c868ce7e:3cfa,insee - Population communes 1962,177
+Dreal-TRI-Proba crue faible-Debord,FeatureTypeInfoImpl--6dc709cf:14d4de3c19f:-57e4,null - Dreal-TRI-Proba crue faible-Debord,2037
+Dreal-TRI-Proba crue Fort-Debord,FeatureTypeInfoImpl--6dc709cf:14d4de3c19f:-5740,null - Dreal-TRI-Proba crue Fort-Debord,2035
+Dreal-TRI-Proba crue Moy-Debord,FeatureTypeInfoImpl--6dc709cf:14d4de3c19f:-576c,null - Dreal-TRI-Proba crue Moy-Debord,2026
+Dreal-TRI-Hauteur eau Aléa Moy Proba-Subm,FeatureTypeInfoImpl-5a07631d:14d667a418d:-49d5,wms_externe - Dreal-TRI-Hauteur eau Aléa Forte Proba-Subm,2007
+ERDF - Poste électrique,FeatureTypeInfoImpl--433409c9:133c599c9af:-7d0f,erdf - Poste électrique,1157
+INSEE - Population par départements,FeatureTypeInfoImpl-48337e3e:150c868ce7e:3eff,insee - Population par départements 2008,375
+INSEE - Population par EPCI,FeatureTypeInfoImpl-48337e3e:150c868ce7e:3da9,insee - Population par EPCI (2007),1193
+IGN - Scan 1000,CoverageInfoImpl-1b853102:1405956ab90:5983,null - Scan 1000 IGN,582
+INSEE - Densité population carroyage 200m,FeatureTypeInfoImpl--6dc19e29:136a16cf456:-7ea,insee - Carroyage 200m,615
+INSEE - Population par arrondissements,FeatureTypeInfoImpl-48337e3e:150c868ce7e:376d,insee - Population par arrondissements 2007,164
+INSEE - Population par cantons,FeatureTypeInfoImpl-48337e3e:150c868ce7e:3b7a,insee - Population par cantons 2008,426
+TIGF -  Postes de livraison,FeatureTypeInfoImpl-24a8bf94:13846bea89d:-78ae,tigf - Postes de livraison (TIGF),436
+TIGF - Sectionnement robinets,FeatureTypeInfoImpl-24a8bf94:13846bea89d:-7890,tigf - Postes de sectionnement et robinets de sécurité (TIGF),437
+Urbanisme Aquitaine - Zonages,FeatureTypeInfoImpl--4159a477:142dc59f1f3:-17f4,null - Pigma - Aquitaine zonages urbanisme,1914
+Urbanisme - Lot-et-Garonne Zonages,FeatureTypeInfoImpl--266e24e3:148595bbbc6:-6928,null - PIGMA zonages urbanisme - Lot-et-Garonne,2051
+BD ORTHO 33 - 2015 ecw,CoverageInfoImpl-676d6637:15a6149fb7f:7af6,raster - BD ORTHO 2015 25cm,1716
+BD ORTHO 47 - 2015,CoverageInfoImpl--4bbfe513:15789a5a242:1888,raster - BD ORTHO 2015 25cm,1716
+BD ORTHO 47 - 2015 ecw,CoverageInfoImpl--4527b442:1576bd2ecfb:4ef7,raster - BD ORTHO 2015 25cm,1716
+RTE - Poste de transformation HTB,FeatureTypeInfoImpl--61be1724:14b2fe0efcc:7502,erdf - Poste de transformation RTE - ERDF,1158
+GIP ATGeRi - Départements Nouvelle Aquitaine,FeatureTypeInfoImpl--2c77ddf1:14bda25249b:-1f13,geofla - Départements Nouvelle Aquitaine,1873
+ERDF - Appareil de coupure sous terrain moyenne tension,FeatureTypeInfoImpl--433409c9:133c599c9af:-7d2e,erdf - Appareil de coupure sous terrain moyenne tension,1148
+ERDF - Réseau aérien moyenne tension (15kv - 20kv),FeatureTypeInfoImpl-50da8329:133db20c97a:-7955,erdf - Réseau aérien moyenne tension (15KV - 20Kv),1161
+ERDF - Réseau enterré moyenne tension (15kv - 20kv),FeatureTypeInfoImpl-50da8329:133db20c97a:-7951,erdf - Réseau enterré moyenne tension (15KV - 20Kv),1163
+PIGMA - Part des actifs occupés 15 ans et plus travaillant hors de leurs communes de résidence en 2009,FeatureTypeInfoImpl-2af25b80:13ab1de8d76:-6cf0,insee - Part des actifs occupés travaillant hors communes de résidence en 2007,729
+ERDF - Appareil de coupure aérien moyenne tension,FeatureTypeInfoImpl--433409c9:133c599c9af:-7cf8,erdf - Appareil de coupure aérien moyenne tension,416
+ERDF - Poste de transformation RTE - ERDF,FeatureTypeInfoImpl--433409c9:133c599c9af:-7d35,erdf - Poste de transformation RTE - ERDF,1158
+ONF - Forêts relevant du régime forestier,FeatureTypeInfoImpl--2f77feef:134c1e338be:5417,wms_externe - ONF : Forêts relevant du régime forestier,1836
+ERDF - Réseau aérien basse tension (<=400V),FeatureTypeInfoImpl-50da8329:133db20c97a:-7957,erdf - Réseau aérien basse tension <=400V,1160
+ERDF - Réseau enterré basse tension (<=400V),FeatureTypeInfoImpl-50da8329:133db20c97a:-7953,erdf - Réseau enterré basse tension <=400V,935
+PIGMA - Part des 15-24 ans dans la population totale 2009,FeatureTypeInfoImpl-43d64256:13adafc165f:-4dd5,socio_economique - Part des 15-24 ans dans la population totale,549
+PIGMA - Part des 25-54 ans dans la population totale 2009,FeatureTypeInfoImpl-43d64256:13ada8f133b:42c2,socio_economique - Part des 25-54 ans dans la population totale,1042
+PIGMA - Part des 55-64 ans dans la population totale en 2009,FeatureTypeInfoImpl-43d64256:13adaa976ed:-5520,socio_economique - Part des 55-64 ans dans la population totale,698
+PIGMA - Part des actifs 15-64 ans / population totale en 2009,FeatureTypeInfoImpl-43d64256:13adb3c847f:-fff,socio_economique - Part des actifs 15-64 ans par rapport à la population totale,463
+Dreal-TRI-Hauteur eau Aléa Faible Proba-Subm,FeatureTypeInfoImpl-5a07631d:14d667a418d:-49ef,wms_externe - Dreal-TRI-Hauteur eau Aléa Faible Proba-Subm,2010
+Dreal-TRI-Hauteur eau Aléa Forte Proba-Subm,FeatureTypeInfoImpl-5a07631d:14d667a418d:-4999,wms_externe - Dreal-TRI-Hauteur eau Aléa Forte Proba-Subm,2007
+DREAL - Accidents de 2004 à 2014 en Aquitaine,FeatureTypeInfoImpl--6a74e5bd:15027ff6da0:4cb,dreal - Accidents 2004 2014 rd 33,1757
+PIGMA - Part des actifs 15-24 ans / actifs 15-64 ans en 2009,FeatureTypeInfoImpl-43d64256:13adb8ea577:-58f4,socio_economique - Part des actifs de 15-24 ans par rapport aux actifs de 15-64 ans,1017
+PIGMA - Part des actifs 25-54 ans / actifs 15-64 ans en 2009,FeatureTypeInfoImpl-43d64256:13adb8ea577:-19e7,socio_economique - Part des actifs de 25-54 ans par rapport aux actifs de 15-64 ans,743
+PIGMA - Part des actifs 55-64 ans / actifs 15-64 ans en 2009,FeatureTypeInfoImpl-43d64256:13adb8ea577:-21aa,socio_economique - Part des actifs de 55-64 ans par rapport aux actifs de 15-64 ans,1015
+INSEE - Population par iris,FeatureTypeInfoImpl-48337e3e:150c868ce7e:3d12,insee - Population iris 2007,307
+INSEE - Population par communes,FeatureTypeInfoImpl-48337e3e:150c868ce7e:3cfa,insee - Population communes 1962,177
+Dreal-TRI-Proba crue faible-Debord,FeatureTypeInfoImpl--6dc709cf:14d4de3c19f:-57e4,null - Dreal-TRI-Proba crue faible-Debord,2037
+Dreal-TRI-Proba crue Fort-Debord,FeatureTypeInfoImpl--6dc709cf:14d4de3c19f:-5740,null - Dreal-TRI-Proba crue Fort-Debord,2035
+Dreal-TRI-Proba crue Moy-Debord,FeatureTypeInfoImpl--6dc709cf:14d4de3c19f:-576c,null - Dreal-TRI-Proba crue Moy-Debord,2026
+Dreal-TRI-Hauteur eau Aléa Moy Proba-Subm,FeatureTypeInfoImpl-5a07631d:14d667a418d:-49d5,wms_externe - Dreal-TRI-Hauteur eau Aléa Forte Proba-Subm,2007
+ERDF - Poste électrique,FeatureTypeInfoImpl--433409c9:133c599c9af:-7d0f,erdf - Poste électrique,1157
+INSEE - Population par départements,FeatureTypeInfoImpl-48337e3e:150c868ce7e:3eff,insee - Population par départements 2008,375
+INSEE - Population par EPCI,FeatureTypeInfoImpl-48337e3e:150c868ce7e:3da9,insee - Population par EPCI (2007),1193
+IGN - Scan 1000,CoverageInfoImpl-1b853102:1405956ab90:5983,null - Scan 1000 IGN,582
+INSEE - Densité population carroyage 200m,FeatureTypeInfoImpl--6dc19e29:136a16cf456:-7ea,insee - Carroyage 200m,615
+INSEE - Population par arrondissements,FeatureTypeInfoImpl-48337e3e:150c868ce7e:376d,insee - Population par arrondissements 2007,164
+INSEE - Population par cantons,FeatureTypeInfoImpl-48337e3e:150c868ce7e:3b7a,insee - Population par cantons 2008,426
+TIGF -  Postes de livraison,FeatureTypeInfoImpl-24a8bf94:13846bea89d:-78ae,tigf - Postes de livraison (TIGF),436
+TIGF - Sectionnement robinets,FeatureTypeInfoImpl-24a8bf94:13846bea89d:-7890,tigf - Postes de sectionnement et robinets de sécurité (TIGF),437
+Urbanisme Aquitaine - Zonages,FeatureTypeInfoImpl--4159a477:142dc59f1f3:-17f4,null - Pigma - Aquitaine zonages urbanisme,1914
+Urbanisme - Lot-et-Garonne Zonages,FeatureTypeInfoImpl--266e24e3:148595bbbc6:-6928,null - PIGMA zonages urbanisme - Lot-et-Garonne,2051
+BD ORTHO 33 - 2015 ecw,CoverageInfoImpl-676d6637:15a6149fb7f:7af6,raster - BD ORTHO 2015 25cm,1716
+BD ORTHO 47 - 2015,CoverageInfoImpl--4bbfe513:15789a5a242:1888,raster - BD ORTHO 2015 25cm,1716
+BD ORTHO 47 - 2015 ecw,CoverageInfoImpl--4527b442:1576bd2ecfb:4ef7,raster - BD ORTHO 2015 25cm,1716
+RTE - Poste de transformation HTB,FeatureTypeInfoImpl--61be1724:14b2fe0efcc:7502,erdf - Poste de transformation RTE - ERDF,1158
+GIP ATGeRi - Départements Nouvelle Aquitaine,FeatureTypeInfoImpl--2c77ddf1:14bda25249b:-1f13,geofla - Départements Nouvelle Aquitaine,1873

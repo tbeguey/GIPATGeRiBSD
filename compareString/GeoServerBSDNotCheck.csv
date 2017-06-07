@@ -1,0 +1,1164 @@
+GeoServer,ID GeoServer,BSD,ID BSD
+Installations de production hydraulique en 2014,FeatureTypeInfoImpl--32412c87:14eb5c19f39:-56a6,INSTALLATIONS PRODUCTION ELEC - HYDRAULIQUE,3370
+CR Aqutaine - THD Offre 10 méga,FeatureTypeInfoImpl-1f9c8a93:133a71d23f1:-77eb,THD OFFRE 10 MEGA,1548
+CDC Bourg en Gironde - Sites touristiques remarquables,FeatureTypeInfoImpl--65d22c8b:140e2f62cb9:6bc8,SITES TOURISTIQUES : POINTS REMARQUABLES,3239
+CG64 - Espaces naturels sensibles,FeatureTypeInfoImpl--28e07fc6:137e8b84496:-1c1c,ESPACES NATURELS SENSIBLES (ENS),226
+CR Aqutaine - THD Offre 2 méga,FeatureTypeInfoImpl-1f9c8a93:133a71d23f1:-77e9,THD OFFRE 2 MEGA,1547
+ARS - Etablissements d'hébergement pour personnes agées,FeatureTypeInfoImpl-59b62a1c:15046737959:-5309,ETABLISSEMENTS POUR PERSONNES AGEES,1298
+CA Cote Basque Adour - Plan Local de l'Habitat,FeatureTypeInfoImpl-2245790e:1419d4dc311:-4b0e,PLH - PLAN LOCAL DE L'HABITAT,1323
+CG 24 - Espaces Naturels Sensibles (Ponctuels),FeatureTypeInfoImpl-91f625d:140546729a4:3a9a,ESPACES NATURELS SENSIBLES (ENS),226
+CG 24 - Espaces Naturels Sensibles (polygones),FeatureTypeInfoImpl-91f625d:140546729a4:-3604,ESPACES NATURELS SENSIBLES (ENS),226
+DDT 47 - Routes à Grande Circulation,FeatureTypeInfoImpl-4d526dfe:149f0c00e2c:7695,ROUTES A GRANDE CIRCULATION (CLASSEMENT),937
+PIGMA - Population iris 2009,FeatureTypeInfoImpl-186890ab:15a3cd2d1e6:-352c,RECENSEMENT POP 2009 - IRIS - THEME POPULATION,2786
+FD pêche 33 - Plans d'eau AAPPMA,FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7daa,PLANS D'EAU  ET ETANGS DES AAPPMA,523
+IGN BD TOPO - Gares,FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7e3a,LIGNE LIMITE DES MAREES BD TOPO IGN 2007,4128
+IGN BD TOPO - Surface eau - Région étendue,FeatureTypeInfoImpl--2c77ddf1:14bdb2da1a3:-17b0,BD TOPO : SURFACE D'EAU,1828
+IGN BD TOPO - Surface activité,FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7e8c,BD TOPO : SURFACE D'EAU,1828
+ARS - Etablissements pour adultes handicapés,FeatureTypeInfoImpl-59b62a1c:15046737959:-4f4b,ETABLISSEMENTS POUR ADULTES HANDICAPEES,2025
+ARS - Etablissements pour enfants handicapés,FeatureTypeInfoImpl-59b62a1c:15046737959:-45a4,ETABLISSEMENTS POUR ENFANTS HANDICAPEES,1299
+IGN BD TOPO - Pistes aérodromes,FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7e42,BD TOPO : PISTES D'AERODROME,1822
+IGN BD TOPO - Routes,FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7e24,LIGNE LIMITE DES MAREES BD TOPO IGN 2007,4128
+PNR LG - Tracés des sorties grand public,FeatureTypeInfoImpl--2aae7c6e:13542c0f87f:-655a,TRACES SORTIES GRAND PUBLIC,773
+Installations de production solaire photovoltaïque en 2014,FeatureTypeInfoImpl--32412c87:14eb5c19f39:-5067,INSTALLATIONS PRODUCTION ELEC - SOLAIRE PV,3369
+AURBA - Lots disponibles des zones d'activités,FeatureTypeInfoImpl-510f4e81:13c906090df:-7ffa,LOTS DISPONIBLES DES ZONES D ACTIVITES,685
+DDTM40 - Zones de revitalisation rurale 1996,FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7d82,ZONE DE REVITALISATION RURALE 1996,1550
+IGN BD TOPO - PAI orographie,FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7e8a,BD TOPO : T. VEGETATION ET OROGRAPHIE,1058
+Installations de production hydraulique en 2014,FeatureTypeInfoImpl--32412c87:14eb5c19f39:-56a6,INSTALLATIONS PRODUCTION ELEC - HYDRAULIQUE,3370
+CR Aqutaine - THD Offre 10 méga,FeatureTypeInfoImpl-1f9c8a93:133a71d23f1:-77eb,THD OFFRE 10 MEGA,1548
+CDC Bourg en Gironde - Sites touristiques remarquables,FeatureTypeInfoImpl--65d22c8b:140e2f62cb9:6bc8,SITES TOURISTIQUES : POINTS REMARQUABLES,3239
+CG64 - Espaces naturels sensibles,FeatureTypeInfoImpl--28e07fc6:137e8b84496:-1c1c,ESPACES NATURELS SENSIBLES (ENS),226
+CR Aqutaine - THD Offre 2 méga,FeatureTypeInfoImpl-1f9c8a93:133a71d23f1:-77e9,THD OFFRE 2 MEGA,1547
+ARS - Etablissements d'hébergement pour personnes agées,FeatureTypeInfoImpl-59b62a1c:15046737959:-5309,ETABLISSEMENTS POUR PERSONNES AGEES,1298
+CA Cote Basque Adour - Plan Local de l'Habitat,FeatureTypeInfoImpl-2245790e:1419d4dc311:-4b0e,PLH - PLAN LOCAL DE L'HABITAT,1323
+CG 24 - Espaces Naturels Sensibles (Ponctuels),FeatureTypeInfoImpl-91f625d:140546729a4:3a9a,ESPACES NATURELS SENSIBLES (ENS),226
+CG 24 - Espaces Naturels Sensibles (polygones),FeatureTypeInfoImpl-91f625d:140546729a4:-3604,ESPACES NATURELS SENSIBLES (ENS),226
+DDT 47 - Routes à Grande Circulation,FeatureTypeInfoImpl-4d526dfe:149f0c00e2c:7695,ROUTES A GRANDE CIRCULATION (CLASSEMENT),937
+PIGMA - Population iris 2009,FeatureTypeInfoImpl-186890ab:15a3cd2d1e6:-352c,RECENSEMENT POP 2009 - IRIS - THEME POPULATION,2786
+FD pêche 33 - Plans d'eau AAPPMA,FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7daa,PLANS D'EAU  ET ETANGS DES AAPPMA,523
+IGN BD TOPO - Gares,FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7e3a,LIGNE LIMITE DES MAREES BD TOPO IGN 2007,4128
+IGN BD TOPO - Surface eau - Région étendue,FeatureTypeInfoImpl--2c77ddf1:14bdb2da1a3:-17b0,BD TOPO : SURFACE D'EAU,1828
+IGN BD TOPO - Surface activité,FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7e8c,BD TOPO : SURFACE D'EAU,1828
+ARS - Etablissements pour adultes handicapés,FeatureTypeInfoImpl-59b62a1c:15046737959:-4f4b,ETABLISSEMENTS POUR ADULTES HANDICAPEES,2025
+ARS - Etablissements pour enfants handicapés,FeatureTypeInfoImpl-59b62a1c:15046737959:-45a4,ETABLISSEMENTS POUR ENFANTS HANDICAPEES,1299
+IGN BD TOPO - Pistes aérodromes,FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7e42,BD TOPO : PISTES D'AERODROME,1822
+IGN BD TOPO - Routes,FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7e24,LIGNE LIMITE DES MAREES BD TOPO IGN 2007,4128
+PNR LG - Tracés des sorties grand public,FeatureTypeInfoImpl--2aae7c6e:13542c0f87f:-655a,TRACES SORTIES GRAND PUBLIC,773
+Installations de production solaire photovoltaïque en 2014,FeatureTypeInfoImpl--32412c87:14eb5c19f39:-5067,INSTALLATIONS PRODUCTION ELEC - SOLAIRE PV,3369
+AURBA - Lots disponibles des zones d'activités,FeatureTypeInfoImpl-510f4e81:13c906090df:-7ffa,LOTS DISPONIBLES DES ZONES D ACTIVITES,685
+DDTM40 - Zones de revitalisation rurale 1996,FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7d82,ZONE DE REVITALISATION RURALE 1996,1550
+IGN BD TOPO - PAI orographie,FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7e8a,BD TOPO : T. VEGETATION ET OROGRAPHIE,1058
+IGN BD TOPO - PAI orographie,FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7e8a,BD TOPO : T. VEGETATION ET OROGRAPHIE,1058
+IGN BD TOPO - PAI transport,FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7e76,BD TOPO : T. RESEAU DE TRANSPORT D'ENERGIE,1053
+IGN BD TOPO - Réservoir d'eau,FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7e64,BD TOPO : SURFACE D'EAU,1828
+IGN BD TOPO - Troncons cours d'eau,FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7e62,BD TOPO : SURFACE D'EAU,1828
+GeoTransfert - Comparaison trait de côte de 2010-2012,FeatureTypeInfoImpl-2245790e:1419c920d26:-5099,TRAIT DE COTE : COMPARAISON 2010-2012,3267
+GeoTransfert - Comparaison trait de côte de 2012-2013,FeatureTypeInfoImpl-2245790e:1419c920d26:-3b23,TRAIT DE COTE : COMPARAISON 2012-2013,3268
+IGN BD TOPO - Chemins,FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7e30,LIGNE LIMITE DES MAREES BD TOPO IGN 2007,4128
+IGN BD TOPO - Réservoir d'eau - Région étendue,FeatureTypeInfoImpl--2c77ddf1:14bdb1221c9:330c,BD TOPO : SURFACE D'EAU,1828
+IGN BD TOPO - Toponymes divers,FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7e70,BD TOPO : OUVRAGE DIVERS,1818
+IGN BD TOPO - Troncons cours d'eau - Région étendue,FeatureTypeInfoImpl--2c77ddf1:14bdb2da1a3:5823,BD TOPO : SURFACE D'EAU,1828
+IGN BD TOPO - Zone Végétation,FeatureTypeInfoImpl-1f9c8a93:133a71d23f1:-713a,ZONE ARBOREE BD TOPO,68
+IGN BD TOPO - Zone Végétation - Région étendue,FeatureTypeInfoImpl--2c77ddf1:14bd99631d7:33cb,ZONE ARBOREE BD TOPO,68
+PNR LG -  Zones de Gagnage de la Grue Cendrée,FeatureTypeInfoImpl--2aae7c6e:13542c0f87f:-63da,GRUE CENDREE : ZONES GAGNAGE,771
+DREAL - Trafic comptages CUB de 2010 à 2014,FeatureTypeInfoImpl-69be8d:14eba61c107:3850,TRAFIC ROUTIER : TRAFIC COMPTAGES CUB 2010-2014,3769
+IGN BD TOPO - Communes,FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7e56,LIGNE LIMITE DES MAREES BD TOPO IGN 2007,4128
+IGN - Communes Nouvelle Aquitaine,FeatureTypeInfoImpl--1bed10f1:14f885c2c3f:-50e6,NOUVELLE AQUITAINE : SCAN 1000® IGN,3887
+IGN BD TOPO - PAI sport,FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7e88,LIGNE LIMITE DES MAREES BD TOPO IGN 2007,4128
+IGN BD TOPO - Conduites,FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7e3c,LIGNE LIMITE DES MAREES BD TOPO IGN 2007,4128
+DDCSPP 47 - Elevages ovins et caprins,FeatureTypeInfoImpl-48337e3e:150c7ccc759:3057,ELEVAGES OVINS OU/ET CAPRINS LAITIERS OU MIXTES,4308
+IGN BD TOPO -  Oronymes,FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7e5c,LIGNE LIMITE DES MAREES BD TOPO IGN 2007,4128
+IGN BD TOPO - PAI sante,FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7e78,LIGNE LIMITE DES MAREES BD TOPO IGN 2007,4128
+IGN BD TOPO - Réservoir,FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7e4a,LIGNE LIMITE DES MAREES BD TOPO IGN 2007,4128
+IGN BD TOPO - Transport cable,FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7e38,BD TOPO : T. RESEAU DE TRANSPORT D'ENERGIE,1053
+PIGMA - Part des actifs 15-24 ans / 15-24 ans en 2009,FeatureTypeInfoImpl-43d64256:13adb6ed203:-6671,PART DES ACTIFS 15-24 ANS DS POP DES 15-24 ANS,2046
+PIGMA - Part des actifs 25-54 ans / 25-54 ans en 2009,FeatureTypeInfoImpl-43d64256:13adb6ed203:4bd3,PART DES ACTIFS 25-54 ANS DS POP DES 25-54 ANS,2047
+PIGMA - Part des actifs 55-64 ans / 55-64 ans en 2009,FeatureTypeInfoImpl-43d64256:13adb6ed203:5a6d,PART DES ACTIFS 55-64 ANS DS POP DES 55-64 ANS,2048
+IGN BD TOPO - Cimetières,FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7e50,LIGNE LIMITE DES MAREES BD TOPO IGN 2007,4128
+IGN BD TOPO - Hydronymes,FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7e60,LIGNE LIMITE DES MAREES BD TOPO IGN 2007,4128
+IGN BD TOPO - Toponymes ferrés,FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7e34,BD TOPO : T. PONTS D'ACTIVITE OU D'INTERETS (PAI) ET TOPONYMES DE LIEUX DITS,1057
+IGN BD TOPO - Lieu dit habité,FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7e6c,LIGNE LIMITE DES MAREES BD TOPO IGN 2007,4128
+IGN BD TOPO - Chefs-lieux,FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7e58,LIGNE LIMITE DES MAREES BD TOPO IGN 2007,4128
+SMBV des Lacs du Born - Zones humides effectives,FeatureTypeInfoImpl-6b25b570:152f4e8a74b:-388a,CARTOGRAPHIE ZONES HUMIDES EFFECTIVES,4292
+DREAL - Centres d'examen des permis de conduire en 2014 en Aquitaine,FeatureTypeInfoImpl-1bfb0579:14dd2b21513:-5bc1,CENTRES D'EXAMENS PERMIS DE CONDUIRE,1117
+IGN BD TOPO - Departements,FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7de8,LIGNE LIMITE DES MAREES BD TOPO IGN 2007,4128
+SMEAG -  Station de suivi du bouchon vaseux à Portets (33),FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7fb2,STATION DE MESURE DE BOUCHON VASEUX,435
+SRCE - OA Cours d'eau à préserver,FeatureTypeInfoImpl-4d80d622:153a8791791:336b,SRCE / ELEMENTS FRAGMENTANTS : COURS D'EAU,2627
+SRCE - OA Cours d'eau à restaurer,FeatureTypeInfoImpl-4d80d622:153a8791791:33d7,SRCE / ELEMENTS FRAGMENTANTS : COURS D'EAU,2627
+Vue aérienne Couleur de 2012 du Bassin d'Arcachon,CoverageInfoImpl-3dad044:1455f931d07:-4df3,OCA : MESURES DE REFLECTANCE SUR LA COULEUR DE L'EAU - BASSIN D'ARCACHON,2946
+IGN BD TOPO - Canalisations eau,FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7e5e,LIGNE LIMITE DES MAREES BD TOPO IGN 2007,4128
+IGN BD TOPO - PAI religieux,FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7e7c,LIGNE LIMITE DES MAREES BD TOPO IGN 2007,4128
+DREAL - Communes soumises au risque Inondation,FeatureTypeInfoImpl--25674c34:158e41464a2:-61e,COMMUNES CONCERNEES PAR RISQUE INONDATION,1155
+IGN BD TOPO - Routes nommées,FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7e2e,LIGNE LIMITE DES MAREES BD TOPO IGN 2007,4128
+PIGMA - Part des 15-24 ans dans la population totale 2009,FeatureTypeInfoImpl-43d64256:13adafc165f:-4dd5,PART DES 15-24 ANS DS POP TOTALE,2042
+PIGMA - Part des 25-54 ans dans la population totale 2009,FeatureTypeInfoImpl-43d64256:13ada8f133b:42c2,PART DES 25-54 ANS DS POP TOTALE,2043
+PIGMA - Part des 55-64 ans dans la population totale en 2009,FeatureTypeInfoImpl-43d64256:13adaa976ed:-5520,PART DES 55-64 ANS DS POP TOTALE,2044
+PIGMA - Part des chômeurs de 15-24 ans / 15-64 ans en 2009,FeatureTypeInfoImpl--66b5f798:13ab2251bcf:4cc,PART CHOMEURS 15-24 ANS / 15-64 ANS,2036
+PIGMA - Part des chômeurs de 25-54 ans / 15-64 ans en 2009,FeatureTypeInfoImpl--66b5f798:13ab2611fca:-66c8,PART CHOMEURS 25-54 ANS / 15-64 ANS,2039
+PIGMA - Part des chômeurs de 55-64 ans / 15-64 ans en 2009,FeatureTypeInfoImpl--66b5f798:13ab2611fca:-29e1,PART CHOMEURS 55-64 ANS / 15-64 ANS,2041
+DRAC - Périmètres de protection des monuments historiques (500m),FeatureTypeInfoImpl-1f9c8a93:133a71d23f1:-7f63,PERIMETRE DE PROTECTION DES MONUMENTS HISTORIQUES,159
+IGN BD TOPO - Terrains de sport,FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7e52,LIGNE LIMITE DES MAREES BD TOPO IGN 2007,4128
+IGN BD TOPO - Tronçon laisse,FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7e66,LIGNE LIMITE DES MAREES BD TOPO IGN 2007,4128
+SRCE_2014 Cours d'eau de la trame bleu,FeatureTypeInfoImpl--1349261:1431092c4c4:6d3a,SRCE / TRAME BLEUE : COURS D'EAU TRES BON ETAT (LEMA),2654
+CE24 - Zonage de prime à l'aménagement du territoire,FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7e98,PRIME A L AMENAGEMENT DU TERRITOIRE (PAT) : ZONAGE,643
+IGN BD TOPO - Bati Industriel,FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7e4e,LIGNE LIMITE DES MAREES BD TOPO IGN 2007,4128
+PIGMA - Croissance de la population par commune de 1968 à 2008,FeatureTypeInfoImpl-44687cb7:13615ef08a7:317,TX CROISSANCE POP ENTRE 1968 ET 2008,1307
+IGN BD TOPO - Routes primaires,FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7e26,LIGNE LIMITE DES MAREES BD TOPO IGN 2007,4128
+IGN BD TOPO - PAI hydrographie,FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7e80,LIGNE LIMITE DES MAREES BD TOPO IGN 2007,4128
+IGN BD TOPO -  Surfaces routes,FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7e28,LIGNE LIMITE DES MAREES BD TOPO IGN 2007,4128
+IGN BD TOPO -  Bati remarquable,FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7e48,LIGNE LIMITE DES MAREES BD TOPO IGN 2007,4128
+DREAL - Doc urbanisme Nord Medoc (PLU/POS/CC),FeatureTypeInfoImpl-7a81c763:139d378b295:2bb8,DOCUMENT URBANISME : NORD MEDOC EN GIRONDE,2252
+RAUDIN - Point d’Accès Public à Internet (PAPI),FeatureTypeInfoImpl-5d223b53:134e5d6d059:-358f,POINT D'ACCES PUBLICS A INTERNET (PAPI) 2009,1026
+SIAEP LALINDE - Canalisation de branchement à l'assainissement collectif,FeatureTypeInfoImpl-6213a6cc:134c6c9185c:-4b73,ASSAINISSEMENT COLLECTIF : CANALISATION DE BRANCHEMENT,1704
+DREAL - Doc urbanisme Nord Medoc (Prescriptions P),FeatureTypeInfoImpl--3b70f1bd:139d81f8018:4480,DOCUMENT URBANISME : NORD MEDOC EN GIRONDE,2252
+IGN BD TOPO -  Lieux-dits non habité,FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7e6e,LIGNE LIMITE DES MAREES BD TOPO IGN 2007,4128
+IGN BD TOPO - Lignes électriques,FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7e40,LIGNE LIMITE DES MAREES BD TOPO IGN 2007,4128
+DREAL - Doc urbanisme Nord Medoc (Prescriptions L),FeatureTypeInfoImpl--3b70f1bd:139d81f8018:44b9,DOCUMENT URBANISME : NORD MEDOC EN GIRONDE,2252
+DREAL - Doc urbanisme Nord Medoc (Prescriptions S),FeatureTypeInfoImpl--3b70f1bd:139d81f8018:44da,DOCUMENT URBANISME : NORD MEDOC EN GIRONDE,2252
+IGN BD TOPO - Bati indifférencié,FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7e44,LIGNE LIMITE DES MAREES BD TOPO IGN 2007,4128
+IGN BD TOPO - Routes principales,FeatureTypeInfoImpl-75428ea9:14d43502664:6fb0,LIGNE LIMITE DES MAREES BD TOPO IGN 2007,4128
+IGN BD TOPO - Routes secondaires,FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7e2c,LIGNE LIMITE DES MAREES BD TOPO IGN 2007,4128
+SRCE  - RB obligatoires hors cours d'eau,FeatureTypeInfoImpl--4a30557a:13af28f792b:992,SRCE / ELEMENTS FRAGMENTANTS : COURS D'EAU,2627
+IGN BD TOPO - Lignes orographiques,FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7e5a,LIGNE LIMITE DES MAREES BD TOPO IGN 2007,4128
+IGN BD TOPO - Poste transformation,FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7e3e,LIGNE LIMITE DES MAREES BD TOPO IGN 2007,4128
+IGN BD TOPO - Constructions légères,FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7e54,LIGNE LIMITE DES MAREES BD TOPO IGN 2007,4128
+SRCE - Proposition ajout cours d'eau TB - Mai 2013,FeatureTypeInfoImpl-5c3c0fbe:13ee3b701c3:-5a21,SRCE / ELEMENTS FRAGMENTANTS : COURS D'EAU,2627
+IGN BD TOPO - Tronçons voies ferrées,FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7e36,LIGNE LIMITE DES MAREES BD TOPO IGN 2007,4128
+IGN BD TOPO - Toponyme communication,FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7e2a,LIGNE LIMITE DES MAREES BD TOPO IGN 2007,4128
+IGN BD TOPO - Constructions linéaires,FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7e4c,LIGNE LIMITE DES MAREES BD TOPO IGN 2007,4128
+IGN BD TOPO - Constructions surfaciques,FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7e46,LIGNE LIMITE DES MAREES BD TOPO IGN 2007,4128
+IGN BD TOPO - Canalisations eau - Région étendue,FeatureTypeInfoImpl--2c77ddf1:14bdab25771:7c5f,LIGNE LIMITE DES MAREES BD TOPO IGN 2007,4128
+IGN BD TOPO - Terrains de sport (enseignement),FeatureTypeInfoImpl--47a78624:139dea10bac:-700c,LIGNE LIMITE DES MAREES BD TOPO IGN 2007,4128
+IGN BD TOPO - Tronçon laisse - Région étendue,FeatureTypeInfoImpl--2c77ddf1:14bdb4ff59d:3899,LIGNE LIMITE DES MAREES BD TOPO IGN 2007,4128
+IGN BD TOPO - Hydronymes - Région étendue,FeatureTypeInfoImpl--2c77ddf1:14bdae1b5e9:ed3,LIGNE LIMITE DES MAREES BD TOPO IGN 2007,4128
+CR Aqutaine - Estuaire Adour 1ms Gisement hydrolien brut,FeatureTypeInfoImpl-40b93b40:14ae2f54845:75ec,ARTELIA : GISEMENT HYDROLIEN BRUT (ESTUAIRE DE LA GIRONDE, VITESSES>1M/S, MOYENNE SUR UNE MARREE DE VIVES EAUX, COEFFICIENT 95),3156
+IGN BD TOPO - Surfacique activité enseignement,FeatureTypeInfoImpl-31f73896:139057a5d0a:-1356,LIGNE LIMITE DES MAREES BD TOPO IGN 2007,4128
+CR Aqutaine - Houle nearshore - Calcul des potentiels technico-économiques hydrolien,FeatureTypeInfoImpl-40b93b40:14ae3e03095:2e67,ARTELIA : CALCULS DES POTENTIELS TECHNICO-ECONOMIQUES SUR LES POINTS HOULE NEARSHORE,3151
+CR Aqutaine - Houle offshore - Calcul des potentiels technico-économiques hydrolien,FeatureTypeInfoImpl-40b93b40:14ae3f8038a:5c93,ARTELIA : CALCULS DES POTENTIELS TECHNICO-ECONOMIQUES SUR LES POINTS HOULE OFFSHORE,3152
+CR Aqutaine - Bassin Arcachon 1ms Gisement hydrolien brut,FeatureTypeInfoImpl-40b93b40:14ae30c2fb5:5f32,ARTELIA : GISEMENT HYDROLIEN BRUT (ESTUAIRE DE LA GIRONDE, VITESSES>1M/S, MOYENNE SUR UNE MARREE DE VIVES EAUX, COEFFICIENT 95),3156
+CR Aqutaine - Estuaire Gironde 1ms Gisement hydrolien brut,FeatureTypeInfoImpl-40b93b40:14ae38b9471:-1c5d,ARTELIA : GISEMENT HYDROLIEN BRUT (ESTUAIRE DE LA GIRONDE, VITESSES>1M/S, MOYENNE SUR UNE MARREE DE VIVES EAUX, COEFFICIENT 95),3156
+Rectorat - Etablissements du 2nd degré avec EPI (Novembre 2016),FeatureTypeInfoImpl--7b1f44fd:143069985a2:-1697,ETABLISSEMENTS SCOLAIRES PUB ET PRI DU 2ND DEGRE AVEC EPI,3174
+Suivi des DU - Comparaison date approbation DU intégré et date SUDOCUH,FeatureTypeInfoImpl-2cbed9d4:152ca1b111b:4d2,SUIVI DU GRAVELOT A COLLIER INTERROMPU,3460
+Suivi des DU - Comparaison date approbation DU intégré et date SUDOCUH,FeatureTypeInfoImpl--71dfccad:1559111f8d6:324d,SUIVI DU GRAVELOT A COLLIER INTERROMPU,3460
+Suivi des DU - Comparaison date approbation DU intégré et date SUDOCUH,FeatureTypeInfoImpl--4ecb909f:15b00e4e6d7:53ef,SUIVI DU GRAVELOT A COLLIER INTERROMPU,3460
+CR Aqutaine - Bassin Arcachon 1.5ms Gisement hydrolien brut,FeatureTypeInfoImpl-40b93b40:14ae2fc9792:14ca,ARTELIA : GISEMENT HYDROLIEN BRUT (ESTUAIRE DE LA GIRONDE, VITESSES>1M/S, MOYENNE SUR UNE MARREE DE VIVES EAUX, COEFFICIENT 95),3156
+CR Aqutaine - Estuaire Gironde 1.5ms Gisement hydrolien brut,FeatureTypeInfoImpl-40b93b40:14ae30c2fb5:5f6c,ARTELIA : GISEMENT HYDROLIEN BRUT (ESTUAIRE DE LA GIRONDE, VITESSES>1M/S, MOYENNE SUR UNE MARREE DE VIVES EAUX, COEFFICIENT 95),3156
+CR Aqutaine - Estuaire Gironde avec contraintes 1ms Gisement hydrolien brut,FeatureTypeInfoImpl-2913d3a8:14ae80226db:f14,ARTELIA : GISEMENT HYDROLIEN BRUT (ESTUAIRE DE LA GIRONDE, VITESSES>1M/S, MOYENNE SUR UNE MARREE DE VIVES EAUX, COEFFICIENT 95),3156
+CR Aqutaine - Points pose Estuaire Adour - Calcul des potentiels technico-économiques hydrolien,FeatureTypeInfoImpl-2913d3a8:14ae788d65c:71c,ARTELIA : CALCULS DES POTENTIELS TECHNICO-ECONOMIQUES SUR LES POINTS DE POSE (HORS CEL) DE L'EOLIEN POSE,3150
+CR Aqutaine - Zones pose Dordogne - Calcul des potentiels technico-économiques hydrolien,FeatureTypeInfoImpl-2913d3a8:14ae79fbdaa:2531,ARTELIA : CALCULS DES POTENTIELS TECHNICO-ECONOMIQUES : HYDROLIEN (POINTS DE POSE SUR L'ESTUAIRE DE L'ADOUR),3161
+CR Aqutaine - Points pose Estuaire Gironde - Calcul des potentiels technico-économiques hydrolien,FeatureTypeInfoImpl-2913d3a8:14ae7bfd241:-52c4,ARTELIA : CALCULS DES POTENTIELS TECHNICO-ECONOMIQUES SUR LES POINTS DE POSE (HORS CEL) DE L'EOLIEN POSE,3150
+CR Aqutaine - Zones pose Bassin Arcachon - Calcul des potentiels technico-économiques hydrolien,FeatureTypeInfoImpl-40b93b40:14ae42b46ba:6577,ARTELIA : CALCULS DES POTENTIELS TECHNICO-ECONOMIQUES : HYDROLIEN (ZONES POTENTIELLES SUR LE BASSIN D'ARCACHON),3163
+CR Aqutaine - Zones pose Estuaire Adour - Calcul des potentiels technico-économiques hydrolien,FeatureTypeInfoImpl-40b93b40:14ae3a76112:-4b10,ARTELIA : CALCULS DES POTENTIELS TECHNICO-ECONOMIQUES : HYDROLIEN (POINTS DE POSE SUR L'ESTUAIRE DE L'ADOUR),3161
+CR Aqutaine - Zones pose Estuaire Gironde - Calcul des potentiels technico-économiques hydrolien,FeatureTypeInfoImpl-40b93b40:14ae38bb7c3:62de,ARTELIA : CALCULS DES POTENTIELS TECHNICO-ECONOMIQUES : HYDROLIEN (POINTS DE POSE SUR L'ESTUAIRE DE L'ADOUR),3161
+CA Cote Basque Adour - Ortho 2011 2,5m,CoverageInfoImpl-381b45bf:144f98e152b:-74d5,ORTHO 2011,2693
+Infrastructures Cyclables Existantes - Référentiel Unique département de la Gironde 33 - Atelier pistes cyclables,FeatureTypeInfoImpl-3215f0b9:1501e697e6c:-5c68,PISTES CYCLABLES,117
+Itinéraires Cyclables en Projet - Référentiel Unique département de la Gironde 33 - Atelier pistes cyclables,FeatureTypeInfoImpl-3215f0b9:1501e8b90c1:-5d25,PISTES CYCLABLES,117
+CAUE 33 - Architecture dossiers 2000-2012,FeatureTypeInfoImpl-2ca21f6c:13cad7262a3:-46b4,DOSSIERS CAUE,3173
+CAUE 33 - Environnement dossiers 2000-2012,FeatureTypeInfoImpl-2ca21f6c:13cad7262a3:-468f,DOSSIERS CAUE,3173
+CAUE 33 - Pédagogique dossiers 2000-2012,FeatureTypeInfoImpl-745229db:13cb06a2cc3:-7ff3,DOSSIERS CAUE,3173
+CAUE 33 - Urbanisme dossiers 2000-2012,FeatureTypeInfoImpl-745229db:13cb06a2cc3:-7fe0,DOSSIERS CAUE,3173
+CR Aqutaine - THD Offre Triple-Play,FeatureTypeInfoImpl-1f9c8a93:133a71d23f1:-77c9,THD OFFRE,1546
+Cadaujac – Servitudes linéaires du PLU,FeatureTypeInfoImpl--6bedd173:138b6b6a47f:-6438,PLU : SERVITUDES,1439
+Cadaujac – Servitudes surfaciques du PLU,FeatureTypeInfoImpl--6bedd173:138b6b6a47f:-6414,PLU : SERVITUDES,1439
+CDC Sud Pays Basque - Circuit Pedestre,FeatureTypeInfoImpl-66c2438:1379db69c9e:-7206,PAYS BASQUE,805
+CDC Sud Pays Basque - Circuit VTT,FeatureTypeInfoImpl-66c2438:1379db69c9e:-638b,PAYS BASQUE,805
+IGN - Scan 25,CoverageInfoImpl--21535270:133b13cd29b:-7fff,SCAN 25,251
+CDC Val d'Albret - Zonage PLU de St Pierre de Buzet,FeatureTypeInfoImpl--3ce68516:141a7a870c9:-23f9,PLU ZONAGE,2613
+IGN - Scan 250,CoverageInfoImpl--7051f1f4:13242bcf565:-7ffe,SCAN 250,262
+CG 33 - Atelier pistes cyclables,FeatureTypeInfoImpl--2ac53333:14960b7f7e2:4146,PISTES CYCLABLES,117
+SMBV des Lacs du Born - Zones humides de l'arrière dune des pays de Born et de Buch,FeatureTypeInfoImpl--ed32812:14bfe3331b7:-5ec3,ZONES HUMIDES,4030
+CR Aquitaine - Atelier pistes cyclables,FeatureTypeInfoImpl-1099598a:149572c7212:-4d48,PISTES CYCLABLES,117
+CRPF Aquitaine - Contour du PSG - Mai 2015,FeatureTypeInfoImpl--3ce68516:141a7ed191b:414a,PSG CONTOUR,184
+CR Tourisme - Atelier pistes cyclables,FeatureTypeInfoImpl-2090530a:14b6f210de9:-4bc0,PISTES CYCLABLES,117
+BxM - Atelier pistes cyclables,FeatureTypeInfoImpl-34ef02ac:14b7323a6fc:225a,PISTES CYCLABLES,117
+SMBV des Lacs du Born - Zones humides prioritaires,FeatureTypeInfoImpl--3cb9736d:15607db193b:-378b,ZONES HUMIDES,4030
+CG 64 - AEP Ressources en eaux souterraines,FeatureTypeInfoImpl--25d11048:13b23cbf2dc:-2dc9,EAUX SOUTERRAINES,272
+COBAS - Atelier pistes cyclables,FeatureTypeInfoImpl-2090530a:14b6e2159a6:-4a5c,PISTES CYCLABLES,117
+CR Aqutaine - THD Offre,FeatureTypeInfoImpl-1f9c8a93:133a71d23f1:-77d7,THD OFFRE,1546
+CR Aquitaine - Cantons 2015,FeatureTypeInfoImpl--52fb10a8:14c3174f0bb:-3557,CANTONS 2015,3270
+DDCSPP 47 - Elevages Porcins,FeatureTypeInfoImpl-48337e3e:150c7ccc759:3087,ELEVAGES PORCINS,4310
+DREAL - Vitesse de circulation 2013,FeatureTypeInfoImpl--5080ad91:14fbb46feca:2b1f,VITESSE 2013,3765
+DRAC - Jardins remarquables,FeatureTypeInfoImpl-6e51fee3:1461ee230a8:-18c2,JARDINS REMARQUABLES,1654
+DRAC - Monuments historiques,FeatureTypeInfoImpl-1f9c8a93:133a71d23f1:-7fa3,MONUMENTS HISTORIQUES,3179
+DREAL - Vitesse de circulation 2014,FeatureTypeInfoImpl--25674c34:158fc844334:214b,VITESSE 2014,3764
+EHLG - Aides de la PAC sur le Pays Basque en 2013,FeatureTypeInfoImpl-223d3190:15312d010ee:-2782,PAYS BASQUE,805
+EHLG - Installations agricoles du Pays Basque,FeatureTypeInfoImpl-223d3190:15312d71b1e:2a9,PAYS BASQUE,805
+EPIDOR - Habitats industries,FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7e16,HABITATS INDUSTRIES,1669
+FD chasse 33 - Passages de cerfs,FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7ddc,PASSAGES CERFS,1555
+FD chasse 33 - Passages de chevreuils,FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7dce,PASSAGES CHEVREUILS,1556
+FD chasse 33 - Passages de sangliers,FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7dd2,PASSAGES SANGLIERS,1557
+FD chasse 33 - Réserves de chasse et de faune sauvage,FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7dd8,FAUNE SAUVAGE,3970
+IGN - Atelier pistes cyclables,FeatureTypeInfoImpl-34ef02ac:14b727a5e7a:-1f3,PISTES CYCLABLES,117
+IGN - BD Parcellaire 24 (raster),CoverageInfoImpl-27b64b81:13413b73026:b54,BD PARCELLAIRE,1205
+IGN - BD Parcellaire 33 (raster),CoverageInfoImpl--4a735b4f:13d10d9dc8b:-76d0,BD PARCELLAIRE,1205
+IGN - BD Parcellaire 40 (raster),CoverageInfoImpl--7498d948:1456a963756:2bff,BD PARCELLAIRE,1205
+IGN - BD Parcellaire 47 (raster),CoverageInfoImpl--7498d948:1456ab556da:-7170,BD PARCELLAIRE,1205
+IGN - BD Parcellaire 64 (raster),CoverageInfoImpl--40801fd5:13569610c66:-464d,BD PARCELLAIRE,1205
+Scan 25 2010 - Jpeg 2000,CoverageInfoImpl-3ab1af72:1569cd024a2:39d7,SCAN 25,251
+IGN - Scan 100,CoverageInfoImpl-1b853102:14058ffa22c:7c5c,SCAN 100,261
+IGN - Scan 1000,CoverageInfoImpl-1b853102:1405956ab90:5983,SCAN 1000,263
+ON3V - Atelier pistes cyclables,FeatureTypeInfoImpl-520a4c6c:14c9406135e:6d40,PISTES CYCLABLES,117
+OSM - Atelier pistes cyclables,FeatureTypeInfoImpl-2090530a:14b6ee07b7b:-95b,PISTES CYCLABLES,117
+PNR LG - Eglises et chapelles,FeatureTypeInfoImpl--2aae7c6e:13542c0f87f:-6d62,EGLISES CHAPELLES,406
+PNR LG - Patrimoine industriel,FeatureTypeInfoImpl--2aae7c6e:13542c0f87f:-6959,PATRIMOINE INDUSTRIEL,300
+RTE - Poste electrique,FeatureTypeInfoImpl--64db1a4f:15a8f5b7695:-3f58,POSTE ELECTRIQUE,1288
+SDIS 33 - Atelier pistes cyclables,FeatureTypeInfoImpl-1099598a:14957031d40:172,PISTES CYCLABLES,117
+SDIS 64 - PAI Sport,FeatureTypeInfoImpl--35c6cd01:13f56b09214:3dbd,PAI : SPORT,3214
+SDIS64 - PAI  Hydrographie,FeatureTypeInfoImpl-45879d41:14c5ae69d57:-4a7a,PAI : HYDROGRAPHIE,3210
+SDIS 64 - PAI Orographie,FeatureTypeInfoImpl--1e53a2c2:13f5775683c:-277d,PAI : OROGRAPHIE,3211
+SDIS 64 - PAI Religieux,FeatureTypeInfoImpl--1e53a2c2:13f5775683c:-277b,PAI : RELIGIEUX,3212
+SDIS 64 - PAI Transport,FeatureTypeInfoImpl--1e53a2c2:13f5775683c:-2764,PAI : TRANSPORT,3215
+SIAEP LALINDE - Poteau incendie,FeatureTypeInfoImpl-6213a6cc:134c6c9185c:-4fd4,POTEAU INCENDIE,4474
+SIBA - Atelier pistes cyclables,FeatureTypeInfoImpl-2090530a:14b6dd12291:372,PISTES CYCLABLES,117
+SIBA - Ortho 2009 20cm,CoverageInfoImpl--16ec6ada:13673194d60:-5ddd,ORTHO 2009,2692
+SMAVLOT - Chambres d'hotes,FeatureTypeInfoImpl-14757e89:141c6cacc4c:-3bfe,CHAMBRES D'HOTES,1461
+SMEAG -  Interventions sur les bras morts,FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7fa0,BRAS MORTS,433
+CAUE 33 - _Zones maisons de gironde,FeatureTypeInfoImpl--60d2bb13:13cb4240a19:-70ea,MAISONS DE GIRONDE,3172
+EPIDOR - Sports et loisirs,FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7e10,SPORTS ET LOISIRS,1668
+RTE - Poste de transformation HTB,FeatureTypeInfoImpl--61be1724:14b2fe0efcc:7502,POSTE DE TRANSFORMATION,170
+CDC Piémont Oloronais - Station de pompage,FeatureTypeInfoImpl-2245790e:1419d048044:2c0d,STATION DE POMPAGE,1211
+ERDF - Poste de transformation RTE - ERDF,FeatureTypeInfoImpl--433409c9:133c599c9af:-7d35,POSTE DE TRANSFORMATION,170
+GIP ATGeRi - Impacts de foudre 2014,FeatureTypeInfoImpl--2917b27b:14fd023f59d:-5246,IMPACTS DE FOUDRE,23
+PNR LG - Chateaux de terre,FeatureTypeInfoImpl--2aae7c6e:13542c0f87f:-6dad,CHATEAUX DE TERRE,664
+RTE - Enceinte de poste,FeatureTypeInfoImpl--64db1a4f:15a8f4251cd:4691,ENCEINTE DE POSTE,4471
+TIGF -  Postes de livraison,FeatureTypeInfoImpl-24a8bf94:13846bea89d:-78ae,POSTES DE LIVRAISON,1905
+TIGF - Stations de compression,FeatureTypeInfoImpl-24a8bf94:13846bea89d:-7884,STATIONS DE COMPRESSION,1906
+Emissions du CO2 en 2012,FeatureTypeInfoImpl--32412c87:14eb5c19f39:-5c6b,EMISSIONS DE GES (GAZ A EFFET DE SERRE) PAR COMMUNE 2012,3709
+Emissions du N2O en 2012,FeatureTypeInfoImpl-50da95be:14ebb319442:159d,EMISSIONS DE GES (GAZ A EFFET DE SERRE) PAR COMMUNE 2012,3709
+ASP - RPG 2010,FeatureTypeInfoImpl--66b5f798:13ab2251bcf:7f4e,RPG - REGISTRE PARCELLAIRE GRAPHIQUE 2010,2681
+DREAL - Schéma d’Aménagement et de Gestion des Eaux,FeatureTypeInfoImpl-5d223b53:134e5d6d059:-5cfb,PAI : GESTION EAUX,3209
+Emissions du CH4 en 2012,FeatureTypeInfoImpl--32412c87:14eb5c19f39:-5c8f,EMISSIONS DE GES (GAZ A EFFET DE SERRE) PAR COMMUNE 2012,3709
+RFF - Passage à niveau,FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7d78,RESEAU FERRE - PASSAGE A NIVEAU (RGI),736
+RFF - Trafic marchandises,FeatureTypeInfoImpl--60870653:141bc392aa4:-4bc3,RESEAU FERRE - TRAFIC MARCHANDISES (RGI),724
+RFF - Trafic TER,FeatureTypeInfoImpl--60870653:141bc392aa4:-4b97,RESEAU FERRE - TRAFIC TER (RGI),726
+SIAEP LALINDE - Canalisation eau potable,FeatureTypeInfoImpl-6213a6cc:134c6c9185c:-5286,CANALISATION EAU POTABLE,4473
+SYSDAU - Terroir viticole à enjeu classé en espace naturel majeur,FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7de6,PAI : ESPACE NATUREL,3208
+AGRN : Petit patrimoine,FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7dc0,INVENTAIRE PETIT PATRIMOINE,635
+CA Grand Villeneuvois - Points de collecte,FeatureTypeInfoImpl--1555e0c2:13a2c2c28f3:1aa8,GESTION DECHETS : POINTS DE COLLECTE D'ORDURES MÉNAGÈRES,1348
+SMBV des Lacs du Born- Bassin versant du lac de Cazaux-Sanguinet,FeatureTypeInfoImpl--658a4c7:14bff0939fa:1526,SOUS BASSIN VERSANT,36
+CG33 - ENS Parcelles,FeatureTypeInfoImpl-d69f80b:13d49cd4298:-7204,PARCELLES DES SITES ENS 2011,3996
+SIBA - Stations de pompage,FeatureTypeInfoImpl-b616f19:1370de390e3:4db7,IRRIGATION COLLECTIVE : STATIONS DE POMPAGE,1863
+SRCE - Co MOSO Landes,FeatureTypeInfoImpl--1349261:1431092c4c4:6086,SRCE / CORRIDORS LANDES,3599
+TIGF - Sectionnement robinets,FeatureTypeInfoImpl-24a8bf94:13846bea89d:-7890,POSTES DE SECTIONNEMENT ET ROBINETS DE SECURITE,1904
+INSEE - Population par iris,FeatureTypeInfoImpl-48337e3e:150c868ce7e:3d12,RECENSEMENT POP 2007 - IRIS - THEME POPULATION,1226
+CA Cote Basque Adour - Maternelles et Primaires,FeatureTypeInfoImpl-2245790e:1419d44a43e:-64c3,ECOLES : MATERNELLES ET PRIMAIRES,2686
+CEN Aquitaine - Sites gérés en 2012,FeatureTypeInfoImpl-2245790e:1419dc4bdd5:52cb,SITES GERES : 2012,3374
+CG 64 - Plan local de randonnée,FeatureTypeInfoImpl-1efb5ae3:137edde9d3f:-6e93,PLR - PLAN LOCAL RANDONNEE,2095
+DDT 47 - Bruit Assiette,FeatureTypeInfoImpl-1bfa188e:149ec3ed113:199e,BRUIT INFRASTRUCTURES DE TRANSPORT - ASSIETTE,938
+DDT 47 - Bruit Generateur,FeatureTypeInfoImpl-1bfa188e:149ec826460:7a8b,BRUIT INFRASTRUCTURES DE TRANSPORT - GENERATEUR,3544
+DDT 47 - Entités Paysagères,FeatureTypeInfoImpl-2ef72339:14a34f162e0:-7b3f,WEB_3_2_11_LES ENTITÉS PAYSAGÈRES DU DÉPARTEMENT DE LA DORDOGNE - ETUDE BKM 1998/1999,2289
+DDTM 33 - Localisation des stations d'epuration,FeatureTypeInfoImpl--2e1400eb:133edec7535:-7e84,LOCALISATION STATIONS SIRIL,4296
+DRAC - Centres et Quartiers Anciens,FeatureTypeInfoImpl--30767c27:14358db9eed:-519d,CENTRES ET QUARTIER ANCIENS,3286
+Dreal - TRI - Communes,FeatureTypeInfoImpl-749b820c:14d29db9f86:-3f40,SINISTRALITE COMMUNES TRI - INONDATION,4427
+INSEE - Population par communes,FeatureTypeInfoImpl-48337e3e:150c868ce7e:3cfa,DENSITE ET REPARTITION DE POPULATION DES COMMUNES,519
+FD chasse 33 - ACCA,FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7dd0,ACCA (Association Communale de Chasse Agréée) : LIMITES,279
+FD chasse 33 - gestion,FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7de2,GESTION TERRITOIRE CHASSE,1554
+BD ALTI - courbes de niveau DORDOGNE,FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7da4,BD CARTO : DORDOGNE,904
+BD ALTI - courbes de niveau GIRONDE,FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7d9c,BD CARTO : GIRONDE,903
+BD ALTI - courbes de niveau LANDES,FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7da0,BD CARTO : LANDES,906
+Emissions du CO2 en 2010 (source : ORECCA/ATMO POITOU-CHARENTES/LIMAIR),FeatureTypeInfoImpl--32412c87:14eb58b5b50:174b,EMISSIONS DE GES - CO2,3361
+CDC du Mézinais - Zonage du Plan Local de l'Urbanisme,FeatureTypeInfoImpl-2245790e:1419dadf6d9:-3372,PLU : PLAN DE ZONAGE,1437
+CDC Prayssas - Zonage du Plan Local de l'Urbanisme,FeatureTypeInfoImpl-2245790e:1419d9b9955:-248a,PLU : PLAN DE ZONAGE,1437
+CDC Sarlat Périgord Noir - AEP Purge,FeatureTypeInfoImpl-21464d69:14ebf34b699:340e,RESEAU AEP : PURGE,1683
+CDC Sarlat Périgord Noir - Assainissement Conduite branchement,FeatureTypeInfoImpl-21464d69:14ebf34b699:3645,REGARD BRANCHEMENT ASSAINISSEMENT,4242
+CG 24 - Sites d'activités Nautiques,FeatureTypeInfoImpl-7e125c65:133a1446f48:-72fc,SITES DES ACTIVITES NAUTIQUES,1542
+CG47 - Réserves naturelles nationales,FeatureTypeInfoImpl--5738bcda:13cb7bf17f0:-7a01,RESERVES NATURELLES NATIONALES,223
+SRCE - EF Liaisons principales et Liaisons régionales > 5000 v/j,FeatureTypeInfoImpl--57865d2e:1436bb867e2:33f3,LIAISONS DOUCES,4343
+CDC Sarlat Périgord Noir - AEP Captage,FeatureTypeInfoImpl-21464d69:14ebf0d1d27:652,RESEAU AEP : CAPTAGE,2099
+EPIDOR - En cours de reconnaissance,FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7e12,ZONES EN COURS DE RECONNAISSANCE,1670
+GIP PQA - Quartiers prioritaires,FeatureTypeInfoImpl--b4fb97c:15375ef25c4:-6e8c,NOUVELLE AQUITAINE : PERIMETRE DES QUARTIERS PRIORITAIRES DE LA POLITIQUE DE LA VILLE,4304
+SRCE - OA Corridors écologiques à préserver,FeatureTypeInfoImpl-4d80d622:153a8791791:-4fce,SRCE / CORRIDORS BOCAGE,2621
+Emissions du Scope 1 en 2012,FeatureTypeInfoImpl--32412c87:14eb5c19f39:-5a2d,EMISSIONS DE GES (GAZ A EFFET DE SERRE) PAR COMMUNE 2012,3709
+AURBA - Lots des zones d'activités,FeatureTypeInfoImpl-510f4e81:13c906090df:-7ff6,LOTS DES ZONES D ACTIVITES,681
+CC Montesquieu - Cadastre 2012 - Parcelles,FeatureTypeInfoImpl-4e3547f4:13c6cc45535:-9d5,CADASTRE ANCIEN : PARCELLES 1812,1697
+AURBA - Routes des zones d'activités,FeatureTypeInfoImpl-510f4e81:13c906090df:-7ff0,ROUTES DES ZONES D ACTIVITES,688
+DDTM40 - Petites régions agricoles,FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7d90,PETITES REGIONS AGRICOLES,250
+PIGMA - Population arrondissement 2009,FeatureTypeInfoImpl-186890ab:15a3c80bf7e:4400,POP PAR ARRONDISSEMENT 2009,2028
+PIGMA - Population canton 2009,FeatureTypeInfoImpl-186890ab:15a3cb5c811:73e0,POP PAR CANTON 2009,2029
+PIGMA - Population commune 2009,FeatureTypeInfoImpl-186890ab:15a3c47cdb1:619c,POP PAR COMMUNE 2009,2030
+DRAAF - Itinéraires bois ronds,FeatureTypeInfoImpl--155706dd:1373c90c085:-7ffd,ITINERAIRES BOIS RONDS,104
+DRAAF - Nouvelles régions agricoles,FeatureTypeInfoImpl-36a1dd30:13467905b9c:-404,NOUVELLES REGIONS AGRICOLES,1484
+DRAAF : Petites régions agricoles,FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7e9a,PETITES REGIONS AGRICOLES,250
+DREAL - TMJA Trafic de 2011 à 2015 (DREAL),FeatureTypeInfoImpl-69be8d:14ebabec22e:-72c4,TRAFIC ROUTIER : TMJA,3663
+DREAL - TMJA Trafic de 2011 à 2015 en ex-Aquitaine,FeatureTypeInfoImpl-69be8d:14eba561422:-363f,TRAFIC ROUTIER : TMJA,3663
+DREAL - TMJM Trafic mensuel 2014 (DREAL),FeatureTypeInfoImpl-69be8d:14ebabec22e:-732a,TRAFIC ROUTIER : TMJM,3567
+DREAL - TMJM Trafic mensuel 2014,FeatureTypeInfoImpl-69be8d:14eba4dfd05:-6576,TRAFIC ROUTIER : TMJM,3567
+ERDF - Réseau aérien moyenne tension (15kv - 20kv),FeatureTypeInfoImpl-50da8329:133db20c97a:-7955,ARMOIRE MOYENNE TENSION,1289
+ERDF - Réseau enterré moyenne tension (15kv - 20kv),FeatureTypeInfoImpl-50da8329:133db20c97a:-7951,ARMOIRE MOYENNE TENSION,1289
+GIP ATGeRi - OCS 2000 Extension 24 - Bêta,FeatureTypeInfoImpl--5f51174f:1530efaf1b7:-1c29,OCS-CLC 2000 : 24,1395
+GIP ATGeRi - OCS 2000 Extension 33 - Bêta,FeatureTypeInfoImpl--5f51174f:1530f039a13:-6a62,OCS-CLC 2000 : 33,1394
+GIP ATGeRi - OCS 2000 Extension 40 - Bêta,FeatureTypeInfoImpl-3a9bdd1e:14fff9d0b16:-3703,OCS-CLC 2000 : 40,1393
+GIP ATGeRi - OCS 2000 Extension 47 - Bêta,FeatureTypeInfoImpl--22d246a4:1523125f4b9:-3dc8,OCS-CLC 2000 : 47,1392
+GIP ATGeRi - OCS 2000 Extension 64 - Bêta,FeatureTypeInfoImpl-3a9bdd1e:14fff9d0b16:4266,OCS-CLC 2000 : 64,1391
+GIP ATGeRi - OCS évolution entre 2000 et 2009 Extension 24 - Bêta,FeatureTypeInfoImpl--5f51174f:1530ef1e470:75a5,OCS-CLC 2000 : 24,1395
+GIP ATGeRi - OCS évolution entre 2000 et 2009 Extension 33 - Bêta,FeatureTypeInfoImpl--5f51174f:1530ef53444:-4545,OCS-CLC 2000 : 33,1394
+GIP ATGeRi - OCS évolution entre 2000 et 2009 Extension 40 - Bêta,FeatureTypeInfoImpl-375d97f6:1500390e6c2:-3588,OCS-CLC 2000 : 40,1393
+GIP ATGeRi - OCS évolution entre 2000 et 2009 Extension 47 - Bêta,FeatureTypeInfoImpl--22d246a4:1523138923a:-6bd9,OCS-CLC 2000 : 47,1392
+GIP ATGeRi - OCS évolution entre 2000 et 2009 Extension 64 - Bêta,FeatureTypeInfoImpl-375d97f6:1500390e6c2:-348f,OCS-CLC 2000 : 64,1391
+Zones de gestion du SAGE nappes profondes de Gironde,FeatureTypeInfoImpl-538fbc38:14cb33f7e3c:4fa6,SAGE : ZONES HUMIDES,3272
+SRCE - RB MOSO Landes,FeatureTypeInfoImpl-65def64e:153a3fa3fe1:-285f,SRCE / CORRIDORS LANDES,3599
+SRCE - Co Système bocagers,FeatureTypeInfoImpl-5c3c0fbe:13ee3b701c3:-58ff,SRCE / MILIEUX SOUS TRAMES : BOCAGERS,2645
+Urbanisme - Landes Zonages,FeatureTypeInfoImpl--69a2e1b0:143720ddf42:-3f9b,EVOLUTION URBANISME (1990 - 2006) AVEC LE RESEAU ROUTE PRIMAIRE AU NORD DES LANDES DE GASCOGNE,3699
+Urbanisme - Gironde Zonages,FeatureTypeInfoImpl--266e24e3:148592967ca:-3530,DOCUMENT URBANISME : NORD MEDOC EN GIRONDE,2252
+AURBA - Hydrologie des zones d'activités,FeatureTypeInfoImpl-1f027e38:13c8e8c3c25:-5f8a,HYDROLOGIE DES ZONES D ACTIVITE,684
+CA Cote Basque Adour - Etablissement pour Personnes Agées,FeatureTypeInfoImpl-2245790e:1419d44a43e:-2259,ETABLISSEMENTS POUR PERSONNES AGEES,1298
+CR Aquitaine - EPCI Nouvelle Aquitaine,FeatureTypeInfoImpl-10996a3e:15355fc0fb6:5e0d,BD TOPO V2.2 : NOUVELLE AQUITAINE,3739
+Chambre agriculture 33 - Bulletin Sanitaire Vegetal BSV Parcelles,FeatureTypeInfoImpl-5c8f87e1:14407aa6100:-45ad,NB PARCELLES BSV (BULLETIN SANITAIRE VEGETAL),2702
+CR Aquitaine - PAYS - Septembre 2013,FeatureTypeInfoImpl-19088863:140f35c1596:-650f,PAYS DU MÉDOC - 2013,3849
+INSEE - Contours Iris 2010,FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7d54,CONTOURS IRIS : LIMOUSIN,894
+EPIDROPT - Arbres instables Ap,FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7ea4,RIPISYLVE : ARBRES INSTABLES (Ap, Api, ATL, ATT),1692
+EPIDROPT - Arbres instables Api,FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7e9e,RIPISYLVE : ARBRES INSTABLES (Ap, Api, ATL, ATT),1692
+FD pêche 33 - Plans d'eau fédéraux,FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7da8,PLANS D'EAU FEDERAUX,1688
+OSM - EPCI Nouvelle Aquitaine,FeatureTypeInfoImpl--1bed10f1:14f893ace16:-62ac,BD TOPO V2.2 : NOUVELLE AQUITAINE,3739
+Vue Aérienne 2004-2008 50cm,CoverageInfoImpl--25674c34:158ce250908:42c3,BD ORTHO 50CM 2004-2008 : AQUITAINE,1260
+SDIS 64 - PAI Espaces naturels,FeatureTypeInfoImpl--1e53a2c2:13f56e5d5ab:2d71,ESPACES NATURELS PROTEGES,2131
+SIBA - Bassins de rétention des eaux usees,FeatureTypeInfoImpl-b616f19:1370de390e3:4c2f,RESEAU D EAUX USEES,671
+SRCE - Eléments fragmentants - sept 2012,FeatureTypeInfoImpl--4a30557a:13af28f792b:2314,SRCE / ELEMENTS FRAGMENTANTS,2626
+DDCSPP 47 - Elevages bovins,FeatureTypeInfoImpl-48337e3e:150c7ccc759:2fa2,ELEVAGES BOVINS LAITIERS OU MIXTES,4306
+DRJSCS - Equipements sportifs - 2015,FeatureTypeInfoImpl--4866c453:14b267421b3:-be3,CARTE DES EQUIPEMENTS SPORTIFS,3384
+FD chasse 33 - ACCA et SCC,FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7dd6,ACCA (Association Communale de Chasse Agréée) : LIMITES,279
+ONF - Forêts relevant du régime forestier,FeatureTypeInfoImpl--2f77feef:134c1e338be:5417,FORET RELEVANT DU REGIME FORESTIER,267
+SIAEP LALINDE - Canalisation de Branchement,FeatureTypeInfoImpl-6213a6cc:134c6c9185c:-52a5,RESEAU AEP : CANALISATION DE BRANCHEMENT,1676
+SRCE - RB MOSO Landes à caractère temporaire (Klaus),FeatureTypeInfoImpl-65def64e:153a415ce51:3cf2,SRCE / CORRIDORS LANDES,3599
+SRCE - Co Feuillus et forêts mixtes,FeatureTypeInfoImpl-5c3c0fbe:13ee3b701c3:-58df,SRCE / CORRIDORS FEUILLUS,2623
+SRCE - RB Boisements de feuillus et forêts mixtes,FeatureTypeInfoImpl-79dddd8c:13ae31c6665:-1f23,SRCE / CORRIDORS FEUILLUS,2623
+SRCE  - RB ouverts semi-ouverts - Avril 2013,FeatureTypeInfoImpl-79dddd8c:13ae31c6665:-23a9,SRCE / CORRIDORS OUVERTS,2625
+Urbanisme Aquitaine - Zonages,FeatureTypeInfoImpl--4159a477:142dc59f1f3:-17f4,POPULATION 1990-2007 DES PRINCIPAUX ZONAGES GEOGRAPHIQUES EN AQUITAINE,1927
+DDTM33 - Bathymétrie Bassin Arcachon,CoverageInfoImpl--362f1b0d:14b78f4c2b9:-7f40,MOUILLAGES BASSIN ARCACHON,1915
+DDTM33 - Bathymétrie Bassin Arcachon 2015,CoverageInfoImpl--25674c34:158d4bfb45b:-2688,MOUILLAGES BASSIN ARCACHON,1915
+DREAL - Logements sociaux 2014 - Loi,FeatureTypeInfoImpl--126beca8:15433db0a2f:6410,ETALAB : LOGEMENTS DU PARC LOCATIF SOCIAL LOGEMENTS SOCIAUX COLLECTIFS,3525
+IGN - BD ORTHO 2,5 m tiff,CoverageInfoImpl-7738d5f9:1586e068de6:1497,BD ORTHO 2005 : 20 CM,1213
+DREAL - Logements sociaux 2013 - Loi,FeatureTypeInfoImpl-2307f41c:14bca6de111:-5bcd,ETALAB : LOGEMENTS DU PARC LOCATIF SOCIAL LOGEMENTS SOCIAUX COLLECTIFS,3525
+FD chasse 33 - Acquisition ACCA,FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7dde,ACQUISITION TERRITOIRE - ACCA,1551
+FD chasse 33 - Acquisition fondation,FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7dda,ACQUISITION TERRITOIRE - FONDATION,1552
+GIP ATGeRi - Région Nouvelle Aquitaine,FeatureTypeInfoImpl--b4fb97c:1537449ee22:-90b,BD TOPO V2.2 : NOUVELLE AQUITAINE,3739
+Gironde Numérique  - Offre ADSL,FeatureTypeInfoImpl-7db33db5:1358b9daa26:-7baa,OFFRE ADSL : SIMULATION,1689
+IGN ADMIN EXPRESS - EPCI,FeatureTypeInfoImpl--64db1a4f:15a93e2cc0f:-6671,NOUVELLE AQUITAINE : SCAN 1000® EXPRESS IGN,3888
+BD ALTI - courbes de niveau LOT-ET-GARONNE,FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7da2,BD ORTHO 2,5M : LOT-ET-GARONNE,2228
+BD ALTI - courbes de niveau PYRENEES-ATLANTIQUES,FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7d9e,BD ORTHO 2,5M : PYRENEES-ATLANTIQUES,2229
+PNR LG - Cercles de Gascogne,FeatureTypeInfoImpl--2aae7c6e:13542c0f87f:-6f10,HYDROGRAPHIE : TERRITOIRE DU PNR LANDES DE GASCOGNE,3693
+RFF - Classement Sonore en Aquitaine,FeatureTypeInfoImpl--60870653:141bbafd8c4:-539d,CLASSEMENT CADASTRAL DU PARC DES LOGEMENTS EN AQUITAINE EN 2007,1931
+SIAEP LALINDE - Clapet anti-retour,FeatureTypeInfoImpl-6213a6cc:134c6c9185c:-50a8,RESEAU AEP : CLAPET ANTI-RETOUR,1677
+SRCE - Grandes régions naturelles,FeatureTypeInfoImpl-7d62fb23:13af8fe8b40:-3cf1,SRCE / DECOUPAGE REGIONS NATURELLES,2644
+SRCE - RB Dunaires et rocheux,FeatureTypeInfoImpl-69ccb048:13b6ad6bb3a:-6d4b,SRCE / MILIEUX SOUS TRAMES : DUNAIRES,2646
+ASP - RPG 2011 Dept 33,FeatureTypeInfoImpl-d424538:1488838bacf:5b73,RPG - REGISTRE PARCELLAIRE GRAPHIQUE 2011,3550
+ASP - RPG 2011 Dept 40,FeatureTypeInfoImpl-d424538:148885a27b6:-5842,RPG - REGISTRE PARCELLAIRE GRAPHIQUE 2011,3550
+ASP - RPG 2011 Dept 47,FeatureTypeInfoImpl-d424538:1488817054d:-161b,RPG - REGISTRE PARCELLAIRE GRAPHIQUE 2011,3550
+ASP - RPG 2011 Dept 64,FeatureTypeInfoImpl-d424538:148885a27b6:-42c8,RPG - REGISTRE PARCELLAIRE GRAPHIQUE 2011,3550
+ASP - RPG 2012 Dept 24,FeatureTypeInfoImpl-381b45bf:144f895ea1b:3c88,RPG - REGISTRE PARCELLAIRE GRAPHIQUE 2012,3327
+ASP - RPG 2012 Dept 33,FeatureTypeInfoImpl-381b45bf:144f891ae3d:349d,RPG - REGISTRE PARCELLAIRE GRAPHIQUE 2012,3327
+ASP - RPG 2012 Dept 40,FeatureTypeInfoImpl-381b45bf:144f895ea1b:16bc,RPG - REGISTRE PARCELLAIRE GRAPHIQUE 2012,3327
+ASP - RPG 2012 Dept 47,FeatureTypeInfoImpl-381b45bf:144f8c67a44:3f19,RPG - REGISTRE PARCELLAIRE GRAPHIQUE 2012,3327
+ASP - RPG 2012 Dept 64,FeatureTypeInfoImpl-381b45bf:144f8c67a44:-5766,RPG - REGISTRE PARCELLAIRE GRAPHIQUE 2012,3327
+AURBA - Voies ferrées des zones d'activités,FeatureTypeInfoImpl-1f027e38:13c8e8c3c25:-5f8c,VOIES FERREES DES ZONES D ACTIVITES,683
+DDTM40 - Programme local de l'habitat,FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7d8c,PLH - PLAN LOCAL DE L'HABITAT,1323
+Commune de Mézin - Emplacement Reserve,FeatureTypeInfoImpl--3ce68516:141a7c87ec4:-39a4,PLU : EMPLACEMENT RESERVE DE VOIRIE,1434
+IGN - BDCarto Zone Occupation du Sol,FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7dae,OCCUPATION DU SOL EN DOMAINE DUNAIRE HORS ZONE URBAINE,3468
+ASP - RPG 2011 Dept 24,FeatureTypeInfoImpl-d424538:14887ec5266:-692d,RPG - REGISTRE PARCELLAIRE GRAPHIQUE 2011,3550
+Chambre agriculture 33 - Réseau Bienvenue à la ferme,FeatureTypeInfoImpl-5c8f87e1:14407aa6100:1787,NB ADHERENTS BIENVENUE A LA FERME,2700
+GIP ATGeRi - Contour Region Aquitaine,FeatureTypeInfoImpl-5013164b:13d7b70c49f:-691b,LISTE DES RADARS AVEC COORDONNEES EN REGION AQUITAINE,1926
+GIP ATGeRi - Région Nouvelle Aquitaine avec masque,FeatureTypeInfoImpl-63980651:14f84653086:-76b3,EN AQUITAINE AVEC L'EUROPE,4395
+GIP Littoral - Plan plages littoral Aquitain,FeatureTypeInfoImpl--64db1a4f:15a947f3880:315b,OCS DU LITTORAL AQUITAIN : 2000,3000
+Cadastre - Parcelles cadastrales (IGN BDParcellaire) Nov 2013,FeatureTypeInfoImpl-3e4679f5:133887f8025:-7df9,CADASTRE ANCIEN : PARCELLES 1812,1697
+Cadastre 33 - Parcelles cadastrales (IGN BDParcellaire),FeatureTypeInfoImpl--2168f1ae:143c012c583:4781,CADASTRE ANCIEN : PARCELLES 1812,1697
+Vue Aérienne IGN 2012 50cm Dordogne,CoverageInfoImpl-60c9b05c:14135123148:-4ec7,BD ORTHO IRC 50CM 2015 : DORDOGNE,4461
+Vue Aérienne IGN 2012 50cm Gironde,CoverageInfoImpl--88e5eb9:142e0d9c0b1:5896,BD ORTHO IRC 50CM 2015 : GIRONDE,4459
+Vue Aérienne IGN 2012 50cm Landes,CoverageInfoImpl-60c9b05c:14135123148:-2004,BD ORTHO IRC 50CM 2015 : LANDES,4460
+Vue Aérienne IGN 2012 50cm Lot-et-garonne,CoverageInfoImpl-60c9b05c:14135123148:-1fc0,BD ORTHO IRC 50CM 2015 : LOT-ET-GARONNE,4462
+SIAEP LALINDE - Ventouse ou vanne-air,FeatureTypeInfoImpl-6213a6cc:134c6c9185c:-4fbb,RESEAU AEP : VENTOUSE OU VANNE-AIR,1681
+SRCE - Co MOSO Pelouses sèches,FeatureTypeInfoImpl--1349261:1431092c4c4:6094,SRCE / TRAME VERTE : ZONES CENTRALES - ZONES OUVERTES PELOUSES ALTITUDES,2665
+SRCE_2014_RB Milieux humides,FeatureTypeInfoImpl--1349261:14310b86ff0:-f9e,SRCE / MILIEUX SOUS TRAMES : MILIEUX HUMIDES,2649
+SRCE - RB Systèmes bocagers,FeatureTypeInfoImpl-79dddd8c:13ae31c6665:-4332,SRCE / MILIEUX SOUS TRAMES : BOCAGERS,2645
+Total - Consommations d'énergie finale en 2012,FeatureTypeInfoImpl--32412c87:14eb58b5b50:16e7,ETALAB : CONSOMMATIONS FINALE D'ENERGIE CHARBON,3475
+EPIDROPT - Arbres instables ATT,FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7eac,RIPISYLVE : ARBRES INSTABLES (Ap, Api, ATL, ATT),1692
+DREAL - Communes soumises au risque Mvt de terrain,FeatureTypeInfoImpl--25674c34:158e41464a2:-508,COMMUNES SOUMISES LOI LITTORAL,1184
+CDC Sarlat Périgord Noir - AEP Conduite,FeatureTypeInfoImpl-21464d69:14ebf34b699:313b,PAYS DU PÉRIGORD NOIR - 2009,3794
+CDC Sarlat Périgord Noir - AEP Conduite branchement,FeatureTypeInfoImpl-21464d69:14ebf34b699:3179,PAYS DU PÉRIGORD NOIR - 2009,3794
+CDC Sarlat Périgord Noir - AEP PI,FeatureTypeInfoImpl-21464d69:14ebf34b699:339b,PAYS DU PÉRIGORD NOIR - 2009,3794
+CDC Sarlat Périgord Noir - AEP Vanne,FeatureTypeInfoImpl-21464d69:14ebf34b699:343f,PAYS DU PÉRIGORD NOIR - 2009,3794
+CDC Sarlat Périgord Noir - Assainissement Conduite,FeatureTypeInfoImpl-21464d69:14ebf34b699:3598,PAYS DU PÉRIGORD NOIR - 2009,3794
+CDC Sarlat Périgord Noir - Assainissement Tampon,FeatureTypeInfoImpl-21464d69:14ebf34b699:3799,PAYS DU PÉRIGORD NOIR - 2009,3794
+DREAL - Communes soumises au risque Séisme,FeatureTypeInfoImpl--25674c34:158e440feda:2472,COMMUNES SOUMISES LOI LITTORAL,1184
+CG 64 - Ouvrages sur les sentiers d'intérêt départemental,FeatureTypeInfoImpl-1efb5ae3:137edde9d3f:-6e97,RANDONNEES : SENTIERS D'INTERET DEPARTEMENTAL - OUVRAGES,2098
+Chambre agriculture 33 - Listing Bienvenue à la ferme,FeatureTypeInfoImpl-5c8f87e1:14407aa6100:171f,NB ADHERENTS BIENVENUE A LA FERME,2700
+Chambre agriculture 64 - Surface agricole utilisée,FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7dc2,SURFACE AGRICOLE UTILISEE (SAU),366
+DREAL - Communes soumises au risque Atmosphere,FeatureTypeInfoImpl--25674c34:158e440feda:444f,COMMUNES SOUMISES LOI LITTORAL,1184
+CDC Sarlat Périgord Noir - Assainissement Tabouret,FeatureTypeInfoImpl-21464d69:14ebf34b699:3731,PAYS DU PÉRIGORD NOIR - 2009,3794
+DDTM 33 - Zonage défiscalisation de la loi Scellier,FeatureTypeInfoImpl--2e1400eb:133edec7535:-7e8e,ZONAGE DEFISCALISATION LOI SCELLIER,1345
+DREAL - Communes soumises au risque Avalanche,FeatureTypeInfoImpl--25674c34:158e41464a2:-80f,COMMUNES SOUMISES LOI LITTORAL,1184
+DREAL - Communes soumises au risque Feu de forêt,FeatureTypeInfoImpl--25674c34:158e41464a2:-701,COMMUNES SOUMISES LOI LITTORAL,1184
+DRAAF - Zones agricoles défavorisées,FeatureTypeInfoImpl--57e63a5e:136cf12dcf2:-6c05,ZONES AGRICOLES DEFAVORISEES - ZAD,194
+SMEAG -  Zones de protection des berges (végétale, enrochement…),FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7fa6,PROTECTION DES BERGES (LIGNES),692
+EPIDROPT - Arbres instables ATL,FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7ebc,RIPISYLVE : ARBRES INSTABLES (Ap, Api, ATL, ATT),1692
+GIP ATGeRi - Départements Nouvelle Aquitaine,FeatureTypeInfoImpl--2c77ddf1:14bda25249b:-1f13,BD TOPO V2.2 : NOUVELLE AQUITAINE,3739
+IGN ADMIN EXPRESS - Région,FeatureTypeInfoImpl--64db1a4f:15a93e2cc0f:-6513,NOUVELLE AQUITAINE : SCAN 1000® EXPRESS IGN,3888
+SMEAG - Zones de protection des berges (végétale, enrochement…),FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7fa4,PROTECTION DES BERGES (LIGNES),692
+SRCE_2014_Co Milieux humides,FeatureTypeInfoImpl--1349261:1431092c4c4:608c,SRCE / RUPTURES CORRIDORS : MILIEUX HUMIDES HYDRO,2635
+PIGMA - Suivi de l'intégration des documents d'urbanisme,FeatureTypeInfoImpl--5ef09ad5:13fbda7c627:-2907,CARTE DOCUMENTS D'URBANISME ET PPR,3237
+AUSONIUS - Langoiran Bati 1853,FeatureTypeInfoImpl--143cf329:134f53ad2c3:-2270,CADASTRE ANCIEN : BATI 1853,1700
+AUSONIUS - Langoiran Bati 1812,FeatureTypeInfoImpl--143cf329:134f53ad2c3:-2272,CADASTRE ANCIEN : BATI 1812,1698
+AUSONIUS - Langoiran Parcelles 1812,FeatureTypeInfoImpl--143cf329:134f53ad2c3:-226e,CADASTRE ANCIEN : PARCELLES 1812,1697
+AUSONIUS - Langoiran Parcelles 1853,FeatureTypeInfoImpl--143cf329:134f53ad2c3:-226c,CADASTRE ANCIEN : PARCELLES 1853,1699
+CA Cote Basque Adour - Plan Local de l'Urbanisme,FeatureTypeInfoImpl-2245790e:1419d64a909:-49ce,PLH - PLAN LOCAL DE L'HABITAT,1323
+CA Grand Dax - Arrêts Transport à la demande,FeatureTypeInfoImpl--6dc709cf:14d4db704a4:-54bf,RESEAU DE TRANSPORT A LA DEMANDE,3373
+CG 64 - Agences techniques départementales,FeatureTypeInfoImpl--25d11048:13b23a094ec:-7fda,AGENCES TECHNIQUES DEPARTEMENTALES : ZONAGE,2106
+Vue Aérienne CUB 2008 20cm,CoverageInfoImpl-17928462:1343c2469d3:-726f,ORTHOPHOTO ÉTÉ 2008 DE LA CUB,4154
+DDTM40 - Zones agricoles défavorisées,FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7d94,ZONES AGRICOLES DEFAVORISEES - ZAD,194
+DREAL - Plans de gestion des étiages,FeatureTypeInfoImpl-5d223b53:134e5d6d059:-5d2d,PERIMETRE PLANS DE GESTION DES POISSONS MIGRATEURS BASSIN ADOUR GARONNE,247
+IGN ADMIN EXPRESS - Commune,FeatureTypeInfoImpl--64db1a4f:15a93e2cc0f:-7a9e,NOUVELLE AQUITAINE : SCAN 1000® EXPRESS IGN,3888
+Vue Aérienne IGN 2012 50cm Noir et Blanc Aquitaine,CoverageInfoImpl-1bc2c2b4:147e969eb79:-4b6a,BD ORTHO 50CM 2015 : AQUITAINE,3244
+OCA - Projection 2040 du trait de côte,FeatureTypeInfoImpl--526cedd4:143d482b71d:7e11,TRAIT DE COTE : PROJECTIONS 2020 ET 2040,3323
+PNR LG -  Zones d'éradication des grenouilles taureau,FeatureTypeInfoImpl--2aae7c6e:13542c0f87f:-6425,ZONES ERADICTION GRENOUILLE TAUREAU,393
+SIAEP LALINDE - Poste de refoulement,FeatureTypeInfoImpl-6213a6cc:134c6c9185c:-4ea0,ASSAINISSEMENT COLLECTIF : POSTE DE REFOULEMENT,1672
+SIAEP LALINDE - Tabouret de branchement,FeatureTypeInfoImpl-6213a6cc:134c6c9185c:-4cef,ASSAINISSEMENT COLLECTIF : TABOURET DE BRANCHEMENT,1674
+SIAEP LALINDE - Vanne de sectionnement du réseau,FeatureTypeInfoImpl-6213a6cc:134c6c9185c:-4fbd,RESEAU AEP : VANNE DE SECTIONNEMENT,1680
+SMEAP - Repères crues Dronne,FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7db6,CRUES HISTORIQUES SUR LA DRONNE,419
+Agriculture - Consommations d'énergie en 2012,FeatureTypeInfoImpl--32412c87:14eb5c1082f:-112e,CONSOMMATIONS ELECTRICITE - SECTEUR AGRICULTURE,3364
+Industrie - Consommations d'énergie en 2012,FeatureTypeInfoImpl--32412c87:14eb5c19f39:-60c0,CONSOMMATIONS ELECTRICITE - SECTEUR INDUSTRIE,3365
+Tertiaire - Consommations d'énergie en 2012,FeatureTypeInfoImpl--32412c87:14eb5c19f39:-604b,CONSOMMATIONS ELECTRICITE - SECTEUR TERTIAIRE,3367
+Transport - Consommations d'énergie en 2012,FeatureTypeInfoImpl--32412c87:14eb5c19f39:-5e99,CONSOMMATIONS ELECTRICITE - SECTEUR TRANSPORT,3368
+DRAC - Zones de protection archéologiques,FeatureTypeInfoImpl-1f9c8a93:133a71d23f1:-7f6d,ZONES ET SITES ARCHÉOLOGIQUES PROTÉGÉS,162
+Vue Aérienne 1998 - 2002  50cm,CoverageInfoImpl-17928462:1343c2469d3:-7663,BD ORTHO 50CM 2002 : LANDES,1256
+Vue Aérienne 2002 - 2004  50cm,CoverageInfoImpl-17928462:1343c2469d3:-79a1,BD ORTHO 50CM 2002 : LANDES,1256
+Vue Aérienne 2004 - 2008  50cm,CoverageInfoImpl--6daa2990:13ad58ab10e:-d3,BD ORTHO 50CM 2004 : DORDOGNE,1261
+OCA - Projection 2020 du trait de côte,FeatureTypeInfoImpl--526cedd4:143d45a8877:66d2,TRAIT DE COTE : PROJECTIONS 2020 ET 2040,3323
+SDEE 47 - Armoires de l’éclairage public,FeatureTypeInfoImpl--2c09ce2b:13b94940983:-7617,LOCALISATION ARMOIRES ECLAIRAGE PUBLIC,694
+SRCE - RB MOSO Pelouses sèches,FeatureTypeInfoImpl--1349261:14310b86ff0:-f3d,SRCE / TRAME VERTE : ZONES CENTRALES - ZONES OUVERTES PELOUSES ALTITUDES,2665
+SRCE - Co Conifères et milieux associés,FeatureTypeInfoImpl-5c3c0fbe:13ee3b701c3:-58fc,SRCE / MILIEUX SOUS TRAMES : BOCAGERS,2645
+ARS - Soins intensifs (Réservé ARS),FeatureTypeInfoImpl-29107397:1504bfcb2ce:949,ETABLISSEMENTS AVEC SOINS INTENSIFS,3584
+Cadaujac - Réseau d'eau potable,FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7ee4,SYNDICATS INTERCOMMUNAUX D'EAU POTABLE,534
+SIAEPA de La Brède - Réseau d'eau potable,FeatureTypeInfoImpl-547a414f:138a4b2645c:-7dba,BRANCHEMENT DEPOSE RESEAU D'EAU POTABLE,4041
+CDC Estuaire - Habitats naturels de la ZSC (Zones Spéciales de Conservation),FeatureTypeInfoImpl--60d2bb13:13cb4eacc01:-f88,HABITATS NATURELS SUR LA LEYRE : 33,401
+ERDF - Réseau aérien basse tension (<=400V),FeatureTypeInfoImpl-50da8329:133db20c97a:-7957,TRONCON AERIEN BASSE TENSION : <= 400 V,1286
+IGN ADMIN EXPRESS - Chef lieu,FeatureTypeInfoImpl--64db1a4f:15a9461dc1f:2eae,NOUVELLE AQUITAINE : SCAN 1000® EXPRESS IGN,3888
+SIBA - Collecteur principal des eaux usées,FeatureTypeInfoImpl-b616f19:1370de390e3:4d33,RESEAU ASSAINISSEMENT : COLLECTEUR PRINCIPAL,2060
+CG47 - Couverture WiMAX du département,FeatureTypeInfoImpl-2fa548b8:13291b4bfc7:-7843,COUVERTURE WIMAX  / ADSL / NIVEAUX DE SERVICES / 3G / DEGROUPAGE,343
+GeoTransfert - Annotations géographiques du trait de côte,FeatureTypeInfoImpl-2245790e:1419c920d26:-3a00,TRAIT DE COTE : ANNOTATIONS GEOGRAPHIQUES,3250
+Vue Aérienne Noir et Blanc 2009 40cm,CoverageInfoImpl-17928462:1343c2469d3:-7295,PAYS DU PÉRIGORD NOIR - 2009,3794
+Vue Aérienne Infrarouge 2009 40cm Aquitaine,CoverageInfoImpl-17928462:1343c2469d3:-7584,BD ORTHO INFRA-ROUGE COULEUR 2009 : AQUITAINE,3742
+Vue Aérienne Infrarouge 2012 40cm Aquitaine,CoverageInfoImpl--191d2494:147c474f868:-688b,BD ORTHO INFRA-ROUGE COULEUR 2012 : AQUITAINE,3743
+PNR LG - Sites d'hivernage de la grue cendrée,FeatureTypeInfoImpl--2aae7c6e:13542c0f87f:-65dc,GRUE CENDREE : SITES HIVERNAGE,774
+SRCE_2015_RB Milieux côtiers : dunaires et rocheux,FeatureTypeInfoImpl--1349261:14310b86ff0:-1050,SRCE / MILIEUX SOUS TRAMES : DUNAIRES,2646
+SRCE - Zones urbanisées supérieures à 5 ha,FeatureTypeInfoImpl--1e4c652c:152fa3a0024:19a8,SRCE / ZONES CENTRALES : BOCAGE,2675
+Cadaujac - Emplacement réservés PLU,FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7f04,PLU : EMPLACEMENT RESERVE DE VOIRIE,1434
+CG 64 - Signalétique verticale et d'information,FeatureTypeInfoImpl-1efb5ae3:137edde9d3f:-6e95,RANDONNEES : SIGNALETIQUE VERTICALE ET D'INFORMATION DES GRANDS ITINERAIRES,2103
+PIGMA - Population département 2009,FeatureTypeInfoImpl-186890ab:15a3c635607:7c37,RECENSEMENT POP 2009 - IRIS - THEME POPULATION,2786
+DREAL - Logements sociaux 2014 - Decret,FeatureTypeInfoImpl--126beca8:15433c3a22d:1f3d,ETALAB : LOGEMENTS DU PARC LOCATIF SOCIAL LOGEMENTS SOCIAUX COLLECTIFS,3525
+DREAL - Logements sociaux 2013 - Décret,FeatureTypeInfoImpl-2307f41c:14bca6de111:-5d17,ETALAB : LOGEMENTS DU PARC LOCATIF SOCIAL LOGEMENTS SOCIAUX COLLECTIFS,3525
+GeoTransfert - Trait de côte de 2010,FeatureTypeInfoImpl--3e77d70f:14197501559:-43f1,TRAIT DE COTE : 2010 PAR TELEDETECTION SPATIALE,3467
+GeoTransfert - Trait de côte de 2012,FeatureTypeInfoImpl-2245790e:1419c920d26:-50f2,TRAIT DE COTE : 2012 PAR TELEDETECTION SPATIALE,3246
+GeoTransfert - Trait de côte de 2013,FeatureTypeInfoImpl-2245790e:1419c920d26:-50b1,TRAIT DE COTE : 2013 PAR TELEDETECTION SPATIALE,3247
+GeoTransfert - Evolution du trait de côte entre 2010 et 2012,FeatureTypeInfoImpl-2245790e:1419c920d26:-3b08,TRAIT DE COTE : EVOLUTION 2010-2012,3248
+GeoTransfert - Evolution du trait de côte entre 2012 et 2013,FeatureTypeInfoImpl-2245790e:1419c920d26:-3af2,TRAIT DE COTE : EVOLUTION 2010-2012,3248
+IGN ADMIN EXPRESS - Département,FeatureTypeInfoImpl--64db1a4f:15a93e2cc0f:-678f,NOUVELLE AQUITAINE : SCAN 1000® EXPRESS IGN,3888
+IGN BDAdresse - Points Adresse,FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7d9a,OCA : POINTS COTES DIGITALISES A PARTIR DE SCANS 25 IGN - BASSIN D'ARCACHON,2896
+OCA - Aléa érosion de la côte sableuse,FeatureTypeInfoImpl--526cedd4:143d45a8877:4334,OCA : MORPHOLOGIE DE LA COTE SABLEUSE EN GIRONDE ET LANDES,2806
+SIBA - Réseau d'assainissement des eaux usées,FeatureTypeInfoImpl-b616f19:1370de390e3:4d54,LYONNAISE DES EAUX : RESEAU D'ASSAINISSEMENT STRUCTURANT,1450
+ARS - PPE 24 - Périmètres de protection éloignés des captages,FeatureTypeInfoImpl--1812fe21:13fece6373d:14ca,RESEAU AEP : PERIMETRES DE PROTECTION DES CAPTAGES,2107
+ARS - PPE 33 - Périmètres de protection éloignés des captages,FeatureTypeInfoImpl--1812fe21:13fece6373d:1697,RESEAU AEP : PERIMETRES DE PROTECTION DES CAPTAGES,2107
+ARS - PPE 40 - Périmètres de protection éloignés des captages,FeatureTypeInfoImpl--1812fe21:13fece6373d:1769,RESEAU AEP : PERIMETRES DE PROTECTION DES CAPTAGES,2107
+ARS - PPE 47 - Périmètres de protection éloignés des captages,FeatureTypeInfoImpl--1812fe21:13fece6373d:469c,RESEAU AEP : PERIMETRES DE PROTECTION DES CAPTAGES,2107
+ARS - PPE 64 - Périmètres de protection éloignés des captages,FeatureTypeInfoImpl--1812fe21:13fece6373d:4704,RESEAU AEP : PERIMETRES DE PROTECTION DES CAPTAGES,2107
+ARS - PPI 24 - Périmètres de protection immédiats des captages,FeatureTypeInfoImpl--1812fe21:13fed2fbc91:-706e,RESEAU AEP : PERIMETRES DE PROTECTION DES CAPTAGES,2107
+ARS - PPI 33 - Périmètres de protection immédiats des captages,FeatureTypeInfoImpl--1812fe21:13fed2fbc91:-7056,RESEAU AEP : PERIMETRES DE PROTECTION DES CAPTAGES,2107
+ARS - PPI 47 - Périmètres de protection immédiats des captages,FeatureTypeInfoImpl--1812fe21:13fed2fbc91:-7050,RESEAU AEP : PERIMETRES DE PROTECTION DES CAPTAGES,2107
+ARS - PPI 64 - Périmètres de protection immédiats des captages,FeatureTypeInfoImpl--1812fe21:13fed2fbc91:-704e,RESEAU AEP : PERIMETRES DE PROTECTION DES CAPTAGES,2107
+CR Aqutaine - Gisement éolien flottant,FeatureTypeInfoImpl-40b93b40:14ae2b52e35:3464,ARTELIA : LOCALISATION DU GISEMENT EOLIEN FLOTTANT,3145
+CR Aqutaine - Nearshore Gisement houlomoteur,FeatureTypeInfoImpl-40b93b40:14ae3b0d606:-827,ARTELIA - PRODUCTIBME HOULOMOTEUR NEARSHORE,3127
+CR Aqutaine - Offshore Gisement houlomoteur,FeatureTypeInfoImpl-40b93b40:14ae3bcf0bc:6e2,ARTELIA - PRODUCTIBME HOULOMOTEUR OFFSHORE,3110
+DREAL - Réseau de Controle et de Surveillance (RCS),FeatureTypeInfoImpl-5d223b53:134e5d6d059:-5d05,STATIONS MESURES QUALITE EAU - RESEAU DE CONTROLE ET DE SURVEILLANCE,705
+DREAL - Trafic de 2011 à 2015 (VINCI),FeatureTypeInfoImpl--236e41c6:14f074a050d:-67f2,COMPTAGE TRAFIC ROUTIER SUR LA CUB EN 2011,4072
+ARS - PPI 40 - Périmètres de protection immédiats des captages,FeatureTypeInfoImpl--1812fe21:13fed2fbc91:-7054,RESEAU AEP : PERIMETRES DE PROTECTION DES CAPTAGES,2107
+Commune de Mézin - Texte des zonages PLU,FeatureTypeInfoImpl--3ce68516:141a7dacf99:-229d,TEXTE DU FOND DE PLAN DU PLU,4277
+DREAL - Autos-écoles en 2014 en Aquitaine,FeatureTypeInfoImpl-1bfb0579:14dd2b21513:-6061,PAYS ET INTERCOMMUNALITE EN AQUITAINE - 2014,3871
+SRCE - RB Milieux rocheux d'altitude,FeatureTypeInfoImpl--d97cb59:13dfbf8cfd8:-3fec,SRCE / MILIEUX SOUS TRAMES : DUNAIRES,2646
+DREAL - Trafic comptages BDX Metropole de 2011 à 2015,FeatureTypeInfoImpl--25674c34:158f3c52444:381e,TRAFIC ROUTIER : TRAFIC COMPTAGES CUB 2010-2014,3769
+PIGMA - Taux de chômage des 15-24 ans / 15-24 ans en 2009,FeatureTypeInfoImpl--66b5f798:13ab2251bcf:-1f4d,ETALAB : TAUX DE FISCALITE DIRECTE LOCALE ET DELIBERATIONS 2009 GIRONDE,3007
+PIGMA - Taux de chômage des 15-64 ans / 15-64 ans en 2009,FeatureTypeInfoImpl--66b5f798:13ab2251bcf:34b3,ETALAB : TAUX DE FISCALITE DIRECTE LOCALE ET DELIBERATIONS 2009 GIRONDE,3007
+PIGMA - Taux de chômage des 25-54 ans / 25-54 ans en 2009,FeatureTypeInfoImpl--66b5f798:13ab2251bcf:7f44,ETALAB : TAUX DE FISCALITE DIRECTE LOCALE ET DELIBERATIONS 2009 GIRONDE,3007
+PIGMA - Taux de chômage des 55-64 ans / 55-64 ans en 2009,FeatureTypeInfoImpl--66b5f798:13ab2611fca:-5989,ETALAB : TAUX DE FISCALITE DIRECTE LOCALE ET DELIBERATIONS 2009 GIRONDE,3007
+ERDF - Réseau enterré basse tension (<=400V),FeatureTypeInfoImpl-50da8329:133db20c97a:-7953,TRONCON AERIEN BASSE TENSION : <= 400 V,1286
+GIP ATGeRi- OCS évolution entre 2000 et 2009,FeatureTypeInfoImpl--bc07016:15722ad054c:-1e0b,RECENSEMENT AGRICOLE ENTRE 2000 ET 2010,3755
+SRCE_2014_EF  - zones urbanisées,FeatureTypeInfoImpl--1349261:1431092c4c4:3798,SENSIBILITE PLUVIAL  : ZONES,2168
+SRCE - RB Boisements de conifères et milieux associés,FeatureTypeInfoImpl-79dddd8c:13ae31c6665:-3924,SRCE / MILIEUX SOUS TRAMES : MILIEUX HUMIDES,2649
+Urbanisme - Gironde Informations linéaires,FeatureTypeInfoImpl--266e24e3:1485920429f:5379,DOCUMENT URBANISME : NORD MEDOC EN GIRONDE,2252
+Urbanisme - Gironde Informations ponctuels,FeatureTypeInfoImpl--266e24e3:148592967ca:-4f90,DOCUMENT URBANISME : NORD MEDOC EN GIRONDE,2252
+Résidentiel - Consommations d'énergie en 2012,FeatureTypeInfoImpl--32412c87:14eb5c19f39:-609b,CONSOMMATIONS ELECTRICITE PAR COMMUNE 2012,3707
+ARS - PPR 64 - Périmètres de protection rapprochés des captages,FeatureTypeInfoImpl--1812fe21:13fed2fbc91:-2d3e,RESEAU AEP : PERIMETRES DE PROTECTION DES CAPTAGES,2107
+ARS - PPR 24 - Périmètres de protection rapprochés des captages,FeatureTypeInfoImpl--1812fe21:13fed2fbc91:-3b99,RESEAU AEP : PERIMETRES DE PROTECTION DES CAPTAGES,2107
+ARS - PPR 33 - Périmètres de protection rapprochés des captages,FeatureTypeInfoImpl--1812fe21:13fed2fbc91:-304f,RESEAU AEP : PERIMETRES DE PROTECTION DES CAPTAGES,2107
+ARS - PPR 40 - Périmètres de protection rapprochés des captages,FeatureTypeInfoImpl--1812fe21:13fed2fbc91:-304d,RESEAU AEP : PERIMETRES DE PROTECTION DES CAPTAGES,2107
+ARS - PPR 47 - Périmètres de protection rapprochés des captages,FeatureTypeInfoImpl--1812fe21:13fed2fbc91:-304b,RESEAU AEP : PERIMETRES DE PROTECTION DES CAPTAGES,2107
+CG 64 - Antennes techniques départementales,FeatureTypeInfoImpl--25d11048:13b23a094ec:-7fd8,ANTENNES TECHNIQUES D'EXPLOITATION ROUTIERE,2105
+cg47 - Station d'épuration des eaux usées,FeatureTypeInfoImpl--5738bcda:13cb7bf17f0:-7b6f,LYONNAISE DES EAUX : STATION D'EPURATION,1449
+DREAL - Accidents de 2004 à 2014 en Aquitaine,FeatureTypeInfoImpl--6a74e5bd:15027ff6da0:4cb,PAYS ET INTERCOMMUNALITE EN AQUITAINE - 2014,3871
+DREAL - Trafic de 2011 à 2015 (ALIENOR),FeatureTypeInfoImpl-4096704b:14f17f59a63:-5fdb,COMPTAGE TRAFIC ROUTIER SUR LA CUB EN 2011,4072
+RTE - Ligne de transport d'électricité HTB,FeatureTypeInfoImpl--61be1724:14b2fb6dc4f:881,TRANSPORT COLLECTIF : PARCOURS LIGNE BUS,1424
+SRCE - EF Lignes à Grande Vitesse (LGV),FeatureTypeInfoImpl--1349261:1431092c4c4:6099,PROJET LIGNE GRANDE VITESSE SUD EUROPE ATLANTIQUE (SEA),646
+Urbanisme - Gironde Habillages linéaires,FeatureTypeInfoImpl--266e24e3:148591801ab:6121,DOCUMENT URBANISME : NORD MEDOC EN GIRONDE,2252
+Urbanisme - Gironde Habillages ponctuels,FeatureTypeInfoImpl--266e24e3:148591801ab:616a,DOCUMENT URBANISME : NORD MEDOC EN GIRONDE,2252
+Urbanisme - Gironde Informations surfaciques,FeatureTypeInfoImpl--266e24e3:148592967ca:-4f3e,DOCUMENT URBANISME : NORD MEDOC EN GIRONDE,2252
+Urbanisme - Gironde Prescriptions linéaires,FeatureTypeInfoImpl--266e24e3:148592967ca:-48de,DOCUMENT URBANISME : NORD MEDOC EN GIRONDE,2252
+Urbanisme - Gironde Prescriptions ponctuels,FeatureTypeInfoImpl--266e24e3:148592967ca:-4842,DOCUMENT URBANISME : NORD MEDOC EN GIRONDE,2252
+Urbanisme - Landes Habillages linéaires,FeatureTypeInfoImpl--69a2e1b0:1437243c08c:4455,EVOLUTION URBANISME (1990 - 2006) AVEC LE RESEAU ROUTE PRIMAIRE AU NORD DES LANDES DE GASCOGNE,3699
+Urbanisme - Landes Habillages ponctuels,FeatureTypeInfoImpl--69a2e1b0:14372484f82:-7a7b,EVOLUTION URBANISME (1990 - 2006) AVEC LE RESEAU ROUTE PRIMAIRE AU NORD DES LANDES DE GASCOGNE,3699
+GIP LITTORAL - OCS évolution entre 2000 et 2009,FeatureTypeInfoImpl--31e593a4:138fecfaf42:5a3d,RECENSEMENT AGRICOLE ENTRE 2000 ET 2010,3755
+DREAL - Trafic de 2011 à 2015 (ATLANDES),FeatureTypeInfoImpl--236e41c6:14f07334ce2:-7f20,COMPTAGE TRAFIC ROUTIER SUR LA CUB EN 2011,4072
+GIP ATGeRi - Surface moyenne annuelle forestière incendiée,FeatureTypeInfoImpl--29686bc1:1502382da06:-3d76,PUISSANCE MOYENNE ANNUELLE DE LA HOULE,1146
+Urbanisme - Gironde Habillages surfaciques,FeatureTypeInfoImpl--266e24e3:1485920429f:536d,DOCUMENT URBANISME : NORD MEDOC EN GIRONDE,2252
+Urbanisme - Gironde Prescriptions surfaciques,FeatureTypeInfoImpl--266e24e3:148592967ca:-47ee,DOCUMENT URBANISME : NORD MEDOC EN GIRONDE,2252
+Vue aérienne Noir et Blanc 2012 du Bassin d'Arcachon,CoverageInfoImpl-3dad044:1455f931d07:-4e12,OCA : DIVERSITE PHYTOPLANCTONIQUE - BASSIN D'ARCACHON,2834
+SMEAG -  Points de franchissement et objectif 2012,FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7f9e,NUAGE DE POINTS POUR LE MNT EN 2012,4148
+Urbanisme - Landes Habillages surfaciques,FeatureTypeInfoImpl--69a2e1b0:14372484f82:-7a5f,EVOLUTION URBANISME (1990 - 2006) AVEC LE RESEAU ROUTE PRIMAIRE AU NORD DES LANDES DE GASCOGNE,3699
+Urbanisme - Landes Informations linéaires,FeatureTypeInfoImpl--69a2e1b0:143726857b1:-20e5,EVOLUTION URBANISME (1990 - 2006) AVEC LE RESEAU ROUTE PRIMAIRE AU NORD DES LANDES DE GASCOGNE,3699
+SRCE - OA Réservoirs de Biodiversité à préserver sous réserve de confirmation de leur intérêt,FeatureTypeInfoImpl-4d80d622:153a8be2757:-5265,SRCE / MILIEUX SOUS TRAMES : BOCAGERS,2645
+DDTM40 - Point de prélèvement d'eau pour l'irrigation,FeatureTypeInfoImpl--3ace510b:13b99b4389f:-7ffd,BD TOPO : POINT D'EAU SERVANT A L'AEP,1823
+EPIDOR - Zones à Dominante Humide Dordogne,FeatureTypeInfoImpl--7c49cce1:1359a5c4ecf:-5eaa,WEB_5_1_ATLAS DES ZONES INONDABLES DU DÉPARTEMENT DE LA DORDOGNE,2296
+Urbanisme - Landes Prescriptions linéaires,FeatureTypeInfoImpl--69a2e1b0:143726857b1:4b42,EVOLUTION URBANISME (1990 - 2006) AVEC LE RESEAU ROUTE PRIMAIRE AU NORD DES LANDES DE GASCOGNE,3699
+CG47 - Points de rejet des tations d'épuration,FeatureTypeInfoImpl--5738bcda:13cb7bf17f0:-7a05,POINTS REJET RESEAU ASSAINISSEMENT MILIEU NATUREL,4191
+RFF - LGV Sud Europe Atlantique (Bordeaux-Tours),FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7d66,PROJET LIGNE GRANDE VITESSE SUD EUROPE ATLANTIQUE (SEA),646
+Urbanisme - Landes Informations surfaciques,FeatureTypeInfoImpl--69a2e1b0:143726857b1:-15fd,EVOLUTION URBANISME (1990 - 2006) AVEC LE RESEAU ROUTE PRIMAIRE AU NORD DES LANDES DE GASCOGNE,3699
+Cadaujac - Schéma directeur d'assainissement,FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7f62,WEB_6_3_10_PÉRIMÈTRES SCOT DE PÉRIGUEUX ET LIBOURNE - SCHÉMA DIRECTEUR DE BRIVE - ZONES AGGLOMÉRÉES DE PÉRIGUEUX - BERGERAC - BRIVE,2301
+CG64 - Stations d'épuration et points de rejet,FeatureTypeInfoImpl--6bab9a9a:14052b4370d:4319,POINTS REJET RESEAU ASSAINISSEMENT MILIEU NATUREL,4191
+Urbanisme - Landes Prescriptions ponctuelles,FeatureTypeInfoImpl--69a2e1b0:143726857b1:687e,EVOLUTION URBANISME (1990 - 2006) AVEC LE RESEAU ROUTE PRIMAIRE AU NORD DES LANDES DE GASCOGNE,3699
+Urbanisme - Landes Prescriptions surfaciques,FeatureTypeInfoImpl--69a2e1b0:143726857b1:68f9,EVOLUTION URBANISME (1990 - 2006) AVEC LE RESEAU ROUTE PRIMAIRE AU NORD DES LANDES DE GASCOGNE,3699
+DREAL - Trafic de 2011 à 2015 (Gestionnaires),FeatureTypeInfoImpl--236e41c6:14f07334ce2:-7cab,COMPTAGE TRAFIC ROUTIER SUR LA CUB EN 2011,4072
+PIGMA - Emplacement des établissements scolaires du 2nd degré,FeatureTypeInfoImpl--7b1f44fd:143069985a2:-170f,ETABLISSEMENTS SCOLAIRES PUB ET PRI DU 2ND DEGRE - EMPLACEMENT,3258
+SRCE - RB Pelouses et prairies de piémont et d'altitude,FeatureTypeInfoImpl--1e4c652c:152fa3a0024:16c1,SRCE / ZONES CENTRALES : MILIEUX OUVERTS PELOUSES ALTITUDES,2679
+INSEE - Croissance de la population par commune de 1969 à 2012,FeatureTypeInfoImpl-48337e3e:150c868ce7e:3310,CONSOMMATIONS ELECTRICITE PAR COMMUNE 2012,3707
+INSEE - Taux de chômage entre 55 et 64 ans par communes,FeatureTypeInfoImpl-48337e3e:150c868ce7e:44ac,SRU : COMMUNES SOUMISES A OBLIGATION ART 55 LOI SRU,1346
+SMEAG -  Points d'accessibilité à l'eau,FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7fb0,DENSITE  DE POPULATION  ET NOMBRE DE POINTS ACCES PUBLIC INTERNET,515
+CR Aqutaine - Gisement éolien posé Profondeur < 30 m,FeatureTypeInfoImpl-40b93b40:14ae2b85c52:-1a39,ARTELIA : LOCALISATION DU GISEMENT EOLIEN POSE (A UNE PROFONDEUR INFERIEURE A 30M),3146
+IGN ADMIN EXPRESS - Arrondissement départemental,FeatureTypeInfoImpl--64db1a4f:15a93bcfd03:6bdc,NOUVELLE AQUITAINE : SCAN 250® EXPRESS IGN,3889
+INSEE - Part des chômeurs entre 55 et 64 ans par communes,FeatureTypeInfoImpl-48337e3e:150c868ce7e:41c1,SRU : COMMUNES SOUMISES A OBLIGATION ART 55 LOI SRU,1346
+CG 64 - Point de départ des Plans Locaux de Randonnées,FeatureTypeInfoImpl-1efb5ae3:137edde9d3f:-6e8f,MISE AU POINT METHODOLOGIE ELABORATION PLANS DE GESTION DE L'EAU MARAIS ESTUAIRE DE LA GIRONDE EXPERIMENTATION MARAIS DE REYSSON,4341
+CR Aqutaine - Gisement éolien posé Profondeur 30 à 45 m,FeatureTypeInfoImpl-40b93b40:14ae2db757c:372c,ARTELIA : LOCALISATION DU GISEMENT EOLIEN POSE (A UNE PROFONDEUR INFERIEURE A 30M),3146
+DREAL - Réseau de suivi des produits phystosanitaires,FeatureTypeInfoImpl-5d223b53:134e5d6d059:-5dd5,STATIONS MESURES QUALITE EAU - RESEAU DE SUIVI DES PRODUITS PHYTOSANITAIRES,716
+PIGMA - Emprise au sol des établissements scolaires du 2nd degré - 2015,FeatureTypeInfoImpl--60870653:141bb820e24:-5e8f,ETABLISSEMENTS SCOLAIRES PUB ET PRI DU 2ND DEGRE - EMPRISE AU SOL,3257
+SDEE 47 - Points lumineux du réseau d’éclairage public,FeatureTypeInfoImpl--2c09ce2b:13b94940983:-741e,NOMBRE DE POINTS D'ACCES PUBLIC INTERNET PAR COMMUNES,514
+SIAEP LALINDE - Plaque du réseau d'Alimentation en Eau  Potable,FeatureTypeInfoImpl-6213a6cc:134c6c9185c:-4fc3,LYONNAISE DES EAUX -  HYDRANTS RESEAU EAU POTABLE,4120
+SRCE_2014_EF_IT  - Projet LGV GPSO - Priorité 2014-2030,FeatureTypeInfoImpl--1349261:1431092c4c4:6d3c,PARC URBAIN AUSONE-BRUGES  - CONDITIONS DU PROJET,1526
+CDC Estuaire - Habitats d'intérêt communautaire de la ZSC (Zones Spéciales de Conservation),FeatureTypeInfoImpl--60d2bb13:13cb4eacc01:-f00,OCA : INVENTAIRE FAUNE BENTHIQUE HABITATS D'INTERET COMMUNAUTAIRE RECIFS ET GROTTES SOUS-MARINES BASQUE,2990
+SMEAG -  Points d'atterissement: priorités et plan d'action,FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7f9c,DENSITE  DE POPULATION  ET NOMBRE DE POINTS ACCES PUBLIC INTERNET,515
+Chef lieu de Canton,FeatureTypeInfoImpl-422659b1:132b0a3003b:-7a86,CANTON,177
+CA Cote Basque Adour - Hopitaux et Cliniques,FeatureTypeInfoImpl-2245790e:1419d44a43e:-20da,HOPITAUX,408
+CA Cote Basque Adour - Garderie,FeatureTypeInfoImpl-2245790e:1419d44a43e:-65b9,GARDERIE,3184
+Cadaujac - Niveau acoustique d’évaluation des routes jour-soirée-nuit > 68 DB,FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7f7a,ROUTES,3176
+Cadaujac - Niveau acoustique d’évaluation nocturne des routes LN,FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7eea,ROUTES,3176
+Cadaujac - Niveau acoustique d’évaluation nocturne des routes > 62 dB,FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7f22,ROUTES,3176
+CC Montesquieu - Cadastre 2012 - Bâti,FeatureTypeInfoImpl-4e3547f4:13c6cc45535:-a3f,CADASTRE,79
+CC Montesquieu - Cadastre 2012 - Sections,FeatureTypeInfoImpl-4e3547f4:13c6cc45535:-9bd,CADASTRE,79
+Cadaujac - Zonages du PLU,FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7f74,PLU,237
+CDC Penne d'Agenais - Places,FeatureTypeInfoImpl-2245790e:1419dc4bdd5:-4dd3,PLACES,2610
+CDC Penne d'Agenais - PLU de St Sylvestre-sur-Lot,FeatureTypeInfoImpl-2245790e:1419dadf6d9:408e,PLU,237
+CDC Penne d'Agenais - Voies,FeatureTypeInfoImpl-2245790e:1419dc4bdd5:-16b7,VOIES,2612
+SAGE - Dunes modernes du littoral landais d'Arcachon à Mimizan Plage,FeatureTypeInfoImpl--524a0744:1527958b054:214e,SAGE,235
+SMBV des Lacs du Born - Périmetre du SAGE,FeatureTypeInfoImpl--658a4c7:14bff20bba5:-a39,SAGE,235
+Chambre agriculture 33 - Association de développement agricole et rural,FeatureTypeInfoImpl-5c8f87e1:14407aa6100:-45b3,ASSOCIATION,3313
+Chambre agriculture 33 - Réseau hydrographie de la PAC,FeatureTypeInfoImpl-5c8f87e1:14407aa6100:6439,HYDROGRAPHIE,3784
+Chambre agriculture 64 - Elevages par commune,FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7dca,COMMUNE,176
+CR Aqutaine - Eolien posé - Calcul des potentiels technico-économiques - Polygone,FeatureTypeInfoImpl-40b93b40:14ae40cab4d:-3442,EOLIEN,173
+CR Aqutaine - Eolien posé - Calcul des potentiels technico-économiques - Point,FeatureTypeInfoImpl-40b93b40:14ae3fb4fdb:-4961,EOLIEN,173
+Commune de Mézin - Bois,FeatureTypeInfoImpl--3ce68516:141a7c87ec4:-5212,COMMUNE,176
+Commune de Mézin - Nom des Lieux-dits,FeatureTypeInfoImpl--3ce68516:141a7c87ec4:-3866,COMMUNE,176
+Commune de Mézin - Plantation à prévoir,FeatureTypeInfoImpl--3ce68516:141a7c87ec4:-3864,COMMUNE,176
+Commune de Mézin - Information sur les plantations à prévoir,FeatureTypeInfoImpl--3ce68516:141a7c87ec4:-3862,COMMUNE,176
+Commune de Mézin - Schéma Axe catégorie1,FeatureTypeInfoImpl--3ce68516:141a7c87ec4:-3860,COMMUNE,176
+Commune de Mézin - Voirie à prévoir,FeatureTypeInfoImpl--3ce68516:141a7c87ec4:-385b,VOIRIE,109
+CA Cote Basque Adour - Etablissement Handicap Habitat,FeatureTypeInfoImpl-2245790e:1419d44a43e:-64bb,HABITAT,560
+CDC Penne d'Agenais - Routes Départementales,FeatureTypeInfoImpl-2245790e:1419dc4bdd5:-1741,ROUTES,3176
+CG 64 - Routes départementales,FeatureTypeInfoImpl--19dd5131:13b23707cad:-68b6,ROUTES,3176
+Commune de Mézin - Schéma Axe catégorie2,FeatureTypeInfoImpl--3ce68516:141a7c87ec4:-385d,COMMUNE,176
+Commune de Mézin - Information sur la voirie à prévoir,FeatureTypeInfoImpl--3ce68516:141a7c87ec4:-c6a,VOIRIE,109
+Commune de Mézin - Zone Ai du PLU,FeatureTypeInfoImpl--3ce68516:141a7c87ec4:-b48,COMMUNE,176
+Commune de Mézin - Zone AUa du PLU,FeatureTypeInfoImpl--3ce68516:141a7c87ec4:-b41,COMMUNE,176
+Commune de Mézin - Zone AUb du PLU,FeatureTypeInfoImpl--3ce68516:141a7c87ec4:-b3c,COMMUNE,176
+Commune de Mézin - Zone AUx du PLU,FeatureTypeInfoImpl--3ce68516:141a7c87ec4:-b3a,COMMUNE,176
+Commune de Mézin - Zone Nh du PLU,FeatureTypeInfoImpl--3ce68516:141a7c87ec4:-b36,COMMUNE,176
+Commune de Mézin - Zone Ua du PLU,FeatureTypeInfoImpl--3ce68516:141a7dacf99:-21a7,COMMUNE,176
+Commune de Mézin - Zone Ub du PLU,FeatureTypeInfoImpl--3ce68516:141a7dacf99:-21a3,COMMUNE,176
+Commune de Mézin - Zone Ux du PLU,FeatureTypeInfoImpl--3ce68516:141a7dacf99:-2195,COMMUNE,176
+Commune de Mézin - Zone Uxi du PLU,FeatureTypeInfoImpl--3ce68516:141a7dacf99:-2193,COMMUNE,176
+Commune de Mézin - Zones de glissements,FeatureTypeInfoImpl--3ce68516:141a7dacf99:-218e,COMMUNE,176
+PCI vecteur 64 - Commune (DDFIP 64),FeatureTypeInfoImpl-72e17f:14eb09bea46:-7dea,COMMUNE,176
+DDT 47 - scot,FeatureTypeInfoImpl-4d526dfe:149f0e6e556:-7d4e,SCOT,239
+DDTM 33 - Périmètres des SCOT,FeatureTypeInfoImpl--2e1400eb:133edec7535:-7e86,SCOT,239
+DIRA : Flore d'Oloron-Sainte-Marie,FeatureTypeInfoImpl--58ac8fd2:14377594a3d:24ae,FLORE,3306
+DIRA : Habitat d'Oloron-Sainte-Marie,FeatureTypeInfoImpl--58ac8fd2:14377594a3d:7786,HABITAT,560
+DRAC - ZPPAUP,FeatureTypeInfoImpl-2fa548b8:13291b4bfc7:-7c00,ZPPAUP,166
+DREAL - Barrages,FeatureTypeInfoImpl-5387e552:159ace84b51:693d,BARRAGES,31
+IGN - GeoFLA Commune,FeatureTypeInfoImpl--788790c3:148ad1aec70:-504c,COMMUNE,176
+Cantons,FeatureTypeInfoImpl--40801fd5:13569610c66:-5049,ETALAB : OCCUPATION DU TERRITOIRE cantons littoraux,3495
+Communes,FeatureTypeInfoImpl--75a9eb42:1328aaba535:-7fdd,ZONAGE SIMPLIFIE DES POS COMMUNES LITTORALES,241
+Asso Du pin sur la planche - arbres plantés,FeatureTypeInfoImpl--1ff25990:14204a38c0f:36f2,ARBRES,2162
+INSEE - Population par départements,FeatureTypeInfoImpl-48337e3e:150c868ce7e:3eff,POPULATION,325
+INSEE - Population par EPCI,FeatureTypeInfoImpl-48337e3e:150c868ce7e:3da9,POPULATION,325
+IGN - BDtopo - Pylones,FeatureTypeInfoImpl--3a85bcf:132cf3d3d67:-7b8e,PYLONES,133
+Cadastre 33 - Batiments (IGN BDParcellaire),FeatureTypeInfoImpl--2168f1ae:143c012c583:477c,CADASTRE,79
+Cadastre - Communes (IGN BDParcellaire) Nov 2013,FeatureTypeInfoImpl-1f9c8a93:133a71d23f1:-756b,CADASTRE,79
+Cadastre - Localisants (IGN BDParcellaire) Nov 2013,FeatureTypeInfoImpl-1f9c8a93:133a71d23f1:-7518,CADASTRE,79
+Cadastre - Sections cadastrales (IGN BDParcellaire) Nov 2013,FeatureTypeInfoImpl-1f9c8a93:133a71d23f1:-76ba,CADASTRE,79
+Cadastre 33 - Sections cadastrales (IGN BDParcellaire),FeatureTypeInfoImpl--2168f1ae:143c012c583:478f,CADASTRE,79
+Cadastre - Batiments (IGN BDParcellaire) Nov 2013,FeatureTypeInfoImpl-3e4679f5:133887f8025:-7e3b,CADASTRE,79
+IGN - GeoFLA Département,FeatureTypeInfoImpl-42e50cb1:132d98cc15c:-76c4,GEOFLA,378
+INSEE - Population par arrondissements,FeatureTypeInfoImpl-48337e3e:150c868ce7e:376d,POPULATION,325
+INSEE - Population par cantons,FeatureTypeInfoImpl-48337e3e:150c868ce7e:3b7a,POPULATION,325
+EPCI,FeatureTypeInfoImpl--75a9eb42:1328aaba535:-7fd9,EPCI : CONTOUR,570
+Pays du Grand Bergeracois,FeatureTypeInfoImpl--6dc8b695:14931d72594:-5ba6,PAYS DU GRAND BERGERACOIS,808
+departements,FeatureTypeInfoImpl--474ece09:133208a1f4e:-7a83,DEPARTEMENTS TRANSFRONTALIERS FRANCAIS,1563
+regions,FeatureTypeInfoImpl--474ece09:133208a1f4e:-7a15,PETITES REGIONS NATURELLES,82
+PNR LG - Chateaux,FeatureTypeInfoImpl--2aae7c6e:13542c0f87f:-6e94,CHATEAUX,663
+SDIS 24 - Hydrants,FeatureTypeInfoImpl--58a04374:13da4a3a13c:-5a2f,HYDRANTS,372
+RTE - Pylones,FeatureTypeInfoImpl--64db1a4f:15a8f5b7695:-3e15,PYLONES,133
+SDIS 64 - Hydrants,FeatureTypeInfoImpl-66e41bb3:13f52a192f1:-246f,HYDRANTS,372
+SDIS 47 - ERP Salles des Fêtes,FeatureTypeInfoImpl--158b7952:14c4ba4b95f:-5676,SALLES,416
+SIBA - Balisage,FeatureTypeInfoImpl--16ec6ada:13673194d60:-6972,BALISAGE,1891
+SMEAG - Localisation des digues,FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7f98,DIGUES,44
+SRCE_2014_Co Boisements de feuillus et forêts mixtes,FeatureTypeInfoImpl--1349261:1431092c4c4:6081,FEUILLUS,3310
+SRCE - Dalles Atlas,FeatureTypeInfoImpl--4ffbdc12:1532c8efba5:7ed8,ATLAS,258
+SRCE - EF Voies ferrées électrifiées,FeatureTypeInfoImpl--1349261:1431092c4c4:6d38,VOIES,2612
+SRCE_2014_RB Boisements de feuillus et forêts mixtes,FeatureTypeInfoImpl--1349261:14310b86ff0:-1030,FEUILLUS,3310
+TIGF - Canalisations,FeatureTypeInfoImpl-24a8bf94:13846bea89d:-7194,CANALISATIONS,1903
+Parcellaire cadastral avec propriétaires,FeatureTypeInfoImpl-4349e99d:137e1492a6d:-7e26,BD PARCELLAIRE,1205
+ARS - Chirurgie,FeatureTypeInfoImpl-59b62a1c:15047e2a372:5635,ETABLISSEMENTS DE CHIRURGIE,3337
+SIAEPA de Saint-Selve - Compteurs de secteurs,FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7f4c,MSD : SECTEURS,3991
+CDC Estuaire - Zones Spéciales de Conservation,FeatureTypeInfoImpl-e2feea2:13cb534693d:-7ec9,PLU : ZONES,1440
+ARS - Psychiatrie,FeatureTypeInfoImpl-29107397:1504b94e0ea:39e2,ETABLISSEMENTS AVEC PSYCHIATRIE,3587
+ARS - Urgences,FeatureTypeInfoImpl-29107397:1504be48c1c:70e0,ETABLISSEMENTS AVEC URGENCES,3340
+AURBA - Bâtiments des zones d'activités,FeatureTypeInfoImpl-1f027e38:13c8e8c3c25:-5f93,PLU : ZONES,1440
+DDTM33 - Bathymétrie passes Arcachon - 2014,CoverageInfoImpl-2ef72339:14a33bfe4fe:4d75,PLU ARCACHON,2200
+DDTM33 - Bathymétrie passes Arcachon - 2016,CoverageInfoImpl--25674c34:159830b51fa:47b,PLU ARCACHON,2200
+Cadaujac - Zones AOC,FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7f18,PLU : ZONES,1440
+secteurs de collecte des déchets,FeatureTypeInfoImpl-3e62bdca:1516209d235:-4b19,MSD : SECTEURS,3991
+CC Montesquieu - Zones d'activités,FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7f1e,PLU : ZONES,1440
+CDC Piémont Oloronais - Repérage Général Zonage,FeatureTypeInfoImpl-2245790e:1419d048044:179,PPR - ZONAGE,212
+CDC Piémont Oloronais - PLU Goes,FeatureTypeInfoImpl--79440f42:138767bc643:-7d94,PLU GOES,2082
+GIP ATGeRi - OCS 2009 - Simplifié,FeatureTypeInfoImpl--bc07016:1571eedbeb4:9f,PAYS DU GRAND BERGERACOIS - 2009,3791
+CE24 - entreprises des zones activités,FeatureTypeInfoImpl--58a04374:13da4a3a13c:-4cc6,PLU : ZONES,1440
+IGN - Estompage,CoverageInfoImpl-1eb62fe:13267fa6b96:-7864,ESTOMPAGE 1/25 000,5
+CG33 - Occupation du Sol en Gironde,FeatureTypeInfoImpl--47b66809:1336ecb0c7e:-7f13,OCCUPATION SOL,543
+RTE - Support du réseau de transport électrique aérien,FeatureTypeInfoImpl--61be1724:14b3003c04e:-35dc,PAI : TRANSPORT,3215
+RTE - Support du réseau de transport électrique aérien - Av Numéro,FeatureTypeInfoImpl--61be1724:14b3003c04e:-359e,PAI : TRANSPORT,3215
+Secteurs de collecte des déchets - 2017,FeatureTypeInfoImpl-365a62ac:1588cc3d0e0:704e,MSD : SECTEURS,3991
+CDC du Mézinais - Contour IGN,FeatureTypeInfoImpl--3ce68516:141a7919477:-5bf4,PSG CONTOUR,184
+ARDFCI - Contour des ASA de DFCI,FeatureTypeInfoImpl-6055af01:139f8af61b3:-2290,ASA DFCI,182
+AURBA - Contours des zones d'activités,FeatureTypeInfoImpl-1f027e38:13c8e8c3c25:-5f8f,PLU : ZONES,1440
+CE24 - Zones Activités Economiques,FeatureTypeInfoImpl--58a04374:13da4a3a13c:-4c70,PLU : ZONES,1440
+DIRA : Occupation du sol,FeatureTypeInfoImpl--58ac8fd2:14377594a3d:217b,OCCUPATION SOL,543
+Dreal-TRI-Enjeu Réseaux de transport,FeatureTypeInfoImpl-19cebcef:14d2d8b462a:-c8,PAI : TRANSPORT,3215
+Asso Du pin sur la planche - axe de plantation,FeatureTypeInfoImpl--1ff25990:14204a38c0f:370c,PLU : PLANCHE,1438
+Asso Du pin sur la planche - emprise axe de 20m,FeatureTypeInfoImpl--1ff25990:14204a38c0f:3731,PLU : PLANCHE,1438
+EPIDOR - Zones à Dominante Humide (Limousin),FeatureTypeInfoImpl--7c49cce1:1359a5c4ecf:-5a10,PLU : ZONES,1440
+GIP ATGeRi - Contours des ASA,FeatureTypeInfoImpl--4257e7f7:152a1378bf8:ef,CONTOURS DES PAYS DES PYRENEES,569
+GIP ATGeRi - Bassins de vie,FeatureTypeInfoImpl-7a7bae0a:141b78e4b0c:-6f62,BASSINS VERSANTS,35
+GIP ATGeRi - OCS 2009 Extension 24 - Bêta,FeatureTypeInfoImpl--5f51174f:1530f025739:bdf,PAYS DU GRAND BERGERACOIS - 2009,3791
+GIP ATGeRi - OCS 2009 Extension 33 - Bêta,FeatureTypeInfoImpl--5f51174f:1530f0574d1:-323f,PAYS DU GRAND BERGERACOIS - 2009,3791
+GIP ATGeRi - OCS 2009 Extension 40 - Bêta,FeatureTypeInfoImpl-3a9bdd1e:14fff9d0b16:3e3f,PAYS DU GRAND BERGERACOIS - 2009,3791
+GIP ATGeRi - OCS 2009 Extension 47 - Bêta,FeatureTypeInfoImpl--22d246a4:1523118375a:602f,PAYS DU GRAND BERGERACOIS - 2009,3791
+GIP ATGeRi - OCS 2009 Extension 64 - Bêta,FeatureTypeInfoImpl-3a9bdd1e:14fff8b08c9:5ae0,PAYS DU GRAND BERGERACOIS - 2009,3791
+GIP ATGeRi - OCS 2009 Extension,FeatureTypeInfoImpl--317096bc:15704fc460a:4e06,PAYS DU GRAND BERGERACOIS - 2009,3791
+GIP ATGeRi - OCS 2009 - Petite échelle,CoverageInfoImpl--bc07016:1571ed9a7e4:-2946,PAYS DU GRAND BERGERACOIS - 2009,3791
+GIP LITTORAL - OCS grande échelle 2009,FeatureTypeInfoImpl--31e593a4:138fecfaf42:-73d9,PAYS DU GRAND BERGERACOIS - 2009,3791
+RFF - Electrification,FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7d72,RESEAU FERRE - ELECTRIFICATION (RGI),722
+IGN - Arrondissements,FeatureTypeInfoImpl-3e4679f5:133887f8025:-7b99,LIMITES DES ARRONDISSEMENTS DES DOM,1734
+IGN - Cantons,FeatureTypeInfoImpl-3e4679f5:133887f8025:-7b95,ETALAB : OCCUPATION DU TERRITOIRE cantons littoraux,3495
+IGN - BDOrtho 40cm 2009,CoverageInfoImpl--69a27b9e:1574cb3ee78:3c83,PAYS DU GRAND BERGERACOIS - 2009,3791
+Vue Aérienne 2009 40cm,CoverageInfoImpl--69a27b9e:1574cff8838:66d7,PAYS DU GRAND BERGERACOIS - 2009,3791
+PNRLG - Assiettes de Pays,FeatureTypeInfoImpl--4257e7f7:1529d548daa:53de,PNRLG - OCS,3876
+PNRLG - Balades et randonnées,FeatureTypeInfoImpl--39f1150e:1526889326c:a38,PNRLG - OCS,3876
+PNRLG - Contour du parc 2000/2012,FeatureTypeInfoImpl--15153562:135aad313b6:-44ad,PNRLG - OCS,3876
+PNRLG - Contour du parc 2014/2026,FeatureTypeInfoImpl-4dd55405:1440151d781:1704,PNRLG - OCS,3876
+PNRLG - Hébergements ecotouristiques,FeatureTypeInfoImpl--4257e7f7:1529da5a56d:-4d06,PNRLG - OCS,3876
+PNRLG - Œuvres de la forêt d’art contemporain,FeatureTypeInfoImpl--39f1150e:152697fae62:508c,PNRLG - OCS,3876
+PNRLG - Office de tourisme,FeatureTypeInfoImpl--4257e7f7:1529d86437b:-36da,PNRLG - OCS,3876
+PNRLG - Paysages du parc,FeatureTypeInfoImpl--15d29641:15264af7c11:5ec5,PNRLG - OCS,3876
+PNRLG - Ferme du Grand Lartigue,FeatureTypeInfoImpl--4257e7f7:1529dc778d0:1d4,PNRLG - OCS,3876
+PNRLG - Sites de découvertes,FeatureTypeInfoImpl--39f1150e:152690b3e5b:338e,PNRLG - OCS,3876
+PNRLG - La Leyre navigable,FeatureTypeInfoImpl--39f1150e:152697fae62:44e5,PNRLG - OCS,3876
+PNRLG - Vues Remarquables,FeatureTypeInfoImpl--15d29641:1526500bb61:-3092,PNRLG - OCS,3876
+PIGMA - Terrain de sport - 2015,FeatureTypeInfoImpl--60870653:141bb820e24:-4bed,PAI : SPORT,3214
+RFF - Gare,FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7d7a,EQUIPEMENT TRANSPORT (GARE SNCF, GARE ROUTIERE…),96
+SDIS - Zones de 1er appel,FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7d56,PLU : ZONES,1440
+APRN - Chydro,FeatureTypeInfoImpl--3e77d70f:141987e3e5e:-1570,PLANTE RENOUEE DU JAPON : CHYDRO,3177
+DREAL - PPRI,FeatureTypeInfoImpl--4ecb909f:15adcc47f4e:-77b7,DONNEES EN WMS : DREAL THEMATIQUE URBANISME,2240
+CE24 - Patrimoine,FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7e96,PATRIMOINE FONCIER,208
+CG64 - Bornage route,FeatureTypeInfoImpl-52f4f10e:137bcd6e4e0:-6ab4,ROUTE 120®,3733
+CG 64 - D64 AEP Captage,FeatureTypeInfoImpl--28e07fc6:137e8b84496:-1802,PERIMETRE DE PROTECTION DES SOURCES DE CAPTAGE D EAU,230
+Chambre agriculture 64 - Industries agro-alimentaires,FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7dcc,ICPE - INDUSTRIES,3593
+CR Aquitaine - Territoires de projet,FeatureTypeInfoImpl-19097143:15350c1b295:-2091,TERRITOIRES MAIA,4022
+DREAL - PPRF,FeatureTypeInfoImpl--4ecb909f:15adcc47f4e:-7933,DONNEES EN WMS : DREAL THEMATIQUE URBANISME,2240
+Zone de compétence ""Police Nationale"",FeatureTypeInfoImpl--4ecb909f:15ad12ee09a:-1775,ZONE CŒUR,156
+DREAL - ICPE,FeatureTypeInfoImpl--7b1a2e47:1511b4833d4:4062,DONNEES EN WMS : DREAL THEMATIQUE URBANISME,2240
+DREAL - PPRL,FeatureTypeInfoImpl--4ecb909f:15adcd21345:5b7,DONNEES EN WMS : DREAL THEMATIQUE URBANISME,2240
+DREAL - PPRA,FeatureTypeInfoImpl--4ecb909f:15adcd21345:a5f,DONNEES EN WMS : DREAL THEMATIQUE URBANISME,2240
+DREAL - Vitesse de circulation 2015,FeatureTypeInfoImpl-69be8d:14ebabec22e:-7114,VITESSE 2014,3764
+GPMB - Feux,FeatureTypeInfoImpl-5b18e1b8:142bdaa1634:bc,GPMB -  CHENAUX DE NAVIGATION, BALISAGE,1912
+IGN - Zone Végétation (multithèmes),FeatureTypeInfoImpl-5809213e:13c8965d8ec:-48aa,ZONE CŒUR,156
+INSEE - Part des chômeurs entre 25 et 54 ans par communes,FeatureTypeInfoImpl-48337e3e:150c868ce7e:4083,SCAN 25,251
+INSEE - Taux de chômage entre 25 et 54 ans par communes,FeatureTypeInfoImpl-48337e3e:150c868ce7e:4452,SCAN 25,251
+Pays du Grand Bergeracois - Ambulances,FeatureTypeInfoImpl--3ec8a186:148eea01a3b:-3b39,PAYS DU GRAND BERGERACOIS - 2009,3791
+Pays du Grand Bergeracois - Associations,FeatureTypeInfoImpl-1bf44d9a:1492c93c8c2:3621,PAYS DU GRAND BERGERACOIS - 2009,3791
+Pays du Grand Bergeracois - Bibliothèques,FeatureTypeInfoImpl-1bf44d9a:1492c93c8c2:3d09,PAYS DU GRAND BERGERACOIS - 2009,3791
+Pays du Grand Bergeracois - CCAS,FeatureTypeInfoImpl-1bf44d9a:1492c93c8c2:40a4,PAYS DU GRAND BERGERACOIS - 2009,3791
+Pays du Grand Bergeracois - Centres d'Information Jeunesse,FeatureTypeInfoImpl--6dc8b695:14931bae555:-127b,PAYS DU GRAND BERGERACOIS - 2009,3791
+Pays du Grand Bergeracois - Centres de loisirs sans hébergement,FeatureTypeInfoImpl-1bf44d9a:1492cbdd7cd:-79d6,PAYS DU GRAND BERGERACOIS - 2009,3791
+Pays du Grand Bergeracois - Collèges,FeatureTypeInfoImpl-1bf44d9a:1492cea459e:-2a39,PAYS DU GRAND BERGERACOIS - 2009,3791
+Pays du Grand Bergeracois - Communes,FeatureTypeInfoImpl-278241d0:14b01693ea9:5082,PAYS DU GRAND BERGERACOIS - 2009,3791
+Pays du Grand Bergeracois - Crèches,FeatureTypeInfoImpl-1bf44d9a:1492cea459e:-28a0,PAYS DU GRAND BERGERACOIS - 2009,3791
+Pays du Grand Bergeracois - Ecoles élémentaires,FeatureTypeInfoImpl-1bf44d9a:1492cf8d8e2:-1b78,PAYS DU GRAND BERGERACOIS - 2009,3791
+Pays du Grand Bergeracois - Ecoles maternelles,FeatureTypeInfoImpl-1bf44d9a:1492cfd3adb:6902,PAYS DU GRAND BERGERACOIS - 2009,3791
+Pays du Grand Bergeracois - Intercommunalite,FeatureTypeInfoImpl-278241d0:14b018484a6:-7b08,PAYS DU GRAND BERGERACOIS - 2009,3791
+Pays du Grand Bergeracois - Lycées,FeatureTypeInfoImpl-1bf44d9a:1492cfd3adb:5db0,PAYS DU GRAND BERGERACOIS - 2009,3791
+Pays du Grand Bergeracois - Mairies,FeatureTypeInfoImpl-1bf44d9a:1492cfd3adb:6033,PAYS DU GRAND BERGERACOIS - 2009,3791
+Pays du Grand Bergeracois - Offices de tourisme,FeatureTypeInfoImpl--6dc8b695:14931910cfa:5e07,PAYS DU GRAND BERGERACOIS - 2009,3791
+Pays du Grand Bergeracois - Pharmacies,FeatureTypeInfoImpl-1bf44d9a:1492d79f347:6a83,PAYS DU GRAND BERGERACOIS - 2009,3791
+Pays du Grand Bergeracois - Piscines,FeatureTypeInfoImpl-1bf44d9a:1492d79f347:748c,PAYS DU GRAND BERGERACOIS - 2009,3791
+Pays du Grand Bergeracois - La Postes,FeatureTypeInfoImpl-1bf44d9a:1492d99d0b1:-4c4c,PAYS DU GRAND BERGERACOIS - 2009,3791
+Pays du Grand Bergeracois - Relais assistances maternelles,FeatureTypeInfoImpl-1bf44d9a:1492da8c2e3:-29ba,PAYS DU GRAND BERGERACOIS - 2009,3791
+Pays du Grand Bergeracois - Salles de spectacle,FeatureTypeInfoImpl-1bf44d9a:1492dd4584f:-2158,PAYS DU GRAND BERGERACOIS - 2009,3791
+Pays du Grand Bergeracois - Salles multisport,FeatureTypeInfoImpl-1bf44d9a:1492e0d34ec:-435,PAYS DU GRAND BERGERACOIS - 2009,3791
+Pays du Grand Bergeracois - Salles des Fêtes,FeatureTypeInfoImpl-1bf44d9a:1492da8c2e3:196a,PAYS DU GRAND BERGERACOIS - 2009,3791
+RFF - Vitesse maximum autorisée des lignes,FeatureTypeInfoImpl--60870653:141bc392aa4:-4b69,VITESSE 2014,3764
+SDIS 64 - PK route,FeatureTypeInfoImpl-66e41bb3:13f52bcea4e:-358,ROUTE 120®,3733
+SDIS 64 - Route 1,FeatureTypeInfoImpl-6c1054ec:147f930b30b:-5d1d,ROUTE 120®,3733
+SMEGREG - Risque de salinisation de l’estuaire,FeatureTypeInfoImpl-538fbc38:14cb2ea5724:-c3b,RISQUE NRBC,120
+SMEGREG - Zone dénoyée entre 1980 et 2004,FeatureTypeInfoImpl--3861f61a:14cb6d26201:-7181,ZONE CŒUR,156
+SMEGREG - Zone à risque de dénoyage de l’Oligocène fort et moyen,FeatureTypeInfoImpl--7cc2c4a8:14cb3762e9a:5148,RISQUE NRBC,120
+ARS - Etablissements médico-sociaux,FeatureTypeInfoImpl-f93348d:15143422d5c:35d6,ETABLISSEMENTS MEDICO-SOCIAUX,2071
+Chambre agriculture 64 - Sites RMQS,FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7dc6,SITES GERES,3242
+CA Cote Basque Adour - EBC Agglo,FeatureTypeInfoImpl-2245790e:1419d64a909:-5510,SCOT AGGLO DE BAYONNE ET SUD LANDES : OCS A GRANDE ECHELLE 2000-2009,3465
+CA Cote Basque Adour - Enseignement,FeatureTypeInfoImpl-2245790e:1419d44a43e:-64c1,PAI : SCIENCE ET ENSEIGNEMENT,3398
+CA Cote Basque Adour - ER Agglo,FeatureTypeInfoImpl-2245790e:1419d64a909:-4b40,SCOT AGGLO DE BAYONNE ET SUD LANDES : OCS A GRANDE ECHELLE 2000-2009,3465
+CA Cote Basque Adour - ER Num Agglo,FeatureTypeInfoImpl-2245790e:1419d64a909:-49e1,SCOT AGGLO DE BAYONNE ET SUD LANDES : OCS A GRANDE ECHELLE 2000-2009,3465
+CR Aquitaine - Programmes LEADER 2014/2020,FeatureTypeInfoImpl-19097143:153501da07d:-387b,ZONES LEADER,1585
+SIAEPA de La Brède - Ouvrages de défense incendie,FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7f32,OUVRAGES D'ART,588
+CC Montesquieu - Points d'apport verre,FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7f2e,POINTS COTES,2183
+CDC du Mézinais - Communes,FeatureTypeInfoImpl--3ce68516:141a7919477:-6fad,ZONAGE SIMPLIFIE DES POS COMMUNES LITTORALES,241
+CDC Penne d'Agenais - Voie Communale,FeatureTypeInfoImpl-2245790e:1419dc4bdd5:-16d5,FORET COMMUNALE,191
+CE24 - Exploitations à vocation touristique,FeatureTypeInfoImpl--58a04374:13da4a3a13c:-4c64,OFFRE TOURISTIQUE,1021
+Chambre agriculture 33 - Plan d'action territoriale Engranne,FeatureTypeInfoImpl-5c8f87e1:14407aa6100:1775,UNITE TERRITORIALE,631
+CG47 - Sites intérêt écologique,FeatureTypeInfoImpl--5738bcda:13cb7bf17f0:-7982,SITES GERES,3242
+DDTM40 - Schéma de cohérence territoriale,FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7d96,UNITE TERRITORIALE,631
+DRAAF - Sites de stockage,FeatureTypeInfoImpl--155706dd:1373c90c085:-7ff7,SITES GERES,3242
+DREAL - PPR MVT,FeatureTypeInfoImpl--4ecb909f:15adcd21345:902,PPR - ATLAS,211
+Dreal-TRI-Enjeu Patrimoine ponctuel-Subm,FeatureTypeInfoImpl--68c7c94:14d4755babb:77b0,PATRIMOINE CIVIL,302
+Dreal-TRI-Enjeu Patrimoine ponctuel-Debord,FeatureTypeInfoImpl--68c7c94:14d472ce9fe:60da,PATRIMOINE CIVIL,302
+Dreal-TRI-Enjeu Patrimoine sites-Debord,FeatureTypeInfoImpl--68c7c94:14d476b9395:-1c25,PATRIMOINE CIVIL,302
+Dreal-TRI-Enjeu Patrimoine sites-Subm,FeatureTypeInfoImpl--68c7c94:14d476b9395:-1760,PATRIMOINE CIVIL,302
+ERDF - Poste électrique,FeatureTypeInfoImpl--433409c9:133c599c9af:-7d0f,POSTE ELECTRIQUE,1288
+GIP ATGERI - Siège,FeatureTypeInfoImpl--4ecb909f:15adc0af1ab:7d84,REFERENTIEL METIER GRANDE ECHELLE DU GIP,769
+GPMB - Quais,FeatureTypeInfoImpl-5b18e1b8:142bdaa1634:200,GPMB -  CHENAUX DE NAVIGATION, BALISAGE,1912
+IFN - Dégâts,FeatureTypeInfoImpl-5654a656:137a277a2e8:-7e6e,DONNEES IFN,87
+PEGASE - EPCI Poitou-Charentes,FeatureTypeInfoImpl--352f6934:14a0b5a7ecb:-7889,EPCI : REGION POITOU-CHARENTE,3556
+SDIS64 - PAI Santé,FeatureTypeInfoImpl-788275d6:148eb592ce7:556c,PAI : SANTE,3213
+RFF - Passages souterrains,FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7d6c,PASSAGES CERFS,1555
+RTE - Réseau électrique souterrain,FeatureTypeInfoImpl--64db1a4f:15a8f5b7695:-3b27,RESEAU ELECTRIQUE SOUTERRAIN,4468
+SDIS 47 - ERP - Point,FeatureTypeInfoImpl-328c2f39:15336fff100:-42e8,POINT ADRESSE,252
+SDIS -  Groupements,FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7d5a,GDON - GROUPEMENTS DE DEFENSE CONTRE LES ORGANISMES NUISIBLES,2115
+SMEAG -  Sites expérimentaux pour le SDE,FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7fac,SITES GERES,3242
+Urbanisme - 33 - Zonages urbanisme,FeatureTypeInfoImpl-2c34a65b:13f9e7c9256:f17,ZONAGES D'URBANISME,358
+Chambre agriculture 33 - Marchés de producteurs,FeatureTypeInfoImpl-5c8f87e1:14407aa6100:175a,PRODUCTEURS BIO : 64,3137
+AUDAP - Producteurs biologiques des Pyrénées-Atlantiques,FeatureTypeInfoImpl--526cedd4:143d44cfa20:8f,PRODUCTEURS BIO : 64,3137
+CA Perigueux - Réseau haut débit,FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7db8,RESEAU HAUT DEBIT,619
+CAUE 33 - _Masque noir,FeatureTypeInfoImpl--60d2bb13:13cb4240a19:-53ed,ZPPAUP : 33,1970
+Cadaujac - Défense incendie,FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7f14,POTEAU INCENDIE,4474
+Chambre agri 40 - Réseau ASAH,FeatureTypeInfoImpl--2d7d61de:14de2b56fe5:b6a,ZPPAUP : 40,1971
+SRCE - RB MOSO Plaines agricoles à enjeu de biodiversité,FeatureTypeInfoImpl--1349261:14310b86ff0:-f12,DEGATS AGRICOLES,375
+CAUE 33 - _Département gris,FeatureTypeInfoImpl--60d2bb13:13cb4240a19:-7102,ZPPAUP : 33,1970
+CAUE 33 - _Hydrographie noir,FeatureTypeInfoImpl--60d2bb13:13cb4240a19:-52db,ZPPAUP : 33,1970
+CDC Piémont Oloronais - Incendie,FeatureTypeInfoImpl-2245790e:1419d048044:37,POTEAU INCENDIE,4474
+DDCSPP 47 - Elevages avicoles,FeatureTypeInfoImpl-48337e3e:150c7ccc759:2fb3,ZPPAUP : 47,1972
+PCI vecteur 64 - Batiment (DDFIP 64),FeatureTypeInfoImpl-72e17f:14eb09bea46:-7e92,BATIMENT PUBLIC,1419
+PCI vecteur 64 - Parcelle (DDFIP 64),FeatureTypeInfoImpl-72e17f:14eb09bea46:-7df4,ZPPAUP : 64,3245
+DGFIP 64 - ITXASSOU - Parcelles,FeatureTypeInfoImpl--160cad13:156dba54a5a:-5af,ZPPAUP : 64,3245
+PCI vecteur 64 - Section (DDFIP 64),FeatureTypeInfoImpl-72e17f:14eb09bea46:-7dd8,ZPPAUP : 64,3245
+DDTM 33 - Campings,FeatureTypeInfoImpl--2e1400eb:133edec7535:-7e94,RECENSEMENT SITES WEB DES CAMPINGS EN AQUITAINE 2009,479
+DDTM33 - SRU,FeatureTypeInfoImpl--2e1400eb:133edec7535:-7e91,SRU : COMMUNES SOUMISES A OBLIGATION ART 55 LOI SRU,1346
+demo_afigeo - schéma ingénierie 24,FeatureTypeInfoImpl-5c668ac0:13da256cfec:-2706,ZPPAUP : 24,1969
+FD chasse 33 - Acquisition,FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7de0,ZPPAUP : 33,1970
+FD chasse 33 - Réserve contractuelle,FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7dd4,ZPPAUP : 33,1970
+GPMB - Bouées,FeatureTypeInfoImpl-5b18e1b8:142bdf5b9f7:629c,GPMB -  CHENAUX DE NAVIGATION, BALISAGE,1912
+GPMB - Epaves,FeatureTypeInfoImpl-5b18e1b8:142bdf5b9f7:62bf,GPMB -  CHENAUX DE NAVIGATION, BALISAGE,1912
+GPMB - Passes,FeatureTypeInfoImpl-5b18e1b8:142bdaa1634:179,GPMB -  CHENAUX DE NAVIGATION, BALISAGE,1912
+INSEE - Part des chômeurs entre 15 et 24 ans par communes,FeatureTypeInfoImpl-48337e3e:150c868ce7e:403d,ZPPAUP : 24,1969
+INSEE - Taux de chômage entre 15 et 24 ans par communes,FeatureTypeInfoImpl-48337e3e:150c868ce7e:43e8,ZPPAUP : 24,1969
+INSEE - Taux de chômage entre 15 et 64 ans par communes,FeatureTypeInfoImpl-48337e3e:150c868ce7e:4429,ZPPAUP : 64,3245
+PNR LG - Bibliotheques,FeatureTypeInfoImpl--2aae7c6e:13542c0f87f:-6fae,BIBLIOTHEQUES MUNICIPALES ET DEPARTEMENTALES AQUITAINE,550
+SDCI 47 - Branchements,FeatureTypeInfoImpl--7c49cce1:1359a5c4ecf:-4793,ZPPAUP : 47,1972
+RTE - Réseau électrique aérien,FeatureTypeInfoImpl--64db1a4f:15a8f5b7695:-3d19,RESEAU RTE,3205
+SDCI 47 - Canalisation,FeatureTypeInfoImpl--7c49cce1:1359a5c4ecf:-4791,ZPPAUP : 47,1972
+SDCI 47 - Stations,FeatureTypeInfoImpl--7c49cce1:1359a5c4ecf:-4783,ZPPAUP : 47,1972
+SDIS 64 - Etablissements répertoriés,FeatureTypeInfoImpl-66e41bb3:13f52a192f1:3efb,ZPPAUP : 64,3245
+SDIS 64 - Route2,FeatureTypeInfoImpl-6c1054ec:147f930b30b:-5d16,ZPPAUP : 64,3245
+SDIS 64 - Secteur CIS,FeatureTypeInfoImpl-66e41bb3:13f52bcea4e:31e6,ZPPAUP : 64,3245
+Urbanisme - CUB Zonages,FeatureTypeInfoImpl-347005a3:14560412e9e:3afc,ZONAGES D'URBANISME,358
+Urbanisme - 24 - Informations annexes (ponctuels),FeatureTypeInfoImpl--5ef09ad5:13fbd7e91ea:494a,ZPPAUP : 24,1969
+ALPI - EPCI Adherents,FeatureTypeInfoImpl--149c8014:14f44e3bf29:36b8,EPCI : CONTOUR,570
+ARS - Captages de la Dordogne,FeatureTypeInfoImpl--1812fe21:13feca1dc3b:-17a8,ESTOMPAGE : DORDOGNE,862
+ARS - Captages de la Gironde,FeatureTypeInfoImpl--1812fe21:13feca1dc3b:fb5,ESTOMPAGE : GIRONDE,865
+ARS - Captages des Landes,FeatureTypeInfoImpl--1812fe21:13feca1dc3b:fb8,ESTOMPAGE : LANDES,866
+CDC Piémont Oloronais - Batiments,FeatureTypeInfoImpl-2245790e:1419d048044:30,BD TOPO : BATIMENTS,16
+DDT 24 - Aide à l'investissement forestier (2007-2009),FeatureTypeInfoImpl-7a7bae0a:141b7651869:6eee,COUVERT FORESTIER,2707
+DDTM 33 - Périmètres des Plans Locaux de l'Habitat,FeatureTypeInfoImpl--2e1400eb:133edec7535:-7e88,PLANS URGENCE,123
+CG 64 - Sectorisation des collèges 2012,FeatureTypeInfoImpl-3708cd80:1389fb96023:-7f23,MNT CUB 2012,4144
+Chambre agriculture 64 - Stations agrométéo,FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7dc8,STATIONS AGROMETEO,367
+CR Aquitaine - EPCI - Mars 2015,FeatureTypeInfoImpl-19088863:140f35c1596:-7018,EPCI : CONTOUR,570
+DDT 24 - Aide à l'investissement forestier (2000-2006),FeatureTypeInfoImpl-7a7bae0a:141b7651869:6e6f,COUVERT FORESTIER,2707
+DDTM40 - territoire lieutenant de louveterie,FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7d88,GESTION LOUVETERIE,954
+Banatic-GIP ATGeRi - EPCI,FeatureTypeInfoImpl-5679c4ee:135e78e7d22:9d2,EPCI : CONTOUR,570
+Vue Aérienne 2012 50cm,CoverageInfoImpl--4ecb909f:15af581493a:-6175,MNT CUB 2012,4144
+RFF - Point d'accès,FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7d60,POINT ADRESSE,252
+GeoTransfert - Qualité de la détection automatique du trait de côte,FeatureTypeInfoImpl-2245790e:1419c920d26:-39e8,TRAIT DE COTE,420
+GIP ATGeRi - Masque Région aquitaine,FeatureTypeInfoImpl--7b1a2e47:1511aee9bb2:4661,BD TOPO : AQUITAINE,832
+Gironde Numerique - Backbone,FeatureTypeInfoImpl-7c28b9fa:135f2d071b7:-6b75,SCAN 50 : GIRONDE,889
+Gironde Numerique - Tracé des emprises des NRA-ZO,FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7dba,SCAN 50 : GIRONDE,889
+GRDF - Réseau de transports gazs,FeatureTypeInfoImpl--60870653:141bb06f07b:-7f6f,RESEAU TRANSPORT GAZS,564
+Vue Aérienne IGN 2012 50cm Pyrénées-Atlantiques,CoverageInfoImpl-60c9b05c:14135123148:-1e91,MNT CUB 2012,4144
+Vue aérienne 2012 50cm,CoverageInfoImpl-5fc05bac:145efe203a5:-22d1,MNT CUB 2012,4144
+PIGMA - Bâtiments des établissements scolaires du 2nd degré - 2015,FeatureTypeInfoImpl--60870653:141bb820e24:-4e0f,CANTONS 2015,3270
+RFF - Point kilométrique,FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7d70,POINT ADRESSE,252
+SDIS 47 - ERP  Hotels,FeatureTypeInfoImpl--158b7952:14c4ba4b95f:-5501,RECENSEMENT SITES WEB DES HOTELS EN AQUITAINE 2009,485
+SDIS - Tours de guet,FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7d58,TOUR DE GUET,11
+SMAVLOT - Loueurs et réparateurs,FeatureTypeInfoImpl-14757e89:141c6cacc4c:-33f7,LOUEURS ET REPARATEURS,3355
+SMEAG -  Seuils: type et objectif 2012,FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7f9a,MNT CUB 2012,4144
+SM Geolandes - Campings des landes,FeatureTypeInfoImpl-1f9c8a93:133a71d23f1:-7dd0,SCAN 50 : LANDES,890
+SRCE_2014_RB_MOSO Landes,FeatureTypeInfoImpl--1349261:14310b86ff0:-f52,SCAN 50 : LANDES,890
+SRCE  - Autres éléments Région Aquitaine,FeatureTypeInfoImpl--1349261:14310b86ff0:227,BD TOPO : AQUITAINE,832
+Urbanisme Aquitaine - Habillages linéaires,FeatureTypeInfoImpl-5b18e1b8:142bdf5b9f7:-1343,BD TOPO : AQUITAINE,832
+Urbanisme Aquitaine - Habillages ponctuels,FeatureTypeInfoImpl-5b18e1b8:142bdf5b9f7:45c4,BD TOPO : AQUITAINE,832
+Urbanisme Aquitaine - Habillages surfaciques,FeatureTypeInfoImpl-5b18e1b8:142bdf5b9f7:45e6,BD TOPO : AQUITAINE,832
+Urbanisme Aquitaine - Informations linéaires,FeatureTypeInfoImpl-5b18e1b8:142bdf5b9f7:6035,BD TOPO : AQUITAINE,832
+Urbanisme Aquitaine - Informations ponctuelles,FeatureTypeInfoImpl-5b18e1b8:142bdf5b9f7:-1edf,BD TOPO : AQUITAINE,832
+Urbanisme Aquitaine - Informations surfaciques,FeatureTypeInfoImpl-5b18e1b8:142bdf5b9f7:-131d,BD TOPO : AQUITAINE,832
+Aquitaine - Prescription linéaire test,FeatureTypeInfoImpl-6e0d6d8:154f204990f:-46df,BD TOPO : AQUITAINE,832
+Urbanisme Aquitaine - Prescriptions linéaires,FeatureTypeInfoImpl-5b18e1b8:142bdf5b9f7:604d,BD TOPO : AQUITAINE,832
+Urbanisme Aquitaine - Prescriptions ponctuelles,FeatureTypeInfoImpl-5b18e1b8:142bdf5b9f7:62c6,BD TOPO : AQUITAINE,832
+Urbanisme Aquitaine - Prescriptions surfaciques,FeatureTypeInfoImpl-5b18e1b8:142be17f584:-7f0e,BD TOPO : AQUITAINE,832
+ADACL - Gestion des déchets,FeatureTypeInfoImpl--3e77d70f:141977de0f1:-5629,PAI : GESTION EAUX,3209
+APEM - Les refuges des pyrénées,FeatureTypeInfoImpl-7e125c65:133a1446f48:-7246,REFUGES ET CABANES,580
+CG64 - AEP parcelles,FeatureTypeInfoImpl--25d11048:13b23cbf2dc:-2d44,RPG - REGISTRE PARCELLAIRE GRAPHIQUE / PARCELLES AGRICOLES,322
+CDC Estuaire - Périmètre de la ZPS (Zone de Protection Spéciale),FeatureTypeInfoImpl--60d2bb13:13cb4eacc01:-e4c,FORET DE PROTECTION,154
+CG 64 - Plan Départemental des Itinéraires de Promenade et de Randonnées,FeatureTypeInfoImpl-1efb5ae3:137edde9d3f:-6e91,PLAN DE VILLE,951
+SIRTAQUI - Campings,FeatureTypeInfoImpl--499dd7c8:1505c036c27:-45d0,SIRTAQUI - BASE SUR L'OFFRE TOURISTIQUE EN AQUITAINE,1114
+ALPI - Communes Adherentes,FeatureTypeInfoImpl--5eb5aa40:14f414a44cd:-3db1,COMMUNES CLASSEES,1593
+Géocodage brut des foyers de la COBAN,FeatureTypeInfoImpl-3e62bdca:1516209d235:-42d2,FOYERS LUMINEUX,765
+DRAAF : Petites régions fourragères,FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7e9c,PETITES REGIONS FOURRAGERES,596
+DRAC - Périmètres de protection modifiés,FeatureTypeInfoImpl-1f9c8a93:133a71d23f1:-7f6f,FORET DE PROTECTION,154
+DREAL-TRI-Ouvrages de protection,FeatureTypeInfoImpl--68c7c94:14d4813db0b:-2b0d,FORET DE PROTECTION,154
+EPIDOR - Enveloppe inondable PAPI dordogne,FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7e18,SCAN 250 : DORDOGNE,880
+PNR LG - Prestations canoe,FeatureTypeInfoImpl-798fb7aa:1527e3f915b:-5e3,PRATIQUE CANOE,307
+PNR LG - Fontaines consacrées,FeatureTypeInfoImpl--2aae7c6e:13542c0f87f:-6cb1,FONTAINES CONSACREES,407
+SDIS - Centres de secours,FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7d5c,CENTRE DE SECOURS,131
+SMAVLOT - Communes su SMAVLOT,FeatureTypeInfoImpl-14757e89:141c6cacc4c:-3bf4,COMMUNES CLASSEES,1593
+SMEAG -   Orientation de gestion des épis,FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7fae,PAI : GESTION EAUX,3209
+SMEAG -  Forêts alluviales: priorités et plan d'action,FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7fa8,PLAN DE VILLE,951
+SMEAG -  Plan d'action pour les ripisylves,FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7f96,PLAN DE VILLE,951
+Urbanisme - Dordogne Habillages linéaires,FeatureTypeInfoImpl--a228572:14855bf2dd0:f37,DOCUMENT URBANISME,522
+Urbanisme - Dordogne Habillages ponctuels,FeatureTypeInfoImpl--a228572:14855bf2dd0:49c9,DOCUMENT URBANISME,522
+Urbanisme - Dordogne Habillages surfaciques,FeatureTypeInfoImpl--a228572:14855bf2dd0:4ad1,DOCUMENT URBANISME,522
+Urbanisme - Dordogne Informations linéaires,FeatureTypeInfoImpl--a228572:14855ccf5cb:-67c3,DOCUMENT URBANISME,522
+Urbanisme départemental - Informations ponctuels de la Dordogne,FeatureTypeInfoImpl--a228572:14855ccf5cb:-35a2,DOCUMENT URBANISME,522
+Urbanisme - Dordogne Informations surfaciques,FeatureTypeInfoImpl--a228572:14855ccf5cb:-3a31,DOCUMENT URBANISME,522
+Urbanisme - Dordogne Prescriptions linéaires,FeatureTypeInfoImpl--a228572:14855ccf5cb:-fbf,DOCUMENT URBANISME,522
+Urbanisme - Dordogne Prescriptions ponctuels,FeatureTypeInfoImpl--a228572:14855ccf5cb:-f98,DOCUMENT URBANISME,522
+Urbanisme - Dordogne Prescriptions surfaciques,FeatureTypeInfoImpl--a228572:14855ccf5cb:-f76,DOCUMENT URBANISME,522
+Urbanisme - Dordogne Zonages,FeatureTypeInfoImpl--a228572:14855ccf5cb:17c1,DOCUMENT URBANISME,522
+Urbanisme - Lot-et-Garonne Habillages linéaires,FeatureTypeInfoImpl--266e24e3:148592967ca:72c8,DOCUMENT URBANISME,522
+Urbanisme - Lot-et-Garonne Habillages ponctuels,FeatureTypeInfoImpl--266e24e3:148592967ca:730f,DOCUMENT URBANISME,522
+Urbanisme - Lot-et-Garonne Habillages surfaciques,FeatureTypeInfoImpl--266e24e3:148592967ca:740a,DOCUMENT URBANISME,522
+Urbanisme - Lot-et-Garonne Informations linéaires,FeatureTypeInfoImpl--266e24e3:148592967ca:74e7,DOCUMENT URBANISME,522
+Urbanisme - Lot-et-Garonne Informations ponctuels,FeatureTypeInfoImpl--266e24e3:148592967ca:7557,DOCUMENT URBANISME,522
+Urbanisme - Lot-et-Garonne Informations surfaciques,FeatureTypeInfoImpl--266e24e3:148592967ca:7d33,DOCUMENT URBANISME,522
+Urbanisme - Lot-et-Garonne Prescriptionss linéaires,FeatureTypeInfoImpl--266e24e3:148592967ca:7e28,DOCUMENT URBANISME,522
+Urbanisme - Lot-et-Garonne Prescriptions ponctuels,FeatureTypeInfoImpl--266e24e3:148595bbbc6:-6aa9,DOCUMENT URBANISME,522
+Urbanisme - Lot-et-Garonne Prescriptions surfaciques,FeatureTypeInfoImpl--266e24e3:148595bbbc6:-69d3,DOCUMENT URBANISME,522
+Urbanisme - Lot-et-Garonne Zonages,FeatureTypeInfoImpl--266e24e3:148595bbbc6:-6928,DOCUMENT URBANISME,522
+Urbanisme - Pyrénées-Atlantiques Habillages linéaires,FeatureTypeInfoImpl-5b72bc98:144ab29b95e:-3875,DOCUMENT URBANISME,522
+Urbanisme - Pyrénées-Atlantiques Habillages ponctuels,FeatureTypeInfoImpl-5b72bc98:144ab29b95e:-3320,DOCUMENT URBANISME,522
+Urbanisme - Pyrénées-Atlantiques Habillages surfaciques,FeatureTypeInfoImpl-5b72bc98:144ab29b95e:-3308,DOCUMENT URBANISME,522
+Urbanisme - Pyrénées-Atlantiques Informations linéaires,FeatureTypeInfoImpl-5b72bc98:144ab29b95e:5840,DOCUMENT URBANISME,522
+Urbanisme - Pyrénées-Atlantiques Informations ponctuels,FeatureTypeInfoImpl-5b72bc98:144ab29b95e:59f2,DOCUMENT URBANISME,522
+Urbanisme - Pyrénées-Atlantiques Informations surfaciques,FeatureTypeInfoImpl-5b72bc98:144ab29b95e:59fc,DOCUMENT URBANISME,522
+Urbanisme - Pyrénées-Atlantiques Prescriptions linéaires,FeatureTypeInfoImpl-5b72bc98:144ab29b95e:5d1c,DOCUMENT URBANISME,522
+Urbanisme - Pyrénées-Atlantiques Prescriptions ponctuelles,FeatureTypeInfoImpl-5b72bc98:144ab29b95e:5d2d,DOCUMENT URBANISME,522
+Urbanisme - Pyrénées-Atlantiques Prescriptions surfaciques,FeatureTypeInfoImpl-5b72bc98:144ab29b95e:5d49,DOCUMENT URBANISME,522
+Urbanisme - Pyrénées-Atlantiques Zonages,FeatureTypeInfoImpl-5b72bc98:144ab29b95e:63bd,DOCUMENT URBANISME,522
+Urbanisme départemental - Informations ponctuels de la Dordogne,FeatureTypeInfoImpl--a228572:14855ccf5cb:-677f,DOCUMENT URBANISME,522
+Urbanisme départemental - Informations surfaciques de la Dordogne,FeatureTypeInfoImpl--a228572:14855ccf5cb:-6751,DOCUMENT URBANISME,522
+ARS - Etablissements de santé,FeatureTypeInfoImpl-f93348d:1514378713f:22b,ETABLISSEMENTS DE REANIMATION,3335
+CDC Piémont Oloronais - AEP Canalisation,FeatureTypeInfoImpl-2245790e:1419cd6c249:-504f,ASSAINISSEMENT COLLECTIF : CANALISATION ASSAINISSEMENT COLLECTIF,1671
+SIAEPA de La Brède - Stations d'épuration,FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7f38,STATIONS AGROMETEO,367
+EPIDOR - Bati ZI,FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7e1e,ABORDS MH BATI (R500M),1018
+CDC Piémont Oloronais - Captage,FeatureTypeInfoImpl-2245790e:1419d048044:35,PERIMETRE DE PROTECTION DES SOURCES DE CAPTAGE D EAU,230
+CDC Piémont Oloronais - Parcelle,FeatureTypeInfoImpl-2245790e:1419d048044:4a,PLAN CADASTRAL : FLECHE DE RATTACHEMENT D'UN NUMERO A LA PARCELLE CORRESPONDANTE,1798
+CG 24 - Stations d'épuration,FeatureTypeInfoImpl-91f625d:140546729a4:3b11,STATIONS AGROMETEO,367
+CG33 - Stations d'épuration,FeatureTypeInfoImpl-d69f80b:13d49cd4298:-5fa5,STATIONS AGROMETEO,367
+SMBV des Lacs du Born - Lagunes,FeatureTypeInfoImpl--658a4c7:14bff20bba5:-cb4,LACS PYRENEENS,582
+SMBV des Lacs du Born - Forêts dunaires de la Teste de Buch,FeatureTypeInfoImpl--39f1150e:152697fae62:42df,LACS PYRENEENS,582
+SIRTAQUI - Activités,FeatureTypeInfoImpl--499dd7c8:1505c036c27:-4603,SIRTAQUI - BASE SUR L'OFFRE TOURISTIQUE EN AQUITAINE,1114
+SYSDAU -  Vue aérienne de l'estuaire 20cm,CoverageInfoImpl--47d4887d:1379cf28dc7:-77a1,EPAVES DE L'ESTUAIRE,3681
+ARS - Ensemble des établissements (Réservé ARS),FeatureTypeInfoImpl-d69f80b:13d47f1264c:-7675,ENSEMBLE PAYSAGERS,3966
+AT Enseignement - Ponctuel,FeatureTypeInfoImpl-5fe8c5c8:139e31faf8e:-7ffd,PAI : SCIENCE ET ENSEIGNEMENT,3398
+SIBA - Stations d'épuration,FeatureTypeInfoImpl-b616f19:1370de390e3:4e1b,STATIONS AGROMETEO,367
+ENSAP Bordeaux - Travaux des étudiants,FeatureTypeInfoImpl-4921a1c2:157dc25785b:-257f,TRAVAUX MARITIMES,2178
+ENSAP Bordeaux - Travaux des étudiants travail,FeatureTypeInfoImpl--762e2069:151110c6cfe:-7430,TRAVAUX MARITIMES,2178
+Cadaujac - Niveau acoustique des ICPE,FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7f50,ICPE - INDUSTRIES,3593
+GIP ATGeRi - OCS 2000 - Petite échelle,CoverageInfoImpl--bc07016:1571dfcfdde:-1484,OCS-CLC 2000 : 64,1391
+CG33 - ZPENS Parcelles,FeatureTypeInfoImpl-d69f80b:13d49cd4298:-5fa2,RPG - REGISTRE PARCELLAIRE GRAPHIQUE / PARCELLES AGRICOLES,322
+SIAEPA St Selve - Réseau eau potable,FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7f78,RESEAU EAU POTABLE,636
+SIRTAQUI - Résidences,FeatureTypeInfoImpl--499dd7c8:1505c036c27:-4509,SIRTAQUI - BASE SUR L'OFFRE TOURISTIQUE EN AQUITAINE,1114
+Commissariat de Police Lot-et-Garonne,FeatureTypeInfoImpl--4ecb909f:15ad1288d87:4e46,PONTUEL COMMISSARIAT 47,4482
+GIP ATGeRi - OCS 2000 Extension,FeatureTypeInfoImpl--16dc553b:15659e90e46:167a,OCS-CLC 2000 : 64,1391
+GIP ATGeRi - OCS 2000 - Simplifié,FeatureTypeInfoImpl-319e43e6:156ea50447b:-2a2c,OCS-CLC 2000 : 64,1391
+GIP LITTORAL - OCS grande échelle 2000,FeatureTypeInfoImpl--31e593a4:138fecfaf42:-7263,OCS-CLC 2000 : 64,1391
+GPMB - Marégraphe,FeatureTypeInfoImpl-5b18e1b8:142bdaa1634:134,GPMB -  CHENAUX DE NAVIGATION, BALISAGE,1912
+AT Enseignement - Surfacique,FeatureTypeInfoImpl--9344b3a:137c7794b0c:-7d5f,PAI : SCIENCE ET ENSEIGNEMENT,3398
+Rectorat - Etablissements du 1er degré Novembre 2016,FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7d80,ETABLISSEMENTS DE DIALYSE,3338
+SIAEP LALINDE - Purge de réseau,FeatureTypeInfoImpl-6213a6cc:134c6c9185c:-4fc1,RESEAU AEP : PURGE,1683
+SIAEP LALINDE - Robinet du réseau d'Alimentation en Eau Potable,FeatureTypeInfoImpl-6213a6cc:134c6c9185c:-4fbf,RESEAU EAU POTABLE,636
+SIAEP LALINDE - Vidange de réseau,FeatureTypeInfoImpl-6213a6cc:134c6c9185c:-4fb9,RESEAU AEP : VIDANGE,1682
+CA Cote Basque Adour - ER Large Agglo,FeatureTypeInfoImpl-2245790e:1419d64a909:-49e4,SCOT AGGLO DE BAYONNE ET SUD LANDES : OCS A GRANDE ECHELLE 2000-2009,3465
+Cadaujac - Espaces boisés classés,FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7f1a,ESPACES BOISES CLASSES,2689
+CG 24 - Arrêts de bus scolaires,FeatureTypeInfoImpl-3bfe5701:132aac45f9e:-7dda,ETABLISSEMENTS SCOLAIRES PUB ET PRI DU 1ER DEGRE,762
+EPIDROPT - Etat de la rypisylve V3,FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7ea2,ETAT COURS D'EAU,1023
+EPIDROPT - Etat de la rypisylve V4,FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7eb8,ETAT COURS D'EAU,1023
+EPIDROPT - Etat de la rypisylve V5,FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7eae,ETAT COURS D'EAU,1023
+SIRTAQUI - Itinéraires,FeatureTypeInfoImpl--499dd7c8:1505c036c27:-4553,SIRTAQUI - BASE SUR L'OFFRE TOURISTIQUE EN AQUITAINE,1114
+SIRTAQUI - Thermalisme,FeatureTypeInfoImpl-2527ec67:1506121d7ae:3466,SIRTAQUI - BASE SUR L'OFFRE TOURISTIQUE EN AQUITAINE,1114
+EPIDROPT - Etat de la rypisylve V5ro,FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7eaa,ETAT COURS D'EAU,1023
+EPIDROPT - Etat de la rypisylve V1,FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7ebe,ETAT COURS D'EAU,1023
+EPIDROPT - Etat de la rypisylve V2,FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7ea0,ETAT COURS D'EAU,1023
+GIP ATGeRi - Balises littorales,FeatureTypeInfoImpl-12ecc7c3:142098dc6ed:-2237,ZONAGE SIMPLIFIE DES POS COMMUNES LITTORALES,241
+GPMB - Appontement,FeatureTypeInfoImpl-5b18e1b8:142bdaa1634:-8da,GPMB -  CHENAUX DE NAVIGATION, BALISAGE,1912
+INOC - Toponymes Occitans,FeatureTypeInfoImpl-36b5020a:142943853a4:2c69,BD CARTO : T. TOPONYMES,1061
+PNR LG - Lagunes 2008,FeatureTypeInfoImpl--2aae7c6e:13542c0f87f:-6c60,LAGUNES 33 : INVENTAIRE,295
+SDIS 47 - ERP Plein air (PA),FeatureTypeInfoImpl-328c2f39:15336fff100:-345d,INTERRUPTION TERRE PLEIN CENTRAL AUTOROUTE,616
+SMAVLOT - Etat des ripisylves en 2010,FeatureTypeInfoImpl-14757e89:141c6cacc4c:-3bf2,ETAT COURS D'EAU,1023
+ALPI - Autres organismes adherents,FeatureTypeInfoImpl--5eb5aa40:14f414a44cd:-428f,ORGANISMES TOURISTIQUES,3753
+ARS - Captages des Pyrénées-Atlantiques,FeatureTypeInfoImpl--1812fe21:13feca1dc3b:fbb,CAPTAGES PRIORITAIRES,1180
+Chambre agriculture 64 : Siège des exploitations en 2008,FeatureTypeInfoImpl-1ebfe66c:135e213352e:-4f64,POP PAR IRIS 2008,2033
+ARS - Captages du Lot-et-Garonne,FeatureTypeInfoImpl--1812fe21:13feca1dc3b:7427,ATLAS DEPARTEMENTAL RISQUE INCENDIE FORET : LOT-ET-GARONNE,3393
+CA Cote Basque Adour - Enseignement Supérieur,FeatureTypeInfoImpl-2245790e:1419d44a43e:-64c9,PAI : SCIENCE ET ENSEIGNEMENT,3398
+CDC Piémont Oloronais - Périmètre Imedia Projet,FeatureTypeInfoImpl-2245790e:1419cd6c249:-2c03,PROJET : PNR DU MEDOC,3883
+Activités, hébergements et organismes - Accès Vélo,FeatureTypeInfoImpl--235b6150:150dc86d602:4fd8,ORGANISMES TOURISTIQUES,3753
+GPMB - Chenal de Blaye,FeatureTypeInfoImpl-5b18e1b8:142bdaa1634:-8b2,GPMB -  CHENAUX DE NAVIGATION, BALISAGE,1912
+GPMB - Epaves de zones,FeatureTypeInfoImpl-5b18e1b8:142bdaa1634:-877,GPMB -  CHENAUX DE NAVIGATION, BALISAGE,1912
+GPMB - Postes des quais,FeatureTypeInfoImpl-5b18e1b8:142bdaa1634:1fc,GPMB -  CHENAUX DE NAVIGATION, BALISAGE,1912
+IGN - SCAN1000 N&B,CoverageInfoImpl-2760fd63:1439611f8f7:6cc5,EMPRISE D'UNE FEUILLE IGN 1/2000,1792
+RFF - Projet LGV GPSO 1000m,FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7d6e,PROJET : PNR DU MEDOC,3883
+SRCE - Co Multi sous-trames,FeatureTypeInfoImpl-4d80d622:153a95f4937:-2894,ECOLES MULTI SPORTS,1329
+SRCE - OA Réservoirs de Biodiversité sans objectif,FeatureTypeInfoImpl-4d80d622:153a8c77372:-4be4,TERRITOIRE OBJECTIF 2,196
+CE24 - Structures d'accueil,FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7e92,OFFRE D'ACCUEIL ENFANCE,2072
+DDTM40 - Réseau territorial,FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7d8a,GROUPEMENT TERRITORIAL SP,25
+Dreal - TRI - Bati - Subm,FeatureTypeInfoImpl-749b820c:14d29c62d9d:25bb,DONNEES EN WMS : DREAL THEMATIQUE URBANISME,2240
+GPMB - Chenal de navigation,FeatureTypeInfoImpl-5b18e1b8:142bdaa1634:-8a7,GPMB -  CHENAUX DE NAVIGATION, BALISAGE,1912
+SRCE_2014_Co Systèmes bocagers,FeatureTypeInfoImpl--1349261:1431092c4c4:6097,SRCE / MILIEUX SOUS TRAMES : BOCAGERS,2645
+SRCE_2014_RB Systèmes bocagers,FeatureTypeInfoImpl--1349261:14310b86ff0:-10c7,SRCE / MILIEUX SOUS TRAMES : BOCAGERS,2645
+SRCE - RB Multi sous-trames,FeatureTypeInfoImpl-4d80d622:153a96ad79d:7a7,ECOLES MULTI SPORTS,1329
+SYSDAU - Périmètre du SYSDAU,FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7de4,PÉRIMÈTRE DES AVIS AUTORITÉ ENVIRONNEMENTALE (AE) SUR LES PROJETS EN AQUITAINE,2576
+ALPI - Prestations aux adhérants,FeatureTypeInfoImpl-85deced:15187b4b383:3a8d,BENEFICIAIRES DES PRESTATIONS LEGALES,1234
+ALPI - Prestations aux adhérents bis,FeatureTypeInfoImpl--41c42a6d:151681eb580:713b,BENEFICIAIRES DES PRESTATIONS LEGALES,1234
+SIRTAQUI - Sites naturels,FeatureTypeInfoImpl--499dd7c8:1505c036c27:-44ce,SIRTAQUI - BASE SUR L'OFFRE TOURISTIQUE EN AQUITAINE,1114
+DDTM40 - Aires géographiques IGP,FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7d8e,AIRES DE CAMPING-CAR,1459
+DREAL - Tronçons de digue,FeatureTypeInfoImpl-328c2f39:15336bf66bf:5d26,DONNEES EN WMS : DREAL THEMATIQUE URBANISME,2240
+SRCE - EF Autoroutes ou ""type autoroutier"",FeatureTypeInfoImpl--1e4c652c:152fa292e35:-485e,SRCE / PASSAGES FAUNE,2628
+SRCE - OA Réservoirs de Biodiversité à préserver,FeatureTypeInfoImpl-4d80d622:153a8be2757:-52f6,SRCE / PASSAGES FAUNE,2628
+SRCE - RB Enjeu chiroptères,FeatureTypeInfoImpl--1349261:14310b86ff0:14e,SRCE / PASSAGES FAUNE,2628
+SYSDAU - La Métropole nature,CoverageInfoImpl-35e7d5ee:1515ca42bc3:-926,SHOM - NATURE DES FONDS,1919
+ARS - Chirurgie (réservé ARS),FeatureTypeInfoImpl-59b62a1c:15047e8ccc2:7353,ETABLISSEMENTS DE CHIRURGIE,3337
+ARS - Dialyse (Réservé ARS),FeatureTypeInfoImpl-29107397:1504bfcb2ce:407,ETABLISSEMENTS DE DIALYSE,3338
+ARS - Psychiatrie (réservé ARS),FeatureTypeInfoImpl-29107397:1504b94e0ea:3a0f,ETABLISSEMENTS AVEC PSYCHIATRIE,3587
+ARS - Urgences (Réservé ARS),FeatureTypeInfoImpl-29107397:1504be48c1c:70d4,ETABLISSEMENTS AVEC URGENCES,3340
+CDC Penne d'Agenais - ZU de Tremons,FeatureTypeInfoImpl-2245790e:1419dadf6d9:7636,CARTE COMMUNALE TREMONS,2609
+Parcelles propriétés de l'Etat,FeatureTypeInfoImpl--76c7d698:137e60cb194:7992,PARCELLES DES SITES ENS 2011,3996
+CA Cote Basque Adour -  Collèges et Lycées,FeatureTypeInfoImpl-2245790e:1419d44a43e:-64d4,CHASSE  CLOTUREE,199
+CA Grand Dax - Réseau Couralin,FeatureTypeInfoImpl--6dc709cf:14d4db704a4:-5426,RESEAU DE TRANSPORT - COURALIN,3372
+CDC Piémont Oloronais - Périmètre Collectif,FeatureTypeInfoImpl--5d24cb91:137c9d21959:-4fbc,TRANSPORT COLLECTIF : DEPOTS,1426
+CDC Penne d'Agenais - ZU Auradou,FeatureTypeInfoImpl-2245790e:1419dadf6d9:407c,CARTE COMMUNALE AURADOU,2605
+CDC Penne d'Agenais - ZU Massoules,FeatureTypeInfoImpl-2245790e:1419dadf6d9:408b,CARTE COMMUNALE MASSOULES,2607
+SIRTAQUI - Meubles classés,FeatureTypeInfoImpl--499dd7c8:1505c036c27:-454c,SIRTAQUI - BASE SUR L'OFFRE TOURISTIQUE EN AQUITAINE,1114
+CDC Penne d'Agenais - ZU Dausse,FeatureTypeInfoImpl-2245790e:1419dadf6d9:4089,CARTE COMMUNALE DAUSSE,2606
+DRAC - Service d'Archives,FeatureTypeInfoImpl--15513d29:1338db5f360:-7bcb,DIFFERENT NIVEAU SERVICE DSL SUR TERRITOIRE,508
+DRJSCS  - RES - ERP de type L,FeatureTypeInfoImpl--158b7952:14c4be63ca3:433d,CHASSE  CLOTUREE,199
+FD pêche 33 - Contextes piscicoles,FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7dac,ETUDE POTENTIALITES PISCICOLES AFFLUENTS (MIGRATEURS AMPHIBIENS),3560
+SMEAG -  Gravières: activité en 1999,FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7faa,CHASSE  CLOTUREE,199
+SMEAG -  Ripisylves et essences,FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7f92,CHASSE  CLOTUREE,199
+SMEAG -  Plantations de peupliers et de pommiers,FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7f94,CHASSE  CLOTUREE,199
+SMAVLOT - Campings véloroute,FeatureTypeInfoImpl-14757e89:141c6cacc4c:-3c04,GIRONDE : CAMPINGS A RISQUES,4351
+SMEAG -  Falaises: hauteur, longueur et rive,FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7fa2,CHASSE  CLOTUREE,199
+ARS - Surveillance continue (Réservé ARS),FeatureTypeInfoImpl-29107397:1504bfcb2ce:ebc,PLAGES : SURVEILLANCE SANITAIRE,2179
+CA Grand Dax - Arrêts Couralin,FeatureTypeInfoImpl--6dc709cf:14d4db704a4:-554b,RESEAU DE TRANSPORT - COURALIN,3372
+EPIDROPT - Végétation aquatique vaq_p,FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7eb4,RIPISYLVE : VEGETATION AQUATIQUE (vaq, vaq_p),1696
+RFF - Réseau ferré Aquitain et Poitou-Charentes,FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7d68,BD ORTHO 5M - 2014 : POITOU-CHARENTES,4447
+GeoTransfert - Sorties de baïnes,FeatureTypeInfoImpl--6793a5a7:14183a422ac:5e55,TRACES SORTIES GRAND PUBLIC,773
+GPMB - Circonscriptions,FeatureTypeInfoImpl--3e77d70f:141973dd3d9:-3b80,GPMB -  CHENAUX DE NAVIGATION, BALISAGE,1912
+CDC Estuaire - Observations ornithologique,FeatureTypeInfoImpl--60d2bb13:13cb4eacc01:-f60,NATURA 2000 : SITES OBSERVATIONS ORNITHOLOGIQUES,667
+CG 64 - Grands itinéraires de randonnées,FeatureTypeInfoImpl-1efb5ae3:137edde9d3f:-6e99,GRANDS SITES INDUSTRIELS,63
+SIRTAQUI - Activités de loisirs,FeatureTypeInfoImpl--499dd7c8:1505c036c27:-45ff,SIRTAQUI - BASE SUR L'OFFRE TOURISTIQUE EN AQUITAINE,1114
+SIRTAQUI - Villages de vacances,FeatureTypeInfoImpl--499dd7c8:1505c036c27:-44c1,SIRTAQUI - BASE SUR L'OFFRE TOURISTIQUE EN AQUITAINE,1114
+DDTM 33 - Périmètres EPCIFP,FeatureTypeInfoImpl--2e1400eb:133edec7535:-7e8c,EPCIFP : PERIMETRE EPCI A FISCALISATION PROPRE,1541
+SIRTAQUI - Meubles labellisés,FeatureTypeInfoImpl--499dd7c8:1505c036c27:-4547,SIRTAQUI - BASE SUR L'OFFRE TOURISTIQUE EN AQUITAINE,1114
+SIRTAQUI - Organisme de tourisme,FeatureTypeInfoImpl--499dd7c8:1505c036c27:-4542,SIRTAQUI - BASE SUR L'OFFRE TOURISTIQUE EN AQUITAINE,1114
+SIRTAQUI - Sites de dégustations,FeatureTypeInfoImpl--499dd7c8:1505c036c27:-44d0,SIRTAQUI - BASE SUR L'OFFRE TOURISTIQUE EN AQUITAINE,1114
+SIRTAQUI - Aires de camping cars,FeatureTypeInfoImpl--499dd7c8:1505c036c27:-45e4,SIRTAQUI - BASE SUR L'OFFRE TOURISTIQUE EN AQUITAINE,1114
+RFF - Traversée voie piétons,FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7d62,RESEAU FERRE - TRAVERSEE VOIE PIETONS (RGI),728
+SRCE_2014_Co Boisements de conifères et milieux associés,FeatureTypeInfoImpl--1349261:1431092c4c4:6090,REGLEMENTATION SUR BOISEMENTS,1199
+SRCE_2014_RB Boisements de conifères et milieux associés,FeatureTypeInfoImpl--1349261:14310b86ff0:-1085,REGLEMENTATION SUR BOISEMENTS,1199
+EPIDOR - Périmètre reconnus des EPTB,FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7e1c,AIRE D'INTERVENTION DES EPTB,317
+CA Grand Dax - Réseau navettes,FeatureTypeInfoImpl--6dc709cf:14d4db704a4:-4d87,CARTE DE BRUIT STRATÉGIQUE LDEN RÉSEAU ROUTIER DE DAX,2541
+SIAEPA de La Brède - Réseau d'eaux usées,FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7f0a,PLU RÉVISÉ DE LA BRÈDE - 33213,2403
+SIRTAQUI - Equipements de loisirs,FeatureTypeInfoImpl--499dd7c8:1505c036c27:-457c,SIRTAQUI - BASE SUR L'OFFRE TOURISTIQUE EN AQUITAINE,1114
+SIRTAQUI - Patrimoine Culturel,FeatureTypeInfoImpl--499dd7c8:1505c036c27:-4521,SIRTAQUI - BASE SUR L'OFFRE TOURISTIQUE EN AQUITAINE,1114
+EPIDROPT - Végétation aquatique vaq,FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7ea6,RIPISYLVE : VEGETATION AQUATIQUE (vaq, vaq_p),1696
+CC Montesquieu - Arrêts de bus pour les collèges et les lycées,FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7f1c,PRÊT TAUX ZERO POUR 2008,1942
+EURATLANTIQUE - Périmètre de l'OIN,FeatureTypeInfoImpl--21535270:133b13cd29b:-777a,PÉRIMÈTRE DES AVIS AUTORITÉ ENVIRONNEMENTALE (AE) SUR LES PROJETS EN AQUITAINE,2576
+GeoTransfert - Barres intertidales,FeatureTypeInfoImpl--6793a5a7:14183a422ac:5c50,OCA : MESURES DE REFLECTANCE - ZONES INTERTIDALES DE LA HUME, DE L'ESTEY NEUF ET D'ANDERNOS,2939
+GIP ATGeRi - Remontés mécaniques,FeatureTypeInfoImpl-12ecc7c3:14208db36fc:5946,REFERENTIEL METIER GRANDE ECHELLE DU GIP,769
+GPMB - Limite Transversale de la mer,FeatureTypeInfoImpl-231d93e3:141a274342b:39cd,GPMB -  CHENAUX DE NAVIGATION, BALISAGE,1912
+RFF - Description du régime d'exploitation,FeatureTypeInfoImpl--60870653:141bc392aa4:-68f3,Voirie : description du statut des voies,4494
+Cadaujac - Niveau acoustique d’évaluation jour-soirée-nuit > 73DB,FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7f34,PLANS D'EAU > 1 000 M²,936
+Cadaujac - Niveau acoustique d’évaluation nocturne > 65DB,FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7f48,PLANS D'EAU > 1 000 M²,936
+Dreal-TRI-Etablissements installations sensibles - Debord,FeatureTypeInfoImpl-75428ea9:14d4242e6c2:-6f4c,ZONES SENSIBLES AUX POLLUTIONS,271
+Dreal-TRI-Etablissements installations sensibles - Subm,FeatureTypeInfoImpl-75428ea9:14d43502664:6b23,ZONES SENSIBLES AUX POLLUTIONS,271
+Dreal-TRI-Proba crue faible-Debord,FeatureTypeInfoImpl--6dc709cf:14d4de3c19f:-57e4,ZONES D EXPANSION DE CRUE,608
+Dreal-TRI-Proba crue Fort-Debord,FeatureTypeInfoImpl--6dc709cf:14d4de3c19f:-5740,ZONES D EXPANSION DE CRUE,608
+Dreal-TRI-Proba crue Moy-Debord,FeatureTypeInfoImpl--6dc709cf:14d4de3c19f:-576c,ZONES D EXPANSION DE CRUE,608
+Dreal-TRI-Proba crue Faible-Subm,FeatureTypeInfoImpl--6dc709cf:14d4de3c19f:-5633,ZONES D EXPANSION DE CRUE,608
+Dreal-TRI-Proba crue Fort-Subm,FeatureTypeInfoImpl--6dc709cf:14d4de3c19f:-55e7,ZONES D EXPANSION DE CRUE,608
+Dreal-TRI-Proba crue Moy av chgt climat-Subm,FeatureTypeInfoImpl--6dc709cf:14d4de3c19f:-55cf,ZONES D EXPANSION DE CRUE,608
+Dreal-TRI-Proba crue Moy-Subm,FeatureTypeInfoImpl--6dc709cf:14d4de3c19f:-55e1,ZONES D EXPANSION DE CRUE,608
+Cadaujac - Réseau d'eaux usées,FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7f06,CARTE DE BRUIT STRATÉGIQUE LDEN RÉSEAU ROUTIER DE DAX,2541
+SIRTAQUI - Itinéraires cyclables,FeatureTypeInfoImpl-2df639e5:155348114cd:-7de9,SIRTAQUI - BASE SUR L'OFFRE TOURISTIQUE EN AQUITAINE,1114
+SRCE_2014_RB Milieux rocheux d'altitude,FeatureTypeInfoImpl--1349261:14310b86ff0:187,MILIEUX NATURELS REMARQUABLES,964
+Cadaujac - Niveau acoustique d’évaluation jour-soirée-nuit,FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7f02,COURBES DE NIVEAU MNT EN 2001,4081
+CE24 - Circuits de randonnées équestres,FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7e94,GESTION DECHETS : CIRCUITS DE COLLECTE,1350
+DREAL - Réseau de référence (RREF),FeatureTypeInfoImpl-5d223b53:134e5d6d059:-5d00,CARTE DE BRUIT STRATÉGIQUE LDEN RÉSEAU ROUTIER DE DAX,2541
+Cadaujac - Niveau acoustique d’évaluation nocturne LN,FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7f2c,COURBES DE NIVEAU MNT EN 2001,4081
+Saisie commentaires (surface),FeatureTypeInfoImpl-3426f983:13ab64124df:-24bc,OCA : MODELE POUR LA SAISIE D'UN CATALOGUE D'ATTRIBUTS,3010
+SIRTAQUI - Hébergements collectifs,FeatureTypeInfoImpl--499dd7c8:1505c036c27:-4564,SIRTAQUI - BASE SUR L'OFFRE TOURISTIQUE EN AQUITAINE,1114
+SIRTAQUI - Chambres d'hotes déclarées,FeatureTypeInfoImpl--499dd7c8:1505c036c27:-45cb,SIRTAQUI - BASE SUR L'OFFRE TOURISTIQUE EN AQUITAINE,1114
+SIRTAQUI - Pistes cyclables Euroziklo,FeatureTypeInfoImpl-11802f3b:14a1069fcee:-3c2a,SIRTAQUI - BASE SUR L'OFFRE TOURISTIQUE EN AQUITAINE,1114
+SIRTAQUI - Pistes cyclables Velodyssee,FeatureTypeInfoImpl-11802f3b:14a1069fcee:-39c4,SIRTAQUI - BASE SUR L'OFFRE TOURISTIQUE EN AQUITAINE,1114
+SRCE_2014_EF_IT Autoroutes ou type ""autoroutier"",FeatureTypeInfoImpl-181e9ded:14366cedb7e:2fda,TYPE DE MODELISATION MALADIE VIGNE,610
+SRCE_2015_RB_MOSO Pelouses et prairies d'altitude,FeatureTypeInfoImpl--1349261:14310b86ff0:-f50,INVENTAIRE DE PELOUSES ET LANDES CALCAIRES,544
+DREAL - Réseau de Contrôles Opérationnels (RCO),FeatureTypeInfoImpl-5d223b53:134e5d6d059:-5d0a,DONNEES EN WMS : DREAL THEMATIQUE URBANISME,2240
+EPIDROPT - Espèce indésirable dominante RFA_P,FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7eb6,RIPISYLVE : ESPECES INDESIRABLE DOMINANTE (Pe_l, Pe_p, RFA_l, RFA_p),1694
+EPIDROPT - Espèce indésirable dominante Pe_I,FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7ec2,RIPISYLVE : ESPECES INDESIRABLE DOMINANTE (Pe_l, Pe_p, RFA_l, RFA_p),1694
+Dreal-TRI-Hauteur eau Aléa Faible Proba-Debord,FeatureTypeInfoImpl-5a07631d:14d6640074d:-5fe6,PLANTE RENOUEE DU JAPON : ZONE DE FAIBLE PRESENCE,3201
+Dreal-TRI-Hauteur eau Aléa Forte Proba-Debord,FeatureTypeInfoImpl-5a07631d:14d664b35cf:66a1,PLANTE RENOUEE DU JAPON : ZONE DE FORTE PRESENCE,3200
+EPIDROPT - Espèce indésirable dominante Pe_p,FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7ea8,RIPISYLVE : ESPECES INDESIRABLE DOMINANTE (Pe_l, Pe_p, RFA_l, RFA_p),1694
+EPIDROPT - Espèce indésirable dominante RFA_I,FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7ec0,RIPISYLVE : ESPECES INDESIRABLE DOMINANTE (Pe_l, Pe_p, RFA_l, RFA_p),1694
+Dreal-TRI-Hauteur eau Aléa Faible Proba-Subm,FeatureTypeInfoImpl-5a07631d:14d667a418d:-49ef,PLANTE RENOUEE DU JAPON : ZONE DE FAIBLE PRESENCE,3201
+Dreal-TRI-Hauteur eau Aléa Forte Proba-Subm,FeatureTypeInfoImpl-5a07631d:14d667a418d:-4999,PLANTE RENOUEE DU JAPON : ZONE DE FORTE PRESENCE,3200
+SIRTAQUI - Piste cyclable VVV de France (Salies-De-Bearn-Escos),FeatureTypeInfoImpl--352f6934:14a0b80552c:4258,SIRTAQUI - BASE SUR L'OFFRE TOURISTIQUE EN AQUITAINE,1114
+Lieudits,FeatureTypeInfoImpl--75a9eb42:1328aaba535:-7fd7,LIEU DIT,3357
+Départements,FeatureTypeInfoImpl--75a9eb42:1328aaba535:-7fdb,DEPARTEMENT,180
+Préfecture,FeatureTypeInfoImpl-422659b1:132b0a3003b:-7d63,PAYS DU GRAND BERGERACOIS,808
+ALPI-e-Administration-Prestations,FeatureTypeInfoImpl--41c42a6d:1516892b976:-2e15,PAYS DU GRAND BERGERACOIS,808
+ALPI-Matériel-Prestations,FeatureTypeInfoImpl--41c42a6d:1516892b976:-baf,PAYS DU GRAND BERGERACOIS,808
+ALPI-Actions sociales-Prestations,FeatureTypeInfoImpl--41c42a6d:151688086a7:-460b,PAYS DU GRAND BERGERACOIS,808
+ALPI-Administration générale-Prestations,FeatureTypeInfoImpl--41c42a6d:151688c607b:7984,PAYS DU GRAND BERGERACOIS,808
+ALPI -e-Communication-Prestations,FeatureTypeInfoImpl--41c42a6d:1516892b976:-2cee,PAYS DU GRAND BERGERACOIS,808
+ALPI-Enfance-Jeunesse-Prestations,FeatureTypeInfoImpl--41c42a6d:1516892b976:-1ede,PAYS DU GRAND BERGERACOIS,808
+ALPI-Sécurité informatique-Prestations,FeatureTypeInfoImpl--41c42a6d:1516892b976:-ad1,PAYS DU GRAND BERGERACOIS,808
+effet_barriere_cabgeoref_ok,CoverageInfoImpl-245b133a:155fdf3fd34:5036,PAYS DU GRAND BERGERACOIS,808
+ARS - SSIAD,FeatureTypeInfoImpl-59b62a1c:15046737959:-5e1c,PAYS DU GRAND BERGERACOIS,808
+ARS - HAD (Réservé ARS),FeatureTypeInfoImpl-29107397:1504ca3bbd0:-2fc,PAYS DU GRAND BERGERACOIS,808
+ARS - Maternités (réservé ARS),FeatureTypeInfoImpl-6ad66818:13b6699fd64:-59da,PAYS DU GRAND BERGERACOIS,808
+ARS - Maternités,FeatureTypeInfoImpl-4148e270:13b6901c0cd:-788b,PAYS DU GRAND BERGERACOIS,808
+ARS - Médecine (réservé ARS),FeatureTypeInfoImpl-59b62a1c:1504780c7b3:1067,PAYS DU GRAND BERGERACOIS,808
+ARS - Médecine,FeatureTypeInfoImpl-59b62a1c:1504780c7b3:ef6,PAYS DU GRAND BERGERACOIS,808
+ARS - Néonatalogie (Réservé ARS),FeatureTypeInfoImpl-29107397:1504ca3bbd0:-97b,PAYS DU GRAND BERGERACOIS,808
+ARS - Obstétrique (réservé ARS),FeatureTypeInfoImpl-59b62a1c:15047f7182d:-666c,PAYS DU GRAND BERGERACOIS,808
+ARS - Obstétrique,FeatureTypeInfoImpl-59b62a1c:15047f7182d:-6d9d,PAYS DU GRAND BERGERACOIS,808
+ARS - Réanimation (Réservé ARS),FeatureTypeInfoImpl-29107397:1504bfcb2ce:-7f0b,PAYS DU GRAND BERGERACOIS,808
+ARS - Réanimation,FeatureTypeInfoImpl-29107397:1504bfcb2ce:-7ee2,PAYS DU GRAND BERGERACOIS,808
+ARS - SLD (Réservé ARS),FeatureTypeInfoImpl-29107397:1504bba11c8:796d,PAYS DU GRAND BERGERACOIS,808
+ARS - SSR (Réservé ARS),FeatureTypeInfoImpl-29107397:1504b94e0ea:4b0a,PAYS DU GRAND BERGERACOIS,808
+ARS - SSR,FeatureTypeInfoImpl-29107397:1504b94e0ea:4b2e,PAYS DU GRAND BERGERACOIS,808
+extracteur_lieu_dit_non_habite,FeatureTypeInfoImpl-50da8329:133db20c97a:-7f15,PAYS DU GRAND BERGERACOIS,808
+CDC Piémont Oloronais - eu_sogreah_point,FeatureTypeInfoImpl--5d24cb91:137c9d21959:-4cad,PAYS DU GRAND BERGERACOIS,808
+DDTM 33 - PLU, POS, CC,FeatureTypeInfoImpl-2f336867:1357c56fc95:-775f,PAYS DU GRAND BERGERACOIS,808
+CDC Piémont Oloronais - AS1 Péri Eloigné,FeatureTypeInfoImpl-2245790e:1419cd6c249:-2cb7,PAYS DU GRAND BERGERACOIS,808
+CDC Piémont Oloronais - AS1 Péri Raproché,FeatureTypeInfoImpl-2245790e:1419cd6c249:-2c01,PAYS DU GRAND BERGERACOIS,808
+CDC Piémont Oloronais - Repérage Général AEP,FeatureTypeInfoImpl-2245790e:1419d048044:140,PAYS DU GRAND BERGERACOIS,808
+CDC Piémont Oloronais - Réservoir,FeatureTypeInfoImpl-2245790e:1419d048044:17b,PAYS DU GRAND BERGERACOIS,808
+CDC Piémont Oloronais - ep_sogreah_point,FeatureTypeInfoImpl--5d24cb91:137c9d21959:-4d8e,PAYS DU GRAND BERGERACOIS,808
+CDC Piémont Oloronais - ep_sogreah_polyline,FeatureTypeInfoImpl--5d24cb91:137c9d21959:-4d5a,PAYS DU GRAND BERGERACOIS,808
+CDC Piémont Oloronais - PLU Oloron-Sainte-Marie,FeatureTypeInfoImpl-8d8cbe6:137ba5f09c1:38fc,PAYS DU GRAND BERGERACOIS,808
+EPIDROPT - Embâcles Em1,FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7eba,PAYS DU GRAND BERGERACOIS,808
+CDC Piémont Oloronais - poste_relev_point,FeatureTypeInfoImpl--5d24cb91:137c9d21959:-4bd6,PAYS DU GRAND BERGERACOIS,808
+CDC Piémont Oloronais - regard_ep_sogreah_point,FeatureTypeInfoImpl--5d24cb91:137c9d21959:-3395,PAYS DU GRAND BERGERACOIS,808
+CDC Piémont Oloronais - regard_eu_sogreah_point,FeatureTypeInfoImpl--5d24cb91:137c9d21959:-4b0d,PAYS DU GRAND BERGERACOIS,808
+CDC Piémont Oloronais - regard_un_sogreah_point,FeatureTypeInfoImpl--5d24cb91:137c9d21959:-4b0b,PAYS DU GRAND BERGERACOIS,808
+EPIDROPT - Embâcles Em2,FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7eb2,PAYS DU GRAND BERGERACOIS,808
+CE24 - Agro-tourisme,FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7e90,PAYS DU GRAND BERGERACOIS,808
+test_deflate_1024,CoverageInfoImpl--4e4edcb3:15b48f6356e:-d3c,PAYS DU GRAND BERGERACOIS,808
+test_deflate_512,CoverageInfoImpl--4e4edcb3:15b67853721:-5aab,PAYS DU GRAND BERGERACOIS,808
+EPIDROPT - Embâcles Em3,FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7eb0,PAYS DU GRAND BERGERACOIS,808
+Dreal-TRI-Enjeu activités éco - Subm,FeatureTypeInfoImpl-75428ea9:14d438f8d83:-7d48,PAYS DU GRAND BERGERACOIS,808
+CG 47 - Déchetteries,FeatureTypeInfoImpl--4b05c1c2:134c82984ff:-637b,PAYS DU GRAND BERGERACOIS,808
+CG 64 - D64 AEP PPE,FeatureTypeInfoImpl--28e07fc6:137e8b84496:-17ff,CCAS,3314
+CG 64 - D64 AEP PPI,FeatureTypeInfoImpl--28e07fc6:137e8b84496:-17fc,CCAS,3314
+CG 64 - D64 AEP PPR,FeatureTypeInfoImpl--28e07fc6:137e8b84496:-17f9,CCAS,3314
+Chambre agriculture 33 - Listing des détenteurs d'animaux,FeatureTypeInfoImpl-5c8f87e1:14407aa6100:64dd,PAYS DU GRAND BERGERACOIS,808
+extracteur_canton,FeatureTypeInfoImpl-50da8329:133db20c97a:-7f22,PAYS DU GRAND BERGERACOIS,808
+extracteur_commune,FeatureTypeInfoImpl-50da8329:133db20c97a:-7b9f,PAYS DU GRAND BERGERACOIS,808
+CR Aquitaine - Lycées,FeatureTypeInfoImpl-1f9c8a93:133a71d23f1:-7d1d,PAYS DU GRAND BERGERACOIS,808
+crt_sirtaqui_itineraires_a_velo_test,FeatureTypeInfoImpl-2df639e5:15534890d4c:-61d0,PAYS DU GRAND BERGERACOIS,808
+Dreal-TRI-STEU-Subm,FeatureTypeInfoImpl--68c7c94:14d4781f864:6754,PAYS DU GRAND BERGERACOIS,808
+extracteur_lieu_dit_habite,FeatureTypeInfoImpl-50da8329:133db20c97a:-7f19,PAYS DU GRAND BERGERACOIS,808
+Sous-Préfecture,FeatureTypeInfoImpl-422659b1:132b0a3003b:-7ba1,PAYS DU GRAND BERGERACOIS,808
+ARS - Pédiatrie (Réservé ARS),FeatureTypeInfoImpl-29107397:1504c8689af:6d9b,PAYS DU GRAND BERGERACOIS,808
+ARS - SLD,FeatureTypeInfoImpl-29107397:1504bc362a2:-5904,PAYS DU GRAND BERGERACOIS,808
+CA Cote Basque Adour - Crèche,FeatureTypeInfoImpl-2245790e:1419d36de39:1d3e,PAYS DU GRAND BERGERACOIS,808
+CA Cote Basque Adour - Santé,FeatureTypeInfoImpl-2245790e:1419d44a43e:-20d7,PAYS DU GRAND BERGERACOIS,808
+CA Grand Dax - Arrêts Navette,FeatureTypeInfoImpl--6dc709cf:14d4db704a4:-54d9,PAYS DU GRAND BERGERACOIS,808
+CDC Piémont Oloronais - Rivières,FeatureTypeInfoImpl-2245790e:1419d048044:17d,PAYS DU GRAND BERGERACOIS,808
+CDC Piémont Oloronais - eu_sogreah_polyline,FeatureTypeInfoImpl--5d24cb91:137c9d21959:-4c64,PAYS DU GRAND BERGERACOIS,808
+CDC Piémont Oloronais - refoul_sogreah_polyline,FeatureTypeInfoImpl--5d24cb91:137c9d21959:-4b64,PAYS DU GRAND BERGERACOIS,808
+CDC Piémont Oloronais - unit_sogreah_polyline,FeatureTypeInfoImpl--5d24cb91:137c9d21959:-4ab3,PAYS DU GRAND BERGERACOIS,808
+public_layer,FeatureTypeInfoImpl-2b665931:15a1d6fbd50:-7ff6,PAYS DU GRAND BERGERACOIS,808
+DDT 47 - pprn_argile,FeatureTypeInfoImpl-4d526dfe:149f05ab62e:d86,PAYS DU GRAND BERGERACOIS,808
+DDT 47 - pprn_inondation,FeatureTypeInfoImpl-4d526dfe:149f06d9cc6:24a8,PAYS DU GRAND BERGERACOIS,808
+DDT 47 - pprn_mvtdt,FeatureTypeInfoImpl-4d526dfe:149f086530a:21e6,PAYS DU GRAND BERGERACOIS,808
+DDT 47 - pprt_technologique,FeatureTypeInfoImpl-4d526dfe:149f0c00e2c:-16b2,PAYS DU GRAND BERGERACOIS,808
+Dreal-TRI-Enjeu IPPC - Debord,FeatureTypeInfoImpl--68c7c94:14d46fe7e7b:2f0e,PAYS DU GRAND BERGERACOIS,808
+DRAC - Bibliothèques,FeatureTypeInfoImpl-1f9c8a93:133a71d23f1:-7fa7,PAYS DU GRAND BERGERACOIS,808
+DRAC - Médiathèques,FeatureTypeInfoImpl-1f9c8a93:133a71d23f1:-7fa5,PAYS DU GRAND BERGERACOIS,808
+Dreal-TRI-Enjeu IPPC - Subm,FeatureTypeInfoImpl--68c7c94:14d470cbd7d:3513,PAYS DU GRAND BERGERACOIS,808
+DRAC - Musées,FeatureTypeInfoImpl-1f9c8a93:133a71d23f1:-7fa1,PAYS DU GRAND BERGERACOIS,808
+geofla_departement_test,FeatureTypeInfoImpl--1ff25990:1420550b62d:3eb2,PAYS DU GRAND BERGERACOIS,808
+Dreal-TRI-Enjeu DCE- Débord,FeatureTypeInfoImpl--68c7c94:14d48d9454e:-59be,PAYS DU GRAND BERGERACOIS,808
+Dreal-TRI-Enjeu DCE- Subm,FeatureTypeInfoImpl--68c7c94:14d48d9454e:-59b8,PAYS DU GRAND BERGERACOIS,808
+Dreal-TRI-Enjeu activités éco - Débord,FeatureTypeInfoImpl-75428ea9:14d4381d853:5478,PAYS DU GRAND BERGERACOIS,808
+Dreal-TRI-STEU-Debord,FeatureTypeInfoImpl--68c7c94:14d4781f864:5c2d,PAYS DU GRAND BERGERACOIS,808
+Dreal-TRI - Bâti - Débordement,FeatureTypeInfoImpl-749b820c:14d299acb8d:7395,PAYS DU GRAND BERGERACOIS,808
+Dreal-TRI-Hauteur eau Aléa Moy Proba-Debord,FeatureTypeInfoImpl-5a07631d:14d664b35cf:3e2a,PAYS DU GRAND BERGERACOIS,808
+Dreal-TRI-Hauteur eau Aléa Moy Proba-Subm,FeatureTypeInfoImpl-5a07631d:14d667a418d:-49d5,PAYS DU GRAND BERGERACOIS,808
+Dreal-TRI-Hauteur eau Aléa Moy Proba av chmt climat-Subm,FeatureTypeInfoImpl-5a07631d:14d667a418d:-47d7,PAYS DU GRAND BERGERACOIS,808
+Dreal-TRI-Périmètre,FeatureTypeInfoImpl-1381bef0:14d7034dce6:-6eb3,PAYS DU GRAND BERGERACOIS,808
+Dreal-TRI-Lits mineurs,FeatureTypeInfoImpl-1381bef0:14d704a8e6f:62cc,PAYS DU GRAND BERGERACOIS,808
+Dreal-TRI-Zones soustraites à l'inondation,FeatureTypeInfoImpl-1381bef0:14d70998968:37bb,PAYS DU GRAND BERGERACOIS,808
+Dreal-TRI-sur-Zones de sur-aléa,FeatureTypeInfoImpl-1381bef0:14d70c79779:1f13,PAYS DU GRAND BERGERACOIS,808
+EPIDOR - Bathymétrie,FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7e14,PAYS DU GRAND BERGERACOIS,808
+ocs_assemblage_00_09_generalise_simplif_2,FeatureTypeInfoImpl--3cde75bc:15708fb0802:-6114,PAYS DU GRAND BERGERACOIS,808
+ocs_assemblage_00_09_generalise_simplif_3,FeatureTypeInfoImpl--3cde75bc:15709f9a8eb:45f1,PAYS DU GRAND BERGERACOIS,808
+OCS_2009_fin_coupe_nodata,CoverageInfoImpl--bc07016:15723572a7c:5d2,PAYS DU GRAND BERGERACOIS,808
+BDOrtho40cm_2009_aqui_blanc_transparent,CoverageInfoImpl--5e85e6b8:13967bfcfef:-5440,PAYS DU GRAND BERGERACOIS,808
+pyramid,CoverageInfoImpl--4e4edcb3:15b3db67abd:6cee,PAYS DU GRAND BERGERACOIS,808
+test_deflate,CoverageInfoImpl--4e4edcb3:15b43cff3e5:55e0,PAYS DU GRAND BERGERACOIS,808
+test_lzw,CoverageInfoImpl--4e4edcb3:15b4282fbe7:1514,PAYS DU GRAND BERGERACOIS,808
+CG64 - SDAN - Ponits d'intérêt,FeatureTypeInfoImpl--30274150:144c1551c80:377a,PAYS DU GRAND BERGERACOIS,808
+RFF - Pont-Rail,FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7d76,PAYS DU GRAND BERGERACOIS,808
+RFF - Passerelles,FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7d5e,PAYS DU GRAND BERGERACOIS,808
+RFF - Pont-route,FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7d74,PAYS DU GRAND BERGERACOIS,808
+RFF - Sous-station électrique,FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7d64,PAYS DU GRAND BERGERACOIS,808
+RFF - Tunnels,FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7d6a,PAYS DU GRAND BERGERACOIS,808
+SDIS 47 - ERP,FeatureTypeInfoImpl-328c2f39:15336d544b1:7f86,PAYS DU GRAND BERGERACOIS,808
+SMAVLOT - Hôtel véloroute,FeatureTypeInfoImpl-14757e89:141c6cacc4c:-33fa,PAYS DU GRAND BERGERACOIS,808
+SMAVLOT - Véloroute,FeatureTypeInfoImpl-14757e89:141c6cacc4c:-33f3,PAYS DU GRAND BERGERACOIS,808
+SMEAP - Tronçon eau SMEAP,FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7db2,PAYS DU GRAND BERGERACOIS,808
+aquitaine_prescription_surf_vue_test,FeatureTypeInfoImpl-517c09a2:142fffc63c6:-790b,PAYS DU GRAND BERGERACOIS,808
+suivi_urba_20150710,FeatureTypeInfoImpl--56b69d4f:14e77f20d18:-ded,PAYS DU GRAND BERGERACOIS,808
+suivi_urba_20150813,FeatureTypeInfoImpl--1bed10f1:14f8865e0ef:36e6,PAYS DU GRAND BERGERACOIS,808
+suivi_urba_20160118,FeatureTypeInfoImpl--1136831a:15287c4085a:2a62,PAYS DU GRAND BERGERACOIS,808

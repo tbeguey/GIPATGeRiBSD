@@ -21,7 +21,7 @@ public class Utils {
                 if(file.getName().equals("featuretype.xml") || file.getName().equals("coverage.xml")){ // si ce fichier est un featuretype.xml
                     String backslash = System.getProperty("file.separator");
                     String workspace = file.toString().replace(backslash, "/").split("/workspaces/")[1].split("/")[0];
-                    p.addLine(file, workspace); // alors on l'ajoute dans la BD
+                    p.addLineInInit(file, workspace); // alors on l'ajoute dans la BD
                 }
                 // Appel récursif sur les sous-répertoires
                 listeRepertoire(file, p); // on rappelle cette meme fonction pour chaqu'un des fichiers

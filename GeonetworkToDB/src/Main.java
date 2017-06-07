@@ -1,12 +1,10 @@
 public class Main {
 
     public static void main(String args[]) {
-        PostGreSQL postGreSqlBSD = new PostGreSQL();
-        postGreSqlBSD.connection("172.30.100.12:5432/bsd?currentSchema=geonetwork", "admpostgres", "admpostgres");
-        postGreSqlBSD.createTable("metadata");
+        PostGreSQL postGreSQL = new PostGreSQL();
+        postGreSQL.connection("172.30.100.12:5432/bsd", "admpostgres", "admpostgres");
+        postGreSQL.createTable("geonetwork.metadata");
 
-        PostGreSQL postGreSQLGeorchestra = new PostGreSQL();
-        postGreSQLGeorchestra.connection("172.30.100.12:5432/bsd?currentSchema=geonetwork", "admpostgres", "admpostgres");
 
         String[] paths = {"(xpath('/gmd:MD_Metadata/gmd:fileIdentifier/gco:CharacterString/text()', data::xml, '{{gmd,http://www.isotc211.org/2005/gmd},{gco,http://www.isotc211.org/2005/gco}}'))[1]::text as uuid,\n" +
                 "(xpath('/gmd:MD_Metadata/gmd:identificationInfo/fra:FRA_DataIdentification/gmd:citation/gmd:CI_Citation/gmd:title/gco:CharacterString/text()', data::xml, '{{gmd,http://www.isotc211.org/2005/gmd},{gco,http://www.isotc211.org/2005/gco}, {fra,http://www.cnig.gouv.fr/2005/fra}}'))[1]::text as title,\n",
@@ -27,16 +25,16 @@ public class Main {
 
         for (String path : paths) {
             System.out.println("PATH SUIVANT");
-            postGreSQLGeorchestra.getLines(path);
+            postGreSQL.getLinesOnInit(path);
         }
+        
+        //postGreSQL.getLinesOnFinal();
+        //postGreSQL.deleteLinesOnFinal();
 
-        System.out.println(postGreSQLGeorchestra.getLines().size());
+        postGreSQL.insertLine("geonetwork.metadata");
 
-        for (Line l : postGreSQLGeorchestra.getLines()) {
-            postGreSqlBSD.addLine("metadata", l);
-        }
+        postGreSQL.dropTable("geonetwork.metadata_init");
 
-        postGreSqlBSD.deconnection();
-        postGreSQLGeorchestra.deconnection();
+        postGreSQL.deconnection();
     }
 }

@@ -1,243 +1,245 @@
 Cartogip,ID Cartogip,BSD,ID BSD
-ddpp - Traitement sous produits,1838,ETABLISSEMENT TRAITEMENT SOUS PRODUITS (EQUARRISSAGE, COMPOSTAGE, METHANISATION),4314
+ddpp - Traitement sous produits,1855,ETABLISSEMENT TRAITEMENT SOUS PRODUITS (EQUARRISSAGE, COMPOSTAGE, METHANISATION),4314
 insee - Population iris 2007,307,RECENSEMENT POP 2007 - IRIS - THEME POPULATION,1226
-sidpc - Moustique tigre Communes infectées,1874,MOUSTIQUE TIGRE : COMMUNES INFECTEES,3596
-raster - BD ORTHO 2015 25cm,1717,BD ORTHO 5M - 2015 : EX-AQUITAINE,3356
-socio_economique - Part des 15-24 ans dans la population totale,550,PART DES 15-24 ANS DS POP TOTALE,2042
-socio_economique - Part des 55-64 ans dans la population totale,699,PART DES 55-64 ANS DS POP TOTALE,2044
-socio_economique - Part des 25-54 ans dans la population totale,1043,PART DES 25-54 ANS DS POP TOTALE,2043
-ddtm47 - Périmètres de protection des captages AEP,495,RESEAU AEP : PERIMETRES DE PROTECTION DES CAPTAGES,2107
-ddtm47 - Zone de securité autour des canalisations de gaz,928,RESEAU TRANSPORT GAZS : ZONE DE SECURITE AUTOUR CANALISATIONS,1517
+null - Directive Habitats - Natura 2000,906,NATURA 2000 - DIRECTIVE HABITAT,219
+sidpc - Moustique tigre Communes infectées,1891,MOUSTIQUE TIGRE : COMMUNES INFECTEES,3596
+raster - BD ORTHO 2015 25cm,1716,BD ORTHO 5M - 2015 : EX-AQUITAINE,3356
+socio_economique - Part des 15-24 ans dans la population totale,549,PART DES 15-24 ANS DS POP TOTALE,2042
+socio_economique - Part des 55-64 ans dans la population totale,698,PART DES 55-64 ANS DS POP TOTALE,2044
+socio_economique - Part des 25-54 ans dans la population totale,1042,PART DES 25-54 ANS DS POP TOTALE,2043
+ddtm47 - Périmètres de protection des captages AEP,494,RESEAU AEP : PERIMETRES DE PROTECTION DES CAPTAGES,2107
+ddtm47 - Zone de securité autour des canalisations de gaz,927,RESEAU TRANSPORT GAZS : ZONE DE SECURITE AUTOUR CANALISATIONS,1517
 patrimoine_culturel - Périmètre de protection des monuments historiques (500 m),167,PERIMETRE DE PROTECTION DES MONUMENTS HISTORIQUES,159
-tigf - Postes de sectionnement et robinets de sécurité (TIGF),438,POSTES DE SECTIONNEMENT ET ROBINETS DE SECURITE,1904
-socio_economique - 15 ans et + non scolarisés sans diplômes,789,POP DE 15 ANS ET + NON SCOLARISES SANS DIPLOMES,2056
-socio_economique - Part des actifs de 25-54 ans par rapport à la population des 25-54 ans,574,PART DES ACTIFS OCCUPES DE 25-54 ANS,2053
-socio_economique - Part actifs occupés de 15-24 ans,746,PART DES ACTIFS OCCUPES DE 15-24 ANS,2052
-socio_economique - Part actifs occupés de 55-64 ans,757,PART DES ACTIFS OCCUPES DE 55-64 ANS,2054
-socio_economique - Part des actifs de 55-64 ans par rapport à la population des 55-64 ans,784,PART DES ACTIFS OCCUPES DE 55-64 ANS,2054
-socio_economique - Part actifs occupés de 25-54 ans,786,PART DES ACTIFS OCCUPES DE 25-54 ANS,2053
-socio_economique - Part des actifs de 15-24 ans par rapport à la population des 15-24 ans,1042,PART DES ACTIFS OCCUPES DE 15-24 ANS,2052
-admin_express - Communautés ou groupements de communes (EPCI),1702,WEB_1-30_LES COMMUNAUTÉS DE COMMUNES (EPCI) DU DÉPARTEMENT DE LA DORDOGNE,2263
-limites_admin - Communautés ou groupements de communes (EPCI),1783,WEB_1-30_LES COMMUNAUTÉS DE COMMUNES (EPCI) DU DÉPARTEMENT DE LA DORDOGNE,2263
+tigf - Postes de sectionnement et robinets de sécurité (TIGF),437,POSTES DE SECTIONNEMENT ET ROBINETS DE SECURITE,1904
+socio_economique - 15 ans et + non scolarisés sans diplômes,788,POP DE 15 ANS ET + NON SCOLARISES SANS DIPLOMES,2056
+socio_economique - Part des actifs de 25-54 ans par rapport à la population des 25-54 ans,573,PART DES ACTIFS OCCUPES DE 25-54 ANS,2053
+socio_economique - Part actifs occupés de 15-24 ans,745,PART DES ACTIFS OCCUPES DE 15-24 ANS,2052
+socio_economique - Part actifs occupés de 55-64 ans,756,PART DES ACTIFS OCCUPES DE 55-64 ANS,2054
+socio_economique - Part des actifs de 55-64 ans par rapport à la population des 55-64 ans,783,PART DES ACTIFS OCCUPES DE 55-64 ANS,2054
+socio_economique - Part actifs occupés de 25-54 ans,785,PART DES ACTIFS OCCUPES DE 25-54 ANS,2053
+socio_economique - Part des actifs de 15-24 ans par rapport à la population des 15-24 ans,1041,PART DES ACTIFS OCCUPES DE 15-24 ANS,2052
+admin_express - Communautés ou groupements de communes (EPCI),1701,WEB_1-30_LES COMMUNAUTÉS DE COMMUNES (EPCI) DU DÉPARTEMENT DE LA DORDOGNE,2263
+limites_admin - Communautés ou groupements de communes (EPCI),1800,WEB_1-30_LES COMMUNAUTÉS DE COMMUNES (EPCI) DU DÉPARTEMENT DE LA DORDOGNE,2263
 cadastre - Parcelles,106,CADASTRE ANCIEN : PARCELLES 1812,1697
 dreal - ICPE industries (DREAL),109,ICPE - INDUSTRIES,3593
 cadastre - Bati,210,CADASTRE ANCIEN : BATI 1812,1698
 gip_atgeri - Cantons 2015,225,CANTONS 2015,3270
 ddt - Points routiers,227,POINTS ROUTIERS,3583
-WMS Geosignal,262,DONNEES EN WMS : GEOSIGNAL,2241
 atlas - Atlas zoom4000,303,ATLAS,258
-Reserves nationales de chasse et faune sauvage,370,FAUNE SAUVAGE,3970
-cadastre - Cadastre IGN Aquitaine,470,CADASTRE,79
-cadastre - Cadastre -  PCI  (2 CDC),473,CADASTRE,79
-cadastre - Lim. Communales - IGN - BD Parcellaire,478,BD PARCELLAIRE,1205
-ZNIEFF 1,544,ZNIEFF 1,80
-Scan 1000 IGN,583,SCAN 1000,263
-atlas - Atlas zoom8000,670,ATLAS,258
-atlas - Atlas zoom2000,677,ATLAS,258
-dfci - Pistes forestières 40,841,PISTES DFCI,615
-piste_cyclable - Pistes cyclables,877,PISTES CYCLABLES,117
-atlas - Atlas A3,950,ATLAS,258
-projets_infrastructures - Projet ouvrages hydrauliques,967,OUVRAGES HYDRAULIQUES,1150
-pompier - Buffer 400m Prise d'eau,973,PRISE D'EAU,138
-gip_atgeri - cantons 2015,1172,CANTONS 2015,3270
-ddt - Points routiers,1177,POINTS ROUTIERS,3583
-cadastre - Parcelles,1212,CADASTRE ANCIEN : PARCELLES 1812,1697
-dfci - Test saisie pistes,1226,PISTES DFCI,615
-sdis - Inter acces fluvial,1299,ACCES FLUVIAL,51
-cadastre - Bati,1339,CADASTRE ANCIEN : BATI 1812,1698
-cub - Stations VCUB,1549,DISPONIBILITE STATIONS VCUB EN TEMPS REEL,4089
-rff - Reseau ferre,1603,RESEAU FERRE EN SERVICE (RGI),645
-geofla - Limites communales,1617,LIMITES COMMUNALES,4348
+null - Reserves nationales de chasse et faune sauvage,370,FAUNE SAUVAGE,3970
+cadastre - Cadastre IGN Aquitaine,469,CADASTRE,79
+cadastre - Cadastre -  PCI  (2 CDC),472,CADASTRE,79
+cadastre - Lim. Communales - IGN - BD Parcellaire,477,BD PARCELLAIRE,1205
+null - ZNIEFF 1,543,ZNIEFF 1,80
+null - Scan 1000 IGN,582,SCAN 1000,263
+atlas - Atlas zoom8000,669,ATLAS,258
+atlas - Atlas zoom2000,676,ATLAS,258
+dfci - Pistes forestières 40,840,PISTES DFCI,615
+piste_cyclable - Pistes cyclables,876,PISTES CYCLABLES,117
+atlas - Atlas A3,949,ATLAS,258
+projets_infrastructures - Projet ouvrages hydrauliques,966,OUVRAGES HYDRAULIQUES,1150
+pompier - Buffer 400m Prise d'eau,972,PRISE D'EAU,138
+gip_atgeri - cantons 2015,1171,CANTONS 2015,3270
+ddt - Points routiers,1176,POINTS ROUTIERS,3583
+cadastre - Parcelles,1211,CADASTRE ANCIEN : PARCELLES 1812,1697
+dfci - Test saisie pistes,1225,PISTES DFCI,615
+sdis - Inter acces fluvial,1298,ACCES FLUVIAL,51
+cadastre - Bati,1338,CADASTRE ANCIEN : BATI 1812,1698
+cub - Stations VCUB,1548,DISPONIBILITE STATIONS VCUB EN TEMPS REEL,4089
+rff - Reseau ferre,1602,RESEAU FERRE EN SERVICE (RGI),645
+geofla - Limites communales,1616,LIMITES COMMUNALES,4348
 dfci - ASA,1718,ASA DFCI,182
-ZNIEFF 2,1753,ZNIEFF 2,81
-patrimoine_culturel - Monuments historiques (immeubles) Aq Mp,1778,MONUMENTS HISTORIQUES,3179
-cadastre - Parcelles,1912,CADASTRE ANCIEN : PARCELLES 1812,1697
-cadastre - Bati,1914,CADASTRE ANCIEN : BATI 1812,1698
-cadastre - Cadastre IGN Aquitaine,1938,CADASTRE,79
-reseau_routier - PK routier,1965,PK ROUTIER,102
-tigf - Postes de livraison (TIGF),437,POSTES DE LIVRAISON,1905
-Ortho 65 2010,445,ORTHO 2010 : CHARENTE-MARITIME,1978
-Arretes de protection de biotope,524,ARRETES DE BIOTOPE,229
-ddcspp - Elevage avicoles / volailles,588,ELEVAGE DE VOLAILLES,3555
-cartorisque - PPR mouvement de terrain,755,MOUVEMENT DE TERRAIN,424
-erdf - Poste de transformation RTE - ERDF,1159,POSTE DE TRANSFORMATION,170
-wms_externe - fond GIP 4000 GCIS,1264,FOND GCIS 33,3775
-wms_externe - Aléa mouvement de terrain - Couche de synthèse,1281,MOUVEMENT DE TERRAIN,424
-pompier - Point d'eau naturel,898,POINT EAU NATUREL,49
-eau - Très petite masse d'eau,547,MASSE D'EAU PLAN D'EAU,332
-eau - Grande masse d'eau,914,MASSE D'EAU PLAN D'EAU,332
-bdtopo - Cours d'eau,1187,ETAT COURS D'EAU,1023
-civb - Parcelles cad en vigne,1620,RASTER DES PARCELLES CADASTRALES PLANTEES EN VIGNE EN TOUT OU PARTIE,4336
-Mouvements de terrain BRGM,1741,MOUVEMENTS DE TERRAIN NON LOCALISES,1609
-ddpp - Elevages de bovins,1811,ELEVAGES BOVINS LAITIERS OU MIXTES,4306
-ddpp - Transporteurs animaux,1846,TRANSPORTEURS ANIMAUX VIVANTS,4316
-ddpp - Traitement sous produits,1838,ETABLISSEMENT TRAITEMENT SOUS PRODUITS (EQUARRISSAGE, COMPOSTAGE, METHANISATION),4314
+null - ZNIEFF 2,1762,ZNIEFF 2,81
+patrimoine_culturel - Monuments historiques (immeubles) Aq Mp,1795,MONUMENTS HISTORIQUES,3179
+cadastre - Parcelles,1929,CADASTRE ANCIEN : PARCELLES 1812,1697
+cadastre - Bati,1931,CADASTRE ANCIEN : BATI 1812,1698
+cadastre - Cadastre IGN Aquitaine,1955,CADASTRE,79
+reseau_routier - PK routier,1980,PK ROUTIER,102
+tigf - Postes de livraison (TIGF),436,POSTES DE LIVRAISON,1905
+null - Arretes de protection de biotope,523,ARRETES DE BIOTOPE,229
+ddcspp - Elevage avicoles / volailles,587,ELEVAGE DE VOLAILLES,3555
+cartorisque - PPR mouvement de terrain,754,MOUVEMENT DE TERRAIN,424
+erdf - Poste de transformation RTE - ERDF,1158,POSTE DE TRANSFORMATION,170
+wms_externe - fond GIP 4000 GCIS,1263,FOND GCIS 33,3775
+wms_externe - Aléa mouvement de terrain - Couche de synthèse,1280,MOUVEMENT DE TERRAIN,424
+pompier - Point d'eau naturel,897,POINT EAU NATUREL,49
+null - WMS Geosignal,262,DONNEES EN WMS : GEOSIGNAL,2241
+eau - Très petite masse d'eau,546,MASSE D'EAU PLAN D'EAU,332
+eau - Grande masse d'eau,913,MASSE D'EAU PLAN D'EAU,332
+bdtopo - Cours d'eau,1186,ETAT COURS D'EAU,1023
+civb - Parcelles cad en vigne,1619,RASTER DES PARCELLES CADASTRALES PLANTEES EN VIGNE EN TOUT OU PARTIE,4336
+ddpp - Elevages de bovins,1828,ELEVAGES BOVINS LAITIERS OU MIXTES,4306
+ddpp - Transporteurs animaux,1863,TRANSPORTEURS ANIMAUX VIVANTS,4316
+ddpp - Elevages de volailles,1878,ELEVAGES VOLAILLES (CHAIR ET POULES PONDEUSES),4305
+crpf - Habitat naturel,2067,HABITAT NATUREL SUR LA LEYRE : 33 AFFLUENTS,776
+ddpp - Traitement sous produits,1855,ETABLISSEMENT TRAITEMENT SOUS PRODUITS (EQUARRISSAGE, COMPOSTAGE, METHANISATION),4314
 insee - Population iris 2007,307,RECENSEMENT POP 2007 - IRIS - THEME POPULATION,1226
-sidpc - Moustique tigre Communes infectées,1874,MOUSTIQUE TIGRE : COMMUNES INFECTEES,3596
-raster - BD ORTHO 2015 25cm,1717,BD ORTHO 5M - 2015 : EX-AQUITAINE,3356
-socio_economique - Part des 15-24 ans dans la population totale,550,PART DES 15-24 ANS DS POP TOTALE,2042
-socio_economique - Part des 55-64 ans dans la population totale,699,PART DES 55-64 ANS DS POP TOTALE,2044
-socio_economique - Part des 25-54 ans dans la population totale,1043,PART DES 25-54 ANS DS POP TOTALE,2043
-ddtm47 - Périmètres de protection des captages AEP,495,RESEAU AEP : PERIMETRES DE PROTECTION DES CAPTAGES,2107
-ddtm47 - Zone de securité autour des canalisations de gaz,928,RESEAU TRANSPORT GAZS : ZONE DE SECURITE AUTOUR CANALISATIONS,1517
+null - Directive Habitats - Natura 2000,906,NATURA 2000 - DIRECTIVE HABITAT,219
+sidpc - Moustique tigre Communes infectées,1891,MOUSTIQUE TIGRE : COMMUNES INFECTEES,3596
+raster - BD ORTHO 2015 25cm,1716,BD ORTHO 5M - 2015 : EX-AQUITAINE,3356
+socio_economique - Part des 15-24 ans dans la population totale,549,PART DES 15-24 ANS DS POP TOTALE,2042
+socio_economique - Part des 55-64 ans dans la population totale,698,PART DES 55-64 ANS DS POP TOTALE,2044
+socio_economique - Part des 25-54 ans dans la population totale,1042,PART DES 25-54 ANS DS POP TOTALE,2043
+ddtm47 - Périmètres de protection des captages AEP,494,RESEAU AEP : PERIMETRES DE PROTECTION DES CAPTAGES,2107
+ddtm47 - Zone de securité autour des canalisations de gaz,927,RESEAU TRANSPORT GAZS : ZONE DE SECURITE AUTOUR CANALISATIONS,1517
 patrimoine_culturel - Périmètre de protection des monuments historiques (500 m),167,PERIMETRE DE PROTECTION DES MONUMENTS HISTORIQUES,159
-tigf - Postes de sectionnement et robinets de sécurité (TIGF),438,POSTES DE SECTIONNEMENT ET ROBINETS DE SECURITE,1904
-socio_economique - 15 ans et + non scolarisés sans diplômes,789,POP DE 15 ANS ET + NON SCOLARISES SANS DIPLOMES,2056
-socio_economique - Part des actifs de 25-54 ans par rapport à la population des 25-54 ans,574,PART DES ACTIFS OCCUPES DE 25-54 ANS,2053
-socio_economique - Part actifs occupés de 15-24 ans,746,PART DES ACTIFS OCCUPES DE 15-24 ANS,2052
-socio_economique - Part actifs occupés de 55-64 ans,757,PART DES ACTIFS OCCUPES DE 55-64 ANS,2054
-socio_economique - Part des actifs de 55-64 ans par rapport à la population des 55-64 ans,784,PART DES ACTIFS OCCUPES DE 55-64 ANS,2054
-socio_economique - Part actifs occupés de 25-54 ans,786,PART DES ACTIFS OCCUPES DE 25-54 ANS,2053
-socio_economique - Part des actifs de 15-24 ans par rapport à la population des 15-24 ans,1042,PART DES ACTIFS OCCUPES DE 15-24 ANS,2052
-admin_express - Communautés ou groupements de communes (EPCI),1702,WEB_1-30_LES COMMUNAUTÉS DE COMMUNES (EPCI) DU DÉPARTEMENT DE LA DORDOGNE,2263
-limites_admin - Communautés ou groupements de communes (EPCI),1783,WEB_1-30_LES COMMUNAUTÉS DE COMMUNES (EPCI) DU DÉPARTEMENT DE LA DORDOGNE,2263
+tigf - Postes de sectionnement et robinets de sécurité (TIGF),437,POSTES DE SECTIONNEMENT ET ROBINETS DE SECURITE,1904
+socio_economique - 15 ans et + non scolarisés sans diplômes,788,POP DE 15 ANS ET + NON SCOLARISES SANS DIPLOMES,2056
+socio_economique - Part des actifs de 25-54 ans par rapport à la population des 25-54 ans,573,PART DES ACTIFS OCCUPES DE 25-54 ANS,2053
+socio_economique - Part actifs occupés de 15-24 ans,745,PART DES ACTIFS OCCUPES DE 15-24 ANS,2052
+socio_economique - Part actifs occupés de 55-64 ans,756,PART DES ACTIFS OCCUPES DE 55-64 ANS,2054
+socio_economique - Part des actifs de 55-64 ans par rapport à la population des 55-64 ans,783,PART DES ACTIFS OCCUPES DE 55-64 ANS,2054
+socio_economique - Part actifs occupés de 25-54 ans,785,PART DES ACTIFS OCCUPES DE 25-54 ANS,2053
+socio_economique - Part des actifs de 15-24 ans par rapport à la population des 15-24 ans,1041,PART DES ACTIFS OCCUPES DE 15-24 ANS,2052
+admin_express - Communautés ou groupements de communes (EPCI),1701,WEB_1-30_LES COMMUNAUTÉS DE COMMUNES (EPCI) DU DÉPARTEMENT DE LA DORDOGNE,2263
+limites_admin - Communautés ou groupements de communes (EPCI),1800,WEB_1-30_LES COMMUNAUTÉS DE COMMUNES (EPCI) DU DÉPARTEMENT DE LA DORDOGNE,2263
 cadastre - Parcelles,106,CADASTRE ANCIEN : PARCELLES 1812,1697
 dreal - ICPE industries (DREAL),109,ICPE - INDUSTRIES,3593
 cadastre - Bati,210,CADASTRE ANCIEN : BATI 1812,1698
 gip_atgeri - Cantons 2015,225,CANTONS 2015,3270
 ddt - Points routiers,227,POINTS ROUTIERS,3583
-WMS Geosignal,262,DONNEES EN WMS : GEOSIGNAL,2241
 atlas - Atlas zoom4000,303,ATLAS,258
-Reserves nationales de chasse et faune sauvage,370,FAUNE SAUVAGE,3970
-cadastre - Cadastre IGN Aquitaine,470,CADASTRE,79
-cadastre - Cadastre -  PCI  (2 CDC),473,CADASTRE,79
-cadastre - Lim. Communales - IGN - BD Parcellaire,478,BD PARCELLAIRE,1205
-ZNIEFF 1,544,ZNIEFF 1,80
-Scan 1000 IGN,583,SCAN 1000,263
-atlas - Atlas zoom8000,670,ATLAS,258
-atlas - Atlas zoom2000,677,ATLAS,258
-dfci - Pistes forestières 40,841,PISTES DFCI,615
-piste_cyclable - Pistes cyclables,877,PISTES CYCLABLES,117
-atlas - Atlas A3,950,ATLAS,258
-projets_infrastructures - Projet ouvrages hydrauliques,967,OUVRAGES HYDRAULIQUES,1150
-pompier - Buffer 400m Prise d'eau,973,PRISE D'EAU,138
-gip_atgeri - cantons 2015,1172,CANTONS 2015,3270
-ddt - Points routiers,1177,POINTS ROUTIERS,3583
-cadastre - Parcelles,1212,CADASTRE ANCIEN : PARCELLES 1812,1697
-dfci - Test saisie pistes,1226,PISTES DFCI,615
-sdis - Inter acces fluvial,1299,ACCES FLUVIAL,51
-cadastre - Bati,1339,CADASTRE ANCIEN : BATI 1812,1698
-cub - Stations VCUB,1549,DISPONIBILITE STATIONS VCUB EN TEMPS REEL,4089
-rff - Reseau ferre,1603,RESEAU FERRE EN SERVICE (RGI),645
-geofla - Limites communales,1617,LIMITES COMMUNALES,4348
+null - Reserves nationales de chasse et faune sauvage,370,FAUNE SAUVAGE,3970
+cadastre - Cadastre IGN Aquitaine,469,CADASTRE,79
+cadastre - Cadastre -  PCI  (2 CDC),472,CADASTRE,79
+cadastre - Lim. Communales - IGN - BD Parcellaire,477,BD PARCELLAIRE,1205
+null - ZNIEFF 1,543,ZNIEFF 1,80
+null - Scan 1000 IGN,582,SCAN 1000,263
+atlas - Atlas zoom8000,669,ATLAS,258
+atlas - Atlas zoom2000,676,ATLAS,258
+dfci - Pistes forestières 40,840,PISTES DFCI,615
+piste_cyclable - Pistes cyclables,876,PISTES CYCLABLES,117
+atlas - Atlas A3,949,ATLAS,258
+projets_infrastructures - Projet ouvrages hydrauliques,966,OUVRAGES HYDRAULIQUES,1150
+pompier - Buffer 400m Prise d'eau,972,PRISE D'EAU,138
+gip_atgeri - cantons 2015,1171,CANTONS 2015,3270
+ddt - Points routiers,1176,POINTS ROUTIERS,3583
+cadastre - Parcelles,1211,CADASTRE ANCIEN : PARCELLES 1812,1697
+dfci - Test saisie pistes,1225,PISTES DFCI,615
+sdis - Inter acces fluvial,1298,ACCES FLUVIAL,51
+cadastre - Bati,1338,CADASTRE ANCIEN : BATI 1812,1698
+cub - Stations VCUB,1548,DISPONIBILITE STATIONS VCUB EN TEMPS REEL,4089
+rff - Reseau ferre,1602,RESEAU FERRE EN SERVICE (RGI),645
+geofla - Limites communales,1616,LIMITES COMMUNALES,4348
 dfci - ASA,1718,ASA DFCI,182
-ZNIEFF 2,1753,ZNIEFF 2,81
-patrimoine_culturel - Monuments historiques (immeubles) Aq Mp,1778,MONUMENTS HISTORIQUES,3179
-cadastre - Parcelles,1912,CADASTRE ANCIEN : PARCELLES 1812,1697
-cadastre - Bati,1914,CADASTRE ANCIEN : BATI 1812,1698
-cadastre - Cadastre IGN Aquitaine,1938,CADASTRE,79
-reseau_routier - PK routier,1965,PK ROUTIER,102
-tigf - Postes de livraison (TIGF),437,POSTES DE LIVRAISON,1905
-Ortho 65 2010,445,ORTHO 2010 : CHARENTE-MARITIME,1978
-Arretes de protection de biotope,524,ARRETES DE BIOTOPE,229
-ddcspp - Elevage avicoles / volailles,588,ELEVAGE DE VOLAILLES,3555
-cartorisque - PPR mouvement de terrain,755,MOUVEMENT DE TERRAIN,424
-erdf - Poste de transformation RTE - ERDF,1159,POSTE DE TRANSFORMATION,170
-wms_externe - fond GIP 4000 GCIS,1264,FOND GCIS 33,3775
-wms_externe - Aléa mouvement de terrain - Couche de synthèse,1281,MOUVEMENT DE TERRAIN,424
-pompier - Point d'eau naturel,898,POINT EAU NATUREL,49
-eau - Très petite masse d'eau,547,MASSE D'EAU PLAN D'EAU,332
-eau - Grande masse d'eau,914,MASSE D'EAU PLAN D'EAU,332
-bdtopo - Cours d'eau,1187,ETAT COURS D'EAU,1023
-civb - Parcelles cad en vigne,1620,RASTER DES PARCELLES CADASTRALES PLANTEES EN VIGNE EN TOUT OU PARTIE,4336
-Mouvements de terrain BRGM,1741,MOUVEMENTS DE TERRAIN NON LOCALISES,1609
-ddpp - Elevages de bovins,1811,ELEVAGES BOVINS LAITIERS OU MIXTES,4306
-ddpp - Transporteurs animaux,1846,TRANSPORTEURS ANIMAUX VIVANTS,4316
-ddpp - Transporteurs animaux,1846,TRANSPORTEURS ANIMAUX VIVANTS,4316
-ddpp - Elevages de volailles,1861,ELEVAGES VOLAILLES (CHAIR ET POULES PONDEUSES),4305
-crpf - Habitat naturel,2052,HABITAT NATUREL SUR LA LEYRE : 33 AFFLUENTS,776
+null - ZNIEFF 2,1762,ZNIEFF 2,81
+patrimoine_culturel - Monuments historiques (immeubles) Aq Mp,1795,MONUMENTS HISTORIQUES,3179
+cadastre - Parcelles,1929,CADASTRE ANCIEN : PARCELLES 1812,1697
+cadastre - Bati,1931,CADASTRE ANCIEN : BATI 1812,1698
+cadastre - Cadastre IGN Aquitaine,1955,CADASTRE,79
+reseau_routier - PK routier,1980,PK ROUTIER,102
+tigf - Postes de livraison (TIGF),436,POSTES DE LIVRAISON,1905
+null - Arretes de protection de biotope,523,ARRETES DE BIOTOPE,229
+ddcspp - Elevage avicoles / volailles,587,ELEVAGE DE VOLAILLES,3555
+cartorisque - PPR mouvement de terrain,754,MOUVEMENT DE TERRAIN,424
+erdf - Poste de transformation RTE - ERDF,1158,POSTE DE TRANSFORMATION,170
+wms_externe - fond GIP 4000 GCIS,1263,FOND GCIS 33,3775
+wms_externe - Aléa mouvement de terrain - Couche de synthèse,1280,MOUVEMENT DE TERRAIN,424
+pompier - Point d'eau naturel,897,POINT EAU NATUREL,49
+null - WMS Geosignal,262,DONNEES EN WMS : GEOSIGNAL,2241
+eau - Très petite masse d'eau,546,MASSE D'EAU PLAN D'EAU,332
+eau - Grande masse d'eau,913,MASSE D'EAU PLAN D'EAU,332
+bdtopo - Cours d'eau,1186,ETAT COURS D'EAU,1023
+civb - Parcelles cad en vigne,1619,RASTER DES PARCELLES CADASTRALES PLANTEES EN VIGNE EN TOUT OU PARTIE,4336
+ddpp - Elevages de bovins,1828,ELEVAGES BOVINS LAITIERS OU MIXTES,4306
+ddpp - Transporteurs animaux,1863,TRANSPORTEURS ANIMAUX VIVANTS,4316
+ddpp - Elevages de volailles,1878,ELEVAGES VOLAILLES (CHAIR ET POULES PONDEUSES),4305
+crpf - Habitat naturel,2067,HABITAT NATUREL SUR LA LEYRE : 33 AFFLUENTS,776
+crpf - Habitat naturel,2067,HABITAT NATUREL SUR LA LEYRE : 33 AFFLUENTS,776
 icpe - Sites ICPE,289,ICPE - INDUSTRIES,3593
-Parc naturel marin,368,PARC NATUREL  REGIONAL,228
-Parcs naturels regionaux,369,PAYS ET PARC NATURELS REGIONAUX - 2014,3879
-insee - Carroyage 200m,616,CARROYAGE POPULATION 200M,2057
-cadastre - Parcelles MAJIC,724,CADASTRE ANCIEN : PARCELLES 1812,1697
-atlas - Carroyage 400m,920,CARROYAGE ALPHANUMERIQUE 400M : DORDOGNE,843
-ars - Captages AEP (ARS),1638,RESEAU AEP : PERIMETRES DE PROTECTION DES CAPTAGES,2107
-ars - Captages AEP (ARS),1644,RESEAU AEP : PERIMETRES DE PROTECTION DES CAPTAGES,2107
-dgfip - Parcelles cadastrales,1786,RASTER DES PARCELLES CADASTRALES PLANTEES EN VIGNE EN TOUT OU PARTIE,4336
-dgfip - Parcelles cadastrales,1800,RASTER DES PARCELLES CADASTRALES PLANTEES EN VIGNE EN TOUT OU PARTIE,4336
-sidpc - Zone de protection,1910,NATURA 2000 : ZPS (OISEAU) ZONE DE PROTECTION SPÉCIALE,220
+insee - Carroyage 200m,615,CARROYAGE POPULATION 200M,2057
+cadastre - Parcelles MAJIC,723,CADASTRE ANCIEN : PARCELLES 1812,1697
+atlas - Carroyage 400m,919,CARROYAGE ALPHANUMERIQUE 400M : DORDOGNE,843
+ars - Captages AEP (ARS),1637,RESEAU AEP : PERIMETRES DE PROTECTION DES CAPTAGES,2107
+ars - Captages AEP (ARS),1643,RESEAU AEP : PERIMETRES DE PROTECTION DES CAPTAGES,2107
+dgfip - Parcelles cadastrales,1803,RASTER DES PARCELLES CADASTRALES PLANTEES EN VIGNE EN TOUT OU PARTIE,4336
+dgfip - Parcelles cadastrales,1817,RASTER DES PARCELLES CADASTRALES PLANTEES EN VIGNE EN TOUT OU PARTIE,4336
+sidpc - Zone de protection,1927,NATURA 2000 : ZPS (OISEAU) ZONE DE PROTECTION SPÉCIALE,220
 bdtopo - Points d'eau,124,DENSITE DE POINTS D'EAU (NIVEAU COMMUNE GENERALISEES),1634
 insee - Population communes 1962,177,POPULATION DES COMMUNES EN 1990,3862
-eau - BD Carthage - Autres,447,REGION HYDROGRAPHIQUE BD CARTHAGE,48
-bdtopo - Réseau routier,474,CARTE DE BRUIT STRATÉGIQUE LDEN RÉSEAU ROUTIER DE DAX,2541
-collecte - Collecte SDIS47,560,GESTION DECHETS : INSTALLATIONS DE COLLECTE ET DE TRAITEMENTS DES DECHETS,127
-ddtm47 - Elevages de bovins,595,ELEVAGES BOVINS LAITIERS OU MIXTES,4306
-ddtm47 - Elevages de bovins,697,ELEVAGES BOVINS LAITIERS OU MIXTES,4306
-ddtm47 - Captages AEP,844,RESEAU AEP : PERIMETRES DE PROTECTION DES CAPTAGES,2107
-insee - Population communes 1962,1211,POPULATION DES COMMUNES EN 1990,3862
-carmen - Natura 2000 (habitats, faune, flore),1319,RESEAU NATURA 2000,713
-carmen - Natura 2000 (oiseaux),1321,RESEAU NATURA 2000,713
-carmen - Directive oiseaux,1333,NATURA 2000 - DIRECTIVE OISEAUX,707
-insee - Population communes 1962,1334,POPULATION DES COMMUNES EN 1990,3862
-geofla - Communes de Gironde,1628,GIRONDE : COMMUNES SUIVIES POUR LE MOUSTIQUE TIGRE,4354
-geofla - Communes de Gironde,2044,GIRONDE : COMMUNES SUIVIES POUR LE MOUSTIQUE TIGRE,4354
-pompier - Points d'eau,905,DENSITE DE POINTS D'EAU (NIVEAU COMMUNE GENERALISEES),1634
-erdf - Réseau aérien moyenne tension (15KV - 20Kv),1162,ARMOIRE MOYENNE TENSION,1289
-erdf - Réseau enterré moyenne tension (15KV - 20Kv),1164,ARMOIRE MOYENNE TENSION,1289
-carmen - Parc national des Pyrénées,1237,PARC NATIONAL DES PYRENEES,1571
-carmen - Réserves naturelles nationales,1332,RESERVES NATURELLES NATIONALES,223
-pompier - Feux 2016,1383,DOC : ORDRE OPERATIONS FEUX DE FORET 2016 : GIRONDE,3763
-Vue aérienne CUB 2008,134,ORTHOPHOTO ÉTÉ 2008 DE LA CUB,4154
-Zone de protection speciale,194,NATURA 2000 : ZPS (OISEAU) ZONE DE PROTECTION SPÉCIALE,220
-Terrains des Conservatoires des espaces naturels,366,ESPACES NATURELS PROTEGES,2131
-Terrains du Conservatoire du Littoral,367,TERRITOIRE DU CONSERVATOIRE DU LITTORAL,243
-sdis - Collecte reseau routier,885,RESEAU ROUTIER NATIONAL,1518
-ars - Services de soins intensifs,1111,ETABLISSEMENTS AVEC SOINS INTENSIFS,3584
-indicateurs_conso_fonciere - Territoire Analyes 1, 2 et 3,1143,TERRITOIRE OBJECTIF 2,196
+eau - BD Carthage - Autres,446,REGION HYDROGRAPHIQUE BD CARTHAGE,48
+bdtopo - Réseau routier,473,CARTE DE BRUIT STRATÉGIQUE LDEN RÉSEAU ROUTIER DE DAX,2541
+collecte - Collecte SDIS47,559,GESTION DECHETS : INSTALLATIONS DE COLLECTE ET DE TRAITEMENTS DES DECHETS,127
+ddtm47 - Elevages de bovins,594,ELEVAGES BOVINS LAITIERS OU MIXTES,4306
+ddtm47 - Elevages de bovins,696,ELEVAGES BOVINS LAITIERS OU MIXTES,4306
+ddtm47 - Captages AEP,843,RESEAU AEP : PERIMETRES DE PROTECTION DES CAPTAGES,2107
+insee - Population communes 1962,1210,POPULATION DES COMMUNES EN 1990,3862
+carmen - Natura 2000 (habitats, faune, flore),1318,RESEAU NATURA 2000,713
+carmen - Natura 2000 (oiseaux),1320,RESEAU NATURA 2000,713
+carmen - Directive oiseaux,1332,NATURA 2000 - DIRECTIVE OISEAUX,707
+insee - Population communes 1962,1333,POPULATION DES COMMUNES EN 1990,3862
+geofla - Communes de Gironde,1627,GIRONDE : COMMUNES SUIVIES POUR LE MOUSTIQUE TIGRE,4354
+geofla - Communes de Gironde,2059,GIRONDE : COMMUNES SUIVIES POUR LE MOUSTIQUE TIGRE,4354
+null - Ortho 65 2010,444,ORTHO 2010 : CHARENTE-MARITIME,1978
+pompier - Points d'eau,904,DENSITE DE POINTS D'EAU (NIVEAU COMMUNE GENERALISEES),1634
+erdf - Réseau aérien moyenne tension (15KV - 20Kv),1161,ARMOIRE MOYENNE TENSION,1289
+erdf - Réseau enterré moyenne tension (15KV - 20Kv),1163,ARMOIRE MOYENNE TENSION,1289
+carmen - Parc national des Pyrénées,1236,PARC NATIONAL DES PYRENEES,1571
+carmen - Réserves naturelles nationales,1331,RESERVES NATURELLES NATIONALES,223
+pompier - Feux 2016,1382,DOC : ORDRE OPERATIONS FEUX DE FORET 2016 : GIRONDE,3763
+null - Terrains des Conservatoires des espaces naturels,366,ESPACES NATURELS PROTEGES,2131
+sdis - Collecte reseau routier,884,RESEAU ROUTIER NATIONAL,1518
+ars - Services de soins intensifs,1110,ETABLISSEMENTS AVEC SOINS INTENSIFS,3584
+indicateurs_conso_fonciere - Territoire Analyes 1, 2 et 3,1142,TERRITOIRE OBJECTIF 2,196
 icpe - Bâtiments ICPE,292,ICPE - INDUSTRIES,3593
-raster - Ortho 31 2010,442,ORTHO 2010 : CHARENTE-MARITIME,1978
-formation - Formation mfv signalement,1762,ECOLES DE FORMATION,2688
-crpf - Coupes Rases récentes,2040,COUPES RASES 1999 - 2006,75
+null - Parc naturel marin,368,PARC NATUREL  REGIONAL,228
+raster - Ortho 31 2010,441,ORTHO 2010 : CHARENTE-MARITIME,1978
+null - Mouvements de terrain BRGM,1744,MOUVEMENTS DE TERRAIN NON LOCALISES,1609
+formation - Formation mfv signalement,1771,ECOLES DE FORMATION,2688
+null - WMTS - Parcelles cadastrales,1793,RASTER DES PARCELLES CADASTRALES PLANTEES EN VIGNE EN TOUT OU PARTIE,4336
+crpf - Coupes Rases récentes,2055,COUPES RASES 1999 - 2006,75
 icpe - Localisants ICPE,291,ICPE - INDUSTRIES,3593
+null - Parcs naturels regionaux,369,PAYS ET PARC NATURELS REGIONAUX - 2014,3879
 limites_admin - Communes Aquitaine,396,COMMUNES LITTORALES EN AQUITAINE,746
 wms_externe - BRGM Banque du sous sol,424,BANQUE DU SOUS SOL : EAU,1615
-01-02 Mars - Estuaire Gironde,457,MISE AU POINT METHODOLOGIE ELABORATION PLANS DE GESTION DE L'EAU MARAIS ESTUAIRE DE LA GIRONDE EXPERIMENTATION MARAIS DE REYSSON,4341
-eau - BD Carthage - permanents,708,REGION HYDROGRAPHIQUE BD CARTHAGE,48
-eau - BD Carthage - Intermittent,1061,BD CARTHAGE : COURS D'EAU,1486
-telespazio - Localisation probabilité de mortalité  sept. 2015,1499,GIRATOIRES  : LOCALISATION,589
-Fond cartographique du GIP ATGeRi (maj 03/2017),1621,SITE CARTOGRAPHIQUE DU GIP ATGERI - PIGMA,828
-insee - Population iris 2012,1651,RECENSEMENT POP 2007 - IRIS - THEME POPULATION,1226
+eau - BD Carthage - permanents,707,REGION HYDROGRAPHIQUE BD CARTHAGE,48
+eau - BD Carthage - Intermittent,1060,BD CARTHAGE : COURS D'EAU,1486
+telespazio - Localisation probabilité de mortalité  sept. 2015,1498,GIRATOIRES  : LOCALISATION,589
+null - Fond cartographique du GIP ATGeRi (maj 03/2017),1620,SITE CARTOGRAPHIQUE DU GIP ATGERI - PIGMA,828
+insee - Population iris 2012,1650,RECENSEMENT POP 2007 - IRIS - THEME POPULATION,1226
 wms_externe - Stations VCUB,129,DISPONIBILITE STATIONS VCUB EN TEMPS REEL,4089
 insee - Population 2008 (DGF),182,RECENSEMENT POP 2008 - CHIFFRES CLES - THEME EVOLUTION-STRUCTURE POPULATION,1303
 crpf - Plan bois foret Gironde,294,GIRONDE : PLAN HEBERGEMENT,4350
-politiques_publiques - Soutenir le développement durable du littoral aquitain,716,OCS DU LITTORAL AQUITAIN : 2000,3000
-bdtopo - Bdtopo troncons hydrographiques,804,BD CARTHAGE : TRONCONS HYDROGRAPHIQUES,1489
-eau - Axes migrateurs amphihalins,873,PLAN DE GESTION DES POISSONS MIGRATEURS - AXES ANGUILLES,710
-filiere_bois - Itinéraires des bois ronds,931,ITINERAIRES BOIS RONDS,104
-projets_infrastructures - Points kilometriques RFF septembre 2011,1044,POINTS KILOMETRIQUES DU LITTORAL,3400
-ddt - Points de prélèvements d'eau pour l'irrigation agricole,1155,POINTS PRELEVEMENTS EAU IRRIGATION AGRICOLE,3591
-projets_infrastructures - Points kilometriques RFF septembre 2011,1267,POINTS KILOMETRIQUES DU LITTORAL,3400
-wms_externe - Réseau routier,1572,CARTE DE BRUIT STRATÉGIQUE LDEN RÉSEAU ROUTIER DE DAX,2541
-Etab. pour personnes agées,1821,ETABLISSEMENTS POUR PERSONNES AGEES,1298
+politiques_publiques - Soutenir le développement durable du littoral aquitain,715,OCS DU LITTORAL AQUITAIN : 2000,3000
+bdtopo - Bdtopo troncons hydrographiques,803,BD CARTHAGE : TRONCONS HYDROGRAPHIQUES,1489
+eau - Axes migrateurs amphihalins,872,PLAN DE GESTION DES POISSONS MIGRATEURS - AXES ANGUILLES,710
+filiere_bois - Itinéraires des bois ronds,930,ITINERAIRES BOIS RONDS,104
+projets_infrastructures - Points kilometriques RFF septembre 2011,1043,POINTS KILOMETRIQUES DU LITTORAL,3400
+ddt - Points de prélèvements d'eau pour l'irrigation agricole,1154,POINTS PRELEVEMENTS EAU IRRIGATION AGRICOLE,3591
+projets_infrastructures - Points kilometriques RFF septembre 2011,1266,POINTS KILOMETRIQUES DU LITTORAL,3400
+wms_externe - Réseau routier,1571,CARTE DE BRUIT STRATÉGIQUE LDEN RÉSEAU ROUTIER DE DAX,2541
 insee - Densité de population 2006,201,POPULATION DES COMMUNES EN 2006,3866
 dreal - Communes classées en Loi Littoral,252,COMMUNES SOUMISES LOI LITTORAL,1184
-xynthia - Submersion tempête de 1999,723,OCA : SUBMERSION XYNTHIA - HAUTEURS D'EAU,2979
-ars - Services de soins de longue durée,831,SERVICES DE SOINS INFIRMIERS A DOMICILE (SSIAD),3676
-ddtm47 - Etablissements scolaires du 2nd degré,1050,ETABLISSEMENTS SCOLAIRES PUB ET PRI DU 1ER DEGRE,762
-ddpp - Cuisines centrales agréées,1829,ETABLISSEMENTS AGREES : CUISINES CENTRALES,4319
-geofla - Contour Nouvelle Aquitaine,1844,BD TOPO V2.2 : NOUVELLE AQUITAINE,3739
-geofla - Communales Nouvelle Aquitaine,1853,BD TOPO V2.2 : NOUVELLE AQUITAINE,3739
-geofla - Arrondissements Nouvelle Aquitaine,1854,BD TOPO V2.2 : NOUVELLE AQUITAINE,3739
-geofla - Départements Nouvelle Aquitaine,1856,BD TOPO V2.2 : NOUVELLE AQUITAINE,3739
-geofla - Cantons Nouvelle Aquitaine,1858,BD TOPO V2.2 : NOUVELLE AQUITAINE,3739
+xynthia - Submersion tempête de 1999,722,OCA : SUBMERSION XYNTHIA - HAUTEURS D'EAU,2979
+ars - Services de soins de longue durée,830,SERVICES DE SOINS INFIRMIERS A DOMICILE (SSIAD),3676
+ddtm47 - Etablissements scolaires du 2nd degré,1049,ETABLISSEMENTS SCOLAIRES PUB ET PRI DU 1ER DEGRE,762
+ddpp - Cuisines centrales agréées,1846,ETABLISSEMENTS AGREES : CUISINES CENTRALES,4319
+geofla - Contour Nouvelle Aquitaine,1861,BD TOPO V2.2 : NOUVELLE AQUITAINE,3739
+geofla - Communales Nouvelle Aquitaine,1870,BD TOPO V2.2 : NOUVELLE AQUITAINE,3739
+geofla - Arrondissements Nouvelle Aquitaine,1871,BD TOPO V2.2 : NOUVELLE AQUITAINE,3739
+geofla - Départements Nouvelle Aquitaine,1873,BD TOPO V2.2 : NOUVELLE AQUITAINE,3739
+geofla - Cantons Nouvelle Aquitaine,1875,BD TOPO V2.2 : NOUVELLE AQUITAINE,3739
 insee - Population legales 2008 dgf,105,RECENSEMENT POP 2008 - CHIFFRES CLES - THEME EVOLUTION-STRUCTURE POPULATION,1303
+null - Vue aérienne CUB 2008,134,ORTHOPHOTO ÉTÉ 2008 DE LA CUB,4154
+null - Zone de protection speciale,194,NATURA 2000 : ZPS (OISEAU) ZONE DE PROTECTION SPÉCIALE,220
 insee - Population par commune 2007,222,RECENSEMENT POP 2007 - IRIS - THEME POPULATION,1226
 ocs - Evolution de la surface A entre 2000 et 2009,326,ETALAB : SURFACE EN EAU 2000 / SURFACE EN EAU 2006,2741
 ocs - Evolution de la surface U entre 2000 et 2009,328,ETALAB : SURFACE EN EAU 2000 / SURFACE EN EAU 2006,2741
+null - Terrains du Conservatoire du Littoral,367,TERRITOIRE DU CONSERVATOIRE DU LITTORAL,243
 insee - Population par cantons 2008,426,RECENSEMENT POP 2008 - CHIFFRES CLES - THEME EVOLUTION-STRUCTURE POPULATION,1303
-ddtm47 - Etablissements scolaires du premier degré,1052,ETABLISSEMENTS SCOLAIRES PUB ET PRI DU 1ER DEGRE,762
-erdf - Réseau aérien basse tension <=400V,1161,TRONCON AERIEN BASSE TENSION : <= 400 V,1286
-limites_admin - Communes de Gironde,1222,GIRONDE : COMMUNES SUIVIES POUR LE MOUSTIQUE TIGRE,4354
-insee - Population legales 2008 dgf,1335,RECENSEMENT POP 2008 - CHIFFRES CLES - THEME EVOLUTION-STRUCTURE POPULATION,1303
+ddtm47 - Etablissements scolaires du premier degré,1051,ETABLISSEMENTS SCOLAIRES PUB ET PRI DU 1ER DEGRE,762
+erdf - Réseau aérien basse tension <=400V,1160,TRONCON AERIEN BASSE TENSION : <= 400 V,1286
+limites_admin - Communes de Gironde,1221,GIRONDE : COMMUNES SUIVIES POUR LE MOUSTIQUE TIGRE,4354
+insee - Population legales 2008 dgf,1334,RECENSEMENT POP 2008 - CHIFFRES CLES - THEME EVOLUTION-STRUCTURE POPULATION,1303
+null - Etab. pour personnes agées,1838,ETABLISSEMENTS POUR PERSONNES AGEES,1298
 ocs - Evolution de la surface F entre 2000 et 2009,123,ETALAB : SURFACE EN EAU 2000 / SURFACE EN EAU 2006,2741
 carmen - Parcs naturels régionaux,261,PARCS NATURELS (PN) : AQUITAINE,3874
 ocs - Evolution de la surface N entre 2000 et 2009,325,ETALAB : SURFACE EN EAU 2000 / SURFACE EN EAU 2006,2741
 ocs - Surface A en 2000 devenues U en 2009,341,ETALAB : SURFACE EN EAU 2000 / SURFACE EN EAU 2006,2741
 dfci - Travaux financés - saisie point,390,TYPO TRAVAUX DFCI MASSIF LG,3333
-dfci - Travaux financés - saisie ligne,682,TYPO TRAVAUX DFCI MASSIF LG,3333
-carmen - Parcs naturels régionaux,706,PARCS NATURELS (PN) : AQUITAINE,3874
-ign_courbes_niveau - Courbes de niveau,946,COURBES DE NIVEAU MNT EN 2001,4081
+dfci - Travaux financés - saisie ligne,681,TYPO TRAVAUX DFCI MASSIF LG,3333
+carmen - Parcs naturels régionaux,705,PARCS NATURELS (PN) : AQUITAINE,3874
+ign_courbes_niveau - Courbes de niveau,945,COURBES DE NIVEAU MNT EN 2001,4081
 telespazio - Contour de feux 2015,91,CONTOUR DES FEUX DE FORET SUPERIEUR A 5 HA,652
 ocs - Surface N en 2000 devenues A en 2009,329,ETALAB : SURFACE EN EAU 2000 / SURFACE EN EAU 2006,2741
 ocs - Surface N en 2000 devenues U en 2009,338,ETALAB : SURFACE EN EAU 2000 / SURFACE EN EAU 2006,2741
@@ -245,70 +247,68 @@ ocs - Surface A en 2000 devenues N en 2009,339,ETALAB : SURFACE EN EAU 2000 / SU
 ocs - Surface A en 2000 devenues F en 2009,340,ETALAB : SURFACE EN EAU 2000 / SURFACE EN EAU 2006,2741
 ocs - Surface F en 2000 devenues A en 2009,343,ETALAB : SURFACE EN EAU 2000 / SURFACE EN EAU 2006,2741
 ocs - Surface F en 2000 devenues U en 2009,344,ETALAB : SURFACE EN EAU 2000 / SURFACE EN EAU 2006,2741
-ocs - Surface U en 2000 devenues A en 2009,489,PRÊT TAUX ZERO DE 2000 A 2007,1950
-wms_externe - ONF : Forêts relevant du régime forestier,1819,FORET RELEVANT DU REGIME FORESTIER,267
-Pigma - Aquitaine zonages urbanisme,1897,POPULATION 1990-2007 DES PRINCIPAUX ZONAGES GEOGRAPHIQUES EN AQUITAINE,1927
+null - 01-02 Mars - Estuaire Gironde,456,MISE AU POINT METHODOLOGIE ELABORATION PLANS DE GESTION DE L'EAU MARAIS ESTUAIRE DE LA GIRONDE EXPERIMENTATION MARAIS DE REYSSON,4341
+ocs - Surface U en 2000 devenues A en 2009,488,PRÊT TAUX ZERO DE 2000 A 2007,1950
+wms_externe - ONF : Forêts relevant du régime forestier,1836,FORET RELEVANT DU REGIME FORESTIER,267
 ocs - Surface N en 2000 devenues F en 2009,337,ETALAB : SURFACE EN EAU 2000 / SURFACE EN EAU 2006,2741
 ocs - Surface F en 2000 devenues N en 2009,342,ETALAB : SURFACE EN EAU 2000 / SURFACE EN EAU 2006,2741
-ocs - Surface U en 2000 devenues N en 2009,488,ETALAB : SURFACE EN EAU 2000 / SURFACE EN EAU 2006,2741
-ocs - Surface U en 2000 devenues F en 2009,490,ETALAB : SURFACE EN EAU 2000 / SURFACE EN EAU 2006,2741
-socio_economique - 15 ans et + non scolarisés,504,POP DE 15 ANS ET + NON SCOLARISES,2055
-pompier - Lieux dits (SDIS47),528,BD TOPO : T. PONTS D'ACTIVITE OU D'INTERETS (PAI) ET TOPONYMES DE LIEUX DITS,1057
-bdtopo - Lieux dits (BD Topo),693,BD TOPO : T. PONTS D'ACTIVITE OU D'INTERETS (PAI) ET TOPONYMES DE LIEUX DITS,1057
-pompier - Lieux dits (SDIS33),917,BD TOPO : T. PONTS D'ACTIVITE OU D'INTERETS (PAI) ET TOPONYMES DE LIEUX DITS,1057
-pompier - Points d'eau naturels,1981,DENSITE DE POINTS D'EAU (NIVEAU COMMUNE GENERALISEES),1634
-wms_externe - Crues Adour 2014,1996,PAYS ADOUR CHALOSSE TURSAN - 2014,3854
-projets_infrastructures - Fuseau retenu LGV GPSO,472,GPSO (FUSEAU RETENU DE 1000M),4486
-erdf - Réseau enterré basse tension <=400V,936,TRONCON AERIEN BASSE TENSION : <= 400 V,1286
-insee - Population Iris 2012 cercle,1639,RECENSEMENT POP 2007 - IRIS - THEME POPULATION,1226
-pompier - Détection des feux 2016,1971,DOC : ORDRE OPERATIONS FEUX DE FORET 2016 : GIRONDE,3763
+ocs - Surface U en 2000 devenues N en 2009,487,ETALAB : SURFACE EN EAU 2000 / SURFACE EN EAU 2006,2741
+ocs - Surface U en 2000 devenues F en 2009,489,ETALAB : SURFACE EN EAU 2000 / SURFACE EN EAU 2006,2741
+socio_economique - 15 ans et + non scolarisés,503,POP DE 15 ANS ET + NON SCOLARISES,2055
+pompier - Lieux dits (SDIS47),527,BD TOPO : T. PONTS D'ACTIVITE OU D'INTERETS (PAI) ET TOPONYMES DE LIEUX DITS,1057
+bdtopo - Lieux dits (BD Topo),692,BD TOPO : T. PONTS D'ACTIVITE OU D'INTERETS (PAI) ET TOPONYMES DE LIEUX DITS,1057
+pompier - Lieux dits (SDIS33),916,BD TOPO : T. PONTS D'ACTIVITE OU D'INTERETS (PAI) ET TOPONYMES DE LIEUX DITS,1057
+pompier - Points d'eau naturels,1996,DENSITE DE POINTS D'EAU (NIVEAU COMMUNE GENERALISEES),1634
+wms_externe - Crues Adour 2014,2011,PAYS ADOUR CHALOSSE TURSAN - 2014,3854
+projets_infrastructures - Fuseau retenu LGV GPSO,471,GPSO (FUSEAU RETENU DE 1000M),4486
+erdf - Réseau enterré basse tension <=400V,935,TRONCON AERIEN BASSE TENSION : <= 400 V,1286
+insee - Population Iris 2012 cercle,1638,RECENSEMENT POP 2007 - IRIS - THEME POPULATION,1226
+pompier - Détection des feux 2016,1986,DOC : ORDRE OPERATIONS FEUX DE FORET 2016 : GIRONDE,3763
 insee - Population par départements 2008,375,RECENSEMENT POP 2008 - CHIFFRES CLES - THEME EVOLUTION-STRUCTURE POPULATION,1303
-ars - Services d'hospitalisations à domicile,518,CARTE STRUCTURES PROPOSANT SERVICES D'AIDES A DOMICILE,3386
-wms_externe - Point de ventes de titres de tranport,765,TRANSPORT COLLECTIF : POINT VENTE TITRES TRANSPORT,1431
-onf - ONF - îlots de nettoyage Klaus non subventionnés,817,ILOTS DE NETTOYAGE PLAN CHABLIS KLAUS,1025
-ars - Services de soins de suite et de réadaptation,832,SERVICES DE SOINS INFIRMIERS A DOMICILE (SSIAD),3676
-onf - ONF - îlots de reconstitution Klaus non subventionnés,835,ILOTS DE RECONSTITUTION PLAN CHABLIS KLAUS,1024
-wms_externe - Agence Adour Garonne,884,PERIMETRE PLANS DE GESTION DES POISSONS MIGRATEURS BASSIN ADOUR GARONNE,247
-wms_externe - Agence Adour Garonne,1217,PERIMETRE PLANS DE GESTION DES POISSONS MIGRATEURS BASSIN ADOUR GARONNE,247
-ddtm47 - Points de prélèvements d'eau pour l'irrigation agricole,1266,POINTS PRELEVEMENTS EAU IRRIGATION AGRICOLE,3591
-insee - Population Iris 2012 surface,1655,RECENSEMENT POP 2007 - IRIS - THEME POPULATION,1226
+ars - Services d'hospitalisations à domicile,517,CARTE STRUCTURES PROPOSANT SERVICES D'AIDES A DOMICILE,3386
+wms_externe - Point de ventes de titres de tranport,764,TRANSPORT COLLECTIF : POINT VENTE TITRES TRANSPORT,1431
+onf - ONF - îlots de nettoyage Klaus non subventionnés,816,ILOTS DE NETTOYAGE PLAN CHABLIS KLAUS,1025
+ars - Services de soins de suite et de réadaptation,831,SERVICES DE SOINS INFIRMIERS A DOMICILE (SSIAD),3676
+onf - ONF - îlots de reconstitution Klaus non subventionnés,834,ILOTS DE RECONSTITUTION PLAN CHABLIS KLAUS,1024
+wms_externe - Agence Adour Garonne,883,PERIMETRE PLANS DE GESTION DES POISSONS MIGRATEURS BASSIN ADOUR GARONNE,247
+wms_externe - Agence Adour Garonne,1216,PERIMETRE PLANS DE GESTION DES POISSONS MIGRATEURS BASSIN ADOUR GARONNE,247
+ddtm47 - Points de prélèvements d'eau pour l'irrigation agricole,1265,POINTS PRELEVEMENTS EAU IRRIGATION AGRICOLE,3591
+insee - Population Iris 2012 surface,1654,RECENSEMENT POP 2007 - IRIS - THEME POPULATION,1226
 insee - Population par arrondissements 2007,164,RECENSEMENT POP 2007 - IRIS - THEME POPULATION,1226
-sidpc - SIDPC47  - Zones tampons signalements,509,SENSIBILITE PLUVIAL  : ZONES,2168
-pompier - Points d'eau artificiels,1968,DENSITE DE POINTS D'EAU (NIVEAU COMMUNE GENERALISEES),1634
-ZICO - Zone d intérêt pour les oiseaux,434,ZONE VULNERABLE POUR LES NITRATES,244
-xynthia - Hauteur d'eau mesurée par le BRGM,752,OCA : SUBMERSION XYNTHIA - HAUTEURS D'EAU,2979
-insee - Population par intercommunalités 2007,479,RECENSEMENT POP 2007 - IRIS - THEME POPULATION,1226
-socio_economique - Part des chômeurs de 15-24 ans,1034,PART CHOMEURS 15-24 ANS / 15-64 ANS,2036
-socio_economique - Part des chômeurs de 55-64 ans (15-64),1036,PART DES 55-64 ANS DS POP TOTALE,2044
-socio_economique - Part des chômeurs de 25-54 ans,1037,PART CHOMEURS 25-54 ANS / 15-64 ANS,2039
-dreal - Enveloppes aléas inondation TRI Agen (forte, moyenne et faible probabi,1344,SINISTRALITE COMMUNES TRI - INONDATION,4427
+sidpc - SIDPC47  - Zones tampons signalements,508,SENSIBILITE PLUVIAL  : ZONES,2168
+pompier - Points d'eau artificiels,1983,DENSITE DE POINTS D'EAU (NIVEAU COMMUNE GENERALISEES),1634
+xynthia - Hauteur d'eau mesurée par le BRGM,751,OCA : SUBMERSION XYNTHIA - HAUTEURS D'EAU,2979
+null - Pigma - Aquitaine zonages urbanisme,1914,POPULATION 1990-2007 DES PRINCIPAUX ZONAGES GEOGRAPHIQUES EN AQUITAINE,1927
+insee - Population par intercommunalités 2007,478,RECENSEMENT POP 2007 - IRIS - THEME POPULATION,1226
+socio_economique - Part des chômeurs de 15-24 ans,1033,PART CHOMEURS 15-24 ANS / 15-64 ANS,2036
+socio_economique - Part des chômeurs de 55-64 ans (15-64),1035,PART DES 55-64 ANS DS POP TOTALE,2044
+socio_economique - Part des chômeurs de 25-54 ans,1036,PART CHOMEURS 25-54 ANS / 15-64 ANS,2039
+dreal - Enveloppes aléas inondation TRI Agen (forte, moyenne et faible probabi,1343,SINISTRALITE COMMUNES TRI - INONDATION,4427
+null - ZICO - Zone d intérêt pour les oiseaux,1755,ZONE VULNERABLE POUR LES NITRATES,244
 rectorat - Etablissements scolaires du 2nd degré (rectorat),110,ETABLISSEMENTS SCOLAIRES PUB ET PRI DU 1ER DEGRE,762
 ocs - Surfaces consommées des espaces F entre 2000 et 2009,345,SUIVI NAFU DES ESPACES N, A ET F,3466
-rectorat - Etablissements scolaires du 1er degré (rectorat),441,ETABLISSEMENTS SCOLAIRES PUB ET PRI DU 1ER DEGRE,762
-xynthia - Après vérification terrain par le BRGM,529,OCA : SUBMERSION XYNTHIA - SURFACES INONDEES APRES VERIFICATION TERRAIN,2988
-carmen - Zone d'intérêt pour les oiseaux (ZICO),1328,ZONE VULNERABLE POUR LES NITRATES,244
+rectorat - Etablissements scolaires du 1er degré (rectorat),440,ETABLISSEMENTS SCOLAIRES PUB ET PRI DU 1ER DEGRE,762
+xynthia - Après vérification terrain par le BRGM,528,OCA : SUBMERSION XYNTHIA - SURFACES INONDEES APRES VERIFICATION TERRAIN,2988
+carmen - Zone d'intérêt pour les oiseaux (ZICO),1327,ZONE VULNERABLE POUR LES NITRATES,244
 politiques_publiques - Quartiers CUCS hors ZUS,277,CARTES SITES -ZONAGES ZUS ET CUCS,3901
 departement33 - Contournement bassin d'Arcachon,382,OCA : MESURES DES FLUX DE CO2 - BASSIN D'ARCACHON,2904
-ocs - Surfaces consommées par les espaces U entre 2000 et 2009,492,RECENSEMENT AGRICOLE ENTRE 2000 ET 2010,3755
-limites_admin - Communautés ou groupements de communes,487,WEB_1-30_LES COMMUNAUTÉS DE COMMUNES (EPCI) DU DÉPARTEMENT DE LA DORDOGNE,2263
-filiere_bois - Points d'entrée des sites de stockage,576,SITES TOURISTIQUES : POINTS REMARQUABLES,3239
-z_test_formation - Contour nouvelle region test,1449,ATLAS REGIONAL DE LA REGION NOUVELLE AQUITAINE,4330
+ocs - Surfaces consommées par les espaces U entre 2000 et 2009,491,RECENSEMENT AGRICOLE ENTRE 2000 ET 2010,3755
+limites_admin - Communautés ou groupements de communes,486,WEB_1-30_LES COMMUNAUTÉS DE COMMUNES (EPCI) DU DÉPARTEMENT DE LA DORDOGNE,2263
+filiere_bois - Points d'entrée des sites de stockage,575,SITES TOURISTIQUES : POINTS REMARQUABLES,3239
+z_test_formation - Contour nouvelle region test,1448,ATLAS REGIONAL DE LA REGION NOUVELLE AQUITAINE,4330
 dreal - Hauteur eaux TRI Tonneins - Marmande (forte probabilité),311,LYONNAISE DES EAUX : HAUTEUR DE LA GARONNE,1453
 dreal - Hauteur eaux TRI Tonneins - Marmande (moyenne probabilité),313,LYONNAISE DES EAUX : HAUTEUR DE LA GARONNE,1453
 dreal - Hauteur eaux TRI Tonneins - Marmande (faible probabilité),314,LYONNAISE DES EAUX : HAUTEUR DE LA GARONNE,1453
-xynthia - Basées sur témoignages sans vérifications terrain,843,OCA : SUBMERSION XYNTHIA - SURFACES INONDEES APRES VERIFICATION TERRAIN,2988
+xynthia - Basées sur témoignages sans vérifications terrain,842,OCA : SUBMERSION XYNTHIA - SURFACES INONDEES APRES VERIFICATION TERRAIN,2988
 patrimoine_culturel - Zone de protection archéologique,211,NATURA 2000 : ZPS (OISEAU) ZONE DE PROTECTION SPÉCIALE,220
 pompier - Feux 2015,6,FEUX,1850
 ddcspp - Elevage porcin,8,ELEVAGE,363
 sidpc - Camping risques,19,CAMPING,17
 ddcspp - Elevage ovin/caprin,25,ELEVAGE,363
-Arreté de protection de Biotope,61,BIOTOPE,316
-24,115,OCS-CLC 1990 : 24,1383
+null - Arreté de protection de Biotope,61,BIOTOPE,316
 pompier - Détection des feux 2013,121,FEUX,1850
 pompier - Détection des feux 2014,152,FEUX,1850
 insee - Population,170,POPULATION,325
-40,199,LAGUNES 40 : INVENTAIRE,377
-47,200,OCS-CLC 1990 : 47,1380
 cadastre - Section,207,CADASTRE,79
 bdtopo - Mairies,213,MAIRIES,410
 bdtopo - routes fondGIP,214,ROUTES,3176
@@ -319,381 +319,375 @@ ddcspp - Elevage ovin/caprin,248,ELEVAGE,363
 ddcspp - Elevage avicole / volaille,249,ELEVAGE,363
 politiques_publiques - Quartiers dérogatoires Article 6 hors ZUS,278,QUARTIERS,1774
 bdtopo - Hydrographie,305,HYDROGRAPHIE,3784
-24,309,OCS-CLC 1990 : 24,1383
 pompier - Sitac (>30 jours),323,SITAC,3594
 pompier - Routes barrées (<=90jrs),330,ROUTES,3176
 carmen - Zico,388,ZICO,29
 insee - Population par départements (2008),391,POPULATION,325
 pompier - Sitac (<= 30 jours),428,SITAC,3594
-64,429,OCS-CLC 1990 : 64,1379
-ddt - Digues de protection des populations,440,DIGUES,44
-pompier - Feux 2014,475,FEUX,1850
-insee - Population commune (2006),483,COMMUNE,176
-33,499,LAGUNES 33 : INVENTAIRE,295
-ddtm47 - Terrains de camping,542,CAMPING,17
-reseau_routier - Routes goudronnées non nommées,548,ROUTES,3176
-projets_infrastructures - Canalisations existantes,555,CANALISATIONS,1903
-ddcspp - Elevage porcin,584,ELEVAGE,363
-projets_infrastructures - Canalisations projetees,606,CANALISATIONS,1903
-pompier - SDIS47 - SITAC (<=30jours),615,SITAC,3594
-pompier - SDIS47 - SITAC (>30 jours - Archives),617,SITAC,3594
-insee - Population par commune (2007),655,COMMUNE,176
-pompier - Routes barrées (>30jrs),657,ROUTES,3176
-grdf - Canalisations GRDF,668,CANALISATIONS,1903
-33,671,LAGUNES 33 : INVENTAIRE,295
-carmen - Sage,674,SAGE,235
-coz - Sanitaire,688,RISQUE SANITAIRE EPIZOOTIE PANDEMIE,122
-pompier - Chateaux d'eau forestiers,704,CHATEAUX,663
-politiques_publiques - Soutenir le développement durable des quartiers sensibles,720,QUARTIERS,1774
-64,729,OCS-CLC 1990 : 64,1379
-novaqt - Habitat,745,HABITAT,560
-pompier - Sitac (>30 jours),827,SITAC,3594
-raster - Relief MNT,828,RELIEF,578
-xynthia - Degats digues,851,DIGUES,44
-wms_externe - PLU 47,858,PLU,237
-pompier - Detection des feux par date,874,FEUX,1850
-Commune Loi Littoral,890,COMMUNE,176
-collecte - Voirie,910,VOIRIE,109
-pompier - Chateaux d'eau AEP,924,CHATEAUX,663
-reseau_routier - Routes goudronnés nommées,929,ROUTES,3176
-ddtm47 - Ecluses 47,930,ECLUSES,1519
-ddcspp - Elevage ovin/caprin,933,ELEVAGE,363
-pompier - Sitac (<=30jours),948,SITAC,3594
-projets_infrastructures - Assainissement existant (CG),985,ASSAINISSEMENT,3691
-pompier - Feux 2017,995,FEUX,1850
-wms_externe - Hydrographie Bd carthage,1022,HYDROGRAPHIE,3784
-pompier - Routes barrées (<=30jrs),1041,ROUTES,3176
-pgsd - PGSD - Densité de pistes par commune,1119,COMMUNE,176
-pgsd - PGSD - Densité de pistes en sol naturel par commune,1129,COMMUNE,176
-Urgences,1133,ETABLISSEMENTS AVEC URGENCES,3340
-CADASTRE France,1135,CADASTRE,79
-pgsd - PGSD - Densité de pistes empierrées par commune,1136,COMMUNE,176
-47,1165,OCS-CLC 1990 : 47,1380
-40,1166,LAGUNES 40 : INVENTAIRE,377
-coz - Sites,1173,GRANDS SITES INDUSTRIELS,63
-bdtopo - Voies,1183,VOIES,2612
-bdtopo - Routes goudronnées,1188,ROUTES,3176
-insee - Population par arrondissements (2007),1189,POPULATION,325
-insee - Population par commune (2007),1190,COMMUNE,176
-insee - Population par arrondissements (2007),1191,POPULATION,325
-insee - Population par EPCI (2007),1194,POPULATION,325
-pompier - Sitac (>=30jours),1198,SITAC,3594
-insee - Population par cantons (2008),1251,POPULATION,325
-pompier - Sitac,1254,SITAC,3594
-insee - Population par cantons (2008),1272,POPULATION,325
-indicateurs_conso_fonciere - Voies ferrées,1307,VOIES,2612
-pompier - Routes inondees DDTM,1322,ROUTES,3176
-Aquimap,1325,FOND AQUIMAP (GIP),3280
-insee - Population par départements (2008),1331,POPULATION,325
-insee - Population iris2007 cercle,1337,POPULATION,325
-insee - Population par EPCI (2007),1341,POPULATION,325
-carmen - Arrêté de protection de Biotope,1347,BIOTOPE,316
-pompier - Départs de feux 2017,1354,FEUX,1850
-pompier - Detection des feux,1372,FEUX,1850
-pompier - Feux 2010,1379,FEUX,1850
-pompier - Feux 2011,1380,FEUX,1850
-pompier - Feux 2012,1381,FEUX,1850
-pompier - Feux 2013,1382,FEUX,1850
-pompier - Feux 2017,1385,FEUX,1850
-wms_externe - IGN - Nom des voies,1398,VOIES,2612
-pompier - Détection des feux 2015,1399,FEUX,1850
-pompier - Départs de feux 2017,1409,FEUX,1850
-bdtopo - Routes,1422,ROUTES,3176
-Formation,1453,LA SITUATION PROFESSIONNELLE QUELQUES ANNES APRES LA FIN DE LA FORMATION INITIALE,3414
-pompier - SDIS24 - SITAC (<=90jours),1477,SITAC,3594
-pompier - SDIS24 - SITAC (>90 jours - Archives),1478,SITAC,3594
-pompier - Routes barrées (>90jrs),1479,ROUTES,3176
-pompier - SDIS47 - SITAC,1497,SITAC,3594
-ddcspp - Elevage bovin,1527,ELEVAGE,363
-cub - Couloirs de Bus,1551,COULOIRS AVALANCHE,210
-cub - Lignes,1553,OCA : LIGNES DE LIMITE DU SCHORRE - COTE NORD ET EST DU BASSIN D'ARCACHON,2867
-wms_externe - Hydrographie,1569,HYDROGRAPHIE,3784
-wms_externe - Voies ferrées,1573,VOIES,2612
-wms_externe - ROUTE ADRESSE,1575,ADRESSE,2
-geofla - Arrondissements,1578,GEOFLA,378
-geofla - Limites départementales,1588,GEOFLA,378
-geofla - Cantons,1589,GEOFLA,378
-rff - Ponts routes,1619,ROUTES,3176
-erp - Erp - Contours,1622,CONTOURS DES PAYS DES PYRENEES,569
-insee - Population iris2007 surface,1656,POPULATION,325
-pompier - SDIS - SITAC,1659,SITAC,3594
-pompier - Feux 2015,1735,FEUX,1850
-pompier - Feux,1736,FEUX,1850
-cadastre - Sections,1745,CADASTRE,79
-patrimoine_culturel - ZPPAUP Aquitaine Midi Pyrénées,1779,ZPPAUP,166
-wms_externe - Cadastre,1798,CADASTRE,79
-ddpp - Abattoirs agréés,1817,ABATTOIRS,4318
-ddpp - NB établissements par commune,1831,COMMUNE,176
-ddpp - Entrepots agrées,1835,ENTREPOTS,4320
-pompier - Feux 2017,1893,FEUX,1850
-cadastre - Section,1913,CADASTRE,79
-cadastre - Section,1937,CADASTRE,79
-pompier - Hydrants,1960,HYDRANTS,372
-pompier - Sdis47 - SITAC,1972,SITAC,3594
-pompier - Sdis47 - SITAC,2009,SITAC,3594
-crpf - Peuplements feuillus,2057,FEUILLUS,3310
-Site inscrit,534,SITES INSCRIT,225
-SCAN NB 1000/250/25 (IGN),432,SCAN 25,251
-SCAN 1000/250/25 (IGN),446,SCAN 25,251
-projets_infrastructures - Topo (lignes),552,BD TOPO,253
-Scan25 express,594,SCAN 250 EXPRESS,3782
-projets_infrastructures - Topo (labels),918,BD TOPO,253
-projets_infrastructures - Topo (Polygones),997,BD TOPO,253
-indicateurs_conso_fonciere - Espace routier,1127,PK ROUTIER,102
-raster - Scan Départemental Zone Sud Ouest,1171,SCAN 25,251
-projets_infrastructures - Topo (Points),1206,BD TOPO,253
-Réserves naturelles régionales,1542,RESERVES NATURELLES REGIONALES,222
+ddt - Digues de protection des populations,439,DIGUES,44
+pompier - Feux 2014,474,FEUX,1850
+insee - Population commune (2006),482,COMMUNE,176
+ddtm47 - Terrains de camping,541,CAMPING,17
+reseau_routier - Routes goudronnées non nommées,547,ROUTES,3176
+projets_infrastructures - Canalisations existantes,554,CANALISATIONS,1903
+ddcspp - Elevage porcin,583,ELEVAGE,363
+projets_infrastructures - Canalisations projetees,605,CANALISATIONS,1903
+pompier - SDIS47 - SITAC (<=30jours),614,SITAC,3594
+pompier - SDIS47 - SITAC (>30 jours - Archives),616,SITAC,3594
+insee - Population par commune (2007),654,COMMUNE,176
+pompier - Routes barrées (>30jrs),656,ROUTES,3176
+grdf - Canalisations GRDF,667,CANALISATIONS,1903
+carmen - Sage,673,SAGE,235
+coz - Sanitaire,687,RISQUE SANITAIRE EPIZOOTIE PANDEMIE,122
+pompier - Chateaux d'eau forestiers,703,CHATEAUX,663
+raster - Relief MNT,827,RELIEF,578
+politiques_publiques - Soutenir le développement durable des quartiers sensibles,719,QUARTIERS,1774
+novaqt - Habitat,744,HABITAT,560
+pompier - Sitac (>30 jours),826,SITAC,3594
+xynthia - Degats digues,850,DIGUES,44
+wms_externe - PLU 47,857,PLU,237
+pompier - Detection des feux par date,873,FEUX,1850
+null - Commune Loi Littoral,889,COMMUNE,176
+collecte - Voirie,909,VOIRIE,109
+pompier - Chateaux d'eau AEP,923,CHATEAUX,663
+reseau_routier - Routes goudronnés nommées,928,ROUTES,3176
+ddtm47 - Ecluses 47,929,ECLUSES,1519
+ddcspp - Elevage ovin/caprin,932,ELEVAGE,363
+pompier - Sitac (<=30jours),947,SITAC,3594
+projets_infrastructures - Assainissement existant (CG),984,ASSAINISSEMENT,3691
+pompier - Feux 2017,994,FEUX,1850
+wms_externe - Hydrographie Bd carthage,1021,HYDROGRAPHIE,3784
+pompier - Routes barrées (<=30jrs),1040,ROUTES,3176
+pgsd - PGSD - Densité de pistes par commune,1118,COMMUNE,176
+pgsd - PGSD - Densité de pistes en sol naturel par commune,1128,COMMUNE,176
+null - CADASTRE France,1134,CADASTRE,79
+pgsd - PGSD - Densité de pistes empierrées par commune,1135,COMMUNE,176
+coz - Sites,1172,GRANDS SITES INDUSTRIELS,63
+bdtopo - Voies,1182,VOIES,2612
+bdtopo - Routes goudronnées,1187,ROUTES,3176
+insee - Population par arrondissements (2007),1188,POPULATION,325
+insee - Population par commune (2007),1189,COMMUNE,176
+insee - Population par arrondissements (2007),1190,POPULATION,325
+insee - Population par EPCI (2007),1193,POPULATION,325
+pompier - Sitac (>=30jours),1197,SITAC,3594
+insee - Population par cantons (2008),1250,POPULATION,325
+pompier - Sitac,1253,SITAC,3594
+insee - Population par cantons (2008),1271,POPULATION,325
+indicateurs_conso_fonciere - Voies ferrées,1306,VOIES,2612
+pompier - Routes inondees DDTM,1321,ROUTES,3176
+insee - Population par départements (2008),1330,POPULATION,325
+insee - Population iris2007 cercle,1336,POPULATION,325
+insee - Population par EPCI (2007),1340,POPULATION,325
+carmen - Arrêté de protection de Biotope,1346,BIOTOPE,316
+pompier - Départs de feux 2017,1353,FEUX,1850
+pompier - Detection des feux,1371,FEUX,1850
+pompier - Feux 2010,1378,FEUX,1850
+pompier - Feux 2011,1379,FEUX,1850
+pompier - Feux 2012,1380,FEUX,1850
+pompier - Feux 2013,1381,FEUX,1850
+pompier - Feux 2017,1384,FEUX,1850
+wms_externe - IGN - Nom des voies,1397,VOIES,2612
+pompier - Détection des feux 2015,1398,FEUX,1850
+pompier - Départs de feux 2017,1408,FEUX,1850
+bdtopo - Routes,1421,ROUTES,3176
+pompier - SDIS24 - SITAC (<=90jours),1476,SITAC,3594
+pompier - SDIS24 - SITAC (>90 jours - Archives),1477,SITAC,3594
+pompier - Routes barrées (>90jrs),1478,ROUTES,3176
+pompier - SDIS47 - SITAC,1496,SITAC,3594
+ddcspp - Elevage bovin,1526,ELEVAGE,363
+cub - Couloirs de Bus,1550,COULOIRS AVALANCHE,210
+cub - Lignes,1552,OCA : LIGNES DE LIMITE DU SCHORRE - COTE NORD ET EST DU BASSIN D'ARCACHON,2867
+wms_externe - Hydrographie,1568,HYDROGRAPHIE,3784
+wms_externe - Voies ferrées,1572,VOIES,2612
+wms_externe - ROUTE ADRESSE,1574,ADRESSE,2
+geofla - Arrondissements,1577,GEOFLA,378
+geofla - Limites départementales,1587,GEOFLA,378
+geofla - Cantons,1588,GEOFLA,378
+rff - Ponts routes,1618,ROUTES,3176
+erp - Erp - Contours,1621,CONTOURS DES PAYS DES PYRENEES,569
+insee - Population iris2007 surface,1655,POPULATION,325
+pompier - SDIS - SITAC,1658,SITAC,3594
+pompier - Feux 2015,1736,FEUX,1850
+pompier - Feux,1739,FEUX,1850
+cadastre - Sections,1749,CADASTRE,79
+foretdata_transbois - Gestionnaire de voirie,1794,VOIRIE,109
+patrimoine_culturel - ZPPAUP Aquitaine Midi Pyrénées,1796,ZPPAUP,166
+wms_externe - Cadastre,1815,CADASTRE,79
+ddpp - Abattoirs agréés,1834,ABATTOIRS,4318
+ddpp - NB établissements par commune,1848,COMMUNE,176
+ddpp - Entrepots agrées,1852,ENTREPOTS,4320
+pompier - Feux 2017,1910,FEUX,1850
+cadastre - Section,1930,CADASTRE,79
+cadastre - Section,1954,CADASTRE,79
+pompier - Hydrants,1975,HYDRANTS,372
+pompier - Sdis47 - SITAC,1987,SITAC,3594
+pompier - Sdis47 - SITAC,2024,SITAC,3594
+crpf - Peuplements feuillus,2072,FEUILLUS,3310
+null - SCAN NB 1000/250/25 (IGN),432,SCAN 25,251
+null - SCAN 1000/250/25 (IGN),445,SCAN 25,251
+projets_infrastructures - Topo (lignes),551,BD TOPO,253
+projets_infrastructures - Topo (labels),917,BD TOPO,253
+projets_infrastructures - Topo (Polygones),996,BD TOPO,253
+indicateurs_conso_fonciere - Espace routier,1126,PK ROUTIER,102
+raster - Scan Départemental Zone Sud Ouest,1170,SCAN 25,251
+projets_infrastructures - Topo (Points),1205,BD TOPO,253
+null - WMTS - Cartes SCAN25 Topo,1792,BD TOPO,253
 limites_admin - Contour Grande Region,4,PSG CONTOUR,184
 dfci - Brulages diriges 2015,57,ASA DFCI,182
 pompier - PK du dispositif littoral,113,POS LITTORAL,276
 pompier - Zones noires,127,PLU : ZONES,1440
-Vues aériennes 2009,238,PAYS DU GRAND BERGERACOIS - 2009,3791
+null - Vues aériennes 2009,238,PAYS DU GRAND BERGERACOIS - 2009,3791
 gip_atgeri - Zonage classé en Loi Littoral,267,PPR - ZONAGE,212
 erp - Sites ERP,287,GRANDS SITES INDUSTRIELS,63
 sdis - Tracé Tour de France 2014,304,PAYS DU GRAND BERGERACOIS - 2014,3793
-Vues aériennes 2009 IRC,312,PAYS DU GRAND BERGERACOIS - 2009,3791
+null - Vues aériennes 2009 IRC,312,PAYS DU GRAND BERGERACOIS - 2009,3791
 ifn - Dégâts IFN 2009,359,PAYS DU GRAND BERGERACOIS - 2009,3791
 pompier - SDIS24 - Zones tampons signalements archives,387,PLU : ZONES,1440
-batiments - ERP,482,BD TOPO : BATIMENTS,16
-rte - Postes de transformation,586,POSTE DE TRANSFORMATION,170
-pompier - SDIS47 - Zones tampons signalements,620,PLU : ZONES,1440
-pompier - SDIS47 - Zones tampons signalements archives,624,PLU : ZONES,1440
-pompier - SDIS24 - Zones tampons signalements,652,PLU : ZONES,1440
-exercice_operationnel - Coupures électriques zones,675,PLU : ZONES,1440
-Zones de largages autorisés (brouillon),783,PLU : ZONES,1440
-dfci - Dégradations,842,ASA DFCI,182
-dfci - Projets financés,856,ASA DFCI,182
-pompier - Forages DFCI,896,ASA DFCI,182
-ddtm47 - Réseau de transport de gaz haute pression TIGF,970,PAI : TRANSPORT,3215
-projets_infrastructures - Aménagements DFCI au 10-12-2012,982,ASA DFCI,182
-dfci - Brulages diriges 2010,1021,ASA DFCI,182
-sdis - Tracé Tour 2014,1069,PAYS DU GRAND BERGERACOIS - 2014,3793
-sdis_tdf - Tour de France 2014 Etapes 18, 19 et 20,1099,PAYS DU GRAND BERGERACOIS - 2014,3793
-sdis_tdf - Tour de France 2014 Gendarme,1108,PAYS DU GRAND BERGERACOIS - 2014,3793
-sdis_tdf - Tour de France 2014 PK course,1109,PAYS DU GRAND BERGERACOIS - 2014,3793
-sdis_tdf - Tour de France 2014 CG,1110,PAYS DU GRAND BERGERACOIS - 2014,3793
-sdis_tdf - Tour de France 2014 SDIS,1113,PAYS DU GRAND BERGERACOIS - 2014,3793
-sdis_tdf - Tour de France 2014 Cisaillement,1114,PAYS DU GRAND BERGERACOIS - 2014,3793
-PLAN IGN,1141,PLAN GESTIONNAIRE ROUTIER,108
-dfci - Projets financés 2010,1156,ASA DFCI,182
-Scan25 2014,1170,PAYS DU GRAND BERGERACOIS - 2014,3793
-dfci - Projets financés 2011,1179,ASA DFCI,182
-dfci - Autres postit dfci,1255,ASA DFCI,182
-dfci - Brulages diriges,1275,ASA DFCI,182
-indicateurs_conso_fonciere - Zones de végétation,1316,PLU : ZONES,1440
-dfci - Projets financés 2012,1326,ASA DFCI,182
-dfci - Projets financés 2013,1348,ASA DFCI,182
-dfci - Projets financés 2014,1349,ASA DFCI,182
-dfci - Projets financés 2015,1350,ASA DFCI,182
-dfci - Brulages diriges 2007,1365,ASA DFCI,182
-dfci - Brulages diriges 2008,1366,ASA DFCI,182
-dfci - Brulages diriges 2009,1367,ASA DFCI,182
-dfci - Brulages diriges 2011,1368,ASA DFCI,182
-dfci - Brulages diriges 2012,1369,ASA DFCI,182
-dfci - Brulages diriges 2013,1370,ASA DFCI,182
-dfci - Brulages diriges 2014,1371,ASA DFCI,182
-formation_temp - Formation contour region,1428,PSG CONTOUR,184
-dfci - Brulages diriges 2016,1465,ASA DFCI,182
-pompier - SDIS24 - Zones tampons 2 signalements,1558,PLU : ZONES,1440
-wms_externe - WMS-Raster-Géoportail - Pléiades 2013,1566,PAYS DU GRAND BERGERACOIS - 2013,3792
-wms_externe - WMS-Raster-Géoportail - Pléiades 2014,1567,PAYS DU GRAND BERGERACOIS - 2014,3793
-wms_externe - Orographie,1570,PAI : OROGRAPHIE,3211
-wms_externe - Transport énergie,1571,PAI : TRANSPORT,3215
-wms_externe - WMS-Raster-Géoportail - SPOT 6 2014,1577,PAYS DU GRAND BERGERACOIS - 2014,3793
-dfci - Communes à dominante forestière,1599,ASA DFCI,182
-coz - Zones de défenses,1744,PLU : ZONES,1440
-pompier - Zones noires,1777,PLU : ZONES,1440
-erp - Sites ERP,1792,GRANDS SITES INDUSTRIELS,63
-ocs_bdcarto - Zones naturelles et cultivées,1796,PLU : ZONES,1440
-dfci - Projets financés 2016,1894,ASA DFCI,182
-dfci - Brulages diriges 2017,1908,ASA DFCI,182
-Ap iahp.geifla com encourspar iahp zones p s,1917,PLU : ZONES,1440
-pompier - Donnees contextuelles,1997,DONNEES IFN,87
-pompier - Donnees contextuelles,2018,DONNEES IFN,87
+batiments - ERP,481,BD TOPO : BATIMENTS,16
+rte - Postes de transformation,585,POSTE DE TRANSFORMATION,170
+pompier - SDIS47 - Zones tampons signalements,619,PLU : ZONES,1440
+pompier - SDIS47 - Zones tampons signalements archives,623,PLU : ZONES,1440
+pompier - SDIS24 - Zones tampons signalements,651,PLU : ZONES,1440
+exercice_operationnel - Coupures électriques zones,674,PLU : ZONES,1440
+null - Zones de largages autorisés (brouillon),782,PLU : ZONES,1440
+dfci - Dégradations,841,ASA DFCI,182
+dfci - Projets financés,855,ASA DFCI,182
+pompier - Forages DFCI,895,ASA DFCI,182
+ddtm47 - Réseau de transport de gaz haute pression TIGF,969,PAI : TRANSPORT,3215
+projets_infrastructures - Aménagements DFCI au 10-12-2012,981,ASA DFCI,182
+dfci - Brulages diriges 2010,1020,ASA DFCI,182
+sdis - Tracé Tour 2014,1068,PAYS DU GRAND BERGERACOIS - 2014,3793
+sdis_tdf - Tour de France 2014 Etapes 18, 19 et 20,1098,PAYS DU GRAND BERGERACOIS - 2014,3793
+sdis_tdf - Tour de France 2014 Gendarme,1107,PAYS DU GRAND BERGERACOIS - 2014,3793
+sdis_tdf - Tour de France 2014 PK course,1108,PAYS DU GRAND BERGERACOIS - 2014,3793
+sdis_tdf - Tour de France 2014 CG,1109,PAYS DU GRAND BERGERACOIS - 2014,3793
+sdis_tdf - Tour de France 2014 SDIS,1112,PAYS DU GRAND BERGERACOIS - 2014,3793
+sdis_tdf - Tour de France 2014 Cisaillement,1113,PAYS DU GRAND BERGERACOIS - 2014,3793
+dfci - Projets financés 2010,1155,ASA DFCI,182
+null - Scan25 2014,1169,PAYS DU GRAND BERGERACOIS - 2014,3793
+dfci - Projets financés 2011,1178,ASA DFCI,182
+dfci - Autres postit dfci,1254,ASA DFCI,182
+dfci - Brulages diriges,1274,ASA DFCI,182
+indicateurs_conso_fonciere - Zones de végétation,1315,PLU : ZONES,1440
+dfci - Projets financés 2012,1325,ASA DFCI,182
+dfci - Projets financés 2013,1347,ASA DFCI,182
+dfci - Projets financés 2014,1348,ASA DFCI,182
+dfci - Projets financés 2015,1349,ASA DFCI,182
+dfci - Brulages diriges 2007,1364,ASA DFCI,182
+dfci - Brulages diriges 2008,1365,ASA DFCI,182
+dfci - Brulages diriges 2009,1366,ASA DFCI,182
+dfci - Brulages diriges 2011,1367,ASA DFCI,182
+dfci - Brulages diriges 2012,1368,ASA DFCI,182
+dfci - Brulages diriges 2013,1369,ASA DFCI,182
+dfci - Brulages diriges 2014,1370,ASA DFCI,182
+formation_temp - Formation contour region,1427,PSG CONTOUR,184
+dfci - Brulages diriges 2016,1464,ASA DFCI,182
+pompier - SDIS24 - Zones tampons 2 signalements,1557,PLU : ZONES,1440
+wms_externe - WMS-Raster-Géoportail - Pléiades 2013,1565,PAYS DU GRAND BERGERACOIS - 2013,3792
+wms_externe - WMS-Raster-Géoportail - Pléiades 2014,1566,PAYS DU GRAND BERGERACOIS - 2014,3793
+wms_externe - Orographie,1569,PAI : OROGRAPHIE,3211
+wms_externe - Transport énergie,1570,PAI : TRANSPORT,3215
+wms_externe - WMS-Raster-Géoportail - SPOT 6 2014,1576,PAYS DU GRAND BERGERACOIS - 2014,3793
+dfci - Communes à dominante forestière,1598,ASA DFCI,182
+cd33 - Zonage CRD,1733,PPR - ZONAGE,212
+coz - Zones de défenses,1748,PLU : ZONES,1440
+dreal - Accidents 2004 2014 rd 33,1757,PAYS DU GRAND BERGERACOIS - 2014,3793
+pompier - Zones noires,1787,PLU : ZONES,1440
+erp - Sites ERP,1809,GRANDS SITES INDUSTRIELS,63
+ocs_bdcarto - Zones naturelles et cultivées,1813,PLU : ZONES,1440
+dfci - Projets financés 2016,1911,ASA DFCI,182
+dfci - Brulages diriges 2017,1925,ASA DFCI,182
+null - Ap iahp.geifla com encourspar iahp zones p s,1934,PLU : ZONES,1440
+pompier - Donnees contextuelles,2012,DONNEES IFN,87
+pompier - Donnees contextuelles,2033,DONNEES IFN,87
 crpf - Travail du sol,36,ZONES INTERVENTION SERVICES DE SANTE AU TRAVAIL / ADRESSE POINT ACCUEIL,1102
 politiques_publiques - Projets Feder sur la zone selectionnée,50,ZONE CŒUR,156
 gip_atgeri - Cantons 2010,84,CANTONS 2015,3270
 pompier - Zone tampon (archives >30jrs).,112,ZONE CŒUR,156
+null - 24,115,OCS-CLC 1990 : 24,1383
 gip_atgeri - Cantons 2010,156,CANTONS 2015,3270
 politiques_publiques - Projets Feder sur la zone selectionnée,161,ZONE CŒUR,156
 politiques_publiques - Projets Feder sur la zone selectionnée,192,ZONE CŒUR,156
 ocs_bdcarto - zone d'activité,197,ZONE CŒUR,156
+null - 40,199,LAGUNES 40 : INVENTAIRE,377
+null - 47,200,OCS-CLC 1990 : 47,1380
 politiques_publiques - Projets Feder sur la zone selectionnée,241,ZONE CŒUR,156
 politiques_publiques - Projets FEDER sur la zone selectionnée,256,ZONE CŒUR,156
 politiques_publiques - Projets FEDER sur la zone selectionnée,269,ZONE CŒUR,156
+null - 24,309,OCS-CLC 1990 : 24,1383
 pompier - Zone tampon,357,ZONE CŒUR,156
 pompier - Zone de délestage,406,ZONE CŒUR,156
-pompier - Zone tampon (>30jours),452,ZONE CŒUR,156
-politiques_publiques - Innovation pour la compétitivité des entreprises et des territoires,468,TERRITOIRES MAIA,4022
-limites_admin - Cantons,476,CANTONS 2015,3270
-politiques_publiques - Soutenir les territoires en mutation,477,TERRITOIRES MAIA,4022
-collecte - Bati,549,GESTION DECHETS : INSTALLATIONS DE COLLECTE ET DE TRAITEMENTS DES DECHETS,127
-projets_infrastructures - Pistes adaptées par RFF (juillet 2012),562,PISTES DFCI,615
-raster - Pas de fond,580,SCHEMA D'AMENAGEMENT ET DE DEVELOPPEMENT DURABLE INTERCOMMUNAL : DONNEES RASTER,3009
-Fond SDIS24,656,FOND GCIS 40,3776
-pompier - Zone de 1er Appel,718,ZONE CŒUR,156
-ocs_bdcarto - zone bâtie,722,ZONE CŒUR,156
-projets_infrastructures - Pistes adaptées par RFF aout 2012,958,PISTES DFCI,615
-collecte - Deci,961,GESTION DECHETS : INSTALLATIONS DE COLLECTE ET DE TRAITEMENTS DES DECHETS,127
-sdis - Parking,987,PARKING RELAIS,100
-projets_infrastructures - Rétablissement pistes (CG),1006,PISTES DFCI,615
-pompier - Zone tampon (<=30jrs),1045,ZONE CŒUR,156
-indicateurs_conso_fonciere - Espace du réseau ferré,1095,ESPACE VERT,186
-sdis - Secours,1101,CENTRE DE SECOURS,131
-sdis - Circulation,1103,RESTRICTION CIRCULATION TRANSPORT BOIS COMPLEMENTAIRE ITGG,91
-indicateurs_conso_fonciere - Espace en eau,1122,ESPACE VERT,186
-pgsd - Méthode 1a - Proximité route goudronnée,1128,ROUTE 120®,3733
-indicateurs_conso_fonciere - 3) Espace d&apos;usage des bâtiments,1137,ESPACE VERT,186
-pgsd - Méthode 1b - Proximité route goudronnée et/ou d'une piste,1138,ROUTE 120®,3733
-pompier - Zone tampon (<=30jours),1160,ZONE CŒUR,156
-bdtopo - Bati industriel,1193,SITE INDUSTRIEL,447
-sdis - Animation,1210,ANIMATION SPORTIVE,1332
-carmen - Zone d'intérêt écologique (Znieff 2),1215,ZONE CŒUR,156
-carmen - Zone d'intérêt écologique (Znieff 1),1216,ZONE CŒUR,156
-sdis - Parking,1295,PARKING RELAIS,100
-eau - Communes BCAE33 zone 1,1298,ZONE CŒUR,156
-eau - Identification erreurs zone 1,1300,ZONE CŒUR,156
-eau - BCAE proposes zone 1,1301,ZONE CŒUR,156
-indicateurs_conso_fonciere - Espace disponible libre,1302,ESPACE VERT,186
-indicateurs_conso_fonciere - Zone non constructible,1306,ZONE CŒUR,156
-indicateurs_conso_fonciere - Zone de végétation,1310,ZONE CŒUR,156
-indicateurs_conso_fonciere - Espace disponible densifiable,1311,ESPACE VERT,186
-Implantation Fan zone,1353,ZONE CŒUR,156
-cub - Parcs relais,1550,PARKING RELAIS,100
-wms_externe - Zone d activités,1574,ZONE CŒUR,156
-wms_externe - WMS-Raster-Géoportail - BD PARCELLAIRE®,1613,BD TOPO,253
-wms_externe - WMS-Raster-Géoportail - BD ORTHO®,1618,BD TOPO,253
-rff - Ponts ferroviaires,1623,SITES FERROVIAIRES,648
-ddpp - Etablissements,1822,ETABLISSEMENTS DE REANIMATION,3335
-telespazio - Localisation probabilité exhaustive octobre 2016,1877,ITPC : LOCALISATION,3230
-sidpc - Zone de surveillance,1909,ZONE CŒUR,156
-tmp - Test sn point,1974,POINT EAU NATUREL,49
-SCAN25 Touristique,46,OFFRE TOURISTIQUE,1021
+null - 64,429,OCS-CLC 1990 : 64,1379
+pompier - Zone tampon (>30jours),451,ZONE CŒUR,156
+politiques_publiques - Innovation pour la compétitivité des entreprises et des territoires,467,TERRITOIRES MAIA,4022
+limites_admin - Cantons,475,CANTONS 2015,3270
+politiques_publiques - Soutenir les territoires en mutation,476,TERRITOIRES MAIA,4022
+null - 33,498,LAGUNES 33 : INVENTAIRE,295
+collecte - Bati,548,GESTION DECHETS : INSTALLATIONS DE COLLECTE ET DE TRAITEMENTS DES DECHETS,127
+projets_infrastructures - Pistes adaptées par RFF (juillet 2012),561,PISTES DFCI,615
+raster - Pas de fond,579,SCHEMA D'AMENAGEMENT ET DE DEVELOPPEMENT DURABLE INTERCOMMUNAL : DONNEES RASTER,3009
+null - 33,670,LAGUNES 33 : INVENTAIRE,295
+pompier - Zone de 1er Appel,717,ZONE CŒUR,156
+ocs_bdcarto - zone bâtie,721,ZONE CŒUR,156
+null - 64,728,OCS-CLC 1990 : 64,1379
+projets_infrastructures - Pistes adaptées par RFF aout 2012,957,PISTES DFCI,615
+collecte - Deci,960,GESTION DECHETS : INSTALLATIONS DE COLLECTE ET DE TRAITEMENTS DES DECHETS,127
+sdis - Parking,986,PARKING RELAIS,100
+projets_infrastructures - Rétablissement pistes (CG),1005,PISTES DFCI,615
+pompier - Zone tampon (<=30jrs),1044,ZONE CŒUR,156
+indicateurs_conso_fonciere - Espace du réseau ferré,1094,ESPACE VERT,186
+sdis - Secours,1100,CENTRE DE SECOURS,131
+sdis - Circulation,1102,RESTRICTION CIRCULATION TRANSPORT BOIS COMPLEMENTAIRE ITGG,91
+indicateurs_conso_fonciere - Espace en eau,1121,ESPACE VERT,186
+pgsd - Méthode 1a - Proximité route goudronnée,1127,ROUTE 120®,3733
+null - Urgences,1132,ETABLISSEMENTS AVEC URGENCES,3340
+indicateurs_conso_fonciere - 3) Espace d&apos;usage des bâtiments,1136,ESPACE VERT,186
+pgsd - Méthode 1b - Proximité route goudronnée et/ou d'une piste,1137,ROUTE 120®,3733
+pompier - Zone tampon (<=30jours),1159,ZONE CŒUR,156
+null - 47,1164,OCS-CLC 1990 : 47,1380
+null - 40,1165,LAGUNES 40 : INVENTAIRE,377
+bdtopo - Bati industriel,1192,SITE INDUSTRIEL,447
+sdis - Animation,1209,ANIMATION SPORTIVE,1332
+carmen - Zone d'intérêt écologique (Znieff 2),1214,ZONE CŒUR,156
+carmen - Zone d'intérêt écologique (Znieff 1),1215,ZONE CŒUR,156
+sdis - Parking,1294,PARKING RELAIS,100
+eau - Communes BCAE33 zone 1,1297,ZONE CŒUR,156
+eau - Identification erreurs zone 1,1299,ZONE CŒUR,156
+eau - BCAE proposes zone 1,1300,ZONE CŒUR,156
+indicateurs_conso_fonciere - Espace disponible libre,1301,ESPACE VERT,186
+indicateurs_conso_fonciere - Zone non constructible,1305,ZONE CŒUR,156
+indicateurs_conso_fonciere - Zone de végétation,1309,ZONE CŒUR,156
+indicateurs_conso_fonciere - Espace disponible densifiable,1310,ESPACE VERT,186
+null - Aquimap,1324,FOND AQUIMAP (GIP),3280
+null - Implantation Fan zone,1352,ZONE CŒUR,156
+null - Formation,1452,LA SITUATION PROFESSIONNELLE QUELQUES ANNES APRES LA FIN DE LA FORMATION INITIALE,3414
+cub - Parcs relais,1549,PARKING RELAIS,100
+wms_externe - Zone d activités,1573,ZONE CŒUR,156
+wms_externe - WMS-Raster-Géoportail - BD PARCELLAIRE®,1612,BD TOPO,253
+wms_externe - WMS-Raster-Géoportail - BD ORTHO®,1617,BD TOPO,253
+rff - Ponts ferroviaires,1622,SITES FERROVIAIRES,648
+ddpp - Etablissements,1839,ETABLISSEMENTS DE REANIMATION,3335
+telespazio - Localisation probabilité exhaustive octobre 2016,1894,ITPC : LOCALISATION,3230
+sidpc - Zone de surveillance,1926,ZONE CŒUR,156
+tmp - Test sn point,1989,POINT EAU NATUREL,49
+null - SCAN25 Touristique,46,OFFRE TOURISTIQUE,1021
 ppi - Centrale de Blaye,284,ETALAB : PRODUCTION D'ELECTRICITE DONT CENTRALE THERMIQUE CLASSIQUE,2723
 dreal - Hauteur d'eau TRI Agen (faible probabilité),310,PRISE D'EAU,138
 pompier - Signalements : Points,320,POINTS COTES,2183
-Sites Ramsar,365,RAMSAR ZONES HUMIDES D'IMPORTANCE INTERNATIONALE,158
+null - Sites Ramsar,365,SITES GERES,3242
 pompier - DRONE - dernière capture,379,ORTHO DRONE,3351
-PHOTO AERIENNE France,392,PHOTOGRAPHIE AERIENNE,321
 sdis - Points eau artificiels,394,POINTS COTES,2183
 coz - Sites d'interets économiques (export csv),405,SITES GERES,3242
-ocs_bdcarto - culture / prairie,435,ETUDE : CULTURE,3572
-pompier - DRONE - historique,455,ORTHO DRONE,3351
-pompier - Moyens aériens,465,VENTS MOYENS,22
-projets_infrastructures - Tracé LGV SEA au 21 juin 2011,541,ORTHO 2011,2693
-projets_infrastructures - Rétablissements LGV SEA au 05 07 2011,570,ORTHO 2011,2693
-projets_infrastructures - Rétablissements RFF septembre 2011,571,ORTHO 2011,2693
-pompier - Sites et postes de commandement,609,SITES GERES,3242
-eau - Points de reconnaissance,689,POINTS COTES,2183
-coz - Sites d'interets économiques,695,SITES GERES,3242
-novaqt - Entreprises novaqt,778,ETUDE : ENTREPRISES,3573
-cartorisque - PPR Inondation synthèse,839,PPR - ATLAS,211
-pompier - Buffer 200m Prises d'eau,879,PRISE D'EAU,138
-pompier - Prises d'eau,881,PRISE D'EAU,138
-projets_infrastructures - Variantes RFF juillet 2011,902,ORTHO 2011,2693
-filiere_bois - Sites de stockage subventionnés,921,SITES GERES,3242
-pompier - Prises d'eau,927,PRISE D'EAU,138
-projets_infrastructures - Projet ouvrages art,999,OUVRAGES D'ART,588
-projets_infrastructures - Tracés LGV SEA au 24 06 2011,1024,ORTHO 2011,2693
-projets_infrastructures - Tracés LGV 23 06 2011 CoPil,1025,ORTHO 2011,2693
-projets_infrastructures - Rétablissements RFF juillet 2011,1029,ORTHO 2011,2693
-projets_infrastructures - Points de rencontre et aires,1035,POINTS COTES,2183
-projets_infrastructures - Tracés LGV 26 09 2011 CoPil,1040,ORTHO 2011,2693
-cartorisque - PPR technologique synthese,1051,PPR - ATLAS,211
-sdis40 - Sdis40 - Prise Eau,1146,PRISE D'EAU,138
-erdf - Poste électrique,1158,POSTE ELECTRIQUE,1288
-bdtopo - Réservoirs d'eau,1178,PRISE D'EAU,138
-carmen - Site inscrit,1214,SITES INSCRIT,225
-Sites d importance communautaire,1220,SITES GERES,3242
-raster - BDorthoDCM 09 2011,1224,ORTHO 2011,2693
-novaqt - Entreprises novaqt,1246,ETUDE : ENTREPRISES,3573
-sdis - Points eau naturels,1248,SITES NATURELS,1477
-projets_infrastructures - Rétablissements RFF septembre 2011,1278,ORTHO 2011,2693
-projets_infrastructures - Tracés LGV 26 09 2011 CoPil,1279,ORTHO 2011,2693
-dreal - Hauteur d'eau TRI Agen (forte probabilité),1320,PRISE D'EAU,138
-dreal - Hauteur d'eau TRI Agen (moyenne probabilité),1343,PRISE D'EAU,138
-Bordeaux metropole Passage pont,1466,PASSAGE A GUE,107
-pompier - Signalements : Points,1481,POINTS COTES,2183
-sidpc - Campings,1600,RECENSEMENT SITES WEB DES CAMPINGS EN AQUITAINE 2009,479
-rff - Points kilométriques,1601,POINTS COTES,2183
-rff - Passages à niveau,1605,PASSAGES CERFS,1555
-calcul_itineraire - Itinéraires Points,1626,POINTS COTES,2183
+ocs_bdcarto - culture / prairie,434,ETUDE : CULTURE,3572
+pompier - DRONE - historique,454,ORTHO DRONE,3351
+pompier - Moyens aériens,464,VENTS MOYENS,22
+null - Site inscrit,533,SITES INSCRIT,225
+projets_infrastructures - Tracé LGV SEA au 21 juin 2011,540,ORTHO 2011,2693
+projets_infrastructures - Rétablissements LGV SEA au 05 07 2011,569,ORTHO 2011,2693
+projets_infrastructures - Rétablissements RFF septembre 2011,570,ORTHO 2011,2693
+pompier - Sites et postes de commandement,608,SITES GERES,3242
+eau - Points de reconnaissance,688,POINTS COTES,2183
+coz - Sites d'interets économiques,694,SITES GERES,3242
+novaqt - Entreprises novaqt,777,ETUDE : ENTREPRISES,3573
+cartorisque - PPR Inondation synthèse,838,PPR - ATLAS,211
+pompier - Buffer 200m Prises d'eau,878,PRISE D'EAU,138
+pompier - Prises d'eau,880,PRISE D'EAU,138
+projets_infrastructures - Variantes RFF juillet 2011,901,ORTHO 2011,2693
+filiere_bois - Sites de stockage subventionnés,920,SITES GERES,3242
+pompier - Prises d'eau,926,PRISE D'EAU,138
+projets_infrastructures - Projet ouvrages art,998,OUVRAGES D'ART,588
+projets_infrastructures - Tracés LGV SEA au 24 06 2011,1023,ORTHO 2011,2693
+projets_infrastructures - Tracés LGV 23 06 2011 CoPil,1024,ORTHO 2011,2693
+projets_infrastructures - Rétablissements RFF juillet 2011,1028,ORTHO 2011,2693
+projets_infrastructures - Points de rencontre et aires,1034,POINTS COTES,2183
+projets_infrastructures - Tracés LGV 26 09 2011 CoPil,1039,ORTHO 2011,2693
+cartorisque - PPR technologique synthese,1050,PPR - ATLAS,211
+sdis40 - Sdis40 - Prise Eau,1145,PRISE D'EAU,138
+erdf - Poste électrique,1157,POSTE ELECTRIQUE,1288
+bdtopo - Réservoirs d'eau,1177,PRISE D'EAU,138
+carmen - Site inscrit,1213,SITES INSCRIT,225
+null - Sites d importance communautaire,1219,SITES GERES,3242
+raster - BDorthoDCM 09 2011,1223,ORTHO 2011,2693
+novaqt - Entreprises novaqt,1245,ETUDE : ENTREPRISES,3573
+sdis - Points eau naturels,1247,SITES NATURELS,1477
+projets_infrastructures - Rétablissements RFF septembre 2011,1277,ORTHO 2011,2693
+projets_infrastructures - Tracés LGV 26 09 2011 CoPil,1278,ORTHO 2011,2693
+dreal - Hauteur d'eau TRI Agen (forte probabilité),1319,PRISE D'EAU,138
+dreal - Hauteur d'eau TRI Agen (moyenne probabilité),1342,PRISE D'EAU,138
+null - Bordeaux metropole Passage pont,1465,PASSAGE A GUE,107
+pompier - Signalements : Points,1480,POINTS COTES,2183
+sidpc - Campings,1599,RECENSEMENT SITES WEB DES CAMPINGS EN AQUITAINE 2009,479
+rff - Points kilométriques,1600,POINTS COTES,2183
+rff - Passages à niveau,1604,PASSAGES CERFS,1555
+calcul_itineraire - Itinéraires Points,1625,POINTS COTES,2183
 sidpc - SAIP,1726,SAIP - IMPLANTATION SIRENES,3777
-Reserve Naturelle Nationale,1755,RESERVE D'EAU,125
-dgfip - Section,1785,PLAN CADASTRAL : LIMITE DE SECTION,1806
-sidpc - Campings,1878,RECENSEMENT SITES WEB DES CAMPINGS EN AQUITAINE 2009,479
-pompier - Moyens Intervention SP,1998,VENTS MOYENS,22
-pompier - Moyens intervention aérienne,2001,VENTS MOYENS,22
-pompier - Moyens non SP,2002,VENTS MOYENS,22
-pompier - Moyens intervention aérienne,2013,VENTS MOYENS,22
+null - Reserve Naturelle Nationale,1764,RESERVE D'EAU,125
+foretdata_transbois - Itinéraires Points,1788,POINTS COTES,2183
+dgfip - Section,1802,PLAN CADASTRAL : LIMITE DE SECTION,1806
+sidpc - Campings,1895,RECENSEMENT SITES WEB DES CAMPINGS EN AQUITAINE 2009,479
+pompier - Moyens Intervention SP,2013,VENTS MOYENS,22
+pompier - Moyens intervention aérienne,2016,VENTS MOYENS,22
 pompier - Moyens non SP,2017,VENTS MOYENS,22
-pompier - Moyens Intervention SP,2021,VENTS MOYENS,22
+pompier - Moyens intervention aérienne,2028,VENTS MOYENS,22
+pompier - Moyens non SP,2032,VENTS MOYENS,22
+pompier - Moyens Intervention SP,2036,VENTS MOYENS,22
 bdtopo - Eglises,212,EGLISES CHAPELLES,406
 bdtopo - Bati,215,ABORDS MH BATI (R500M),1018
 ppi - Ppi blaye buffer 5km,275,CARTE COMMUNALE : ST CAPRAIS DE BLAYE,1130
 wms_externe - PPRI 24 - Synthèse des zonages règlementaires,324,ZPPAUP : 24,1969
 pgsd - PGSD - exploitation forestière (500m),363,CHEMIN EXPLOITATION,93
 eau - Lagunes Landes,423,LAGUNES 33 : INVENTAIRE,295
-sidpc - SIDPC 47 - Signalements,444,ZPPAUP : 47,1972
-wms_externe - Parcs Relais,454,POTEAU RELAIS,140
-novaqt - Transports,501,ETUDE BILAN EMISSIONS POLLUANTES DUES AUX TRANSPORTS ROUTIERS,1193
-novaqt - Alimentation,502,BRANCHEMENTS RESEAU ALIMENTATION EAU INDUSTRIELLE,4043
-novaqt - Loisirs,503,CENTRES DE LOISIRS CLSH,3319
-ars - Services de dialyses,517,SERVICES PUBLICS,1702
-Site classé,533,TPST (TRÈS PETIT SITE TECHNIQUE),130
-eau - Liste 1 provisoire,561,ZNIEFF 1,80
-pompier - Postes de secours,579,POSTES A QUAI,1894
-pompier - Forages privés,601,FORAGES (BRGM),60
-Prescriptions des Landes,635,Zonages d'urbanismes : - Zones secteurs - Prescriptions - Réglement,4493
-bdtopo - Communes,649,ZONAGE SIMPLIFIE DES POS COMMUNES LITTORALES,241
-coz - Grande distribution,692,POSTES DISTRIBUTION PUBLIQUE HTB-HTA ET HTA-BT,1292
-carte_reference - Forages privés,726,FORAGES (BRGM),60
-wms_externe - PPRI 40 - Synthèse des zonages règlementaires,748,ZPPAUP : 40,1971
-Habillage des Landes,797,ESTOMPAGE : LANDES,866
-Informations des Landes,798,INFORMATIONS UTILES SUR PATRIMOINE NATUREL ET CULTUREL,1159
-Zonages des Landes,800,ZONAGES D'URBANISME,358
-wms_externe - PPRI 47 - Synthèse des zonages règlementaires,887,ZPPAUP : 47,1972
-wms_externe - PPRI 64 - Synthèse des zonages règlementaires,888,PPRI - ZONAGE,2706
-wms_externe - PPRI 33 - Synthèse des zonages règlementaires,891,ZPPAUP : 33,1970
-ddtm47 - Campings,919,RECENSEMENT SITES WEB DES CAMPINGS EN AQUITAINE 2009,479
-pompier - Poteaux relais,926,POTEAU RELAIS,140
-onf - ONF - Peuplements classés,932,AGENCE ONF,442
-eau - Liste 2 provisoire,942,ZNIEFF 2,81
-bdtopo - Communes,1117,ZONAGE SIMPLIFIE DES POS COMMUNES LITTORALES,241
-pgsd - Méthode 2 - Rayon de 1300m,1125,ZNIEFF 2,81
-pgsd - PGSD - exploitation forestière (1000m),1139,CHEMIN EXPLOITATION,93
-sdis40 - Sdis40 - Batiment ETARE,1148,BATIMENT PUBLIC,1419
-Mers et océans,1219,PAYS CŒUR ENTRE DEUX MERS,788
-bdtopo - Eau de surface,1186,SURFACE AGRICOLE UTILISEE (SAU),366
-bdtopo - Nationales,1213,RESERVES NATURELLES NATIONALES,223
-Sentiers littoraux,1221,PARKINGS LITTORAUX,89
-Limites des marées,1232,ACCA (Association Communale de Chasse Agréée) : LIMITES,279
-DDTM40 - Zonages urbanisme,1286,ZONAGES D'URBANISME,358
-limites_admin - Communes 64,1291,ZPPAUP : 64,3245
-indicateurs_conso_fonciere - Courbes de niveaux sélect.,1303,COURBE NIVEAUX,3
-bdtopo - Communes,1314,ZONAGE SIMPLIFIE DES POS COMMUNES LITTORALES,241
-bdtopo - Communes,1614,ZONAGE SIMPLIFIE DES POS COMMUNES LITTORALES,241
-Bordeaux metropole parking (temps réel),1696,PARKING RELAIS,100
-onf - ONF : Parcelles forestières Aq Mp,1780,AGENCE ONF,442
-onf - ONF : contours des Parcelles Forestières,1784,AGENCE ONF,442
-onf - ONF : Parcelles forestières,1787,AGENCE ONF,442
-onf - ONF : Unités de gestion,1789,AGENCE ONF,442
-wms_externe - ONF : Parcelles Forestières (régime forestier),1801,AGENCE ONF,442
-ddpp - Elevages canins,1840,ELEVAGES PORCINS,4310
-ppi - PPI - buffer 5km,1842,RESEAU AEP : PPI,2101
-ppi - PPI - buffer 2km,1852,RESEAU AEP : PPI,2101
-crpf - Pin maritime 40 et +,2041,ZPPAUP : 40,1971
-crpf - Pin maritime 10 à 40 ans,2059,ZPPAUP : 40,1971
+sidpc - SIDPC 47 - Signalements,443,ZPPAUP : 47,1972
+wms_externe - Parcs Relais,453,POTEAU RELAIS,140
+novaqt - Transports,500,ETUDE BILAN EMISSIONS POLLUANTES DUES AUX TRANSPORTS ROUTIERS,1193
+novaqt - Alimentation,501,BRANCHEMENTS RESEAU ALIMENTATION EAU INDUSTRIELLE,4043
+novaqt - Loisirs,502,CENTRES DE LOISIRS CLSH,3319
+ars - Services de dialyses,516,SERVICES PUBLICS,1702
+eau - Liste 1 provisoire,560,ZNIEFF 1,80
+pompier - Postes de secours,578,POSTES A QUAI,1894
+pompier - Forages privés,600,FORAGES (BRGM),60
+bdtopo - Communes,648,ZONAGE SIMPLIFIE DES POS COMMUNES LITTORALES,241
+coz - Grande distribution,691,POSTES DISTRIBUTION PUBLIQUE HTB-HTA ET HTA-BT,1292
+carte_reference - Forages privés,725,FORAGES (BRGM),60
+wms_externe - PPRI 40 - Synthèse des zonages règlementaires,747,ZPPAUP : 40,1971
+wms_externe - PPRI 47 - Synthèse des zonages règlementaires,886,ZPPAUP : 47,1972
+wms_externe - PPRI 64 - Synthèse des zonages règlementaires,887,PPRI - ZONAGE,2706
+wms_externe - PPRI 33 - Synthèse des zonages règlementaires,890,ZPPAUP : 33,1970
+ddtm47 - Campings,918,RECENSEMENT SITES WEB DES CAMPINGS EN AQUITAINE 2009,479
+pompier - Poteaux relais,925,POTEAU RELAIS,140
+onf - ONF - Peuplements classés,931,AGENCE ONF,442
+eau - Liste 2 provisoire,941,ZNIEFF 2,81
+bdtopo - Communes,1116,ZONAGE SIMPLIFIE DES POS COMMUNES LITTORALES,241
+pgsd - Méthode 2 - Rayon de 1300m,1124,ZNIEFF 2,81
+pgsd - PGSD - exploitation forestière (1000m),1138,CHEMIN EXPLOITATION,93
+sdis40 - Sdis40 - Batiment ETARE,1147,BATIMENT PUBLIC,1419
+bdtopo - Eau de surface,1185,SURFACE AGRICOLE UTILISEE (SAU),366
+bdtopo - Nationales,1212,RESERVES NATURELLES NATIONALES,223
+limites_admin - Communes 64,1290,ZPPAUP : 64,3245
+indicateurs_conso_fonciere - Courbes de niveaux sélect.,1302,COURBE NIVEAUX,3
+bdtopo - Communes,1313,ZONAGE SIMPLIFIE DES POS COMMUNES LITTORALES,241
+bdtopo - Communes,1613,ZONAGE SIMPLIFIE DES POS COMMUNES LITTORALES,241
+null - Bordeaux metropole parking (temps réel),1695,PARKING RELAIS,100
+onf - ONF : Parcelles forestières Aq Mp,1797,AGENCE ONF,442
+onf - ONF : contours des Parcelles Forestières,1801,AGENCE ONF,442
+onf - ONF : Parcelles forestières,1804,AGENCE ONF,442
+onf - ONF : Unités de gestion,1806,AGENCE ONF,442
+wms_externe - ONF : Parcelles Forestières (régime forestier),1818,AGENCE ONF,442
+ddpp - Elevages canins,1857,ELEVAGES PORCINS,4310
+ppi - PPI - buffer 5km,1859,RESEAU AEP : PPI,2101
+ppi - PPI - buffer 2km,1869,RESEAU AEP : PPI,2101
+crpf - Pin maritime 40 et +,2056,ZPPAUP : 40,1971
+crpf - Pin maritime 10 à 40 ans,2074,ZPPAUP : 40,1971
 departement33 - ZPENS en Gironde,21,SCAN 50 : GIRONDE,889
 departement40 - ZPENS des Landes,22,SCAN 50 : LANDES,890
 telespazio - Masque Résineux Janvier 2015,31,CANTONS 2015,3270
 sidpc - Nouvelles communes infectées en 2015,33,CANTONS 2015,3270
-Vues aériennes 2012,37,MNT CUB 2012,4144
+null - Vues aériennes 2012,37,MNT CUB 2012,4144
 telespazio - Foyers de mortalité juin 2015,90,CANTONS 2015,3270
 bdtopo - Lieux de culte,92,LIEUX DE VOTE,2156
 sdis_tdf - Tour de France 2017 Etape 11 Ponctuel,102,TOUR DE GUET,11
 telespazio - Mortalités juin 2015 v0,118,CANTONS 2015,3270
-Fond cartographique / Orthophotographie,136,FOND GCIS 33,3775
+null - Fond cartographique / Orthophotographie,136,FOND GCIS 33,3775
 telespazio - Probabilité de mortalité juin 2015,146,CANTONS 2015,3270
 telespazio - Probabilité exhaustive juin 2015,160,CANTONS 2015,3270
 pompier - Groupement,178,GROUPEMENT TERRITORIAL SP,25
@@ -704,109 +698,119 @@ sidpc - Nouvelles communes infectées en 2015,283,CANTONS 2015,3270
 projets_infrastructures - Fuseaux d'études sept. 2012,298,MNT CUB 2012,4144
 pompier - Unités de traitement de l'eau (>90jours),332,TRAITEMENT DECHETS,4282
 pompier - Unités de traitement de l'eau (<=90jours),333,TRAITEMENT DECHETS,4282
-exercice_operationnel - Coupures d'électricité ex 12 2012,460,MNT CUB 2012,4144
-raster - Fond GIP,486,FOND GCIS 33,3775
-ars - Services de psychiatrie,514,SERVICES PUBLICS,1702
-ars - Services de médecine préventive,519,SERVICES PUBLICS,1702
-wms_externe - Fond GIP-IGN,538,FOND GCIS 33,3775
-pompier - Unités de traitement de l'eau (<=30jours),539,TRAITEMENT DECHETS,4282
-projets_infrastructures - Franchissements adaptés par RFF juillet 2012,566,MNT CUB 2012,4144
-sidpc - Communes dont l'infection a commencé avant 2015,587,CANTONS 2015,3270
-pompier - Annotations,602,TRAIT DE COTE : ANNOTATIONS GEOGRAPHIQUES,3250
-sidpc - Plans Communaux de Sauvegarde,607,PLANS URGENCE,123
-tigf - Station de compression (TIGF),650,STATION SECHAGE,1046
-pompier - Unités de traitement de l'eau (>30jours),659,TRAITEMENT DECHETS,4282
-rpg - Parcelles PAC 2012,684,MNT CUB 2012,4144
-ars - Services de médecine,819,SERVICES PUBLICS,1702
-ars - Services d'urgences,820,SERVICES PUBLICS,1702
-ars - Services de chirurgie,821,SERVICES PUBLICS,1702
-ars - Services de néonatalogie,829,SERVICES PUBLICS,1702
-ars - Services d'obstétrique,830,SERVICES PUBLICS,1702
-ars - Services de surveillance,833,SERVICES PUBLICS,1702
-pompier - Batiments localisés (SDIS 47),901,BD TOPO : BATIMENTS,16
-ars - Services de réanimation,904,SERVICES PUBLICS,1702
-projets_infrastructures - Tracés LGV juillet 2012,951,MNT CUB 2012,4144
-projets_infrastructures - Franchissements à vérifier juillet 2012,959,MNT CUB 2012,4144
-projets_infrastructures - Etiquettes retablissements adaptes rff juillet 2012,994,MNT CUB 2012,4144
-projets_infrastructures - Projet LGV GPSO au 10 12 2012,1011,MNT CUB 2012,4144
-projets_infrastructures - Projet LGV SEA au 01 02 2012,1048,MNT CUB 2012,4144
-sdis - Barriere police gendarme,1100,BARRIERE URBAINE,113
-importation - Result inteserct vegetation contours asa,1116,CONTOURS DES GAL,572
-indicateurs_conso_fonciere - Bâtiments et equipements brut,1315,EQUIPEMENTS SOCIAUX,150
-Vues aériennes 2012,1323,MNT CUB 2012,4144
-sidpc - Nouvelles communes infectées en 2015,1471,CANTONS 2015,3270
-telespazio - Foyers de mortalité septembre 2015,1526,CANTONS 2015,3270
-telespazio - Probabilité de mortalité septembre 2015,1548,CANTONS 2015,3270
-wms_externe - POINT ADRESSE®,1563,POINT ADRESSE,252
-pompier - Tours de guet,1750,TOUR DE GUET,11
-sdis - Point Entrée / Sortie aérien Mérignac (CTR),1768,POINT ADRESSE,252
-onf - Point de rencontre DGAEM,1782,POINT ADRESSE,252
-erp - Erp33 niv2 batiments panel,1791,BD TOPO : BATIMENTS,16
-ddpp - Elevages de petits ruminants,1845,ELEVAGES PORCINS,4310
-ddpp - Elevages équidés,1859,ELEVAGES PORCINS,4310
-ddpp - Elevages de porcs,1860,ELEVAGES PORCINS,4310
-sidpc - Plans obligatoires,1895,PLANS URGENCE,123
-wms_externe - WMS-Raster-Géoportail - SPOT 2015,1915,CANTONS 2015,3270
-pompier - Alimentation en eau,1973,BRANCHEMENTS RESEAU ALIMENTATION EAU INDUSTRIELLE,4043
-rpg - Parcelles PAC 2012,2037,MNT CUB 2012,4144
-sdis_tdf - Tour de France 2017 Etape 10,2051,TOUR DE GUET,11
-sdis_tdf - Tour de France 2017 Etape 11,2054,TOUR DE GUET,11
+exercice_operationnel - Coupures d'électricité ex 12 2012,459,MNT CUB 2012,4144
+raster - Fond GIP,485,FOND GCIS 33,3775
+ars - Services de psychiatrie,513,SERVICES PUBLICS,1702
+ars - Services de médecine préventive,518,SERVICES PUBLICS,1702
+wms_externe - Fond GIP-IGN,537,FOND GCIS 33,3775
+pompier - Unités de traitement de l'eau (<=30jours),538,TRAITEMENT DECHETS,4282
+projets_infrastructures - Franchissements adaptés par RFF juillet 2012,565,MNT CUB 2012,4144
+sidpc - Communes dont l'infection a commencé avant 2015,586,CANTONS 2015,3270
+null - Scan25 express,593,SCAN 250 EXPRESS,3782
+pompier - Annotations,601,TRAIT DE COTE : ANNOTATIONS GEOGRAPHIQUES,3250
+sidpc - Plans Communaux de Sauvegarde,606,PLANS URGENCE,123
+null - Prescriptions des Landes,634,SCAN 50 : LANDES,890
+tigf - Station de compression (TIGF),649,STATION SECHAGE,1046
+null - Fond SDIS24,655,FOND GCIS 33,3775
+pompier - Unités de traitement de l'eau (>30jours),658,TRAITEMENT DECHETS,4282
+rpg - Parcelles PAC 2012,683,MNT CUB 2012,4144
+ddpp - Elevages de porcs,1877,ELEVAGES PORCINS,4310
+null - Habillage des Landes,796,SCAN 50 : LANDES,890
+null - Informations des Landes,797,SCAN 50 : LANDES,890
+null - Zonages des Landes,799,SCAN 50 : LANDES,890
+ars - Services de médecine,818,SERVICES PUBLICS,1702
+ars - Services d'urgences,819,SERVICES PUBLICS,1702
+ars - Services de chirurgie,820,SERVICES PUBLICS,1702
+ars - Services de néonatalogie,828,SERVICES PUBLICS,1702
+ars - Services d'obstétrique,829,SERVICES PUBLICS,1702
+ars - Services de surveillance,832,SERVICES PUBLICS,1702
+pompier - Batiments localisés (SDIS 47),900,BD TOPO : BATIMENTS,16
+ars - Services de réanimation,903,SERVICES PUBLICS,1702
+projets_infrastructures - Tracés LGV juillet 2012,950,MNT CUB 2012,4144
+projets_infrastructures - Franchissements à vérifier juillet 2012,958,MNT CUB 2012,4144
+projets_infrastructures - Etiquettes retablissements adaptes rff juillet 2012,993,MNT CUB 2012,4144
+projets_infrastructures - Projet LGV GPSO au 10 12 2012,1010,MNT CUB 2012,4144
+projets_infrastructures - Projet LGV SEA au 01 02 2012,1047,MNT CUB 2012,4144
+sdis - Barriere police gendarme,1099,BARRIERE URBAINE,113
+importation - Result inteserct vegetation contours asa,1115,CONTOURS DES GAL,572
+indicateurs_conso_fonciere - Bâtiments et equipements brut,1314,EQUIPEMENTS SOCIAUX,150
+null - Vues aériennes 2012,1322,MNT CUB 2012,4144
+null - TRI - Hauteur eau - submertion marine moy,1392,EROSION MARINE,422
+sidpc - Nouvelles communes infectées en 2015,1470,CANTONS 2015,3270
+telespazio - Foyers de mortalité septembre 2015,1525,CANTONS 2015,3270
+null - Réserves naturelles régionales,1541,RESERVES NATURELLES REGIONALES,222
+telespazio - Probabilité de mortalité septembre 2015,1547,CANTONS 2015,3270
+wms_externe - POINT ADRESSE®,1562,POINT ADRESSE,252
+pompier - Tours de guet,1758,TOUR DE GUET,11
+sdis - Point Entrée / Sortie aérien Mérignac (CTR),1777,POINT ADRESSE,252
+onf - Point de rencontre DGAEM,1799,POINT ADRESSE,252
+erp - Erp33 niv2 batiments panel,1808,BD TOPO : BATIMENTS,16
+ddpp - Elevages de petits ruminants,1862,ELEVAGES PORCINS,4310
+ddpp - Elevages équidés,1876,ELEVAGES PORCINS,4310
+sidpc - Plans obligatoires,1912,PLANS URGENCE,123
+wms_externe - WMS-Raster-Géoportail - SPOT 2015,1932,CANTONS 2015,3270
+pompier - Alimentation en eau,1988,BRANCHEMENTS RESEAU ALIMENTATION EAU INDUSTRIELLE,4043
+rpg - Parcelles PAC 2012,2052,MNT CUB 2012,4144
+sdis_tdf - Tour de France 2017 Etape 10,2066,TOUR DE GUET,11
+sdis_tdf - Tour de France 2017 Etape 11,2069,TOUR DE GUET,11
 limites_admin - Communes Grande Région,35,COMMUNES CLASSEES,1593
 telespazio - Foyers de mortalités,101,FOYERS LUMINEUX,765
 public - Toponymes occitans,217,BATIMENT PUBLIC,1419
-Plan UEFA 2016,272,PLAN DE VILLE,951
-Plan général UEFA 2016,273,PLAN DE VILLE,951
+null - Plan UEFA 2016,272,PLAN DE VILLE,951
+null - Plan général UEFA 2016,273,PLAN DE VILLE,951
 telespazio - Foyers de mortalités 2010,385,FOYERS LUMINEUX,765
-Orthophoto Biarritz,484,ORTHOPHOTO 2001 DE LA CUB,4152
-Reserves biologiques,525,SRCE / TRAME BLEUE : RESERVOIRS BIOLOGIQUES (LEMA),2652
-collecte - Lieu-Dit,559,GESTION DECHETS : INSTALLATIONS DE COLLECTE ET DE TRAITEMENTS DES DECHETS,127
-patrimoine_culturel - Périmètre de protection modifié,661,FORET DE PROTECTION,154
-sentier_randonnee - Sentier bocage CCM,871,SENTIER LITTORAL,1148
-eau - Cours eau réservés,915,COURS D EAU A ENJEUX,270
-indicateurs_conso_fonciere - Communes analysées,1123,COMMUNES CLASSEES,1593
-carmen - Directive habitats,1185,RECUEILS HABITATS,2175
-Orthophoto Marmande,1200,ORTHOPHOTO 2001 DE LA CUB,4152
-carmen - Site classé,1327,SITE ECOBUAGE,323
-Plan général 1km UEFA 2016,1391,PLAN DE VILLE,951
-Plan STADE UEFA 2016,1425,PLAN DE VILLE,951
-Plan SECU UEFA 2016,1426,PLAN DE VILLE,951
-sidpc - Communes surveillées en 2016,1475,COMMUNES CLASSEES,1593
-wms_externe - WMS-Raster-Géoportail - Plan IGN,1579,PLAN DE VILLE,951
+null - Site classé,532,SITE ECOBUAGE,323
+collecte - Lieu-Dit,558,GESTION DECHETS : INSTALLATIONS DE COLLECTE ET DE TRAITEMENTS DES DECHETS,127
+patrimoine_culturel - Périmètre de protection modifié,660,FORET DE PROTECTION,154
+sentier_randonnee - Sentier bocage CCM,870,SENTIER LITTORAL,1148
+eau - Cours eau réservés,914,COURS D EAU A ENJEUX,270
+indicateurs_conso_fonciere - Communes analysées,1122,COMMUNES CLASSEES,1593
+null - PLAN IGN,1140,PLAN GESTIONNAIRE ROUTIER,108
+carmen - Directive habitats,1184,RECUEILS HABITATS,2175
+null - Sentiers littoraux,1220,PARKINGS LITTORAUX,89
+null - Limites des marées,1231,LIMITES COMMUNALES,4348
+null - DDTM40 - Zonages urbanisme,1285,DOCUMENT URBANISME,522
+carmen - Site classé,1326,SITE ECOBUAGE,323
+null - Plan général 1km UEFA 2016,1390,PLAN DE VILLE,951
+null - Plan STADE UEFA 2016,1424,PLAN DE VILLE,951
+null - Plan SECU UEFA 2016,1425,PLAN DE VILLE,951
+sidpc - Communes surveillées en 2016,1474,COMMUNES CLASSEES,1593
+wms_externe - WMS-Raster-Géoportail - Plan IGN,1578,PLAN DE VILLE,951
+admin_express - Communes,1696,COMMUNES CLASSEES,1593
 admin_express - Communes,1697,COMMUNES CLASSEES,1593
-admin_express - Communes,1698,COMMUNES CLASSEES,1593
-raster - Plan FOREXPO 2016,1711,PLAN DE VILLE,951
-raster - Plan Garorock 2016,1716,PLAN DE VILLE,951
+raster - Plan FOREXPO 2016,1710,PLAN DE VILLE,951
+dreal - Communes du DDRM exposées au FF,1746,COMMUNES CLASSEES,1593
+raster - Plan Garorock 2016,1715,PLAN DE VILLE,951
 raster - Plan Garorock 2016 v2,1730,PLAN DE VILLE,951
-mobile - Relevé DECI,1734,TELEPHONIE MOBILE,513
-Plan fête de la Madeleine 2017,1746,PLAN DE VILLE,951
-pompier - Centres de secours,1812,POSTE DE SECOURS,132
-ddpp - Abattage volailles,1857,VOLAILLES GASCOGNE,1582
-PIGMA zonages urbanisme - Lot-et-Garonne,2036,DOCUMENT URBANISME,522
-crpf - Pin maritime 0 à 5 ans,2058,INVENTAIRE DES IMPACTS DES AMENGEMENTS GAGNES SUR LE TERRITORIE MARITIME,202
+mobile - Relevé DECI,1735,TELEPHONIE MOBILE,513
+null - Plan fête de la Madeleine 2017,1751,PLAN DE VILLE,951
+pompier - Centres de secours,1829,POSTE DE SECOURS,132
+ddpp - Abattage volailles,1874,VOLAILLES GASCOGNE,1582
+null - PIGMA zonages urbanisme - Lot-et-Garonne,2051,DOCUMENT URBANISME,522
+crpf - Pin maritime 0 à 5 ans,2073,INVENTAIRE DES IMPACTS DES AMENGEMENTS GAGNES SUR LE TERRITORIE MARITIME,202
 ppi - PPI Blaye - buffer 20km,232,CHENAL DE BLAYE,3278
 ppi - PPI Blaye - buffer 10km,235,CHENAL DE BLAYE,3278
 ppi - PPI Blaye - buffer 2km,236,RESEAU AEP : PPI,2101
-formation - test sn buffer,471,ECOLES DE FORMATION,2688
-Parcs nationaux,521,PARCS ET JARDINS,1474
-Réserves naturelles de Corse,522,RESERVES NATURELLES REGIONALES,222
-rte - Supports (Pylones),590,SUPPORTS RESEAU TRANSPORT ELECTRIQUE AERIEN : NUMERO,3570
-formation - Nc tampon signalement,709,ECOLES DE FORMATION,2688
-formation - sn_signalementsignalements,711,ECOLES DE FORMATION,2688
-formation - formation mfv signalement buffer,731,ECOLES DE FORMATION,2688
-wms_externe - Stations hydrométrie - DREAL,850,STATIONS AGROMETEO,367
-bdtopo - Cours eau permanent,866,AXE COURS D'EAU PERMANENTS,1409
-reseau_routier - Portail autoroutier,922,PORTAIL AUTOROUTE,114
-ddtm47 - Etablissements de santé,945,ETABLISSEMENTS DE MEDECINE,3339
-wms_externe - Carte opérationnelle SDIS64 (maj 19/03/2014),964,CARTE COMMUNALE,1034
-bdtopo - Cours eau non permanent,1033,AXE COURS D'EAU PERMANENTS,1409
-indicateurs_conso_fonciere - Territoire Analyse 4,1142,TERRITOIRE DE CHASSE,376
-formation_temp - Formation Département ALPC,1351,ECOLES DE FORMATION,2688
-formation - Nc signal couche,1413,ECOLES DE FORMATION,2688
-cub - Bordeaux metropole parkings,1714,PARKINGS LITTORAUX,89
-ddpp - Centres de rassemblement,1833,CENTRES EQUESTRES,4312
-ddpp - Etablissements CPMM,1843,ETABLISSEMENTS DE REANIMATION,3335
-ddpp - Etablissements RPMM,1855,ETABLISSEMENTS DE REANIMATION,3335
-crpf - Pin maritime 5 à 10 ans,2039,INVENTAIRE DES IMPACTS DES AMENGEMENTS GAGNES SUR LE TERRITORIE MARITIME,202
+formation - test sn buffer,470,ECOLES DE FORMATION,2688
+rte - Supports (Pylones),589,SUPPORTS RESEAU TRANSPORT ELECTRIQUE AERIEN : NUMERO,3570
+formation - Nc tampon signalement,708,ECOLES DE FORMATION,2688
+formation - sn_signalementsignalements,710,ECOLES DE FORMATION,2688
+formation - formation mfv signalement buffer,730,ECOLES DE FORMATION,2688
+wms_externe - Stations hydrométrie - DREAL,849,STATIONS AGROMETEO,367
+bdtopo - Cours eau permanent,865,AXE COURS D'EAU PERMANENTS,1409
+reseau_routier - Portail autoroutier,921,PORTAIL AUTOROUTE,114
+ddtm47 - Etablissements de santé,944,ETABLISSEMENTS DE MEDECINE,3339
+wms_externe - Carte opérationnelle SDIS64 (maj 19/03/2014),963,CARTE COMMUNALE,1034
+bdtopo - Cours eau non permanent,1032,AXE COURS D'EAU PERMANENTS,1409
+indicateurs_conso_fonciere - Territoire Analyse 4,1141,TERRITOIRE DE CHASSE,376
+formation_temp - Formation Département ALPC,1350,ECOLES DE FORMATION,2688
+formation - Nc signal couche,1412,ECOLES DE FORMATION,2688
+cub - Bordeaux metropole parkings,1713,PARKINGS LITTORAUX,89
+cd33 - Carte scolaire,1738,CARTE LINEAMENTAIRE,28
+ddpp - Centres de rassemblement,1850,CENTRES EQUESTRES,4312
+ddpp - Etablissements CPMM,1860,ETABLISSEMENTS DE REANIMATION,3335
+ddpp - Etablissements RPMM,1872,ETABLISSEMENTS DE REANIMATION,3335
+crpf - Pin maritime 5 à 10 ans,2054,INVENTAIRE DES IMPACTS DES AMENGEMENTS GAGNES SUR LE TERRITORIE MARITIME,202
 gip_atgeri - Arrondissements,17,LIMITES DES ARRONDISSEMENTS DES DOM,1734
 crpf - Pin taeda production,32,INSTALLATIONS PRODUCTION ELEC - SOLAIRE PV,3369
 mobile - Relevés cartogip mobile,34,TELEPHONIE MOBILE,513
@@ -815,40 +819,37 @@ gip_atgeri - Arrondissements,155,LIMITES DES ARRONDISSEMENTS DES DOM,1734
 pompier - submersion Vézère 6m,223,SUBMERSION MARINE : ZONE,2166
 icpe - Icpe33 batiments panel,254,ICPE - INDUSTRIES,3593
 eau - Réservoirs biologiques,372,SRCE / TRAME BLEUE : RESERVOIRS BIOLOGIQUES (LEMA),2652
+null - PHOTO AERIENNE France,392,PHOTOGRAPHIE AERIENNE,321
 pompier - Bilan operationnel,400,DOSSIER URBANISME OPERATIONNEL,4094
 pompier - submersion Vézère 8m,421,SUBMERSION MARINE : ZONE,2166
-eau - BCAE Cours eau bandes enherbees,467,ETAT COURS D'EAU,1023
-limites_admin - Découpage administratif,741,BD TOPO : T. ADMINISTRATIF,1059
-pompier - submersion Vézère 3m,753,SUBMERSION MARINE : ZONE,2166
-pompier - submersion Vézère 5m,770,SUBMERSION MARINE : ZONE,2166
-pompier - submersion Vézère 7m,772,SUBMERSION MARINE : ZONE,2166
-pompier - submersion Vézère 9m,773,SUBMERSION MARINE : ZONE,2166
-Relevés recette-cartogip mobile,955,TELEPHONIE MOBILE,513
-eau - Sandre - Masses et cours eau,960,COURS D'EAU PRIVES,539
-collecte - Autre - surface,962,SURFACE PRIMEE PAC,603
-eau - Obstacles ecoulement cours eau,966,ETAT COURS D'EAU,1023
-crpf - CETEF Divers,1150,PLU : PERIMETRES DIVERS,1436
-pgsd - Dépôt existant,1308,RESEAU FERRE EXISTANT - NB DE VOIES (RGI),723
-pgsd - Implantation possible,1309,SAIP - IMPLANTATION SIRENES,3777
-pgsd - Implantation possible,1312,SAIP - IMPLANTATION SIRENES,3777
-pgsd - Dépôt existant,1317,RESEAU FERRE EXISTANT - NB DE VOIES (RGI),723
-dreal_tri - Scenario probabilite avec changement climatique,1450,FORAGE AVEC EAU,1635
-mobile - Relevés cartogip mobile,1521,TELEPHONIE MOBILE,513
-wms_externe - Administratif,1568,BD TOPO : T. ADMINISTRATIF,1059
-mobile - Suspicions mobiles,1587,TELEPHONIE MOBILE,513
-calcul_itineraire - Itineraires,1627,ITINERAIRES BOIS RONDS,104
-ars - Etablissements de santé (Décembre 2014),1629,ETABLISSEMENTS DE DIALYSE,3338
-ars - Etablissements médico-sociaux (Décembre 2014),1630,ETABLISSEMENTS DE DIALYSE,3338
-mobile - Relevés cartogip mobile,1733,TELEPHONIE MOBILE,513
-ppi - PPI - buffer 10km,1841,RESEAU AEP : PPI,2101
-ppi - Centrales nucleaires,1848,ETALAB : CENTRALES THERMIQUES ET RESEAUX DE CHALEUR CONSOMMATION TOTALE D'ENERGIE,3493
-ppi - PPI - buffer 20km,1849,RESEAU AEP : PPI,2101
-Photo aerienne 1985 lot3,2030,PHOTOGRAPHIE AERIENNE,321
-Photo aerienne 1985 lot5,2031,PHOTOGRAPHIE AERIENNE,321
-Photo aerienne 1985 lot1,2032,PHOTOGRAPHIE AERIENNE,321
-Photo aerienne 1985 lot2,2033,PHOTOGRAPHIE AERIENNE,321
-Photo aerienne 1985 lot4,2034,PHOTOGRAPHIE AERIENNE,321
-Photo aerienne 1985 lot6,2035,PHOTOGRAPHIE AERIENNE,321
+eau - BCAE Cours eau bandes enherbees,466,ETAT COURS D'EAU,1023
+null - Parcs nationaux,520,PARCS ET JARDINS,1474
+limites_admin - Découpage administratif,740,BD TOPO : T. ADMINISTRATIF,1059
+pompier - submersion Vézère 3m,752,SUBMERSION MARINE : ZONE,2166
+pompier - submersion Vézère 5m,769,SUBMERSION MARINE : ZONE,2166
+pompier - submersion Vézère 7m,771,SUBMERSION MARINE : ZONE,2166
+pompier - submersion Vézère 9m,772,SUBMERSION MARINE : ZONE,2166
+null - Relevés recette-cartogip mobile,954,TELEPHONIE MOBILE,513
+eau - Sandre - Masses et cours eau,959,COURS D'EAU PRIVES,539
+collecte - Autre - surface,961,SURFACE PRIMEE PAC,603
+eau - Obstacles ecoulement cours eau,965,ETAT COURS D'EAU,1023
+crpf - CETEF Divers,1149,PLU : PERIMETRES DIVERS,1436
+pgsd - Dépôt existant,1307,RESEAU FERRE EXISTANT - NB DE VOIES (RGI),723
+pgsd - Implantation possible,1308,SAIP - IMPLANTATION SIRENES,3777
+pgsd - Implantation possible,1311,SAIP - IMPLANTATION SIRENES,3777
+pgsd - Dépôt existant,1316,RESEAU FERRE EXISTANT - NB DE VOIES (RGI),723
+dreal_tri - Scenario probabilite avec changement climatique,1449,FORAGE AVEC EAU,1635
+mobile - Relevés cartogip mobile,1520,TELEPHONIE MOBILE,513
+wms_externe - Administratif,1567,BD TOPO : T. ADMINISTRATIF,1059
+mobile - Suspicions mobiles,1586,TELEPHONIE MOBILE,513
+calcul_itineraire - Itineraires,1626,ITINERAIRES BOIS RONDS,104
+ars - Etablissements de santé (Décembre 2014),1628,ETABLISSEMENTS DE DIALYSE,3338
+ars - Etablissements médico-sociaux (Décembre 2014),1629,ETABLISSEMENTS DE DIALYSE,3338
+mobile - Relevés cartogip mobile,1734,TELEPHONIE MOBILE,513
+foretdata_transbois - Itineraires,1789,ITINERAIRES BOIS RONDS,104
+ppi - PPI - buffer 10km,1858,RESEAU AEP : PPI,2101
+ppi - Centrales nucleaires,1865,ETALAB : CENTRALES THERMIQUES ET RESEAUX DE CHALEUR CONSOMMATION TOTALE D'ENERGIE,3493
+ppi - PPI - buffer 20km,1866,RESEAU AEP : PPI,2101
 limites_admin - Departements Grande Region,9,GRANDE ALLEE : TRACE,3551
 telespazio - S0 en couleur naturelle,10,BD ORTHO 5M COULEUR,3744
 telespazio - Z1 en fausse couleur,23,BD ORTHO 5M COULEUR,3744
@@ -866,242 +867,250 @@ telespazio - Z0 en couleur naturelle,150,BD ORTHO 5M COULEUR,3744
 telespazio - Z0 en fausse couleur,153,BD ORTHO 5M COULEUR,3744
 limites_admin - Arrondissements,171,LIMITES DES ARRONDISSEMENTS DES DOM,1734
 patrimoine_culturel - Acteurs culturels - geocodage auto,179,EQUIPEMENTS CULTURELS,144
-tigf - Canalisation du réseau de distribution du gaz (TIGF),436,CANALISATION EAU POTABLE,4473
-rte - Réseau lignes électrique (de 400kv à 63kv),589,LIGNES ELECTRIQUES,3664
-politiques_publiques - Protéger et valoriser l'atout environnemental de l'Aquitaine,721,L'AQUITAINE VUE DU CIEL,3851
-pompier - submersion Vézère 3.75m,758,SUBMERSION MARINE : ZONE,2166
-pompier - submersion Vézère 4.5m,762,SUBMERSION MARINE : ZONE,2166
-indicateurs_conso_fonciere - Zonages PLU/POS ou CC,1134,ZONAGES D'URBANISME,358
-bdtopo - Bati remarquable,1184,CARTO FAUNE REMARQUABLE - OLORON,3296
-pompier - Vue sdis24 submersion Vézère 4.5m,1238,SUBMERSION MARINE : ZONE,2166
-pompier - sdis24 submersion Vézère 5m,1239,SUBMERSION MARINE : ZONE,2166
-pompier - sdis24 submersion Vézère 6m,1240,SUBMERSION MARINE : ZONE,2166
-eau - BCAE global arrete,1297,ZONES D'ACTIVITES : PERIMETRE GLOBAL,960
-telespazio - Z0 en couleur naturelle,1346,BD ORTHO 5M COULEUR,3744
-limites_admin - Départements Grande Région,1505,GRANDE ALLEE : TRACE,3551
-telespazio - Z3 en couleur naturelle,1530,BD ORTHO 5M COULEUR,3744
-telespazio - Z2 en fausse couleur,1531,BD ORTHO 5M COULEUR,3744
-telespazio - Z2 en couleur naturelle,1547,BD ORTHO 5M COULEUR,3744
-telespazio - S2 en couleur naturelle,1554,BD ORTHO 5M COULEUR,3744
-telespazio - S2 en fausse couleur,1556,BD ORTHO 5M COULEUR,3744
-telespazio - S3 en couleur naturelle,1747,BD ORTHO 5M COULEUR,3744
-telespazio - S3 en fausse couleur,1748,BD ORTHO 5M COULEUR,3744
-telespazio - S3 sentinel en couleur naturelle,1866,BD ORTHO 5M COULEUR,3744
-telespazio - S4 sentinel en couleur naturelle,1867,BD ORTHO 5M COULEUR,3744
-telespazio - S4 en couleur naturelle,1868,BD ORTHO 5M COULEUR,3744
-telespazio - S4 en couleur naturelle,1869,BD ORTHO 5M COULEUR,3744
-telespazio - S4 en fausse couleur,1873,BD ORTHO 5M COULEUR,3744
+tigf - Canalisation du réseau de distribution du gaz (TIGF),435,CANALISATION EAU POTABLE,4473
+null - Orthophoto Biarritz,483,MSD : BIARRITZ - ENFANCE,3959
+null - Reserves biologiques,524,COURS D'EAU RESERVES,540
+rte - Réseau lignes électrique (de 400kv à 63kv),588,LIGNES ELECTRIQUES,3664
+politiques_publiques - Protéger et valoriser l'atout environnemental de l'Aquitaine,720,L'AQUITAINE VUE DU CIEL,3851
+pompier - submersion Vézère 3.75m,757,SUBMERSION MARINE : ZONE,2166
+pompier - submersion Vézère 4.5m,761,SUBMERSION MARINE : ZONE,2166
+indicateurs_conso_fonciere - Zonages PLU/POS ou CC,1133,ZONAGES D'URBANISME,358
+bdtopo - Bati remarquable,1183,CARTO FAUNE REMARQUABLE - OLORON,3296
+null - Mers et océans,1218,PAYS CŒUR ENTRE DEUX MERS,788
+pompier - Vue sdis24 submersion Vézère 4.5m,1237,SUBMERSION MARINE : ZONE,2166
+pompier - sdis24 submersion Vézère 5m,1238,SUBMERSION MARINE : ZONE,2166
+pompier - sdis24 submersion Vézère 6m,1239,SUBMERSION MARINE : ZONE,2166
+eau - BCAE global arrete,1296,ZONES D'ACTIVITES : PERIMETRE GLOBAL,960
+telespazio - Z0 en couleur naturelle,1345,BD ORTHO 5M COULEUR,3744
+limites_admin - Départements Grande Région,1504,GRANDE ALLEE : TRACE,3551
+telespazio - Z3 en couleur naturelle,1529,BD ORTHO 5M COULEUR,3744
+telespazio - Z2 en fausse couleur,1530,BD ORTHO 5M COULEUR,3744
+telespazio - Z2 en couleur naturelle,1546,BD ORTHO 5M COULEUR,3744
+telespazio - S2 en couleur naturelle,1553,BD ORTHO 5M COULEUR,3744
+telespazio - S2 en fausse couleur,1555,BD ORTHO 5M COULEUR,3744
+telespazio - S3 en couleur naturelle,1752,BD ORTHO 5M COULEUR,3744
+telespazio - S3 en fausse couleur,1753,BD ORTHO 5M COULEUR,3744
+telespazio - S3 sentinel en couleur naturelle,1883,BD ORTHO 5M COULEUR,3744
+telespazio - S4 sentinel en couleur naturelle,1884,BD ORTHO 5M COULEUR,3744
+telespazio - S4 en couleur naturelle,1885,BD ORTHO 5M COULEUR,3744
+telespazio - S4 en couleur naturelle,1886,BD ORTHO 5M COULEUR,3744
+telespazio - S4 en fausse couleur,1890,BD ORTHO 5M COULEUR,3744
 limites_admin - Iris,204,POP PAR IRIS 2008,2033
 pompier - DECI Archives,224,SERVICES ARCHIVES MUNICIPLES ET DEPARTEMENTALES AQUITAINE,551
-xynthia - Vols de reconnaissance,466,ZONES EN COURS DE RECONNAISSANCE,1670
-patrimoine_culturel - Secteur sauvegardé,480,SECTEUR URBANISTIQUE,562
-bdtopo - Réseau ferré,481,CARTE DE BRUIT STRATÉGIQUE LDEN RÉSEAU ROUTIER DE DAX,2541
-projets_infrastructures - Projet de murs,577,PROJET : PNR DU MEDOC,3883
-sentier_randonnee - PDIPR projet - itinéraire,581,PROJET : PNR DU MEDOC,3883
-eau - BCAE Global Arrêtés,818,ZONES D'ACTIVITES : PERIMETRE GLOBAL,960
-sentier_randonnee - PDIPR projet - départ,872,PROJET : PNR DU MEDOC,3883
-pompier - Historique DECI,897,POSHA (Plan d'Occupation des Sols Historique et Archéologique),403
-projets_infrastructures - Projet talus,969,PROJET : PNR DU MEDOC,3883
-projets_infrastructures - Projet de déviation 2x2voies,996,PROJET : PNR DU MEDOC,3883
-ddpp - Transporteurs équidés,1847,TRANSPORTEURS ANIMAUX VIVANTS,4316
-pompier - Action offensive,1975,PERIMETRE ACTION FONCIERE,4170
-pompier - Action defensive,1993,PERIMETRE ACTION FONCIERE,4170
-pompier - Action offensive,2008,PERIMETRE ACTION FONCIERE,4170
-pompier - Action defensive,2016,PERIMETRE ACTION FONCIERE,4170
+xynthia - Vols de reconnaissance,465,ZONES EN COURS DE RECONNAISSANCE,1670
+patrimoine_culturel - Secteur sauvegardé,479,SECTEUR URBANISTIQUE,562
+bdtopo - Réseau ferré,480,CARTE DE BRUIT STRATÉGIQUE LDEN RÉSEAU ROUTIER DE DAX,2541
+projets_infrastructures - Projet de murs,576,PROJET : PNR DU MEDOC,3883
+sentier_randonnee - PDIPR projet - itinéraire,580,PROJET : PNR DU MEDOC,3883
+eau - BCAE Global Arrêtés,817,ZONES D'ACTIVITES : PERIMETRE GLOBAL,960
+sentier_randonnee - PDIPR projet - départ,871,PROJET : PNR DU MEDOC,3883
+pompier - Historique DECI,896,POSHA (Plan d'Occupation des Sols Historique et Archéologique),403
+projets_infrastructures - Projet talus,968,PROJET : PNR DU MEDOC,3883
+projets_infrastructures - Projet de déviation 2x2voies,995,PROJET : PNR DU MEDOC,3883
+null - Orthophoto Marmande,1199,ORTHOPHOTO 2001 DE LA CUB,4152
+foretdata_transbois - Itineraire Saisie,1790,ITINERAIRE GRAND GIBIER,88
+ddpp - Transporteurs équidés,1864,TRANSPORTEURS ANIMAUX VIVANTS,4316
+pompier - Action offensive,1990,PERIMETRE ACTION FONCIERE,4170
+pompier - Action defensive,2008,PERIMETRE ACTION FONCIERE,4170
+pompier - Action offensive,2023,PERIMETRE ACTION FONCIERE,4170
+pompier - Action defensive,2031,PERIMETRE ACTION FONCIERE,4170
+null - Photo aerienne 1985 lot3,2045,PHOTOGRAPHIE AERIENNE,321
+null - Photo aerienne 1985 lot5,2046,PHOTOGRAPHIE AERIENNE,321
+null - Photo aerienne 1985 lot1,2047,PHOTOGRAPHIE AERIENNE,321
+null - Photo aerienne 1985 lot2,2048,PHOTOGRAPHIE AERIENNE,321
+null - Photo aerienne 1985 lot4,2049,PHOTOGRAPHIE AERIENNE,321
+null - Photo aerienne 1985 lot6,2050,PHOTOGRAPHIE AERIENNE,321
 collecte - Autre - lineaire,431,POINTS COLLECTE PROVISOIRE,4189
-ddtm47 - Installation classées,860,INSTALLATION EN AGRICULTURE,3756
-sdis - Déviation étape 20,1106,ORTHO 20 CM : 2001,1815
-sdis - Agent police gendarme,1107,AGENT PROVISOIRE PM,3569
-sdis - Jalon voie verte,1296,BOUCLE VERTE : BALISE,1410
-crpf - Compensation : parcelles intégrées dans un dossier,1565,PERIMETRE DOSSIER AOS,4171
-admin_express - Arrondissements,1701,LIMITES DES ARRONDISSEMENTS DES DOM,1734
-ddpp - Pensions de carnivores,1862,CARNIVORES DOMESTIQUES (REFUGES, PENSIONS, FOURRIERES),4313
-Ecorcage degat gibier,1896,ITINERAIRE GRAND GIBIER,88
-Pyramide France Raster,49,HYDROGRAPHIE PYRENEES - FRANCE,1567
+ddtm47 - Installation classées,859,INSTALLATION EN AGRICULTURE,3756
+sdis - Déviation étape 20,1105,ORTHO 20 CM : 2001,1815
+sdis - Agent police gendarme,1106,AGENT PROVISOIRE PM,3569
+sdis - Jalon voie verte,1295,BOUCLE VERTE : BALISE,1410
+crpf - Compensation : parcelles intégrées dans un dossier,1564,PERIMETRE DOSSIER AOS,4171
+admin_express - Arrondissements,1700,LIMITES DES ARRONDISSEMENTS DES DOM,1734
+ddpp - Pensions de carnivores,1879,CARNIVORES DOMESTIQUES (REFUGES, PENSIONS, FOURRIERES),4313
 pompier - Aléa inondation (ref crue 1952),162,MODELE INONDATION (MARGO),374
 bdtopo - Bati (BD Topo),183,ABORDS MH BATI (R500M),1018
-exercice_operationnel - Agen 10 m,510,THD OFFRE 10 MEGA,1548
-projets_infrastructures - Réseaux divers (Labels),603,PLU : PERIMETRES DIVERS,1436
-projets_infrastructures - Réseaux divers (Polygones),611,PLU : PERIMETRES DIVERS,1436
-pompier - Peuplements brulés,826,OCA : CARTES DES PEUPLEMENTS BENTHIQUES DU BASSIN D'ARCACHON EN 2002,2811
-projets_infrastructures - Réseaux divers,893,PLU : PERIMETRES DIVERS,1436
-Vues aériennes 1998-2002,1019,BD ORTHO 50CM 1998-2002 : AQUITAINE,1253
-Vues aériennes 2002-2004,1020,BD ORTHO 50CM 2002-2004 : AQUITAINE,1259
-Vues aériennes 2004-2008,1023,BD ORTHO 50CM 2004-2008 : AQUITAINE,1260
-collecte - Autre - ponctuel,1053,GESTION DECHETS : INSTALLATIONS DE COLLECTE ET DE TRAITEMENTS DES DECHETS,127
-indicateurs_conso_fonciere - 4) Disponibilité potentielle selon le droit des sols,1132,CARTE DES SOLS (33),758
-wms_externe - Aléa inondation - Couche de synthèse,1201,MODELE INONDATION (MARGO),374
-projets_infrastructures - Réseaux divers (Points),1283,PLU : PERIMETRES DIVERS,1436
-projets_infrastructures - Réseau divers (Labels),1284,PLU : PERIMETRES DIVERS,1436
-pompier - Action reconnaissance,1863,ZONES EN COURS DE RECONNAISSANCE,1670
-pompier - Action reconnaissance,2010,ZONES EN COURS DE RECONNAISSANCE,1670
-civb - Parcelles Confusion,2038,RPG - REGISTRE PARCELLAIRE GRAPHIQUE / PARCELLES AGRICOLES,322
-civb - Parcelles Confusion,2045,RPG - REGISTRE PARCELLAIRE GRAPHIQUE / PARCELLES AGRICOLES,322
+exercice_operationnel - Agen 10 m,509,THD OFFRE 10 MEGA,1548
+null - Réserves naturelles de Corse,521,PETITES REGIONS NATURELLES,82
+projets_infrastructures - Réseaux divers (Labels),602,PLU : PERIMETRES DIVERS,1436
+projets_infrastructures - Réseaux divers (Polygones),610,PLU : PERIMETRES DIVERS,1436
+pompier - Peuplements brulés,825,OCA : CARTES DES PEUPLEMENTS BENTHIQUES DU BASSIN D'ARCACHON EN 2002,2811
+projets_infrastructures - Réseaux divers,892,PLU : PERIMETRES DIVERS,1436
+collecte - Autre - ponctuel,1052,GESTION DECHETS : INSTALLATIONS DE COLLECTE ET DE TRAITEMENTS DES DECHETS,127
+indicateurs_conso_fonciere - 4) Disponibilité potentielle selon le droit des sols,1131,CARTE DES SOLS (33),758
+wms_externe - Aléa inondation - Couche de synthèse,1200,MODELE INONDATION (MARGO),374
+projets_infrastructures - Réseaux divers (Points),1282,PLU : PERIMETRES DIVERS,1436
+projets_infrastructures - Réseau divers (Labels),1283,PLU : PERIMETRES DIVERS,1436
+pompier - Action reconnaissance,1880,ZONES EN COURS DE RECONNAISSANCE,1670
+pompier - Action reconnaissance,2025,ZONES EN COURS DE RECONNAISSANCE,1670
+civb - Parcelles Confusion,2053,RPG - REGISTRE PARCELLAIRE GRAPHIQUE / PARCELLES AGRICOLES,322
+civb - Parcelles Confusion,2060,RPG - REGISTRE PARCELLAIRE GRAPHIQUE / PARCELLES AGRICOLES,322
 pompier - Alertes (point),186,CARTOGRAPHIE SIRENES ET ALERTES,4448
 xynthia - Estimées par le SDIS33,374,ZONES INONDEES SUITE TEMPETE XYNTHIA,668
-eau - DCE - Forte présomption crs eau,463,PLANTE RENOUEE DU JAPON : ZONE DE FORTE PRESENCE,3200
-dreal - Aléa Moyenne Probabilité,511,ARMOIRE MOYENNE TENSION,1289
-exercice_operationnel - Agen 8m50,679,OPEN DATA VILLE AGEN,4497
-eau - Caractérisation crs eau GIP,714,REFERENTIEL METIER GRANDE ECHELLE DU GIP,769
-exercice_operationnel - Agen 6m50,853,OPEN DATA VILLE AGEN,4497
-pompier - Alertes (ligne),903,CARTOGRAPHIE SIRENES ET ALERTES,4448
-exercice_operationnel - Agen 7m50,944,OPEN DATA VILLE AGEN,4497
-exercice_operationnel - Agen 9 m,971,OPEN DATA VILLE AGEN,4497
-exercice_operationnel - PCO Agen,1000,OPEN DATA VILLE AGEN,4497
-pgsd - PGSD - Ilots forestiers,1131,ENTREPRISES DE TRAVAUX FORESTIERS,18
-gendarmerie - Police Nationale,1329,ZONE COMPETENCE POLICE,4481
-pompier - Position des actions,1991,POSITION POTENTIELS DE RACCORDEMENTS DE TRANSPORT ELECTRIQUE,1916
-pompier - Position des actions,2015,POSITION POTENTIELS DE RACCORDEMENTS DE TRANSPORT ELECTRIQUE,1916
-Etab. Enfants handicapés,191,ETABLISSEMENTS POUR ENFANTS HANDICAPEES,1299
-bdtopo - Vegetation par classification,639,DEPART DE FEU DE VEGETATION,217
-pompier - Inondations (>30jrs),660,NOMBRE DE RECONNAISSANCES CAT NAT PAR COMMUNE AU TITRE DES INONDATIONS,4424
-dreal - Aléa Faible Proba,799,PLANTE RENOUEE DU JAPON : ZONE DE FAIBLE PRESENCE,3201
-sdis40 - Grid saisie deci sdis40,1392,OCA : MODELE POUR LA SAISIE D'UN CATALOGUE D'ATTRIBUTS,3010
-Bordeaux metropole traffic,1394,SISFRANCE - INTENSITE DES EPICENTRES EN METROPOLE,1611
-pompier - Inondations (>90jrs),1482,NOMBRE DE RECONNAISSANCES CAT NAT PAR COMMUNE AU TITRE DES INONDATIONS,4424
-Etab. Adultes handicapés,1825,ETABLISSEMENTS POUR ADULTES HANDICAPEES,2025
+eau - DCE - Forte présomption crs eau,462,PLANTE RENOUEE DU JAPON : ZONE DE FORTE PRESENCE,3200
+dreal - Aléa Moyenne Probabilité,510,ARMOIRE MOYENNE TENSION,1289
+exercice_operationnel - Agen 8m50,678,OPEN DATA VILLE AGEN,4497
+eau - Caractérisation crs eau GIP,713,REFERENTIEL METIER GRANDE ECHELLE DU GIP,769
+exercice_operationnel - Agen 6m50,852,OPEN DATA VILLE AGEN,4497
+pompier - Alertes (ligne),902,CARTOGRAPHIE SIRENES ET ALERTES,4448
+exercice_operationnel - Agen 7m50,943,OPEN DATA VILLE AGEN,4497
+exercice_operationnel - Agen 9 m,970,OPEN DATA VILLE AGEN,4497
+exercice_operationnel - PCO Agen,999,OPEN DATA VILLE AGEN,4497
+pgsd - PGSD - Ilots forestiers,1130,ENTREPRISES DE TRAVAUX FORESTIERS,18
+gendarmerie - Police Nationale,1328,ZONE COMPETENCE POLICE,4481
+null - Ecorcage degat gibier,1913,ITINERAIRE GRAND GIBIER,88
+pompier - Position des actions,2006,POSITION POTENTIELS DE RACCORDEMENTS DE TRANSPORT ELECTRIQUE,1916
+pompier - Position des actions,2030,POSITION POTENTIELS DE RACCORDEMENTS DE TRANSPORT ELECTRIQUE,1916
+null - Pyramide France Raster,49,HYDROGRAPHIE PYRENEES - FRANCE,1567
+bdtopo - Vegetation par classification,638,DEPART DE FEU DE VEGETATION,217
+pompier - Inondations (>30jrs),659,NOMBRE DE RECONNAISSANCES CAT NAT PAR COMMUNE AU TITRE DES INONDATIONS,4424
+dreal - Aléa Faible Proba,798,PLANTE RENOUEE DU JAPON : ZONE DE FAIBLE PRESENCE,3201
+sdis40 - Grid saisie deci sdis40,1391,OCA : MODELE POUR LA SAISIE D'UN CATALOGUE D'ATTRIBUTS,3010
+pompier - Inondations (>90jrs),1481,NOMBRE DE RECONNAISSANCES CAT NAT PAR COMMUNE AU TITRE DES INONDATIONS,4424
 etudes - Périmètres d études,107,DONNEES ETUDES SUR LA POLLUTION DE SITE,4093
 projets_infrastructures - Tracé LGV SEA 500m,306,BD ALTI AU PAS DE 500M,3732
 raster - Référentiels SDIS,395,SCHEMA D'AMENAGEMENT ET DE DEVELOPPEMENT DURABLE INTERCOMMUNAL : DONNEES RASTER,3009
-exercice_operationnel - Groupes électrogenes distribués,458,TRAVAUX MARITIMES GROUPES,2222
-pompier - Inondations (<=30jrs),605,NOMBRE DE RECONNAISSANCES CAT NAT PAR COMMUNE AU TITRE DES INONDATIONS,4424
-exercice_operationnel - Groupes électrogenes distribués,663,TRAVAUX MARITIMES GROUPES,2222
-exercice_operationnel - Groupes électrogenes distribués,676,TRAVAUX MARITIMES GROUPES,2222
-pompier - SDIS33 - Evènements plages,681,AMENAGEMENT PLANS PLAGES,379
-bdtopo - Bdtopo surfaces hydrographiques,805,BD CARTHAGE : ZONES HYDROGRAPHIQUES,1485
-bdtopo - Bati indifferencie,1180,ABORDS MH BATI (R500M),1018
-exercice_operationnel - Groupes électrogenes distribués,1274,TRAVAUX MARITIMES GROUPES,2222
-crpf - Extraction outil saisie crpf,1318,OCA : EXTRACTION DE LA BANQUE DE DONNEES DU SOUS-SOL - 28/08/2008,2855
-pompier - Inondations (<=90jrs),1480,NOMBRE DE RECONNAISSANCES CAT NAT PAR COMMUNE AU TITRE DES INONDATIONS,4424
-pompier - Ressource Déclivité,1977,ANALYSE PROSPECTIVE RESSOURCE FORESTIERE ET DISPO EN BOIS 2025,3346
-pompier - Ressource - Alimentation en eau,1983,BRANCHEMENTS RESEAU ALIMENTATION EAU INDUSTRIELLE,4043
-pompier - Ressource Déclivité,2025,ANALYSE PROSPECTIVE RESSOURCE FORESTIERE ET DISPO EN BOIS 2025,3346
-pompier - Ressource - Alimentation en eau,2027,BRANCHEMENTS RESEAU ALIMENTATION EAU INDUSTRIELLE,4043
+exercice_operationnel - Groupes électrogenes distribués,457,TRAVAUX MARITIMES GROUPES,2222
+pompier - Inondations (<=30jrs),604,NOMBRE DE RECONNAISSANCES CAT NAT PAR COMMUNE AU TITRE DES INONDATIONS,4424
+exercice_operationnel - Groupes électrogenes distribués,662,TRAVAUX MARITIMES GROUPES,2222
+exercice_operationnel - Groupes électrogenes distribués,675,TRAVAUX MARITIMES GROUPES,2222
+pompier - SDIS33 - Evènements plages,680,AMENAGEMENT PLANS PLAGES,379
+bdtopo - Bdtopo surfaces hydrographiques,804,BD CARTHAGE : ZONES HYDROGRAPHIQUES,1485
+bdtopo - Bati indifferencie,1179,ABORDS MH BATI (R500M),1018
+exercice_operationnel - Groupes électrogenes distribués,1273,TRAVAUX MARITIMES GROUPES,2222
+crpf - Extraction outil saisie crpf,1317,OCA : EXTRACTION DE LA BANQUE DE DONNEES DU SOUS-SOL - 28/08/2008,2855
+pompier - Inondations (<=90jrs),1479,NOMBRE DE RECONNAISSANCES CAT NAT PAR COMMUNE AU TITRE DES INONDATIONS,4424
+pompier - Ressource Déclivité,1992,ANALYSE PROSPECTIVE RESSOURCE FORESTIERE ET DISPO EN BOIS 2025,3346
+pompier - Ressource - Alimentation en eau,1998,BRANCHEMENTS RESEAU ALIMENTATION EAU INDUSTRIELLE,4043
+pompier - Ressource Déclivité,2040,ANALYSE PROSPECTIVE RESSOURCE FORESTIERE ET DISPO EN BOIS 2025,3346
+pompier - Ressource - Alimentation en eau,2042,BRANCHEMENTS RESEAU ALIMENTATION EAU INDUSTRIELLE,4043
 raster - BDorthoDCM 17 2010,14,RECENSEMENT AGRICOLE 2010,2223
-SCAN25 Topographique FRANCE,60,MUSEES DE FRANCE EN AQUITAINE,552
 ocs_bdcarto - marais salant,166,MARAIS ALIMENTES EN EAU DE MER (ATLAS MANAD ET MAS),1908
+null - Etab. Enfants handicapés,191,ETABLISSEMENTS POUR ENFANTS HANDICAPEES,1299
 xynthia - Observations du vol du 28/02/2010,271,NATURA 2000 : SITES OBSERVATIONS ORNITHOLOGIQUES,667
 pompier - Isodistance 200m,288,CARROYAGE POPULATION 200M,2057
 socio_economique - Taux de chômage des 15-24 ans,346,TX CHOMAGE 15-24 ANS / 15-24 ANS,2035
 socio_economique - Taux de chômage des 15-64 ans,347,TX CHOMAGE 15-64 ANS / 15-64 ANS,2037
-pompier - Buffer 200m REE,621,CARROYAGE POPULATION 200M,2057
-pompier - Buffer 400m REE,622,CARROYAGE ALPHANUMERIQUE 400M : DORDOGNE,843
-pompier - Alertes (surfacique),707,CARTOGRAPHIE SIRENES ET ALERTES,4448
-socio_economique - Taux de chômage des 55-64 ans,1039,TX CHOMAGE 55-64 ANS / 55-64 ANS,2040
-socio_economique - Taux de chômage des 25-54 ans,1046,TX CHOMAGE 25-54 ANS / 25-54 ANS,2038
-pompier - Crue référence 1952,1197,ZONES D EXPANSION DE CRUE,608
-indicateurs_conso_fonciere - Parcelles,1305,PARCELLES DES SITES ENS 2011,3996
-crpf - Compensation : parcelles à l'étude,1562,PARCELLES DES SITES ENS 2011,3996
-crpf - Compensation : parcelles validées par la DDT(M),1564,PARCELLES DES SITES ENS 2011,3996
-crpf - Outil de saisie - édition,1592,OCA : MODELE POUR LA SAISIE D'UN CATALOGUE D'ATTRIBUTS,3010
-wms_externe - Vue aérienne 2004-2008,1884,BD ORTHO 50CM 2004-2008 : AQUITAINE,1260
-pompier - Ressource - Cheminements,1976,PROJET DE CREATION DE RESSOURCE EN EAU,559
-pompier - Ressource - Cheminements,2024,PROJET DE CREATION DE RESSOURCE EN EAU,559
-civb - Parcelles confusion - Incertain (îlot viticole potentiel < 10ha),2046,PARCELLES DES SITES ENS 2011,3996
-civb - Parcelles confusion - Incertain (îlot viticole potentiel < 10ha),2047,PARCELLES DES SITES ENS 2011,3996
-civb - Parcelles volontaires confusion - Vision CIVB,2050,PARCELLES DES SITES ENS 2011,3996
-civb - Parcelles confusion saisies par le partenaire,2060,PARCELLES DES SITES ENS 2011,3996
+pompier - Buffer 200m REE,620,CARROYAGE POPULATION 200M,2057
+pompier - Buffer 400m REE,621,CARROYAGE ALPHANUMERIQUE 400M : DORDOGNE,843
+pompier - Alertes (surfacique),706,CARTOGRAPHIE SIRENES ET ALERTES,4448
+null - Etab. Adultes handicapés,1842,ETABLISSEMENTS POUR ADULTES HANDICAPEES,2025
+null - Vues aériennes 1998-2002,1018,BD ORTHO 50CM 1998-2002 : AQUITAINE,1253
+null - Vues aériennes 2002-2004,1019,BD ORTHO 50CM 2002-2004 : AQUITAINE,1259
+null - Vues aériennes 2004-2008,1022,BD ORTHO 50CM 2004-2008 : AQUITAINE,1260
+socio_economique - Taux de chômage des 55-64 ans,1038,TX CHOMAGE 55-64 ANS / 55-64 ANS,2040
+socio_economique - Taux de chômage des 25-54 ans,1045,TX CHOMAGE 25-54 ANS / 25-54 ANS,2038
+pompier - Crue référence 1952,1196,ZONES D EXPANSION DE CRUE,608
+indicateurs_conso_fonciere - Parcelles,1304,PARCELLES DES SITES ENS 2011,3996
+crpf - Compensation : parcelles à l'étude,1561,PARCELLES DES SITES ENS 2011,3996
+crpf - Compensation : parcelles validées par la DDT(M),1563,PARCELLES DES SITES ENS 2011,3996
+crpf - Outil de saisie - édition,1591,OCA : MODELE POUR LA SAISIE D'UN CATALOGUE D'ATTRIBUTS,3010
+wms_externe - Vue aérienne 2004-2008,1901,BD ORTHO 50CM 2004-2008 : AQUITAINE,1260
+pompier - Ressource - Cheminements,1991,PROJET DE CREATION DE RESSOURCE EN EAU,559
+pompier - Ressource - Cheminements,2039,PROJET DE CREATION DE RESSOURCE EN EAU,559
+civb - Parcelles confusion - Incertain (îlot viticole potentiel < 10ha),2061,PARCELLES DES SITES ENS 2011,3996
+civb - Parcelles confusion - Incertain (îlot viticole potentiel < 10ha),2062,PARCELLES DES SITES ENS 2011,3996
+civb - Parcelles volontaires confusion - Vision CIVB,2065,PARCELLES DES SITES ENS 2011,3996
+civb - Parcelles confusion saisies par le partenaire,2075,PARCELLES DES SITES ENS 2011,3996
 filiere_bois - Postit global,145,ZONES D'ACTIVITES : PERIMETRE GLOBAL,960
 exercice_operationnel - Tonneins 7m,187,EVALUATION QUALITE AIR : TONNEINS,970
-exercice_operationnel - Tonneins 10m,556,EVALUATION QUALITE AIR : TONNEINS,970
-indicateurs_conso_fonciere - 1) Historique de l'étalement urbain,1130,DROIT DE PREEMPTION URBAIN,233
-annotations_visionneuses - Anciens postit,1259,CENTRES ET QUARTIER ANCIENS,3286
-pompier - Isodistance 400m,1794,CARROYAGE ALPHANUMERIQUE 400M : DORDOGNE,843
+exercice_operationnel - Tonneins 10m,555,EVALUATION QUALITE AIR : TONNEINS,970
+indicateurs_conso_fonciere - 1) Historique de l'étalement urbain,1129,DROIT DE PREEMPTION URBAIN,233
+annotations_visionneuses - Anciens postit,1258,CENTRES ET QUARTIER ANCIENS,3286
+null - Bordeaux metropole traffic,1393,EVALUATION QUALITE AIR : BORDEAUX,994
+pompier - Isodistance 400m,1811,CARROYAGE ALPHANUMERIQUE 400M : DORDOGNE,843
 telespazio - Probabilité de mortalité 2010,11,RECENSEMENT AGRICOLE 2010,2223
+null - SCAN25 Topographique FRANCE,60,MUSEES DE FRANCE EN AQUITAINE,552
 patrimoine_culturel - Service d'archives,196,SCHEMA DE SERVICE POPULATION,1020
 politiques_publiques - ZUS,279,CARTES SITES -ZONAGES ZUS ET CUCS,3901
 pompier - Signalements : Surfaces,335,PLAN CHABLIS : PERIMETRES DES SURFACES AIDEES : NETTOYAGE, REBOISEMENT (2000-2006),2075
-exercice_operationnel - Tonneins 6 m,685,EVALUATION QUALITE AIR : TONNEINS,970
-politiques_publiques - Développer les TIC au service de la société de l'information,717,SCHEMA DE SERVICE POPULATION,1020
-exercice_operationnel - PCO Tonneins,949,EVALUATION QUALITE AIR : TONNEINS,970
-limites_admin - Masque département,1225,WEB_1-30_LES COMMUNAUTÉS DE COMMUNES (EPCI) DU DÉPARTEMENT DE LA DORDOGNE,2263
-dreal_tri - Aléa Forte Proba,1414,PLANTE RENOUEE DU JAPON : ZONE DE FORTE PRESENCE,3200
-dreal_tri - Aléa Forte Proba,1429,PLANTE RENOUEE DU JAPON : ZONE DE FORTE PRESENCE,3200
+exercice_operationnel - Tonneins 6 m,684,EVALUATION QUALITE AIR : TONNEINS,970
+politiques_publiques - Développer les TIC au service de la société de l'information,716,SCHEMA DE SERVICE POPULATION,1020
+exercice_operationnel - PCO Tonneins,948,EVALUATION QUALITE AIR : TONNEINS,970
+limites_admin - Masque département,1224,WEB_1-30_LES COMMUNAUTÉS DE COMMUNES (EPCI) DU DÉPARTEMENT DE LA DORDOGNE,2263
+dreal_tri - Aléa Forte Proba,1413,PLANTE RENOUEE DU JAPON : ZONE DE FORTE PRESENCE,3200
+dreal_tri - Aléa Forte Proba,1428,PLANTE RENOUEE DU JAPON : ZONE DE FORTE PRESENCE,3200
+dreal_tri - Aléa Moyen Proba,1429,TEMPS MOYEN D'ACCES AUX VOIES RAPIDES,1169
 dreal_tri - Aléa Moyen Proba,1430,TEMPS MOYEN D'ACCES AUX VOIES RAPIDES,1169
-dreal_tri - Aléa Moyen Proba,1431,TEMPS MOYEN D'ACCES AUX VOIES RAPIDES,1169
+wms_externe - Village du Marathon de Bordeaux,1493,CAMPAGNE DE MESURE : BORDEAUX BACALAN,996
+dreal_tri - Aléa Faible Proba,1450,PLANTE RENOUEE DU JAPON : ZONE DE FAIBLE PRESENCE,3201
 dreal_tri - Aléa Faible Proba,1451,PLANTE RENOUEE DU JAPON : ZONE DE FAIBLE PRESENCE,3201
-dreal_tri - Aléa Faible Proba,1452,PLANTE RENOUEE DU JAPON : ZONE DE FAIBLE PRESENCE,3201
-wms_externe - Village du Marathon de Bordeaux,1494,CAMPAGNE DE MESURE : BORDEAUX BACALAN,996
-wms_externe - Dreal-TRI-Proba crue Fort Débordement,1988,ZONES D EXPANSION DE CRUE,608
-wms_externe - Dreal-TRI-Proba crue Faible Débordement,1994,ZONES D EXPANSION DE CRUE,608
-pompier - Moyen de commandement,2000,TEMPS MOYEN D'ACCES AUX VOIES RAPIDES,1169
-wms_externe - Dreal-TRI-Proba crue Moy Débordement,2004,ZONES D EXPANSION DE CRUE,608
-Dreal-TRI-Proba crue Moy-Debord,2011,ZONES D EXPANSION DE CRUE,608
-Dreal-TRI-Proba crue Fort-Debord,2020,ZONES D EXPANSION DE CRUE,608
-Dreal-TRI-Proba crue faible-Debord,2022,ZONES D EXPANSION DE CRUE,608
-pompier - Moyen de commandement,2028,TEMPS MOYEN D'ACCES AUX VOIES RAPIDES,1169
+wms_externe - Dreal-TRI-Proba crue Fort Débordement,2003,ZONES D EXPANSION DE CRUE,608
+wms_externe - Dreal-TRI-Proba crue Faible Débordement,2009,ZONES D EXPANSION DE CRUE,608
+pompier - Moyen de commandement,2015,TEMPS MOYEN D'ACCES AUX VOIES RAPIDES,1169
+wms_externe - Dreal-TRI-Proba crue Moy Débordement,2019,ZONES D EXPANSION DE CRUE,608
+null - Dreal-TRI-Proba crue Moy-Debord,2026,ZONES D EXPANSION DE CRUE,608
+null - Dreal-TRI-Proba crue Fort-Debord,2035,ZONES D EXPANSION DE CRUE,608
+null - Dreal-TRI-Proba crue faible-Debord,2037,ZONES D EXPANSION DE CRUE,608
+pompier - Moyen de commandement,2043,TEMPS MOYEN D'ACCES AUX VOIES RAPIDES,1169
 patrimoine_culturel - Musée de France,174,HYDROGRAPHIE PYRENEES - FRANCE,1567
 pompier - Historique alertes (ligne),176,CARTOGRAPHIE SIRENES ET ALERTES,4448
-exercice_operationnel - Tonneins 8m50,702,EVALUATION QUALITE AIR : TONNEINS,970
-pompier - Historique alertes (point),870,CARTOGRAPHIE SIRENES ET ALERTES,4448
-exercice_operationnel - Marmande 11m,1112,VALIDATION SITE PROXIMITE AUTOMOBILE : MARMANDE,972
+exercice_operationnel - Tonneins 8m50,701,EVALUATION QUALITE AIR : TONNEINS,970
+pompier - Historique alertes (point),869,CARTOGRAPHIE SIRENES ET ALERTES,4448
+exercice_operationnel - Marmande 11m,1111,VALIDATION SITE PROXIMITE AUTOMOBILE : MARMANDE,972
 exercice_operationnel - Tonneins 10m50,51,EVALUATION QUALITE AIR : TONNEINS,970
-dreal - Aléa Forte Probabilité,512,DONNEES EN WMS : DREAL THEMATIQUE URBANISME,2240
-wms_externe - WMS-Raster-Géoportail - Section cadastrale,1752,PLAN CADASTRAL : FEUILLE CADASTRALE,1797
-wms_externe - WMS-Raster-Géoportail - Section cadastrale,1757,PLAN CADASTRAL : FEUILLE CADASTRALE,1797
+dreal - Aléa Forte Probabilité,511,DONNEES EN WMS : DREAL THEMATIQUE URBANISME,2240
+wms_externe - WMS-Raster-Géoportail - Section cadastrale,1760,PLAN CADASTRAL : FEUILLE CADASTRALE,1797
+wms_externe - WMS-Raster-Géoportail - Section cadastrale,1766,PLAN CADASTRAL : FEUILLE CADASTRALE,1797
 patrimoine_culturel - Archives saisie,219,ARCHIVES 2000 FICHIERS PDF OU ZIP,4451
-exercice_operationnel - Marmande 6 m,461,VALIDATION SITE PROXIMITE AUTOMOBILE : MARMANDE,972
-exercice_operationnel - Marmande 7 m,568,VALIDATION SITE PROXIMITE AUTOMOBILE : MARMANDE,972
-exercice_operationnel - Marmande 8 m,690,VALIDATION SITE PROXIMITE AUTOMOBILE : MARMANDE,972
-pompier - Historique alertes (surfacique),869,CARTOGRAPHIE SIRENES ET ALERTES,4448
-pompier - Saisie DECI validé par BRE,1247,OCA : MODELE POUR LA SAISIE D'UN CATALOGUE D'ATTRIBUTS,3010
-projets_infrastructures - Fermes solaires,540,RESEAUX DES FERMES DE REFERENCE,364
-projets_infrastructures - Hypothèse de tracé LGV GPSO,735,GPSO (FUSEAU RETENU DE 1000M),4486
-pompier - Sens de propagation 2017,1384,SENS DE FRANCHISSEMENT SECTEUR ESCARPE,567
-pompier - Sens de propagation 2017,1407,SENS DE FRANCHISSEMENT SECTEUR ESCARPE,567
-pompier - Sens de propagation 2017,1898,SENS DE FRANCHISSEMENT SECTEUR ESCARPE,567
-pompier - Signalement suite à intemperie,1962,ZONES INONDEES SUITE TEMPETE XYNTHIA,668
-pompier - Moyen infrastructure et logistique,1999,INFRASTRUCTURE DE TRANSPORT DE GAZ NATUREL (TIGF),853
-pompier - Moyen infrastructure et logistique,2023,INFRASTRUCTURE DE TRANSPORT DE GAZ NATUREL (TIGF),853
+exercice_operationnel - Marmande 6 m,460,VALIDATION SITE PROXIMITE AUTOMOBILE : MARMANDE,972
+exercice_operationnel - Marmande 7 m,567,VALIDATION SITE PROXIMITE AUTOMOBILE : MARMANDE,972
+exercice_operationnel - Marmande 8 m,689,VALIDATION SITE PROXIMITE AUTOMOBILE : MARMANDE,972
+pompier - Historique alertes (surfacique),868,CARTOGRAPHIE SIRENES ET ALERTES,4448
+pompier - Saisie DECI validé par BRE,1246,OCA : MODELE POUR LA SAISIE D'UN CATALOGUE D'ATTRIBUTS,3010
+projets_infrastructures - Fermes solaires,539,RESEAUX DES FERMES DE REFERENCE,364
+projets_infrastructures - Hypothèse de tracé LGV GPSO,734,GPSO (FUSEAU RETENU DE 1000M),4486
+pompier - Sens de propagation 2017,1383,SENS DE FRANCHISSEMENT SECTEUR ESCARPE,567
+pompier - Sens de propagation 2017,1406,SENS DE FRANCHISSEMENT SECTEUR ESCARPE,567
+pompier - Sens de propagation 2017,1915,SENS DE FRANCHISSEMENT SECTEUR ESCARPE,567
+pompier - Signalement suite à intemperie,1977,ZONES INONDEES SUITE TEMPETE XYNTHIA,668
+pompier - Moyen infrastructure et logistique,2014,INFRASTRUCTURE DE TRANSPORT DE GAZ NATUREL (TIGF),853
+pompier - Moyen infrastructure et logistique,2038,INFRASTRUCTURE DE TRANSPORT DE GAZ NATUREL (TIGF),853
 patrimoine_culturel - Musee saisie,218,OCA : MODELE POUR LA SAISIE D'UN CATALOGUE D'ATTRIBUTS,3010
 wms_externe - BRGM Géologie 1/1000000,362,CARTE GEOLOGIQUE DE FRANCE AU 1/1000000,1632
-pompier - Piste impraticable VLHR,632,FICHE TECHNIQUE DFCI EMPIERREMENT PISTE,3334
-exercice_operationnel - PCO Marmande,863,VALIDATION SITE PROXIMITE AUTOMOBILE : MARMANDE,972
-projets_infrastructures - LGV - Hypothèse retenue,1338,ETUDE AMENAGEMENT FONCIER LGV,1272
-TRI - Hauteur eau - submertion marine moy,1393,TRI - TERRITOIRES A RISQUE IMPORTANT INONDATION,3281
-Vues aériennes IGN (dernier millésime),62,EMPRISE D'UNE FEUILLE IGN 1/2000,1792
+pompier - Piste impraticable VLHR,631,FICHE TECHNIQUE DFCI EMPIERREMENT PISTE,3334
+exercice_operationnel - PCO Marmande,862,VALIDATION SITE PROXIMITE AUTOMOBILE : MARMANDE,972
+projets_infrastructures - LGV - Hypothèse retenue,1337,ETUDE AMENAGEMENT FONCIER LGV,1272
 patrimoine_culturel - Bibliotheque saisie,220,BIBLIOTHEQUE DEPARTEMENTALE DE PRÊT (BDP) : ZONAGE COMMUNES,1888
 crise_tempete - Saisie info JOAQUIM,361,OCA : MODELE POUR LA SAISIE D'UN CATALOGUE D'ATTRIBUTS,3010
 exercice_operationnel - Marmande 9m50,418,VALIDATION SITE PROXIMITE AUTOMOBILE : MARMANDE,972
-crpf - Pinaster : Conservation Pin-Feuillus,1985,NATURA 2000 : ZSC (HABITAT) ZONE SPÉCIALE DE CONSERVATION,221
-Aléa technologique - Couche de synthèse,42,OCA : COUCHE DE LOCALISATION DE FORAGES AU PAYS BASQUE - THESE,2864
+crpf - Pinaster : Conservation Pin-Feuillus,2000,NATURA 2000 : ZSC (HABITAT) ZONE SPÉCIALE DE CONSERVATION,221
 exercice_operationnel - Marmande 10m50,168,VALIDATION SITE PROXIMITE AUTOMOBILE : MARMANDE,972
-reseau_routier - Interruptions de terre-plein central,861,INTERRUPTION TERRE PLEIN CENTRAL AUTOROUTE,616
+reseau_routier - Interruptions de terre-plein central,860,INTERRUPTION TERRE PLEIN CENTRAL AUTOROUTE,616
 dreal - Enveloppes synthetiques (faible probabilité de crues),2,ENVELOPPES CONTRATS AGRICULTURE DURABLE,1197
 dreal - Enveloppes synthetiques (moyenne probabilité de crues),3,ENVELOPPES CONTRATS AGRICULTURE DURABLE,1197
 dreal - Enveloppes synthetiques (faible probabilité de crues),5,ENVELOPPES CONTRATS AGRICULTURE DURABLE,1197
-Pyramide SCANEXPRESS légende CLASSIQUE,48,ETALAB : PRODUCTION D'ELECTRICITE THERMIQUE CLASSIQUE,2717
+null - Vues aériennes IGN (dernier millésime),62,EMPRISE D'UNE FEUILLE IGN 1/2000,1792
 dreal - Enveloppes synthetiques (forte probabilité de crues),317,ENVELOPPES CONTRATS AGRICULTURE DURABLE,1197
-wms_externe - Vues aériennes IGN (dernier millésime),1355,EMPRISE D'UNE FEUILLE IGN 1/2000,1792
-wms_externe - Vues aériennes IGN (dernier millésime),1522,EMPRISE D'UNE FEUILLE IGN 1/2000,1792
-wms_externe - Vues aériennes IGN (dernier millésime),1580,EMPRISE D'UNE FEUILLE IGN 1/2000,1792
-calcul_itineraire - Saisie Itinéraire,1625,OCA : MODELE POUR LA SAISIE D'UN CATALOGUE D'ATTRIBUTS,3010
-annotations_visionneuses - Autres postIts,764,NOUVELLE-AQUITAINE : PNR ET AUTRES ESPACES PROTEGES,4392
-wms_externe - Aléa nucléaire - Couche de synthèse,1202,COUCHE ATTRIBUTAIRE COMPOSANTS THEME FINANCES,4079
-indicateurs_conso_fonciere - 2) Densité du tissu de bâtiments,1140,BD TOPO : T. ADMINISTRATIF (VERSION 2),3738
-telespazio - Mortalités détectées octobre 2016,1865,DOC : ORDRE OPERATIONS FEUX DE FORET 2016 : GIRONDE,3763
-telespazio - Mortalités détectées juin 2016,1756,DOC : ORDRE OPERATIONS FEUX DE FORET 2016 : GIRONDE,3763
-telespazio - Probabilité exhaustive octobre 2016,1872,DOC : ORDRE OPERATIONS FEUX DE FORET 2016 : GIRONDE,3763
-wms_externe - WMS-Raster-Géoportail - SPOT 2016,1932,DOC : ORDRE OPERATIONS FEUX DE FORET 2016 : GIRONDE,3763
-annotations_visionneuses - Saisie personnelle,683,OCA : MODELE POUR LA SAISIE D'UN CATALOGUE D'ATTRIBUTS,3010
-politiques_publiques - Relever le défi climatique et énergétique,719,EVALUATION IMPACTS CHGMENT CLIMATIQUE ET PROSPECTIVE,3561
-indicateurs_conso_fonciere - Unités foncières,1124,WEB_3_2_12_LES GRANDES UNITÉS NATURELLES DU PÉRIGORD- ETUDE C.A.U.E DORDOGNE,2290
-politiques_publiques - Saisie programmes Feder,940,OCA : MODELE POUR LA SAISIE D'UN CATALOGUE D'ATTRIBUTS,3010
-wms_externe - Dreal-TRI-Hauteur eau Aléa Forte Proba-Subm,1992,PLANTE RENOUEE DU JAPON : ZONE DE FORTE PRESENCE,3200
-wms_externe - Dreal-TRI-Hauteur eau Aléa Faible Proba-Subm,1995,PLANTE RENOUEE DU JAPON : ZONE DE FAIBLE PRESENCE,3201
-projets_infrastructures - PPEANP Pessac Mérignac,862,ETUDE PROTECTION ESPACES AGRICOLES NATURELS PERIURBAINS SUR PESSAC ET MERIGNAC,1326
-wms_externe - inondations/Remontées de nappe sédimentaires,698,ETUDE : INFLUENCE DU DRAINAGE SUR LA NAPPE DU PILO-QUATERNAIRE,4290
-politiques_publiques - Développer les recherches finalisées et valoriser les résultats,715,LES ACTIVITES DE RECHERCHES ET DEVELOPPEMENT DANS LE MONDE,3407
-Znieff1,520,ZNIEFF 1,80
-Znieff1 mer,526,ZNIEFF 1,80
-Znieff2 mer,527,ZNIEFF 2,81
-Znieff2,838,ZNIEFF 2,81
+wms_externe - Vues aériennes IGN (dernier millésime),1354,EMPRISE D'UNE FEUILLE IGN 1/2000,1792
+wms_externe - Vues aériennes IGN (dernier millésime),1521,EMPRISE D'UNE FEUILLE IGN 1/2000,1792
+wms_externe - Vues aériennes IGN (dernier millésime),1579,EMPRISE D'UNE FEUILLE IGN 1/2000,1792
+calcul_itineraire - Saisie Itinéraire,1624,OCA : MODELE POUR LA SAISIE D'UN CATALOGUE D'ATTRIBUTS,3010
+null - Aléa technologique - Couche de synthèse,42,COUCHE ATTRIBUTAIRE COMPOSANTS THEME FINANCES,4079
+annotations_visionneuses - Autres postIts,763,NOUVELLE-AQUITAINE : PNR ET AUTRES ESPACES PROTEGES,4392
+wms_externe - Aléa nucléaire - Couche de synthèse,1201,COUCHE ATTRIBUTAIRE COMPOSANTS THEME FINANCES,4079
+null - Pyramide SCANEXPRESS légende CLASSIQUE,48,ETALAB : PRODUCTION D'ELECTRICITE THERMIQUE CLASSIQUE,2717
+indicateurs_conso_fonciere - 2) Densité du tissu de bâtiments,1139,BD TOPO : T. ADMINISTRATIF (VERSION 2),3738
+telespazio - Mortalités détectées octobre 2016,1882,DOC : ORDRE OPERATIONS FEUX DE FORET 2016 : GIRONDE,3763
+telespazio - Mortalités détectées juin 2016,1765,DOC : ORDRE OPERATIONS FEUX DE FORET 2016 : GIRONDE,3763
+telespazio - Probabilité exhaustive octobre 2016,1889,DOC : ORDRE OPERATIONS FEUX DE FORET 2016 : GIRONDE,3763
+wms_externe - WMS-Raster-Géoportail - SPOT 2016,1949,DOC : ORDRE OPERATIONS FEUX DE FORET 2016 : GIRONDE,3763
+annotations_visionneuses - Saisie personnelle,682,OCA : MODELE POUR LA SAISIE D'UN CATALOGUE D'ATTRIBUTS,3010
+politiques_publiques - Relever le défi climatique et énergétique,718,EVALUATION IMPACTS CHGMENT CLIMATIQUE ET PROSPECTIVE,3561
+indicateurs_conso_fonciere - Unités foncières,1123,WEB_3_2_12_LES GRANDES UNITÉS NATURELLES DU PÉRIGORD- ETUDE C.A.U.E DORDOGNE,2290
+politiques_publiques - Saisie programmes Feder,939,OCA : MODELE POUR LA SAISIE D'UN CATALOGUE D'ATTRIBUTS,3010
+wms_externe - Dreal-TRI-Hauteur eau Aléa Forte Proba-Subm,2007,PLANTE RENOUEE DU JAPON : ZONE DE FORTE PRESENCE,3200
+wms_externe - Dreal-TRI-Hauteur eau Aléa Faible Proba-Subm,2010,PLANTE RENOUEE DU JAPON : ZONE DE FAIBLE PRESENCE,3201
+projets_infrastructures - PPEANP Pessac Mérignac,861,ETUDE PROTECTION ESPACES AGRICOLES NATURELS PERIURBAINS SUR PESSAC ET MERIGNAC,1326
+wms_externe - inondations/Remontées de nappe sédimentaires,697,ETUDE : INFLUENCE DU DRAINAGE SUR LA NAPPE DU PILO-QUATERNAIRE,4290
+politiques_publiques - Développer les recherches finalisées et valoriser les résultats,714,LES ACTIVITES DE RECHERCHES ET DEVELOPPEMENT DANS LE MONDE,3407
 telespazio - Z0-Z1 mortalités,13,PAYS DU GRAND BERGERACOIS,808
+null - null,18,SEUIL,43
 wms_externe - OSM style Google,20,PAYS DU GRAND BERGERACOIS,808
 telespazio - Z0-Z1 mortalités,26,PAYS DU GRAND BERGERACOIS,808
-Pyramide SCANEXPRESS légende STANDARD,47,PAYS DU GRAND BERGERACOIS,808
+null - Pyramide SCANEXPRESS légende STANDARD,47,PAYS DU GRAND BERGERACOIS,808
 sdis40 - DECI,56,PAYS DU GRAND BERGERACOIS,808
-BDParcellaire en L93,63,PAYS DU GRAND BERGERACOIS,808
+null - BDParcellaire en L93,63,PAYS DU GRAND BERGERACOIS,808
 pompier - Evénements Sdis,114,PAYS DU GRAND BERGERACOIS,808
 annotations_visionneuses - Post-it,163,PAYS DU GRAND BERGERACOIS,808
 patrimoine_culturel - Bibliothèque,172,PAYS DU GRAND BERGERACOIS,808
@@ -1117,7 +1126,7 @@ limites_admin - Départements,208,PAYS DU GRAND BERGERACOIS,808
 limites_admin - Régions,209,PAYS DU GRAND BERGERACOIS,808
 pompier - DECI,230,PAYS DU GRAND BERGERACOIS,808
 erp - Erp33 niv1 panel,239,PAYS DU GRAND BERGERACOIS,808
-02-03 Mars - Ile de Ré,257,PAYS DU GRAND BERGERACOIS,808
+null - 02-03 Mars - Ile de Ré,257,PAYS DU GRAND BERGERACOIS,808
 politiques_publiques - ZFU,274,PAYS DU GRAND BERGERACOIS,808
 erp - ERP (localisation automatique),285,PAYS DU GRAND BERGERACOIS,808
 erp - Bâtiments ERP (localisation manuelle),286,PAYS DU GRAND BERGERACOIS,808
@@ -1126,8 +1135,8 @@ bdtopo - Aérogare,315,PAYS DU GRAND BERGERACOIS,808
 pompier - Signalements complets,322,PAYS DU GRAND BERGERACOIS,808
 pompier - Interventions pompiers (<=90jrs),331,PAYS DU GRAND BERGERACOIS,808
 pompier - Signalements Inter-Services (SUPPRIMER),334,PAYS DU GRAND BERGERACOIS,808
-07 Mars - Noirmoutier,360,PAYS DU GRAND BERGERACOIS,808
-Reserves_de_la_biosphere,364,PAYS DU GRAND BERGERACOIS,808
+null - 07 Mars - Noirmoutier,360,PAYS DU GRAND BERGERACOIS,808
+null - Reserves_de_la_biosphere,364,PAYS DU GRAND BERGERACOIS,808
 pompier - SDIS47 - Signalements (>30 jours - Archives),371,PAYS DU GRAND BERGERACOIS,808
 wms_externe - Aquimap_2154,384,PAYS DU GRAND BERGERACOIS,808
 pompier - Interventions pompiers (>90jrs),393,PAYS DU GRAND BERGERACOIS,808
@@ -1140,114 +1149,122 @@ bdtopo - Départementales,412,PAYS DU GRAND BERGERACOIS,808
 bdtopo - Gares,415,PAYS DU GRAND BERGERACOIS,808
 pompier - Interventions pompiers (<=30jrs),417,PAYS DU GRAND BERGERACOIS,808
 projets_infrastructures - Fuseau A65,419,PAYS DU GRAND BERGERACOIS,808
-05 Mars - Oléron-La Seudre/Charron,427,PAYS DU GRAND BERGERACOIS,808
-exercice_operationnel - Coupures électriques,456,PAYS DU GRAND BERGERACOIS,808
-pompier - Evénements (>=30jours),515,PAYS DU GRAND BERGERACOIS,808
-pompier - Signalements (>30 jours),516,PAYS DU GRAND BERGERACOIS,808
-02-04 Mars - Aiguillon/Rochefort,532,PAYS DU GRAND BERGERACOIS,808
-pompier - Numéro REE,537,PAYS DU GRAND BERGERACOIS,808
-02-06 Mars - Charron,554,PAYS DU GRAND BERGERACOIS,808
-reseau_telecom - TELECOM CCMACS,575,PAYS DU GRAND BERGERACOIS,808
-Scan250nb,582,SCAN 50,260
-filiere_bois - Postit,608,PAYS DU GRAND BERGERACOIS,808
-projets_infrastructures - TIGF GIRLAND relevé besoins 18/09/2011,618,PAYS DU GRAND BERGERACOIS,808
-pompier - Buffer utilisateur DECI,619,PAYS DU GRAND BERGERACOIS,808
-pompier - SDIS47 - Signalements (<=30jours),623,PAYS DU GRAND BERGERACOIS,808
-ocs_bdcarto - carrière ou décharge,653,PAYS DU GRAND BERGERACOIS,808
-pompier - Interventions pompiers (>30jrs),658,PAYS DU GRAND BERGERACOIS,808
-exercice_operationnel - Coupures électriques,664,PAYS DU GRAND BERGERACOIS,808
-pompier - Colonnes sèches,666,PAYS DU GRAND BERGERACOIS,808
-ocs_bdcarto - broussaille,672,PAYS DU GRAND BERGERACOIS,808
-pompier - Saisies,687,PAYS DU GRAND BERGERACOIS,808
-bdtopo - Départements,728,PAYS DU GRAND BERGERACOIS,808
-ocs_bdcarto - forêt,738,PAYS DU GRAND BERGERACOIS,808
-reseau_telecom - Noeud,771,PAYS DU GRAND BERGERACOIS,808
-novaqt - Santé,780,PAYS DU GRAND BERGERACOIS,808
-novaqt - Savoirs,781,PAYS DU GRAND BERGERACOIS,808
-pompier - Signalements (>30 jours),825,PAYS DU GRAND BERGERACOIS,808
-pompier - DECI,848,PAYS DU GRAND BERGERACOIS,808
-reseau_routier - Péages,864,PAYS DU GRAND BERGERACOIS,808
-wms_externe - BRGM Géologie 1/50.000,880,PAYS DU GRAND BERGERACOIS,808
-02 Mars - Anse de l'Aiguillon,894,PAYS DU GRAND BERGERACOIS,808
-pompier - Puisards,923,PAYS DU GRAND BERGERACOIS,808
-pompier - Réservoirs,925,PAYS DU GRAND BERGERACOIS,808
-pompier - Signalements (<=30 jours),941,PAYS DU GRAND BERGERACOIS,808
-eau - Postit,954,PAYS DU GRAND BERGERACOIS,808
-pompier - Signalements (<=30jours),965,PAYS DU GRAND BERGERACOIS,808
-pompier - Demandes REE,974,PAYS DU GRAND BERGERACOIS,808
-projets_infrastructures - Rétablissement des fossés,975,PAYS DU GRAND BERGERACOIS,808
-sdis - Accès CH,1102,PAYS DU GRAND BERGERACOIS,808
-sdis - Cisaillement,1104,PAYS DU GRAND BERGERACOIS,808
-sdis - Déviation étape 19,1105,PAYS DU GRAND BERGERACOIS,808
-indicateurs_conso_fonciere - Bâtiments et équipements,1126,PAYS DU GRAND BERGERACOIS,808
-crpf - CETEF Eclaircie,1151,PAYS DU GRAND BERGERACOIS,808
-crpf - CETEF Régénération,1152,PAYS DU GRAND BERGERACOIS,808
-crpf - Movapro,1153,PAYS DU GRAND BERGERACOIS,808
-crpf - PDM,1154,PAYS DU GRAND BERGERACOIS,808
-sentier_randonnee - Randonnée,1175,PAYS DU GRAND BERGERACOIS,808
-pompier - Quadrigramme,1181,PAYS DU GRAND BERGERACOIS,808
-ocs_bdcarto - marais/tourbière,1182,PAYS DU GRAND BERGERACOIS,808
-reseau_telecom - Artères,1192,PAYS DU GRAND BERGERACOIS,808
-wms_externe - Fond_GIP_IGN,1241,PAYS DU GRAND BERGERACOIS,808
-bdtopo - Autoroutes,1249,PAYS DU GRAND BERGERACOIS,808
-wms_externe - Test gwc,1253,PAYS DU GRAND BERGERACOIS,808
-Commune_Loi_Montagne,1257,PAYS DU GRAND BERGERACOIS,808
-pgsd - Dépôt déconseillé,1304,PAYS DU GRAND BERGERACOIS,808
-pgsd - Dépôt déconseillé,1313,PAYS DU GRAND BERGERACOIS,808
-sdis40_web_et_Fond_GIP,1324,PAYS DU GRAND BERGERACOIS,808
-sdis - Prises eau,1342,PAYS DU GRAND BERGERACOIS,808
-crpf - Sylvafaune,1416,PAYS DU GRAND BERGERACOIS,808
-telespazio - Z3 mortalités,1420,PAYS DU GRAND BERGERACOIS,808
-Référentiel SDIS47 (04/2017),1424,PAYS DU GRAND BERGERACOIS,808
-pompier - SDIS24 - Signalements (>90 jours - Archives),1447,PAYS DU GRAND BERGERACOIS,808
-Référentiel SDIS40 (10/05/2017),1454,PAYS DU GRAND BERGERACOIS,808
-telespazio - Probabilité de mortalité septembre2015,1498,PAYS DU GRAND BERGERACOIS,808
-gendarmerie - Gendarmerie,1523,PAYS DU GRAND BERGERACOIS,808
-telespazio - Z2 mortalités,1525,PAYS DU GRAND BERGERACOIS,808
-pompier - DECI Archive,1529,PAYS DU GRAND BERGERACOIS,808
-cub - Arrêts,1552,PAYS DU GRAND BERGERACOIS,808
-annuaire - Annuaire GC,1557,PAYS DU GRAND BERGERACOIS,808
-wms_externe - Végétation,1560,PAYS DU GRAND BERGERACOIS,808
-wms_externe - Bâtiments,1561,PAYS DU GRAND BERGERACOIS,808
-crpf - Non renseigné,1582,PAYS DU GRAND BERGERACOIS,808
-rff - Gares,1597,PHARE,47
-erp - Erp - Bâtiments,1616,PAYS DU GRAND BERGERACOIS,808
-rff - Traversées pietonnes,1624,PAYS DU GRAND BERGERACOIS,808
-Référentiel SDIS33 (maj 02/05/2017),1634,PAYS DU GRAND BERGERACOIS,808
-CarteGCIS33 euro (maj 02/06/2016),1635,PAYS DU GRAND BERGERACOIS,808
-admin_express - Départements,1703,PAYS DU GRAND BERGERACOIS,808
-admin_express - Régions,1708,PAYS DU GRAND BERGERACOIS,808
-admin_express - Départements,1710,PAYS DU GRAND BERGERACOIS,808
-wms_externe - SCAN25 Topographique,1742,PAYS DU GRAND BERGERACOIS,808
-onf - Chenaies SIVU,1751,PAYS DU GRAND BERGERACOIS,808
-onf - DGAEM,1754,DIGUES,44
-erp - Bâtiments ERP (localisation manuelle),1790,PAYS DU GRAND BERGERACOIS,808
-pompier - Isodistance 420m,1793,PAYS DU GRAND BERGERACOIS,808
-pompier - Isodistance 210m,1795,PAYS DU GRAND BERGERACOIS,808
-bdtopo - Préfectures,1824,PAYS DU GRAND BERGERACOIS,808
-crpf - Placette ICE,1830,PAYS DU GRAND BERGERACOIS,808
-ddpp - Hypermarchés,1832,PAYS DU GRAND BERGERACOIS,808
-ddpp - Supermarchés,1836,PAYS DU GRAND BERGERACOIS,808
-ddpp - Vétérinaires,1850,PAYS DU GRAND BERGERACOIS,808
-sidpc - Stations-services,1870,PAYS DU GRAND BERGERACOIS,808
-sidpc - APMS,1875,PAYS DU GRAND BERGERACOIS,808
-erp - erp47_erpautres_batlocl93,1883,PAYS DU GRAND BERGERACOIS,808
-sidpc - APDI/APMS saisies,1887,PAYS DU GRAND BERGERACOIS,808
-sidpc - APDI,1888,PAYS DU GRAND BERGERACOIS,808
-admin_express - Régions,1905,PAYS DU GRAND BERGERACOIS,808
-pompier - ETARE (SDIS 47),1940,PAYS DU GRAND BERGERACOIS,808
-pompier - Elevation,1967,PAYS DU GRAND BERGERACOIS,808
-pompier - Configuration de la ZI,1970,PAYS DU GRAND BERGERACOIS,808
-tmp - test_sn_ligne,1980,PAYS DU GRAND BERGERACOIS,808
-pompier - Sinistre,1982,PAYS DU GRAND BERGERACOIS,808
-pompier - Annotation,1989,PAYS DU GRAND BERGERACOIS,808
-pompier - Sectorisation géographique,1990,PAYS DU GRAND BERGERACOIS,808
-pompier - Sectorisation fonctionnelle,2003,PAYS DU GRAND BERGERACOIS,808
-wms_externe - Dreal-TRI-Hauteur eau Aléa Moy Proba-Subm,2005,PAYS DU GRAND BERGERACOIS,808
-pompier - Configuration de la ZI,2006,PAYS DU GRAND BERGERACOIS,808
-pompier - Elevation,2007,PAYS DU GRAND BERGERACOIS,808
-pompier - Annotation,2012,PAYS DU GRAND BERGERACOIS,808
-pompier - Sectorisation géographique,2014,PAYS DU GRAND BERGERACOIS,808
-pompier - Sectorisation fonctionnelle,2019,PAYS DU GRAND BERGERACOIS,808
-pompier - Sinistre,2026,PAYS DU GRAND BERGERACOIS,808
-civb - Partage Confusion,2048,PAYS DU GRAND BERGERACOIS,808
+null - 05 Mars - Oléron-La Seudre/Charron,427,PAYS DU GRAND BERGERACOIS,808
+exercice_operationnel - Coupures électriques,455,PAYS DU GRAND BERGERACOIS,808
+pompier - Evénements (>=30jours),514,PAYS DU GRAND BERGERACOIS,808
+pompier - Signalements (>30 jours),515,PAYS DU GRAND BERGERACOIS,808
+null - Znieff1,519,PAYS DU GRAND BERGERACOIS,808
+null - Znieff1 mer,525,PAYS DU GRAND BERGERACOIS,808
+null - Znieff2 mer,526,PAYS DU GRAND BERGERACOIS,808
+null - 02-04 Mars - Aiguillon/Rochefort,531,PAYS DU GRAND BERGERACOIS,808
+pompier - Numéro REE,536,PAYS DU GRAND BERGERACOIS,808
+null - 02-06 Mars - Charron,553,PAYS DU GRAND BERGERACOIS,808
+reseau_telecom - TELECOM CCMACS,574,PAYS DU GRAND BERGERACOIS,808
+null - Scan250nb,581,PAYS DU GRAND BERGERACOIS,808
+filiere_bois - Postit,607,PAYS DU GRAND BERGERACOIS,808
+projets_infrastructures - TIGF GIRLAND relevé besoins 18/09/2011,617,PAYS DU GRAND BERGERACOIS,808
+pompier - Buffer utilisateur DECI,618,PAYS DU GRAND BERGERACOIS,808
+pompier - SDIS47 - Signalements (<=30jours),622,PAYS DU GRAND BERGERACOIS,808
+ocs_bdcarto - carrière ou décharge,652,PAYS DU GRAND BERGERACOIS,808
+pompier - Interventions pompiers (>30jrs),657,PAYS DU GRAND BERGERACOIS,808
+exercice_operationnel - Coupures électriques,663,PAYS DU GRAND BERGERACOIS,808
+pompier - Colonnes sèches,665,PAYS DU GRAND BERGERACOIS,808
+ocs_bdcarto - broussaille,671,PAYS DU GRAND BERGERACOIS,808
+pompier - Saisies,686,PAYS DU GRAND BERGERACOIS,808
+bdtopo - Départements,727,PAYS DU GRAND BERGERACOIS,808
+ocs_bdcarto - forêt,737,PAYS DU GRAND BERGERACOIS,808
+reseau_telecom - Noeud,770,PAYS DU GRAND BERGERACOIS,808
+novaqt - Santé,779,PAYS DU GRAND BERGERACOIS,808
+novaqt - Savoirs,780,PAYS DU GRAND BERGERACOIS,808
+null - null,1973,SEUIL,43
+pompier - Signalements (>30 jours),824,PAYS DU GRAND BERGERACOIS,808
+null - Znieff2,837,PAYS DU GRAND BERGERACOIS,808
+pompier - DECI,847,PAYS DU GRAND BERGERACOIS,808
+reseau_routier - Péages,863,PAYS DU GRAND BERGERACOIS,808
+wms_externe - BRGM Géologie 1/50.000,879,PAYS DU GRAND BERGERACOIS,808
+null - 02 Mars - Anse de l'Aiguillon,893,PAYS DU GRAND BERGERACOIS,808
+pompier - Puisards,922,PAYS DU GRAND BERGERACOIS,808
+pompier - Réservoirs,924,PAYS DU GRAND BERGERACOIS,808
+pompier - Signalements (<=30 jours),940,PAYS DU GRAND BERGERACOIS,808
+eau - Postit,953,PAYS DU GRAND BERGERACOIS,808
+pompier - Signalements (<=30jours),964,PAYS DU GRAND BERGERACOIS,808
+pompier - Demandes REE,973,PAYS DU GRAND BERGERACOIS,808
+projets_infrastructures - Rétablissement des fossés,974,PAYS DU GRAND BERGERACOIS,808
+sdis - Accès CH,1101,PAYS DU GRAND BERGERACOIS,808
+sdis - Cisaillement,1103,PAYS DU GRAND BERGERACOIS,808
+sdis - Déviation étape 19,1104,PAYS DU GRAND BERGERACOIS,808
+indicateurs_conso_fonciere - Bâtiments et équipements,1125,PAYS DU GRAND BERGERACOIS,808
+crpf - CETEF Eclaircie,1150,PAYS DU GRAND BERGERACOIS,808
+crpf - CETEF Régénération,1151,PAYS DU GRAND BERGERACOIS,808
+crpf - Movapro,1152,PAYS DU GRAND BERGERACOIS,808
+crpf - PDM,1153,PAYS DU GRAND BERGERACOIS,808
+sentier_randonnee - Randonnée,1174,PAYS DU GRAND BERGERACOIS,808
+pompier - Quadrigramme,1180,PAYS DU GRAND BERGERACOIS,808
+ocs_bdcarto - marais/tourbière,1181,PAYS DU GRAND BERGERACOIS,808
+reseau_telecom - Artères,1191,PAYS DU GRAND BERGERACOIS,808
+wms_externe - Fond_GIP_IGN,1240,PAYS DU GRAND BERGERACOIS,808
+bdtopo - Autoroutes,1248,PAYS DU GRAND BERGERACOIS,808
+wms_externe - Test gwc,1252,PAYS DU GRAND BERGERACOIS,808
+null - Commune_Loi_Montagne,1256,PAYS DU GRAND BERGERACOIS,808
+pgsd - Dépôt déconseillé,1303,PAYS DU GRAND BERGERACOIS,808
+pgsd - Dépôt déconseillé,1312,PAYS DU GRAND BERGERACOIS,808
+null - sdis40_web_et_Fond_GIP,1323,PAYS DU GRAND BERGERACOIS,808
+sdis - Prises eau,1341,PAYS DU GRAND BERGERACOIS,808
+null - null,1362,SEUIL,43
+crpf - Sylvafaune,1415,PAYS DU GRAND BERGERACOIS,808
+telespazio - Z3 mortalités,1419,PAYS DU GRAND BERGERACOIS,808
+null - Référentiel SDIS47 (04/2017),1423,PAYS DU GRAND BERGERACOIS,808
+pompier - SDIS24 - Signalements (>90 jours - Archives),1446,PAYS DU GRAND BERGERACOIS,808
+null - Référentiel SDIS40 (10/05/2017),1453,PAYS DU GRAND BERGERACOIS,808
+telespazio - Probabilité de mortalité septembre2015,1497,PAYS DU GRAND BERGERACOIS,808
+gendarmerie - Gendarmerie,1522,PAYS DU GRAND BERGERACOIS,808
+telespazio - Z2 mortalités,1524,PAYS DU GRAND BERGERACOIS,808
+pompier - DECI Archive,1528,PAYS DU GRAND BERGERACOIS,808
+cub - Arrêts,1551,PAYS DU GRAND BERGERACOIS,808
+annuaire - Annuaire GC,1556,PAYS DU GRAND BERGERACOIS,808
+wms_externe - Végétation,1559,PAYS DU GRAND BERGERACOIS,808
+wms_externe - Bâtiments,1560,PAYS DU GRAND BERGERACOIS,808
+crpf - Non renseigné,1581,PAYS DU GRAND BERGERACOIS,808
+rff - Gares,1596,PHARE,47
+erp - Erp - Bâtiments,1615,PAYS DU GRAND BERGERACOIS,808
+rff - Traversées pietonnes,1623,PAYS DU GRAND BERGERACOIS,808
+null - Référentiel SDIS33 (maj 02/05/2017),1633,PAYS DU GRAND BERGERACOIS,808
+null - CarteGCIS33 euro (maj 02/06/2016),1634,PAYS DU GRAND BERGERACOIS,808
+admin_express - Départements,1702,PAYS DU GRAND BERGERACOIS,808
+admin_express - Régions,1707,PAYS DU GRAND BERGERACOIS,808
+admin_express - Départements,1709,PAYS DU GRAND BERGERACOIS,808
+cd33 - Pacte et Pôles solidarité,1737,PAYS DU GRAND BERGERACOIS,808
+wms_externe - SCAN25 Topographique,1745,PAYS DU GRAND BERGERACOIS,808
+onf - Chenaies SIVU,1759,PAYS DU GRAND BERGERACOIS,808
+onf - DGAEM,1763,DIGUES,44
+null - WMTS - Orthophotographies,1791,PAYS DU GRAND BERGERACOIS,808
+erp - Bâtiments ERP (localisation manuelle),1807,PAYS DU GRAND BERGERACOIS,808
+pompier - Isodistance 420m,1810,PAYS DU GRAND BERGERACOIS,808
+pompier - Isodistance 210m,1812,PAYS DU GRAND BERGERACOIS,808
+bdtopo - Préfectures,1841,PAYS DU GRAND BERGERACOIS,808
+crpf - Placette ICE,1847,PAYS DU GRAND BERGERACOIS,808
+ddpp - Hypermarchés,1849,PAYS DU GRAND BERGERACOIS,808
+ddpp - Supermarchés,1853,PAYS DU GRAND BERGERACOIS,808
+ddpp - Vétérinaires,1867,PAYS DU GRAND BERGERACOIS,808
+sidpc - Stations-services,1887,PAYS DU GRAND BERGERACOIS,808
+sidpc - APMS,1892,PAYS DU GRAND BERGERACOIS,808
+erp - erp47_erpautres_batlocl93,1900,PAYS DU GRAND BERGERACOIS,808
+sidpc - APDI/APMS saisies,1904,PAYS DU GRAND BERGERACOIS,808
+sidpc - APDI,1905,PAYS DU GRAND BERGERACOIS,808
+admin_express - Régions,1922,PAYS DU GRAND BERGERACOIS,808
+pompier - ETARE (SDIS 47),1957,PAYS DU GRAND BERGERACOIS,808
+pompier - Elevation,1982,PAYS DU GRAND BERGERACOIS,808
+pompier - Configuration de la ZI,1985,PAYS DU GRAND BERGERACOIS,808
+tmp - test_sn_ligne,1995,PAYS DU GRAND BERGERACOIS,808
+pompier - Sinistre,1997,PAYS DU GRAND BERGERACOIS,808
+pompier - Annotation,2004,PAYS DU GRAND BERGERACOIS,808
+pompier - Sectorisation géographique,2005,PAYS DU GRAND BERGERACOIS,808
+pompier - Sectorisation fonctionnelle,2018,PAYS DU GRAND BERGERACOIS,808
+wms_externe - Dreal-TRI-Hauteur eau Aléa Moy Proba-Subm,2020,PAYS DU GRAND BERGERACOIS,808
+pompier - Configuration de la ZI,2021,PAYS DU GRAND BERGERACOIS,808
+pompier - Elevation,2022,PAYS DU GRAND BERGERACOIS,808
+pompier - Annotation,2027,PAYS DU GRAND BERGERACOIS,808
+pompier - Sectorisation géographique,2029,PAYS DU GRAND BERGERACOIS,808
+pompier - Sectorisation fonctionnelle,2034,PAYS DU GRAND BERGERACOIS,808
+pompier - Sinistre,2041,PAYS DU GRAND BERGERACOIS,808
+civb - Partage Confusion,2063,PAYS DU GRAND BERGERACOIS,808

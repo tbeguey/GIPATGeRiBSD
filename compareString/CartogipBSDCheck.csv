@@ -1,57 +1,55 @@
 Cartogip,ID Cartogip,BSD,ID BSD
-insee - Part des actifs occupés travaillant hors communes de résidence en 2007,730,PART DES ACTIFS OCCUPES TRAVAILLANT HORS COMMUNE RESIDENCE 2007,2999
-Directive Oiseaux - Natura 2000,908,NATURA 2000 - DIRECTIVE OISEAUX,707
+insee - Part des actifs occupés travaillant hors communes de résidence en 2007,729,PART DES ACTIFS OCCUPES TRAVAILLANT HORS COMMUNE RESIDENCE 2007,2999
+null - Directive Oiseaux - Natura 2000,907,NATURA 2000 - DIRECTIVE OISEAUX,707
 erdf - Appareil de coupure aérien moyenne tension,416,APPAREIL DE COUPURE AERIEN MOYENNE TENSION,1290
-erdf - Appareil de coupure sous terrain moyenne tension,1149,APPAREIL DE COUPURE SOUTERRAIN MOYENNE TENSION,3592
-insee - Taux de croissance de la population entre 1962 et 2007,733,EVOLUTION POPULATION ENTRE 1962 ET 2007,2998
-socio_economique - Part des actifs 15-64 ans par rapport à la population totale,464,PART DES ACTIFS 15-64 ANS DS POP TOTALE,2045
-sidpc - Communes surveillées pour le moustique tigre en 2014,585,GIRONDE : COMMUNES SUIVIES POUR LE MOUSTIQUE TIGRE,4354
-statistiques - Nombre de points d'accès public à Internet,859,NOMBRE DE POINTS D'ACCES PUBLIC INTERNET PAR COMMUNES,514
-socio_economique - Part des actifs de 25-54 ans par rapport aux actifs de 15-64 ans,744,PART DES ACTIFS 25-54 ANS DS POP DES 15-64 ANS,2050
-socio_economique - Part des actifs de 55-64 ans par rapport aux actifs de 15-64 ans,1016,PART DES ACTIFS 55-64 ANS DS POP DES 15-64 ANS,2051
-socio_economique - Part des actifs de 15-24 ans par rapport aux actifs de 15-64 ans,1018,PART DES ACTIFS 15-24 ANS DS POP DES 15-64 ANS,2049
+erdf - Appareil de coupure sous terrain moyenne tension,1148,APPAREIL DE COUPURE SOUTERRAIN MOYENNE TENSION,3592
+insee - Taux de croissance de la population entre 1962 et 2007,732,EVOLUTION POPULATION ENTRE 1962 ET 2007,2998
+socio_economique - Part des actifs 15-64 ans par rapport à la population totale,463,PART DES ACTIFS 15-64 ANS DS POP TOTALE,2045
+sidpc - Communes surveillées pour le moustique tigre en 2014,584,GIRONDE : COMMUNES SUIVIES POUR LE MOUSTIQUE TIGRE,4354
+statistiques - Nombre de points d'accès public à Internet,858,NOMBRE DE POINTS D'ACCES PUBLIC INTERNET PAR COMMUNES,514
+socio_economique - Part des actifs de 25-54 ans par rapport aux actifs de 15-64 ans,743,PART DES ACTIFS 25-54 ANS DS POP DES 15-64 ANS,2050
+socio_economique - Part des actifs de 55-64 ans par rapport aux actifs de 15-64 ans,1015,PART DES ACTIFS 55-64 ANS DS POP DES 15-64 ANS,2051
+socio_economique - Part des actifs de 15-24 ans par rapport aux actifs de 15-64 ans,1017,PART DES ACTIFS 15-24 ANS DS POP DES 15-64 ANS,2049
 dfci - Dfci travaux,16,TYPO TRAVAUX DFCI MASSIF LG,3333
 ddt - Etablissements recevant du public,276,ETABLISSEMENTS RECEVANT DU PUBLIC,1513
-Reserves naturelles nationales,523,RESERVES NATURELLES NATIONALES,223
-ZNIEFF 1 modernisation,535,ZNIEFF 1 : MODERNISATION,703
-ZNIEFF 2 modernisation,536,ZNIEFF 2 : MODERNISATION,704
-Densité population - Carroyage 200m,651,CARROYAGE POPULATION 200M,2057
-rpg - Registre parcellaire graphique,845,RPG - REGISTRE PARCELLAIRE GRAPHIQUE / PARCELLES AGRICOLES,322
-reseau_routier - Borne appel routier,847,BORNE APPEL ROUTIER,103
-Parc National des Pyrenees,886,PARC NATIONAL DES PYRENEES (PNP) : SECTEURS ADMINISTRATIFS,1190
-eau - Cours eau tres bon etat,1059,SRCE / TRAME BLEUE : COURS D'EAU TRES BON ETAT (LEMA),2654
-CORINE LAND COVER 2006,1245,CORINE LAND COVER,70
-Reserves naturelles regionales,1528,RESERVES NATURELLES REGIONALES,222
-Directive Habitats - Natura 2000,907,NATURA 2000 - DIRECTIVE HABITAT,219
+null - Reserves naturelles nationales,522,RESERVES NATURELLES NATIONALES,223
+null - ZNIEFF 1 modernisation,534,ZNIEFF 1 : MODERNISATION,703
+null - ZNIEFF 2 modernisation,535,ZNIEFF 2 : MODERNISATION,704
+null - Densité population - Carroyage 200m,650,CARROYAGE POPULATION 200M,2057
+rpg - Registre parcellaire graphique,844,RPG - REGISTRE PARCELLAIRE GRAPHIQUE / PARCELLES AGRICOLES,322
+reseau_routier - Borne appel routier,846,BORNE APPEL ROUTIER,103
+eau - Cours eau tres bon etat,1058,SRCE / TRAME BLEUE : COURS D'EAU TRES BON ETAT (LEMA),2654
+null - CORINE LAND COVER 2006,1244,CORINE LAND COVER,70
+null - Reserves naturelles regionales,1527,RESERVES NATURELLES REGIONALES,222
 wms_externe - Plan de zonage PLU - CUB,173,PLU : PLAN DE ZONAGE,1437
-crpf - Plan simple de gestion,906,PLAN SIMPLE DE GESTION,935
-raster - Scan 25 Aquitaine,1576,SCAN 25 V2 : AQUITAINE,869
-ddt - Plans d'eau et retenues collinaires,439,PLAN D'EAU ET RETENUES COLLINAIRES,3590
-insee - Part des actifs occupés travaillant hors communes de résidence en 2007,730,PART DES ACTIFS OCCUPES TRAVAILLANT HORS COMMUNE RESIDENCE 2007,2999
-Directive Oiseaux - Natura 2000,908,NATURA 2000 - DIRECTIVE OISEAUX,707
+crpf - Plan simple de gestion,905,PLAN SIMPLE DE GESTION,935
+raster - Scan 25 Aquitaine,1575,SCAN 25 V2 : AQUITAINE,869
+ddt - Plans d'eau et retenues collinaires,438,PLAN D'EAU ET RETENUES COLLINAIRES,3590
+null - Parc National des Pyrenees,885,PARC NATIONAL DES PYRENEES,1571
+insee - Part des actifs occupés travaillant hors communes de résidence en 2007,729,PART DES ACTIFS OCCUPES TRAVAILLANT HORS COMMUNE RESIDENCE 2007,2999
+null - Directive Oiseaux - Natura 2000,907,NATURA 2000 - DIRECTIVE OISEAUX,707
 erdf - Appareil de coupure aérien moyenne tension,416,APPAREIL DE COUPURE AERIEN MOYENNE TENSION,1290
-erdf - Appareil de coupure sous terrain moyenne tension,1149,APPAREIL DE COUPURE SOUTERRAIN MOYENNE TENSION,3592
-insee - Taux de croissance de la population entre 1962 et 2007,733,EVOLUTION POPULATION ENTRE 1962 ET 2007,2998
-socio_economique - Part des actifs 15-64 ans par rapport à la population totale,464,PART DES ACTIFS 15-64 ANS DS POP TOTALE,2045
-sidpc - Communes surveillées pour le moustique tigre en 2014,585,GIRONDE : COMMUNES SUIVIES POUR LE MOUSTIQUE TIGRE,4354
-statistiques - Nombre de points d'accès public à Internet,859,NOMBRE DE POINTS D'ACCES PUBLIC INTERNET PAR COMMUNES,514
-socio_economique - Part des actifs de 25-54 ans par rapport aux actifs de 15-64 ans,744,PART DES ACTIFS 25-54 ANS DS POP DES 15-64 ANS,2050
-socio_economique - Part des actifs de 55-64 ans par rapport aux actifs de 15-64 ans,1016,PART DES ACTIFS 55-64 ANS DS POP DES 15-64 ANS,2051
-socio_economique - Part des actifs de 15-24 ans par rapport aux actifs de 15-64 ans,1018,PART DES ACTIFS 15-24 ANS DS POP DES 15-64 ANS,2049
+erdf - Appareil de coupure sous terrain moyenne tension,1148,APPAREIL DE COUPURE SOUTERRAIN MOYENNE TENSION,3592
+insee - Taux de croissance de la population entre 1962 et 2007,732,EVOLUTION POPULATION ENTRE 1962 ET 2007,2998
+socio_economique - Part des actifs 15-64 ans par rapport à la population totale,463,PART DES ACTIFS 15-64 ANS DS POP TOTALE,2045
+sidpc - Communes surveillées pour le moustique tigre en 2014,584,GIRONDE : COMMUNES SUIVIES POUR LE MOUSTIQUE TIGRE,4354
+statistiques - Nombre de points d'accès public à Internet,858,NOMBRE DE POINTS D'ACCES PUBLIC INTERNET PAR COMMUNES,514
+socio_economique - Part des actifs de 25-54 ans par rapport aux actifs de 15-64 ans,743,PART DES ACTIFS 25-54 ANS DS POP DES 15-64 ANS,2050
+socio_economique - Part des actifs de 55-64 ans par rapport aux actifs de 15-64 ans,1015,PART DES ACTIFS 55-64 ANS DS POP DES 15-64 ANS,2051
+socio_economique - Part des actifs de 15-24 ans par rapport aux actifs de 15-64 ans,1017,PART DES ACTIFS 15-24 ANS DS POP DES 15-64 ANS,2049
 dfci - Dfci travaux,16,TYPO TRAVAUX DFCI MASSIF LG,3333
 ddt - Etablissements recevant du public,276,ETABLISSEMENTS RECEVANT DU PUBLIC,1513
-Reserves naturelles nationales,523,RESERVES NATURELLES NATIONALES,223
-ZNIEFF 1 modernisation,535,ZNIEFF 1 : MODERNISATION,703
-ZNIEFF 2 modernisation,536,ZNIEFF 2 : MODERNISATION,704
-Densité population - Carroyage 200m,651,CARROYAGE POPULATION 200M,2057
-rpg - Registre parcellaire graphique,845,RPG - REGISTRE PARCELLAIRE GRAPHIQUE / PARCELLES AGRICOLES,322
-reseau_routier - Borne appel routier,847,BORNE APPEL ROUTIER,103
-Parc National des Pyrenees,886,PARC NATIONAL DES PYRENEES (PNP) : SECTEURS ADMINISTRATIFS,1190
-eau - Cours eau tres bon etat,1059,SRCE / TRAME BLEUE : COURS D'EAU TRES BON ETAT (LEMA),2654
-CORINE LAND COVER 2006,1245,CORINE LAND COVER,70
-Reserves naturelles regionales,1528,RESERVES NATURELLES REGIONALES,222
-Directive Habitats - Natura 2000,907,NATURA 2000 - DIRECTIVE HABITAT,219
+null - Reserves naturelles nationales,522,RESERVES NATURELLES NATIONALES,223
+null - ZNIEFF 1 modernisation,534,ZNIEFF 1 : MODERNISATION,703
+null - ZNIEFF 2 modernisation,535,ZNIEFF 2 : MODERNISATION,704
+null - Densité population - Carroyage 200m,650,CARROYAGE POPULATION 200M,2057
+rpg - Registre parcellaire graphique,844,RPG - REGISTRE PARCELLAIRE GRAPHIQUE / PARCELLES AGRICOLES,322
+reseau_routier - Borne appel routier,846,BORNE APPEL ROUTIER,103
+eau - Cours eau tres bon etat,1058,SRCE / TRAME BLEUE : COURS D'EAU TRES BON ETAT (LEMA),2654
+null - CORINE LAND COVER 2006,1244,CORINE LAND COVER,70
+null - Reserves naturelles regionales,1527,RESERVES NATURELLES REGIONALES,222
 wms_externe - Plan de zonage PLU - CUB,173,PLU : PLAN DE ZONAGE,1437
-crpf - Plan simple de gestion,906,PLAN SIMPLE DE GESTION,935
-raster - Scan 25 Aquitaine,1576,SCAN 25 V2 : AQUITAINE,869
-ddt - Plans d'eau et retenues collinaires,439,PLAN D'EAU ET RETENUES COLLINAIRES,3590
+crpf - Plan simple de gestion,905,PLAN SIMPLE DE GESTION,935
+raster - Scan 25 Aquitaine,1575,SCAN 25 V2 : AQUITAINE,869
+ddt - Plans d'eau et retenues collinaires,438,PLAN D'EAU ET RETENUES COLLINAIRES,3590
+null - Parc National des Pyrenees,885,PARC NATIONAL DES PYRENEES,1571

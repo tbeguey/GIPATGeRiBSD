@@ -11,6 +11,7 @@ import javax.xml.xpath.XPathFactory;
 import java.io.File;
 import java.io.IOException;
 import java.sql.*;
+import java.util.ArrayList;
 
 
 /**
@@ -28,9 +29,13 @@ public class PostGreSQL {
      */
     private Statement stmt;
 
+    private ArrayList<Line> linesOnInit, linesOnFinal;
+
     public PostGreSQL(){
         c = null;
         stmt = null;
+        linesOnInit = new ArrayList<>();
+        linesOnFinal = new ArrayList<>();
     }
 
     /**
@@ -39,7 +44,7 @@ public class PostGreSQL {
     public void connection(){
         try {
             Class.forName("org.postgresql.Driver");
-            c = DriverManager.getConnection("jdbc:postgresql://172.30.100.12:5432/bsd?currentSchema=geoserver", // url comportant le nom de l'hote, le port et la base qu'on souhaite accéder (ici elle est créer automatiquement)
+            c = DriverManager.getConnection("jdbc:postgresql://172.30.100.12:5432/bsd", // url comportant le nom de l'hote, le port et la base qu'on souhaite accéder (ici elle est créer automatiquement)
                     "admpostgres", "admpostgres"); // nom d'utilisateur + mot de passe
 
             stmt = c.createStatement();
@@ -65,12 +70,22 @@ public class PostGreSQL {
         }
     }
 
+    public void dropTable(String table){
+        try {
+            String sql = "DROP TABLE " + table;
+            stmt.executeUpdate(sql); // est éxécuté sur le statement
+            System.out.println("Table drop");
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
+
     /**
      * Créer la table test
      */
-    public void createTable(){
+    public void createTable(String table){
         try {
-            String sql = "CREATE TABLE IF NOT EXISTS geoserver_xml (idCouche text UNIQUE," +
+            String sql = "CREATE TABLE " + table + " (idCouche text UNIQUE," +
                     "idNamespace text," +
                     "FEATURETYPE text," +
                     "NAME text," +
@@ -78,14 +93,14 @@ public class PostGreSQL {
                     "ABSTRACT text," +
                     "WORKSPACE text)"; // notre requete
             stmt.executeUpdate(sql); // est éxécuté sur le statement
-            System.out.println("Table created if not exists");
+            System.out.println("Table created");
         } catch (SQLException e) {
             e.printStackTrace();
         }
     }
 
-    public boolean rowExists(String id){
-        String query = "select exists(select 1 from geoserver_xml where idcouche = '" + id + "');";
+    public boolean rowExists(String id, String table){
+        String query = "select exists(select 1 from " + table + " where idcouche = '" + id + "');";
         try {
             PreparedStatement pst = c.prepareStatement(query);
             ResultSet rs = pst.executeQuery();
@@ -102,7 +117,7 @@ public class PostGreSQL {
      * On ajoute une ligne (INSERT)
      * @param xml le fichier xml qu'on souhaite ajouté
      */
-    public void addLine(File xml, String workspace){
+    public void addLineInInit(File xml, String workspace){
         try {
             String content = "";
             String name = "";
@@ -170,8 +185,10 @@ public class PostGreSQL {
             }
 
 
-            if(!rowExists(idCouche)){
-                String sql = "INSERT INTO geoserver_xml VALUES ('" + idCouche + "', '" + idNameSpace + "', '" + content + "', '" + name + "', '" + title + "', '" + abstr + "', '" + workspace + "');";
+            if(!rowExists(idCouche, "geoserver.geoserver_xml_init")){
+                String sql = "INSERT INTO geoserver.geoserver_xml_init VALUES ('" + idCouche + "', '" + idNameSpace + "', '" + content + "', '" + name + "', '" + title + "', '" + abstr + "', '" + workspace + "');";
+                Line line = new Line(idCouche, idNameSpace, content, name, title, abstr, workspace);
+                linesOnInit.add(line);
                 stmt.executeUpdate(sql);
 
                 System.out.println("insert done : " + xml);
@@ -179,6 +196,67 @@ public class PostGreSQL {
 
         } catch (SQLException e) {
             e.printStackTrace();
+        }
+    }
+
+    public void getLinesOnFinal(){
+        String sql = "SELECT idcouche from geoserver.geoserver_xml;";
+        try {
+            PreparedStatement pst = c.prepareStatement(sql);
+            ResultSet rs = pst.executeQuery();
+            while(rs.next()){
+                String id = rs.getString(1);
+                Line l = new Line(id, null,null,null,null,null, null);
+                linesOnFinal.add(l);
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void deleteLinesOnFinal(){
+        for (Line lineFinal : linesOnFinal) {
+            boolean exists = false;
+            for (Line lineInit :linesOnInit) {
+                if(lineFinal.getIdCouche().equals(lineInit.getIdCouche())){
+                    exists = true;
+                    break;
+                }
+            }
+            if(!exists){
+                String sql = "UPDATE communs.correspondance SET idgeoserver = null where idgeoserver = '" + lineFinal.getIdCouche() + "';";
+                try {
+                    stmt.executeUpdate(sql);
+                } catch (SQLException e) {
+                    e.printStackTrace();
+                }
+
+                sql = "DELETE FROM geoserver.geoserver_xml where idCouche = '" + lineFinal.getIdCouche() + "';";
+                try {
+                    stmt.executeUpdate(sql);
+                } catch (SQLException e) {
+                    e.printStackTrace();
+                }
+                System.out.println("Donnée supprimée");
+            }
+        }
+    }
+
+    public void insertOrUpdateLines(){
+        for (Line l : linesOnInit) {
+            String sql;
+            if (rowExists(l.getIdCouche(), "geoserver.geoserver_xml")){
+                sql = "UPDATE geoserver.geoserver_xml SET title = '" + l.getTitle() + "' where idcouche = '" + l.getIdCouche() + "';";
+
+            }
+            else{
+                sql = "INSERT INTO geoserver.geoserver_xml VALUES ('" + l.getIdCouche() + "', '" + l.getIdNameSpace() + "', '" + l.getContent() + "', '" + l.getName() + "', '" + l.getTitle() + "', '" + l.getAbstr() + "', '" + l.getWorkspace() + "');";
+            }
+            try {
+                stmt.executeUpdate(sql);
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
         }
     }
 }
