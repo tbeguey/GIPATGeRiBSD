@@ -42,12 +42,12 @@ while($row = pg_fetch_row($result)){
     echo '</tr>';
 }
 
-$query = "select title 
+$query = "select title, idcouche
 from geoserver.geoserver_xml
 
 except
 
-select title 
+select title, idcouche
 from communs.correspondance
 join geoserver.geoserver_xml on idgeoserver = idcouche;";
 
@@ -61,17 +61,16 @@ while($row = pg_fetch_row($result)){
         echo '<td>' . "" . '</td>';
         echo '<td>' . "" . '</td>';
         echo '<td>' . "" . '</td>';
-        echo '<td> <input type="button" value="Créer"> </td>';
-        echo '<td> <input type="button" value="Valider" onclick=""> </td>';
+    echo "<td> <input type='button' value='Créer' onclick='create_matching(&quot;$row[1]&quot;, &quot;geoserver&quot;)'> </form> </td>";
     echo '</tr>';
 }
 
-$query = "select title
+$query = "select title, uuid
 from geonetwork.metadata
 
 except
 
-select title
+select title, uuid
 from communs.correspondance
 join geonetwork.metadata on idgeonetwork = uuid;";
 
@@ -85,18 +84,17 @@ while($row = pg_fetch_row($result)){
     echo '<td>' . "" . '</td>';
     echo '<td>' . "" . '</td>';
     echo '<td>' . "" . '</td>';
-    echo '<td> <input type="button" value="Créer"> </td>';
-    echo '<td> <input type="button" value="Valider" onclick=""> </td>';
+    echo "<td> <input type='button' value='Créer' onclick='create_matching(&quot;$row[1]&quot;, &quot;geonetwork&quot;)'> </form> </td>";
     echo '</tr>';
 }
 
 
-$query = "select titre
+$query = "select titre, couche.id
 from cartogip.couche
 
 except
 
-select titre
+select titre, couche.id
 from communs.correspondance
 join cartogip.couche on idcartogip = couche.id;";
 
@@ -110,17 +108,16 @@ while($row = pg_fetch_row($result)){
     echo '<td>' . "" . '</td>';
     echo '<td>' . "" . '</td>';
     echo '<td>' . "" . '</td>';
-    echo '<td> <input type="button" value="Créer"> </td>';
-    echo '<td> <input type="button" value="Valider" onclick=""> </td>';
+    echo "<td> <input type='button' value='Créer' onclick='create_matching(&quot;$row[1]&quot;, &quot;cartogip&quot;)'> </form> </td>";
     echo '</tr>';
 }
 
-$query = "select titre
+$query = "select titre, type_donnees_echange.id
 from bsd.type_donnees_echange
 
 except
 
-select titre
+select titre, type_donnees_echange.id
 from communs.correspondance
 join bsd.type_donnees_echange on idbsd = type_donnees_echange.id;";
 
@@ -134,8 +131,7 @@ while($row = pg_fetch_row($result)){
     echo '<td>' . $row[0] . '</td>';
     echo '<td>' . "" . '</td>';
     echo '<td>' . "" . '</td>';
-    echo '<td> <input type="button" value="Créer"> </td>';
-    echo '<td> <input type="button" value="Valider" onclick=""> </td>';
+    echo "<td> <input type='button' value='Créer' onclick='create_matching(&quot;$row[1]&quot;, &quot;cartogip&quot;)'> </form> </td>";
     echo '</tr>';
 }
 

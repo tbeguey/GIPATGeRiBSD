@@ -94,7 +94,8 @@ while($row = pg_fetch_row($result)){
     echo '</table>';
 
     echo "<input type='button' value='Valider' onClick='update_matching($idCorrespondance)' />";
-    echo "<input type='button' value='Accueil' onClick='document.location.href=&quot;index.php&quot;' />";
+    echo "<input type='button' value='Supprimer' onClick='delete_matching($idCorrespondance)' />";
+    echo "<input type='button' value='Annuler' onClick='document.location.href=&quot;index.php&quot;' />";
 }
 ?>
 

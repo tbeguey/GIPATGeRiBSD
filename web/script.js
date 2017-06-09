@@ -13,7 +13,7 @@ function update_validation_date(id) {
 function search(id, idCorrespondance) {
     document.getElementById(id).className = "yellow";
     document.getElementById(id).innerHTML = "";
-    proposition = new Array();
+    proposition = [];
     proposition = find_title(id, idCorrespondance);
     title = proposition[0];
     document.getElementById(id).innerHTML = title;
@@ -68,13 +68,14 @@ function update_matching(idCorrespondance){
         type:'POST',
         url:'updateMatching.php',
         data:update_array,
-        cache:false/*,
+        cache:false,
+        async:false,
         success: function(data) {
-            alert(data);
+            //alert(data);
         },
         error: function(){
             alert("errrrrrror");
-        }*/
+        }
     });
 
     document.location.href='index.php';
@@ -82,21 +83,58 @@ function update_matching(idCorrespondance){
 
 function find_title(id, idCorrespondance) {
     find_array = {'idCorrespondance':idCorrespondance, 'id':id};
-    result = new Array();
+    result = [];
     $.ajax({
         type:'POST',
         url:'levenshtein.php',
         data:find_array,
         cache:false,
         async:false,
-        dataType:'json'/*,
+        dataType:'json',
         success: function(data) {
-            alert(data);
+            //alert(data);
             result = data;
         },
         error: function(){
-            alert("errrrrrror");
-        }*/
+            alert("Error");
+        }
     });
     return result;
+}
+
+function create_matching(id, type){
+    create_array = {'id':id, 'type':type};
+    $.ajax({
+        type:'POST',
+        url:'createMatching.php',
+        data:create_array,
+        cache:false,
+        async:false,
+        success: function(data) {
+            alert(data);
+            idCorrespondance = data;
+        },
+        error: function(){
+            alert("Error");
+        }
+    });
+    document.location.href='matching.php?Code=' + idCorrespondance;
+}
+
+function delete_matching(idCorrespondance){
+    delete_array = {'idcorrespondance':idCorrespondance};
+    $.ajax({
+        type:'POST',
+        url:'deleteMatching.php',
+        data:delete_array,
+        cache:false,
+        async:false,
+        success: function(data) {
+            alert(data);
+        },
+        error: function(){
+            alert("Error");
+        }
+    });
+    document.location.href='index.php';
 }
