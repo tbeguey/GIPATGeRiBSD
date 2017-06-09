@@ -28,8 +28,8 @@ public class Main {
             postGreSQL.getLinesOnInit(path);
         }
         
-        //postGreSQL.getLinesOnFinal();
-        //postGreSQL.deleteLinesOnFinal();
+        postGreSQL.getLinesOnFinal();
+        postGreSQL.deleteLinesOnFinal();
 
         postGreSQL.insertLine("geonetwork.metadata");
 

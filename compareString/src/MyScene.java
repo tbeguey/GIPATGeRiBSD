@@ -343,7 +343,6 @@ public class MyScene extends Scene {
                                 }
                             });
 
-                            exportToCSV();
                             if(comboBoxSource.getValue() != comboBoxDestination.getValue())
                                 exportToPostGre();
 
@@ -451,20 +450,30 @@ public class MyScene extends Scene {
                             double jaro = compared.getJaro();
                             switch (comboBoxAlgo.getValue().toString()){
                                 case "Mots commun + Levenshtein":
-                                    if(common > 4.0)
+                                    double percentageCommonWord = common/compared.getArrayList().size();
+
+                                    int nbChar = 0;
+                                    for (String s :
+                                            compared.getArrayList()) {
+                                        for (char c : s.toCharArray()) {
+                                            nbChar++;
+                                        }
+                                    }
+
+                                    double percentageLeven = leven/nbChar;
+
+                                    if(percentageCommonWord == 1)
                                         values[0]++;
-                                    else if(common <= 4 && common > 1 && leven == 0)
+                                    else if(percentageCommonWord < 1 && percentageCommonWord >= 0.5 && percentageLeven < 0.5 )
                                         values[1]++;
-                                    else if(common <= 4 && common > 1 && leven < 5)
+                                    else if(percentageCommonWord < 1 && percentageCommonWord >= 0.5 && percentageLeven >= 0.5 )
                                         values[2]++;
-                                    else if(common <= 4 && common > 1 && leven >= 5)
+                                    else if(percentageCommonWord < 0.5 && percentageCommonWord >= 0 && percentageLeven < 0.5 )
                                         values[3]++;
-                                    else if(common == 1)
+                                    else if(percentageCommonWord < 0.5 && percentageCommonWord >= 0 && percentageLeven >= 0.5 )
                                         values[4]++;
-                                    else if(common == 0 && leven < 5)
+                                    else
                                         values[5]++;
-                                    else if(common == 0 && leven >= 5)
-                                        values[6]++;
                                     break;
                                 case "Mots commun + Jaro":
                                     if(common >= 4.0 && jaro == 1.0)

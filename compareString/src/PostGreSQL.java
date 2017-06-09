@@ -73,7 +73,9 @@ public class PostGreSQL {
                 sql = "SELECT titre, id, couche_schema FROM couche";
                 break;
             case "BSD":
-                sql = "SELECT titre, id FROM type_donnees_echange";
+                sql = "SELECT titre, id, entreprise_abrege FROM type_donnees_echange " +
+                        "inner join pigma_donnees_a_dispo on type_donnee = id " +
+                        "inner join entreprise_contact on id_entreprise = no_entreprise;";
                 break;
         }
 
@@ -98,6 +100,10 @@ public class PostGreSQL {
                         else
                             title = workspace + " - " + title;
                     }
+                }
+                else if(database == "BSD"){
+                    String workspace = rs.getString(3);
+                    title = workspace + " - " + title;
                 }
 
 

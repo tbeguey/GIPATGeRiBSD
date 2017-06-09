@@ -34,7 +34,6 @@ public class ChartView extends HBox {
 
         chart = new PieChart(pieChartData);
         chart.setLegendSide(Side.RIGHT);
-        chart.setPrefSize(100, 50);
         chart.setTitle("Graphique");
 
         ObservableList<ObservableEntity> data = FXCollections.observableArrayList();

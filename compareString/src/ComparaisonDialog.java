@@ -162,7 +162,7 @@ public class ComparaisonDialog extends Dialog<ArrayList<ArrayList<Pair<StringCom
                 return cell;
             }
         });
-        secondText.setPrefWidth(Dialog_WIDTH/3);
+        secondText.setPrefWidth(Dialog_WIDTH/2.2);
 
         for (String wordFirst : first.getOriginalText().split(" ")) {
                 Text t = new Text(wordFirst + " ");
@@ -314,9 +314,8 @@ public class ComparaisonDialog extends Dialog<ArrayList<ArrayList<Pair<StringCom
 
         switch (algorithm) {
             case "Mots commun + Levenshtein":
-                objects = new String[]{"Plus de 4 mots communs", "Entre 1 et 4 mots communs, avec un Levenshtein de 0",
-                        "Entre 1 et 4 mots communs, avec un Levenshtein inférieur à 5", "Entre 1 et 4 mots communs, avec un Levenshtein supérieur à 5",
-                        "Un seul mot commun", "Aucun mot communn, avec un Levenshtein inférieur à 5", "Aucun mot communn, avec un Levenshtein supérieur à 5"};
+                objects = new String[]{"100 % de mots", "Entre 50% et 100% de mots, avec moins de 50% de Leven", "Entre 50% et 100% de mots, avec plus de 50% de Leven",
+                        "Entre 0 et 50% de mots, avec moins de 50% de Leven", "Entre 0% et 50% de mots, avec plus de 50% de Leven", "Le reste"};
                 break;
             case "Mots commun + Jaro":
                 objects = new String[]{"4 mots ou plus en communs, avec un Jaro de 1", "4 mots ou plus en communs, avec un Jaro supérieur ou égale à 0.5",

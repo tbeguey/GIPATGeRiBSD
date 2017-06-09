@@ -279,7 +279,6 @@ public class StringCompared {
             }
         }
 
-
         String[] array = text.split(" "); // on sépare la phrase en plusieurs mots
 
         for (String s : array) {
@@ -291,11 +290,8 @@ public class StringCompared {
                 }
             }
 
-            if(!arrayList.contains(s)){
+            if(!arrayList.contains(s.toLowerCase())){
                 if(s.length() > 3){ // si ca taille est supérieur a trois
-                    arrayList.add(s.toLowerCase()); // on ajoute le mot en minuscule
-                }
-                else if(Utils.isUpperWord(s)){ // ou bien si c'est un accronyme
                     arrayList.add(s.toLowerCase()); // on ajoute le mot en minuscule
                 }
             }
@@ -508,6 +504,9 @@ public class StringCompared {
         }
 
         if(bestResults.size() == 0)
+            return null;
+
+        if(bestCommonWords == 0)
             return null;
 
         return bestResults;
