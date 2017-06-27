@@ -17,10 +17,13 @@ public class StringCompared {
     private float commonwords;
 
     private static Map<String, ArrayList<String>> same = new HashMap<>();
+    private static ArrayList<String> useless = new ArrayList<>();
 
-    static { // Gère les mots se ressemblant, ayant la meme signification
+    static { // Gère les mots se ressemblant, ayant la meme signification et les mots "inutiles"
         ArrayList<String> arrayListAURBA = new ArrayList<>();
         arrayListAURBA.add("AURBA3");
+        arrayListAURBA.add("Bordeaux Métropole");
+        arrayListAURBA.add("Bordeaux Metropole");
         same.put("AURBA", arrayListAURBA);
 
         ArrayList<String> arrayListCACBA = new ArrayList<>();
@@ -255,6 +258,45 @@ public class StringCompared {
         ArrayList<String> arrayListPGB = new ArrayList<>();
         arrayListPGB.add("Pays du Grand Bergeracois");
         same.put("PGB", arrayListPGB);
+
+        useless.add("mais");
+        useless.add("ou");
+        useless.add("et");
+        useless.add("donc");
+        useless.add("or");
+        useless.add("ni");
+        useless.add("car");
+        useless.add("si");
+        useless.add("qu");
+        useless.add("que");
+        useless.add("un");
+        useless.add("de");
+        useless.add("du");
+        useless.add("des");
+        useless.add("les");
+        useless.add("la");
+        useless.add("le");
+        useless.add("mes");
+        useless.add("tes");
+        useless.add("ses");
+        useless.add("ces");
+        useless.add("nos");
+        useless.add("vos");
+        useless.add("leur");
+        useless.add("leurs");
+        useless.add("je");
+        useless.add("tu");
+        useless.add("il");
+        useless.add("elle");
+        useless.add("on");
+        useless.add("nous");
+        useless.add("vous");
+        useless.add("ils");
+        useless.add("elles");
+        useless.add("par");
+        useless.add("dans");
+        useless.add("en");
+        useless.add("au");
     }
 
     /**
@@ -281,7 +323,8 @@ public class StringCompared {
 
         String[] array = text.split(" "); // on sépare la phrase en plusieurs mots
 
-        for (String s : array) {
+        for (String word : array) {
+            String s = word;
             // On vérifie que le mot ne fais pas partie de la liste des mots identiques pour pouvoir trouver un de ses synonymes
             for (Map.Entry<String, ArrayList<String>> entry : same.entrySet()) {
                 for (String s1 : entry.getValue()) {
@@ -291,8 +334,8 @@ public class StringCompared {
             }
 
             if(!arrayList.contains(s.toLowerCase())){
-                if(s.length() > 3){ // si ca taille est supérieur a trois
-                    arrayList.add(s.toLowerCase()); // on ajoute le mot en minuscule
+                if(!useless.contains(s.toLowerCase())){ // si ca taille est supérieur a trois
+                    arrayList.add(Utils.withOutAccents(s.toLowerCase())); // on ajoute le mot en minuscule
                 }
             }
         }

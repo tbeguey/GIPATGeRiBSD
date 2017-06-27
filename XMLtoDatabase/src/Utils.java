@@ -38,7 +38,7 @@ public class Utils {
      */
     public static String readFile(String file) throws IOException {
         BufferedReader reader = new BufferedReader(new FileReader(file));
-        String line = null;
+        String line;
         StringBuilder stringBuilder = new StringBuilder();
         String ls = System.getProperty("line.separator");
         try {

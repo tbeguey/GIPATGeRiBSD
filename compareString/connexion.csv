@@ -1,0 +1,1 @@
+Geonetwork%172.30.100.12%5432%admpostgres%admpostgres%bsd%geonetwork%SELECT title, uuid, isharvested, source from metadata

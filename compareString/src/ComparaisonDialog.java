@@ -90,16 +90,13 @@ public class ComparaisonDialog extends Dialog<ArrayList<ArrayList<Pair<StringCom
         ComboBox secondText = new ComboBox(optionsSecond);
         secondText.getSelectionModel().selectFirst();
         secondText.setCellFactory(new Callback<ListView<StringCompared>,ListCell<StringCompared>>(){
-
             @Override
             public ListCell<StringCompared> call(ListView<StringCompared> p) {
-
                 final ListCell<StringCompared> cell = new ListCell<StringCompared>(){
 
                     @Override
                     protected void updateItem(StringCompared t, boolean bln) {
                         super.updateItem(t, bln);
-
                         if(t != null){
                             setText(t.getOriginalText());
                         }else{
@@ -108,7 +105,6 @@ public class ComparaisonDialog extends Dialog<ArrayList<ArrayList<Pair<StringCom
                     }
 
                 };
-
                 return cell;
             }
         });
@@ -143,7 +139,6 @@ public class ComparaisonDialog extends Dialog<ArrayList<ArrayList<Pair<StringCom
 
             @Override
             public ListCell<StringCompared> call(ListView<StringCompared> p) {
-
                 final ListCell<StringCompared> cell = new ListCell<StringCompared>(){
 
                     @Override
@@ -158,7 +153,6 @@ public class ComparaisonDialog extends Dialog<ArrayList<ArrayList<Pair<StringCom
                     }
 
                 };
-
                 return cell;
             }
         });
@@ -167,7 +161,7 @@ public class ComparaisonDialog extends Dialog<ArrayList<ArrayList<Pair<StringCom
         for (String wordFirst : first.getOriginalText().split(" ")) {
                 Text t = new Text(wordFirst + " ");
                 for (String wordSecond: ((StringCompared)secondText.getValue()).getArrayList()) {
-                    if(wordFirst.toLowerCase().equals(wordSecond.toLowerCase())){
+                    if(Utils.withOutAccents(wordFirst.toLowerCase()).equals(Utils.withOutAccents(wordSecond.toLowerCase()))){
                         t.setStyle("-fx-font-weight:bold;");
                         break;
                     }
@@ -218,8 +212,7 @@ public class ComparaisonDialog extends Dialog<ArrayList<ArrayList<Pair<StringCom
             });
             thirdText.setPrefWidth(Dialog_WIDTH/3);
 
-            double thirdValue = first.getJaro();
-            thirdScoreText = new TextField(String.valueOf(thirdValue));
+            thirdScoreText = new TextField(String.valueOf(first.getJaro()));
             thirdScoreText.setPrefWidth(50);
         }
 
@@ -237,10 +230,10 @@ public class ComparaisonDialog extends Dialog<ArrayList<ArrayList<Pair<StringCom
             case "Mots commun + Levenshtein":
                 value = first.getCommonwords();
                 secondValue = first.getLeven();
-                if(value >= 4)
+                /*if(value >= 4)
                     radioButton.setSelected(true);
-                else if(value >= 3 && secondValue <= 3)
-                    radioButton.setSelected(true);
+                else if(value >= 3 && secondValue == 0)
+                    radioButton.setSelected(true);*/
                 break;
             case "Mots commun + Jaro":
                 value = first.getCommonwords();

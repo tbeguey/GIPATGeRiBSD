@@ -28,6 +28,17 @@ public class Utils {
         return itIs;
     }
 
+    public static String withOutAccents(String s){
+        s = s.replace("é", "e");
+        s = s.replace("è", "e");
+        s = s.replace("ê", "e");
+        s = s.replace("à", "a");
+        s = s.replace("ù", "u");
+        s = s.replace("ç", "c");
+
+        return s;
+    }
+
     /**
      * Algorithme de calcul de la distance de jaro (trouvé sur internet)
      * Calcul un ratio de 1.0 à 0.0, 1.0 correspond à une correspondance parfaite

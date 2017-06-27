@@ -11,6 +11,8 @@ import javafx.scene.paint.Color;
 import javafx.util.Callback;
 import javafx.util.Pair;
 
+import javax.xml.crypto.Data;
+import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.OutputStreamWriter;
@@ -31,6 +33,7 @@ public class MyScene extends Scene {
     private final ComboBox comboBoxSource;
     private final ComboBox comboBoxDestination;
     private final ComboBox comboBoxAlgo;
+    private final ComboBox comboBoxSearch;
     private ComboBox searchResult;
 
     /**
@@ -38,6 +41,9 @@ public class MyScene extends Scene {
      */
     private ArrayList<ArrayList<String>> arrayListCheckedToExport = new ArrayList<>();
     private ArrayList<ArrayList<String>> arrayListNotCheckedToExport = new ArrayList<>();
+
+
+    private ObservableList<DatabaseConnection> optionsDatabase;
 
     /**
      * Valeurs afin de faire des statistiques
@@ -47,6 +53,8 @@ public class MyScene extends Scene {
 
     public MyScene(){
         super(new Group(), Main.WIDTH, Main.HEIGHT);
+
+        ArrayList<DatabaseConnection> databaseConnections = CSVUtils.readConnections();
 
         Group group = (Group) getRoot();
         setFill(Color.rgb(224,212,187));
@@ -65,19 +73,57 @@ public class MyScene extends Scene {
         wrapperUuid.setSpacing(10);
 
 
-        ObservableList<String> optionsDatabase =
-                FXCollections.observableArrayList(
-                        "GeoNetwork",
-                        "GeoServer",
-                        "Cartogip",
-                        "BSD"
+        optionsDatabase = FXCollections.observableArrayList(
+                        databaseConnections
                 );
+
         comboBoxSource = new ComboBox(optionsDatabase);
         comboBoxSource.getSelectionModel().selectFirst();
+        comboBoxSource.setCellFactory(new Callback<ListView<DatabaseConnection>,ListCell<DatabaseConnection>>(){
+            @Override
+            public ListCell<DatabaseConnection> call(ListView<DatabaseConnection> p) {
+                final ListCell<DatabaseConnection> cell = new ListCell<DatabaseConnection>(){
+
+                    @Override
+                    protected void updateItem(DatabaseConnection t, boolean bln) {
+                        super.updateItem(t, bln);
+
+                        if(t != null){
+                            setText(t.getTitle());
+                        }else{
+                            setText(null);
+                        }
+                    }
+
+                };
+                return cell;
+            }
+        });
+
 
         comboBoxDestination = new ComboBox(optionsDatabase);
         comboBoxDestination.getSelectionModel().selectFirst();
         comboBoxDestination.getSelectionModel().selectNext();
+        comboBoxDestination.setCellFactory(new Callback<ListView<DatabaseConnection>,ListCell<DatabaseConnection>>(){
+            @Override
+            public ListCell<DatabaseConnection> call(ListView<DatabaseConnection> p) {
+                final ListCell<DatabaseConnection> cell = new ListCell<DatabaseConnection>(){
+
+                    @Override
+                    protected void updateItem(DatabaseConnection t, boolean bln) {
+                        super.updateItem(t, bln);
+
+                        if(t != null){
+                            setText(t.getTitle());
+                        }else{
+                            setText(null);
+                        }
+                    }
+
+                };
+                return cell;
+            }
+        });
 
         ObservableList<String> optionsAlgo =
                 FXCollections.observableArrayList(
@@ -97,14 +143,77 @@ public class MyScene extends Scene {
                 start();
         });
 
+        comboBoxSearch = new ComboBox(optionsDatabase);
+        comboBoxSearch.getSelectionModel().selectFirst();
+        comboBoxSearch.setCellFactory(new Callback<ListView<DatabaseConnection>,ListCell<DatabaseConnection>>(){
+            @Override
+            public ListCell<DatabaseConnection> call(ListView<DatabaseConnection> p) {
+                final ListCell<DatabaseConnection> cell = new ListCell<DatabaseConnection>(){
+
+                    @Override
+                    protected void updateItem(DatabaseConnection t, boolean bln) {
+                        super.updateItem(t, bln);
+
+                        if(t != null){
+                            setText(t.getTitle());
+                        }else{
+                            setText(null);
+                        }
+                    }
+
+                };
+                return cell;
+            }
+        });
+
+        Button newCoButton = new Button("Configurer une nouvelle connexion");
+        newCoButton.setOnMouseClicked(event -> {
+            Optional<ArrayList<String>> result = new newConnectionDialog().showAndWait();
+            result.ifPresent(strings -> {
+                DatabaseConnection databaseConnection = new DatabaseConnection(strings.get(0), strings.get(1), strings.get(2), strings.get(3), strings.get(4), strings.get(5), strings.get(6), strings.get(7));
+                databaseConnections.add(databaseConnection);
+
+                try {
+                    OutputStreamWriter writer = new OutputStreamWriter( new FileOutputStream("connexion.csv"),
+                            Charset.forName("UTF-8").newEncoder());
+
+                    for (DatabaseConnection db : databaseConnections) {
+                        ArrayList<String> arrayList = new ArrayList<>();
+                        arrayList.add(db.getTitle());
+                        arrayList.add(db.getIp());
+                        arrayList.add(db.getPort());
+                        arrayList.add(db.getUser());
+                        arrayList.add(db.getPassword());
+                        arrayList.add(db.getDatabase());
+                        arrayList.add(db.getSchema());
+                        arrayList.add(db.getQuery());
+
+                        CSVUtils.writeLine(writer, arrayList, '%', ' ');
+                    }
+                    writer.flush();
+                    writer.close();
+
+                } catch (FileNotFoundException e) {
+                    e.printStackTrace();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+
+                optionsDatabase = FXCollections.observableArrayList(
+                        databaseConnections
+                );
+                comboBoxSource.setItems(optionsDatabase);
+                comboBoxDestination.setItems(optionsDatabase);
+                comboBoxSearch.setItems(optionsDatabase);
+            });
+        });
+
         HBox searchBox = new HBox();
         searchBox.setSpacing(20);
 
         TextField searchField = new TextField();
         searchField.setPromptText("Votre texte");
 
-        ComboBox comboBoxSearch = new ComboBox(optionsDatabase);
-        comboBoxSearch.getSelectionModel().selectFirst();
 
         Button searchButton = new Button("Comparer");
 
@@ -123,26 +232,9 @@ public class MyScene extends Scene {
 
             StringCompared stringCompared = new StringCompared(searchField.getText(), null);
 
-            PostGreSQL postGreSQL = new PostGreSQL();
+            PostGreSQL postGreSQL = new PostGreSQL((DatabaseConnection) comboBoxSearch.getValue());
 
-            switch (comboBoxSource.getValue().toString()){
-                case "GeoNetwork":
-                    postGreSQL.connection("172.30.100.12:5432/bsd?currentSchema=geonetwork");
-                    break;
-                case "GeoServer":
-                    postGreSQL.connection("172.30.100.12:5432/bsd?currentSchema=geoserver");
-                    break;
-                case "Cartogip":
-                    postGreSQL.connection("172.30.100.12:5432/bsd?currentSchema=cartogip");
-                    break;
-                case "BSD":
-                    postGreSQL.connection("172.30.100.12:5432/bsd?currentSchema=bsd");
-                    break;
-                default:
-                    postGreSQL.connection("172.30.100.12:5432/bsd?currentSchema=geonetwork");
-                    break;
-            }
-            ArrayList<StringCompared> compareds = postGreSQL.getTitleByTableName(comboBoxSource.getValue().toString());
+            ArrayList<StringCompared> compareds = postGreSQL.getTitleByTableName();
 
             ArrayList<StringCompared> results = stringCompared.levenshteinDistanceCW(compareds);
 
@@ -204,11 +296,10 @@ public class MyScene extends Scene {
         uuidResult.setEditable(false);
 
         Button uuidButton = new Button("Chercher");
-        uuidButton.setOnMouseClicked(event -> {
+        /*uuidButton.setOnMouseClicked(event -> {
             String text = "";
-            PostGreSQL postGreSQL = new PostGreSQL();
-            postGreSQL.connection("172.30.100.12:5432/bsd?currentSchema=geonetwork");
-            ArrayList<StringCompared> compareds = postGreSQL.getTitleByTableName("GeoNetwork");
+            PostGreSQL postGreSQL = new PostGreSQL(databaseConnectionGeonetwork);
+            ArrayList<StringCompared> compareds = postGreSQL.getTitleByTableName();
             for (StringCompared compared : compareds) {
                 if(uuidField.getText().equals(compared.getUuid())){
                     text = compared.getOriginalText();
@@ -217,8 +308,8 @@ public class MyScene extends Scene {
             }
             postGreSQL.deconnection();
             if(text.isEmpty()){
-                postGreSQL.connection("172.30.100.12:5432/bsd?currentSchema=geoserver");
-                compareds = postGreSQL.getTitleByTableName("GeoServer");
+                postGreSQL.setDatabase(databaseConnectionGeoserver);
+                compareds = postGreSQL.getTitleByTableName();
                 for (StringCompared compared : compareds) {
                     if(uuidField.getText().equals(compared.getUuid())){
                         text = compared.getOriginalText();
@@ -228,8 +319,8 @@ public class MyScene extends Scene {
                 postGreSQL.deconnection();
             }
             if(text.isEmpty()){
-                postGreSQL.connection("172.30.100.12:5432/bsd?currentSchema=bsd");
-                compareds = postGreSQL.getTitleByTableName("BSD");
+                postGreSQL.setDatabase(databaseConnectionCartogip);
+                compareds = postGreSQL.getTitleByTableName();
                 for (StringCompared compared : compareds) {
                     if(uuidField.getText().equals(compared.getUuid())){
                         text = compared.getOriginalText();
@@ -239,8 +330,8 @@ public class MyScene extends Scene {
                 postGreSQL.deconnection();
             }
             if(text.isEmpty()){
-                postGreSQL.connection("172.30.100.12:5432/bsd?currentSchema=cartogip");
-                compareds = postGreSQL.getTitleByTableName("Cartogip");
+                postGreSQL.setDatabase(databaseConnectionBSD);
+                compareds = postGreSQL.getTitleByTableName();
                 for (StringCompared compared : compareds) {
                     if(uuidField.getText().equals(compared.getUuid())){
                         text = compared.getOriginalText();
@@ -251,13 +342,15 @@ public class MyScene extends Scene {
             }
 
             uuidResult.setText(text);
-        });
+        });*/
 
         uuidBox.getChildren().addAll(uuidField, uuidButton);
 
+        HBox buttonBox = new HBox();
+        buttonBox.setSpacing(10);
+        buttonBox.getChildren().addAll(okButton, newCoButton);
 
-
-        wrapperCompared.getChildren().addAll(comboBoxSource, comboBoxDestination, comboBoxAlgo, okButton);
+        wrapperCompared.getChildren().addAll(comboBoxSource, comboBoxDestination, comboBoxAlgo, buttonBox);
         wrapperSearch.getChildren().addAll(searchBox, searchResult, idSearch);
         wrapperUuid.getChildren().addAll(uuidBox, uuidResult);
 
@@ -367,48 +460,14 @@ public class MyScene extends Scene {
     private ArrayList<Pair<StringCompared, Pair<ArrayList<StringCompared>, ArrayList<StringCompared>>>> getStringComparedsAndStartComparaison(){
         ArrayList<Pair<StringCompared, Pair<ArrayList<StringCompared>, ArrayList<StringCompared>>>> result = new ArrayList<>();
 
-        PostGreSQL postGreSQLSource = new PostGreSQL();
-        PostGreSQL postGreSQLDestination = new PostGreSQL();
-
         ArrayList<StringCompared> firstArrayList;
         ArrayList<StringCompared> secondArrayList;
 
-        switch (comboBoxSource.getValue().toString()){
-            case "GeoNetwork":
-                postGreSQLSource.connection("172.30.100.12:5432/bsd?currentSchema=geonetwork");
-                break;
-            case "GeoServer":
-                postGreSQLSource.connection("172.30.100.12:5432/bsd?currentSchema=geoserver");
-                break;
-            case "Cartogip":
-                postGreSQLSource.connection("172.30.100.12:5432/bsd?currentSchema=cartogip");
-                break;
-            case "BSD":
-                postGreSQLSource.connection("172.30.100.12:5432/bsd?currentSchema=bsd");
-                break;
-            default:
-                postGreSQLSource.connection("172.30.100.12:5432/bsd?currentSchema=geonetwork");
-                break;
-        }
-        firstArrayList = postGreSQLSource.getTitleByTableName(comboBoxSource.getValue().toString());
-        switch (comboBoxDestination.getValue().toString()){
-            case "GeoNetwork":
-                postGreSQLDestination.connection("172.30.100.12:5432/bsd?currentSchema=geonetwork");
-                break;
-            case "GeoServer":
-                postGreSQLDestination.connection("172.30.100.12:5432/bsd?currentSchema=geoserver");
-                break;
-            case "Cartogip":
-                postGreSQLDestination.connection("172.30.100.12:5432/bsd?currentSchema=cartogip");
-                break;
-            case "BSD":
-                postGreSQLDestination.connection("172.30.100.12:5432/bsd?currentSchema=bsd");
-                break;
-            default:
-                postGreSQLDestination.connection("172.30.100.12:5432/bsd?currentSchema=geonetwork");
-                break;
-        }
-        secondArrayList = postGreSQLDestination.getTitleByTableName(comboBoxDestination.getValue().toString());
+        PostGreSQL postGreSQLSource = new PostGreSQL((DatabaseConnection) comboBoxSource.getValue());
+        firstArrayList = postGreSQLSource.getTitleByTableName();
+
+        PostGreSQL postGreSQLDestination = new PostGreSQL((DatabaseConnection) comboBoxDestination.getValue());
+        secondArrayList = postGreSQLDestination.getTitleByTableName();
 
 
         ArrayList<StringCompared> finalFirstArrayList = firstArrayList;
@@ -615,8 +674,8 @@ public class MyScene extends Scene {
     }
 
     private void exportToPostGre(){
-        PostGreSQL postGreSQL = new PostGreSQL();
-        postGreSQL.connection("172.30.100.12:5432/bsd?currentSchema=communs");
+        DatabaseConnection databaseConnection = new DatabaseConnection("Communs", "172.30.100.12", "5432","admpostgres", "admpostgres", "bsd", "communs", null);
+        PostGreSQL postGreSQL = new PostGreSQL(databaseConnection);
 
         String columnNameSource = "id" + comboBoxSource.getValue().toString();
         String columnNameDestination = "id" + comboBoxDestination.getValue().toString();

@@ -5,10 +5,9 @@ import java.sql.SQLXML;
  */
 public class Line {
 
-    private String uuid, title, harvested, source;
-    private SQLXML data;
+    private String uuid, title, harvested, source, data;
 
-    public Line(String u, String t, SQLXML d, String h, String s){
+    public Line(String u, String t, String d, String h, String s){
         uuid = u;
         title = t;
         data = d;
@@ -24,7 +23,7 @@ public class Line {
         return title;
     }
 
-    public SQLXML getData() {
+    public String getData() {
         return data;
     }
 

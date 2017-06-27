@@ -73,7 +73,7 @@ public class PostGreSQL {
      */
     public void createTable(String table){
         try {
-            String sql = "CREATE TABLE IF NOT EXISTS " + table + " (id serial PRIMARY KEY, uuid text UNIQUE, title text, data xml, isharvested character(1), source text); "; // notre requete
+            String sql = "CREATE TABLE IF NOT EXISTS " + table + " (id serial PRIMARY KEY, uuid text UNIQUE, title text, data text, isharvested character(1), source text); "; // notre requete
             stmt.executeUpdate(sql); // est éxécuté sur le statement
             System.out.println("Table created");
         } catch (SQLException e) {
@@ -125,15 +125,13 @@ public class PostGreSQL {
                 SQLXML dataTMP = rs.getSQLXML(3); // Passe par l'intermédire d'une donnée temporaire pour effectué le replace
                 String dataString = dataTMP.getString();
                 dataString = dataString.replace("'", "''");
-                SQLXML data = c.createSQLXML();
-                data.setString(dataString);
 
                 String harvested = rs.getString(4);
 
                 String source = rs.getString(5);
                 source = source.replace("'", "''");
 
-                Line line = new Line(uuid, title, data, harvested, source);
+                Line line = new Line(uuid, title, dataString, harvested, source);
                 linesInit.add(line);
             }
         } catch (SQLException e) {
@@ -154,7 +152,7 @@ public class PostGreSQL {
                             + "', '" + l.getHarvested() + "', '" + l.getSource() + "');";
                 }
                 else{
-                    sql = "UPDATE " + table + " SET title = '" + l.getTitle() + "' where uuid = '" + l.getUuid() + "';";
+                    sql = "UPDATE " + table + " SET title = '" + l.getTitle() + "', data = '" + l.getData() + "'  where uuid = '" + l.getUuid() + "';";
                 }
                 stmt.executeUpdate(sql);
             } catch (SQLException e) {

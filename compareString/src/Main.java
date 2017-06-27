@@ -30,12 +30,5 @@ public class Main extends Application {
         Scene scene = new MyScene();
         stage.setScene(scene);
         stage.show();
-
-        StringCompared stringCompared = new StringCompared("DREAL NOUVELLE AQUITAINE - SITE DE BORDEAUX - SCOT", "0");
-        StringCompared compared = new StringCompared("CR Aquitaine - EPCI Nouvelle Aquitaine", "1");
-        stringCompared.removeCommonWords(compared);
-        System.out.println(stringCompared.getTextWithoutCommon());
-        System.out.println(compared.getTextWithoutCommon());
-        System.out.println(Utils.leven(stringCompared.getTextWithoutCommon(), compared.getTextWithoutCommon()));
     }
 }
