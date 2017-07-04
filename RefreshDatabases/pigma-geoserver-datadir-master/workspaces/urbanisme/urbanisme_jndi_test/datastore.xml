@@ -1,0 +1,22 @@
+<dataStore>
+  <id>DataStoreInfoImpl--40aa1ff3:1493bc9ee88:-1e6a</id>
+  <name>urbanisme_jndi_test</name>
+  <description>Test fvanderbiest</description>
+  <type>PostGIS (JNDI)</type>
+  <enabled>true</enabled>
+  <workspace>
+    <id>WorkspaceInfoImpl-2c34a65b:13f9e7c9256:-20eb</id>
+  </workspace>
+  <connectionParameters>
+    <entry key="schema">urbanisme</entry>
+    <entry key="dbtype">postgis</entry>
+    <entry key="Loose bbox">true</entry>
+    <entry key="Expose primary keys">false</entry>
+    <entry key="encode functions">false</entry>
+    <entry key="preparedStatements">true</entry>
+    <entry key="jndiReferenceName">java:comp/env/jdbc/pigma</entry>
+    <entry key="Estimated extends">true</entry>
+    <entry key="namespace">http://pigma.org/urbanisme</entry>
+  </connectionParameters>
+  <__default>false</__default>
+</dataStore>

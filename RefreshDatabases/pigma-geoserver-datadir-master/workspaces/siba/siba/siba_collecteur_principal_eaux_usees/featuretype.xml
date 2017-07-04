@@ -1,0 +1,70 @@
+<featureType>
+  <id>FeatureTypeInfoImpl-b616f19:1370de390e3:4d33</id>
+  <name>siba_collecteur_principal_eaux_usees</name>
+  <nativeName>collecteur_principal_eaux_usees</nativeName>
+  <namespace>
+    <id>NamespaceInfoImpl--16ec6ada:13673194d60:-6976</id>
+  </namespace>
+  <title>SIBA - Collecteur principal des eaux usées</title>
+  <abstract>Syndicat Intercommunnal du bassin d'Arcachon</abstract>
+  <keywords>
+    <string>collecteur_principal_eaux_usees</string>
+    <string>features</string>
+  </keywords>
+  <metadataLinks>
+    <metadataLink>
+      <type>text/plain</type>
+      <metadataType>TC211</metadataType>
+      <content>https://www.pigma.org/geonetwork?uuid=26f5367d-74dc-40f6-af82-ef2367693ac8</content>
+    </metadataLink>
+  <metadataLink><type>text/html</type><metadataType /><content>https://www.pigma.org/geonetwork/apps/georchestra/?uuid=26f5367d-74dc-40f6-af82-ef2367693ac8</content></metadataLink><metadataLink><type>text/xml</type><metadataType /><content>https://www.pigma.org/geonetwork/srv/fre/xml_iso19139?uuid=26f5367d-74dc-40f6-af82-ef2367693ac8</content></metadataLink></metadataLinks>
+  <nativeCRS class="projected">PROJCS["RGF93 / Lambert-93", 
+  GEOGCS["RGF93", 
+    DATUM["Reseau Geodesique Francais 1993", 
+      SPHEROID["GRS 1980", 6378137.0, 298.257222101, AUTHORITY["EPSG","7019"]], 
+      TOWGS84[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], 
+      AUTHORITY["EPSG","6171"]], 
+    PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+    UNIT["degree", 0.017453292519943295], 
+    AXIS["Geodetic longitude", EAST], 
+    AXIS["Geodetic latitude", NORTH], 
+    AUTHORITY["EPSG","4171"]], 
+  PROJECTION["Lambert_Conformal_Conic_2SP", AUTHORITY["EPSG","9802"]], 
+  PARAMETER["central_meridian", 3.0], 
+  PARAMETER["latitude_of_origin", 46.5], 
+  PARAMETER["standard_parallel_1", 49.0], 
+  PARAMETER["false_easting", 700000.0], 
+  PARAMETER["false_northing", 6600000.0], 
+  PARAMETER["scale_factor", 1.0], 
+  PARAMETER["standard_parallel_2", 44.0], 
+  UNIT["m", 1.0], 
+  AXIS["Easting", EAST], 
+  AXIS["Northing", NORTH], 
+  AUTHORITY["EPSG","2154"]]</nativeCRS>
+  <srs>EPSG:2154</srs>
+  <nativeBoundingBox>
+    <minx>360433.34375</minx>
+    <maxx>384629.53125</maxx>
+    <miny>6388577.5</miny>
+    <maxy>6417793.0</maxy>
+    <crs class="projected">EPSG:2154</crs>
+  </nativeBoundingBox>
+  <latLonBoundingBox>
+    <minx>-1.2942224293259026</minx>
+    <maxx>-0.9702097979024976</maxx>
+    <miny>44.51352929483681</miny>
+    <maxy>44.78758033448407</maxy>
+    <crs>EPSG:4326</crs>
+  </latLonBoundingBox>
+  <projectionPolicy>FORCE_DECLARED</projectionPolicy>
+  <enabled>true</enabled>
+  <advertised>true</advertised>
+  <metadata>
+    <entry key="cachingEnabled">false</entry>
+  </metadata>
+  <store class="dataStore">
+    <id>DataStoreInfoImpl--16ec6ada:13673194d60:-6975</id>
+  </store>
+  <maxFeatures>0</maxFeatures>
+  <numDecimals>0</numDecimals>
+</featureType>

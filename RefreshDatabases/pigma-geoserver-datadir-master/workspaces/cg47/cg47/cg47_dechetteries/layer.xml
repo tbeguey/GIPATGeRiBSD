@@ -1,0 +1,20 @@
+<layer>
+  <name>cg47_dechetteries</name>
+  <id>LayerInfoImpl--4b05c1c2:134c82984ff:-637a</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl--4b05c1c2:134c82984ff:-6379</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl--4b05c1c2:134c82984ff:-637b</id>
+  </resource>
+  <enabled>true</enabled>
+  <attribution>
+    <title>CGénéral 47</title>
+    <href>http://www.cg47.fr/</href>
+    <logoURL>https://www.pigma.org/portail/sites/www.pigma.org.portail/files/sites/default/files/inline-images/pigma/les_partenaires/les_signataires_de_la_convention_pigma/lot_et_garonne/CD47.png</logoURL>
+    <logoWidth>190</logoWidth>
+    <logoHeight>48</logoHeight>
+    <logoType>image/png</logoType>
+  </attribution>
+</layer>

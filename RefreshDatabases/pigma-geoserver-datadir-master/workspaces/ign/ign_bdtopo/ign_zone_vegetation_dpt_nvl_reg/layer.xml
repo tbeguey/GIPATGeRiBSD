@@ -1,0 +1,20 @@
+<layer>
+  <name>ign_zone_vegetation_dpt_nvl_reg</name>
+  <id>LayerInfoImpl--2c77ddf1:14bd99631d7:33cc</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl--2c77ddf1:14bd9a58977:-4a82</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl--2c77ddf1:14bd99631d7:33cb</id>
+  </resource>
+  <enabled>true</enabled>
+  <attribution>
+    <title>IGN</title>
+    <href>http://www.ign.fr/</href>
+    <logoURL>https://www.pigma.org/portail/sites/www.pigma.org.portail/files/sites/default/files/inline-images/pigma/les_financeurs/logo-IGN.jpg</logoURL>
+    <logoWidth>187</logoWidth>
+    <logoHeight>68</logoHeight>
+    <logoType>image/jpeg</logoType>
+  </attribution>
+</layer>

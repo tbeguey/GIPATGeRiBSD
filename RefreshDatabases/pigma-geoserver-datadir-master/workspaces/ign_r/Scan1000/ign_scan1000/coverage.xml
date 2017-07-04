@@ -1,0 +1,160 @@
+<coverage>
+  <id>CoverageInfoImpl-1b853102:1405956ab90:5983</id>
+  <name>ign_scan1000</name>
+  <nativeName>Scan1000</nativeName>
+  <namespace>
+    <id>NamespaceInfoImpl--4f1d3a93:131f1a753d4:-7ff7</id>
+  </namespace>
+  <title>IGN - Scan 1000</title>
+  <description>Generated from ImageMosaic</description>
+  <keywords>
+    <string>WCS</string>
+    <string>ImageMosaic</string>
+    <string>Scan1000</string>
+  </keywords>
+  <nativeCRS class="projected">PROJCS[&quot;RGF93_Lambert_93&quot;, 
+  GEOGCS[&quot;GCS_RGF93&quot;, 
+    DATUM[&quot;D_RGF_1993&quot;, 
+      SPHEROID[&quot;GRS_1980&quot;, 6378137.0, 298.257222101]], 
+    PRIMEM[&quot;Greenwich&quot;, 0.0], 
+    UNIT[&quot;degree&quot;, 0.017453292519943295], 
+    AXIS[&quot;Longitude&quot;, EAST], 
+    AXIS[&quot;Latitude&quot;, NORTH]], 
+  PROJECTION[&quot;Lambert_Conformal_Conic_2SP&quot;], 
+  PARAMETER[&quot;central_meridian&quot;, 3.0], 
+  PARAMETER[&quot;latitude_of_origin&quot;, 46.5], 
+  PARAMETER[&quot;standard_parallel_1&quot;, 49.0], 
+  PARAMETER[&quot;false_easting&quot;, 700000.0], 
+  PARAMETER[&quot;false_northing&quot;, 6600000.0], 
+  PARAMETER[&quot;scale_factor&quot;, 1.0], 
+  PARAMETER[&quot;standard_parallel_2&quot;, 44.0], 
+  UNIT[&quot;m&quot;, 1.0], 
+  AXIS[&quot;x&quot;, EAST], 
+  AXIS[&quot;y&quot;, NORTH]]</nativeCRS>
+  <srs>EPSG:2154</srs>
+  <nativeBoundingBox>
+    <minx>50000.0</minx>
+    <maxx>1250000.0</maxx>
+    <miny>6030000.0</miny>
+    <maxy>7130000.0</maxy>
+    <crs class="projected">PROJCS[&quot;RGF93_Lambert_93&quot;, 
+  GEOGCS[&quot;GCS_RGF93&quot;, 
+    DATUM[&quot;D_RGF_1993&quot;, 
+      SPHEROID[&quot;GRS_1980&quot;, 6378137.0, 298.257222101]], 
+    PRIMEM[&quot;Greenwich&quot;, 0.0], 
+    UNIT[&quot;degree&quot;, 0.017453292519943295], 
+    AXIS[&quot;Longitude&quot;, EAST], 
+    AXIS[&quot;Latitude&quot;, NORTH]], 
+  PROJECTION[&quot;Lambert_Conformal_Conic_2SP&quot;], 
+  PARAMETER[&quot;central_meridian&quot;, 3.0], 
+  PARAMETER[&quot;latitude_of_origin&quot;, 46.5], 
+  PARAMETER[&quot;standard_parallel_1&quot;, 49.0], 
+  PARAMETER[&quot;false_easting&quot;, 700000.0], 
+  PARAMETER[&quot;false_northing&quot;, 6600000.0], 
+  PARAMETER[&quot;scale_factor&quot;, 1.0], 
+  PARAMETER[&quot;standard_parallel_2&quot;, 44.0], 
+  UNIT[&quot;m&quot;, 1.0], 
+  AXIS[&quot;x&quot;, EAST], 
+  AXIS[&quot;y&quot;, NORTH]]</crs>
+  </nativeBoundingBox>
+  <latLonBoundingBox>
+    <minx>-6.246180491316599</minx>
+    <maxx>10.833843143289068</maxx>
+    <miny>41.08638535655602</miny>
+    <maxy>51.262824397050906</maxy>
+    <crs>GEOGCS[&quot;WGS84(DD)&quot;, 
+  DATUM[&quot;WGS84&quot;, 
+    SPHEROID[&quot;WGS84&quot;, 6378137.0, 298.257223563]], 
+  PRIMEM[&quot;Greenwich&quot;, 0.0], 
+  UNIT[&quot;degree&quot;, 0.017453292519943295], 
+  AXIS[&quot;Geodetic longitude&quot;, EAST], 
+  AXIS[&quot;Geodetic latitude&quot;, NORTH]]</crs>
+  </latLonBoundingBox>
+  <projectionPolicy>FORCE_DECLARED</projectionPolicy>
+  <enabled>true</enabled>
+  <advertised>true</advertised>
+  <metadata>
+    <entry key="cachingEnabled">false</entry>
+    <entry key="dirName">Scan1000_Scan1000</entry>
+  </metadata>
+  <store class="coverageStore">
+    <id>CoverageStoreInfoImpl-1b853102:1405956ab90:597d</id>
+  </store>
+  <nativeFormat>ImageMosaic</nativeFormat>
+  <grid dimension="2">
+    <range>
+      <low>0 0</low>
+      <high>12000 11000</high>
+    </range>
+    <transform>
+      <scaleX>100.0</scaleX>
+      <scaleY>-100.0</scaleY>
+      <shearX>0.0</shearX>
+      <shearY>0.0</shearY>
+      <translateX>50050.0</translateX>
+      <translateY>7129950.0</translateY>
+    </transform>
+    <crs>EPSG:2154</crs>
+  </grid>
+  <supportedFormats>
+    <string>JPEG</string>
+  </supportedFormats>
+  <interpolationMethods>
+    <string>bicubic</string>
+  </interpolationMethods>
+  <dimensions>
+    <coverageDimension>
+      <name>PALETTE_INDEX</name>
+      <description>GridSampleDimension[0.0,0.0]</description>
+      <range>
+        <min>0.0</min>
+        <max>0.0</max>
+      </range>
+      <nullValues>
+        <double>0.0</double>
+      </nullValues>
+    </coverageDimension>
+  </dimensions>
+  <parameters>
+    <entry>
+      <string>MergeBehavior</string>
+      <string>FLAT</string>
+    </entry>
+    <entry>
+      <string>AllowMultithreading</string>
+      <string>false</string>
+    </entry>
+    <entry>
+      <string>Filter</string>
+      <null/>
+    </entry>
+    <entry>
+      <string>MaxAllowedTiles</string>
+      <string>-1</string>
+    </entry>
+    <entry>
+      <string>SORTING</string>
+      <null/>
+    </entry>
+    <entry>
+      <string>OutputTransparentColor</string>
+      <string></string>
+    </entry>
+    <entry>
+      <string>InputTransparentColor</string>
+      <string></string>
+    </entry>
+    <entry>
+      <string>SUGGESTED_TILE_SIZE</string>
+      <string>512,512</string>
+    </entry>
+    <entry>
+      <string>BackgroundValues</string>
+      <null/>
+    </entry>
+    <entry>
+      <string>USE_JAI_IMAGEREAD</string>
+      <string>true</string>
+    </entry>
+  </parameters>
+</coverage>

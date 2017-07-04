@@ -1,0 +1,42 @@
+<featureType>
+  <id>FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7db4</id>
+  <name>smeap_enh_affluent_dronne_2010</name>
+  <nativeName>enh_affluent_dronne_smeap_2010</nativeName>
+  <namespace>
+    <id>NamespaceInfoImpl--3d639cb2:13285edbc12:-7fda</id>
+  </namespace>
+  <title>SMEAP - Préinventaire des espaces naturels humides dans les vallées des principaux affluents de la Dronne moyenne</title>
+  <metadataLinks>
+    <metadataLink>
+      <type>text/plain</type>
+      <metadataType>TC211</metadataType>
+      <content>https://www.pigma.org/geonetwork?uuid=c9953614-febf-4af5-823e-153bb7f3de79</content>
+    </metadataLink>
+  <metadataLink><type>text/html</type><metadataType /><content>https://www.pigma.org/geonetwork/apps/georchestra/?uuid=c9953614-febf-4af5-823e-153bb7f3de79</content></metadataLink><metadataLink><type>text/xml</type><metadataType /><content>https://www.pigma.org/geonetwork/srv/fre/xml_iso19139?uuid=c9953614-febf-4af5-823e-153bb7f3de79</content></metadataLink></metadataLinks>
+  <srs>EPSG:2154</srs>
+  <nativeBoundingBox>
+    <minx>483290.664</minx>
+    <maxx>510670.796</maxx>
+    <miny>6455915.156</miny>
+    <maxy>6482494.069</maxy>
+    <crs class="projected">EPSG:2154</crs>
+  </nativeBoundingBox>
+  <latLonBoundingBox>
+    <minx>0.229</minx>
+    <maxx>0.589</maxx>
+    <miny>45.168</miny>
+    <maxy>45.416</maxy>
+    <crs>EPSG:4326</crs>
+  </latLonBoundingBox>
+  <projectionPolicy>FORCE_DECLARED</projectionPolicy>
+  <enabled>true</enabled>
+  <advertised>true</advertised>
+  <metadata>
+    <entry key="cachingEnabled">false</entry>
+  </metadata>
+  <store class="dataStore">
+    <id>DataStoreInfoImpl--3d639cb2:13285edbc12:-7fc9</id>
+  </store>
+  <maxFeatures>0</maxFeatures>
+  <numDecimals>0</numDecimals>
+</featureType>

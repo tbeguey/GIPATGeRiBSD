@@ -1,0 +1,20 @@
+<layer>
+  <name>cobas_pistes_cyclables_atelier</name>
+  <id>LayerInfoImpl-2090530a:14b6e2159a6:-4a5b</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl-2090530a:14b6e2159a6:-2082</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl-2090530a:14b6e2159a6:-4a5c</id>
+  </resource>
+  <enabled>true</enabled>
+  <attribution>
+    <title>COBAS</title>
+    <href>http://www.agglo-cobas.fr/</href>
+    <logoURL>https://www.pigma.org/portail/sites/www.pigma.org.portail/files/sites/default/files/inline-images/pigma/les_partenaires/les_signataires_de_la_convention_pigma/gironde/CDA_BASSIN_ARCACHON.jpg</logoURL>
+    <logoWidth>178</logoWidth>
+    <logoHeight>68</logoHeight>
+    <logoType>image/jpeg</logoType>
+  </attribution>
+</layer>

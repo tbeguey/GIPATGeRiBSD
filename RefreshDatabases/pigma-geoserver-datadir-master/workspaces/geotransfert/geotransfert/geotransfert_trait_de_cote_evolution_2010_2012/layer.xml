@@ -1,0 +1,21 @@
+<layer>
+  <name>geotransfert_trait_de_cote_evolution_2010_2012</name>
+  <id>LayerInfoImpl-2245790e:1419c920d26:-3b07</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl-2245790e:1419cb6b331:-3b9e</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl-2245790e:1419c920d26:-3b08</id>
+  </resource>
+  <enabled>true</enabled>
+  <advertised>true</advertised>
+  <attribution>
+    <title>GeoTransfert</title>
+    <href>http://www.geotransfert.epoc.u-bordeaux1.fr/</href>
+    <logoURL>https://www.pigma.org/portail/sites/www.pigma.org.portail/files/sites/default/files/inline-images/pigma/les_partenaires/les_signataires_de_la_convention_pigma/autres/geotransfert.jpg</logoURL>
+    <logoWidth>114</logoWidth>
+    <logoHeight>67</logoHeight>
+    <logoType>image/jpeg</logoType>
+  </attribution>
+</layer>

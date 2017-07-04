@@ -1,0 +1,43 @@
+<featureType>
+  <id>FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7d6e</id>
+  <name>rff_fuseau_lgv_gpso</name>
+  <nativeName>fuseau_lgv_gpso</nativeName>
+  <namespace>
+    <id>NamespaceInfoImpl--3d639cb2:13285edbc12:-7fd4</id>
+  </namespace>
+  <title>RFF - Projet LGV GPSO 1000m</title>
+  <abstract>Grand Projet ferroviaire du Sud-Ouest (Fuseau de 1000m) - RESEAU FERRE DE FRANCE</abstract>
+  <metadataLinks>
+    <metadataLink>
+      <type>text/plain</type>
+      <metadataType>TC211</metadataType>
+      <content>https://www.pigma.org/geonetwork?uuid=3bf1ddb9-66ee-4f42-a9f2-101326b34203</content>
+    </metadataLink>
+  <metadataLink><type>text/html</type><metadataType /><content>https://www.pigma.org/geonetwork/apps/georchestra/?uuid=3bf1ddb9-66ee-4f42-a9f2-101326b34203</content></metadataLink><metadataLink><type>text/xml</type><metadataType /><content>https://www.pigma.org/geonetwork/srv/fre/xml_iso19139?uuid=3bf1ddb9-66ee-4f42-a9f2-101326b34203</content></metadataLink></metadataLinks>
+  <srs>EPSG:2154</srs>
+  <nativeBoundingBox>
+    <minx>314563.579</minx>
+    <maxx>568152.57</maxx>
+    <miny>6259617.572</miny>
+    <maxy>6419027.916</maxy>
+    <crs class="projected">EPSG:2154</crs>
+  </nativeBoundingBox>
+  <latLonBoundingBox>
+    <minx>-1.874</minx>
+    <maxx>1.372</maxx>
+    <miny>43.331</miny>
+    <maxy>44.858</maxy>
+    <crs>EPSG:4326</crs>
+  </latLonBoundingBox>
+  <projectionPolicy>FORCE_DECLARED</projectionPolicy>
+  <enabled>true</enabled>
+  <advertised>true</advertised>
+  <metadata>
+    <entry key="cachingEnabled">false</entry>
+  </metadata>
+  <store class="dataStore">
+    <id>DataStoreInfoImpl--3d639cb2:13285edbc12:-7fb5</id>
+  </store>
+  <maxFeatures>0</maxFeatures>
+  <numDecimals>0</numDecimals>
+</featureType>

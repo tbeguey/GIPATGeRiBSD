@@ -1,0 +1,76 @@
+<featureType>
+  <id>FeatureTypeInfoImpl--32412c87:14eb5c19f39:-609b</id>
+  <name>orecca_vue_conso_energie_2012_residentiel</name>
+  <nativeName>conso_energie_finale_2012</nativeName>
+  <namespace>
+    <id>NamespaceInfoImpl-5154104:13fd3c2084c:6cef</id>
+  </namespace>
+  <title>Résidentiel - Consommations d'énergie en 2012</title>
+  <abstract>Niveaux de consommation d'énergie finale pour le secteur du Résidentiel par commune en Aquitaine en 2012</abstract>
+  <keywords>
+    <string>features</string>
+    <string>conso_energie_finale_2012</string>
+  </keywords>
+  <metadataLinks>
+    <metadataLink>
+      <type>text/plain</type>
+      <metadataType>TC211</metadataType>
+      <content>https://www.pigma.org/geonetwork/apps/georchestra/?uuid=11dcd7e6-5a87-43f1-8520-868b4337dee2</content>
+    </metadataLink>
+  <metadataLink><type>text/html</type><metadataType /><content>https://www.pigma.org/geonetwork/apps/georchestra/?uuid=11dcd7e6-5a87-43f1-8520-868b4337dee2</content></metadataLink><metadataLink><type>text/xml</type><metadataType /><content>https://www.pigma.org/geonetwork/srv/fre/xml_iso19139?uuid=11dcd7e6-5a87-43f1-8520-868b4337dee2</content></metadataLink></metadataLinks>
+  <nativeCRS class="projected">PROJCS["RGF93 / Lambert-93", 
+  GEOGCS["RGF93", 
+    DATUM["Reseau Geodesique Francais 1993", 
+      SPHEROID["GRS 1980", 6378137.0, 298.257222101, AUTHORITY["EPSG","7019"]], 
+      TOWGS84[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], 
+      AUTHORITY["EPSG","6171"]], 
+    PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+    UNIT["degree", 0.017453292519943295], 
+    AXIS["Geodetic longitude", EAST], 
+    AXIS["Geodetic latitude", NORTH], 
+    AUTHORITY["EPSG","4171"]], 
+  PROJECTION["Lambert_Conformal_Conic_2SP", AUTHORITY["EPSG","9802"]], 
+  PARAMETER["central_meridian", 3.0], 
+  PARAMETER["latitude_of_origin", 46.5], 
+  PARAMETER["standard_parallel_1", 49.0], 
+  PARAMETER["false_easting", 700000.0], 
+  PARAMETER["false_northing", 6600000.0], 
+  PARAMETER["scale_factor", 1.0], 
+  PARAMETER["standard_parallel_2", 44.0], 
+  UNIT["m", 1.0], 
+  AXIS["Easting", EAST], 
+  AXIS["Northing", NORTH], 
+  AUTHORITY["EPSG","2154"]]</nativeCRS>
+  <srs>EPSG:2154</srs>
+  <nativeBoundingBox>
+    <minx>311617.0625</minx>
+    <maxx>577772.4375</maxx>
+    <miny>6192984.0</miny>
+    <maxy>6515566.5</maxy>
+    <crs class="projected">EPSG:2154</crs>
+  </nativeBoundingBox>
+  <latLonBoundingBox>
+    <minx>-1.988052849407769</minx>
+    <maxx>1.5067623689729344</maxx>
+    <miny>42.73149227031477</miny>
+    <maxy>45.728737788638945</maxy>
+    <crs>GEOGCS["WGS84(DD)", 
+  DATUM["WGS84", 
+    SPHEROID["WGS84", 6378137.0, 298.257223563]], 
+  PRIMEM["Greenwich", 0.0], 
+  UNIT["degree", 0.017453292519943295], 
+  AXIS["Geodetic longitude", EAST], 
+  AXIS["Geodetic latitude", NORTH]]</crs>
+  </latLonBoundingBox>
+  <projectionPolicy>FORCE_DECLARED</projectionPolicy>
+  <enabled>true</enabled>
+  <advertised>true</advertised>
+  <metadata>
+    <entry key="cachingEnabled">false</entry>
+  </metadata>
+  <store class="dataStore">
+    <id>DataStoreInfoImpl-5154104:13fd3c2084c:722b</id>
+  </store>
+  <maxFeatures>0</maxFeatures>
+  <numDecimals>0</numDecimals>
+</featureType>

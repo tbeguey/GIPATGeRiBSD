@@ -1,0 +1,19 @@
+<layer>
+  <name>cg40_zhe_final</name>
+  <id>LayerInfoImpl-6b25b570:152f4e8a74b:-3889</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl--4bbfe513:1579a3f7d73:-7733</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl-6b25b570:152f4e8a74b:-388a</id>
+  </resource>
+  <attribution>
+    <title>Géolandes</title>
+    <href>http://www.sage-born-et-buch.fr/</href>
+    <logoURL>https://www.pigma.org/portail/sites/www.pigma.org.portail/files/sites/default/files/inline-images/pigma/les_partenaires/les_signataires_de_la_convention_pigma/landes/cd40.jpg</logoURL>
+    <logoWidth>178</logoWidth>
+    <logoHeight>68</logoHeight>
+    <logoType>image/jpeg</logoType>
+  </attribution>
+</layer>

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sld:UserStyle xmlns="http://www.opengis.net/sld" xmlns:sld="http://www.opengis.net/sld" xmlns:ogc="http://www.opengis.net/ogc" xmlns:gml="http://www.opengis.net/gml">
+  <sld:Name>Default Styler</sld:Name>
+  <sld:Title>AtlasStyler v1.8-r201109151836, Export-Mode: PRODUCTION</sld:Title>
+   <sld:FeatureTypeStyle>
+    <sld:Name>name</sld:Name>
+    <sld:FeatureTypeName>Feature</sld:FeatureTypeName>
+    <sld:Rule>
+      <sld:Title>Autoroute</sld:Title>
+      <ogc:Filter>
+        <ogc:And>
+          <ogc:Not>
+            <ogc:Or>
+              <ogc:PropertyIsNull>
+                <ogc:PropertyName>CL_ADMIN</ogc:PropertyName>
+              </ogc:PropertyIsNull>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>CL_ADMIN</ogc:PropertyName>
+                <ogc:Literal></ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+            </ogc:Or>
+          </ogc:Not>
+          <ogc:PropertyIsEqualTo>
+            <ogc:PropertyName>CL_ADMIN</ogc:PropertyName>
+            <ogc:Literal>Autoroute</ogc:Literal>
+          </ogc:PropertyIsEqualTo>
+        </ogc:And>
+      </ogc:Filter>
+      <sld:MaxScaleDenominator>2500000</sld:MaxScaleDenominator>
+      <sld:LineSymbolizer>
+        <sld:Geometry>
+          <ogc:PropertyName>the_geom</ogc:PropertyName>
+        </sld:Geometry>
+        <sld:Stroke>
+          <sld:CssParameter name="stroke">#3366FF</sld:CssParameter>
+          <sld:CssParameter name="stroke-width">4.0</sld:CssParameter>
+        </sld:Stroke>
+      </sld:LineSymbolizer>
+      <sld:LineSymbolizer>
+        <sld:Geometry>
+          <ogc:PropertyName>the_geom</ogc:PropertyName>
+        </sld:Geometry>
+        <sld:Stroke>
+          <sld:CssParameter name="stroke">#FFFFFF</sld:CssParameter>
+          <sld:CssParameter name="stroke-opacity">0.9</sld:CssParameter>
+        </sld:Stroke>
+      </sld:LineSymbolizer>
+    </sld:Rule>
+    <sld:Rule>
+      <sld:Title>Nationale</sld:Title>
+      <ogc:Filter>
+        <ogc:And>
+          <ogc:Not>
+            <ogc:Or>
+              <ogc:PropertyIsNull>
+                <ogc:PropertyName>CL_ADMIN</ogc:PropertyName>
+              </ogc:PropertyIsNull>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>CL_ADMIN</ogc:PropertyName>
+                <ogc:Literal></ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+            </ogc:Or>
+          </ogc:Not>
+          <ogc:PropertyIsEqualTo>
+            <ogc:PropertyName>CL_ADMIN</ogc:PropertyName>
+            <ogc:Literal>Nationale</ogc:Literal>
+          </ogc:PropertyIsEqualTo>
+        </ogc:And>
+      </ogc:Filter>
+      <sld:MaxScaleDenominator>2100000</sld:MaxScaleDenominator>
+      <sld:LineSymbolizer>
+        <sld:Geometry>
+          <ogc:PropertyName>the_geom</ogc:PropertyName>
+        </sld:Geometry>
+        <sld:Stroke>
+          <sld:CssParameter name="stroke">#FF3333</sld:CssParameter>
+          <sld:CssParameter name="stroke-width">2.5</sld:CssParameter>
+        </sld:Stroke>
+      </sld:LineSymbolizer>
+    </sld:Rule>
+    <sld:Rule>
+      <sld:Title>Départementale</sld:Title>
+      <ogc:Filter>
+        <ogc:And>
+          <ogc:Not>
+            <ogc:Or>
+              <ogc:PropertyIsNull>
+                <ogc:PropertyName>CL_ADMIN</ogc:PropertyName>
+              </ogc:PropertyIsNull>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>CL_ADMIN</ogc:PropertyName>
+                <ogc:Literal></ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+            </ogc:Or>
+          </ogc:Not>
+          <ogc:PropertyIsEqualTo>
+            <ogc:PropertyName>CL_ADMIN</ogc:PropertyName>
+            <ogc:Literal>Départementale</ogc:Literal>
+          </ogc:PropertyIsEqualTo>
+        </ogc:And>
+      </ogc:Filter>
+      <sld:MaxScaleDenominator>1091958</sld:MaxScaleDenominator>
+      <sld:LineSymbolizer>
+        <sld:Geometry>
+          <ogc:PropertyName>the_geom</ogc:PropertyName>
+        </sld:Geometry>
+        <sld:Stroke>
+          <sld:CssParameter name="stroke">#E6E600</sld:CssParameter>
+          <sld:CssParameter name="stroke-width">1.5</sld:CssParameter>
+        </sld:Stroke>
+      </sld:LineSymbolizer>
+    </sld:Rule>
+    <sld:Rule>
+      <sld:Title>Autre</sld:Title>
+      <ogc:Filter>
+        <ogc:And>
+          <ogc:Not>
+            <ogc:Or>
+              <ogc:PropertyIsNull>
+                <ogc:PropertyName>CL_ADMIN</ogc:PropertyName>
+              </ogc:PropertyIsNull>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>CL_ADMIN</ogc:PropertyName>
+                <ogc:Literal></ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+            </ogc:Or>
+          </ogc:Not>
+          <ogc:PropertyIsEqualTo>
+            <ogc:PropertyName>CL_ADMIN</ogc:PropertyName>
+            <ogc:Literal>Autre</ogc:Literal>
+          </ogc:PropertyIsEqualTo>
+        </ogc:And>
+      </ogc:Filter>
+      <sld:MaxScaleDenominator>1501958</sld:MaxScaleDenominator>
+      <sld:LineSymbolizer>
+        <sld:Geometry>
+          <ogc:PropertyName>the_geom</ogc:PropertyName>
+        </sld:Geometry>
+        <sld:Stroke>
+          <sld:CssParameter name="stroke">#CCCCCC</sld:CssParameter>
+        </sld:Stroke>
+      </sld:LineSymbolizer>
+    </sld:Rule>
+  </sld:FeatureTypeStyle>
+</sld:UserStyle>

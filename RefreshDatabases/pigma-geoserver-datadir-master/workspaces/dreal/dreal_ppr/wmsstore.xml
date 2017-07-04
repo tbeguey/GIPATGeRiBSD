@@ -1,0 +1,19 @@
+<wmsStore>
+  <id>WMSStoreInfoImpl-54454ea7:14d24a8aaf0:-39d3</id>
+  <name>dreal_ppr</name>
+  <type>WMS</type>
+  <enabled>true</enabled>
+  <workspace>
+    <id>WorkspaceInfoImpl-5d223b53:134e5d6d059:-5ed6</id>
+  </workspace>
+  <metadata>
+    <entry key="useConnectionPooling">true</entry>
+  </metadata>
+  <__default>false</__default>
+  <capabilitiesURL>http://ws.carmen.developpement-durable.gouv.fr/WMS/6/carte6_PPR?SERVICE=WMS&amp;VERSION=1.1.1&amp;REQUEST=GetCapabilities</capabilitiesURL>
+  <user>odevendeville</user>
+  <password>12698753</password>
+  <maxConnections>6</maxConnections>
+  <readTimeout>60</readTimeout>
+  <connectTimeout>30</connectTimeout>
+</wmsStore>

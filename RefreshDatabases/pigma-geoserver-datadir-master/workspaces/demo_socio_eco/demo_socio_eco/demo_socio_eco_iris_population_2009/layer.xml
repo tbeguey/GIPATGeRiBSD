@@ -1,0 +1,15 @@
+<layer>
+  <name>demo_socio_eco_iris_population_2009</name>
+  <id>LayerInfoImpl-186890ab:15a3cd2d1e6:-352b</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl--40f3f3d6:1360c874ed4:60dc</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl-186890ab:15a3cd2d1e6:-352c</id>
+  </resource>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+</layer>

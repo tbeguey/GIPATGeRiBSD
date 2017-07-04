@@ -1,0 +1,90 @@
+<wms>
+  <id>WMSInfoImpl-3e62bdca:1516209d235:-4f1b</id>
+  <workspace>
+    <id>WorkspaceInfoImpl-3e62bdca:1516209d235:-4f4e</id>
+  </workspace>
+  <enabled>true</enabled>
+  <name>WMS</name>
+  <title>Service WMS de l&apos;IDS régionale PIGMA</title>
+  <maintainer>http://www.pigma.org/</maintainer>
+  <abstrct>Service WMS de l&apos;IDS régionale PIGMA</abstrct>
+  <accessConstraints>NONE</accessConstraints>
+  <fees>NONE</fees>
+  <versions>
+    <org.geotools.util.Version>
+      <version>1.1.1</version>
+    </org.geotools.util.Version>
+    <org.geotools.util.Version>
+      <version>1.3.0</version>
+    </org.geotools.util.Version>
+  </versions>
+  <keywords>
+    <string>WFS</string>
+    <string>WMS</string>
+    <string>GEOSERVER</string>
+  </keywords>
+  <metadataLink/>
+  <citeCompliant>false</citeCompliant>
+  <onlineResource>http://geoserver.sourceforge.net/html/index.php</onlineResource>
+  <schemaBaseURL>http://schemas.opengis.net</schemaBaseURL>
+  <verbose>false</verbose>
+  <metadata>
+    <entry key="jpegCompression">25</entry>
+    <entry key="pngCompression">25</entry>
+    <entry key="kmlSuperoverlayMode">auto</entry>
+    <entry key="framesDelay">1000</entry>
+    <entry key="kmlReflectorMode">refresh</entry>
+    <entry key="inspire.spatialDatasetIdentifier"></entry>
+    <entry key="inspire.language">fre</entry>
+    <entry key="kmlKmscore">40</entry>
+    <entry key="bboxForEachCRS">false</entry>
+    <entry key="svgAntiAlias">true</entry>
+    <entry key="kmlPlacemark">false</entry>
+    <entry key="kmlAttr">true</entry>
+    <entry key="maxAllowedFrames">2147483647</entry>
+    <entry key="inspire.metadataURLType">application/vnd.iso.19139+xml</entry>
+    <entry key="loopContinuously">false</entry>
+    <entry key="svgRenderer">Batik</entry>
+  </metadata>
+  <srs>
+    <string>2154</string>
+    <string>3857</string>
+    <string>3942</string>
+    <string>3943</string>
+    <string>3944</string>
+    <string>3945</string>
+    <string>3946</string>
+    <string>3947</string>
+    <string>3948</string>
+    <string>3949</string>
+    <string>3950</string>
+    <string>4171</string>
+    <string>4258</string>
+    <string>4326</string>
+    <string>23030</string>
+    <string>23031</string>
+    <string>23032</string>
+    <string>27561</string>
+    <string>27562</string>
+    <string>27563</string>
+    <string>27564</string>
+    <string>32630</string>
+    <string>32631</string>
+    <string>32632</string>
+    <string>4171</string>
+    <string>4271</string>
+    <string>3758</string>
+    <string>27572</string>
+  </srs>
+  <bboxForEachCRS>false</bboxForEachCRS>
+  <watermark class="org.geoserver.wms.WatermarkInfoImpl">
+    <enabled>false</enabled>
+    <position>BOT_RIGHT</position>
+    <transparency>0</transparency>
+  </watermark>
+  <interpolation>Nearest</interpolation>
+  <maxBuffer>25</maxBuffer>
+  <maxRequestMemory>65536</maxRequestMemory>
+  <maxRenderingTime>120</maxRenderingTime>
+  <maxRenderingErrors>100</maxRenderingErrors>
+</wms>

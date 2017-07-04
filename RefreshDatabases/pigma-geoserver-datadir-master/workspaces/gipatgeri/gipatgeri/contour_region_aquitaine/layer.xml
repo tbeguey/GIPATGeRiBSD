@@ -1,0 +1,20 @@
+<layer>
+  <name>contour_region_aquitaine</name>
+  <id>LayerInfoImpl-5013164b:13d7b70c49f:-691a</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl--57865d2e:1436d668ff5:-4c3</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl-5013164b:13d7b70c49f:-691b</id>
+  </resource>
+  <enabled>true</enabled>
+  <attribution>
+    <title>GIP ATGeRi</title>
+    <href>http://www.gipatgeri.fr/</href>
+    <logoURL>https://www.pigma.org/portail/sites/www.pigma.org.portail/files/sites/default/files/inline-images/pigma/les_partenaires/les_signataires_de_la_convention_pigma/autres/gipatgeri.jpg</logoURL>
+    <logoWidth>98</logoWidth>
+    <logoHeight>68</logoHeight>
+    <logoType>image/jpeg</logoType>
+  </attribution>
+</layer>

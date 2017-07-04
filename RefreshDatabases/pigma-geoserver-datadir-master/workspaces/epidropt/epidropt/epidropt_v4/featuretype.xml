@@ -1,0 +1,43 @@
+<featureType>
+  <id>FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7eb8</id>
+  <name>epidropt_v4</name>
+  <nativeName>v4</nativeName>
+  <namespace>
+    <id>NamespaceInfoImpl--3d639cb2:13285edbc12:-8000</id>
+  </namespace>
+  <title>EPIDROPT - Etat de la rypisylve V4</title>
+  <abstract>V4 : Etat médiocre - Etat de la rypisylve V4 - Etablissement Public Intersyndical du bassin du Dropt</abstract>
+  <metadataLinks>
+    <metadataLink>
+      <type>text/plain</type>
+      <metadataType>TC211</metadataType>
+      <content>https://www.pigma.org/geonetwork?uuid=4981072a-b9e1-4bb0-b967-b9b95ef86269</content>
+    </metadataLink>
+  <metadataLink><type>text/html</type><metadataType /><content>https://www.pigma.org/geonetwork/apps/georchestra/?uuid=4981072a-b9e1-4bb0-b967-b9b95ef86269</content></metadataLink><metadataLink><type>text/xml</type><metadataType /><content>https://www.pigma.org/geonetwork/srv/fre/xml_iso19139?uuid=4981072a-b9e1-4bb0-b967-b9b95ef86269</content></metadataLink></metadataLinks>
+  <srs>EPSG:2154</srs>
+  <nativeBoundingBox>
+    <minx>450951.969</minx>
+    <maxx>533155.812</maxx>
+    <miny>6391599.0</miny>
+    <maxy>6406288.0</maxy>
+    <crs class="projected">EPSG:2154</crs>
+  </nativeBoundingBox>
+  <latLonBoundingBox>
+    <minx>-0.145</minx>
+    <maxx>0.897</maxx>
+    <miny>44.579</miny>
+    <maxy>44.736</maxy>
+    <crs>EPSG:4326</crs>
+  </latLonBoundingBox>
+  <projectionPolicy>FORCE_DECLARED</projectionPolicy>
+  <enabled>true</enabled>
+  <advertised>true</advertised>
+  <metadata>
+    <entry key="cachingEnabled">false</entry>
+  </metadata>
+  <store class="dataStore">
+    <id>DataStoreInfoImpl--3d639cb2:13285edbc12:-7fc7</id>
+  </store>
+  <maxFeatures>0</maxFeatures>
+  <numDecimals>0</numDecimals>
+</featureType>

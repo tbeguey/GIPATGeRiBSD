@@ -1,0 +1,20 @@
+<layer>
+  <name>srce_l_roe_cours_eau_srce_aq</name>
+  <id>LayerInfoImpl--1349261:1431092c4c4:6d40</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl--57865d2e:1436bcb5177:4886</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl--1349261:1431092c4c4:6d3f</id>
+  </resource>
+  <enabled>true</enabled>
+  <attribution>
+    <title>SRCE</title>
+    <href>http://www.aquitaine.developpement-durable.gouv.fr/adoption-du-schema-regional-de-coherence-a2088.html</href>
+    <logoURL>https://www.pigma.org/portail/sites/www.pigma.org.portail/files/sites/default/files/inline-images/pigma/les_partenaires/les_signataires_de_la_convention_pigma/autres/srce.jpg</logoURL>
+    <logoWidth>178</logoWidth>
+    <logoHeight>68</logoHeight>
+    <logoType>image/jpeg</logoType>
+  </attribution>
+</layer>

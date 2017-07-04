@@ -1,0 +1,27 @@
+<GeoServerTileLayer>
+  <id>LayerInfoImpl--2c77ddf1:14bd99631d7:33cc</id>
+  <enabled>true</enabled>
+  <name>ign:ign_zone_vegetation_dpt_nvl_reg</name>
+  <mimeFormats>
+    <string>image/jpeg</string>
+    <string>image/png</string>
+  </mimeFormats>
+  <gridSubsets>
+    <gridSubset>
+      <gridSetName>EPSG:900913</gridSetName>
+    </gridSubset>
+    <gridSubset>
+      <gridSetName>EPSG:4326</gridSetName>
+    </gridSubset>
+    <gridSubset>
+      <gridSetName>EPSG:2154</gridSetName>
+    </gridSubset>
+  </gridSubsets>
+  <metaWidthHeight>
+    <int>4</int>
+    <int>4</int>
+  </metaWidthHeight>
+  <parameterFilters/>
+  <gutter>0</gutter>
+  <autoCacheStyles>false</autoCacheStyles>
+</GeoServerTileLayer>

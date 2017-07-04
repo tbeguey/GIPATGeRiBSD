@@ -1,0 +1,20 @@
+<layer>
+  <name>insee_population_departements</name>
+  <id>LayerInfoImpl-48337e3e:150c868ce7e:3f00</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl-2ddb1d7:15309bd7015:-4f1f</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl-48337e3e:150c868ce7e:3eff</id>
+  </resource>
+  <enabled>true</enabled>
+  <attribution>
+    <title>INSEE</title>
+    <href>http://www.insee.fr/fr/</href>
+    <logoURL>https://www.pigma.org/portail/sites/www.pigma.org.portail/files/sites/default/files/inline-images/pigma/les_partenaires/les_signataires_de_la_convention_pigma/autres/insee.jpg</logoURL>
+    <logoWidth>59</logoWidth>
+    <logoHeight>67</logoHeight>
+    <logoType>image/jpeg</logoType>
+  </attribution>
+</layer>

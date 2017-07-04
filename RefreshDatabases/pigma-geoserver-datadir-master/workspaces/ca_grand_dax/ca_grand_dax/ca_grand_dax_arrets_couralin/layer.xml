@@ -1,0 +1,19 @@
+<layer>
+  <name>ca_grand_dax_arrets_couralin</name>
+  <id>LayerInfoImpl--6dc709cf:14d4db704a4:-554a</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl--57418a1f:130f9791466:-8000</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl--6dc709cf:14d4db704a4:-554b</id>
+  </resource>
+  <attribution>
+    <title>GRAND DAX</title>
+    <href>http://www.grand-dax.fr/</href>
+    <logoURL>https://www.pigma.org/portail/sites/www.pigma.org.portail/files/sites/default/files/inline-images/pigma/les_partenaires/les_signataires_de_la_convention_pigma/landes/Grand_Dax.gif</logoURL>
+    <logoWidth>59</logoWidth>
+    <logoHeight>68</logoHeight>
+    <logoType>image/gif</logoType>
+  </attribution>
+</layer>

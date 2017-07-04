@@ -1,0 +1,20 @@
+<layer>
+  <name>ddt47_atlas_zone_inondable</name>
+  <id>LayerInfoImpl-1bfa188e:149eb73da18:-23c6</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl-1bfa188e:149eb92277f:3c49</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl-1bfa188e:149eb73da18:-23c7</id>
+  </resource>
+  <enabled>true</enabled>
+  <attribution>
+    <title>DDT du Lot-et-Garonne</title>
+    <href>http://www.lot-et-garonne.gouv.fr/direction-departementale-des-a96.html</href>
+    <logoURL>https://www.pigma.org/portail/sites/www.pigma.org.portail/files/sites/default/files/inline-images/pigma/les_partenaires/les_signataires_de_la_convention_pigma/lot_et_garonne/DDT_47.png</logoURL>
+    <logoWidth>195</logoWidth>
+    <logoHeight>68</logoHeight>
+    <logoType>image/png</logoType>
+  </attribution>
+</layer>

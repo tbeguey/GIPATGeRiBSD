@@ -1,0 +1,16 @@
+<layer>
+  <name>aquimap</name>
+  <id>LayerInfoImpl-788cc0:1537990761c:68d3</id>
+  <type>WMS</type>
+  <defaultStyle>
+    <id>StyleInfoImpl-4e0b98bf:12475d46fdd:-7fe2</id>
+  </defaultStyle>
+  <resource class="wmsLayer">
+    <id>WMSLayerInfoImpl-788cc0:1537990761c:68d2</id>
+  </resource>
+  <enabled>true</enabled>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+</layer>

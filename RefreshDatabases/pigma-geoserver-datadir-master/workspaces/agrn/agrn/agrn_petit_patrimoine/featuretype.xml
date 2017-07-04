@@ -1,0 +1,42 @@
+<featureType>
+  <id>FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7dc0</id>
+  <name>agrn_petit_patrimoine</name>
+  <nativeName>petit_patrimoine</nativeName>
+  <namespace>
+    <id>NamespaceInfoImpl--3d639cb2:13285edbc12:-7ffc</id>
+  </namespace>
+  <title>AGRN : Petit patrimoine</title>
+  <abstract>Petit patrimoine - Atelier de Géographie Rurale Numérique (Dordogne)</abstract>
+  <metadataLinks>
+    <metadataLink>
+      <type>text/plain</type>
+      <metadataType>TC211</metadataType>
+      <content>https://www.pigma.org/geonetwork?uuid=8d6fa03e-c509-489f-8b42-85d89b5dcab7</content>
+    </metadataLink>
+  <metadataLink><type>text/html</type><metadataType /><content>https://www.pigma.org/geonetwork/apps/georchestra/?uuid=8d6fa03e-c509-489f-8b42-85d89b5dcab7</content></metadataLink><metadataLink><type>text/xml</type><metadataType /><content>https://www.pigma.org/geonetwork/srv/fre/xml_iso19139?uuid=8d6fa03e-c509-489f-8b42-85d89b5dcab7</content></metadataLink></metadataLinks>
+  <srs>EPSG:2154</srs>
+  <nativeBoundingBox>
+    <minx>504314.254</minx>
+    <maxx>508081.057</maxx>
+    <miny>6443236.944</miny>
+    <maxy>6448596.064</maxy>
+    <crs class="projected">EPSG:2154</crs>
+  </nativeBoundingBox>
+  <latLonBoundingBox>
+    <minx>0.511</minx>
+    <maxx>0.561</maxx>
+    <miny>45.061</miny>
+    <maxy>45.11</maxy>
+    <crs>EPSG:4326</crs>
+  </latLonBoundingBox>
+  <projectionPolicy>FORCE_DECLARED</projectionPolicy>
+  <enabled>true</enabled>
+  <metadata>
+    <entry key="cachingEnabled">false</entry>
+  </metadata>
+  <store class="dataStore">
+    <id>DataStoreInfoImpl--3d639cb2:13285edbc12:-7fce</id>
+  </store>
+  <maxFeatures>0</maxFeatures>
+  <numDecimals>0</numDecimals>
+</featureType>

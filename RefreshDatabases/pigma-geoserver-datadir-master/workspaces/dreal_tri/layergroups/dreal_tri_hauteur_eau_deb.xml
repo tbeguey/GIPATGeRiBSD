@@ -1,0 +1,38 @@
+<layerGroup>
+  <id>LayerGroupInfoImpl--5e0774f1:150386490bd:28bf</id>
+  <name>dreal_tri_hauteur_eau_deb</name>
+  <mode>SINGLE</mode>
+  <title>DREAL - Hauteur d&apos;eau - Débordement</title>
+  <workspace>
+    <id>WorkspaceInfoImpl-749b820c:14d2985b15f:-d91</id>
+  </workspace>
+  <publishables>
+    <published type="layer">
+      <id>LayerInfoImpl-5a07631d:14d6640074d:-5fe5</id>
+    </published>
+    <published type="layer">
+      <id>LayerInfoImpl-5a07631d:14d664b35cf:3e2b</id>
+    </published>
+    <published type="layer">
+      <id>LayerInfoImpl-5a07631d:14d664b35cf:66a2</id>
+    </published>
+  </publishables>
+  <styles>
+    <style>
+      <id>StyleInfoImpl-5a07631d:14d6640074d:-602e</id>
+    </style>
+    <style>
+      <id>StyleInfoImpl-5a07631d:14d666f37fe:5cd7</id>
+    </style>
+    <style>
+      <id>StyleInfoImpl-5a07631d:14d666f37fe:5cef</id>
+    </style>
+  </styles>
+  <bounds>
+    <minx>311581.113623998</minx>
+    <maxx>530818.620655411</maxx>
+    <miny>6241387.07049171</miny>
+    <maxy>6458707.58900629</maxy>
+    <crs class="projected">EPSG:2154</crs>
+  </bounds>
+</layerGroup>

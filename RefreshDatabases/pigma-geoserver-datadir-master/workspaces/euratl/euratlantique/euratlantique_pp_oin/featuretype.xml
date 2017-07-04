@@ -1,0 +1,65 @@
+<featureType>
+  <id>FeatureTypeInfoImpl--21535270:133b13cd29b:-777a</id>
+  <name>euratlantique_pp_oin</name>
+  <nativeName>pp_oin</nativeName>
+  <namespace>
+    <id>NamespaceInfoImpl--3d639cb2:13285edbc12:-7fe8</id>
+  </namespace>
+  <title>EURATLANTIQUE - Périmètre de l'OIN</title>
+  <metadataLinks>
+    <metadataLink>
+      <type>text/plain</type>
+      <metadataType>TC211</metadataType>
+      <content>https://www.pigma.org/geonetwork?uuid=2f375380-835b-4144-a52c-79be82786c85</content>
+    </metadataLink>
+  <metadataLink><type>text/html</type><metadataType /><content>https://www.pigma.org/geonetwork/apps/georchestra/?uuid=2f375380-835b-4144-a52c-79be82786c85</content></metadataLink><metadataLink><type>text/xml</type><metadataType /><content>https://www.pigma.org/geonetwork/srv/fre/xml_iso19139?uuid=2f375380-835b-4144-a52c-79be82786c85</content></metadataLink></metadataLinks>
+  <nativeCRS class="projected">PROJCS["RGF93 / Lambert-93", 
+  GEOGCS["RGF93", 
+    DATUM["Reseau Geodesique Francais 1993", 
+      SPHEROID["GRS 1980", 6378137.0, 298.257222101, AUTHORITY["EPSG","7019"]], 
+      TOWGS84[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], 
+      AUTHORITY["EPSG","6171"]], 
+    PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+    UNIT["degree", 0.017453292519943295], 
+    AXIS["Geodetic longitude", EAST], 
+    AXIS["Geodetic latitude", NORTH], 
+    AUTHORITY["EPSG","4171"]], 
+  PROJECTION["Lambert_Conformal_Conic_2SP", AUTHORITY["EPSG","9802"]], 
+  PARAMETER["central_meridian", 3.0], 
+  PARAMETER["latitude_of_origin", 46.5], 
+  PARAMETER["standard_parallel_1", 49.0], 
+  PARAMETER["false_easting", 700000.0], 
+  PARAMETER["false_northing", 6600000.0], 
+  PARAMETER["scale_factor", 1.0], 
+  PARAMETER["standard_parallel_2", 44.0], 
+  UNIT["m", 1.0], 
+  AXIS["Easting", EAST], 
+  AXIS["Northing", NORTH], 
+  AUTHORITY["EPSG","2154"]]</nativeCRS>
+  <srs>EPSG:2154</srs>
+  <nativeBoundingBox>
+    <minx>418075.784</minx>
+    <maxx>421762.211</maxx>
+    <miny>6416750.756</miny>
+    <maxy>6422667.535</maxy>
+    <crs class="projected">EPSG:2154</crs>
+  </nativeBoundingBox>
+  <latLonBoundingBox>
+    <minx>-0.569</minx>
+    <maxx>-0.519</maxx>
+    <miny>44.793</miny>
+    <maxy>44.847</maxy>
+    <crs>EPSG:4326</crs>
+  </latLonBoundingBox>
+  <projectionPolicy>FORCE_DECLARED</projectionPolicy>
+  <enabled>true</enabled>
+  <advertised>true</advertised>
+  <metadata>
+    <entry key="cachingEnabled">false</entry>
+  </metadata>
+  <store class="dataStore">
+    <id>DataStoreInfoImpl--3d639cb2:13285edbc12:-7fcc</id>
+  </store>
+  <maxFeatures>0</maxFeatures>
+  <numDecimals>0</numDecimals>
+</featureType>

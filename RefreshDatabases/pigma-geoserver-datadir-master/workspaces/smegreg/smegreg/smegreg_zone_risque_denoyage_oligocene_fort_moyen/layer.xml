@@ -1,0 +1,20 @@
+<layer>
+  <name>smegreg_zone_risque_denoyage_oligocene_fort_moyen</name>
+  <id>LayerInfoImpl--7cc2c4a8:14cb3762e9a:5149</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl-538fbc38:14cb36a2ed3:22b2</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl--7cc2c4a8:14cb3762e9a:5148</id>
+  </resource>
+  <enabled>true</enabled>
+  <attribution>
+    <title>SMEGREG</title>
+    <href>http://www.smegreg.org/</href>
+    <logoURL>https://www.pigma.org/portail/sites/www.pigma.org.portail/files/sites/default/files/inline-images/pigma/les_partenaires/les_signataires_de_la_convention_pigma/gironde/smegreg.gif</logoURL>
+    <logoWidth>58</logoWidth>
+    <logoHeight>68</logoHeight>
+    <logoType>image/jpeg</logoType>
+  </attribution>
+</layer>

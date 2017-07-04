@@ -1,0 +1,16 @@
+<layer>
+  <name>cub_zone_urba</name>
+  <id>LayerInfoImpl-347005a3:14560412e9e:3afd</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl-267ca08d:142b31c6034:-52b5</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl-347005a3:14560412e9e:3afc</id>
+  </resource>
+  <enabled>true</enabled>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+</layer>

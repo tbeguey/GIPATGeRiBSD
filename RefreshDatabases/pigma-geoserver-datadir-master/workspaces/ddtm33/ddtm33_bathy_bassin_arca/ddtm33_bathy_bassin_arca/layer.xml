@@ -1,0 +1,19 @@
+<layer>
+  <name>ddtm33_bathy_bassin_arca</name>
+  <id>LayerInfoImpl--362f1b0d:14b78f4c2b9:-7f3f</id>
+  <type>RASTER</type>
+  <defaultStyle>
+    <id>StyleInfoImpl-34ef02ac:14b743cecc5:2d4e</id>
+  </defaultStyle>
+  <resource class="coverage">
+    <id>CoverageInfoImpl--362f1b0d:14b78f4c2b9:-7f40</id>
+  </resource>
+  <attribution>
+    <title>DDTM 33</title>
+    <href>http://www.gironde.gouv.fr/Services-de-l-Etat/Prefecture-sous-prefectures-et-DDI/Direction-Departementale-des-Territoires-et-de-la-Mer</href>
+    <logoURL>https://www.pigma.org/portail/sites/www.pigma.org.portail/files/sites/default/files/inline-images/pigma/les_partenaires/les_signataires_de_la_convention_pigma/gironde/PREF_33.jpg</logoURL>
+    <logoWidth>178</logoWidth>
+    <logoHeight>68</logoHeight>
+    <logoType>image/jpeg</logoType>
+  </attribution>
+</layer>

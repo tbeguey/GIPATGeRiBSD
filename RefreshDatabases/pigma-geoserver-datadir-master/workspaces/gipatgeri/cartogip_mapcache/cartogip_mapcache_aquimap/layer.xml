@@ -1,0 +1,15 @@
+<layer>
+  <name>cartogip_mapcache_aquimap</name>
+  <id>LayerInfoImpl-4c4d58b5:1582ac5dfba:-3b9e</id>
+  <type>WMS</type>
+  <defaultStyle>
+    <id>StyleInfoImpl-4e0b98bf:12475d46fdd:-7fe2</id>
+  </defaultStyle>
+  <resource class="wmsLayer">
+    <id>WMSLayerInfoImpl-4c4d58b5:1582ac5dfba:-3b9f</id>
+  </resource>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+</layer>

@@ -1,0 +1,38 @@
+<layerGroup>
+  <id>LayerGroupInfoImpl--69a2e1b0:14372484f82:-5479</id>
+  <name>Urbanisme - Landes Habillages</name>
+  <mode>SINGLE</mode>
+  <title>Urbanisme - Landes Habillages</title>
+  <workspace>
+    <id>WorkspaceInfoImpl-2c34a65b:13f9e7c9256:-20eb</id>
+  </workspace>
+  <publishables>
+    <published type="layer">
+      <id>LayerInfoImpl--69a2e1b0:14372484f82:-7a5e</id>
+    </published>
+    <published type="layer">
+      <id>LayerInfoImpl--69a2e1b0:14372484f82:-7a7a</id>
+    </published>
+    <published type="layer">
+      <id>LayerInfoImpl--69a2e1b0:1437243c08c:4456</id>
+    </published>
+  </publishables>
+  <styles>
+    <style>
+      <id>StyleInfoImpl--73c240e9:13e3b0f1d57:1023</id>
+    </style>
+    <style>
+      <id>StyleInfoImpl--73c240e9:13e3b0f1d57:1056</id>
+    </style>
+    <style>
+      <id>StyleInfoImpl--73c240e9:13e3b0f1d57:292c</id>
+    </style>
+  </styles>
+  <bounds>
+    <minx>339461.4567686549</minx>
+    <maxx>449454.12916794675</maxx>
+    <miny>6270953.105448505</miny>
+    <maxy>6375498.668156465</maxy>
+    <crs class="projected">EPSG:2154</crs>
+  </bounds>
+</layerGroup>

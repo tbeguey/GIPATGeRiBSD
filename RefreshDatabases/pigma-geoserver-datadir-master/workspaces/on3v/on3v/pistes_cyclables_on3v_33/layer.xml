@@ -1,0 +1,20 @@
+<layer>
+  <name>pistes_cyclables_on3v_33</name>
+  <id>LayerInfoImpl-520a4c6c:14c9406135e:6d41</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl-520a4c6c:14c947f78d3:-f8d</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl-520a4c6c:14c9406135e:6d40</id>
+  </resource>
+  <enabled>true</enabled>
+  <opaque>false</opaque>
+  <attribution>
+    <title>ON3V</title>
+    <href>http://www.developpement-durable.gouv.fr/Observatoire-National-des-VVV.html</href>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+    <logoType>image/png</logoType>
+  </attribution>
+</layer>

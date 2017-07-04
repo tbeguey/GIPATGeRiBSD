@@ -1,0 +1,23 @@
+<dataStore>
+  <id>DataStoreInfoImpl-5131bf46:14b07245729:6165</id>
+  <name>univ_bdx</name>
+  <type>PostGIS (JNDI)</type>
+  <enabled>true</enabled>
+  <workspace>
+    <id>WorkspaceInfoImpl-5131bf46:14b07212209:7ace</id>
+  </workspace>
+  <connectionParameters>
+    <entry key="schema">univ_bdx</entry>
+    <entry key="dbtype">postgis</entry>
+    <entry key="Loose bbox">true</entry>
+    <entry key="Expose primary keys">false</entry>
+    <entry key="Max open prepared statements">50</entry>
+    <entry key="encode functions">false</entry>
+    <entry key="preparedStatements">false</entry>
+    <entry key="jndiReferenceName">java:comp/env/jdbc/pigma</entry>
+    <entry key="Estimated extends">true</entry>
+    <entry key="Support on the fly geometry simplification">true</entry>
+    <entry key="namespace">http://pigma.org/univ_bdx</entry>
+  </connectionParameters>
+  <__default>true</__default>
+</dataStore>

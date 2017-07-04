@@ -1,0 +1,40 @@
+<featureType>
+  <id>FeatureTypeInfoImpl--9344b3a:137c7794b0c:-7d5f</id>
+  <name>at_enseignement_saisie_surface</name>
+  <nativeName>saisie_site_enseignement_surface</nativeName>
+  <namespace>
+    <id>NamespaceInfoImpl-2609a077:1325d1405e3:-7e6a</id>
+  </namespace>
+  <title>AT Enseignement - Surfacique</title>
+  <abstract>Atelier enseignement - saisie surface</abstract>
+  <keywords>
+    <string>saisie_site_enseignement_surface</string>
+    <string>features</string>
+  </keywords>
+  <srs>EPSG:2154</srs>
+  <nativeBoundingBox>
+    <minx>404361.78125</minx>
+    <maxx>566365.5625</maxx>
+    <miny>6375454.5</miny>
+    <maxy>6505554.5</maxy>
+    <crs class="projected">EPSG:2154</crs>
+  </nativeBoundingBox>
+  <latLonBoundingBox>
+    <minx>-0.7928696677819507</minx>
+    <maxx>1.3200241965357011</maxx>
+    <miny>44.41554139988189</miny>
+    <maxy>45.63646295276735</maxy>
+    <crs>EPSG:4326</crs>
+  </latLonBoundingBox>
+  <projectionPolicy>FORCE_DECLARED</projectionPolicy>
+  <enabled>true</enabled>
+  <advertised>true</advertised>
+  <metadata>
+    <entry key="cachingEnabled">false</entry>
+  </metadata>
+  <store class="dataStore">
+    <id>DataStoreInfoImpl-69186071:137c4abc4cc:10d9</id>
+  </store>
+  <maxFeatures>0</maxFeatures>
+  <numDecimals>0</numDecimals>
+</featureType>

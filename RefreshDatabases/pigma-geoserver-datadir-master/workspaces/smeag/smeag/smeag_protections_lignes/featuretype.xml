@@ -1,0 +1,43 @@
+<featureType>
+  <id>FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7fa4</id>
+  <name>smeag_protections_lignes</name>
+  <nativeName>protections_lignes</nativeName>
+  <namespace>
+    <id>NamespaceInfoImpl--3d639cb2:13285edbc12:-7fd2</id>
+  </namespace>
+  <title>SMEAG - Zones de protection des berges (végétale, enrochement…)</title>
+  <abstract>Linéaires - Techniques de protection des berges - Extrait Schéma d'Entretien des Berges - Syndicat mixte d’études et d’aménagement de la Garonne</abstract>
+  <metadataLinks>
+    <metadataLink>
+      <type>text/plain</type>
+      <metadataType>TC211</metadataType>
+      <content>https://www.pigma.org/geonetwork?uuid=16b6c9ac-4f11-495d-8eff-62d07c3c55f4</content>
+    </metadataLink>
+  <metadataLink><type>text/html</type><metadataType /><content>https://www.pigma.org/geonetwork/apps/georchestra/?uuid=16b6c9ac-4f11-495d-8eff-62d07c3c55f4</content></metadataLink><metadataLink><type>text/xml</type><metadataType /><content>https://www.pigma.org/geonetwork/srv/fre/xml_iso19139?uuid=16b6c9ac-4f11-495d-8eff-62d07c3c55f4</content></metadataLink></metadataLinks>
+  <srs>EPSG:2154</srs>
+  <nativeBoundingBox>
+    <minx>510369.25</minx>
+    <maxx>530708.125</maxx>
+    <miny>6180063.0</miny>
+    <maxy>6197087.5</maxy>
+    <crs class="projected">EPSG:2154</crs>
+  </nativeBoundingBox>
+  <latLonBoundingBox>
+    <minx>0.6822242990645949</minx>
+    <maxx>0.9361348607220541</maxx>
+    <miny>42.6951930062927</miny>
+    <maxy>42.85328501529869</maxy>
+    <crs>EPSG:4326</crs>
+  </latLonBoundingBox>
+  <projectionPolicy>FORCE_DECLARED</projectionPolicy>
+  <enabled>true</enabled>
+  <advertised>true</advertised>
+  <metadata>
+    <entry key="cachingEnabled">false</entry>
+  </metadata>
+  <store class="dataStore">
+    <id>DataStoreInfoImpl--3d639cb2:13285edbc12:-7fb3</id>
+  </store>
+  <maxFeatures>0</maxFeatures>
+  <numDecimals>0</numDecimals>
+</featureType>

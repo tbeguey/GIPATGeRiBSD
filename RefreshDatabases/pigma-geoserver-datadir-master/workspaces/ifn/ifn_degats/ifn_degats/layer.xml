@@ -1,0 +1,20 @@
+<layer>
+  <name>ifn_degats</name>
+  <id>LayerInfoImpl-5654a656:137a277a2e8:-7e6d</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl-5654a656:137a277a2e8:-7e57</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl-5654a656:137a277a2e8:-7e6e</id>
+  </resource>
+  <enabled>true</enabled>
+  <attribution>
+    <title>IFN</title>
+    <href>http://inventaire-forestier.ign.fr/spip/</href>
+    <logoURL>https://www.pigma.org/portail/sites/www.pigma.org.portail/files/sites/default/files/inline-images/pigma/les_financeurs/logo-IGN.jpg</logoURL>
+    <logoWidth>187</logoWidth>
+    <logoHeight>68</logoHeight>
+    <logoType>image/jpeg</logoType>
+  </attribution>
+</layer>

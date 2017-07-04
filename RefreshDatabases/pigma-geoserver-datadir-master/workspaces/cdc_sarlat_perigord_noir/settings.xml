@@ -1,0 +1,26 @@
+<settings>
+  <id>SettingsInfoImpl-21464d69:14ebf0d1d27:-28f0</id>
+  <workspace>
+    <id>WorkspaceInfoImpl-21464d69:14ebf0d1d27:-2931</id>
+    <name>cdc_sarlat_perigord_noir</name>
+  </workspace>
+  <contact>
+    <id>contact</id>
+    <address>6, Parvis des Chartrons</address>
+    <addressCity>Bordeaux</addressCity>
+    <addressPostalCode>33075</addressPostalCode>
+    <addressType>Work</addressType>
+    <contactEmail>sebastien.negre@gipatgeri.fr</contactEmail>
+    <contactOrganization>GIP ATGeRi</contactOrganization>
+    <contactPerson>PIGMA</contactPerson>
+    <contactVoice>05.57.85.40.42</contactVoice>
+  </contact>
+  <charset>UTF-8</charset>
+  <numDecimals>6</numDecimals>
+  <onlineResource>http://geoserver.org</onlineResource>
+  <proxyBaseUrl>https://www.pigma.org/geoserver</proxyBaseUrl>
+  <verbose>true</verbose>
+  <verboseExceptions>false</verboseExceptions>
+  <localWorkspaceIncludesPrefix>true</localWorkspaceIncludesPrefix>
+  <layerGroupInclusion>AT_LEAST_ONE_CONTAINED</layerGroupInclusion>
+</settings>

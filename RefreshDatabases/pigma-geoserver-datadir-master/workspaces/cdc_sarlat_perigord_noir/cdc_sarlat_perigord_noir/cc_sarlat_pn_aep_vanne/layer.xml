@@ -1,0 +1,20 @@
+<layer>
+  <name>cc_sarlat_pn_aep_vanne</name>
+  <id>LayerInfoImpl-21464d69:14ebf34b699:3440</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl--4b05c1c2:134c82984ff:-7677</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl-21464d69:14ebf34b699:343f</id>
+  </resource>
+  <enabled>true</enabled>
+  <advertised>true</advertised>
+  <attribution>
+    <title>CDC Sarlat Périgord Noir</title>
+    <logoURL>https://www.pigma.org/portail/sites/www.pigma.org.portail/files/sites/default/files/inline-images/pigma/les_partenaires/les_signataires_de_la_convention_pigma/dordogne/CDC_SARLADAIS.jpg</logoURL>
+    <logoWidth>178</logoWidth>
+    <logoHeight>68</logoHeight>
+    <logoType>image/jpeg</logoType>
+  </attribution>
+</layer>

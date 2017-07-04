@@ -1,0 +1,15 @@
+<layer>
+  <name>dept33_prescription_lin_vue</name>
+  <id>LayerInfoImpl--266e24e3:148592967ca:-48dd</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl--61fff44:1424da8e85d:3825</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl--266e24e3:148592967ca:-48de</id>
+  </resource>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+</layer>

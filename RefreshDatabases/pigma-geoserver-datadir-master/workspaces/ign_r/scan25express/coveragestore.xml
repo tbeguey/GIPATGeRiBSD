@@ -1,0 +1,11 @@
+<coverageStore>
+  <id>CoverageStoreInfoImpl-35aed7c:1543ce50fa5:3827</id>
+  <name>scan25express</name>
+  <type>ECW</type>
+  <enabled>true</enabled>
+  <workspace>
+    <id>WorkspaceInfoImpl--4f1d3a93:131f1a753d4:-7ff8</id>
+  </workspace>
+  <__default>false</__default>
+  <url>/var/local/geodata/raster/ign/scan25express/ecw/scan_25_express_l93_2014.ecw</url>
+</coverageStore>

@@ -43,6 +43,8 @@ public class WordStatisticsDialog extends Dialog{
             }
         }
 
+        postGreSQL.deconnection();
+
         ChartView chartView = new ChartView(objects, comparative);
         chartView.setLegendSide(Side.BOTTOM);
 

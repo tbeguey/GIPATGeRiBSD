@@ -1,0 +1,11 @@
+<coverageStore>
+  <id>CoverageStoreInfoImpl-1b853102:14058ffa22c:7c2e</id>
+  <name>Scan100</name>
+  <type>ImageMosaic</type>
+  <enabled>true</enabled>
+  <workspace>
+    <id>WorkspaceInfoImpl--4f1d3a93:131f1a753d4:-7ff8</id>
+  </workspace>
+  <__default>false</__default>
+  <url>file:///var/local/geodata/raster/ign/Scan100</url>
+</coverageStore>

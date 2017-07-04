@@ -1,0 +1,22 @@
+<dataStore>
+  <id>DataStoreInfoImpl--4ecb909f:15ad1288d87:453b</id>
+  <name>ddsp_47</name>
+  <type>PostGIS (JNDI)</type>
+  <enabled>true</enabled>
+  <workspace>
+    <id>WorkspaceInfoImpl--4ecb909f:15ad1288d87:3fd0</id>
+  </workspace>
+  <connectionParameters>
+    <entry key="dbtype">postgis</entry>
+    <entry key="encode functions">false</entry>
+    <entry key="jndiReferenceName">java:comp/env/jdbc/pigma</entry>
+    <entry key="Support on the fly geometry simplification">true</entry>
+    <entry key="namespace">http://pigma.org/ddsp_47</entry>
+    <entry key="schema">ddsp_47</entry>
+    <entry key="Loose bbox">true</entry>
+    <entry key="Expose primary keys">false</entry>
+    <entry key="preparedStatements">false</entry>
+    <entry key="Estimated extends">true</entry>
+  </connectionParameters>
+  <__default>false</__default>
+</dataStore>

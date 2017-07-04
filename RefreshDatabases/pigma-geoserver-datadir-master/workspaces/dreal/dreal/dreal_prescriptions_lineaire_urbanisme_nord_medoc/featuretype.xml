@@ -1,0 +1,77 @@
+<featureType>
+  <id>FeatureTypeInfoImpl--3b70f1bd:139d81f8018:44b9</id>
+  <name>dreal_prescriptions_lineaire_urbanisme_nord_medoc</name>
+  <nativeName>dreal_prescriptions_lineaire_urbanisme_nord_medoc</nativeName>
+  <namespace>
+    <id>NamespaceInfoImpl-5d223b53:134e5d6d059:-5ed5</id>
+  </namespace>
+  <title>DREAL - Doc urbanisme Nord Medoc (Prescriptions L)</title>
+  <abstract>Prescriptions de type Linéaires</abstract>
+  <keywords>
+    <string>features</string>
+    <string>dreal_prescriptions_lineaire_urbanisme_nord_medoc</string>
+  </keywords>
+  <nativeCRS class="projected">PROJCS[&quot;RGF93 / Lambert-93&quot;, 
+  GEOGCS[&quot;RGF93&quot;, 
+    DATUM[&quot;Reseau Geodesique Francais 1993&quot;, 
+      SPHEROID[&quot;GRS 1980&quot;, 6378137.0, 298.257222101, AUTHORITY[&quot;EPSG&quot;,&quot;7019&quot;]], 
+      TOWGS84[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], 
+      AUTHORITY[&quot;EPSG&quot;,&quot;6171&quot;]], 
+    PRIMEM[&quot;Greenwich&quot;, 0.0, AUTHORITY[&quot;EPSG&quot;,&quot;8901&quot;]], 
+    UNIT[&quot;degree&quot;, 0.017453292519943295], 
+    AXIS[&quot;Geodetic longitude&quot;, EAST], 
+    AXIS[&quot;Geodetic latitude&quot;, NORTH], 
+    AUTHORITY[&quot;EPSG&quot;,&quot;4171&quot;]], 
+  PROJECTION[&quot;Lambert_Conformal_Conic_2SP&quot;, AUTHORITY[&quot;EPSG&quot;,&quot;9802&quot;]], 
+  PARAMETER[&quot;central_meridian&quot;, 3.0], 
+  PARAMETER[&quot;latitude_of_origin&quot;, 46.5], 
+  PARAMETER[&quot;standard_parallel_1&quot;, 49.0], 
+  PARAMETER[&quot;false_easting&quot;, 700000.0], 
+  PARAMETER[&quot;false_northing&quot;, 6600000.0], 
+  PARAMETER[&quot;scale_factor&quot;, 1.0], 
+  PARAMETER[&quot;standard_parallel_2&quot;, 44.0], 
+  UNIT[&quot;m&quot;, 1.0], 
+  AXIS[&quot;Easting&quot;, EAST], 
+  AXIS[&quot;Northing&quot;, NORTH], 
+  AUTHORITY[&quot;EPSG&quot;,&quot;2154&quot;]]</nativeCRS>
+  <srs>EPSG:2154</srs>
+  <nativeBoundingBox>
+    <minx>371886.259799998</minx>
+    <maxx>382803.379799998</maxx>
+    <miny>6456260.86979999</miny>
+    <maxy>6469473.91979999</maxy>
+    <crs class="projected">EPSG:2154</crs>
+  </nativeBoundingBox>
+  <latLonBoundingBox>
+    <minx>-1.1842608392349445</minx>
+    <maxx>-1.0366812957889986</maxx>
+    <miny>45.12753933682341</miny>
+    <maxy>45.2514654094374</maxy>
+    <crs>EPSG:4326</crs>
+  </latLonBoundingBox>
+  <projectionPolicy>FORCE_DECLARED</projectionPolicy>
+  <enabled>true</enabled>
+  <advertised>true</advertised>
+  <metadata>
+    <entry key="cachingEnabled">false</entry>
+    <entry key="JDBC_VIRTUAL_TABLE">
+      <virtualTable>
+        <name>dreal_prescriptions_lineaire_urbanisme_nord_medoc</name>
+        <sql>SELECT gid, libepsc, typepsc, libtypepsc, reglement, insee, datappro, &#xd;
+       idpsc_s, the_geom&#xd;
+  FROM dreal.prescriptions_urbanisme_nord_medoc&#xd;
+WHERE geometrytype(the_geom)=&apos;MULTILINESTRING&apos;</sql>
+        <geometry>
+          <name>the_geom</name>
+          <type>MultiLineString</type>
+          <srid>2154</srid>
+        </geometry>
+      </virtualTable>
+    </entry>
+  </metadata>
+  <store class="dataStore">
+    <id>DataStoreInfoImpl-5d223b53:134e5d6d059:-5eb3</id>
+  </store>
+  <maxFeatures>0</maxFeatures>
+  <numDecimals>0</numDecimals>
+</featureType>

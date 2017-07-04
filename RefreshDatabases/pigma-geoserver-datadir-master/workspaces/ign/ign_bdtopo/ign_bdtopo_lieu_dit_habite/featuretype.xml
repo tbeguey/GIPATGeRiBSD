@@ -1,0 +1,55 @@
+<featureType>
+  <id>FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7e6c</id>
+  <name>ign_bdtopo_lieu_dit_habite</name>
+  <nativeName>lieu_dit_habite</nativeName>
+  <namespace>
+    <id>NamespaceInfoImpl--3d639cb2:13285edbc12:-7ff0</id>
+  </namespace>
+  <title>IGN BD TOPO - Lieu dit habité</title>
+  <metadataLinks>
+    <metadataLink>
+      <type>text/plain</type>
+      <metadataType>TC211</metadataType>
+      <content>https://www.pigma.org/geonetwork?uuid=45895825-6a37-43ba-a54c-3ac491a27d6b</content>
+    </metadataLink>
+    <metadataLink>
+      <type>text/html</type>
+      <metadataType></metadataType>
+      <content>https://www.pigma.org/geonetwork/apps/georchestra/?uuid=45895825-6a37-43ba-a54c-3ac491a27d6b</content>
+    </metadataLink>
+    <metadataLink>
+      <type>text/xml</type>
+      <metadataType></metadataType>
+      <content>https://www.pigma.org/geonetwork/srv/fre/xml_iso19139?uuid=45895825-6a37-43ba-a54c-3ac491a27d6b</content>
+    </metadataLink>
+  </metadataLinks>
+  <srs>EPSG:2154</srs>
+  <nativeBoundingBox>
+    <minx>313457.594</minx>
+    <maxx>576897.75</maxx>
+    <miny>6195047.0</miny>
+    <maxy>6512817.0</maxy>
+    <crs class="projected">EPSG:2154</crs>
+  </nativeBoundingBox>
+  <latLonBoundingBox>
+    <minx>-1.962</minx>
+    <maxx>1.496</maxx>
+    <miny>42.751</miny>
+    <maxy>45.704</maxy>
+    <crs>EPSG:4326</crs>
+  </latLonBoundingBox>
+  <projectionPolicy>FORCE_DECLARED</projectionPolicy>
+  <enabled>true</enabled>
+  <advertised>true</advertised>
+  <metadata>
+    <entry key="cachingEnabled">false</entry>
+  </metadata>
+  <store class="dataStore">
+    <id>DataStoreInfoImpl--3d639cb2:13285edbc12:-7fb6</id>
+  </store>
+  <maxFeatures>0</maxFeatures>
+  <numDecimals>0</numDecimals>
+  <overridingServiceSRS>false</overridingServiceSRS>
+  <skipNumberMatched>false</skipNumberMatched>
+  <circularArcPresent>false</circularArcPresent>
+</featureType>

@@ -1,0 +1,15 @@
+<layer>
+  <name>rte_pylones</name>
+  <id>LayerInfoImpl--64db1a4f:15a8f5b7695:-3e14</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl--64db1a4f:15a8fb9aa18:6374</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl--64db1a4f:15a8f5b7695:-3e15</id>
+  </resource>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+</layer>

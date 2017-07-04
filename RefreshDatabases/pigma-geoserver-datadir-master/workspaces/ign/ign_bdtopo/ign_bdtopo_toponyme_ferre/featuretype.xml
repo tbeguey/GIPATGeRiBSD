@@ -1,0 +1,55 @@
+<featureType>
+  <id>FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7e34</id>
+  <name>ign_bdtopo_toponyme_ferre</name>
+  <nativeName>toponyme_ferre</nativeName>
+  <namespace>
+    <id>NamespaceInfoImpl--3d639cb2:13285edbc12:-7ff0</id>
+  </namespace>
+  <title>IGN BD TOPO - Toponymes ferrés</title>
+  <metadataLinks>
+    <metadataLink>
+      <type>text/plain</type>
+      <metadataType>TC211</metadataType>
+      <content>https://www.pigma.org/geonetwork?uuid=f20cf041-18e3-40a6-bf6e-e14710641c66</content>
+    </metadataLink>
+    <metadataLink>
+      <type>text/html</type>
+      <metadataType></metadataType>
+      <content>https://www.pigma.org/geonetwork/apps/georchestra/?uuid=f20cf041-18e3-40a6-bf6e-e14710641c66</content>
+    </metadataLink>
+    <metadataLink>
+      <type>text/xml</type>
+      <metadataType></metadataType>
+      <content>https://www.pigma.org/geonetwork/srv/fre/xml_iso19139?uuid=f20cf041-18e3-40a6-bf6e-e14710641c66</content>
+    </metadataLink>
+  </metadataLinks>
+  <srs>EPSG:2154</srs>
+  <nativeBoundingBox>
+    <minx>325038.4</minx>
+    <maxx>483391.0</maxx>
+    <miny>6204568.9</miny>
+    <maxy>6420427.1</maxy>
+    <crs class="projected">EPSG:2154</crs>
+  </nativeBoundingBox>
+  <latLonBoundingBox>
+    <minx>-1.76393</minx>
+    <maxx>0.37093</maxx>
+    <miny>42.77857</miny>
+    <maxy>44.91343</maxy>
+    <crs>EPSG:4326</crs>
+  </latLonBoundingBox>
+  <projectionPolicy>FORCE_DECLARED</projectionPolicy>
+  <enabled>true</enabled>
+  <advertised>true</advertised>
+  <metadata>
+    <entry key="cachingEnabled">false</entry>
+  </metadata>
+  <store class="dataStore">
+    <id>DataStoreInfoImpl--3d639cb2:13285edbc12:-7fb6</id>
+  </store>
+  <maxFeatures>0</maxFeatures>
+  <numDecimals>0</numDecimals>
+  <overridingServiceSRS>false</overridingServiceSRS>
+  <skipNumberMatched>false</skipNumberMatched>
+  <circularArcPresent>false</circularArcPresent>
+</featureType>

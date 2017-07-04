@@ -1,0 +1,21 @@
+<dataStore>
+  <id>DataStoreInfoImpl-538fbc38:14cb2e77c6e:-1683</id>
+  <name>smegreg</name>
+  <type>PostGIS (JNDI)</type>
+  <enabled>true</enabled>
+  <workspace>
+    <id>WorkspaceInfoImpl-538fbc38:14cb2acf759:2e10</id>
+  </workspace>
+  <connectionParameters>
+    <entry key="schema">smegreg</entry>
+    <entry key="dbtype">postgis</entry>
+    <entry key="Loose bbox">true</entry>
+    <entry key="Expose primary keys">false</entry>
+    <entry key="encode functions">false</entry>
+    <entry key="preparedStatements">false</entry>
+    <entry key="jndiReferenceName">java:comp/env/jdbc/pigma</entry>
+    <entry key="Estimated extends">false</entry>
+    <entry key="namespace">http://pigma.org/smegreg</entry>
+  </connectionParameters>
+  <__default>false</__default>
+</dataStore>

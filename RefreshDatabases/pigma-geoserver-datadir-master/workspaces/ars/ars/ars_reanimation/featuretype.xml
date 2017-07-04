@@ -1,0 +1,75 @@
+<featureType>
+  <id>FeatureTypeInfoImpl-29107397:1504bfcb2ce:-7f0b</id>
+  <name>ars_reanimation</name>
+  <nativeName>reanimatio_ars</nativeName>
+  <namespace>
+    <id>NamespaceInfoImpl-10f0fb2b:136e9b7cf61:913</id>
+  </namespace>
+  <title>ARS - Réanimation (Réservé ARS)</title>
+  <abstract>MAJ Janvier 2015</abstract>
+  <keywords>
+    <string>features</string>
+    <string>reanimatio_ars</string>
+  </keywords>
+  <metadataLinks>
+    <metadataLink>
+      <type>text/plain</type>
+      <metadataType>TC211</metadataType>
+      <content>https://www.pigma.org/geonetwork/apps/georchestra/?uuid=f678e4af-d8a8-48c7-afa6-20d9cb58cc5b</content>
+    </metadataLink>
+  <metadataLink><type>text/html</type><metadataType /><content>https://www.pigma.org/geonetwork/apps/georchestra/?uuid=f678e4af-d8a8-48c7-afa6-20d9cb58cc5b</content></metadataLink><metadataLink><type>text/xml</type><metadataType /><content>https://www.pigma.org/geonetwork/srv/fre/xml_iso19139?uuid=f678e4af-d8a8-48c7-afa6-20d9cb58cc5b</content></metadataLink></metadataLinks>
+  <nativeCRS class="projected">PROJCS["RGF93 / Lambert-93", 
+  GEOGCS["RGF93", 
+    DATUM["Reseau Geodesique Francais 1993", 
+      SPHEROID["GRS 1980", 6378137.0, 298.257222101, AUTHORITY["EPSG","7019"]], 
+      TOWGS84[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], 
+      AUTHORITY["EPSG","6171"]], 
+    PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+    UNIT["degree", 0.017453292519943295], 
+    AXIS["Geodetic longitude", EAST], 
+    AXIS["Geodetic latitude", NORTH], 
+    AUTHORITY["EPSG","4171"]], 
+  PROJECTION["Lambert_Conformal_Conic_2SP", AUTHORITY["EPSG","9802"]], 
+  PARAMETER["central_meridian", 3.0], 
+  PARAMETER["latitude_of_origin", 46.5], 
+  PARAMETER["standard_parallel_1", 49.0], 
+  PARAMETER["false_easting", 700000.0], 
+  PARAMETER["false_northing", 6600000.0], 
+  PARAMETER["scale_factor", 1.0], 
+  PARAMETER["standard_parallel_2", 44.0], 
+  UNIT["m", 1.0], 
+  AXIS["Easting", EAST], 
+  AXIS["Northing", NORTH], 
+  AUTHORITY["EPSG","2154"]]</nativeCRS>
+  <srs>EPSG:2154</srs>
+  <nativeBoundingBox>
+    <minx>337425.3</minx>
+    <maxx>664578.8</maxx>
+    <miny>6208199.0</miny>
+    <maxy>6610247.9</maxy>
+    <crs class="projected">EPSG:2154</crs>
+  </nativeBoundingBox>
+  <latLonBoundingBox>
+    <minx>-1.7301598788361556</minx>
+    <maxx>2.566195435209583</maxx>
+    <miny>42.88154904552526</miny>
+    <maxy>46.591342059268584</maxy>
+    <crs>GEOGCS["WGS84(DD)", 
+  DATUM["WGS84", 
+    SPHEROID["WGS84", 6378137.0, 298.257223563]], 
+  PRIMEM["Greenwich", 0.0], 
+  UNIT["degree", 0.017453292519943295], 
+  AXIS["Geodetic longitude", EAST], 
+  AXIS["Geodetic latitude", NORTH]]</crs>
+  </latLonBoundingBox>
+  <projectionPolicy>FORCE_DECLARED</projectionPolicy>
+  <enabled>true</enabled>
+  <metadata>
+    <entry key="cachingEnabled">false</entry>
+  </metadata>
+  <store class="dataStore">
+    <id>DataStoreInfoImpl-10f0fb2b:136e9b7cf61:914</id>
+  </store>
+  <maxFeatures>0</maxFeatures>
+  <numDecimals>0</numDecimals>
+</featureType>

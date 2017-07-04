@@ -167,12 +167,6 @@ public class PostGreSQL {
         }
     }
 
-    public void setDatabaseConnection(DatabaseConnection d){
-        deconnection();
-        db = d;
-        connection();
-    }
-
     public ArrayList<String> getDatabases(){
         ArrayList<String> databases = new ArrayList<>();
 

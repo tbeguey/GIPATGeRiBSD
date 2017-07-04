@@ -1,0 +1,20 @@
+<layer>
+  <name>c_mezin_nom_lieudit</name>
+  <id>LayerInfoImpl--3ce68516:141a7c87ec4:-3865</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl-1b06dd87:1420e68dff6:73fd</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl--3ce68516:141a7c87ec4:-3866</id>
+  </resource>
+  <enabled>true</enabled>
+  <attribution>
+    <title>Commune de Mézin</title>
+    <href>http://www.ville-mezin.fr/</href>
+    <logoURL>https://www.pigma.org/portail/sites/www.pigma.org.portail/files/sites/default/files/inline-images/pigma/les_partenaires/les_signataires_de_la_convention_pigma/lot_et_garonne/Mezin.png</logoURL>
+    <logoWidth>195</logoWidth>
+    <logoHeight>68</logoHeight>
+    <logoType>image/png</logoType>
+  </attribution>
+</layer>

@@ -1,0 +1,19 @@
+<layer>
+  <name>rectorat_batiments</name>
+  <id>LayerInfoImpl--60870653:141bb820e24:-4e0e</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl-1b06dd87:1420e038935:-6b78</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl--60870653:141bb820e24:-4e0f</id>
+  </resource>
+  <attribution>
+    <title>Rectorat de Bordeaux</title>
+    <href>http://www.ac-bordeaux.fr/</href>
+    <logoURL>https://www.pigma.org/portail/sites/www.pigma.org.portail/files/sites/default/files/inline-images/pigma/les_partenaires/les_signataires_de_la_convention_pigma/aquitaine/Rectorat.png</logoURL>
+    <logoWidth>186</logoWidth>
+    <logoHeight>68</logoHeight>
+    <logoType>image/png</logoType>
+  </attribution>
+</layer>

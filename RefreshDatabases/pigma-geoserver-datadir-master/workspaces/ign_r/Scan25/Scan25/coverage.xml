@@ -1,0 +1,163 @@
+<coverage>
+  <id>CoverageInfoImpl--21535270:133b13cd29b:-7fff</id>
+  <name>Scan25</name>
+  <nativeName>Scan25</nativeName>
+  <namespace>
+    <id>NamespaceInfoImpl--4f1d3a93:131f1a753d4:-7ff7</id>
+  </namespace>
+  <title>IGN - Scan 25</title>
+  <description>Generated from ImageMosaic</description>
+  <abstract>Carte IGN au 1/25 000 de l&apos;Institut Géographique National</abstract>
+  <keywords>
+    <string>WCS</string>
+    <string>ImageMosaic</string>
+    <string>Scan25</string>
+  </keywords>
+  <metadataLinks>
+    <metadataLink>
+      <type>text/plain</type>
+      <metadataType>TC211</metadataType>
+      <content>https://www.pigma.org/geonetwork?uuid=538560c2-be91-469c-a2b3-9ef0891560f8</content>
+    </metadataLink>
+  </metadataLinks>
+  <nativeCRS class="projected">PROJCS[&quot;RGF93_Lambert_93&quot;, 
+  GEOGCS[&quot;GCS_RGF_1993&quot;, 
+    DATUM[&quot;D_RGF_1993&quot;, 
+      SPHEROID[&quot;GRS_1980&quot;, 6378137.0, 298.257222101]], 
+    PRIMEM[&quot;Greenwich&quot;, 0.0], 
+    UNIT[&quot;degree&quot;, 0.017453292519943295], 
+    AXIS[&quot;Longitude&quot;, EAST], 
+    AXIS[&quot;Latitude&quot;, NORTH]], 
+  PROJECTION[&quot;Lambert_Conformal_Conic_2SP&quot;], 
+  PARAMETER[&quot;central_meridian&quot;, 3.0], 
+  PARAMETER[&quot;latitude_of_origin&quot;, 46.5], 
+  PARAMETER[&quot;standard_parallel_1&quot;, 49.0], 
+  PARAMETER[&quot;false_easting&quot;, 700000.0], 
+  PARAMETER[&quot;false_northing&quot;, 6600000.0], 
+  PARAMETER[&quot;scale_factor&quot;, 1.0], 
+  PARAMETER[&quot;standard_parallel_2&quot;, 44.0], 
+  UNIT[&quot;m&quot;, 1.0], 
+  AXIS[&quot;x&quot;, EAST], 
+  AXIS[&quot;y&quot;, NORTH]]</nativeCRS>
+  <srs>EPSG:2154</srs>
+  <nativeBoundingBox>
+    <minx>310000.0</minx>
+    <maxx>580000.0</maxx>
+    <miny>6190000.0</miny>
+    <maxy>6520000.0</maxy>
+    <crs class="projected">EPSG:2154</crs>
+  </nativeBoundingBox>
+  <latLonBoundingBox>
+    <minx>-2.012</minx>
+    <maxx>1.535</maxx>
+    <miny>42.704</miny>
+    <maxy>45.769</maxy>
+    <crs>EPSG:4326</crs>
+  </latLonBoundingBox>
+  <projectionPolicy>FORCE_DECLARED</projectionPolicy>
+  <enabled>true</enabled>
+  <advertised>true</advertised>
+  <metadata>
+    <entry key="cachingEnabled">false</entry>
+    <entry key="dirName">Scan25_Scan25</entry>
+  </metadata>
+  <store class="coverageStore">
+    <id>CoverageStoreInfoImpl--21535270:133b13cd29b:-8000</id>
+  </store>
+  <nativeFormat>ImageMosaic</nativeFormat>
+  <grid dimension="2">
+    <range>
+      <low>0 0</low>
+      <high>108000 132000</high>
+    </range>
+    <transform>
+      <scaleX>2.5</scaleX>
+      <scaleY>-2.5</scaleY>
+      <shearX>0.0</shearX>
+      <shearY>0.0</shearY>
+      <translateX>310001.25</translateX>
+      <translateY>6519998.749999999</translateY>
+    </transform>
+    <crs>EPSG:2154</crs>
+  </grid>
+  <supportedFormats>
+    <string>PNG</string>
+    <string>GEOTIFF</string>
+    <string>GIF</string>
+    <string>JPEG</string>
+    <string>TIFF</string>
+  </supportedFormats>
+  <interpolationMethods>
+    <string>bicubic</string>
+  </interpolationMethods>
+  <defaultInterpolationMethod>bicubic</defaultInterpolationMethod>
+  <dimensions>
+    <coverageDimension>
+      <name>RED_BAND</name>
+      <description>GridSampleDimension[0.0,0.0]</description>
+      <range>
+        <min>0.0</min>
+        <max>0.0</max>
+      </range>
+      <nullValues>
+        <double>0.0</double>
+      </nullValues>
+    </coverageDimension>
+    <coverageDimension>
+      <name>GREEN_BAND</name>
+      <description>GridSampleDimension[0.0,0.0]</description>
+      <range>
+        <min>0.0</min>
+        <max>0.0</max>
+      </range>
+      <nullValues>
+        <double>0.0</double>
+      </nullValues>
+    </coverageDimension>
+    <coverageDimension>
+      <name>BLUE_BAND</name>
+      <description>GridSampleDimension[0.0,0.0]</description>
+      <range>
+        <min>0.0</min>
+        <max>0.0</max>
+      </range>
+      <nullValues>
+        <double>0.0</double>
+      </nullValues>
+    </coverageDimension>
+  </dimensions>
+  <parameters>
+    <entry>
+      <string>AllowMultithreading</string>
+      <string>false</string>
+    </entry>
+    <entry>
+      <string>Filter</string>
+      <null/>
+    </entry>
+    <entry>
+      <string>MaxAllowedTiles</string>
+      <string>300000</string>
+    </entry>
+    <entry>
+      <string>InputTransparentColor</string>
+      <string>#FFFFFF</string>
+    </entry>
+    <entry>
+      <string>OutputTransparentColor</string>
+      <string>#000000</string>
+    </entry>
+    <entry>
+      <string>SUGGESTED_TILE_SIZE</string>
+      <string>512,512</string>
+    </entry>
+    <entry>
+      <string>USE_JAI_IMAGEREAD</string>
+      <string>true</string>
+    </entry>
+    <entry>
+      <string>BackgroundValues</string>
+      <null/>
+    </entry>
+  </parameters>
+</coverage>

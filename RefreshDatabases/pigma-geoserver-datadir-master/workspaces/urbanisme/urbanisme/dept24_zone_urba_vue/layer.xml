@@ -1,0 +1,16 @@
+<layer>
+  <name>dept24_zone_urba_vue</name>
+  <id>LayerInfoImpl--a228572:14855ccf5cb:17c2</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl-267ca08d:142b31c6034:-52b5</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl--a228572:14855ccf5cb:17c1</id>
+  </resource>
+  <enabled>true</enabled>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+</layer>

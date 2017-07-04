@@ -1,0 +1,20 @@
+<layer>
+  <name>aurba_voies_ferrees_zones_activites</name>
+  <id>LayerInfoImpl-1f027e38:13c8e8c3c25:-5f8b</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl-510f4e81:13c90a5a10f:-2541</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl-1f027e38:13c8e8c3c25:-5f8c</id>
+  </resource>
+  <enabled>true</enabled>
+  <attribution>
+    <title>AURBA</title>
+    <href>http://www.aurba.org/</href>
+    <logoURL>https://www.pigma.org/portail/sites/www.pigma.org.portail/files/sites/default/files/inline-images/pigma/les_partenaires/les_signataires_de_la_convention_pigma/gironde/AURBA.jpg</logoURL>
+    <logoWidth>178</logoWidth>
+    <logoHeight>68</logoHeight>
+    <logoType>image/jpeg</logoType>
+  </attribution>
+</layer>

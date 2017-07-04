@@ -1,0 +1,188 @@
+<coverage>
+  <id>CoverageInfoImpl-17928462:1343c2469d3:-726f</id>
+  <name>cub_ortho20cm_2008</name>
+  <nativeName>geotiff</nativeName>
+  <namespace>
+    <id>NamespaceInfoImpl--4f1d3a93:131f1a753d4:-7ff7</id>
+  </namespace>
+  <title>Vue Aérienne CUB 2008 20cm</title>
+  <description>Generated from ImageMosaic</description>
+  <abstract>Communauté Urbaine de Bordeaux - Orthophotographie 2008 20cm</abstract>
+  <keywords>
+    <string>WCS</string>
+    <string>ImageMosaic</string>
+    <string>geotiff</string>
+  </keywords>
+  <metadataLinks>
+    <metadataLink>
+      <type>text/plain</type>
+      <metadataType>TC211</metadataType>
+      <content>https://www.pigma.org/geonetwork?uuid=e89a3a8b-177a-4786-b8a0-d05db722c918</content>
+    </metadataLink>
+  </metadataLinks>
+  <nativeCRS class="projected">PROJCS[&quot;unnamed&quot;, 
+  GEOGCS[&quot;GCS Name = FRANCE 1993|Datum = RGF93|Ellipsoid = GRS80|Primem = Greenwich|&quot;, 
+    DATUM[&quot;GCS Name = FRANCE 1993|Datum = RGF93|Ellipsoid = GRS80|Primem = Greenwich|&quot;, 
+      SPHEROID[&quot;GCS Name = FRANCE 1993|Datum = RGF93|Ellipsoid = GRS80|Primem = Greenwich|&quot;, 6378137.0, 298.257222101]], 
+    PRIMEM[&quot;Greenwich&quot;, 0.0], 
+    UNIT[&quot;degree&quot;, 0.017453292519943295], 
+    AXIS[&quot;Geodetic longitude&quot;, EAST], 
+    AXIS[&quot;Geodetic latitude&quot;, NORTH]], 
+  PROJECTION[&quot;Lambert_Conformal_Conic_2SP&quot;], 
+  PARAMETER[&quot;central_meridian&quot;, 3.0], 
+  PARAMETER[&quot;latitude_of_origin&quot;, 46.5], 
+  PARAMETER[&quot;standard_parallel_1&quot;, 49.0], 
+  PARAMETER[&quot;false_easting&quot;, 700000.0], 
+  PARAMETER[&quot;false_northing&quot;, 6600000.0], 
+  PARAMETER[&quot;scale_factor&quot;, 1.0], 
+  PARAMETER[&quot;standard_parallel_2&quot;, 44.0], 
+  UNIT[&quot;m&quot;, 1.0], 
+  AXIS[&quot;Easting&quot;, EAST], 
+  AXIS[&quot;Northing&quot;, NORTH]]</nativeCRS>
+  <srs>EPSG:2154</srs>
+  <nativeBoundingBox>
+    <minx>393000.0</minx>
+    <maxx>428000.0</maxx>
+    <miny>6410000.0</miny>
+    <maxy>6445000.0</maxy>
+    <crs class="projected">PROJCS[&quot;unnamed&quot;, 
+  GEOGCS[&quot;GCS Name = FRANCE 1993|Datum = RGF93|Ellipsoid = GRS80|Primem = Greenwich|&quot;, 
+    DATUM[&quot;GCS Name = FRANCE 1993|Datum = RGF93|Ellipsoid = GRS80|Primem = Greenwich|&quot;, 
+      SPHEROID[&quot;GCS Name = FRANCE 1993|Datum = RGF93|Ellipsoid = GRS80|Primem = Greenwich|&quot;, 6378137.0, 298.257222101]], 
+    PRIMEM[&quot;Greenwich&quot;, 0.0], 
+    UNIT[&quot;degree&quot;, 0.017453292519943295], 
+    AXIS[&quot;Geodetic longitude&quot;, EAST], 
+    AXIS[&quot;Geodetic latitude&quot;, NORTH]], 
+  PROJECTION[&quot;Lambert_Conformal_Conic_2SP&quot;], 
+  PARAMETER[&quot;central_meridian&quot;, 3.0], 
+  PARAMETER[&quot;latitude_of_origin&quot;, 46.5], 
+  PARAMETER[&quot;standard_parallel_1&quot;, 49.0], 
+  PARAMETER[&quot;false_easting&quot;, 700000.0], 
+  PARAMETER[&quot;false_northing&quot;, 6600000.0], 
+  PARAMETER[&quot;scale_factor&quot;, 1.0], 
+  PARAMETER[&quot;standard_parallel_2&quot;, 44.0], 
+  UNIT[&quot;m&quot;, 1.0], 
+  AXIS[&quot;Easting&quot;, EAST], 
+  AXIS[&quot;Northing&quot;, NORTH]]</crs>
+  </nativeBoundingBox>
+  <latLonBoundingBox>
+    <minx>-0.9000603674442277</minx>
+    <maxx>-0.4366892730289096</maxx>
+    <miny>44.72125908535843</miny>
+    <maxy>45.050669933172806</maxy>
+    <crs>GEOGCS[&quot;WGS84(DD)&quot;, 
+  DATUM[&quot;WGS84&quot;, 
+    SPHEROID[&quot;WGS84&quot;, 6378137.0, 298.257223563]], 
+  PRIMEM[&quot;Greenwich&quot;, 0.0], 
+  UNIT[&quot;degree&quot;, 0.017453292519943295], 
+  AXIS[&quot;Geodetic longitude&quot;, EAST], 
+  AXIS[&quot;Geodetic latitude&quot;, NORTH]]</crs>
+  </latLonBoundingBox>
+  <projectionPolicy>FORCE_DECLARED</projectionPolicy>
+  <enabled>true</enabled>
+  <advertised>true</advertised>
+  <metadata>
+    <entry key="cachingEnabled">false</entry>
+    <entry key="dirName">cub_ortho20cmgeotiff_geotiff</entry>
+  </metadata>
+  <store class="coverageStore">
+    <id>CoverageStoreInfoImpl-17928462:1343c2469d3:-7270</id>
+  </store>
+  <nativeFormat>ImageMosaic</nativeFormat>
+  <grid dimension="2">
+    <range>
+      <low>0 0</low>
+      <high>175000 175000</high>
+    </range>
+    <transform>
+      <scaleX>0.2</scaleX>
+      <scaleY>-0.2</scaleY>
+      <shearX>0.0</shearX>
+      <shearY>0.0</shearY>
+      <translateX>393000.1</translateX>
+      <translateY>6444999.9</translateY>
+    </transform>
+    <crs>EPSG:2154</crs>
+  </grid>
+  <supportedFormats>
+    <string>GEOTIFF</string>
+    <string>GIF</string>
+    <string>PNG</string>
+    <string>JPEG</string>
+    <string>TIFF</string>
+  </supportedFormats>
+  <interpolationMethods>
+    <string>bilinear</string>
+    <string>bicubic</string>
+  </interpolationMethods>
+  <defaultInterpolationMethod>bicubic</defaultInterpolationMethod>
+  <dimensions>
+    <coverageDimension>
+      <name>RED_BAND</name>
+      <description>GridSampleDimension[0.0,0.0]</description>
+      <range>
+        <min>0.0</min>
+        <max>0.0</max>
+      </range>
+      <nullValues>
+        <double>0.0</double>
+      </nullValues>
+    </coverageDimension>
+    <coverageDimension>
+      <name>GREEN_BAND</name>
+      <description>GridSampleDimension[0.0,0.0]</description>
+      <range>
+        <min>0.0</min>
+        <max>0.0</max>
+      </range>
+      <nullValues>
+        <double>0.0</double>
+      </nullValues>
+    </coverageDimension>
+    <coverageDimension>
+      <name>BLUE_BAND</name>
+      <description>GridSampleDimension[0.0,0.0]</description>
+      <range>
+        <min>0.0</min>
+        <max>0.0</max>
+      </range>
+      <nullValues>
+        <double>0.0</double>
+      </nullValues>
+    </coverageDimension>
+  </dimensions>
+  <parameters>
+    <entry>
+      <string>AllowMultithreading</string>
+      <string>false</string>
+    </entry>
+    <entry>
+      <string>Filter</string>
+      <null/>
+    </entry>
+    <entry>
+      <string>MaxAllowedTiles</string>
+      <string>2147483647</string>
+    </entry>
+    <entry>
+      <string>InputTransparentColor</string>
+      <string></string>
+    </entry>
+    <entry>
+      <string>OutputTransparentColor</string>
+      <string></string>
+    </entry>
+    <entry>
+      <string>SUGGESTED_TILE_SIZE</string>
+      <string>512,512</string>
+    </entry>
+    <entry>
+      <string>USE_JAI_IMAGEREAD</string>
+      <string>true</string>
+    </entry>
+    <entry>
+      <string>BackgroundValues</string>
+      <null/>
+    </entry>
+  </parameters>
+</coverage>

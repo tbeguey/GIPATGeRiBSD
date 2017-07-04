@@ -1,0 +1,20 @@
+<layer>
+  <name>alpi_epci_adherents</name>
+  <id>LayerInfoImpl--149c8014:14f44e3bf29:36b9</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl--149c8014:14f44e3bf29:36b2</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl--149c8014:14f44e3bf29:36b8</id>
+  </resource>
+  <enabled>true</enabled>
+  <attribution>
+    <title>ALPI</title>
+    <href>http://www.alpi40.fr/</href>
+    <logoURL>https://www.pigma.org/portail/sites/www.pigma.org.portail/files/sites/default/files/inline-images/pigma/les_partenaires/les_signataires_de_la_convention_pigma/autres/alpi.jpg</logoURL>
+    <logoWidth>178</logoWidth>
+    <logoHeight>68</logoHeight>
+    <logoType>image/jpeg</logoType>
+  </attribution>
+</layer>

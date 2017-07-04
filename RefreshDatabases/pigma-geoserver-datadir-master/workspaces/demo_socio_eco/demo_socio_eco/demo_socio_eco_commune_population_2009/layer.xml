@@ -1,0 +1,15 @@
+<layer>
+  <name>demo_socio_eco_commune_population_2009</name>
+  <id>LayerInfoImpl-186890ab:15a3c47cdb1:619d</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl-52e4162b:1361b4c29a2:796f</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl-186890ab:15a3c47cdb1:619c</id>
+  </resource>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+</layer>

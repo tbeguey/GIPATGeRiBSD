@@ -1,0 +1,20 @@
+<layer>
+  <name>departements</name>
+  <id>LayerInfoImpl--474ece09:133208a1f4e:-7a82</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl--57418a1f:130f9791466:-7ffe</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl--474ece09:133208a1f4e:-7a83</id>
+  </resource>
+  <enabled>true</enabled>
+  <attribution>
+    <title>PIGMA</title>
+    <href>https://www.pigma.org/web/guest/home</href>
+    <logoURL>https://www.pigma.org/image/image_gallery?img_id=104720&amp;t=1382512862031</logoURL>
+    <logoWidth>70</logoWidth>
+    <logoHeight>72</logoHeight>
+    <logoType>image/png</logoType>
+  </attribution>
+</layer>

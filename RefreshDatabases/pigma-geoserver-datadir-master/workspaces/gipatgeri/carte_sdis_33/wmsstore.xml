@@ -1,0 +1,19 @@
+<wmsStore>
+  <id>WMSStoreInfoImpl-1a3b34e9:13a30459930:-7c0a</id>
+  <name>carte_sdis_33</name>
+  <type>WMS</type>
+  <enabled>false</enabled>
+  <workspace>
+    <id>WorkspaceInfoImpl-1a3b34e9:13a30459930:-7c33</id>
+  </workspace>
+  <metadata>
+    <entry key="useConnectionPooling">false</entry>
+    <entry key="user">pigma</entry>
+    <entry key="password">742555</entry>
+  </metadata>
+  <__default>false</__default>
+  <capabilitiesURL>http://wms.cartogip.fr/wms_pigma/sdis_gironde/</capabilitiesURL>
+  <maxConnections>6</maxConnections>
+  <readTimeout>60</readTimeout>
+  <connectTimeout>30</connectTimeout>
+</wmsStore>

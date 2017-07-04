@@ -1,0 +1,50 @@
+<layerGroup>
+  <id>LayerGroupInfoImpl-1e767e5e:13ff1ccc8b3:-ec4</id>
+  <name>ARS - PPE - Périmètre de protection éloignés</name>
+  <mode>SINGLE</mode>
+  <title>ARS - PPE - Périmètre de protection éloignés</title>
+  <workspace>
+    <id>WorkspaceInfoImpl-10f0fb2b:136e9b7cf61:912</id>
+  </workspace>
+  <publishables>
+    <published type="layer">
+      <id>LayerInfoImpl--1812fe21:13fece6373d:4705</id>
+    </published>
+    <published type="layer">
+      <id>LayerInfoImpl--1812fe21:13fece6373d:1698</id>
+    </published>
+    <published type="layer">
+      <id>LayerInfoImpl--1812fe21:13fece6373d:176a</id>
+    </published>
+    <published type="layer">
+      <id>LayerInfoImpl--1812fe21:13fece6373d:14cb</id>
+    </published>
+    <published type="layer">
+      <id>LayerInfoImpl--1812fe21:13fece6373d:469d</id>
+    </published>
+  </publishables>
+  <styles>
+    <style>
+      <id>StyleInfoImpl-1e767e5e:13ff1ccc8b3:-5e9e</id>
+    </style>
+    <style>
+      <id>StyleInfoImpl-1e767e5e:13ff1ccc8b3:-5e9e</id>
+    </style>
+    <style>
+      <id>StyleInfoImpl-1e767e5e:13ff1ccc8b3:-5e9e</id>
+    </style>
+    <style>
+      <id>StyleInfoImpl-1e767e5e:13ff1ccc8b3:-5e9e</id>
+    </style>
+    <style>
+      <id>StyleInfoImpl-1e767e5e:13ff1ccc8b3:-5e9e</id>
+    </style>
+  </styles>
+  <bounds>
+    <minx>338649.986239493</minx>
+    <maxx>578288.8125</maxx>
+    <miny>6208909.0</miny>
+    <maxy>6512677.0</maxy>
+    <crs class="projected">EPSG:2154</crs>
+  </bounds>
+</layerGroup>

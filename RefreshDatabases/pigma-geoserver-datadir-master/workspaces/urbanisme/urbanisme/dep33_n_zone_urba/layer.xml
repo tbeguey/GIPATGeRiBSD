@@ -1,0 +1,20 @@
+<layer>
+  <name>dep33_n_zone_urba</name>
+  <id>LayerInfoImpl-2c34a65b:13f9e7c9256:f18</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl-3dd29b1f:13f1a2a201d:-7fe4</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl-2c34a65b:13f9e7c9256:f17</id>
+  </resource>
+  <enabled>false</enabled>
+  <attribution>
+    <title>Département de la Gironde</title>
+    <href>http://www.gironde.fr/jcms/j_6/accueil</href>
+    <logoURL>https://www.pigma.org/image/image_gallery?img_id=83581&amp;t=1382534466004</logoURL>
+    <logoWidth>217</logoWidth>
+    <logoHeight>78</logoHeight>
+    <logoType>image/jpeg</logoType>
+  </attribution>
+</layer>

@@ -1,0 +1,20 @@
+<layer>
+  <name>siba_ortho2009</name>
+  <id>LayerInfoImpl--16ec6ada:13673194d60:-5ddc</id>
+  <type>RASTER</type>
+  <defaultStyle>
+    <id>StyleInfoImpl--57418a1f:130f9791466:-7ffd</id>
+  </defaultStyle>
+  <resource class="coverage">
+    <id>CoverageInfoImpl--16ec6ada:13673194d60:-5ddd</id>
+  </resource>
+  <enabled>true</enabled>
+  <attribution>
+    <title>SIBA</title>
+    <href>http://www.siba-bassin-arcachon.fr/</href>
+    <logoURL>https://www.pigma.org/portail/sites/www.pigma.org.portail/files/sites/default/files/inline-images/pigma/les_partenaires/les_signataires_de_la_convention_pigma/gironde/SIBA.jpg</logoURL>
+    <logoWidth>178</logoWidth>
+    <logoHeight>39</logoHeight>
+    <logoType>image/jpeg</logoType>
+  </attribution>
+</layer>

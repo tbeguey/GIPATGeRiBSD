@@ -1,0 +1,20 @@
+<layer>
+  <name>ca_cote_basque_adour_enseignement</name>
+  <id>LayerInfoImpl-2245790e:1419d44a43e:-64c0</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl--557b8d63:141ef39ee72:-4401</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl-2245790e:1419d44a43e:-64c1</id>
+  </resource>
+  <enabled>true</enabled>
+  <attribution>
+    <title>CA Côte Basque Adour</title>
+    <href>http://www.agglo-cotebasque.fr/</href>
+    <logoURL>https://www.pigma.org/portail/sites/www.pigma.org.portail/files/sites/default/files/inline-images/pigma/les_partenaires/les_signataires_de_la_convention_pigma/pyrenees_atlantiques/Cote_Basque_Adour.jpg</logoURL>
+    <logoWidth>180</logoWidth>
+    <logoHeight>68</logoHeight>
+    <logoType>image/jpeg</logoType>
+  </attribution>
+</layer>

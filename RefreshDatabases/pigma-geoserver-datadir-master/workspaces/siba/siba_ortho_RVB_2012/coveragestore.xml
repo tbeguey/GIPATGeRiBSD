@@ -1,0 +1,12 @@
+<coverageStore>
+  <id>CoverageStoreInfoImpl-3dad044:1455f5b0b68:c0d</id>
+  <name>siba_ortho_RVB_2012</name>
+  <description>Orthophotographie 2012 du bassin d&apos;arcachon</description>
+  <type>ImageMosaic</type>
+  <enabled>true</enabled>
+  <workspace>
+    <id>WorkspaceInfoImpl--16ec6ada:13673194d60:-6977</id>
+  </workspace>
+  <__default>false</__default>
+  <url>file:///var/local/geodata/raster/siba/ortho_couleur_2012</url>
+</coverageStore>

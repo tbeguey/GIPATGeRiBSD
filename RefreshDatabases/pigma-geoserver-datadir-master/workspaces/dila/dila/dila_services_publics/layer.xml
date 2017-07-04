@@ -1,0 +1,20 @@
+<layer>
+  <name>dila_services_publics</name>
+  <id>LayerInfoImpl--14a5fc34:134d6347150:-7d51</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl--14a5fc34:134d6347150:-7080</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl--14a5fc34:134d6347150:-7d52</id>
+  </resource>
+  <enabled>true</enabled>
+  <attribution>
+    <title>Dila</title>
+    <href>http://www.dila.premier-ministre.gouv.fr/</href>
+    <logoURL>https://www.pigma.org/portail/sites/www.pigma.org.portail/files/sites/default/files/inline-images/pigma/les_partenaires/les_signataires_de_la_convention_pigma/autres/dila.jpg</logoURL>
+    <logoWidth>55</logoWidth>
+    <logoHeight>68</logoHeight>
+    <logoType>image/jpeg</logoType>
+  </attribution>
+</layer>

@@ -1,0 +1,55 @@
+<featureType>
+  <id>FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7e5a</id>
+  <name>ign_bdtopo_ligne_orographique</name>
+  <nativeName>ligne_orographique</nativeName>
+  <namespace>
+    <id>NamespaceInfoImpl--3d639cb2:13285edbc12:-7ff0</id>
+  </namespace>
+  <title>IGN BD TOPO - Lignes orographiques</title>
+  <metadataLinks>
+    <metadataLink>
+      <type>text/plain</type>
+      <metadataType>TC211</metadataType>
+      <content>https://www.pigma.org/geonetwork?uuid=bd0a2544-e4ed-4a2c-b2e7-879134ce6ace</content>
+    </metadataLink>
+    <metadataLink>
+      <type>text/html</type>
+      <metadataType></metadataType>
+      <content>https://www.pigma.org/geonetwork/apps/georchestra/?uuid=bd0a2544-e4ed-4a2c-b2e7-879134ce6ace</content>
+    </metadataLink>
+    <metadataLink>
+      <type>text/xml</type>
+      <metadataType></metadataType>
+      <content>https://www.pigma.org/geonetwork/srv/fre/xml_iso19139?uuid=bd0a2544-e4ed-4a2c-b2e7-879134ce6ace</content>
+    </metadataLink>
+  </metadataLinks>
+  <srs>EPSG:2154</srs>
+  <nativeBoundingBox>
+    <minx>310733.281</minx>
+    <maxx>576823.25</maxx>
+    <miny>6193775.0</miny>
+    <maxy>6513225.0</maxy>
+    <crs class="projected">EPSG:2154</crs>
+  </nativeBoundingBox>
+  <latLonBoundingBox>
+    <minx>-1.997</minx>
+    <maxx>1.495</maxx>
+    <miny>42.738</miny>
+    <maxy>45.707</maxy>
+    <crs>EPSG:4326</crs>
+  </latLonBoundingBox>
+  <projectionPolicy>FORCE_DECLARED</projectionPolicy>
+  <enabled>true</enabled>
+  <advertised>true</advertised>
+  <metadata>
+    <entry key="cachingEnabled">false</entry>
+  </metadata>
+  <store class="dataStore">
+    <id>DataStoreInfoImpl--3d639cb2:13285edbc12:-7fb6</id>
+  </store>
+  <maxFeatures>0</maxFeatures>
+  <numDecimals>0</numDecimals>
+  <overridingServiceSRS>false</overridingServiceSRS>
+  <skipNumberMatched>false</skipNumberMatched>
+  <circularArcPresent>false</circularArcPresent>
+</featureType>

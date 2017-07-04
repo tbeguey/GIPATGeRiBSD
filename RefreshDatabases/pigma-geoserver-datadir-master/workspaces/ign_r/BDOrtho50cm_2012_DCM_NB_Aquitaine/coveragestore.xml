@@ -1,0 +1,11 @@
+<coverageStore>
+  <id>CoverageStoreInfoImpl-6d8c04c6:147e958cf58:-4d84</id>
+  <name>BDOrtho50cm_2012_DCM_NB_Aquitaine</name>
+  <type>ImageMosaic</type>
+  <enabled>true</enabled>
+  <workspace>
+    <id>WorkspaceInfoImpl--4f1d3a93:131f1a753d4:-7ff8</id>
+  </workspace>
+  <__default>false</__default>
+  <url>file:///var/local/geodata/raster/ign/bd_ortho_nb_2012_l93_tif_aquitaine/bd_ortho_nb_2012_l93_tif_aquitaine.shp</url>
+</coverageStore>

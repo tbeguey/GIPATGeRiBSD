@@ -1,0 +1,16 @@
+<layer>
+  <name>sdis40_web_3857</name>
+  <id>LayerInfoImpl-69a6abb:1540ab71556:7b3a</id>
+  <type>WMS</type>
+  <defaultStyle>
+    <id>StyleInfoImpl-4e0b98bf:12475d46fdd:-7fe2</id>
+  </defaultStyle>
+  <resource class="wmsLayer">
+    <id>WMSLayerInfoImpl-69a6abb:1540ab71556:7b39</id>
+  </resource>
+  <enabled>true</enabled>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+</layer>

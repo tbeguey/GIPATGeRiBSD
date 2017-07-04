@@ -1,0 +1,70 @@
+<featureType>
+  <id>FeatureTypeInfoImpl--28e07fc6:137e8b84496:-1c1c</id>
+  <name>cg64_espaces_naturels_sensibles</name>
+  <nativeName>espaces_naturels_sensibles</nativeName>
+  <namespace>
+    <id>NamespaceInfoImpl-52f4f10e:137bcd6e4e0:-6b54</id>
+  </namespace>
+  <title>CG64 - Espaces naturels sensibles</title>
+  <abstract>Conseil général des pyrenées-atlantiques : Espaces naturels sensibles</abstract>
+  <keywords>
+    <string>espaces_naturels_sensibles</string>
+    <string>features</string>
+  </keywords>
+  <metadataLinks>
+    <metadataLink>
+      <type>text/plain</type>
+      <metadataType>TC211</metadataType>
+      <content>https://www.pigma.org/geonetwork/apps/georchestra/?uuid=cfec7ab3-89e9-4e6b-b903-acbdda4f75f1</content>
+    </metadataLink>
+  <metadataLink><type>text/html</type><metadataType /><content>https://www.pigma.org/geonetwork/apps/georchestra/?uuid=cfec7ab3-89e9-4e6b-b903-acbdda4f75f1</content></metadataLink><metadataLink><type>text/xml</type><metadataType /><content>https://www.pigma.org/geonetwork/srv/fre/xml_iso19139?uuid=cfec7ab3-89e9-4e6b-b903-acbdda4f75f1</content></metadataLink></metadataLinks>
+  <nativeCRS class="projected">PROJCS["RGF93 / Lambert-93", 
+  GEOGCS["RGF93", 
+    DATUM["Reseau Geodesique Francais 1993", 
+      SPHEROID["GRS 1980", 6378137.0, 298.257222101, AUTHORITY["EPSG","7019"]], 
+      TOWGS84[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], 
+      AUTHORITY["EPSG","6171"]], 
+    PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+    UNIT["degree", 0.017453292519943295], 
+    AXIS["Geodetic longitude", EAST], 
+    AXIS["Geodetic latitude", NORTH], 
+    AUTHORITY["EPSG","4171"]], 
+  PROJECTION["Lambert_Conformal_Conic_2SP", AUTHORITY["EPSG","9802"]], 
+  PARAMETER["central_meridian", 3.0], 
+  PARAMETER["latitude_of_origin", 46.5], 
+  PARAMETER["standard_parallel_1", 49.0], 
+  PARAMETER["false_easting", 700000.0], 
+  PARAMETER["false_northing", 6600000.0], 
+  PARAMETER["scale_factor", 1.0], 
+  PARAMETER["standard_parallel_2", 44.0], 
+  UNIT["m", 1.0], 
+  AXIS["Easting", EAST], 
+  AXIS["Northing", NORTH], 
+  AUTHORITY["EPSG","2154"]]</nativeCRS>
+  <srs>EPSG:2154</srs>
+  <nativeBoundingBox>
+    <minx>311899.25</minx>
+    <maxx>451393.96875</maxx>
+    <miny>6201732.0</miny>
+    <maxy>6281426.5</maxy>
+    <crs class="projected">EPSG:2154</crs>
+  </nativeBoundingBox>
+  <latLonBoundingBox>
+    <minx>-1.801806855077587</minx>
+    <maxx>-0.0401626188161597</maxx>
+    <miny>42.81016138345053</miny>
+    <maxy>43.588280327847144</maxy>
+    <crs>EPSG:4326</crs>
+  </latLonBoundingBox>
+  <projectionPolicy>FORCE_DECLARED</projectionPolicy>
+  <enabled>true</enabled>
+  <advertised>true</advertised>
+  <metadata>
+    <entry key="cachingEnabled">false</entry>
+  </metadata>
+  <store class="dataStore">
+    <id>DataStoreInfoImpl-52f4f10e:137bcd6e4e0:-6ab5</id>
+  </store>
+  <maxFeatures>0</maxFeatures>
+  <numDecimals>0</numDecimals>
+</featureType>

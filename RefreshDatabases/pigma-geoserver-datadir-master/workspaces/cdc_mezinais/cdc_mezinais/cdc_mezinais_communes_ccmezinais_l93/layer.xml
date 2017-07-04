@@ -1,0 +1,19 @@
+<layer>
+  <name>cdc_mezinais_communes_ccmezinais_l93</name>
+  <id>LayerInfoImpl--3ce68516:141a7919477:-6fac</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl--57418a1f:130f9791466:-8000</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl--3ce68516:141a7919477:-6fad</id>
+  </resource>
+  <enabled>true</enabled>
+  <attribution>
+    <title>CDC du Mézinais</title>
+    <logoURL>https://www.pigma.org/portail/sites/www.pigma.org.portail/files/sites/default/files/inline-images/pigma/les_partenaires/les_signataires_de_la_convention_pigma/lot_et_garonne/CDC_MEZINAIS.png</logoURL>
+    <logoWidth>195</logoWidth>
+    <logoHeight>68</logoHeight>
+    <logoType>image/png</logoType>
+  </attribution>
+</layer>

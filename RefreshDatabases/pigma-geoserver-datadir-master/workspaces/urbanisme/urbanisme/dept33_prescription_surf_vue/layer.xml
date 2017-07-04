@@ -1,0 +1,16 @@
+<layer>
+  <name>dept33_prescription_surf_vue</name>
+  <id>LayerInfoImpl--266e24e3:148592967ca:-47ed</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl-517c09a2:14300129a65:-786c</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl--266e24e3:148592967ca:-47ee</id>
+  </resource>
+  <enabled>true</enabled>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+</layer>

@@ -1,0 +1,16 @@
+<layer>
+  <name>dreal_prescriptions_lineaire_urbanisme_nord_medoc</name>
+  <id>LayerInfoImpl--3b70f1bd:139d81f8018:44ba</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl--3b70f1bd:139d9684e71:bc0</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl--3b70f1bd:139d81f8018:44b9</id>
+  </resource>
+  <enabled>true</enabled>
+  <attribution>
+    <logoWidth>186</logoWidth>
+    <logoHeight>68</logoHeight>
+  <logoURL>https://www.pigma.org/portail/sites/www.pigma.org.portail/files/sites/default/files/inline-images/pigma/les_partenaires/les_signataires_de_la_convention_pigma/aquitaine/DREAL.png</logoURL><logoType>image/png</logoType></attribution>
+</layer>

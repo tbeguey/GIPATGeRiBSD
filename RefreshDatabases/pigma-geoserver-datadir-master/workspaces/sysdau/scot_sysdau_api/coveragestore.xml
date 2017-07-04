@@ -1,0 +1,11 @@
+<coverageStore>
+  <id>CoverageStoreInfoImpl-35e7d5ee:1515ca42bc3:-929</id>
+  <name>scot_sysdau_api</name>
+  <type>GeoTIFF</type>
+  <enabled>true</enabled>
+  <workspace>
+    <id>WorkspaceInfoImpl--3d639cb2:13285edbc12:-7fe3</id>
+  </workspace>
+  <__default>false</__default>
+  <url>file:///var/local/geodata/raster/sysdau/geotif/sysdau_scot_approuv_wgs.tif</url>
+</coverageStore>

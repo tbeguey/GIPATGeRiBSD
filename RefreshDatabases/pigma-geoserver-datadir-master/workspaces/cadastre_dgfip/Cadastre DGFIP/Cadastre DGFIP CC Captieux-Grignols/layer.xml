@@ -1,0 +1,20 @@
+<layer>
+  <name>Cadastre DGFIP CC Captieux-Grignols</name>
+  <id>LayerInfoImpl--1e8728cd:13b287d8182:6e65</id>
+  <type>WMS</type>
+  <defaultStyle>
+    <id>StyleInfoImpl-4e0b98bf:12475d46fdd:-7fe2</id>
+  </defaultStyle>
+  <resource class="wmsLayer">
+    <id>WMSLayerInfoImpl--1e8728cd:13b287d8182:6e64</id>
+  </resource>
+  <enabled>true</enabled>
+  <attribution>
+    <title>CDC Captieux Grignols</title>
+    <href>http://cc-captieux-grignols.fr/z/index.php</href>
+    <logoURL>https://www.pigma.org/portail/sites/www.pigma.org.portail/files/sites/default/files/inline-images/pigma/les_partenaires/les_signataires_de_la_convention_pigma/gironde/CAPTIEUX.gif</logoURL>
+    <logoWidth>104</logoWidth>
+    <logoHeight>80</logoHeight>
+    <logoType>image/jpeg</logoType>
+  </attribution>
+</layer>

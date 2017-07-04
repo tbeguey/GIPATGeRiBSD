@@ -1,0 +1,52 @@
+<featureType>
+  <id>FeatureTypeInfoImpl-1bfa188e:149ec3ed113:199e</id>
+  <name>ddt47_bruit_assiette</name>
+  <nativeName>bruit_assiette</nativeName>
+  <namespace>
+    <id>NamespaceInfoImpl-1bfa188e:149eb73da18:-2816</id>
+  </namespace>
+  <title>DDT 47 - Bruit Assiette</title>
+  <keywords>
+    <string>bruit_assiette</string>
+    <string>features</string>
+    <string>inspire</string>
+  </keywords>
+  <metadataLinks>
+    <metadataLink>
+      <type>text/plain</type>
+      <metadataType>TC211</metadataType>
+      <content>https://www.pigma.org/geonetwork/apps/georchestra/?uuid=76041514-1be8-4194-8112-74a1e0c75037</content>
+    </metadataLink>
+  <metadataLink><type>text/html</type><metadataType /><content>https://www.pigma.org/geonetwork/apps/georchestra/?uuid=76041514-1be8-4194-8112-74a1e0c75037</content></metadataLink><metadataLink><type>text/xml</type><metadataType /><content>https://www.pigma.org/geonetwork/srv/fre/xml_iso19139?uuid=76041514-1be8-4194-8112-74a1e0c75037</content></metadataLink></metadataLinks>
+  <srs>EPSG:2154</srs>
+  <nativeBoundingBox>
+    <minx>459952.913911894</minx>
+    <maxx>542430.909377962</maxx>
+    <miny>6327950.92281936</miny>
+    <maxy>6401275.31150502</maxy>
+  </nativeBoundingBox>
+  <latLonBoundingBox>
+    <minx>-0.0291639021227043</minx>
+    <maxx>1.0341119478401395</maxx>
+    <miny>44.00959563361571</miny>
+    <maxy>44.692732757859446</maxy>
+    <crs>GEOGCS["WGS84(DD)", 
+  DATUM["WGS84", 
+    SPHEROID["WGS84", 6378137.0, 298.257223563]], 
+  PRIMEM["Greenwich", 0.0], 
+  UNIT["degree", 0.017453292519943295], 
+  AXIS["Geodetic longitude", EAST], 
+  AXIS["Geodetic latitude", NORTH]]</crs>
+  </latLonBoundingBox>
+  <projectionPolicy>FORCE_DECLARED</projectionPolicy>
+  <enabled>true</enabled>
+  <advertised>true</advertised>
+  <metadata>
+    <entry key="cachingEnabled">false</entry>
+  </metadata>
+  <store class="dataStore">
+    <id>DataStoreInfoImpl-1bfa188e:149eb73da18:-2677</id>
+  </store>
+  <maxFeatures>0</maxFeatures>
+  <numDecimals>0</numDecimals>
+</featureType>

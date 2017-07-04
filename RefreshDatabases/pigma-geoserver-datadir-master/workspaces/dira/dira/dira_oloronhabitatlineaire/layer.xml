@@ -1,0 +1,20 @@
+<layer>
+  <name>dira_oloronhabitatlineaire</name>
+  <id>LayerInfoImpl--58ac8fd2:14377594a3d:7787</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl--58ac8fd2:14377699888:-5052</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl--58ac8fd2:14377594a3d:7786</id>
+  </resource>
+  <enabled>true</enabled>
+  <attribution>
+    <title>DIRA</title>
+    <href>http://www.dir.atlantique.developpement-durable.gouv.fr/</href>
+    <logoURL>https://www.pigma.org/portail/sites/www.pigma.org.portail/files/sites/default/files/inline-images/pigma/les_partenaires/les_signataires_de_la_convention_pigma/aquitaine/DIR_ATLANTIQUE.png</logoURL>
+    <logoWidth>186</logoWidth>
+    <logoHeight>68</logoHeight>
+    <logoType>image/png</logoType>
+  </attribution>
+</layer>

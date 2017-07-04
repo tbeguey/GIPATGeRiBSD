@@ -1,0 +1,20 @@
+<layer>
+  <name>cdcpiemontoloronais_as1_peri_eloigne</name>
+  <id>LayerInfoImpl-2245790e:1419cd6c249:-2cb6</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl-21b31f75:141e9d773d1:-c6b</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl-2245790e:1419cd6c249:-2cb7</id>
+  </resource>
+  <enabled>true</enabled>
+  <attribution>
+    <title>CDC Piémont Oloronais</title>
+    <href>http://www.piemont-oloronais.fr/</href>
+    <logoURL>https://www.pigma.org/portail/sites/www.pigma.org.portail/files/sites/default/files/inline-images/pigma/les_partenaires/les_signataires_de_la_convention_pigma/pyrenees_atlantiques/CDC_PIEMONT_OLORONAIS.jpg</logoURL>
+    <logoWidth>180</logoWidth>
+    <logoHeight>68</logoHeight>
+    <logoType>image/jpeg</logoType>
+  </attribution>
+</layer>

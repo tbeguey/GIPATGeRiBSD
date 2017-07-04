@@ -1,0 +1,20 @@
+<layer>
+  <name>cg64_stations_epurations_points_rejet</name>
+  <id>LayerInfoImpl--6bab9a9a:14052b4370d:431a</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl-91f625d:140546729a4:7565</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl--6bab9a9a:14052b4370d:4319</id>
+  </resource>
+  <enabled>true</enabled>
+  <attribution>
+    <title>CG 64</title>
+    <href>http://www.cg64.fr/</href>
+    <logoURL>https://www.pigma.org/portail/sites/www.pigma.org.portail/files/sites/default/files/inline-images/pigma/les_partenaires/les_signataires_de_la_convention_pigma/pyrenees_atlantiques/CD64.jpg</logoURL>
+    <logoWidth>180</logoWidth>
+    <logoHeight>68</logoHeight>
+    <logoType>image/jpeg</logoType>
+  </attribution>
+</layer>

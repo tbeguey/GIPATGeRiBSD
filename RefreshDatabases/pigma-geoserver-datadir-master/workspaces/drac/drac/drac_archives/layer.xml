@@ -1,0 +1,29 @@
+<layer>
+  <name>drac_archives</name>
+  <id>LayerInfoImpl--15513d29:1338db5f360:-7bca</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl--40f3f3d6:1360c874ed4:-75fa</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl--15513d29:1338db5f360:-7bcb</id>
+  </resource>
+  <enabled>true</enabled>
+  <metadata>
+    <entry key="GWC.autoCacheStyles">true</entry>
+    <entry key="GWC.metaTilingX">4</entry>
+    <entry key="GWC.metaTilingY">4</entry>
+    <entry key="GWC.gutter">0</entry>
+    <entry key="GWC.enabled">true</entry>
+    <entry key="GWC.cacheFormats">image/jpeg,image/png</entry>
+    <entry key="GWC.gridSets">EPSG:4326,EPSG:900913</entry>
+  </metadata>
+  <attribution>
+    <title>DRAC</title>
+    <href>http://aquitaine.culture.gouv.fr/</href>
+    <logoURL>https://www.pigma.org/portail/sites/www.pigma.org.portail/files/sites/default/files/inline-images/pigma/les_partenaires/les_signataires_de_la_convention_pigma/aquitaine/DRAC.png</logoURL>
+    <logoWidth>186</logoWidth>
+    <logoHeight>68</logoHeight>
+    <logoType>image/png</logoType>
+  </attribution>
+</layer>

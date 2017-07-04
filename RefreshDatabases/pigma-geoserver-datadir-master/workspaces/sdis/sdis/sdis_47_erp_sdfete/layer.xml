@@ -1,0 +1,20 @@
+<layer>
+  <name>sdis_47_erp_sdfete</name>
+  <id>LayerInfoImpl--158b7952:14c4ba4b95f:-5675</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl--158b7952:14c4ba4b95f:-49c9</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl--158b7952:14c4ba4b95f:-5676</id>
+  </resource>
+  <enabled>true</enabled>
+  <attribution>
+    <title>SDIS du Lot-et-Garonne</title>
+    <href>http://www.sdis47.fr/</href>
+    <logoURL>https://www.pigma.org/portail/sites/www.pigma.org.portail/files/sites/default/files/inline-images/pigma/les_partenaires/les_signataires_de_la_convention_pigma/lot_et_garonne/SDIS47.png</logoURL>
+    <logoWidth>195</logoWidth>
+    <logoHeight>68</logoHeight>
+    <logoType>image/png</logoType>
+  </attribution>
+</layer>

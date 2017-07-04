@@ -1,0 +1,20 @@
+<layer>
+  <name>cdc_bourg_en_gironde_points_remarquables</name>
+  <id>LayerInfoImpl--65d22c8b:140e2f62cb9:6bc9</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl--57418a1f:130f9791466:-8000</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl--65d22c8b:140e2f62cb9:6bc8</id>
+  </resource>
+  <enabled>true</enabled>
+  <attribution>
+    <title>CDC Bourg en Gironde</title>
+    <href>http://www.bourg-en-gironde.fr/</href>
+    <logoURL>https://www.pigma.org/portail/sites/www.pigma.org.portail/files/sites/default/files/inline-images/pigma/les_partenaires/les_signataires_de_la_convention_pigma/gironde/CDC-BOURG-EN-GIRONDE.jpg</logoURL>
+    <logoWidth>53</logoWidth>
+    <logoHeight>65</logoHeight>
+    <logoType>image/jpeg</logoType>
+  </attribution>
+</layer>

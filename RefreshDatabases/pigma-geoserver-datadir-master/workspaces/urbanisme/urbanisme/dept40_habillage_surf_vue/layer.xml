@@ -1,0 +1,16 @@
+<layer>
+  <name>dept40_habillage_surf_vue</name>
+  <id>LayerInfoImpl--69a2e1b0:14372484f82:-7a5e</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl--73c240e9:13e3b0f1d57:1023</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl--69a2e1b0:14372484f82:-7a5f</id>
+  </resource>
+  <enabled>true</enabled>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+</layer>

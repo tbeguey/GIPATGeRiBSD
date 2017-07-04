@@ -1,0 +1,22 @@
+<dataStore>
+  <id>DataStoreInfoImpl-3e62bdca:1516209d235:-4dd3</id>
+  <name>coban</name>
+  <description>coban</description>
+  <type>PostGIS (JNDI)</type>
+  <enabled>true</enabled>
+  <workspace>
+    <id>WorkspaceInfoImpl-3e62bdca:1516209d235:-4f4e</id>
+  </workspace>
+  <connectionParameters>
+    <entry key="schema">coban</entry>
+    <entry key="dbtype">postgis</entry>
+    <entry key="Loose bbox">true</entry>
+    <entry key="Expose primary keys">false</entry>
+    <entry key="encode functions">false</entry>
+    <entry key="preparedStatements">false</entry>
+    <entry key="jndiReferenceName">java:comp/env/jdbc/pigma</entry>
+    <entry key="Estimated extends">true</entry>
+    <entry key="namespace">http://pigma.org/coban</entry>
+  </connectionParameters>
+  <__default>false</__default>
+</dataStore>

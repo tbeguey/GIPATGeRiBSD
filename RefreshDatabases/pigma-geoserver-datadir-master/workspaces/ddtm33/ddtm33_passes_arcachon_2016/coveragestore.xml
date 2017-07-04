@@ -1,0 +1,11 @@
+<coverageStore>
+  <id>CoverageStoreInfoImpl--25674c34:159830b51fa:425</id>
+  <name>ddtm33_passes_arcachon_2016</name>
+  <type>GeoTIFF</type>
+  <enabled>true</enabled>
+  <workspace>
+    <id>WorkspaceInfoImpl--2e1400eb:133edec7535:-7edd</id>
+  </workspace>
+  <__default>false</__default>
+  <url>file:///var/local/geodata/raster/bathy_bassin_arca/passes_2016/bathy_round_2016.tif</url>
+</coverageStore>

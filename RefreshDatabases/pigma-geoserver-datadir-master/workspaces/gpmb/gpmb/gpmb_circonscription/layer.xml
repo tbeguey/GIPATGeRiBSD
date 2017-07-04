@@ -1,0 +1,20 @@
+<layer>
+  <name>gpmb_circonscription</name>
+  <id>LayerInfoImpl--3e77d70f:141973dd3d9:-3b7f</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl-128452c6:14222695f04:-7828</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl--3e77d70f:141973dd3d9:-3b80</id>
+  </resource>
+  <enabled>true</enabled>
+  <attribution>
+    <title>Grand Port Maritime de Bordeaux</title>
+    <href>http://www.bordeaux-port.fr/</href>
+    <logoURL>https://www.pigma.org/portail/sites/www.pigma.org.portail/files/sites/default/files/inline-images/pigma/les_partenaires/les_signataires_de_la_convention_pigma/gironde/Grand_Port_Bordeaux.jpg</logoURL>
+    <logoWidth>178</logoWidth>
+    <logoHeight>68</logoHeight>
+    <logoType>image/jpeg</logoType>
+  </attribution>
+</layer>

@@ -1,0 +1,15 @@
+<layer>
+  <name>rte_poste_electrique</name>
+  <id>LayerInfoImpl--64db1a4f:15a8f5b7695:-3f57</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl--57418a1f:130f9791466:-8000</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl--64db1a4f:15a8f5b7695:-3f58</id>
+  </resource>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+</layer>

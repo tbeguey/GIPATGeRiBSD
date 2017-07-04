@@ -1,0 +1,75 @@
+<featureType>
+  <id>FeatureTypeInfoImpl-66c2438:1379db69c9e:-7206</id>
+  <name>cdcsudpaysbasque_circuit_pedestre</name>
+  <nativeName>circuit_pedestre</nativeName>
+  <namespace>
+    <id>NamespaceInfoImpl-66c2438:1379db69c9e:-757a</id>
+  </namespace>
+  <title>CDC Sud Pays Basque - Circuit Pedestre</title>
+  <abstract>Circuits pédestres de la communauté de commune Sud Pay Basque</abstract>
+  <keywords>
+    <string>features</string>
+    <string>circuit_pedestre</string>
+  </keywords>
+  <metadataLinks>
+    <metadataLink>
+      <type>text/plain</type>
+      <metadataType>TC211</metadataType>
+      <content>https://www.pigma.org/geonetwork?uuid=8c43008d-8d18-4897-a22d-d686112d58ab</content>
+    </metadataLink>
+    <metadataLink>
+      <type>text/plain</type>
+      <metadataType>ISO19115:2003</metadataType>
+      <content>http://pigma.org/cc_sud_pays_basque_2012</content>
+    </metadataLink>
+  <metadataLink><type>text/html</type><metadataType /><content>https://www.pigma.org/geonetwork/apps/georchestra/?uuid=8c43008d-8d18-4897-a22d-d686112d58ab</content></metadataLink><metadataLink><type>text/xml</type><metadataType /><content>https://www.pigma.org/geonetwork/srv/fre/xml_iso19139?uuid=8c43008d-8d18-4897-a22d-d686112d58ab</content></metadataLink></metadataLinks>
+  <nativeCRS class="projected">PROJCS["RGF93 / Lambert-93", 
+  GEOGCS["RGF93", 
+    DATUM["Reseau Geodesique Francais 1993", 
+      SPHEROID["GRS 1980", 6378137.0, 298.257222101, AUTHORITY["EPSG","7019"]], 
+      TOWGS84[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], 
+      AUTHORITY["EPSG","6171"]], 
+    PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+    UNIT["degree", 0.017453292519943295], 
+    AXIS["Geodetic longitude", EAST], 
+    AXIS["Geodetic latitude", NORTH], 
+    AUTHORITY["EPSG","4171"]], 
+  PROJECTION["Lambert_Conformal_Conic_2SP", AUTHORITY["EPSG","9802"]], 
+  PARAMETER["central_meridian", 3.0], 
+  PARAMETER["latitude_of_origin", 46.5], 
+  PARAMETER["standard_parallel_1", 49.0], 
+  PARAMETER["false_easting", 700000.0], 
+  PARAMETER["false_northing", 6600000.0], 
+  PARAMETER["scale_factor", 1.0], 
+  PARAMETER["standard_parallel_2", 44.0], 
+  UNIT["m", 1.0], 
+  AXIS["Easting", EAST], 
+  AXIS["Northing", NORTH], 
+  AUTHORITY["EPSG","2154"]]</nativeCRS>
+  <srs>EPSG:2154</srs>
+  <nativeBoundingBox>
+    <minx>315331.654237303</minx>
+    <maxx>337636.158860033</maxx>
+    <miny>6250140.03148537</miny>
+    <maxy>6270205.15600566</maxy>
+    <crs class="projected">EPSG:2154</crs>
+  </nativeBoundingBox>
+  <latLonBoundingBox>
+    <minx>-1.75109862717264</minx>
+    <maxx>-1.46222824467329</maxx>
+    <miny>43.246594139631014</miny>
+    <maxy>43.438490474125715</maxy>
+    <crs>EPSG:4326</crs>
+  </latLonBoundingBox>
+  <projectionPolicy>NONE</projectionPolicy>
+  <enabled>true</enabled>
+  <advertised>true</advertised>
+  <metadata>
+    <entry key="cachingEnabled">false</entry>
+  </metadata>
+  <store class="dataStore">
+    <id>DataStoreInfoImpl-66c2438:1379db69c9e:-7485</id>
+  </store>
+  <maxFeatures>0</maxFeatures>
+  <numDecimals>0</numDecimals>
+</featureType>

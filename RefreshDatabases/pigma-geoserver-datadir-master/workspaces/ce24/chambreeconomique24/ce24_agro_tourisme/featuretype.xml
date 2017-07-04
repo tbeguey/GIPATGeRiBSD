@@ -1,0 +1,43 @@
+<featureType>
+  <id>FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7e90</id>
+  <name>ce24_agro_tourisme</name>
+  <nativeName>agrotourisme</nativeName>
+  <namespace>
+    <id>NamespaceInfoImpl--3d639cb2:13285edbc12:-7ff6</id>
+  </namespace>
+  <title>CE24 - Agro-tourisme</title>
+  <abstract>Agro-tourisme - Chambre économique de Dordogne</abstract>
+  <metadataLinks>
+    <metadataLink>
+      <type>text/plain</type>
+      <metadataType>TC211</metadataType>
+      <content>https://www.pigma.org/geonetwork?uuid=5f684f98-4f68-4ece-8396-34fec6e8dfe2</content>
+    </metadataLink>
+  <metadataLink><type>text/html</type><metadataType /><content>https://www.pigma.org/geonetwork/apps/georchestra/?uuid=5f684f98-4f68-4ece-8396-34fec6e8dfe2</content></metadataLink><metadataLink><type>text/xml</type><metadataType /><content>https://www.pigma.org/geonetwork/srv/fre/xml_iso19139?uuid=5f684f98-4f68-4ece-8396-34fec6e8dfe2</content></metadataLink></metadataLinks>
+  <srs>EPSG:2154</srs>
+  <nativeBoundingBox>
+    <minx>443425.469</minx>
+    <maxx>577863.0</maxx>
+    <miny>6353116.0</miny>
+    <maxy>6527774.5</maxy>
+    <crs class="projected">EPSG:2154</crs>
+  </nativeBoundingBox>
+  <latLonBoundingBox>
+    <minx>-0.304</minx>
+    <maxx>1.47</maxx>
+    <miny>44.23</miny>
+    <maxy>45.839</maxy>
+    <crs>EPSG:4326</crs>
+  </latLonBoundingBox>
+  <projectionPolicy>FORCE_DECLARED</projectionPolicy>
+  <enabled>true</enabled>
+  <advertised>true</advertised>
+  <metadata>
+    <entry key="cachingEnabled">false</entry>
+  </metadata>
+  <store class="dataStore">
+    <id>DataStoreInfoImpl--3d639cb2:13285edbc12:-7fcb</id>
+  </store>
+  <maxFeatures>0</maxFeatures>
+  <numDecimals>0</numDecimals>
+</featureType>

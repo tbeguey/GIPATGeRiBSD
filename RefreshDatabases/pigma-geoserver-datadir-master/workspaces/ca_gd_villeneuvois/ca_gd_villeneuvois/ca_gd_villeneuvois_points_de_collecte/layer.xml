@@ -1,0 +1,20 @@
+<layer>
+  <name>ca_gd_villeneuvois_points_de_collecte</name>
+  <id>LayerInfoImpl--1555e0c2:13a2c2c28f3:1aa9</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl--1555e0c2:13a2c2c28f3:1ab2</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl--1555e0c2:13a2c2c28f3:1aa8</id>
+  </resource>
+  <enabled>true</enabled>
+  <attribution>
+    <title>CA Grand Villeneuvois</title>
+    <href>http://www.grand-villeneuvois.fr/</href>
+    <logoURL>https://www.pigma.org/portail/sites/www.pigma.org.portail/files/sites/default/files/inline-images/pigma/les_partenaires/les_signataires_de_la_convention_pigma/lot_et_garonne/CDGV.png</logoURL>
+    <logoWidth>195</logoWidth>
+    <logoHeight>68</logoHeight>
+    <logoType>image/png</logoType>
+  </attribution>
+</layer>

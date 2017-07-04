@@ -1,0 +1,20 @@
+<layer>
+  <name>sysdau_scot_approuv</name>
+  <id>LayerInfoImpl-35e7d5ee:1515ca42bc3:-925</id>
+  <type>RASTER</type>
+  <defaultStyle>
+    <id>StyleInfoImpl--3f885e08:151582a8bb3:7a06</id>
+  </defaultStyle>
+  <resource class="coverage">
+    <id>CoverageInfoImpl-35e7d5ee:1515ca42bc3:-926</id>
+  </resource>
+  <enabled>true</enabled>
+  <attribution>
+    <title>SYSDAU</title>
+    <href>http://www.sysdau.fr/</href>
+    <logoURL>https://www.pigma.org/portail/sites/www.pigma.org.portail/files/sites/default/files/inline-images/pigma/les_partenaires/les_signataires_de_la_convention_pigma/gironde/sysdau.jpg</logoURL>
+    <logoWidth>178</logoWidth>
+    <logoHeight>68</logoHeight>
+    <logoType>image/jpeg</logoType>
+  </attribution>
+</layer>

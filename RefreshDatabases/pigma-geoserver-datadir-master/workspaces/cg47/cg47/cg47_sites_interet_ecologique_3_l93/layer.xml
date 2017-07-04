@@ -1,0 +1,20 @@
+<layer>
+  <name>cg47_sites_interet_ecologique_3_l93</name>
+  <id>LayerInfoImpl--5738bcda:13cb7bf17f0:-7981</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl--57418a1f:130f9791466:-7ffe</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl--5738bcda:13cb7bf17f0:-7982</id>
+  </resource>
+  <enabled>true</enabled>
+  <attribution>
+    <title>Conseil Général du Lot-et-Garonne</title>
+    <href>http://www.cg47.fr/</href>
+    <logoURL>https://www.pigma.org/portail/sites/www.pigma.org.portail/files/sites/default/files/inline-images/pigma/les_partenaires/les_signataires_de_la_convention_pigma/lot_et_garonne/CD47.png</logoURL>
+    <logoWidth>190</logoWidth>
+    <logoHeight>48</logoHeight>
+    <logoType>image/png</logoType>
+  </attribution>
+</layer>

@@ -1,0 +1,43 @@
+<featureType>
+  <id>FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7e9e</id>
+  <name>epidropt_api</name>
+  <nativeName>api</nativeName>
+  <namespace>
+    <id>NamespaceInfoImpl--3d639cb2:13285edbc12:-8000</id>
+  </namespace>
+  <title>EPIDROPT - Arbres instables Api</title>
+  <abstract>Api : arbre très penché ou dépérissant, encore enraciné nécessitant une intervention - Arbres instables Api - Etablissement Public Intersyndical du bassin du Dropt</abstract>
+  <metadataLinks>
+    <metadataLink>
+      <type>text/plain</type>
+      <metadataType>TC211</metadataType>
+      <content>https://www.pigma.org/geonetwork?uuid=7ffc0aea-d486-4194-98de-0ae473620da5</content>
+    </metadataLink>
+  <metadataLink><type>text/html</type><metadataType /><content>https://www.pigma.org/geonetwork/apps/georchestra/?uuid=7ffc0aea-d486-4194-98de-0ae473620da5</content></metadataLink><metadataLink><type>text/xml</type><metadataType /><content>https://www.pigma.org/geonetwork/srv/fre/xml_iso19139?uuid=7ffc0aea-d486-4194-98de-0ae473620da5</content></metadataLink></metadataLinks>
+  <srs>EPSG:2154</srs>
+  <nativeBoundingBox>
+    <minx>513558.034</minx>
+    <maxx>533069.009</maxx>
+    <miny>6396036.967</miny>
+    <maxy>6399607.924</maxy>
+    <crs class="projected">EPSG:2154</crs>
+  </nativeBoundingBox>
+  <latLonBoundingBox>
+    <minx>0.647</minx>
+    <maxx>0.895</maxx>
+    <miny>44.638</miny>
+    <maxy>44.676</maxy>
+    <crs>EPSG:4326</crs>
+  </latLonBoundingBox>
+  <projectionPolicy>FORCE_DECLARED</projectionPolicy>
+  <enabled>true</enabled>
+  <advertised>true</advertised>
+  <metadata>
+    <entry key="cachingEnabled">false</entry>
+  </metadata>
+  <store class="dataStore">
+    <id>DataStoreInfoImpl--3d639cb2:13285edbc12:-7fc7</id>
+  </store>
+  <maxFeatures>0</maxFeatures>
+  <numDecimals>0</numDecimals>
+</featureType>

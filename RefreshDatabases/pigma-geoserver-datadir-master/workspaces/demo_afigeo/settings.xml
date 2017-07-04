@@ -1,0 +1,21 @@
+<settings>
+  <id>SettingsInfoImpl--ff3dd85:13e9d9af235:-7fd9</id>
+  <workspace>
+    <id>WorkspaceInfoImpl-5c668ac0:13da256cfec:-2731</id>
+    <name>demo_afigeo</name>
+  </workspace>
+  <contact>
+    <id>contact</id>
+    <addressType>Work</addressType>
+    <contactEmail>sebastien.negre@gipatgeri.fr</contactEmail>
+    <contactOrganization>PIGMA</contactOrganization>
+    <contactPerson>PIGMA</contactPerson>
+  </contact>
+  <charset>UTF-8</charset>
+  <numDecimals>6</numDecimals>
+  <onlineResource>http://geoserver.org</onlineResource>
+  <proxyBaseUrl>https://www.pigma.org/geoserver</proxyBaseUrl>
+  <verbose>true</verbose>
+  <verboseExceptions>false</verboseExceptions>
+  <localWorkspaceIncludesPrefix>true</localWorkspaceIncludesPrefix>
+</settings>

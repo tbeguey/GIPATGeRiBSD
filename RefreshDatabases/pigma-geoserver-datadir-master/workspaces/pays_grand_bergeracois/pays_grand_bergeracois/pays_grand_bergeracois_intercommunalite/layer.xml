@@ -1,0 +1,20 @@
+<layer>
+  <name>pays_grand_bergeracois_intercommunalite</name>
+  <id>LayerInfoImpl-278241d0:14b018484a6:-7b07</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl-278241d0:14b018484a6:-750c</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl-278241d0:14b018484a6:-7b08</id>
+  </resource>
+  <enabled>true</enabled>
+  <attribution>
+    <title>Pays du Grand Bergeracois</title>
+    <href>http://www.pays-de-bergerac.com/index-fr.asp</href>
+    <logoURL>https://www.pigma.org/portail/sites/www.pigma.org.portail/files/sites/default/files/inline-images/pigma/les_partenaires/les_signataires_de_la_convention_pigma/dordogne/Pays_grand_bergeracois.jpg</logoURL>
+    <logoWidth>178</logoWidth>
+    <logoHeight>68</logoHeight>
+    <logoType>image/jpeg</logoType>
+  </attribution>
+</layer>

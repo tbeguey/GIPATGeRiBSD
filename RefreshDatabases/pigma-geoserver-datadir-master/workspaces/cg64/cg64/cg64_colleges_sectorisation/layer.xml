@@ -1,0 +1,20 @@
+<layer>
+  <name>cg64_colleges_sectorisation</name>
+  <id>LayerInfoImpl-3708cd80:1389fb96023:-7f22</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl--2354f5b7:138a35907d3:-5f8a</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl-3708cd80:1389fb96023:-7f23</id>
+  </resource>
+  <enabled>true</enabled>
+  <attribution>
+    <title>CG 64</title>
+    <href>http://www.cg64.fr/</href>
+    <logoURL>https://www.pigma.org/portail/sites/www.pigma.org.portail/files/sites/default/files/inline-images/pigma/les_partenaires/les_signataires_de_la_convention_pigma/pyrenees_atlantiques/CD64.jpg</logoURL>
+    <logoWidth>180</logoWidth>
+    <logoHeight>68</logoHeight>
+    <logoType>image/jpeg</logoType>
+  </attribution>
+</layer>

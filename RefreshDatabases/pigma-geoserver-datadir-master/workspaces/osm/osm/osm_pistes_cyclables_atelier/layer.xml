@@ -1,0 +1,20 @@
+<layer>
+  <name>osm_pistes_cyclables_atelier</name>
+  <id>LayerInfoImpl-2090530a:14b6ee07b7b:-95a</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl-2090530a:14b6f210de9:-6062</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl-2090530a:14b6ee07b7b:-95b</id>
+  </resource>
+  <enabled>true</enabled>
+  <attribution>
+    <title>OSM</title>
+    <href>http://openstreetmap.fr/</href>
+    <logoURL>https://www.pigma.org/portail/sites/www.pigma.org.portail/files/sites/default/files/inline-images/pigma/les_partenaires/les_signataires_de_la_convention_pigma/autres/osm.jpg</logoURL>
+    <logoWidth>99</logoWidth>
+    <logoHeight>68</logoHeight>
+    <logoType>image/jpeg</logoType>
+  </attribution>
+</layer>

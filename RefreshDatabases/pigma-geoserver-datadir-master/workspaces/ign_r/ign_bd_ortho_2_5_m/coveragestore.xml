@@ -1,0 +1,12 @@
+<coverageStore>
+  <id>CoverageStoreInfoImpl-7738d5f9:1586e068de6:109f</id>
+  <name>ign_bd_ortho_2_5_m</name>
+  <description>ign_bd_ortho_2_5_m</description>
+  <type>ImageMosaic</type>
+  <enabled>true</enabled>
+  <workspace>
+    <id>WorkspaceInfoImpl--4f1d3a93:131f1a753d4:-7ff8</id>
+  </workspace>
+  <__default>false</__default>
+  <url>file:///var/local/geodata/raster/ign/bdortho2012_2-5m_aquitaine/Tiff_compress</url>
+</coverageStore>

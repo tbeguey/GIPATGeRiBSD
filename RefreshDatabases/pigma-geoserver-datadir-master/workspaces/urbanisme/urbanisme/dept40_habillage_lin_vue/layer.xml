@@ -1,0 +1,16 @@
+<layer>
+  <name>dept40_habillage_lin_vue</name>
+  <id>LayerInfoImpl--69a2e1b0:1437243c08c:4456</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl--73c240e9:13e3b0f1d57:292c</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl--69a2e1b0:1437243c08c:4455</id>
+  </resource>
+  <enabled>true</enabled>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+</layer>

@@ -1,0 +1,19 @@
+<layer>
+  <name>coban_secteurs</name>
+  <id>LayerInfoImpl-3e62bdca:1516209d235:-4b18</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl-3e62bdca:1516242042c:371d</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl-3e62bdca:1516209d235:-4b19</id>
+  </resource>
+  <attribution>
+    <title>COBAN</title>
+    <href>http://www.coban-atlantique.fr/</href>
+    <logoURL>https://www.pigma.org/portail/sites/www.pigma.org.portail/files/sites/default/files/inline-images/pigma/les_partenaires/les_signataires_de_la_convention_pigma/gironde/coban.jpg</logoURL>
+    <logoWidth>178</logoWidth>
+    <logoHeight>68</logoHeight>
+    <logoType>image/jpeg</logoType>
+  </attribution>
+</layer>

@@ -1,0 +1,20 @@
+<layer>
+  <name>smavlot_hotel_veloroute</name>
+  <id>LayerInfoImpl-14757e89:141c6cacc4c:-33f9</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl--5ba515c9:14227fef04a:-39e8</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl-14757e89:141c6cacc4c:-33fa</id>
+  </resource>
+  <enabled>true</enabled>
+  <attribution>
+    <title>SMAVLOT</title>
+    <href>http://www.vallee-lot-47.eu/</href>
+    <logoURL>https://www.pigma.org/portail/sites/www.pigma.org.portail/files/sites/default/files/inline-images/pigma/les_partenaires/les_signataires_de_la_convention_pigma/lot_et_garonne/pays_vallee_du_Lot.png</logoURL>
+    <logoWidth>195</logoWidth>
+    <logoHeight>68</logoHeight>
+    <logoType>image/png</logoType>
+  </attribution>
+</layer>

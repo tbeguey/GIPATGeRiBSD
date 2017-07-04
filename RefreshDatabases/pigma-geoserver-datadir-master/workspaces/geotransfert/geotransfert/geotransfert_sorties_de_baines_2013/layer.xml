@@ -1,0 +1,20 @@
+<layer>
+  <name>geotransfert_sorties_de_baines_2013</name>
+  <id>LayerInfoImpl--6793a5a7:14183a422ac:5e56</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl--6793a5a7:14183a422ac:717a</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl--6793a5a7:14183a422ac:5e55</id>
+  </resource>
+  <enabled>true</enabled>
+  <attribution>
+    <title>GeoTransfert</title>
+    <href>http://www.geotransfert.epoc.u-bordeaux1.fr/</href>
+    <logoURL>https://www.pigma.org/portail/sites/www.pigma.org.portail/files/sites/default/files/inline-images/pigma/les_partenaires/les_signataires_de_la_convention_pigma/autres/geotransfert.jpg</logoURL>
+    <logoWidth>114</logoWidth>
+    <logoHeight>67</logoHeight>
+    <logoType>image/jpeg</logoType>
+  </attribution>
+</layer>

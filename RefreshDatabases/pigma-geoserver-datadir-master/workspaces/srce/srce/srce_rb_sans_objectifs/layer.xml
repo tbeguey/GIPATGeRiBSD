@@ -1,0 +1,20 @@
+<layer>
+  <name>srce_rb_sans_objectifs</name>
+  <id>LayerInfoImpl-4d80d622:153a8c77372:-4be3</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl-4d80d622:153a866c92b:-63f1</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl-4d80d622:153a8c77372:-4be4</id>
+  </resource>
+  <enabled>true</enabled>
+  <attribution>
+    <title>SRCE</title>
+    <href>http://www.aquitaine.developpement-durable.gouv.fr/adoption-du-schema-regional-de-coherence-a2088.html</href>
+    <logoURL>https://www.pigma.org/portail/sites/www.pigma.org.portail/files/sites/default/files/inline-images/pigma/les_partenaires/les_signataires_de_la_convention_pigma/autres/srce.jpg</logoURL>
+    <logoWidth>178</logoWidth>
+    <logoHeight>68</logoHeight>
+    <logoType>image/jpeg</logoType>
+  </attribution>
+</layer>

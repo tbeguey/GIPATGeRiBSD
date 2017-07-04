@@ -1,0 +1,43 @@
+<featureType>
+  <id>FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7ea6</id>
+  <name>epidropt_vaq</name>
+  <nativeName>vaq</nativeName>
+  <namespace>
+    <id>NamespaceInfoImpl--3d639cb2:13285edbc12:-8000</id>
+  </namespace>
+  <title>EPIDROPT - Végétation aquatique vaq</title>
+  <abstract>Développement notable de Végétation aquatique - Végétation aquatique vaq - Etablissement Public Intersyndical du bassin du Dropt</abstract>
+  <metadataLinks>
+    <metadataLink>
+      <type>text/plain</type>
+      <metadataType>TC211</metadataType>
+      <content>https://www.pigma.org/geonetwork?uuid=e4499455-94b3-4cc9-b0b1-58648369d753</content>
+    </metadataLink>
+  <metadataLink><type>text/html</type><metadataType /><content>https://www.pigma.org/geonetwork/apps/georchestra/?uuid=e4499455-94b3-4cc9-b0b1-58648369d753</content></metadataLink><metadataLink><type>text/xml</type><metadataType /><content>https://www.pigma.org/geonetwork/srv/fre/xml_iso19139?uuid=e4499455-94b3-4cc9-b0b1-58648369d753</content></metadataLink></metadataLinks>
+  <srs>EPSG:2154</srs>
+  <nativeBoundingBox>
+    <minx>492041.928</minx>
+    <maxx>521233.89</maxx>
+    <miny>6396102.517</miny>
+    <maxy>6400859.549</maxy>
+    <crs class="projected">EPSG:2154</crs>
+  </nativeBoundingBox>
+  <latLonBoundingBox>
+    <minx>0.376</minx>
+    <maxx>0.746</maxx>
+    <miny>44.633</miny>
+    <maxy>44.684</maxy>
+    <crs>EPSG:4326</crs>
+  </latLonBoundingBox>
+  <projectionPolicy>FORCE_DECLARED</projectionPolicy>
+  <enabled>true</enabled>
+  <advertised>true</advertised>
+  <metadata>
+    <entry key="cachingEnabled">false</entry>
+  </metadata>
+  <store class="dataStore">
+    <id>DataStoreInfoImpl--3d639cb2:13285edbc12:-7fc7</id>
+  </store>
+  <maxFeatures>0</maxFeatures>
+  <numDecimals>0</numDecimals>
+</featureType>

@@ -1,0 +1,19 @@
+<layer>
+  <name>ars_etab_sante_pigma</name>
+  <id>LayerInfoImpl-f93348d:1514378713f:22c</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl-f93348d:15143422d5c:2ab1</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl-f93348d:1514378713f:22b</id>
+  </resource>
+  <attribution>
+    <title>ARS</title>
+    <href>http://www.ars.aquitaine.sante.fr/</href>
+    <logoURL>https://www.pigma.org/portail/sites/www.pigma.org.portail/files/sites/default/files/inline-images/pigma/les_partenaires/les_signataires_de_la_convention_pigma/aquitaine/ARS_AQUITAINE.png</logoURL>
+    <logoWidth>186</logoWidth>
+    <logoHeight>68</logoHeight>
+    <logoType>image/png</logoType>
+  </attribution>
+</layer>

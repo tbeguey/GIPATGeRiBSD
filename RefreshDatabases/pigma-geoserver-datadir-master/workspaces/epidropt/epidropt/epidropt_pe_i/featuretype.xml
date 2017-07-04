@@ -1,0 +1,43 @@
+<featureType>
+  <id>FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7ec2</id>
+  <name>epidropt_pe_i</name>
+  <nativeName>pe_l</nativeName>
+  <namespace>
+    <id>NamespaceInfoImpl--3d639cb2:13285edbc12:-8000</id>
+  </namespace>
+  <title>EPIDROPT - Espèce indésirable dominante Pe_I</title>
+  <abstract>Pe_I : Peuplier hybride interaméricain - Espèce indésirable dominante Pe_I - Etablissement Public Intersyndical du bassin du Dropt</abstract>
+  <metadataLinks>
+    <metadataLink>
+      <type>text/plain</type>
+      <metadataType>TC211</metadataType>
+      <content>https://www.pigma.org/geonetwork?uuid=554de0fa-0c3b-4d06-9cb5-62d7fafa819a</content>
+    </metadataLink>
+  <metadataLink><type>text/html</type><metadataType /><content>https://www.pigma.org/geonetwork/apps/georchestra/?uuid=554de0fa-0c3b-4d06-9cb5-62d7fafa819a</content></metadataLink><metadataLink><type>text/xml</type><metadataType /><content>https://www.pigma.org/geonetwork/srv/fre/xml_iso19139?uuid=554de0fa-0c3b-4d06-9cb5-62d7fafa819a</content></metadataLink></metadataLinks>
+  <srs>EPSG:2154</srs>
+  <nativeBoundingBox>
+    <minx>450932.188</minx>
+    <maxx>530103.25</maxx>
+    <miny>6391596.5</miny>
+    <maxy>6404896.5</maxy>
+    <crs class="projected">EPSG:2154</crs>
+  </nativeBoundingBox>
+  <latLonBoundingBox>
+    <minx>-0.145</minx>
+    <maxx>0.859</maxx>
+    <miny>44.579</miny>
+    <maxy>44.722</maxy>
+    <crs>EPSG:4326</crs>
+  </latLonBoundingBox>
+  <projectionPolicy>FORCE_DECLARED</projectionPolicy>
+  <enabled>true</enabled>
+  <advertised>true</advertised>
+  <metadata>
+    <entry key="cachingEnabled">false</entry>
+  </metadata>
+  <store class="dataStore">
+    <id>DataStoreInfoImpl--3d639cb2:13285edbc12:-7fc7</id>
+  </store>
+  <maxFeatures>0</maxFeatures>
+  <numDecimals>0</numDecimals>
+</featureType>

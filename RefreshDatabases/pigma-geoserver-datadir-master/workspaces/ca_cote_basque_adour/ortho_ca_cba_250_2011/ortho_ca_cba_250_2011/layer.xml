@@ -1,0 +1,17 @@
+<layer>
+  <name>ortho_ca_cba_250_2011</name>
+  <id>LayerInfoImpl-381b45bf:144f98e152b:-74d4</id>
+  <type>RASTER</type>
+  <defaultStyle>
+    <id>StyleInfoImpl-4e0b98bf:12475d46fdd:-7fe2</id>
+  </defaultStyle>
+  <resource class="coverage">
+    <id>CoverageInfoImpl-381b45bf:144f98e152b:-74d5</id>
+  </resource>
+  <enabled>true</enabled>
+  <queryable>false</queryable>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+</layer>

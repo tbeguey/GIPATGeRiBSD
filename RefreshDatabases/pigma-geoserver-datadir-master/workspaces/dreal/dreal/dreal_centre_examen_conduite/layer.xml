@@ -1,0 +1,21 @@
+<layer>
+  <name>dreal_centre_examen_conduite</name>
+  <id>LayerInfoImpl-1bfb0579:14dd2b21513:-5bc0</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl--115663c6:14df62964ff:3821</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl-1bfb0579:14dd2b21513:-5bc1</id>
+  </resource>
+  <enabled>true</enabled>
+  <queryable>true</queryable>
+  <attribution>
+    <title>DREAL</title>
+    <href>http://www.aquitaine.developpement-durable.gouv.fr/</href>
+    <logoURL>https://www.pigma.org/portail/sites/www.pigma.org.portail/files/sites/default/files/inline-images/pigma/les_partenaires/les_signataires_de_la_convention_pigma/aquitaine/DREAL.png</logoURL>
+    <logoWidth>186</logoWidth>
+    <logoHeight>68</logoHeight>
+    <logoType>image/png</logoType>
+  </attribution>
+</layer>

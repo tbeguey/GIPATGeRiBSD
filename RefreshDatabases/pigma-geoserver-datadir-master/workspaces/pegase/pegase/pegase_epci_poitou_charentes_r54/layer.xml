@@ -1,0 +1,20 @@
+<layer>
+  <name>pegase_epci_poitou_charentes_r54</name>
+  <id>LayerInfoImpl--352f6934:14a0b5a7ecb:-7888</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl--352f6934:14a0bb3be34:6843</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl--352f6934:14a0b5a7ecb:-7889</id>
+  </resource>
+  <enabled>true</enabled>
+  <attribution>
+    <title>PEGASE - Poitou-Charentes</title>
+    <href>http://www.pegase-poitou-charentes.fr/accueil</href>
+    <logoURL>https://www.pigma.org/portail/sites/www.pigma.org.portail/files/sites/default/files/inline-images/pigma/les_partenaires/les_signataires_de_la_convention_pigma/autres/pegase.jpg</logoURL>
+    <logoWidth>178</logoWidth>
+    <logoHeight>68</logoHeight>
+    <logoType>image/jpeg</logoType>
+  </attribution>
+</layer>

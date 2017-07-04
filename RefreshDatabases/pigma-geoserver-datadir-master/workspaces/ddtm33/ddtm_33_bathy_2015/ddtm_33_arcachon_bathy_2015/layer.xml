@@ -1,0 +1,15 @@
+<layer>
+  <name>ddtm_33_arcachon_bathy_2015</name>
+  <id>LayerInfoImpl--25674c34:158d4bfb45b:-2687</id>
+  <type>RASTER</type>
+  <defaultStyle>
+    <id>StyleInfoImpl-34ef02ac:14b743cecc5:2d4e</id>
+  </defaultStyle>
+  <resource class="coverage">
+    <id>CoverageInfoImpl--25674c34:158d4bfb45b:-2688</id>
+  </resource>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+</layer>

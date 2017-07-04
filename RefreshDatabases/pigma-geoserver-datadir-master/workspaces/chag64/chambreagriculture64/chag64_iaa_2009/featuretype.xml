@@ -1,0 +1,43 @@
+<featureType>
+  <id>FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7dcc</id>
+  <name>chag64_iaa_2009</name>
+  <nativeName>iaa_2009</nativeName>
+  <namespace>
+    <id>NamespaceInfoImpl--3d639cb2:13285edbc12:-7ff2</id>
+  </namespace>
+  <title>Chambre agriculture 64 - Industries agro-alimentaires</title>
+  <abstract>Localisation des industries agro-alimentaires - Chambre d'Agriculture des Pyrénées Atlantiques</abstract>
+  <metadataLinks>
+    <metadataLink>
+      <type>text/plain</type>
+      <metadataType>TC211</metadataType>
+      <content>https://www.pigma.org/geonetwork/apps/georchestra/?uuid=c0ce60ca-7d4c-4f4f-a987-ec5be653b7e4</content>
+    </metadataLink>
+  <metadataLink><type>text/html</type><metadataType /><content>https://www.pigma.org/geonetwork/apps/georchestra/?uuid=c0ce60ca-7d4c-4f4f-a987-ec5be653b7e4</content></metadataLink><metadataLink><type>text/xml</type><metadataType /><content>https://www.pigma.org/geonetwork/srv/fre/xml_iso19139?uuid=c0ce60ca-7d4c-4f4f-a987-ec5be653b7e4</content></metadataLink></metadataLinks>
+  <srs>EPSG:2154</srs>
+  <nativeBoundingBox>
+    <minx>312984.656</minx>
+    <maxx>454438.938</maxx>
+    <miny>6215801.0</miny>
+    <maxy>6279642.0</maxy>
+    <crs class="projected">EPSG:2154</crs>
+  </nativeBoundingBox>
+  <latLonBoundingBox>
+    <minx>-1.787</minx>
+    <maxx>-0.01</maxx>
+    <miny>42.937</miny>
+    <maxy>43.573</maxy>
+    <crs>EPSG:4326</crs>
+  </latLonBoundingBox>
+  <projectionPolicy>FORCE_DECLARED</projectionPolicy>
+  <enabled>true</enabled>
+  <advertised>true</advertised>
+  <metadata>
+    <entry key="cachingEnabled">false</entry>
+  </metadata>
+  <store class="dataStore">
+    <id>DataStoreInfoImpl--3d639cb2:13285edbc12:-7fcd</id>
+  </store>
+  <maxFeatures>0</maxFeatures>
+  <numDecimals>0</numDecimals>
+</featureType>

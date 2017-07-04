@@ -1,0 +1,21 @@
+<layer>
+  <name>ddt47_bruit_generateur</name>
+  <id>LayerInfoImpl-1bfa188e:149ec826460:7a8c</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl-1bfa188e:149eca4ace1:-6915</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl-1bfa188e:149ec826460:7a8b</id>
+  </resource>
+  <enabled>true</enabled>
+  <opaque>false</opaque>
+  <attribution>
+    <title>DDT du Lot-et-Garonne</title>
+    <href>http://www.lot-et-garonne.gouv.fr/direction-departementale-des-a96.html</href>
+    <logoURL>https://www.pigma.org/portail/sites/www.pigma.org.portail/files/sites/default/files/inline-images/pigma/les_partenaires/les_signataires_de_la_convention_pigma/lot_et_garonne/DDT_47.png</logoURL>
+    <logoWidth>195</logoWidth>
+    <logoHeight>68</logoHeight>
+    <logoType>image/png</logoType>
+  </attribution>
+</layer>

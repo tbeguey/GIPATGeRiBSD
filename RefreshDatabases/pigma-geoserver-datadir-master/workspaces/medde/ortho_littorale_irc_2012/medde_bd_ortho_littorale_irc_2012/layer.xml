@@ -1,0 +1,20 @@
+<layer>
+  <name>medde_bd_ortho_littorale_irc_2012</name>
+  <id>LayerInfoImpl--33872947:13d58ed80b2:-21eb</id>
+  <type>RASTER</type>
+  <defaultStyle>
+    <id>StyleInfoImpl-4e0b98bf:12475d46fdd:-7fe2</id>
+  </defaultStyle>
+  <resource class="coverage">
+    <id>CoverageInfoImpl--33872947:13d58ed80b2:-21ec</id>
+  </resource>
+  <enabled>true</enabled>
+  <attribution>
+    <title>MEDDE - Ortho Littorale V2</title>
+    <href>http://www.developpement-durable.gouv.fr/</href>
+    <logoURL>https://www.pigma.org/portail/sites/www.pigma.org.portail/files/sites/default/files/inline-images/pigma/les_financeurs/ministere-ecologie.png</logoURL>
+    <logoWidth>187</logoWidth>
+    <logoHeight>68</logoHeight>
+    <logoType>image/png</logoType>
+  </attribution>
+</layer>

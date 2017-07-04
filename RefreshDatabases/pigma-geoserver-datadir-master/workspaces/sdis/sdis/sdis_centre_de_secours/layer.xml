@@ -1,0 +1,29 @@
+<layer>
+  <name>sdis_centre_de_secours</name>
+  <id>LayerInfoImpl--3d639cb2:13285edbc12:-7d5b</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl--47b66809:1336ecb0c7e:-7a1f</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7d5c</id>
+  </resource>
+  <enabled>true</enabled>
+  <metadata>
+    <entry key="GWC.autoCacheStyles">true</entry>
+    <entry key="GWC.metaTilingX">4</entry>
+    <entry key="GWC.metaTilingY">4</entry>
+    <entry key="GWC.gutter">0</entry>
+    <entry key="GWC.enabled">true</entry>
+    <entry key="GWC.cacheFormats">image/jpeg,image/png</entry>
+    <entry key="GWC.gridSets">EPSG:4326,EPSG:900913</entry>
+  </metadata>
+  <attribution>
+    <title>SDIS</title>
+    <href>http://www.gipatgeri.fr/</href>
+    <logoURL>https://www.pigma.org/portail/sites/www.pigma.org.portail/files/sites/default/files/inline-images/pigma/les_partenaires/les_signataires_de_la_convention_pigma/autres/gipatgeri.jpg</logoURL>
+    <logoWidth>98</logoWidth>
+    <logoHeight>68</logoHeight>
+    <logoType>image/jpeg</logoType>
+  </attribution>
+</layer>

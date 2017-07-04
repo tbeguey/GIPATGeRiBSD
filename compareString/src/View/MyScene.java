@@ -185,6 +185,7 @@ public class MyScene extends Scene {
             DisplayTitlesDialog displayTitlesDialog = new DisplayTitlesDialog((DatabaseConnection) comboBoxLikened.getSelectionModel().getSelectedItem());
             displayTitlesDialog.displayLines();
             displayTitlesDialog.showAndWait();
+            displayTitlesDialog.getPostGreSQL().deconnection();
         });
 
         Button wordStatisticsButton = new Button("Statistiques");

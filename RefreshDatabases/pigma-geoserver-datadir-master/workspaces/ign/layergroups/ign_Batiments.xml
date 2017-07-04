@@ -1,0 +1,31 @@
+<layerGroup>
+  <id>LayerGroupInfoImpl--75a9eb42:1328aaba535:-7f81</id>
+  <name>ign:Batiments</name>
+  <mode>SINGLE</mode>
+  <workspace>
+    <id>WorkspaceInfoImpl--3d639cb2:13285edbc12:-7fef</id>
+  </workspace>
+  <publishables>
+    <published type="layer">
+      <id>LayerInfoImpl--3d639cb2:13285edbc12:-7e47</id>
+    </published>
+    <published type="layer">
+      <id>LayerInfoImpl--3d639cb2:13285edbc12:-7e4d</id>
+    </published>
+    <published type="layer">
+      <id>LayerInfoImpl--3d639cb2:13285edbc12:-7e43</id>
+    </published>
+  </publishables>
+  <styles>
+    <style/>
+    <style/>
+    <style/>
+  </styles>
+  <bounds>
+    <minx>291021.462</minx>
+    <maxx>582813.689</maxx>
+    <miny>6183347.553</miny>
+    <maxy>6524763.498</maxy>
+    <crs class="projected">EPSG:2154</crs>
+  </bounds>
+</layerGroup>

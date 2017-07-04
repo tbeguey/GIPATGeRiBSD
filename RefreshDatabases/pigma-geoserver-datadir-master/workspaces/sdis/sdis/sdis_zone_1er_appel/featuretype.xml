@@ -1,0 +1,43 @@
+<featureType>
+  <id>FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7d56</id>
+  <name>sdis_zone_1er_appel</name>
+  <nativeName>zone_1er_appel</nativeName>
+  <namespace>
+    <id>NamespaceInfoImpl--3d639cb2:13285edbc12:-7fd8</id>
+  </namespace>
+  <title>SDIS - Zones de 1er appel</title>
+  <abstract>Zones de 1er appel (secteurs d'intervention des centres de secours) des Services Départementaux d'Incendie et de Secours d'Aquitaine</abstract>
+  <metadataLinks>
+    <metadataLink>
+      <type>text/plain</type>
+      <metadataType>TC211</metadataType>
+      <content>https://www.pigma.org/geonetwork/srv/fre/metadata.show?uuid=8725f9bf-d08b-42d4-88ea-a97075e359ff</content>
+    </metadataLink>
+  <metadataLink><type>text/html</type><metadataType /><content>https://www.pigma.org/geonetwork/apps/georchestra/?uuid=8725f9bf-d08b-42d4-88ea-a97075e359ff</content></metadataLink><metadataLink><type>text/xml</type><metadataType /><content>https://www.pigma.org/geonetwork/srv/fre/xml_iso19139?uuid=8725f9bf-d08b-42d4-88ea-a97075e359ff</content></metadataLink></metadataLinks>
+  <srs>EPSG:2154</srs>
+  <nativeBoundingBox>
+    <minx>334284.848</minx>
+    <maxx>583373.277</maxx>
+    <miny>6274196.006</miny>
+    <maxy>6515544.921</maxy>
+    <crs class="projected">EPSG:2154</crs>
+  </nativeBoundingBox>
+  <latLonBoundingBox>
+    <minx>-1.698</minx>
+    <maxx>1.557</maxx>
+    <miny>43.473</miny>
+    <maxy>45.73</maxy>
+    <crs>EPSG:4326</crs>
+  </latLonBoundingBox>
+  <projectionPolicy>FORCE_DECLARED</projectionPolicy>
+  <enabled>true</enabled>
+  <advertised>true</advertised>
+  <metadata>
+    <entry key="cachingEnabled">false</entry>
+  </metadata>
+  <store class="dataStore">
+    <id>DataStoreInfoImpl--3d639cb2:13285edbc12:-7fc2</id>
+  </store>
+  <maxFeatures>0</maxFeatures>
+  <numDecimals>0</numDecimals>
+</featureType>

@@ -1,0 +1,20 @@
+<layer>
+  <name>sdis64_paisport64</name>
+  <id>LayerInfoImpl--35c6cd01:13f56b09214:3dbe</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl-66c2438:1379e528f93:6822</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl--35c6cd01:13f56b09214:3dbd</id>
+  </resource>
+  <enabled>true</enabled>
+  <attribution>
+    <title>SDIS 64</title>
+    <href>http://www.sdis64.fr/</href>
+    <logoURL>https://www.pigma.org/portail/sites/www.pigma.org.portail/files/sites/default/files/inline-images/pigma/les_partenaires/les_signataires_de_la_convention_pigma/pyrenees_atlantiques/sdis_64.jpg</logoURL>
+    <logoWidth>180</logoWidth>
+    <logoHeight>68</logoHeight>
+    <logoType>image/jpeg</logoType>
+  </attribution>
+</layer>

@@ -1,0 +1,51 @@
+<layerGroup>
+  <id>LayerGroupInfoImpl--7ccb80e5:148d5fb938c:4828</id>
+  <name>asp_rpg2011_aquitaine</name>
+  <mode>SINGLE</mode>
+  <title>ASP - RPG 2011</title>
+  <abstractTxt>Registre Parcellaire Graphique 2011 en Aquitaine</abstractTxt>
+  <workspace>
+    <id>WorkspaceInfoImpl--66b5f798:13ab2251bcf:af2</id>
+  </workspace>
+  <publishables>
+    <published type="layer">
+      <id>LayerInfoImpl-d424538:14887ec5266:-692c</id>
+    </published>
+    <published type="layer">
+      <id>LayerInfoImpl-d424538:1488838bacf:5b74</id>
+    </published>
+    <published type="layer">
+      <id>LayerInfoImpl-d424538:148885a27b6:-5841</id>
+    </published>
+    <published type="layer">
+      <id>LayerInfoImpl-d424538:1488817054d:-161a</id>
+    </published>
+    <published type="layer">
+      <id>LayerInfoImpl-d424538:148885a27b6:-42c7</id>
+    </published>
+  </publishables>
+  <styles>
+    <style>
+      <id>StyleInfoImpl-d424538:148885a27b6:-5a9a</id>
+    </style>
+    <style>
+      <id>StyleInfoImpl-d424538:148885a27b6:-5a9a</id>
+    </style>
+    <style>
+      <id>StyleInfoImpl--57418a1f:130f9791466:-7ffe</id>
+    </style>
+    <style>
+      <id>StyleInfoImpl-d424538:148885a27b6:-5a9a</id>
+    </style>
+    <style>
+      <id>StyleInfoImpl-d424538:148885a27b6:-5a9a</id>
+    </style>
+  </styles>
+  <bounds>
+    <minx>314662.8125</minx>
+    <maxx>577249.5</maxx>
+    <miny>6201788.0</miny>
+    <maxy>6515386.5</maxy>
+    <crs class="projected">EPSG:2154</crs>
+  </bounds>
+</layerGroup>

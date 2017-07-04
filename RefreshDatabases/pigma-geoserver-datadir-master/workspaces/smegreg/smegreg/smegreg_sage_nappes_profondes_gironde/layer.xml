@@ -1,0 +1,20 @@
+<layer>
+  <name>smegreg_sage_nappes_profondes_gironde</name>
+  <id>LayerInfoImpl-538fbc38:14cb33f7e3c:4fa7</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl--3861f61a:14cb6dcaaec:-291a</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl-538fbc38:14cb33f7e3c:4fa6</id>
+  </resource>
+  <enabled>true</enabled>
+  <attribution>
+    <title>SMEGREG</title>
+    <href>http://www.smegreg.org/</href>
+    <logoURL>https://www.pigma.org/portail/sites/www.pigma.org.portail/files/sites/default/files/inline-images/pigma/les_partenaires/les_signataires_de_la_convention_pigma/gironde/smegreg.gif</logoURL>
+    <logoWidth>58</logoWidth>
+    <logoHeight>68</logoHeight>
+    <logoType>image/jpeg</logoType>
+  </attribution>
+</layer>

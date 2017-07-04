@@ -1,0 +1,20 @@
+<wmsStore>
+  <id>WMSStoreInfoImpl--5bf7da73:13b22071576:-14e8</id>
+  <name>poi</name>
+  <description>Serveur APEM - Près de chez moi</description>
+  <type>WMS</type>
+  <enabled>false</enabled>
+  <workspace>
+    <id>WorkspaceInfoImpl-7e125c65:133a1446f48:-7284</id>
+  </workspace>
+  <metadata>
+    <entry key="useConnectionPooling">false</entry>
+  </metadata>
+  <__default>false</__default>
+  <capabilitiesURL>http://www.sig-pyrenees.net/geoserver/presdechezmoi/wms</capabilitiesURL>
+  <user>fvanderbiest</user>
+  <password>25c02ab1</password>
+  <maxConnections>6</maxConnections>
+  <readTimeout>60</readTimeout>
+  <connectTimeout>30</connectTimeout>
+</wmsStore>

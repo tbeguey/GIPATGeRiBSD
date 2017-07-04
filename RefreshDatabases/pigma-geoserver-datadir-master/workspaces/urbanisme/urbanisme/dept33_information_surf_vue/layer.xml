@@ -1,0 +1,15 @@
+<layer>
+  <name>dept33_information_surf_vue</name>
+  <id>LayerInfoImpl--266e24e3:148592967ca:-4f3d</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl--547594ed:1415ecd3d3a:27aa</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl--266e24e3:148592967ca:-4f3e</id>
+  </resource>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+</layer>

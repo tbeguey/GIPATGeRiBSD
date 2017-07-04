@@ -1,0 +1,34 @@
+<layer>
+  <name>insee_iris_2010</name>
+  <id>LayerInfoImpl--3d639cb2:13285edbc12:-7d53</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl--40f58bc:132cf3c839e:-7fca</id>
+  </defaultStyle>
+  <styles class="linked-hash-set">
+    <style>
+      <id>StyleInfoImpl-57bf3b1c:1363482add8:3495</id>
+    </style>
+  </styles>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7d54</id>
+  </resource>
+  <enabled>true</enabled>
+  <metadata>
+    <entry key="GWC.autoCacheStyles">true</entry>
+    <entry key="GWC.metaTilingX">4</entry>
+    <entry key="GWC.metaTilingY">4</entry>
+    <entry key="GWC.gutter">0</entry>
+    <entry key="GWC.enabled">true</entry>
+    <entry key="GWC.cacheFormats">image/jpeg,image/png</entry>
+    <entry key="GWC.gridSets">EPSG:4326,EPSG:900913</entry>
+  </metadata>
+  <attribution>
+    <title>INSEE</title>
+    <href>http://www.insee.fr/fr/</href>
+    <logoURL>https://www.pigma.org/portail/sites/www.pigma.org.portail/files/sites/default/files/inline-images/pigma/les_partenaires/les_signataires_de_la_convention_pigma/autres/insee.jpg</logoURL>
+    <logoWidth>59</logoWidth>
+    <logoHeight>67</logoHeight>
+    <logoType>image/jpeg</logoType>
+  </attribution>
+</layer>

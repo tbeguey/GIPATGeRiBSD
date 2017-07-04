@@ -1,0 +1,19 @@
+<layer>
+  <name>dreal_tri_28_inondable_s_debord_fai_aggrege</name>
+  <id>LayerInfoImpl--6dc709cf:14d4de3c19f:-57e3</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl--6dc709cf:14d4d6cd7df:31d1</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl--6dc709cf:14d4de3c19f:-57e4</id>
+  </resource>
+  <attribution>
+    <title>DREAL</title>
+    <href>http://www.aquitaine.developpement-durable.gouv.fr/</href>
+    <logoURL>https://www.pigma.org/portail/sites/www.pigma.org.portail/files/sites/default/files/inline-images/pigma/les_partenaires/les_signataires_de_la_convention_pigma/aquitaine/DREAL.png</logoURL>
+    <logoWidth>186</logoWidth>
+    <logoHeight>68</logoHeight>
+    <logoType>image/png</logoType>
+  </attribution>
+</layer>

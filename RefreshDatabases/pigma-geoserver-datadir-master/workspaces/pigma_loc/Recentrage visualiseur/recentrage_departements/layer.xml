@@ -1,0 +1,29 @@
+<layer>
+  <name>recentrage_departements</name>
+  <id>LayerInfoImpl--75a9eb42:1328aaba535:-7fda</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl--57418a1f:130f9791466:-7ffe</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl--75a9eb42:1328aaba535:-7fdb</id>
+  </resource>
+  <enabled>true</enabled>
+  <metadata>
+    <entry key="GWC.metaTilingX">4</entry>
+    <entry key="GWC.autoCacheStyles">true</entry>
+    <entry key="GWC.metaTilingY">4</entry>
+    <entry key="GWC.gutter">0</entry>
+    <entry key="GWC.enabled">true</entry>
+    <entry key="GWC.gridSets">EPSG:4326,EPSG:900913</entry>
+    <entry key="GWC.cacheFormats">image/jpeg,image/png</entry>
+  </metadata>
+  <attribution>
+    <title>PIGMA</title>
+    <href>https://www.pigma.org/web/guest/home</href>
+    <logoURL>https://www.pigma.org/portail/sites/www.pigma.org.portail/files/sites/default/files/inline-images/pigma/les_partenaires/les_signataires_de_la_convention_pigma/autres/pigma.jpg</logoURL>
+    <logoWidth>74</logoWidth>
+    <logoHeight>67</logoHeight>
+    <logoType>image/jpeg</logoType>
+  </attribution>
+</layer>

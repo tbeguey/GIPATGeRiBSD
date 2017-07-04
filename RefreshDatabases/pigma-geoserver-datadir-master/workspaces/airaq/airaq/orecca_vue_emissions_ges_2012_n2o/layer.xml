@@ -1,0 +1,20 @@
+<layer>
+  <name>orecca_vue_emissions_ges_2012_n2o</name>
+  <id>LayerInfoImpl-50da95be:14ebb319442:159e</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl-6ee1fb3c:14507f0686d:7df1</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl-50da95be:14ebb319442:159d</id>
+  </resource>
+  <enabled>true</enabled>
+  <attribution>
+    <title>ORECCA</title>
+    <href>http://www.orecca.fr/</href>
+    <logoURL>https://www.pigma.org/portail/sites/www.pigma.org.portail/files/sites/default/files/inline-images/pigma/les_partenaires/les_signataires_de_la_convention_pigma/autres/orecca.jpg</logoURL>
+    <logoWidth>60</logoWidth>
+    <logoHeight>68</logoHeight>
+    <logoType>image/jpeg</logoType>
+  </attribution>
+</layer>

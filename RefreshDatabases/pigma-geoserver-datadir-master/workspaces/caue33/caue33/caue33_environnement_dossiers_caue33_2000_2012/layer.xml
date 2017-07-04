@@ -1,0 +1,20 @@
+<layer>
+  <name>caue33_environnement_dossiers_caue33_2000_2012</name>
+  <id>LayerInfoImpl-2ca21f6c:13cad7262a3:-468e</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl-2ca21f6c:13cad7262a3:-468d</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl-2ca21f6c:13cad7262a3:-468f</id>
+  </resource>
+  <enabled>true</enabled>
+  <attribution>
+    <title>CAUE 33</title>
+    <href>http://www.cauegironde.com/consultation/affiche.php</href>
+    <logoURL>https://www.pigma.org/portail/sites/www.pigma.org.portail/files/sites/default/files/inline-images/pigma/les_partenaires/les_signataires_de_la_convention_pigma/gironde/CAUE33.jpg</logoURL>
+    <logoWidth>178</logoWidth>
+    <logoHeight>68</logoHeight>
+    <logoType>image/jpeg</logoType>
+  </attribution>
+</layer>

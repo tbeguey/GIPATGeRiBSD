@@ -1,0 +1,43 @@
+<featureType>
+  <id>FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7d96</id>
+  <name>ddtm40_n_scot_zsup_040</name>
+  <nativeName>n_scot_zsup_040</nativeName>
+  <namespace>
+    <id>NamespaceInfoImpl--3d639cb2:13285edbc12:-7ff8</id>
+  </namespace>
+  <title>DDTM40 - Schéma de cohérence territoriale</title>
+  <abstract>Zonage composé de l'ensemble des périmètres de schéma de cohérence territoriale (SCOT) - Direction Départementale des Territoires et de la Mer des Landes</abstract>
+  <metadataLinks>
+    <metadataLink>
+      <type>text/plain</type>
+      <metadataType>TC211</metadataType>
+      <content>https://www.pigma.org/geonetwork?uuid=42cd87bd-5e4d-4605-a8f5-496649555c7c</content>
+    </metadataLink>
+  <metadataLink><type>text/html</type><metadataType /><content>https://www.pigma.org/geonetwork/apps/georchestra/?uuid=42cd87bd-5e4d-4605-a8f5-496649555c7c</content></metadataLink><metadataLink><type>text/xml</type><metadataType /><content>https://www.pigma.org/geonetwork/srv/fre/xml_iso19139?uuid=42cd87bd-5e4d-4605-a8f5-496649555c7c</content></metadataLink></metadataLinks>
+  <srs>EPSG:2154</srs>
+  <nativeBoundingBox>
+    <minx>329566.468</minx>
+    <maxx>435644.216</maxx>
+    <miny>6262125.38</miny>
+    <maxy>6346086.476</maxy>
+    <crs class="projected">EPSG:2154</crs>
+  </nativeBoundingBox>
+  <latLonBoundingBox>
+    <minx>-1.631</minx>
+    <maxx>-0.263</maxx>
+    <miny>43.362</miny>
+    <maxy>44.164</maxy>
+    <crs>EPSG:4326</crs>
+  </latLonBoundingBox>
+  <projectionPolicy>FORCE_DECLARED</projectionPolicy>
+  <enabled>true</enabled>
+  <advertised>true</advertised>
+  <metadata>
+    <entry key="cachingEnabled">false</entry>
+  </metadata>
+  <store class="dataStore">
+    <id>DataStoreInfoImpl--3d639cb2:13285edbc12:-7fb9</id>
+  </store>
+  <maxFeatures>0</maxFeatures>
+  <numDecimals>0</numDecimals>
+</featureType>

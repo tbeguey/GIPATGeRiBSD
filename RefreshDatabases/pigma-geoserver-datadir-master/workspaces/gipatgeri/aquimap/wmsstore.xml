@@ -1,0 +1,19 @@
+<wmsStore>
+  <id>WMSStoreInfoImpl-70d79a2c:14d95fca519:2ad1</id>
+  <name>aquimap</name>
+  <type>WMS</type>
+  <enabled>true</enabled>
+  <workspace>
+    <id>WorkspaceInfoImpl-1a3b34e9:13a30459930:-7c33</id>
+  </workspace>
+  <metadata>
+    <entry key="useConnectionPooling">true</entry>
+  </metadata>
+  <__default>false</__default>
+  <capabilitiesURL>http://gcis.cartogip.fr/gipatgeri-gcis/wms?SERVICE=WMS&amp;REQUEST=GetCapabilities&amp;version=1.1.1</capabilitiesURL>
+  <user>odevendeville</user>
+  <password>12698753</password>
+  <maxConnections>6</maxConnections>
+  <readTimeout>60</readTimeout>
+  <connectTimeout>30</connectTimeout>
+</wmsStore>

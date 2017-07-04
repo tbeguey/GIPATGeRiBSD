@@ -1,0 +1,60 @@
+<wmsLayer>
+  <id>WMSLayerInfoImpl--436871b8:1400c364c0b:-5622</id>
+  <name>apem_presdechezmoi</name>
+  <nativeName>presdechezmoi:poi</nativeName>
+  <namespace>
+    <id>NamespaceInfoImpl-7e125c65:133a1446f48:-7283</id>
+  </namespace>
+  <title>APEM - serveur wms près de chez moi</title>
+  <description></description>
+  <keywords>
+    <string>poi</string>
+    <string>features</string>
+  </keywords>
+  <metadataLinks>
+    <metadataLink>
+      <type>text/plain</type>
+      <metadataType>TC211</metadataType>
+      <content>https://www.pigma.org/geonetwork?uuid=bd595774-6949-4673-ac67-8244ba9497ca</content>
+    </metadataLink>
+  </metadataLinks>
+  <nativeCRS>GEOGCS[&quot;WGS 84&quot;, 
+  DATUM[&quot;World Geodetic System 1984&quot;, 
+    SPHEROID[&quot;WGS 84&quot;, 6378137.0, 298.257223563, AUTHORITY[&quot;EPSG&quot;,&quot;7030&quot;]], 
+    AUTHORITY[&quot;EPSG&quot;,&quot;6326&quot;]], 
+  PRIMEM[&quot;Greenwich&quot;, 0.0, AUTHORITY[&quot;EPSG&quot;,&quot;8901&quot;]], 
+  UNIT[&quot;degree&quot;, 0.017453292519943295], 
+  AXIS[&quot;Geodetic longitude&quot;, EAST], 
+  AXIS[&quot;Geodetic latitude&quot;, NORTH], 
+  AUTHORITY[&quot;EPSG&quot;,&quot;4326&quot;]]</nativeCRS>
+  <srs>EPSG:2154</srs>
+  <nativeBoundingBox>
+    <minx>42.2246170043945</minx>
+    <maxx>46.5663986206055</maxx>
+    <miny>-1.80364859104156</miny>
+    <maxy>5.68542003631592</maxy>
+    <crs>EPSG:4326</crs>
+  </nativeBoundingBox>
+  <latLonBoundingBox>
+    <minx>-1.3628205165013758</minx>
+    <maxx>-1.3627909328502181</maxx>
+    <miny>-5.983852997247526</miny>
+    <maxy>-5.9838048625074505</maxy>
+    <crs>GEOGCS[&quot;WGS84(DD)&quot;, 
+  DATUM[&quot;WGS84&quot;, 
+    SPHEROID[&quot;WGS84&quot;, 6378137.0, 298.257223563]], 
+  PRIMEM[&quot;Greenwich&quot;, 0.0], 
+  UNIT[&quot;degree&quot;, 0.017453292519943295], 
+  AXIS[&quot;Geodetic longitude&quot;, EAST], 
+  AXIS[&quot;Geodetic latitude&quot;, NORTH]]</crs>
+  </latLonBoundingBox>
+  <projectionPolicy>FORCE_DECLARED</projectionPolicy>
+  <enabled>true</enabled>
+  <advertised>true</advertised>
+  <metadata>
+    <entry key="cachingEnabled">false</entry>
+  </metadata>
+  <store class="wmsStore">
+    <id>WMSStoreInfoImpl--5bf7da73:13b22071576:-14e8</id>
+  </store>
+</wmsLayer>

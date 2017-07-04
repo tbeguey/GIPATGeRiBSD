@@ -1,0 +1,20 @@
+<layer>
+  <name>rte_enceinte_de_poste</name>
+  <id>LayerInfoImpl--64db1a4f:15a8f4251cd:4692</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl--64db1a4f:15a8f5b7695:-1a7d</id>
+  </defaultStyle>
+  <styles class="linked-hash-set">
+    <style>
+      <id>StyleInfoImpl--64db1a4f:15a8f5b7695:-1a7d</id>
+    </style>
+  </styles>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl--64db1a4f:15a8f4251cd:4691</id>
+  </resource>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+</layer>

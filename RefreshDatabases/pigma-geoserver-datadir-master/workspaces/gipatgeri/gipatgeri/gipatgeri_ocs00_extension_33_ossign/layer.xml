@@ -1,0 +1,20 @@
+<layer>
+  <name>gipatgeri_ocs00_extension_33_ossign</name>
+  <id>LayerInfoImpl--5f51174f:1530f039a13:-6a61</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl--31e593a4:138fecfaf42:-7284</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl--5f51174f:1530f039a13:-6a62</id>
+  </resource>
+  <enabled>false</enabled>
+  <attribution>
+    <title>GIP ATGeRi</title>
+    <href>http://www.gipatgeri.fr/</href>
+    <logoURL>https://www.pigma.org/portail/sites/www.pigma.org.portail/files/sites/default/files/inline-images/pigma/les_partenaires/les_signataires_de_la_convention_pigma/autres/gipatgeri.jpg</logoURL>
+    <logoWidth>98</logoWidth>
+    <logoHeight>68</logoHeight>
+    <logoType>image/jpeg</logoType>
+  </attribution>
+</layer>

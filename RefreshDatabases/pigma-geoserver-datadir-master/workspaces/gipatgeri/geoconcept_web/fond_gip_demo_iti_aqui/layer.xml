@@ -1,0 +1,16 @@
+<layer>
+  <name>fond_gip_demo_iti_aqui</name>
+  <id>LayerInfoImpl-69a6abb:1540ab4c5ae:696c</id>
+  <type>WMS</type>
+  <defaultStyle>
+    <id>StyleInfoImpl-4e0b98bf:12475d46fdd:-7fe2</id>
+  </defaultStyle>
+  <resource class="wmsLayer">
+    <id>WMSLayerInfoImpl-69a6abb:1540ab4c5ae:696b</id>
+  </resource>
+  <enabled>true</enabled>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+</layer>

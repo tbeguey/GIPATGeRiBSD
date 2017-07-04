@@ -1,0 +1,87 @@
+<featureType>
+  <id>FeatureTypeInfoImpl--31e593a4:138fecfaf42:5a3d</id>
+  <name>giplittoral_ocs_evolution_2000_2009</name>
+  <nativeName>giplittoral_ocs_evolution_2000_2009</nativeName>
+  <namespace>
+    <id>NamespaceInfoImpl--3d639cb2:13285edbc12:-7ffe</id>
+  </namespace>
+  <title>GIP LITTORAL - OCS évolution entre 2000 et 2009</title>
+  <abstract>Zonages ayant évolués entre 2000 et 2009</abstract>
+  <keywords>
+    <string>features</string>
+    <string>giplittoral_ocs_evolution_2000_2009</string>
+  </keywords>
+  <metadataLinks>
+    <metadataLink>
+      <type>text/plain</type>
+      <metadataType>TC211</metadataType>
+      <content>https://www.pigma.org/geonetwork/apps/georchestra/?uuid=ocs_00_09</content>
+    </metadataLink>
+  <metadataLink><type>text/html</type><metadataType /><content>https://www.pigma.org/geonetwork/apps/georchestra/?uuid=ocs_00_09</content></metadataLink><metadataLink><type>text/xml</type><metadataType /><content>https://www.pigma.org/geonetwork/srv/fre/xml_iso19139?uuid=ocs_00_09</content></metadataLink></metadataLinks>
+  <nativeCRS class="projected">PROJCS["RGF93 / Lambert-93", 
+  GEOGCS["RGF93", 
+    DATUM["Reseau Geodesique Francais 1993", 
+      SPHEROID["GRS 1980", 6378137.0, 298.257222101, AUTHORITY["EPSG","7019"]], 
+      TOWGS84[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], 
+      AUTHORITY["EPSG","6171"]], 
+    PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+    UNIT["degree", 0.017453292519943295], 
+    AXIS["Geodetic longitude", EAST], 
+    AXIS["Geodetic latitude", NORTH], 
+    AUTHORITY["EPSG","4171"]], 
+  PROJECTION["Lambert_Conformal_Conic_2SP", AUTHORITY["EPSG","9802"]], 
+  PARAMETER["central_meridian", 3.0], 
+  PARAMETER["latitude_of_origin", 46.5], 
+  PARAMETER["standard_parallel_1", 49.0], 
+  PARAMETER["false_easting", 700000.0], 
+  PARAMETER["false_northing", 6600000.0], 
+  PARAMETER["scale_factor", 1.0], 
+  PARAMETER["standard_parallel_2", 44.0], 
+  UNIT["m", 1.0], 
+  AXIS["Easting", EAST], 
+  AXIS["Northing", NORTH], 
+  AUTHORITY["EPSG","2154"]]</nativeCRS>
+  <srs>EPSG:2154</srs>
+  <nativeBoundingBox>
+    <minx>311012.749499999</minx>
+    <maxx>414455.305699997</maxx>
+    <miny>6248911.781</miny>
+    <maxy>6504700.6742</maxy>
+    <crs class="projected">EPSG:2154</crs>
+  </nativeBoundingBox>
+  <latLonBoundingBox>
+    <minx>-1.9869916464882564</minx>
+    <maxx>-0.5170057413011848</maxx>
+    <miny>43.23322417798353</miny>
+    <maxy>45.58219560811362</maxy>
+    <crs>EPSG:4326</crs>
+  </latLonBoundingBox>
+  <projectionPolicy>FORCE_DECLARED</projectionPolicy>
+  <enabled>true</enabled>
+  <advertised>true</advertised>
+  <metadata>
+    <entry key="cachingEnabled">false</entry>
+    <entry key="JDBC_VIRTUAL_TABLE">
+      <virtualTable>
+        <name>giplittoral_ocs_evolution_2000_2009</name>
+        <sql>SELECT gid, id, surf_m2, surf_ha, perimetre, code00niv1, lib00niv1, 
+       code00niv2, lib00niv2, code00niv3, lib00niv3, code00niv4, lib00niv4, 
+       code09niv1, lib09niv1, code09niv2, lib09niv2, code09niv3, lib09niv3, 
+       code09niv4, lib09niv4, codetyp00, lib_typ00, codetyp09, lib_typ09, 
+       source2009, source2000, the_geom, evol_00_09
+  FROM giplittoral.ocs_00_09
+  WHERE evol_00_09 IS TRUE</sql>
+        <geometry>
+          <name>the_geom</name>
+          <type>MultiPolygon</type>
+          <srid>2154</srid>
+        </geometry>
+      </virtualTable>
+    </entry>
+  </metadata>
+  <store class="dataStore">
+    <id>DataStoreInfoImpl--3d639cb2:13285edbc12:-7fbd</id>
+  </store>
+  <maxFeatures>0</maxFeatures>
+  <numDecimals>0</numDecimals>
+</featureType>

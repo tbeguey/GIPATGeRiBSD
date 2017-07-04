@@ -1,0 +1,43 @@
+<featureType>
+  <id>FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7d76</id>
+  <name>rff_rfn_ptrail</name>
+  <nativeName>rff_rfn_ptrail</nativeName>
+  <namespace>
+    <id>NamespaceInfoImpl--3d639cb2:13285edbc12:-7fd4</id>
+  </namespace>
+  <title>RFF - Pont-Rail</title>
+  <abstract>Description des ponts-rail du réseau ferré national en service (RFN) pour les régions Aquitaine et Poitou-Charentes - RESEAU FERRE DE FRANCE</abstract>
+  <metadataLinks>
+    <metadataLink>
+      <type>text/plain</type>
+      <metadataType>TC211</metadataType>
+      <content>https://www.pigma.org/geonetwork?uuid=8e1aa443-6ec9-4d1e-a05f-4029f1e39f39</content>
+    </metadataLink>
+  <metadataLink><type>text/html</type><metadataType /><content>https://www.pigma.org/geonetwork/apps/georchestra/?uuid=8e1aa443-6ec9-4d1e-a05f-4029f1e39f39</content></metadataLink><metadataLink><type>text/xml</type><metadataType /><content>https://www.pigma.org/geonetwork/srv/fre/xml_iso19139?uuid=8e1aa443-6ec9-4d1e-a05f-4029f1e39f39</content></metadataLink></metadataLinks>
+  <srs>EPSG:2154</srs>
+  <nativeBoundingBox>
+    <minx>311949.608</minx>
+    <maxx>576694.052</maxx>
+    <miny>6201031.559</miny>
+    <maxy>6666587.363</maxy>
+    <crs class="projected">EPSG:2154</crs>
+  </nativeBoundingBox>
+  <latLonBoundingBox>
+    <minx>-2.109</minx>
+    <maxx>1.492</maxx>
+    <miny>42.804</miny>
+    <maxy>47.088</maxy>
+    <crs>EPSG:4326</crs>
+  </latLonBoundingBox>
+  <projectionPolicy>FORCE_DECLARED</projectionPolicy>
+  <enabled>true</enabled>
+  <advertised>true</advertised>
+  <metadata>
+    <entry key="cachingEnabled">false</entry>
+  </metadata>
+  <store class="dataStore">
+    <id>DataStoreInfoImpl--3d639cb2:13285edbc12:-7fb5</id>
+  </store>
+  <maxFeatures>0</maxFeatures>
+  <numDecimals>0</numDecimals>
+</featureType>

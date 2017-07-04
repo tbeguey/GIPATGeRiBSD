@@ -1,0 +1,26 @@
+<settings>
+  <id>SettingsInfoImpl-520a4c6c:14c9406135e:6cd5</id>
+  <workspace>
+    <id>WorkspaceInfoImpl-520a4c6c:14c9406135e:6ca3</id>
+    <name>on3v</name>
+  </workspace>
+  <contact>
+    <id>contact</id>
+    <address>6, Parvis des Chartrons</address>
+    <addressCity>Bordeaux</addressCity>
+    <addressPostalCode>33075</addressPostalCode>
+    <addressType>Work</addressType>
+    <contactEmail>sebastien.negre@gipatgeri.fr</contactEmail>
+    <contactOrganization>PIGMA</contactOrganization>
+    <contactPerson>PIGMA</contactPerson>
+    <contactVoice>05.57.85.40.42</contactVoice>
+  </contact>
+  <charset>UTF-8</charset>
+  <numDecimals>6</numDecimals>
+  <onlineResource>http://geoserver.org</onlineResource>
+  <proxyBaseUrl>https://www.pigma.org/geoserver</proxyBaseUrl>
+  <verbose>false</verbose>
+  <verboseExceptions>false</verboseExceptions>
+  <localWorkspaceIncludesPrefix>false</localWorkspaceIncludesPrefix>
+  <layerGroupInclusion>AT_LEAST_ONE_CONTAINED</layerGroupInclusion>
+</settings>

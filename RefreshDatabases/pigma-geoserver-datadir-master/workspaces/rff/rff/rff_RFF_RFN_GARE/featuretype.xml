@@ -1,0 +1,43 @@
+<featureType>
+  <id>FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7d7a</id>
+  <name>rff_RFF_RFN_GARE</name>
+  <nativeName>rff_rfn_gare</nativeName>
+  <namespace>
+    <id>NamespaceInfoImpl--3d639cb2:13285edbc12:-7fd4</id>
+  </namespace>
+  <title>RFF - Gare</title>
+  <abstract>type de desserte des gares (voyageur, fret, maintenance) - RESEAU FERRE DE FRANCE</abstract>
+  <metadataLinks>
+    <metadataLink>
+      <type>text/plain</type>
+      <metadataType>TC211</metadataType>
+      <content>https://www.pigma.org/geonetwork?uuid=dede47a3-e4e4-41bf-b92f-50ef74296e4f</content>
+    </metadataLink>
+  <metadataLink><type>text/html</type><metadataType /><content>https://www.pigma.org/geonetwork/apps/georchestra/?uuid=dede47a3-e4e4-41bf-b92f-50ef74296e4f</content></metadataLink><metadataLink><type>text/xml</type><metadataType /><content>https://www.pigma.org/geonetwork/srv/fre/xml_iso19139?uuid=dede47a3-e4e4-41bf-b92f-50ef74296e4f</content></metadataLink></metadataLinks>
+  <srs>EPSG:2154</srs>
+  <nativeBoundingBox>
+    <minx>310479.874</minx>
+    <maxx>566411.59</maxx>
+    <miny>6228780.758</miny>
+    <maxy>6669867.829</maxy>
+    <crs class="projected">EPSG:2154</crs>
+  </nativeBoundingBox>
+  <latLonBoundingBox>
+    <minx>-2.131</minx>
+    <maxx>1.359</maxx>
+    <miny>43.052</miny>
+    <maxy>47.116</maxy>
+    <crs>EPSG:4326</crs>
+  </latLonBoundingBox>
+  <projectionPolicy>FORCE_DECLARED</projectionPolicy>
+  <enabled>true</enabled>
+  <advertised>true</advertised>
+  <metadata>
+    <entry key="cachingEnabled">false</entry>
+  </metadata>
+  <store class="dataStore">
+    <id>DataStoreInfoImpl--3d639cb2:13285edbc12:-7fb5</id>
+  </store>
+  <maxFeatures>0</maxFeatures>
+  <numDecimals>0</numDecimals>
+</featureType>

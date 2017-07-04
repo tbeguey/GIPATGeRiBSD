@@ -1,0 +1,19 @@
+<layer>
+  <name>chag40_asa40reseau</name>
+  <id>LayerInfoImpl--2d7d61de:14de2b56fe5:b6b</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl--16dc553b:15650b59b81:-2a07</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl--2d7d61de:14de2b56fe5:b6a</id>
+  </resource>
+  <attribution>
+    <title>Chambre agri 40</title>
+    <href>http://www.landes.chambagri.fr/</href>
+    <logoURL>https://www.pigma.org/portail/sites/www.pigma.org.portail/files/sites/default/files/inline-images/pigma/les_partenaires/les_signataires_de_la_convention_pigma/landes/CHAMBRE_AGRI_40.jpg</logoURL>
+    <logoWidth>178</logoWidth>
+    <logoHeight>68</logoHeight>
+    <logoType>image/jpeg</logoType>
+  </attribution>
+</layer>

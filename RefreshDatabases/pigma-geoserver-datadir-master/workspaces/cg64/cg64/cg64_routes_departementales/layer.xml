@@ -1,0 +1,20 @@
+<layer>
+  <name>cg64_routes_departementales</name>
+  <id>LayerInfoImpl--19dd5131:13b23707cad:-68b5</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl--19dd5131:13b23707cad:-49fe</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl--19dd5131:13b23707cad:-68b6</id>
+  </resource>
+  <enabled>true</enabled>
+  <attribution>
+    <title>CG 64</title>
+    <href>http://www.cg64.fr/</href>
+    <logoURL>https://www.pigma.org/portail/sites/www.pigma.org.portail/files/sites/default/files/inline-images/pigma/les_partenaires/les_signataires_de_la_convention_pigma/pyrenees_atlantiques/CD64.jpg</logoURL>
+    <logoWidth>180</logoWidth>
+    <logoHeight>68</logoHeight>
+    <logoType>image/jpeg</logoType>
+  </attribution>
+</layer>

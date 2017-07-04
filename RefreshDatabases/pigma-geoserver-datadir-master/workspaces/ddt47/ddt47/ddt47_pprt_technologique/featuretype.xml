@@ -1,0 +1,51 @@
+<featureType>
+  <id>FeatureTypeInfoImpl-4d526dfe:149f0c00e2c:-16b2</id>
+  <name>ddt47_pprt_technologique</name>
+  <nativeName>pprt_technologique</nativeName>
+  <namespace>
+    <id>NamespaceInfoImpl-1bfa188e:149eb73da18:-2816</id>
+  </namespace>
+  <title>DDT 47 - pprt_technologique</title>
+  <keywords>
+    <string>pprt_technologique</string>
+    <string>features</string>
+  </keywords>
+  <metadataLinks>
+    <metadataLink>
+      <type>text/plain</type>
+      <metadataType>TC211</metadataType>
+      <content>https://www.pigma.org/geonetwork/apps/georchestra/?uuid=c597c3f7-291b-45fc-9a9a-6d0c5e95ef0b</content>
+    </metadataLink>
+  <metadataLink><type>text/html</type><metadataType /><content>https://www.pigma.org/geonetwork/apps/georchestra/?uuid=c597c3f7-291b-45fc-9a9a-6d0c5e95ef0b</content></metadataLink><metadataLink><type>text/xml</type><metadataType /><content>https://www.pigma.org/geonetwork/srv/fre/xml_iso19139?uuid=c597c3f7-291b-45fc-9a9a-6d0c5e95ef0b</content></metadataLink></metadataLinks>
+  <srs>EPSG:2154</srs>
+  <nativeBoundingBox>
+    <minx>484845.3342</minx>
+    <maxx>524093.1606</maxx>
+    <miny>6345273.6654</miny>
+    <maxy>6371931.4608</maxy>
+  </nativeBoundingBox>
+  <latLonBoundingBox>
+    <minx>0.2973628438929113</minx>
+    <maxx>0.7994140626408669</maxx>
+    <miny>44.173469709970256</miny>
+    <maxy>44.42427303465919</maxy>
+    <crs>GEOGCS["WGS84(DD)", 
+  DATUM["WGS84", 
+    SPHEROID["WGS84", 6378137.0, 298.257223563]], 
+  PRIMEM["Greenwich", 0.0], 
+  UNIT["degree", 0.017453292519943295], 
+  AXIS["Geodetic longitude", EAST], 
+  AXIS["Geodetic latitude", NORTH]]</crs>
+  </latLonBoundingBox>
+  <projectionPolicy>FORCE_DECLARED</projectionPolicy>
+  <enabled>true</enabled>
+  <advertised>true</advertised>
+  <metadata>
+    <entry key="cachingEnabled">false</entry>
+  </metadata>
+  <store class="dataStore">
+    <id>DataStoreInfoImpl-1bfa188e:149eb73da18:-2677</id>
+  </store>
+  <maxFeatures>0</maxFeatures>
+  <numDecimals>0</numDecimals>
+</featureType>

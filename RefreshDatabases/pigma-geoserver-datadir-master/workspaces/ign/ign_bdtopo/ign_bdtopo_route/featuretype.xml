@@ -1,0 +1,56 @@
+<featureType>
+  <id>FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7e24</id>
+  <name>ign_bdtopo_route</name>
+  <nativeName>route</nativeName>
+  <namespace>
+    <id>NamespaceInfoImpl--3d639cb2:13285edbc12:-7ff0</id>
+  </namespace>
+  <title>IGN BD TOPO - Routes</title>
+  <abstract>Contient le réseau routier dans son intégralité, y compris les chemins et les sentiers. Non mis en forme pour la visualisation cartographique.</abstract>
+  <metadataLinks>
+    <metadataLink>
+      <type>text/plain</type>
+      <metadataType>TC211</metadataType>
+      <content>https://www.pigma.org/geonetwork?uuid=0f5e6438-a336-4262-ac1e-f98eec0a6890</content>
+    </metadataLink>
+    <metadataLink>
+      <type>text/html</type>
+      <metadataType></metadataType>
+      <content>https://www.pigma.org/geonetwork/apps/georchestra/?uuid=0f5e6438-a336-4262-ac1e-f98eec0a6890</content>
+    </metadataLink>
+    <metadataLink>
+      <type>text/xml</type>
+      <metadataType></metadataType>
+      <content>https://www.pigma.org/geonetwork/srv/fre/xml_iso19139?uuid=0f5e6438-a336-4262-ac1e-f98eec0a6890</content>
+    </metadataLink>
+  </metadataLinks>
+  <srs>EPSG:2154</srs>
+  <nativeBoundingBox>
+    <minx>310678.2</minx>
+    <maxx>577978.2</maxx>
+    <miny>6189301.2</miny>
+    <maxy>6515639.7</maxy>
+    <crs class="projected">EPSG:2154</crs>
+  </nativeBoundingBox>
+  <latLonBoundingBox>
+    <minx>-2.0</minx>
+    <maxx>1.51</maxx>
+    <miny>42.698</miny>
+    <maxy>45.729</maxy>
+    <crs>EPSG:4326</crs>
+  </latLonBoundingBox>
+  <projectionPolicy>FORCE_DECLARED</projectionPolicy>
+  <enabled>true</enabled>
+  <advertised>true</advertised>
+  <metadata>
+    <entry key="cachingEnabled">false</entry>
+  </metadata>
+  <store class="dataStore">
+    <id>DataStoreInfoImpl--3d639cb2:13285edbc12:-7fb6</id>
+  </store>
+  <maxFeatures>0</maxFeatures>
+  <numDecimals>0</numDecimals>
+  <overridingServiceSRS>false</overridingServiceSRS>
+  <skipNumberMatched>false</skipNumberMatched>
+  <circularArcPresent>false</circularArcPresent>
+</featureType>

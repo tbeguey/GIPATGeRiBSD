@@ -1,0 +1,16 @@
+<layer>
+  <name>cg64_d64_aep_parcelle</name>
+  <id>LayerInfoImpl--25d11048:13b23cbf2dc:-2d43</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl--1e8728cd:13b2720b12d:-5a15</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl--25d11048:13b23cbf2dc:-2d44</id>
+  </resource>
+  <enabled>true</enabled>
+  <attribution>
+    <logoWidth>180</logoWidth>
+    <logoHeight>68</logoHeight>
+  <logoURL>https://www.pigma.org/portail/sites/www.pigma.org.portail/files/sites/default/files/inline-images/pigma/les_partenaires/les_signataires_de_la_convention_pigma/pyrenees_atlantiques/CD64.jpg</logoURL><logoType>image/jpeg</logoType></attribution>
+</layer>

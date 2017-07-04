@@ -1,0 +1,20 @@
+<layer>
+  <name>cg64_bornage_route</name>
+  <id>LayerInfoImpl-52f4f10e:137bcd6e4e0:-6ab3</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl-52f4f10e:137bcd6e4e0:-6a13</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl-52f4f10e:137bcd6e4e0:-6ab4</id>
+  </resource>
+  <enabled>true</enabled>
+  <attribution>
+    <title>CG 64</title>
+    <href>http://www.cg64.fr/</href>
+    <logoURL>https://www.pigma.org/portail/sites/www.pigma.org.portail/files/sites/default/files/inline-images/pigma/les_partenaires/les_signataires_de_la_convention_pigma/pyrenees_atlantiques/CD64.jpg</logoURL>
+    <logoWidth>180</logoWidth>
+    <logoHeight>68</logoHeight>
+    <logoType>image/jpeg</logoType>
+  </attribution>
+</layer>

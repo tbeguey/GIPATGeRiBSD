@@ -1,0 +1,43 @@
+<featureType>
+  <id>FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7d60</id>
+  <name>rff_RFF_RFN_ACCES</name>
+  <nativeName>rff_rfn_acces</nativeName>
+  <namespace>
+    <id>NamespaceInfoImpl--3d639cb2:13285edbc12:-7fd4</id>
+  </namespace>
+  <title>RFF - Point d'accès</title>
+  <abstract>Description des points d'accès du réseau ferré national en service (RFN) pour les régions Aquitaine et Poitou-Charentes - RESEAU FERRE DE FRANCE</abstract>
+  <metadataLinks>
+    <metadataLink>
+      <type>text/plain</type>
+      <metadataType>TC211</metadataType>
+      <content>https://www.pigma.org/geonetwork?uuid=241c1f44-9e43-460e-abe8-0b38b75e520b</content>
+    </metadataLink>
+  <metadataLink><type>text/html</type><metadataType /><content>https://www.pigma.org/geonetwork/apps/georchestra/?uuid=241c1f44-9e43-460e-abe8-0b38b75e520b</content></metadataLink><metadataLink><type>text/xml</type><metadataType /><content>https://www.pigma.org/geonetwork/srv/fre/xml_iso19139?uuid=241c1f44-9e43-460e-abe8-0b38b75e520b</content></metadataLink></metadataLinks>
+  <srs>EPSG:2154</srs>
+  <nativeBoundingBox>
+    <minx>310479.874</minx>
+    <maxx>574477.508</maxx>
+    <miny>6228780.758</miny>
+    <maxy>6665805.401</maxy>
+    <crs class="projected">EPSG:2154</crs>
+  </nativeBoundingBox>
+  <latLonBoundingBox>
+    <minx>-2.128</minx>
+    <maxx>1.458</maxx>
+    <miny>43.052</miny>
+    <maxy>47.081</maxy>
+    <crs>EPSG:4326</crs>
+  </latLonBoundingBox>
+  <projectionPolicy>FORCE_DECLARED</projectionPolicy>
+  <enabled>true</enabled>
+  <advertised>true</advertised>
+  <metadata>
+    <entry key="cachingEnabled">false</entry>
+  </metadata>
+  <store class="dataStore">
+    <id>DataStoreInfoImpl--3d639cb2:13285edbc12:-7fb5</id>
+  </store>
+  <maxFeatures>0</maxFeatures>
+  <numDecimals>0</numDecimals>
+</featureType>

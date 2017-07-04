@@ -1,0 +1,20 @@
+<layer>
+  <name>drac_jardins_remarquables</name>
+  <id>LayerInfoImpl-6e51fee3:1461ee230a8:-18c1</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl-6e51fee3:1461ee230a8:-1813</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl-6e51fee3:1461ee230a8:-18c2</id>
+  </resource>
+  <enabled>true</enabled>
+  <attribution>
+    <title>DRAC</title>
+    <href>http://aquitaine.culture.gouv.fr/</href>
+    <logoURL>https://www.pigma.org/portail/sites/www.pigma.org.portail/files/sites/default/files/inline-images/pigma/les_partenaires/les_signataires_de_la_convention_pigma/aquitaine/DRAC.png</logoURL>
+    <logoWidth>186</logoWidth>
+    <logoHeight>68</logoHeight>
+    <logoType>image/png</logoType>
+  </attribution>
+</layer>

@@ -1,0 +1,19 @@
+<wmsStore>
+  <id>WMSStoreInfoImpl-5e5926a5:151153b8e4b:31a4</id>
+  <name>api</name>
+  <type>WMS</type>
+  <enabled>true</enabled>
+  <workspace>
+    <id>WorkspaceInfoImpl--3d639cb2:13285edbc12:-7fef</id>
+  </workspace>
+  <metadata>
+    <entry key="useConnectionPooling">true</entry>
+  </metadata>
+  <__default>false</__default>
+  <capabilitiesURL>http://wxs.ign.fr/v81zwo659e44vj8qjvmrhtap/geoportail/r/wms?service=wms</capabilitiesURL>
+  <user>odevendeville</user>
+  <password>12698753</password>
+  <maxConnections>100</maxConnections>
+  <readTimeout>360</readTimeout>
+  <connectTimeout>100</connectTimeout>
+</wmsStore>

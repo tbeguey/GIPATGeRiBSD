@@ -1,0 +1,17 @@
+<layer>
+  <name>Scan1000nb</name>
+  <id>LayerInfoImpl-2760fd63:1439611f8f7:6cc6</id>
+  <type>RASTER</type>
+  <defaultStyle>
+    <id>StyleInfoImpl-4e0b98bf:12475d46fdd:-7fe2</id>
+  </defaultStyle>
+  <resource class="coverage">
+    <id>CoverageInfoImpl-2760fd63:1439611f8f7:6cc5</id>
+  </resource>
+  <enabled>true</enabled>
+  <queryable>false</queryable>
+  <attribution>
+    <logoWidth>187</logoWidth>
+    <logoHeight>68</logoHeight>
+  <logoURL>https://www.pigma.org/portail/sites/www.pigma.org.portail/files/sites/default/files/inline-images/pigma/les_financeurs/logo-IGN.jpg</logoURL><logoType>image/jpeg</logoType></attribution>
+</layer>

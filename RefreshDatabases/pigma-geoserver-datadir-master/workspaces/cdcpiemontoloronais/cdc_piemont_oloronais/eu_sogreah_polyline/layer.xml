@@ -1,0 +1,20 @@
+<layer>
+  <name>eu_sogreah_polyline</name>
+  <id>LayerInfoImpl--5d24cb91:137c9d21959:-4c63</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl--57418a1f:130f9791466:-7fff</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl--5d24cb91:137c9d21959:-4c64</id>
+  </resource>
+  <enabled>true</enabled>
+  <attribution>
+    <title>CDC Piémont Oloronais</title>
+    <href>http://www.piemont-oloronais.fr/</href>
+    <logoURL>https://www.pigma.org/portail/sites/www.pigma.org.portail/files/sites/default/files/inline-images/pigma/les_partenaires/les_signataires_de_la_convention_pigma/pyrenees_atlantiques/CDC_PIEMONT_OLORONAIS.jpg</logoURL>
+    <logoWidth>180</logoWidth>
+    <logoHeight>68</logoHeight>
+    <logoType>image/jpeg</logoType>
+  </attribution>
+</layer>

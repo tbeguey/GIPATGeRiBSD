@@ -1,0 +1,15 @@
+<layer>
+  <name>bd_ortho_33_2015_ecw</name>
+  <id>LayerInfoImpl-676d6637:15a6149fb7f:7af7</id>
+  <type>RASTER</type>
+  <defaultStyle>
+    <id>StyleInfoImpl-4e0b98bf:12475d46fdd:-7fe2</id>
+  </defaultStyle>
+  <resource class="coverage">
+    <id>CoverageInfoImpl-676d6637:15a6149fb7f:7af6</id>
+  </resource>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+</layer>

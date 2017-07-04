@@ -1,0 +1,21 @@
+<layer>
+  <name>craquitaine_artelia_gisement_eolien_flottant</name>
+  <id>LayerInfoImpl-40b93b40:14ae2b52e35:3465</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl-40b93b40:14ae2b85c52:-1c13</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl-40b93b40:14ae2b52e35:3464</id>
+  </resource>
+  <enabled>true</enabled>
+  <queryable>false</queryable>
+  <attribution>
+    <title>CR Aquitaine</title>
+    <href>http://aquitaine.fr/</href>
+    <logoURL>https://www.pigma.org/portail/sites/www.pigma.org.portail/files/sites/default/files/inline-images/pigma/les_partenaires/les_signataires_de_la_convention_pigma/aquitaine/CRA.png</logoURL>
+    <logoWidth>186</logoWidth>
+    <logoHeight>68</logoHeight>
+    <logoType>image/png</logoType>
+  </attribution>
+</layer>

@@ -63,6 +63,8 @@ public class ColumnsDialog extends Dialog<ArrayList<String>> {
 
 
         setResultConverter((ButtonType dialogButton) -> {
+            postGreSQL.deconnection();
+
             if(dialogButton == okButtonType) {
                 ArrayList<String> arrayList = new ArrayList<>();
 

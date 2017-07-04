@@ -1,0 +1,20 @@
+<layer>
+  <name>demo_socio_eco_actifs_athcr2009</name>
+  <id>LayerInfoImpl-2af25b80:13ab1de8d76:-6cef</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl--6dc19e29:136a10ba5f8:-c7</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl-2af25b80:13ab1de8d76:-6cf0</id>
+  </resource>
+  <enabled>true</enabled>
+  <attribution>
+    <title>GT PIGMA Socio-Eco</title>
+    <href>https://www.pigma.org/groupe-de-travail-pigma-socio-eco</href>
+    <logoURL>https://www.pigma.org/portail/sites/www.pigma.org.portail/files/sites/default/files/inline-images/pigma/les_partenaires/les_signataires_de_la_convention_pigma/autres/pigma.jpg</logoURL>
+    <logoWidth>74</logoWidth>
+    <logoHeight>67</logoHeight>
+    <logoType>image/jpeg</logoType>
+  </attribution>
+</layer>

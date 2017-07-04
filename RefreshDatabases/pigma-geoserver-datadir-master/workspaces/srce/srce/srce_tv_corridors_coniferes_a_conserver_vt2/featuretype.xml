@@ -1,0 +1,70 @@
+<featureType>
+  <id>FeatureTypeInfoImpl-5c3c0fbe:13ee3b701c3:-58fc</id>
+  <name>srce_tv_corridors_coniferes_a_conserver_vt2</name>
+  <nativeName>tv_corridors_coniferes_a_conserver_vt2</nativeName>
+  <namespace>
+    <id>NamespaceInfoImpl-79dddd8c:13ae31c6665:-4335</id>
+  </namespace>
+  <title>SRCE - Co Conifères et milieux associés</title>
+  <abstract>Corridors - Boisements de conifères et milieux associés</abstract>
+  <keywords>
+    <string>tv_corridors_coniferes_a_conserver_vt2</string>
+    <string>features</string>
+  </keywords>
+  <metadataLinks>
+    <metadataLink>
+      <type>text/plain</type>
+      <metadataType>TC211</metadataType>
+      <content>http://catalogue.geo-ide.developpement-durable.gouv.fr/catalogue/apps/search/?uuid=fr-120066022-jdd-92e2fa0c-2136-490e-8399-0c5c77da4399</content>
+    </metadataLink>
+  <metadataLink><type>text/html</type><metadataType /><content>https://www.pigma.org/geonetwork/apps/georchestra/?uuid=fr-120066022-jdd-92e2fa0c-2136-490e-8399-0c5c77da4399</content></metadataLink><metadataLink><type>text/xml</type><metadataType /><content>https://www.pigma.org/geonetwork/srv/fre/xml_iso19139?uuid=fr-120066022-jdd-92e2fa0c-2136-490e-8399-0c5c77da4399</content></metadataLink></metadataLinks>
+  <nativeCRS class="projected">PROJCS["RGF93 / Lambert-93", 
+  GEOGCS["RGF93", 
+    DATUM["Reseau Geodesique Francais 1993", 
+      SPHEROID["GRS 1980", 6378137.0, 298.257222101, AUTHORITY["EPSG","7019"]], 
+      TOWGS84[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], 
+      AUTHORITY["EPSG","6171"]], 
+    PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+    UNIT["degree", 0.017453292519943295], 
+    AXIS["Geodetic longitude", EAST], 
+    AXIS["Geodetic latitude", NORTH], 
+    AUTHORITY["EPSG","4171"]], 
+  PROJECTION["Lambert_Conformal_Conic_2SP", AUTHORITY["EPSG","9802"]], 
+  PARAMETER["central_meridian", 3.0], 
+  PARAMETER["latitude_of_origin", 46.5], 
+  PARAMETER["standard_parallel_1", 49.0], 
+  PARAMETER["false_easting", 700000.0], 
+  PARAMETER["false_northing", 6600000.0], 
+  PARAMETER["scale_factor", 1.0], 
+  PARAMETER["standard_parallel_2", 44.0], 
+  UNIT["m", 1.0], 
+  AXIS["Easting", EAST], 
+  AXIS["Northing", NORTH], 
+  AUTHORITY["EPSG","2154"]]</nativeCRS>
+  <srs>EPSG:2154</srs>
+  <nativeBoundingBox>
+    <minx>457598.695039274</minx>
+    <maxx>540456.445276992</maxx>
+    <miny>6355157.51012485</miny>
+    <maxy>6458030.67544356</maxy>
+    <crs class="projected">EPSG:2154</crs>
+  </nativeBoundingBox>
+  <latLonBoundingBox>
+    <minx>-0.08682576556879</minx>
+    <maxx>1.000896448829304</maxx>
+    <miny>44.25348262517986</miny>
+    <maxy>45.20311612801612</maxy>
+    <crs>EPSG:4326</crs>
+  </latLonBoundingBox>
+  <projectionPolicy>FORCE_DECLARED</projectionPolicy>
+  <enabled>true</enabled>
+  <advertised>true</advertised>
+  <metadata>
+    <entry key="cachingEnabled">false</entry>
+  </metadata>
+  <store class="dataStore">
+    <id>DataStoreInfoImpl-79dddd8c:13ae31c6665:-4333</id>
+  </store>
+  <maxFeatures>0</maxFeatures>
+  <numDecimals>0</numDecimals>
+</featureType>

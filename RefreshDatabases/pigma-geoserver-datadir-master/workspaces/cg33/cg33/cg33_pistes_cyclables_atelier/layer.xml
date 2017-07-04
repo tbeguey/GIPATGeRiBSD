@@ -1,0 +1,20 @@
+<layer>
+  <name>cg33_pistes_cyclables_atelier</name>
+  <id>LayerInfoImpl--2ac53333:14960b7f7e2:4147</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl--47b66809:1336ecb0c7e:-7f43</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl--2ac53333:14960b7f7e2:4146</id>
+  </resource>
+  <enabled>true</enabled>
+  <attribution>
+    <title>CG 33</title>
+    <href>http://www.gironde.fr/jcms/j_6/accueil</href>
+    <logoURL>https://www.pigma.org/portail/sites/www.pigma.org.portail/files/sites/default/files/inline-images/pigma/les_partenaires/les_signataires_de_la_convention_pigma/gironde/CONSEIL_DEPARTEMENTAL_DE_LA_GIRONDE.jpg</logoURL>
+    <logoWidth>178</logoWidth>
+    <logoHeight>68</logoHeight>
+    <logoType>image/jpeg</logoType>
+  </attribution>
+</layer>

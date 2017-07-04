@@ -1,0 +1,22 @@
+<dataStore>
+  <id>DataStoreInfoImpl-749b820c:14d298a161d:111e</id>
+  <name>dreal_tri</name>
+  <type>PostGIS (JNDI)</type>
+  <enabled>true</enabled>
+  <workspace>
+    <id>WorkspaceInfoImpl-749b820c:14d2985b15f:-d91</id>
+  </workspace>
+  <connectionParameters>
+    <entry key="schema">dreal_tri</entry>
+    <entry key="dbtype">postgis</entry>
+    <entry key="Loose bbox">true</entry>
+    <entry key="Expose primary keys">false</entry>
+    <entry key="encode functions">false</entry>
+    <entry key="preparedStatements">false</entry>
+    <entry key="jndiReferenceName">java:comp/env/jdbc/pigma</entry>
+    <entry key="Estimated extends">true</entry>
+    <entry key="Support on the fly geometry simplification">true</entry>
+    <entry key="namespace">http://pigma.org/dreal_tri</entry>
+  </connectionParameters>
+  <__default>false</__default>
+</dataStore>

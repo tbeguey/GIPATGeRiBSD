@@ -1,0 +1,24 @@
+<dataStore>
+  <id>DataStoreInfoImpl-422659b1:132b0a3003b:-7d66</id>
+  <name>admin_habillage</name>
+  <description>Couche d&apos;habillage</description>
+  <type>PostGIS (JNDI)</type>
+  <enabled>true</enabled>
+  <workspace>
+    <id>WorkspaceInfoImpl-422659b1:132b0a3003b:-7d71</id>
+  </workspace>
+  <connectionParameters>
+    <entry key="schema">admin_habillage</entry>
+    <entry key="dbtype">postgis</entry>
+    <entry key="Loose bbox">true</entry>
+    <entry key="Expose primary keys">false</entry>
+    <entry key="Max open prepared statements">50</entry>
+    <entry key="encode functions">false</entry>
+    <entry key="preparedStatements">false</entry>
+    <entry key="jndiReferenceName">java:comp/env/jdbc/pigma</entry>
+    <entry key="Estimated extends">false</entry>
+    <entry key="Support on the fly geometry simplification">false</entry>
+    <entry key="namespace">http://pigma.org/admin_habillage</entry>
+  </connectionParameters>
+  <__default>true</__default>
+</dataStore>

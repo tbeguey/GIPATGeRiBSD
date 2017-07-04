@@ -1,0 +1,20 @@
+<layer>
+  <name>onf_foretrfdtso_2007ext</name>
+  <id>LayerInfoImpl--2f77feef:134c1e338be:5418</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl-6213a6cc:134c6c9185c:-778b</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl--2f77feef:134c1e338be:5417</id>
+  </resource>
+  <enabled>true</enabled>
+  <attribution>
+    <title>onf</title>
+    <href>http://www.onf.fr/</href>
+    <logoURL>https://www.pigma.org/portail/sites/www.pigma.org.portail/files/sites/default/files/inline-images/pigma/les_partenaires/les_signataires_de_la_convention_pigma/aquitaine/ONF.png</logoURL>
+    <logoWidth>175</logoWidth>
+    <logoHeight>68</logoHeight>
+    <logoType>image/png</logoType>
+  </attribution>
+</layer>

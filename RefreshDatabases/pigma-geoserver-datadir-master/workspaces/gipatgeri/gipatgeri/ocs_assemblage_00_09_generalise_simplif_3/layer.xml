@@ -1,0 +1,19 @@
+<layer>
+  <name>ocs_assemblage_00_09_generalise_simplif_3</name>
+  <id>LayerInfoImpl--3cde75bc:15709f9a8eb:45f2</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl--3cde75bc:1570a9d025f:-163d</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl--3cde75bc:15709f9a8eb:45f1</id>
+  </resource>
+  <attribution>
+    <title>GIP ATGeRi</title>
+    <href>http://www.gipatgeri.fr/</href>
+    <logoURL>https://www.pigma.org/portail/sites/www.pigma.org.portail/files/sites/default/files/inline-images/pigma/les_partenaires/les_signataires_de_la_convention_pigma/autres/gipatgeri.jpg</logoURL>
+    <logoWidth>98</logoWidth>
+    <logoHeight>68</logoHeight>
+    <logoType>image/jpeg</logoType>
+  </attribution>
+</layer>

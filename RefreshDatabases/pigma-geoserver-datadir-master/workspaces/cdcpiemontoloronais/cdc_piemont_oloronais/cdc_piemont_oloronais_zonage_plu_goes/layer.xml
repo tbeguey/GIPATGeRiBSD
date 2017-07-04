@@ -1,0 +1,20 @@
+<layer>
+  <name>cdc_piemont_oloronais_zonage_plu_goes</name>
+  <id>LayerInfoImpl--79440f42:138767bc643:-7d93</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl-52f4f10e:137bcd6e4e0:-76ef</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl--79440f42:138767bc643:-7d94</id>
+  </resource>
+  <enabled>true</enabled>
+  <attribution>
+    <title>CDC Piémont Oloronais</title>
+    <href>http://www.piemont-oloronais.fr/</href>
+    <logoURL>https://www.pigma.org/portail/sites/www.pigma.org.portail/files/sites/default/files/inline-images/pigma/les_partenaires/les_signataires_de_la_convention_pigma/pyrenees_atlantiques/CDC_PIEMONT_OLORONAIS.jpg</logoURL>
+    <logoWidth>180</logoWidth>
+    <logoHeight>68</logoHeight>
+    <logoType>image/jpeg</logoType>
+  </attribution>
+</layer>

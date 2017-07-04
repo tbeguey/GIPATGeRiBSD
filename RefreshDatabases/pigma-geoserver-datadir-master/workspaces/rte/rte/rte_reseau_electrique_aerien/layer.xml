@@ -1,0 +1,15 @@
+<layer>
+  <name>rte_reseau_electrique_aerien</name>
+  <id>LayerInfoImpl--64db1a4f:15a8f5b7695:-3d18</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl--57418a1f:130f9791466:-7fff</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl--64db1a4f:15a8f5b7695:-3d19</id>
+  </resource>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+</layer>

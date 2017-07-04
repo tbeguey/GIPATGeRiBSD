@@ -1,0 +1,20 @@
+<layer>
+  <name>srce_trame_bleue</name>
+  <id>LayerInfoImpl--79c0e61c:13af981713e:-7d1e</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl--79c0e61c:13af981713e:-54d8</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl--79c0e61c:13af981713e:-7d20</id>
+  </resource>
+  <enabled>true</enabled>
+  <attribution>
+    <title>SRCE</title>
+    <href>http://www.trameverteetbleue.fr/</href>
+    <logoURL>https://www.pigma.org/portail/sites/www.pigma.org.portail/files/sites/default/files/inline-images/pigma/les_partenaires/les_signataires_de_la_convention_pigma/autres/srce.jpg</logoURL>
+    <logoWidth>178</logoWidth>
+    <logoHeight>68</logoHeight>
+    <logoType>image/jpeg</logoType>
+  </attribution>
+</layer>

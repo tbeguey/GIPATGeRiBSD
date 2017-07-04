@@ -1,0 +1,16 @@
+<layer>
+  <name>aquitaine_prescription_pct_vue</name>
+  <id>LayerInfoImpl-5b18e1b8:142bdf5b9f7:62c7</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl--61fff44:1424da8e85d:387a</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl-5b18e1b8:142bdf5b9f7:62c6</id>
+  </resource>
+  <enabled>true</enabled>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+</layer>

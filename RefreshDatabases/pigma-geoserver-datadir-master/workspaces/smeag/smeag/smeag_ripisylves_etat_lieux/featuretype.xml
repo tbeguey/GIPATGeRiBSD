@@ -1,0 +1,43 @@
+<featureType>
+  <id>FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7f92</id>
+  <name>smeag_ripisylves_etat_lieux</name>
+  <nativeName>ripisylves_etat_lieux</nativeName>
+  <namespace>
+    <id>NamespaceInfoImpl--3d639cb2:13285edbc12:-7fd2</id>
+  </namespace>
+  <title>SMEAG -  Ripisylves et essences</title>
+  <abstract>État des lieux des ripisylves le long de la Garonne - Extrait Schéma d'Entretien des Berges - Syndicat mixte d’études et d’aménagement de la Garonne</abstract>
+  <metadataLinks>
+    <metadataLink>
+      <type>text/plain</type>
+      <metadataType>TC211</metadataType>
+      <content>https://www.pigma.org/geonetwork?uuid=73f4a211-5dbe-40d2-9e6d-18912b7e5881</content>
+    </metadataLink>
+  <metadataLink><type>text/html</type><metadataType /><content>https://www.pigma.org/geonetwork/apps/georchestra/?uuid=73f4a211-5dbe-40d2-9e6d-18912b7e5881</content></metadataLink><metadataLink><type>text/xml</type><metadataType /><content>https://www.pigma.org/geonetwork/srv/fre/xml_iso19139?uuid=73f4a211-5dbe-40d2-9e6d-18912b7e5881</content></metadataLink></metadataLinks>
+  <srs>EPSG:2154</srs>
+  <nativeBoundingBox>
+    <minx>415146.646</minx>
+    <maxx>574141.75</maxx>
+    <miny>6180010.354</miny>
+    <maxy>6444549.5</maxy>
+    <crs class="projected">EPSG:2154</crs>
+  </nativeBoundingBox>
+  <latLonBoundingBox>
+    <minx>-0.619</minx>
+    <maxx>1.465</maxx>
+    <miny>42.663</miny>
+    <maxy>45.089</maxy>
+    <crs>EPSG:4326</crs>
+  </latLonBoundingBox>
+  <projectionPolicy>FORCE_DECLARED</projectionPolicy>
+  <enabled>true</enabled>
+  <advertised>true</advertised>
+  <metadata>
+    <entry key="cachingEnabled">false</entry>
+  </metadata>
+  <store class="dataStore">
+    <id>DataStoreInfoImpl--3d639cb2:13285edbc12:-7fb3</id>
+  </store>
+  <maxFeatures>0</maxFeatures>
+  <numDecimals>0</numDecimals>
+</featureType>

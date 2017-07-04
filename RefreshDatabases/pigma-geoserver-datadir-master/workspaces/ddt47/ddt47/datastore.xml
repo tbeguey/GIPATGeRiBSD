@@ -1,0 +1,21 @@
+<dataStore>
+  <id>DataStoreInfoImpl-1bfa188e:149eb73da18:-2677</id>
+  <name>ddt47</name>
+  <type>PostGIS (JNDI)</type>
+  <enabled>true</enabled>
+  <workspace>
+    <id>WorkspaceInfoImpl-1bfa188e:149eb73da18:-2817</id>
+  </workspace>
+  <connectionParameters>
+    <entry key="schema">ddt47</entry>
+    <entry key="dbtype">postgis</entry>
+    <entry key="Loose bbox">true</entry>
+    <entry key="Expose primary keys">false</entry>
+    <entry key="encode functions">false</entry>
+    <entry key="preparedStatements">false</entry>
+    <entry key="jndiReferenceName">java:comp/env/jdbc/pigma</entry>
+    <entry key="Estimated extends">false</entry>
+    <entry key="namespace">http://pigma.org/ddt47</entry>
+  </connectionParameters>
+  <__default>false</__default>
+</dataStore>

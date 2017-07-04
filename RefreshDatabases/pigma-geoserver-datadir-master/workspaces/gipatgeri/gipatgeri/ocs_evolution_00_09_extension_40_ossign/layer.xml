@@ -1,0 +1,20 @@
+<layer>
+  <name>ocs_evolution_00_09_extension_40_ossign</name>
+  <id>LayerInfoImpl-375d97f6:1500390e6c2:-3587</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl-126a8a5a:13653e969bd:-332</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl-375d97f6:1500390e6c2:-3588</id>
+  </resource>
+  <enabled>false</enabled>
+  <attribution>
+    <title>GIP ATGeRi</title>
+    <href>http://www.gipatgeri.fr/</href>
+    <logoURL>https://www.pigma.org/portail/sites/www.pigma.org.portail/files/sites/default/files/inline-images/pigma/les_partenaires/les_signataires_de_la_convention_pigma/autres/gipatgeri.jpg</logoURL>
+    <logoWidth>98</logoWidth>
+    <logoHeight>68</logoHeight>
+    <logoType>image/jpeg</logoType>
+  </attribution>
+</layer>

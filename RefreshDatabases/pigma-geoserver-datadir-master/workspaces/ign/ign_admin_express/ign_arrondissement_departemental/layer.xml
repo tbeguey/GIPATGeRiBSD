@@ -1,0 +1,15 @@
+<layer>
+  <name>ign_arrondissement_departemental</name>
+  <id>LayerInfoImpl--64db1a4f:15a93bcfd03:6bdd</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl--64db1a4f:15a94468958:fed</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl--64db1a4f:15a93bcfd03:6bdc</id>
+  </resource>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+</layer>

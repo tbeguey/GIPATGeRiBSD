@@ -1,0 +1,20 @@
+<layer>
+  <name>rff_classement_sonore_aquitaine</name>
+  <id>LayerInfoImpl--60870653:141bbafd8c4:-539c</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl--57418a1f:130f9791466:-7fff</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl--60870653:141bbafd8c4:-539d</id>
+  </resource>
+  <enabled>true</enabled>
+  <attribution>
+    <title>RFF</title>
+    <href>http://www.rff.fr/fr</href>
+    <logoURL>https://www.pigma.org/portail/sites/www.pigma.org.portail/files/sites/default/files/inline-images/pigma/les_partenaires/les_signataires_de_la_convention_pigma/aquitaine/SNCF.png</logoURL>
+    <logoWidth>99</logoWidth>
+    <logoHeight>68</logoHeight>
+    <logoType>image/png</logoType>
+  </attribution>
+</layer>

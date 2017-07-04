@@ -1,0 +1,21 @@
+<layer>
+  <name>ign_ortho50cm_2004_2008_aquitaine</name>
+  <id>LayerInfoImpl--6daa2990:13ad58ab10e:-d2</id>
+  <type>RASTER</type>
+  <defaultStyle>
+    <id>StyleInfoImpl-4e0b98bf:12475d46fdd:-7fe2</id>
+  </defaultStyle>
+  <resource class="coverage">
+    <id>CoverageInfoImpl--6daa2990:13ad58ab10e:-d3</id>
+  </resource>
+  <queryable>false</queryable>
+  <opaque>true</opaque>
+  <attribution>
+    <title>IGN</title>
+    <href>http://www.ign.fr</href>
+    <logoURL>https://www.pigma.org/portail/sites/www.pigma.org.portail/files/sites/default/files/inline-images/pigma/les_financeurs/logo-IGN.jpg</logoURL>
+    <logoWidth>187</logoWidth>
+    <logoHeight>68</logoHeight>
+    <logoType>image/jpeg</logoType>
+  </attribution>
+</layer>

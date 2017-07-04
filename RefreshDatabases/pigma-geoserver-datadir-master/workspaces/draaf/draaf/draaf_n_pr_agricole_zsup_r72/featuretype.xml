@@ -1,0 +1,43 @@
+<featureType>
+  <id>FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7e9a</id>
+  <name>draaf_n_pr_agricole_zsup_r72</name>
+  <nativeName>n_pr_agricole_zsup_r72</nativeName>
+  <namespace>
+    <id>NamespaceInfoImpl--3d639cb2:13285edbc12:-7ffa</id>
+  </namespace>
+  <title>DRAAF : Petites régions agricoles</title>
+  <abstract>Aquitaine : Petites Régions Agricoles</abstract>
+  <metadataLinks>
+    <metadataLink>
+      <type>text/plain</type>
+      <metadataType>TC211</metadataType>
+      <content>https://www.pigma.org/geonetwork/apps/georchestra/?uuid=fr-120066022-jdd-8a22b105-abe6-4b15-a34b-6c1342528d2d</content>
+    </metadataLink>
+  <metadataLink><type>text/html</type><metadataType /><content>https://www.pigma.org/geonetwork/apps/georchestra/?uuid=fr-120066022-jdd-8a22b105-abe6-4b15-a34b-6c1342528d2d</content></metadataLink><metadataLink><type>text/xml</type><metadataType /><content>https://www.pigma.org/geonetwork/srv/fre/xml_iso19139?uuid=fr-120066022-jdd-8a22b105-abe6-4b15-a34b-6c1342528d2d</content></metadataLink></metadataLinks>
+  <srs>EPSG:2154</srs>
+  <nativeBoundingBox>
+    <minx>311994.969</minx>
+    <maxx>577774.062</maxx>
+    <miny>6192984.0</miny>
+    <maxy>6515544.0</maxy>
+    <crs class="projected">EPSG:2154</crs>
+  </nativeBoundingBox>
+  <latLonBoundingBox>
+    <minx>-1.983</minx>
+    <maxx>1.507</maxx>
+    <miny>42.732</miny>
+    <maxy>45.729</maxy>
+    <crs>EPSG:4326</crs>
+  </latLonBoundingBox>
+  <projectionPolicy>FORCE_DECLARED</projectionPolicy>
+  <enabled>true</enabled>
+  <advertised>true</advertised>
+  <metadata>
+    <entry key="cachingEnabled">false</entry>
+  </metadata>
+  <store class="dataStore">
+    <id>DataStoreInfoImpl--3d639cb2:13285edbc12:-7fca</id>
+  </store>
+  <maxFeatures>0</maxFeatures>
+  <numDecimals>0</numDecimals>
+</featureType>

@@ -1,0 +1,43 @@
+<featureType>
+  <id>FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7e1e</id>
+  <name>epidor_batisurcommune_zi</name>
+  <nativeName>batisurcommune_zi_s</nativeName>
+  <namespace>
+    <id>NamespaceInfoImpl--3d639cb2:13285edbc12:-7fde</id>
+  </namespace>
+  <title>EPIDOR - Bati ZI</title>
+  <abstract>Bati en Zone Industirelle - Etablissement Public Territorial du Bassin de la Dordogne</abstract>
+  <metadataLinks>
+    <metadataLink>
+      <type>text/plain</type>
+      <metadataType>TC211</metadataType>
+      <content>https://www.pigma.org/geonetwork?uuid=dabbb849-b1fa-489f-be8d-be1c4e7a0b09</content>
+    </metadataLink>
+  <metadataLink><type>text/html</type><metadataType /><content>https://www.pigma.org/geonetwork/apps/georchestra/?uuid=dabbb849-b1fa-489f-be8d-be1c4e7a0b09</content></metadataLink><metadataLink><type>text/xml</type><metadataType /><content>https://www.pigma.org/geonetwork/srv/fre/xml_iso19139?uuid=dabbb849-b1fa-489f-be8d-be1c4e7a0b09</content></metadataLink></metadataLinks>
+  <srs>EPSG:2154</srs>
+  <nativeBoundingBox>
+    <minx>419563.344</minx>
+    <maxx>651342.75</maxx>
+    <miny>6394976.0</miny>
+    <maxy>6505851.5</maxy>
+    <crs class="projected">EPSG:2154</crs>
+  </nativeBoundingBox>
+  <latLonBoundingBox>
+    <minx>-0.598</minx>
+    <maxx>2.386</maxx>
+    <miny>44.597</miny>
+    <maxy>45.65</maxy>
+    <crs>EPSG:4326</crs>
+  </latLonBoundingBox>
+  <projectionPolicy>FORCE_DECLARED</projectionPolicy>
+  <enabled>true</enabled>
+  <advertised>true</advertised>
+  <metadata>
+    <entry key="cachingEnabled">false</entry>
+  </metadata>
+  <store class="dataStore">
+    <id>DataStoreInfoImpl--3d639cb2:13285edbc12:-7fc4</id>
+  </store>
+  <maxFeatures>0</maxFeatures>
+  <numDecimals>0</numDecimals>
+</featureType>

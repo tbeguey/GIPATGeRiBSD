@@ -1,0 +1,20 @@
+<layer>
+  <name>oca_e1_tdc_2020_dire_expert</name>
+  <id>LayerInfoImpl--526cedd4:143d45a8877:66d3</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl--526cedd4:143d482b71d:-40b0</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl--526cedd4:143d45a8877:66d2</id>
+  </resource>
+  <enabled>true</enabled>
+  <attribution>
+    <title>OCA</title>
+    <href>http://littoral.aquitaine.fr/</href>
+    <logoURL>https://www.pigma.org/portail/sites/www.pigma.org.portail/files/sites/default/files/inline-images/pigma/les_partenaires/les_signataires_de_la_convention_pigma/autres/oca.jpg</logoURL>
+    <logoWidth>87</logoWidth>
+    <logoHeight>67</logoHeight>
+    <logoType>image/jpeg</logoType>
+  </attribution>
+</layer>

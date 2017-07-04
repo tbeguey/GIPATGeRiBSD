@@ -1,0 +1,26 @@
+<settings>
+  <id>SettingsInfoImpl-2090530a:14b6e2159a6:-4a79</id>
+  <workspace>
+    <id>WorkspaceInfoImpl-2090530a:14b6e2159a6:-4a7d</id>
+    <name>cobas</name>
+  </workspace>
+  <contact>
+    <id>contact</id>
+    <address>6, Parvis des Chartrons</address>
+    <addressCity>Bordeaux</addressCity>
+    <addressPostalCode>33075</addressPostalCode>
+    <addressType>Work</addressType>
+    <contactEmail>sebastien.negre@gipatgeri.fr</contactEmail>
+    <contactOrganization>PIGMA</contactOrganization>
+    <contactPerson>PIGMA</contactPerson>
+    <contactVoice>05.57.85.40.42</contactVoice>
+  </contact>
+  <charset>UTF-8</charset>
+  <numDecimals>6</numDecimals>
+  <onlineResource>http://geoserver.org</onlineResource>
+  <proxyBaseUrl>https://www.pigma.org/geoserver</proxyBaseUrl>
+  <verbose>true</verbose>
+  <verboseExceptions>false</verboseExceptions>
+  <localWorkspaceIncludesPrefix>true</localWorkspaceIncludesPrefix>
+  <layerGroupInclusion>AT_LEAST_ONE_CONTAINED</layerGroupInclusion>
+</settings>

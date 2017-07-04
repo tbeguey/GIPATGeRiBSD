@@ -1,0 +1,43 @@
+<featureType>
+  <id>FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7fae</id>
+  <name>smeag_epis</name>
+  <nativeName>epis</nativeName>
+  <namespace>
+    <id>NamespaceInfoImpl--3d639cb2:13285edbc12:-7fd2</id>
+  </namespace>
+  <title>SMEAG -   Orientation de gestion des épis</title>
+  <abstract>Localisation des épis et orientation de gestion jusqu'à 2012 - Syndicat mixte d’études et d’aménagement de la Garonne</abstract>
+  <metadataLinks>
+    <metadataLink>
+      <type>text/plain</type>
+      <metadataType>TC211</metadataType>
+      <content>https://www.pigma.org/geonetwork?uuid=e4db3dfa-7734-42c7-bb33-c5fd0ef8b713</content>
+    </metadataLink>
+  <metadataLink><type>text/html</type><metadataType /><content>https://www.pigma.org/geonetwork/apps/georchestra/?uuid=e4db3dfa-7734-42c7-bb33-c5fd0ef8b713</content></metadataLink><metadataLink><type>text/xml</type><metadataType /><content>https://www.pigma.org/geonetwork/srv/fre/xml_iso19139?uuid=e4db3dfa-7734-42c7-bb33-c5fd0ef8b713</content></metadataLink></metadataLinks>
+  <srs>EPSG:2154</srs>
+  <nativeBoundingBox>
+    <minx>419611.531</minx>
+    <maxx>559672.381</maxx>
+    <miny>6180085.416</miny>
+    <maxy>6432989.5</maxy>
+    <crs class="projected">EPSG:2154</crs>
+  </nativeBoundingBox>
+  <latLonBoundingBox>
+    <minx>-0.556</minx>
+    <maxx>1.289</maxx>
+    <miny>42.666</miny>
+    <maxy>44.982</maxy>
+    <crs>EPSG:4326</crs>
+  </latLonBoundingBox>
+  <projectionPolicy>FORCE_DECLARED</projectionPolicy>
+  <enabled>true</enabled>
+  <advertised>true</advertised>
+  <metadata>
+    <entry key="cachingEnabled">false</entry>
+  </metadata>
+  <store class="dataStore">
+    <id>DataStoreInfoImpl--3d639cb2:13285edbc12:-7fb3</id>
+  </store>
+  <maxFeatures>0</maxFeatures>
+  <numDecimals>0</numDecimals>
+</featureType>

@@ -1,0 +1,18 @@
+<wmsStore>
+  <id>WMSStoreInfoImpl--1118d1ba:15766c8e628:3678</id>
+  <name>IGN WMS</name>
+  <description>IGN WMS</description>
+  <type>WMS</type>
+  <enabled>true</enabled>
+  <workspace>
+    <id>WorkspaceInfoImpl-1a3b34e9:13a30459930:-7c33</id>
+  </workspace>
+  <metadata>
+    <entry key="useConnectionPooling">true</entry>
+  </metadata>
+  <__default>false</__default>
+  <capabilitiesURL>http://wxs.ign.fr/zf94f7ogifyhxmezg4cxuumq/geoportail/r/wms?SERVICE=WMS&amp;VERSION=1.3.0&amp;REQUEST=GetCapabilities</capabilitiesURL>
+  <maxConnections>6</maxConnections>
+  <readTimeout>60</readTimeout>
+  <connectTimeout>30</connectTimeout>
+</wmsStore>

@@ -1,0 +1,12 @@
+<coverageStore>
+  <id>CoverageStoreInfoImpl-583eea84:14a161e5e4c:424c</id>
+  <name>bathymetrie</name>
+  <description>bathymerie</description>
+  <type>ImageMosaic</type>
+  <enabled>true</enabled>
+  <workspace>
+    <id>WorkspaceInfoImpl-1a3b34e9:13a30459930:-7c33</id>
+  </workspace>
+  <__default>false</__default>
+  <url>file:///var/local/geodata/raster/ddtm33</url>
+</coverageStore>

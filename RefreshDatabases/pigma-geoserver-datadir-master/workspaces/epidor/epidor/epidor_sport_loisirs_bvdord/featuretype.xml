@@ -1,0 +1,43 @@
+<featureType>
+  <id>FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7e10</id>
+  <name>epidor_sport_loisirs_bvdord</name>
+  <nativeName>sport_loisirs_bvdord</nativeName>
+  <namespace>
+    <id>NamespaceInfoImpl--3d639cb2:13285edbc12:-7fde</id>
+  </namespace>
+  <title>EPIDOR - Sports et loisirs</title>
+  <abstract>Bassin versant de la Dordogne : Sports et loisirs - Etablissement Public Territorial du Bassin de la Dordogne</abstract>
+  <metadataLinks>
+    <metadataLink>
+      <type>text/plain</type>
+      <metadataType>TC211</metadataType>
+      <content>https://www.pigma.org/geonetwork?uuid=bada2a6a-e2de-466f-accb-f1adbc648700</content>
+    </metadataLink>
+  <metadataLink><type>text/html</type><metadataType /><content>https://www.pigma.org/geonetwork/apps/georchestra/?uuid=bada2a6a-e2de-466f-accb-f1adbc648700</content></metadataLink><metadataLink><type>text/xml</type><metadataType /><content>https://www.pigma.org/geonetwork/srv/fre/xml_iso19139?uuid=bada2a6a-e2de-466f-accb-f1adbc648700</content></metadataLink></metadataLinks>
+  <srs>EPSG:2154</srs>
+  <nativeBoundingBox>
+    <minx>421678.125</minx>
+    <maxx>673592.938</maxx>
+    <miny>6395662.5</miny>
+    <maxy>6491154.5</maxy>
+    <crs class="projected">EPSG:2154</crs>
+  </nativeBoundingBox>
+  <latLonBoundingBox>
+    <minx>-0.563</minx>
+    <maxx>2.667</maxx>
+    <miny>44.604</miny>
+    <maxy>45.519</maxy>
+    <crs>EPSG:4326</crs>
+  </latLonBoundingBox>
+  <projectionPolicy>FORCE_DECLARED</projectionPolicy>
+  <enabled>true</enabled>
+  <advertised>true</advertised>
+  <metadata>
+    <entry key="cachingEnabled">false</entry>
+  </metadata>
+  <store class="dataStore">
+    <id>DataStoreInfoImpl--3d639cb2:13285edbc12:-7fc4</id>
+  </store>
+  <maxFeatures>0</maxFeatures>
+  <numDecimals>0</numDecimals>
+</featureType>

@@ -1,0 +1,119 @@
+<layerGroup>
+  <id>LayerGroupInfoImpl-2fa548b8:13291b4bfc7:-7d1d</id>
+  <name>Fond_GIP</name>
+  <mode>SINGLE</mode>
+  <title>Fond GIP</title>
+  <publishables>
+    <published type="layer">
+      <id>LayerInfoImpl-42e50cb1:132d98cc15c:-76c3</id>
+    </published>
+    <published type="layer">
+      <id>LayerInfoImpl-1eb62fe:13267fa6b96:-7863</id>
+    </published>
+    <published type="layer">
+      <id>LayerInfoImpl--3d639cb2:13285edbc12:-7dad</id>
+    </published>
+    <published type="layer">
+      <id>LayerInfoImpl--3d639cb2:13285edbc12:-7e55</id>
+    </published>
+    <published type="layer">
+      <id>LayerInfoImpl--3d639cb2:13285edbc12:-7de7</id>
+    </published>
+    <published type="layer">
+      <id>LayerInfoImpl--3d639cb2:13285edbc12:-7e2f</id>
+    </published>
+    <published type="layer">
+      <id>LayerInfoImpl--3d639cb2:13285edbc12:-7e2b</id>
+    </published>
+    <published type="layer">
+      <id>LayerInfoImpl--3d639cb2:13285edbc12:-7e25</id>
+    </published>
+    <published type="layer">
+      <id>LayerInfoImpl--3d639cb2:13285edbc12:-7e47</id>
+    </published>
+    <published type="layer">
+      <id>LayerInfoImpl--3d639cb2:13285edbc12:-7e4d</id>
+    </published>
+    <published type="layer">
+      <id>LayerInfoImpl--3d639cb2:13285edbc12:-7e43</id>
+    </published>
+    <published type="layer">
+      <id>LayerInfoImpl--3d639cb2:13285edbc12:-7e6f</id>
+    </published>
+    <published type="layer">
+      <id>LayerInfoImpl--3d639cb2:13285edbc12:-7e6d</id>
+    </published>
+    <published type="layer">
+      <id>LayerInfoImpl--3d639cb2:13285edbc12:-7e6b</id>
+    </published>
+    <published type="layer">
+      <id>LayerInfoImpl-422659b1:132b0a3003b:-7ba0</id>
+    </published>
+    <published type="layer">
+      <id>LayerInfoImpl-422659b1:132b0a3003b:-7a85</id>
+    </published>
+    <published type="layer">
+      <id>LayerInfoImpl-422659b1:132b0a3003b:-7d62</id>
+    </published>
+  </publishables>
+  <styles>
+    <style>
+      <id>StyleInfoImpl-42e50cb1:132d98cc15c:-74d2</id>
+    </style>
+    <style>
+      <id>StyleInfoImpl-2fa548b8:13291b4bfc7:-7ceb</id>
+    </style>
+    <style>
+      <id>StyleInfoImpl-2fa548b8:13291b4bfc7:-7f99</id>
+    </style>
+    <style>
+      <id>StyleInfoImpl--75a9eb42:1328aaba535:-7f89</id>
+    </style>
+    <style>
+      <id>StyleInfoImpl--15153562:135aad313b6:-65d3</id>
+    </style>
+    <style>
+      <id>StyleInfoImpl-2fa548b8:13291b4bfc7:-7fff</id>
+    </style>
+    <style>
+      <id>StyleInfoImpl-2fa548b8:13291b4bfc7:-7fe4</id>
+    </style>
+    <style>
+      <id>StyleInfoImpl-2fa548b8:13291b4bfc7:-7ff0</id>
+    </style>
+    <style>
+      <id>StyleInfoImpl--75a9eb42:1328aaba535:-7f78</id>
+    </style>
+    <style>
+      <id>StyleInfoImpl--75a9eb42:1328aaba535:-7f79</id>
+    </style>
+    <style>
+      <id>StyleInfoImpl--75a9eb42:1328aaba535:-7f7a</id>
+    </style>
+    <style>
+      <id>StyleInfoImpl-3bfe5701:132aac45f9e:-798d</id>
+    </style>
+    <style>
+      <id>StyleInfoImpl-3bfe5701:132aac45f9e:-7a08</id>
+    </style>
+    <style>
+      <id>StyleInfoImpl-3bfe5701:132aac45f9e:-7a2b</id>
+    </style>
+    <style>
+      <id>StyleInfoImpl-422659b1:132b0a3003b:-7c00</id>
+    </style>
+    <style>
+      <id>StyleInfoImpl-422659b1:132b0a3003b:-7aa1</id>
+    </style>
+    <style>
+      <id>StyleInfoImpl-422659b1:132b0a3003b:-7d13</id>
+    </style>
+  </styles>
+  <bounds>
+    <minx>-69464.43706567318</minx>
+    <maxx>1396794.5148751065</maxx>
+    <miny>5644944.804651622</miny>
+    <maxy>7519898.740538182</maxy>
+    <crs class="projected">EPSG:2154</crs>
+  </bounds>
+</layerGroup>

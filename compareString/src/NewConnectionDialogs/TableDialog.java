@@ -39,6 +39,8 @@ public class TableDialog extends Dialog<String>{
 
 
         setResultConverter((ButtonType dialogButton) ->{
+            postGreSQL.deconnection();
+
             if(dialogButton == okButtonType) {
                 return (String) comboBox.getValue();
             }

@@ -1,0 +1,116 @@
+<layerGroup>
+  <id>LayerGroupInfoImpl--118bf580:14fb250a1ab:6db9</id>
+  <name>dreal_tri_sub_orr</name>
+  <mode>SINGLE</mode>
+  <title>DREAL - TRI Submersion - ORR</title>
+  <workspace>
+    <id>WorkspaceInfoImpl-749b820c:14d2985b15f:-d91</id>
+  </workspace>
+  <publishables>
+    <published type="layer">
+      <id>LayerInfoImpl-749b820c:14d29c62d9d:25bc</id>
+    </published>
+    <published type="layer">
+      <id>LayerInfoImpl-749b820c:14d29db9f86:-3f3f</id>
+    </published>
+    <published type="layer">
+      <id>LayerInfoImpl-19cebcef:14d2d8b462a:-c7</id>
+    </published>
+    <published type="layer">
+      <id>LayerInfoImpl-75428ea9:14d43502664:6b24</id>
+    </published>
+    <published type="layer">
+      <id>LayerInfoImpl--68c7c94:14d48d9454e:-59b7</id>
+    </published>
+    <published type="layer">
+      <id>LayerInfoImpl-75428ea9:14d438f8d83:-7d47</id>
+    </published>
+    <published type="layer">
+      <id>LayerInfoImpl--68c7c94:14d470cbd7d:3514</id>
+    </published>
+    <published type="layer">
+      <id>LayerInfoImpl--68c7c94:14d4755babb:77b1</id>
+    </published>
+    <published type="layer">
+      <id>LayerInfoImpl--68c7c94:14d476b9395:-175f</id>
+    </published>
+    <published type="layer">
+      <id>LayerInfoImpl--68c7c94:14d476b9395:-175f</id>
+    </published>
+    <published type="layer">
+      <id>LayerInfoImpl--68c7c94:14d4781f864:6755</id>
+    </published>
+    <published type="layer">
+      <id>LayerInfoImpl--6dc709cf:14d4de3c19f:-5632</id>
+    </published>
+    <published type="layer">
+      <id>LayerInfoImpl--6dc709cf:14d4de3c19f:-55e0</id>
+    </published>
+    <published type="layer">
+      <id>LayerInfoImpl--6dc709cf:14d4de3c19f:-55ce</id>
+    </published>
+    <published type="layer">
+      <id>LayerInfoImpl--6dc709cf:14d4de3c19f:-55e6</id>
+    </published>
+    <published type="layer">
+      <id>LayerInfoImpl--68c7c94:14d4813db0b:-2b0c</id>
+    </published>
+  </publishables>
+  <styles>
+    <style>
+      <id>StyleInfoImpl-749b820c:14d299acb8d:6c46</id>
+    </style>
+    <style>
+      <id>StyleInfoImpl-749b820c:14d29db9f86:-3f44</id>
+    </style>
+    <style>
+      <id>StyleInfoImpl-19cebcef:14d2d8b462a:-204</id>
+    </style>
+    <style>
+      <id>StyleInfoImpl-75428ea9:14d4242e6c2:-6f56</id>
+    </style>
+    <style>
+      <id>StyleInfoImpl--68c7c94:14d48d9454e:-5a1a</id>
+    </style>
+    <style>
+      <id>StyleInfoImpl-75428ea9:14d4381d853:5473</id>
+    </style>
+    <style>
+      <id>StyleInfoImpl--68c7c94:14d46fe7e7b:2efd</id>
+    </style>
+    <style>
+      <id>StyleInfoImpl--68c7c94:14d472ce9fe:6144</id>
+    </style>
+    <style>
+      <id>StyleInfoImpl--68c7c94:14d47648e8f:-3f0f</id>
+    </style>
+    <style>
+      <id>StyleInfoImpl--68c7c94:14d47648e8f:-3f0f</id>
+    </style>
+    <style>
+      <id>StyleInfoImpl--68c7c94:14d4781f864:5add</id>
+    </style>
+    <style>
+      <id>StyleInfoImpl--6dc709cf:14d4d6cd7df:31d1</id>
+    </style>
+    <style>
+      <id>StyleInfoImpl--6dc709cf:14d4dc6ab00:4efd</id>
+    </style>
+    <style>
+      <id>StyleInfoImpl--6dc709cf:14d4dd44b71:-669b</id>
+    </style>
+    <style>
+      <id>StyleInfoImpl--6dc709cf:14d4dc6ab00:4efe</id>
+    </style>
+    <style>
+      <id>StyleInfoImpl--68c7c94:14d4803b3dd:f8f</id>
+    </style>
+  </styles>
+  <bounds>
+    <minx>311220.30590125</minx>
+    <maxx>577025.951734217</maxx>
+    <miny>6237010.69903958</miny>
+    <maxy>6517301.89534757</maxy>
+    <crs class="projected">EPSG:2154</crs>
+  </bounds>
+</layerGroup>

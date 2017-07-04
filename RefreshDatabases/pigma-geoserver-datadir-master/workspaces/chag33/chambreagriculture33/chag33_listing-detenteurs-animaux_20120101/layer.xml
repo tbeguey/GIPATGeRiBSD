@@ -1,0 +1,20 @@
+<layer>
+  <name>chag33_listing-detenteurs-animaux_20120101</name>
+  <id>LayerInfoImpl-5c8f87e1:14407aa6100:64de</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl-5c8f87e1:14407ef1383:42be</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl-5c8f87e1:14407aa6100:64dd</id>
+  </resource>
+  <enabled>true</enabled>
+  <attribution>
+    <title>Chambre Agriculture de Gironde</title>
+    <href>http://www.gironde.chambagri.fr/</href>
+    <logoURL>https://www.pigma.org/portail/sites/www.pigma.org.portail/files/sites/default/files/inline-images/pigma/les_partenaires/les_signataires_de_la_convention_pigma/gironde/CHAMBRE_AGRI_33.gif</logoURL>
+    <logoWidth>83</logoWidth>
+    <logoHeight>68</logoHeight>
+    <logoType>image/jpeg</logoType>
+  </attribution>
+</layer>

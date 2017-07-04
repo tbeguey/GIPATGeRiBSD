@@ -1,0 +1,20 @@
+<layer>
+  <name>eu_sogreah_point</name>
+  <id>LayerInfoImpl--5d24cb91:137c9d21959:-4cac</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl--57418a1f:130f9791466:-8000</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl--5d24cb91:137c9d21959:-4cad</id>
+  </resource>
+  <enabled>true</enabled>
+  <attribution>
+    <title>CDC Piémont Oloronais</title>
+    <href>http://www.piemont-oloronais.fr/</href>
+    <logoURL>https://www.pigma.org/image/image_gallery?img_id=85860&amp;t=1382088883089</logoURL>
+    <logoWidth>200</logoWidth>
+    <logoHeight>178</logoHeight>
+    <logoType>image/jpeg</logoType>
+  </attribution>
+</layer>

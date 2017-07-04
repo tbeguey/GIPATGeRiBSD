@@ -1,0 +1,20 @@
+<layer>
+  <name>ddt24_n_syl_gest_s_024</name>
+  <id>LayerInfoImpl-7a7bae0a:141b772d55a:182f</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl-1b06dd87:1420efe233c:-6933</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl-7a7bae0a:141b772d55a:182e</id>
+  </resource>
+  <enabled>true</enabled>
+  <attribution>
+    <title>DDT de la Dordogne</title>
+    <href>http://www.dordogne.equipement.gouv.fr/</href>
+    <logoURL>https://www.pigma.org/portail/sites/www.pigma.org.portail/files/sites/default/files/inline-images/pigma/les_partenaires/les_signataires_de_la_convention_pigma/dordogne/DDT_dordogne.jpg</logoURL>
+    <logoWidth>178</logoWidth>
+    <logoHeight>68</logoHeight>
+    <logoType>image/jpeg</logoType>
+  </attribution>
+</layer>

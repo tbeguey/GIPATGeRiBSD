@@ -1,0 +1,65 @@
+<layerGroup>
+  <id>LayerGroupInfoImpl--3cde75bc:1570a6ed403:-7fca</id>
+  <name>gipatgeri_occupation_sol_2000</name>
+  <mode>SINGLE</mode>
+  <queryDisabled>true</queryDisabled>
+  <title>GIP ATGeRi - Occupation du sol - 2000</title>
+  <abstractTxt>Agrégation de couches sur l&apos;occupation du sol en 2000 sur l&apos;ex-Aquitaine</abstractTxt>
+  <workspace>
+    <id>WorkspaceInfoImpl-1a3b34e9:13a30459930:-7c33</id>
+  </workspace>
+  <publishables>
+    <published type="layer">
+      <id>LayerInfoImpl--bc07016:1571dfcfdde:-1483</id>
+    </published>
+    <published type="layer">
+      <id>LayerInfoImpl-319e43e6:156ea50447b:-2a2b</id>
+    </published>
+    <published type="layer">
+      <id>LayerInfoImpl--16dc553b:15659e90e46:167b</id>
+    </published>
+  </publishables>
+  <styles>
+    <style>
+      <id>StyleInfoImpl--bc07016:1571dfcfdde:-b0d</id>
+    </style>
+    <style>
+      <id>StyleInfoImpl--3cde75bc:1570a9d025f:-158e</id>
+    </style>
+    <style>
+      <id>StyleInfoImpl-4c4d58b5:1584996f1c6:358f</id>
+    </style>
+  </styles>
+  <metadataLinks>
+    <metadataLink>
+      <type>text/html</type>
+      <metadataType>TC211</metadataType>
+      <content>https://www.pigma.org/geonetwork/apps/georchestra/?uuid=8258edbc-73d9-4687-88b3-d81beb8b3f83</content>
+    </metadataLink>
+    <metadataLink>
+      <type>text/html</type>
+      <metadataType>ISO19115:2003</metadataType>
+      <content>https://www.pigma.org/geonetwork/apps/georchestra/?uuid=8258edbc-73d9-4687-88b3-d81beb8b3f83</content>
+    </metadataLink>
+    <metadataLink>
+      <type>text/xml</type>
+      <metadataType>ISO19115:2003</metadataType>
+      <content>https://www.pigma.org/geonetwork/srv/fre/xml_iso19139?uuid=8258edbc-73d9-4687-88b3-d81beb8b3f83</content>
+    </metadataLink>
+  </metadataLinks>
+  <bounds>
+    <minx>289380.3296755992</minx>
+    <maxx>586138.1861061156</maxx>
+    <miny>6180412.756795084</miny>
+    <maxy>6529338.697099874</maxy>
+    <crs class="projected">EPSG:2154</crs>
+  </bounds>
+  <attribution>
+    <title>GIP ATGeRi</title>
+    <href>http://www.gipatgeri.fr/</href>
+    <logoURL>https://www.pigma.org/image/image_gallery?img_id=122508&amp;t=1382446773800</logoURL>
+    <logoWidth>100</logoWidth>
+    <logoHeight>85</logoHeight>
+    <logoType>image/png</logoType>
+  </attribution>
+</layerGroup>

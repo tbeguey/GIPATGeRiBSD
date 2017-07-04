@@ -1,0 +1,20 @@
+<layer>
+  <name>siaep_lalinde_coll_poste</name>
+  <id>LayerInfoImpl-6213a6cc:134c6c9185c:-4e9f</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl--4b05c1c2:134c82984ff:-76ca</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl-6213a6cc:134c6c9185c:-4ea0</id>
+  </resource>
+  <enabled>true</enabled>
+  <attribution>
+    <title>SIAEP LALINDE</title>
+    <href>http://www.siaep-lalinde.com/</href>
+    <logoURL>https://www.pigma.org/portail/sites/www.pigma.org.portail/files/sites/default/files/inline-images/pigma/les_partenaires/les_signataires_de_la_convention_pigma/dordogne/siaep_lalinde.gif</logoURL>
+    <logoWidth>161</logoWidth>
+    <logoHeight>68</logoHeight>
+    <logoType>image/png</logoType>
+  </attribution>
+</layer>

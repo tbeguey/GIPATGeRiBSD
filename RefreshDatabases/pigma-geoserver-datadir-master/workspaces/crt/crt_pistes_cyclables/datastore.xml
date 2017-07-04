@@ -1,0 +1,21 @@
+<dataStore>
+  <id>DataStoreInfoImpl-2090530a:14b6f210de9:-4cdb</id>
+  <name>crt_pistes_cyclables</name>
+  <type>PostGIS (JNDI)</type>
+  <enabled>true</enabled>
+  <workspace>
+    <id>WorkspaceInfoImpl-451e5b11:13873c3f628:-5347</id>
+  </workspace>
+  <connectionParameters>
+    <entry key="schema">crt</entry>
+    <entry key="dbtype">postgis</entry>
+    <entry key="Loose bbox">true</entry>
+    <entry key="Expose primary keys">false</entry>
+    <entry key="encode functions">false</entry>
+    <entry key="preparedStatements">false</entry>
+    <entry key="jndiReferenceName">java:comp/env/jdbc/pigma</entry>
+    <entry key="Estimated extends">false</entry>
+    <entry key="namespace">http://pigma.org/crt</entry>
+  </connectionParameters>
+  <__default>false</__default>
+</dataStore>

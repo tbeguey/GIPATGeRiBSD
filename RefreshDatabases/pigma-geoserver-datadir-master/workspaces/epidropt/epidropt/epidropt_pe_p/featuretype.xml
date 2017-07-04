@@ -1,0 +1,43 @@
+<featureType>
+  <id>FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7ea8</id>
+  <name>epidropt_pe_p</name>
+  <nativeName>pe_p</nativeName>
+  <namespace>
+    <id>NamespaceInfoImpl--3d639cb2:13285edbc12:-8000</id>
+  </namespace>
+  <title>EPIDROPT - Espèce indésirable dominante Pe_p</title>
+  <abstract>Pe_p : Peuplier hybride euroaméricain</abstract>
+  <metadataLinks>
+    <metadataLink>
+      <type>text/plain</type>
+      <metadataType>TC211</metadataType>
+      <content>https://www.pigma.org/geonetwork?uuid=554de0fa-0c3b-4d06-9cb5-62d7fafa819a</content>
+    </metadataLink>
+  <metadataLink><type>text/html</type><metadataType /><content>https://www.pigma.org/geonetwork/apps/georchestra/?uuid=554de0fa-0c3b-4d06-9cb5-62d7fafa819a</content></metadataLink><metadataLink><type>text/xml</type><metadataType /><content>https://www.pigma.org/geonetwork/srv/fre/xml_iso19139?uuid=554de0fa-0c3b-4d06-9cb5-62d7fafa819a</content></metadataLink></metadataLinks>
+  <srs>EPSG:2154</srs>
+  <nativeBoundingBox>
+    <minx>454486.281</minx>
+    <maxx>531371.438</maxx>
+    <miny>6393008.5</miny>
+    <maxy>6404944.0</maxy>
+    <crs class="projected">EPSG:2154</crs>
+  </nativeBoundingBox>
+  <latLonBoundingBox>
+    <minx>-0.1</minx>
+    <maxx>0.874</maxx>
+    <miny>44.593</miny>
+    <maxy>44.723</maxy>
+    <crs>EPSG:4326</crs>
+  </latLonBoundingBox>
+  <projectionPolicy>FORCE_DECLARED</projectionPolicy>
+  <enabled>true</enabled>
+  <advertised>true</advertised>
+  <metadata>
+    <entry key="cachingEnabled">false</entry>
+  </metadata>
+  <store class="dataStore">
+    <id>DataStoreInfoImpl--3d639cb2:13285edbc12:-7fc7</id>
+  </store>
+  <maxFeatures>0</maxFeatures>
+  <numDecimals>0</numDecimals>
+</featureType>

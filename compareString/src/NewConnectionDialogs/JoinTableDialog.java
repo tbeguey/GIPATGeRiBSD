@@ -65,6 +65,7 @@ public class JoinTableDialog extends Dialog<ArrayList<Pair<String, Pair<String, 
 
 
         setResultConverter((ButtonType dialogButton) ->{
+            postGreSQL.deconnection();
             if(dialogButton == okButtonType) {
                 ArrayList<Pair<String, Pair<String, String>>> arrayList = new ArrayList<>();
 

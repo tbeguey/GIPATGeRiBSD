@@ -1,0 +1,43 @@
+<featureType>
+  <id>FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7f9a</id>
+  <name>smeag_seuils</name>
+  <nativeName>seuils</nativeName>
+  <namespace>
+    <id>NamespaceInfoImpl--3d639cb2:13285edbc12:-7fd2</id>
+  </namespace>
+  <title>SMEAG -  Seuils: type et objectif 2012</title>
+  <abstract>Seuils et barrages: architecture, protection et franchissabilité actuelle et à atteindre pour 2012 - Extrait Schéma d'Entretien des Berges - Syndicat mixte d’études et d’aménagement de la Garonne</abstract>
+  <metadataLinks>
+    <metadataLink>
+      <type>text/plain</type>
+      <metadataType>TC211</metadataType>
+      <content>https://www.pigma.org/geonetwork?uuid=971f4761-49f7-4c8d-8137-45c6c30c28c2</content>
+    </metadataLink>
+  <metadataLink><type>text/html</type><metadataType /><content>https://www.pigma.org/geonetwork/apps/georchestra/?uuid=971f4761-49f7-4c8d-8137-45c6c30c28c2</content></metadataLink><metadataLink><type>text/xml</type><metadataType /><content>https://www.pigma.org/geonetwork/srv/fre/xml_iso19139?uuid=971f4761-49f7-4c8d-8137-45c6c30c28c2</content></metadataLink></metadataLinks>
+  <srs>EPSG:2154</srs>
+  <nativeBoundingBox>
+    <minx>417183.635</minx>
+    <maxx>574113.888</maxx>
+    <miny>6180243.692</miny>
+    <maxy>6441100.032</maxy>
+    <crs class="projected">EPSG:2154</crs>
+  </nativeBoundingBox>
+  <latLonBoundingBox>
+    <minx>-0.591</minx>
+    <maxx>1.465</maxx>
+    <miny>42.666</miny>
+    <maxy>45.058</maxy>
+    <crs>EPSG:4326</crs>
+  </latLonBoundingBox>
+  <projectionPolicy>FORCE_DECLARED</projectionPolicy>
+  <enabled>true</enabled>
+  <advertised>true</advertised>
+  <metadata>
+    <entry key="cachingEnabled">false</entry>
+  </metadata>
+  <store class="dataStore">
+    <id>DataStoreInfoImpl--3d639cb2:13285edbc12:-7fb3</id>
+  </store>
+  <maxFeatures>0</maxFeatures>
+  <numDecimals>0</numDecimals>
+</featureType>

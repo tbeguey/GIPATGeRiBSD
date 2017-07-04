@@ -1,0 +1,20 @@
+<layer>
+  <name>demo_socio_eco_tx_chom5564_pr_actifs5564_2009</name>
+  <id>LayerInfoImpl--66b5f798:13ab2611fca:-5988</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl--4c48d53d:1362f567785:-55fd</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl--66b5f798:13ab2611fca:-5989</id>
+  </resource>
+  <enabled>true</enabled>
+  <attribution>
+    <title>GT PIGMA Socio-Eco</title>
+    <href>https://www.pigma.org/groupe-de-travail-pigma-socio-eco</href>
+    <logoURL>https://www.pigma.org/portail/sites/www.pigma.org.portail/files/sites/default/files/inline-images/pigma/les_partenaires/les_signataires_de_la_convention_pigma/autres/pigma.jpg</logoURL>
+    <logoWidth>74</logoWidth>
+    <logoHeight>67</logoHeight>
+    <logoType>image/jpeg</logoType>
+  </attribution>
+</layer>

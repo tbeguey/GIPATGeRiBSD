@@ -1,0 +1,12 @@
+<coverageStore>
+  <id>CoverageStoreInfoImpl--25674c34:158ce250908:4225</id>
+  <name>bd_ortho_2004_2008_tiff</name>
+  <description>bd_ortho_2004_2008_tiff</description>
+  <type>ImageMosaic</type>
+  <enabled>true</enabled>
+  <workspace>
+    <id>WorkspaceInfoImpl--4f1d3a93:131f1a753d4:-7ff8</id>
+  </workspace>
+  <__default>false</__default>
+  <url>file:///var/local/geodata/raster/ign/ortho_anciennes_2004_2008</url>
+</coverageStore>

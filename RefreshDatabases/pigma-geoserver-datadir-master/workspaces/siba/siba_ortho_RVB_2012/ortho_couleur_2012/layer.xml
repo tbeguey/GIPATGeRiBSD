@@ -1,0 +1,17 @@
+<layer>
+  <name>ortho_couleur_2012</name>
+  <id>LayerInfoImpl-3dad044:1455f931d07:-4df2</id>
+  <type>RASTER</type>
+  <defaultStyle>
+    <id>StyleInfoImpl-4e0b98bf:12475d46fdd:-7fe2</id>
+  </defaultStyle>
+  <resource class="coverage">
+    <id>CoverageInfoImpl-3dad044:1455f931d07:-4df3</id>
+  </resource>
+  <enabled>true</enabled>
+  <queryable>false</queryable>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+</layer>

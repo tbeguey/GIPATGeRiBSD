@@ -24,7 +24,7 @@ public class DisplayTitlesDialog extends Dialog {
 
     private DatabaseConnection databaseConnection;
 
-    public DisplayTitlesDialog(DatabaseConnection d){
+    public DisplayTitlesDialog(DatabaseConnection d) {
         setTitle(d.getTitle());
         DialogPane dialogPane = getDialogPane();
         dialogPane.setPrefHeight(Dialog_HEIGHT);
@@ -50,13 +50,12 @@ public class DisplayTitlesDialog extends Dialog {
 
     }
 
-    public void displayLines(){
+    public void displayLines() {
         for (StringCompared s : stringCompareds) {
             HBox hBox = new HBox();
             hBox.setSpacing(10);
             TextField textField = new TextField(s.getOriginalText());
-            //textField.setDisable(true);
-            textField.setMinWidth(Dialog_WIDTH-100);
+            textField.setMinWidth(Dialog_WIDTH - 100);
             Button button = new Button("+");
             button.setOnMouseClicked(event -> {
                 ArrayList<StringCompared> compareds = getPotentialChildren(s);
@@ -77,13 +76,13 @@ public class DisplayTitlesDialog extends Dialog {
         }
     }
 
-    public ArrayList<StringCompared> getPotentialChildren(StringCompared s){
+    public ArrayList<StringCompared> getPotentialChildren(StringCompared s) {
         ArrayList<StringCompared> compareds = new ArrayList<>();
 
         for (StringCompared compared : stringCompareds) {
-            if(!s.equals(compared)){
+            if (!s.equals(compared)) {
                 for (String string : s.getArrayList()) {
-                    if(compared.getArrayList().contains(string))
+                    if (compared.getArrayList().contains(string))
                         compareds.add(compared);
                 }
             }
@@ -91,4 +90,6 @@ public class DisplayTitlesDialog extends Dialog {
 
         return compareds;
     }
+
+    public PostGreSQL getPostGreSQL() { return postGreSQL; }
 }

@@ -1,0 +1,51 @@
+<featureType>
+  <id>FeatureTypeInfoImpl-4d526dfe:149f0c00e2c:7695</id>
+  <name>ddt47_rgc</name>
+  <nativeName>rgc</nativeName>
+  <namespace>
+    <id>NamespaceInfoImpl-1bfa188e:149eb73da18:-2816</id>
+  </namespace>
+  <title>DDT 47 - Routes à Grande Circulation</title>
+  <keywords>
+    <string>features</string>
+    <string>rgc</string>
+  </keywords>
+  <metadataLinks>
+    <metadataLink>
+      <type>text/plain</type>
+      <metadataType>TC211</metadataType>
+      <content>https://www.pigma.org/geonetwork/apps/georchestra/?uuid=6f52921f-bd23-4107-9f86-1ee278006325</content>
+    </metadataLink>
+  <metadataLink><type>text/html</type><metadataType /><content>https://www.pigma.org/geonetwork/apps/georchestra/?uuid=6f52921f-bd23-4107-9f86-1ee278006325</content></metadataLink><metadataLink><type>text/xml</type><metadataType /><content>https://www.pigma.org/geonetwork/srv/fre/xml_iso19139?uuid=6f52921f-bd23-4107-9f86-1ee278006325</content></metadataLink></metadataLinks>
+  <srs>EPSG:2154</srs>
+  <nativeBoundingBox>
+    <minx>459798.499523119</minx>
+    <maxx>545362.300676653</maxx>
+    <miny>6328053.7998826</miny>
+    <maxy>6401179.00105699</maxy>
+  </nativeBoundingBox>
+  <latLonBoundingBox>
+    <minx>-0.0310639210626988</minx>
+    <maxx>1.0706389811667545</maxx>
+    <miny>44.0104681568968</miny>
+    <maxy>44.69252444501021</maxy>
+    <crs>GEOGCS["WGS84(DD)", 
+  DATUM["WGS84", 
+    SPHEROID["WGS84", 6378137.0, 298.257223563]], 
+  PRIMEM["Greenwich", 0.0], 
+  UNIT["degree", 0.017453292519943295], 
+  AXIS["Geodetic longitude", EAST], 
+  AXIS["Geodetic latitude", NORTH]]</crs>
+  </latLonBoundingBox>
+  <projectionPolicy>FORCE_DECLARED</projectionPolicy>
+  <enabled>true</enabled>
+  <advertised>true</advertised>
+  <metadata>
+    <entry key="cachingEnabled">false</entry>
+  </metadata>
+  <store class="dataStore">
+    <id>DataStoreInfoImpl-1bfa188e:149eb73da18:-2677</id>
+  </store>
+  <maxFeatures>0</maxFeatures>
+  <numDecimals>0</numDecimals>
+</featureType>

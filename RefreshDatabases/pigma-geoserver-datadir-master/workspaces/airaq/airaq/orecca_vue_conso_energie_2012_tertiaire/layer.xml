@@ -1,0 +1,20 @@
+<layer>
+  <name>orecca_vue_conso_energie_2012_tertiaire</name>
+  <id>LayerInfoImpl--32412c87:14eb5c19f39:-604a</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl-6ee1fb3c:14507d717ef:2a5b</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl--32412c87:14eb5c19f39:-604b</id>
+  </resource>
+  <enabled>true</enabled>
+  <attribution>
+    <title>ORECCA</title>
+    <href>http://www.orecca.fr/</href>
+    <logoURL>https://www.pigma.org/portail/sites/www.pigma.org.portail/files/sites/default/files/inline-images/pigma/les_partenaires/les_signataires_de_la_convention_pigma/autres/orecca.jpg</logoURL>
+    <logoWidth>60</logoWidth>
+    <logoHeight>68</logoHeight>
+    <logoType>image/jpeg</logoType>
+  </attribution>
+</layer>

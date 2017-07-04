@@ -1,0 +1,22 @@
+<dataStore>
+  <id>DataStoreInfoImpl--b4fb97c:15375ecf7d6:68b8</id>
+  <name>gip_pqa</name>
+  <type>PostGIS (JNDI)</type>
+  <enabled>true</enabled>
+  <workspace>
+    <id>WorkspaceInfoImpl--b4fb97c:15375dfc819:3ff8</id>
+  </workspace>
+  <connectionParameters>
+    <entry key="schema">gip_pqa</entry>
+    <entry key="dbtype">postgis</entry>
+    <entry key="Loose bbox">true</entry>
+    <entry key="Expose primary keys">false</entry>
+    <entry key="encode functions">false</entry>
+    <entry key="preparedStatements">false</entry>
+    <entry key="jndiReferenceName">java:comp/env/jdbc/pigma</entry>
+    <entry key="Estimated extends">true</entry>
+    <entry key="Support on the fly geometry simplification">true</entry>
+    <entry key="namespace">http://pigma.org/gip_pqa</entry>
+  </connectionParameters>
+  <__default>false</__default>
+</dataStore>

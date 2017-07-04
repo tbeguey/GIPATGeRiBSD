@@ -1,0 +1,20 @@
+<layer>
+  <name>sysdau_ortho_hr</name>
+  <id>LayerInfoImpl--47d4887d:1379cf28dc7:-77a0</id>
+  <type>RASTER</type>
+  <defaultStyle>
+    <id>StyleInfoImpl-4e0b98bf:12475d46fdd:-7fe2</id>
+  </defaultStyle>
+  <resource class="coverage">
+    <id>CoverageInfoImpl--47d4887d:1379cf28dc7:-77a1</id>
+  </resource>
+  <enabled>true</enabled>
+  <attribution>
+    <title>CUB-SMIDDEST-SYSDAU-DDE33</title>
+    <href>http://www.sysdau.fr/</href>
+    <logoURL>https://www.pigma.org/portail/sites/www.pigma.org.portail/files/sites/default/files/inline-images/pigma/les_partenaires/les_signataires_de_la_convention_pigma/gironde/sysdau.jpg</logoURL>
+    <logoWidth>178</logoWidth>
+    <logoHeight>68</logoHeight>
+    <logoType>image/jpeg</logoType>
+  </attribution>
+</layer>

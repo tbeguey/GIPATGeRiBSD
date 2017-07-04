@@ -1,0 +1,43 @@
+<featureType>
+  <id>FeatureTypeInfoImpl--3d639cb2:13285edbc12:-7f9e</id>
+  <name>smeag_franchissabilite</name>
+  <nativeName>franchissabilite</nativeName>
+  <namespace>
+    <id>NamespaceInfoImpl--3d639cb2:13285edbc12:-7fd2</id>
+  </namespace>
+  <title>SMEAG -  Points de franchissement et objectif 2012</title>
+  <abstract>Seuils et barrages: architecture, protection et franchissabilité actuelle et à atteindre pour 2012 - Extrait Schéma d'Entretien des Berges - Syndicat mixte d’études et d’aménagement de la Garonne</abstract>
+  <metadataLinks>
+    <metadataLink>
+      <type>text/plain</type>
+      <metadataType>TC211</metadataType>
+      <content>https://www.pigma.org/geonetwork?uuid=971f4761-49f7-4c8d-8137-45c6c30c28c2</content>
+    </metadataLink>
+  <metadataLink><type>text/html</type><metadataType /><content>https://www.pigma.org/geonetwork/apps/georchestra/?uuid=971f4761-49f7-4c8d-8137-45c6c30c28c2</content></metadataLink><metadataLink><type>text/xml</type><metadataType /><content>https://www.pigma.org/geonetwork/srv/fre/xml_iso19139?uuid=971f4761-49f7-4c8d-8137-45c6c30c28c2</content></metadataLink></metadataLinks>
+  <srs>EPSG:2154</srs>
+  <nativeBoundingBox>
+    <minx>417540.532</minx>
+    <maxx>574404.023</maxx>
+    <miny>6198218.146</miny>
+    <maxy>6440778.948</maxy>
+    <crs class="projected">EPSG:2154</crs>
+  </nativeBoundingBox>
+  <latLonBoundingBox>
+    <minx>-0.586</minx>
+    <maxx>1.464</maxx>
+    <miny>42.828</miny>
+    <maxy>45.055</maxy>
+    <crs>EPSG:4326</crs>
+  </latLonBoundingBox>
+  <projectionPolicy>FORCE_DECLARED</projectionPolicy>
+  <enabled>true</enabled>
+  <advertised>true</advertised>
+  <metadata>
+    <entry key="cachingEnabled">false</entry>
+  </metadata>
+  <store class="dataStore">
+    <id>DataStoreInfoImpl--3d639cb2:13285edbc12:-7fb3</id>
+  </store>
+  <maxFeatures>0</maxFeatures>
+  <numDecimals>0</numDecimals>
+</featureType>

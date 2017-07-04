@@ -1,0 +1,24 @@
+<dataStore>
+  <id>DataStoreInfoImpl--60d2bb13:13cb4eacc01:-f8a</id>
+  <name>cdc_estuaire</name>
+  <description>Communauté de Communes de l&apos;Estuaire</description>
+  <type>PostGIS (JNDI)</type>
+  <enabled>true</enabled>
+  <workspace>
+    <id>WorkspaceInfoImpl--60d2bb13:13cb4eacc01:-fa3</id>
+  </workspace>
+  <connectionParameters>
+    <entry key="schema">cdc_estuaire</entry>
+    <entry key="dbtype">postgis</entry>
+    <entry key="Loose bbox">true</entry>
+    <entry key="Expose primary keys">false</entry>
+    <entry key="Max open prepared statements">50</entry>
+    <entry key="encode functions">false</entry>
+    <entry key="preparedStatements">false</entry>
+    <entry key="jndiReferenceName">java:comp/env/jdbc/pigma</entry>
+    <entry key="Estimated extends">false</entry>
+    <entry key="Support on the fly geometry simplification">false</entry>
+    <entry key="namespace">http://pigma.org/cdc_estuaire</entry>
+  </connectionParameters>
+  <__default>true</__default>
+</dataStore>

@@ -1,0 +1,19 @@
+<layer>
+  <name>cg40_perimetre_zsc</name>
+  <id>LayerInfoImpl--39f1150e:152697fae62:42e0</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl--39f1150e:152697fae62:506b</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl--39f1150e:152697fae62:42df</id>
+  </resource>
+  <attribution>
+    <title>CG 40</title>
+    <href>http://www.landes.org/</href>
+    <logoURL>https://www.pigma.org/portail/sites/www.pigma.org.portail/files/sites/default/files/inline-images/pigma/les_partenaires/les_signataires_de_la_convention_pigma/landes/cd40.jpg</logoURL>
+    <logoWidth>178</logoWidth>
+    <logoHeight>68</logoHeight>
+    <logoType>image/jpeg</logoType>
+  </attribution>
+</layer>

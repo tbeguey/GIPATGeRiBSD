@@ -1,0 +1,20 @@
+<layer>
+  <name>bxm_pistes_cyclables_atelier</name>
+  <id>LayerInfoImpl-34ef02ac:14b7323a6fc:225b</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl-520a4c6c:14c94865d48:-4cca</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl-34ef02ac:14b7323a6fc:225a</id>
+  </resource>
+  <enabled>true</enabled>
+  <attribution>
+    <title>Bordeaux Métropole</title>
+    <href>http://www.bordeaux-metropole.fr/</href>
+    <logoURL>https://www.pigma.org/portail/sites/www.pigma.org.portail/files/sites/default/files/inline-images/pigma/les_partenaires/les_signataires_de_la_convention_pigma/gironde/BMX.jpg</logoURL>
+    <logoWidth>178</logoWidth>
+    <logoHeight>68</logoHeight>
+    <logoType>image/jpeg</logoType>
+  </attribution>
+</layer>

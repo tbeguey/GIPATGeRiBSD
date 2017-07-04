@@ -1,0 +1,20 @@
+<wmsStore>
+  <id>WMSStoreInfoImpl-5e5986a7:1465d61d888:-47a9</id>
+  <name>gipatgeri-gcis-public</name>
+  <description>Serveur GCIS public du GIP ATGeRi</description>
+  <type>WMS</type>
+  <enabled>false</enabled>
+  <workspace>
+    <id>WorkspaceInfoImpl-5e5986a7:1465d61d888:-4838</id>
+  </workspace>
+  <metadata>
+    <entry key="useConnectionPooling">true</entry>
+  </metadata>
+  <__default>false</__default>
+  <capabilitiesURL>http://gcis.cartogip.fr:8080/gipatgeri-gcis/wms</capabilitiesURL>
+  <user>fvanderbiest</user>
+  <password>25c02ab1</password>
+  <maxConnections>6</maxConnections>
+  <readTimeout>60</readTimeout>
+  <connectTimeout>30</connectTimeout>
+</wmsStore>

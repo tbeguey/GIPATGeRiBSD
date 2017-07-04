@@ -1,0 +1,20 @@
+<layer>
+  <name>pnrlg_vues_remarquables</name>
+  <id>LayerInfoImpl--15d29641:1526500bb61:-3091</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl--15d29641:1526500bb61:-2f6b</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl--15d29641:1526500bb61:-3092</id>
+  </resource>
+  <enabled>true</enabled>
+  <attribution>
+    <title>PNRLG</title>
+    <href>http://www.parc-landes-de-gascogne.fr/</href>
+    <logoURL>https://www.pigma.org/portail/sites/www.pigma.org.portail/files/sites/default/files/inline-images/pigma/les_partenaires/les_signataires_de_la_convention_pigma/aquitaine/PNRLG.png</logoURL>
+    <logoWidth>186</logoWidth>
+    <logoHeight>68</logoHeight>
+    <logoType>image/png</logoType>
+  </attribution>
+</layer>

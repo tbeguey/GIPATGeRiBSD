@@ -1,0 +1,20 @@
+<layer>
+  <name>sdis64_paicultureetloisirs64</name>
+  <id>LayerInfoImpl--35c6cd01:13f56a2de6d:-36b6</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl-66c2438:1379db69c9e:-779e</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl--35c6cd01:13f56a2de6d:-36b7</id>
+  </resource>
+  <enabled>true</enabled>
+  <attribution>
+    <title>SDIS des Pyrénées-Atlantiques</title>
+    <href>http://www.sdis64.fr/</href>
+    <logoURL>https://www.pigma.org/portail/sites/www.pigma.org.portail/files/sites/default/files/inline-images/pigma/les_partenaires/les_signataires_de_la_convention_pigma/pyrenees_atlantiques/sdis_64.jpg</logoURL>
+    <logoWidth>180</logoWidth>
+    <logoHeight>68</logoHeight>
+    <logoType>image/jpeg</logoType>
+  </attribution>
+</layer>
