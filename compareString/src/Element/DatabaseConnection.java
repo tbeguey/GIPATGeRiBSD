@@ -10,6 +10,8 @@ public class DatabaseConnection {
     private ArrayList<String> columns;
     private ArrayList<Pair<String, Pair<String, String>>> joins;
 
+    private String query;
+
     public DatabaseConnection(String t, String i, String p, String u, String pass){
         title = t;
         ip = i;
@@ -31,20 +33,24 @@ public class DatabaseConnection {
         joins = j;
     }
 
-    public String createSelectQuery(){
-        String query = "SELECT ";
-        boolean first = true;
-        for (String column : columns) {
-            if(!first)
+    public void createSelectQuery(){
+        query = "SELECT ";
+
+        for (int i=0; i< columns.size(); i++) {
+            if(i !=0)
                 query += ", ";
 
-            query += column;
-            first = false;
+            if(i == 1)
+                query += table + ".";
+
+            query += columns.get(i);
         }
+
         query += " FROM ";
         query += schema;
         query += ".";
         query += table;
+
 
         if(joins != null){
             for (Pair<String, Pair<String, String>> p : joins) {
@@ -53,8 +59,16 @@ public class DatabaseConnection {
         }
 
         System.out.println(query);
+    }
 
-        return query;
+    public void exceptCommunsQuery(){
+        String tmp = query;
+        query += " EXCEPT ";
+        query += tmp;
+        query += " JOIN communs.correspondance on " + table + "." + columns.get(1) + " = " + "id" + schema;
+
+        System.out.println(query);
+
     }
 
     public String getTitle() {
@@ -117,4 +131,6 @@ public class DatabaseConnection {
     public ArrayList<Pair<String, Pair<String, String>>> getJoins() {
         return joins;
     }
+
+    public String getQuery() { return query; }
 }

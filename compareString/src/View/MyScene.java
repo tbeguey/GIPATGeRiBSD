@@ -318,7 +318,7 @@ public class MyScene extends Scene {
 
             PostGreSQL postGreSQL = new PostGreSQL((DatabaseConnection) comboBoxSearch.getValue());
 
-            ArrayList<StringCompared> compareds = postGreSQL.getTitleByTableName();
+            ArrayList<StringCompared> compareds = postGreSQL.getTitleByTableName(false);
 
             ArrayList<StringCompared> results = stringCompared.levenshteinDistanceCW(compareds);
 
@@ -385,7 +385,7 @@ public class MyScene extends Scene {
             for (DatabaseConnection db : databaseConnections) {
                 if (text.isEmpty()) {
                     PostGreSQL postGreSQL = new PostGreSQL(db);
-                    ArrayList<StringCompared> compareds = postGreSQL.getTitleByTableName();
+                    ArrayList<StringCompared> compareds = postGreSQL.getTitleByTableName(false);
                     for (StringCompared compared :
                             compareds) {
                         if (uuidField.getText().equals(compared.getUuid())) {
@@ -542,10 +542,10 @@ public class MyScene extends Scene {
         ArrayList<StringCompared> secondArrayList;
 
         PostGreSQL postGreSQLSource = new PostGreSQL((DatabaseConnection) comboBoxSource.getValue());
-        firstArrayList = postGreSQLSource.getTitleByTableName();
+        firstArrayList = postGreSQLSource.getTitleByTableName(true);
 
         PostGreSQL postGreSQLDestination = new PostGreSQL((DatabaseConnection) comboBoxDestination.getValue());
-        secondArrayList = postGreSQLDestination.getTitleByTableName();
+        secondArrayList = postGreSQLDestination.getTitleByTableName(false);
 
 
         ArrayList<StringCompared> finalFirstArrayList = firstArrayList;

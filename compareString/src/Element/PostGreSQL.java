@@ -72,10 +72,15 @@ public class PostGreSQL {
      * Récupere les titres, id, etc... d'une table
      * @return
      */
-    public ArrayList<StringCompared> getTitleByTableName(){
+    public ArrayList<StringCompared> getTitleByTableName(boolean except){
         ArrayList<StringCompared> compareds = new ArrayList<>();
         try {
-            PreparedStatement pst = c.prepareStatement(db.createSelectQuery());
+            db.createSelectQuery();
+
+            if(except)
+                db.exceptCommunsQuery();
+
+            PreparedStatement pst = c.prepareStatement(db.getQuery());
             ResultSet rs = pst.executeQuery();
             while (rs.next()){
                 String title = rs.getString(1);
@@ -84,8 +89,8 @@ public class PostGreSQL {
 
                 switch (db.getTitle()){
                     case "Geonetwork":
-                        String harvested = rs.getString(3);
-                        workspace = rs.getString(4);
+                        workspace = rs.getString(3);
+                        String harvested = rs.getString(4);
                         if (harvested.equals("n"))
                             title = workspace + " - " + title;
                         break;

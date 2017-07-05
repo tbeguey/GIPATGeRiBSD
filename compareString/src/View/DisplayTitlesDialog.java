@@ -3,6 +3,7 @@ package View;
 import Element.DatabaseConnection;
 import Element.PostGreSQL;
 import Element.StringCompared;
+import Utils.Utils;
 import javafx.scene.control.*;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
@@ -45,7 +46,7 @@ public class DisplayTitlesDialog extends Dialog {
 
         databaseConnection = d;
         postGreSQL = new PostGreSQL(databaseConnection);
-        stringCompareds = postGreSQL.getTitleByTableName();
+        stringCompareds = postGreSQL.getTitleByTableName(false);
         Collections.sort(stringCompareds, Comparator.comparing(StringCompared::getOriginalText));
 
     }
@@ -80,14 +81,26 @@ public class DisplayTitlesDialog extends Dialog {
         ArrayList<StringCompared> compareds = new ArrayList<>();
 
         for (StringCompared compared : stringCompareds) {
-            if (!s.equals(compared)) {
-                for (String string : s.getArrayList()) {
-                    if (compared.getArrayList().contains(string))
-                        compareds.add(compared);
-                }
+            if(!compared.equals(s)){
+                int common = compared.removeCommonWords(s);
+                compared.setCommonwords(common);
+                double leven = Utils.leven(s.getTextWithoutCommon(), compared.getTextWithoutCommon());
+                compared.setLeven(leven);
+
+                if(common !=0 && leven !=0)
+                    compareds.add(compared);
             }
         }
 
+        Collections.sort(compareds, new Comparator<StringCompared>() {
+            @Override
+            public int compare(StringCompared o1, StringCompared o2) {
+                int res = (int) (o2.getCommonwords() - o1.getCommonwords());
+                if(res == 0)
+                    res = (int) (o1.getLeven() - o2.getLeven());
+                return res;
+            }
+        });
         return compareds;
     }
 

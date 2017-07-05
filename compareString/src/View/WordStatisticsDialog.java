@@ -26,7 +26,7 @@ public class WordStatisticsDialog extends Dialog{
         ArrayList<Double> comparative = new ArrayList<>();
 
         PostGreSQL postGreSQL = new PostGreSQL(databaseConnection);
-        ArrayList<StringCompared> titles = postGreSQL.getTitleByTableName();
+        ArrayList<StringCompared> titles = postGreSQL.getTitleByTableName(false);
 
         for (StringCompared compared : titles) {
             for (String word : compared.getArrayList()) {

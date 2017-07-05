@@ -363,6 +363,18 @@ public class StringCompared {
         arrayList.remove("_");
         arrayList.remove(".");
         arrayList.remove("/");
+        arrayList.remove("?");
+        arrayList.remove("!");
+        arrayList.remove("'");
+        arrayList.remove("\"");
+        arrayList.remove("...");
+        arrayList.remove(".");
+        arrayList.remove(")");
+        arrayList.remove("(");
+        arrayList.remove("...)");
+        arrayList.remove(" ");
+        arrayList.remove("&");
+        arrayList.remove("");
     }
 
     /**
@@ -496,8 +508,7 @@ public class StringCompared {
         ArrayList<StringCompared> arrayListToCompare;
         if(!organization.isEmpty()){
             ArrayList<StringCompared> sameOrga = new ArrayList<>();
-            for (StringCompared compared :
-                    comparedArrayList) {
+            for (StringCompared compared : comparedArrayList) {
                 if (organization.equals(compared.getOrganization())) {
                     sameOrga.add(compared);
                 }
@@ -742,7 +753,7 @@ public class StringCompared {
 
     String getText() { return text; }
 
-    String getTextWithoutCommon() { return textWithoutCommon; }
+    public String getTextWithoutCommon() { return textWithoutCommon; }
 
     public String getUuid() {
         if(uuid != null)
@@ -760,4 +771,8 @@ public class StringCompared {
     public float getCommonwords() { return commonwords; }
 
     void setTextWithoutCommon(String t) { textWithoutCommon = t; }
+
+    public void setLeven(double l) { leven = l; }
+
+    public void setCommonwords(float c) { commonwords = c;}
 }
