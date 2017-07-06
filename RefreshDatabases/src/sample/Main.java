@@ -2,13 +2,17 @@ package sample;
 
 import javafx.application.Application;
 import javafx.scene.Scene;
+import javafx.stage.DirectoryChooser;
 import javafx.stage.Stage;
+
+import java.io.File;
 
 
 public class Main extends Application {
 
     public static final int WIDTH = 300;
     public static final int HEIGHT = 200;
+
 
     @Override
     public void start(Stage primaryStage) throws Exception{
@@ -21,8 +25,8 @@ public class Main extends Application {
         Scene scene = new MyScene();
         stage.setScene(scene);
         stage.show();
-    }
 
+    }
 
     public static void main(String[] args) {
         launch(args);

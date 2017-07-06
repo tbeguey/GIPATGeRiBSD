@@ -5,19 +5,15 @@ import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.scene.Group;
 import javafx.scene.Scene;
-import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.ButtonType;
 import javafx.scene.layout.VBox;
 import javafx.stage.DirectoryChooser;
-import javafx.stage.Stage;
 
 import java.io.File;
 import java.util.Optional;
 
 public class MyScene extends Scene{
-
-    private Stage stage;
 
     public MyScene() {
         super(new Group(), Main.WIDTH, Main.HEIGHT);
@@ -86,20 +82,17 @@ public class MyScene extends Scene{
         Button buttonGeoserver = new Button("Geoserver");
         buttonGeoserver.setPrefWidth(100);
         buttonGeoserver.setOnMouseClicked(event -> {
-            WarningDialog warningDialog = new WarningDialog("Geoserver", "Veuillez placer le répertoire de parcours dans le dossier du projet et," +
-                    "si ce n'est pas le cas de le renommer commme suivant : 'pigma-geoserver-datadir-master'. ");
-            Optional<ButtonType> result = warningDialog.showAndWait();
-
-            if(result.get() == ButtonType.OK) {
+            DirectoryChooser directoryChooser = new DirectoryChooser();
+            directoryChooser.setTitle("Dossier Geoserver");
+            File root = directoryChooser.showDialog(null);
 
                 Task task = new Task<Void>() {
                     @Override
                     protected Void call() throws Exception {
+
                         PostgreSQL postGreSQL = new PostgreSQL(); // On créer un objet de type PostGreSQL (classe que j'ai créer)
                         postGreSQL.connection("172.30.100.12:5432/bsd", "admpostgres", "admpostgres");
                         postGreSQL.createTableGeoserver("geoserver.geoserver_xml_init"); // On la recrée si elle existe pas
-
-                        File root = new File("pigma-geoserver-datadir-master");
 
                         Utils.listeRepertoire(root, postGreSQL); // On parcourt les fichiers
 
@@ -120,7 +113,6 @@ public class MyScene extends Scene{
                     WarningDialog finishDialog = new WarningDialog("Geoserver");
                     finishDialog.showAndWait();
                 });
-            }
         });
 
         Button buttonCartogip = new Button("Cartogip");
