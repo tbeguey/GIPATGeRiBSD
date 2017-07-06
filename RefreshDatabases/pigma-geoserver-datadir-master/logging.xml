@@ -1,5 +1,0 @@
-<logging>
-  <level>PRODUCTION_LOGGING.properties</level>
-  <location>/dev/null</location>
-  <stdOutLogging>true</stdOutLogging>
-</logging>
