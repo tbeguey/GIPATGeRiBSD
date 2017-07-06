@@ -306,6 +306,7 @@ public class PostgreSQL {
                 String id = rs.getString(1);
                 Line l = new Line(id, null,null,null,null,null, null);
                 linesFinal.add(l);
+                System.out.println(id + " récupérée (Final)");
             }
         } catch (SQLException e) {
             e.printStackTrace();
@@ -335,7 +336,7 @@ public class PostgreSQL {
                 } catch (SQLException e) {
                     e.printStackTrace();
                 }
-                System.out.println("Donnée supprimée");
+                System.out.println("Donnée supprimée : " + lineFinal.getIdCouche());
             }
         }
     }
@@ -355,6 +356,7 @@ public class PostgreSQL {
             } catch (SQLException e) {
                 e.printStackTrace();
             }
+            System.out.println("Donnée modifiée/insérée : " + l.getIdCouche());
         }
     }
 
@@ -385,6 +387,7 @@ public class PostgreSQL {
                 String schema = rs.getString(3);
                 Line l = new Line(id, title, schema);
                 linesInit.add(l);
+                System.out.println(id + " récupérée (Init)");
             }
         } catch (SQLException e) {
             e.printStackTrace();
@@ -401,6 +404,7 @@ public class PostgreSQL {
                 String title = rs.getString(2);
                 Line l = new Line(id, title, null);
                 linesFinal.add(l);
+                System.out.println(id + " récupérée (Final)");
             }
         } catch (SQLException e) {
             e.printStackTrace();
@@ -430,7 +434,7 @@ public class PostgreSQL {
                 } catch (SQLException e) {
                     e.printStackTrace();
                 }
-                System.out.println("Donnée supprimée");
+                System.out.println("Donnée supprimée : " + lineFinal.getId());
             }
         }
     }
@@ -450,6 +454,7 @@ public class PostgreSQL {
             } catch (SQLException e) {
                 e.printStackTrace();
             }
+            System.out.println("Donnée modifiée/insérée : " + l.getId());
         }
     }
 
@@ -463,6 +468,7 @@ public class PostgreSQL {
                 String title = rs.getString(2);
                 Line l = new Line(id, title);
                 linesInit.add(l);
+                System.out.println(id + " récupérée (Init)");
             }
         } catch (SQLException e) {
             e.printStackTrace();
@@ -479,6 +485,7 @@ public class PostgreSQL {
                 String title = rs.getString(2);
                 Line l = new Line(id, title);
                 linesFinal.add(l);
+                System.out.println(id + " récupérée (Final)");
             }
         } catch (SQLException e) {
             e.printStackTrace();
@@ -508,7 +515,7 @@ public class PostgreSQL {
                 } catch (SQLException e) {
                     e.printStackTrace();
                 }
-                System.out.println("Donnée supprimée");
+                System.out.println("Donnée supprimée : " + lineFinal.getId());
             }
         }
     }
@@ -528,6 +535,7 @@ public class PostgreSQL {
             } catch (SQLException e) {
                 e.printStackTrace();
             }
+            System.out.println("Donnée modifiée/insérée : " + l.getId());
         }
     }
 }

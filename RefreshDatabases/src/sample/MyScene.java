@@ -88,7 +88,7 @@ public class MyScene extends Scene{
         Button buttonGeoserver = new Button("Geoserver");
         buttonGeoserver.setPrefWidth(100);
         buttonGeoserver.setOnMouseClicked(event -> {
-            WarningDialog warningDialog = new WarningDialog("BSD", "Veuillez placer le répertoire de parcours dans le dossier du projet et," +
+            WarningDialog warningDialog = new WarningDialog("Geoserver", "Veuillez placer le répertoire de parcours dans le dossier du projet et," +
                     "si ce n'est pas le cas de le renommer commme suivant : 'pigma-geoserver-datadir-master'. ");
             Optional<ButtonType> result = warningDialog.showAndWait();
 
