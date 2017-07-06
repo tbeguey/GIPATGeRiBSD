@@ -11,4 +11,10 @@ public class WarningDialog extends Alert {
         setHeaderText("Attention !");
         setContentText(content);
     }
+
+    public WarningDialog(String title){
+        super(Alert.AlertType.INFORMATION);
+        setTitle(title);
+        setHeaderText("Rafraichissement terminée");
+    }
 }

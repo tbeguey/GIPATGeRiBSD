@@ -23,6 +23,11 @@ public class PostgreSQL {
 
     private ArrayList<Line> linesInit, linesFinal;
 
+    public PostgreSQL() {
+        linesInit = new ArrayList<>();
+        linesFinal = new ArrayList<>();
+    }
+
 
     public void connection(String urlDB, String user, String password){
         try {
@@ -118,6 +123,8 @@ public class PostgreSQL {
 
                 Line line = new Line(uuid, title, dataString, harvested, source);
                 linesInit.add(line);
+
+                System.out.println(uuid + " récupérée (Init)");
             }
         } catch (SQLException e) {
             e.printStackTrace();
@@ -139,6 +146,7 @@ public class PostgreSQL {
             } catch (SQLException e) {
                 e.printStackTrace();
             }
+            System.out.println(l.getUuid() + " insérée/modifiée");
         }
     }
 
@@ -151,6 +159,7 @@ public class PostgreSQL {
                 String id = rs.getString(1);
                 Line l = new Line(id, null, null, null, null);
                 linesFinal.add(l);
+                System.out.println(id + " récupérée (Final)");
             }
         } catch (SQLException e) {
             e.printStackTrace();
@@ -180,7 +189,7 @@ public class PostgreSQL {
                 } catch (SQLException e) {
                     e.printStackTrace();
                 }
-                System.out.println("Donnée supprimée");
+                System.out.println("Donnée supprimée : " + lineFinal.getUuid());
             }
         }
     }
@@ -536,6 +545,15 @@ public class PostgreSQL {
                 e.printStackTrace();
             }
             System.out.println("Donnée modifiée/insérée : " + l.getId());
+        }
+    }
+
+    public void deleteCorrespondanceEmpty(){
+        String sql = "DELETE FROM communs.correspondance where idgeonetwork = null AND idgeoserver = null AND idcartogip = null AND idbsd = null;";
+        try {
+            stmt.executeUpdate(sql);
+        } catch (SQLException e) {
+            e.printStackTrace();
         }
     }
 }

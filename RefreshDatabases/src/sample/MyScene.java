@@ -77,10 +77,8 @@ public class MyScene extends Scene{
                 };
                 new Thread(task).start();
                 task.setOnSucceeded(event1 -> {
-                    Alert alert = new Alert(Alert.AlertType.INFORMATION);
-                    alert.setTitle("Geonetwork");
-                    alert.setHeaderText("Rafraichissement terminée");
-                    alert.showAndWait();
+                    WarningDialog finishDialog = new WarningDialog("Geonetwork");
+                    finishDialog.showAndWait();
                 });
             }
         });
@@ -119,10 +117,8 @@ public class MyScene extends Scene{
                 };
                 new Thread(task).start();
                 task.setOnSucceeded(event1 -> {
-                    Alert alert = new Alert(Alert.AlertType.INFORMATION);
-                    alert.setTitle("Geoserver");
-                    alert.setHeaderText("Rafraichissement terminée");
-                    alert.showAndWait();
+                    WarningDialog finishDialog = new WarningDialog("Geoserver");
+                    finishDialog.showAndWait();
                 });
             }
         });
@@ -152,10 +148,8 @@ public class MyScene extends Scene{
                 };
                 new Thread(task).start();
                 task.setOnSucceeded(event1 -> {
-                    Alert alert = new Alert(Alert.AlertType.INFORMATION);
-                    alert.setTitle("Cartogip");
-                    alert.setHeaderText("Rafraichissement terminée");
-                    alert.showAndWait();
+                    WarningDialog finishDialog = new WarningDialog("Cartogip");
+                    finishDialog.showAndWait();
                 });
             }
         });
@@ -185,10 +179,8 @@ public class MyScene extends Scene{
                 };
                 new Thread(task).start();
                 task.setOnSucceeded(event1 -> {
-                    Alert alert = new Alert(Alert.AlertType.INFORMATION);
-                    alert.setTitle("BSD");
-                    alert.setHeaderText("Rafraichissement terminée");
-                    alert.showAndWait();
+                    WarningDialog finishDialog = new WarningDialog("BSD");
+                    finishDialog.showAndWait();
                 });
             }
         });
