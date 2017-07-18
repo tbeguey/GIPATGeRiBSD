@@ -1,5 +1,7 @@
 package Utils;
 
+import java.io.File;
+
 public class Utils {
 
     /**
@@ -122,4 +124,38 @@ public class Utils {
 
         return res;
     }
+
+    public static String SQLFormat(String value){
+        String res = value;
+
+        res = res.replace(" ", "_");
+        res = res.replace("'", "");
+        res = res.replace("?", "");
+        res = res.replace(":", "");
+        res = res.replace("(", "_");
+        res = res.replace(")", "");
+        res = res.replace("-", "");
+
+        res = res.replace("__", "_");
+
+        return res;
+    }
+
+    public static String getFileExtension(File file) {
+        String name = file.getName();
+        try {
+            return name.substring(name.lastIndexOf(".") + 1);
+        } catch (Exception e) {
+            return "";
+        }
+    }
+
+    public static String exposantToSiret(String siret){
+        if(siret.contains("+E")){
+
+        }
+        return siret;
+    }
+
+
 }

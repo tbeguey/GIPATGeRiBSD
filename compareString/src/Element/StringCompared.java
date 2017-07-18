@@ -1,6 +1,6 @@
 package Element;
 
-import Utils.Utils;
+import Utils.*;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -19,6 +19,7 @@ public class StringCompared {
 
     private double leven, jaro;
     private float commonwords;
+    private int sirets;
 
     private static Map<String, ArrayList<String>> same = new HashMap<>();
     private static ArrayList<String> useless = new ArrayList<>();
@@ -261,54 +262,21 @@ public class StringCompared {
         arrayListPGB.add("Pays du Grand Bergeracois");
         same.put("PGB", arrayListPGB);
 
-        useless.add("mais");
-        useless.add("ou");
-        useless.add("et");
-        useless.add("donc");
-        useless.add("or");
-        useless.add("ni");
-        useless.add("car");
-        useless.add("si");
-        useless.add("qu");
-        useless.add("que");
-        useless.add("un");
-        useless.add("de");
-        useless.add("du");
-        useless.add("des");
-        useless.add("les");
-        useless.add("la");
-        useless.add("le");
-        useless.add("mes");
-        useless.add("tes");
-        useless.add("ses");
-        useless.add("ces");
-        useless.add("nos");
-        useless.add("vos");
-        useless.add("leur");
-        useless.add("leurs");
-        useless.add("je");
-        useless.add("tu");
-        useless.add("il");
-        useless.add("elle");
-        useless.add("on");
-        useless.add("nous");
-        useless.add("vous");
-        useless.add("ils");
-        useless.add("elles");
-        useless.add("par");
-        useless.add("dans");
-        useless.add("en");
-        useless.add("au");
+        useless = CSVUtils.readUseless();
     }
 
     /**
      * Initialisation
      * @param t
      */
-    public StringCompared(String t, String u){
+    public StringCompared(String t, String u, String o){
         originalText = t; // on stock le texte orignale
         uuid = u; // on stock l'id
-        organization = "";
+        organization = o;
+
+        if(organization != null)
+            originalText = organization + " - " + originalText;
+
         text = originalText;
 
         arrayList = new ArrayList<>();
@@ -323,6 +291,7 @@ public class StringCompared {
             }
         }
 
+        text = text.replace("'", " ");
         String[] array = text.split(" "); // on sépare la phrase en plusieurs mots
 
         for (String word : array) {
@@ -336,24 +305,26 @@ public class StringCompared {
             }
 
             if(!arrayList.contains(s.toLowerCase())){
-                if(!useless.contains(s.toLowerCase())){ // si ca taille est supérieur a trois
+                if(!useless.contains(s.toLowerCase()) && s.toLowerCase().length() > 1){ // si il ne fait pas parti des useless et que sa taille est d'au moins 2 caractères
                     arrayList.add(Utils.withOutAccents(s.toLowerCase())); // on ajoute le mot en minuscule
                 }
             }
         }
 
+        if(organization == null){
+            // On cherche le nom de l'organisme
+            int index = 0;
+            for (int i = 0; i < arrayList.size(); i++) {
+                if(arrayList.get(i).equals("-"))
+                    index = i;
+            }
+            for (int i = 0; i < index; i++) {
+                organization += arrayList.get(i);
+                if(i + 1 < index)
+                    organization += " ";
+            }
+        }
 
-        // On cherche le nom de l'organisme
-        int index = 0;
-        for (int i = 0; i < arrayList.size(); i++) {
-            if(arrayList.get(i).equals("-"))
-                index = i;
-        }
-        for (int i = 0; i < index; i++) {
-            organization += arrayList.get(i);
-            if(i + 1 < index)
-                organization += " ";
-        }
 
         // On enleve les caractères inutiles
         arrayList.remove("-");
@@ -601,7 +572,6 @@ public class StringCompared {
 
         for (StringCompared stringCompared : arrayListToCompare) {
             levenshtein = Utils.leven(text, stringCompared.getText());
-            System.out.println(levenshtein);
             if(levenshtein == originalText.length() || levenshtein == stringCompared.getOriginalText().length())
                 levenshtein = 123456;
 
@@ -742,6 +712,23 @@ public class StringCompared {
         return bestResults;
     }
 
+    public ArrayList<StringCompared> siret(ArrayList<StringCompared> comparedArrayList){
+        ArrayList<StringCompared> results = new ArrayList<>();
+        sirets = 0;
+
+        for (StringCompared compared : comparedArrayList) {
+            if(compared.getOrganization().equals(organization))
+                results.add(compared);
+        }
+
+        sirets = results.size();
+
+        if(results.size() == 0)
+            return null;
+
+        return results;
+    }
+
     @Override
     public String toString() {
         return originalText;
@@ -766,8 +753,6 @@ public class StringCompared {
 
     public double getLeven() { return leven; }
 
-    public double getJaro() { return jaro; }
-
     public float getCommonwords() { return commonwords; }
 
     void setTextWithoutCommon(String t) { textWithoutCommon = t; }
@@ -775,4 +760,10 @@ public class StringCompared {
     public void setLeven(double l) { leven = l; }
 
     public void setCommonwords(float c) { commonwords = c;}
+
+    public int getSirets() { return sirets; }
+
+    public static ArrayList<String> getUseless() { return useless; }
+
+    public static Map<String, ArrayList<String>> getSame() { return same; }
 }

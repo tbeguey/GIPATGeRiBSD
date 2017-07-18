@@ -46,5 +46,6 @@ public class SchemaDialog extends Dialog<String>{
             }
             else
                 return null;
-        });    }
+        });
+    }
 }

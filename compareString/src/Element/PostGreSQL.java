@@ -1,7 +1,12 @@
 package Element;
 
+import NewConnectionDialogs.ColumnsDialog;
+import View.SkipDialog;
+
 import java.sql.*;
 import java.util.ArrayList;
+import java.util.List;
+import java.util.Optional;
 
 
 /**
@@ -75,44 +80,45 @@ public class PostGreSQL {
     public ArrayList<StringCompared> getTitleByTableName(boolean except){
         ArrayList<StringCompared> compareds = new ArrayList<>();
         try {
+            ColumnsDialog columnsDialog = new ColumnsDialog(db);
+            Optional<ArrayList<String>> resultColumns = columnsDialog.showAndWait();
+            resultColumns.ifPresent(db::setColumns);
             db.createSelectQuery();
 
-            if(except)
-                db.exceptCommunsQuery();
+            if(except){
+                Optional<Boolean> result = new SkipDialog().showAndWait();
+                result.ifPresent(res -> {
+                    if(res)
+                        db.exceptCommunsQuery();
+                });
+            }
 
             PreparedStatement pst = c.prepareStatement(db.getQuery());
             ResultSet rs = pst.executeQuery();
             while (rs.next()){
-                String title = rs.getString(1);
-                String id = rs.getString(2);
-                String workspace;
 
-                switch (db.getTitle()){
+                String id = rs.getString(1);
+                String strong_word = rs.getString(2);
+                String title = rs.getString(3);
+
+                /*String harvested = rs.getString(4);
+
+                switch (db.getTitle()){ // pas top
                     case "Geonetwork":
-                        workspace = rs.getString(3);
-                        String harvested = rs.getString(4);
                         if (harvested.equals("n"))
-                            title = workspace + " - " + title;
+                            title = null;
                         break;
                     case "Cartogip":
-                        workspace = rs.getString(3);
                         if(workspace != null){
                             if(workspace.equals("foretdata") || workspace.equals("geotracking") || workspace.equals("dynamic_bois") || workspace.startsWith("ap_"))
                                 title = null;
-                            else
-                                title = workspace + " - " + title;
                         }
                         break;
-                    case "BSD":
-                        workspace = rs.getString(3);
-                        if(workspace != null)
-                            title = workspace + " - " + title;
-                        break;
-                }
+                }*/
 
 
                 if(title != null){
-                    StringCompared stringCompared = new StringCompared(title, id);
+                    StringCompared stringCompared = new StringCompared(title, id, strong_word);
                     compareds.add(stringCompared);
                 }
             }
@@ -124,8 +130,8 @@ public class PostGreSQL {
     }
 
 
-    private boolean rowExists( String columnName, String id){
-        String query = "select exists(select 1 from correspondance where " + columnName + " = '" + id + "');";
+    private boolean rowExists(String columnName, String id){
+        String query = "select exists(select 1 from " + db.getSchema() + "." + db.getTable() + " where " + columnName + " = '" + id + "');";
         try {
             PreparedStatement pst = c.prepareStatement(query);
             ResultSet rs = pst.executeQuery();
@@ -156,12 +162,12 @@ public class PostGreSQL {
                 exists = rowExists(columnNameDestination, destinationId);
 
                 if (!exists)
-                    sql = "INSERT INTO correspondance (" + columnNameSource + ", " + columnNameDestination + ", date_derniere_modification) VALUES('" + sourceId + "', '" + destinationId + "', current_date);"; //insert
+                    sql = "INSERT INTO " + db.getTable() + " (" + columnNameSource + ", " + columnNameDestination + ", date_derniere_modification) VALUES('" + sourceId + "', '" + destinationId + "', current_date);"; //insert
                 else
-                    sql = "UPDATE correspondance SET " + columnNameSource + " = '" + sourceId + "' and date_derniere_modification = current_date where " + columnNameDestination + " = '" + destinationId + "';"; // update selon la destination
+                    sql = "UPDATE " + db.getTable() + " SET " + columnNameSource + " = '" + sourceId + "', date_derniere_modification = current_date where " + columnNameDestination + " = '" + destinationId + "';"; // update selon la destination
             }
             else
-                sql = "UPDATE correspondance SET " + columnNameDestination + " = '" + destinationId + "' and date_derniere_modification = current_date where " + columnNameSource + " = '" + sourceId + "';"; // update selon la source
+                sql = "UPDATE " + db.getTable() + " SET " + columnNameDestination + " = '" + destinationId + "', date_derniere_modification = current_date where " + columnNameSource + " = '" + sourceId + "';"; // update selon la source
 
 
             try {
@@ -242,20 +248,20 @@ public class PostGreSQL {
     }
 
     public void addParent(StringCompared parent, StringCompared child, String titleDatabase){
-        String sql = "UPDATE " + db.getTable() + " SET idparent = '" + child.getUuid() + "' WHERE ";
-            switch (titleDatabase){
-                case "Geoserver":
-                    sql += "idcouche";
-                    break;
-                case "Geonetwork":
-                    sql += "uuid";
-                    break;
-                default:
-                    sql += "id";
-                    break;
-            }
+        String sql = "UPDATE " + db.getTable() + " SET idparent = '" + parent.getUuid() + "' WHERE ";
+        switch (titleDatabase){
+            case "Geoserver":
+                sql += "idcouche";
+                break;
+            case "Geonetwork":
+                sql += "uuid";
+                break;
+            default:
+                sql += "id";
+                break;
+        }
 
-             sql += " = '" + child.getUuid() + "';";
+        sql += " = '" + child.getUuid() + "';";
         try {
             System.out.println(sql);
             stmt.executeUpdate(sql);
@@ -263,4 +269,100 @@ public class PostGreSQL {
             e.printStackTrace();
         }
     }
+
+    public void createTableExcel(List<String> headers){
+        String sql = "CREATE TABLE " + db.getSchema() + "." + db.getTable();
+        sql += " (";
+
+        for (int i = 0; i < headers.size(); i++) {
+            sql += headers.get(i);
+            sql += " text";
+
+            if(i != headers.size() - 1)
+                sql += ", ";
+        }
+
+        sql += ");";
+
+        System.out.println(sql);
+
+        try {
+            stmt.executeUpdate(sql);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void InsertRowInDB(List<String> values) throws SQLException, ClassNotFoundException {
+        String sql = "INSERT INTO " + db.getSchema() + "." + db.getTable();
+
+        sql += " VALUES (";
+
+        for (int i = 0; i < values.size(); i++) {
+            String val = values.get(i);
+            if(val.isEmpty())
+                val = null;
+
+            if(!(val == null))
+                sql += "'";
+
+            sql += val;
+
+            if(!(val == null))
+                sql += "'";
+
+            if(i != values.size() - 1)
+                sql += ", ";
+        }
+
+        sql += ");";
+
+        try {
+            stmt.executeUpdate(sql);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void newColumnSiretCorrespondance(){
+        String sql = "ALTER TABLE excel.correspondance_inuav ADD COLUMN id" + db.getTable() + " text;";
+        try {
+            stmt.executeUpdate(sql);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+        sql = "DELETE FROM excel." + db.getTable() + " where " + db.getColumns().get(4) + " is null;";
+        try {
+            stmt.executeUpdate(sql);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+        sql = "DELETE FROM excel." + db.getTable() + " where ctid not in (select min(ctid) from excel." + db.getTable() + " group by " + db.getColumns().get(4) + ");";
+        try {
+            stmt.executeUpdate(sql);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+        sql = "ALTER TABLE excel." + db.getTable() + " ADD CONSTRAINT id_" + db.getTable() + "_pk PRIMARY KEY(" + db.getColumns().get(4) + ");";
+        try {
+            stmt.executeUpdate(sql);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+        sql = "ALTER TABLE excel.correspondance_inuav ADD CONSTRAINT " + db.getTable() + "_fk FOREIGN KEY (id" + db.getTable() + ") REFERENCES excel." + db.getTable() + ";";
+        try {
+            stmt.execute(sql);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+    }
+
+    public DatabaseConnection getDb() { return db; }
+
+    public Statement getStmt() { return stmt; }
 }

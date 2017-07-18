@@ -5,6 +5,7 @@ import Element.PostGreSQL;
 import Element.StringCompared;
 import NewConnectionDialogs.*;
 import Utils.CSVUtils;
+import Utils.Utils;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.concurrent.Task;
@@ -15,17 +16,20 @@ import javafx.scene.control.*;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import javafx.scene.paint.Color;
+import javafx.stage.FileChooser;
 import javafx.util.Callback;
 import javafx.util.Pair;
 
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.OutputStreamWriter;
+import java.io.*;
 import java.nio.charset.Charset;
+import java.sql.*;
 import java.util.*;
 
 import Main.Main;
+import org.apache.poi.ss.usermodel.*;
+import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 
 public class MyScene extends Scene {
@@ -33,16 +37,15 @@ public class MyScene extends Scene {
     /**
      * Les taches lancés asynchroniquement pour charger les données longues et laissé l'application tourné
      */
-    private Task longTask;
+    private Task<Void> longTask;
 
     /**
-     * Les trois listes déroulantes du menu
+     * Les listes déroulantes du menu
      */
-    private final ComboBox comboBoxSource;
-    private final ComboBox comboBoxDestination;
-    private final ComboBox comboBoxAlgo;
-    private final ComboBox comboBoxSearch;
-    private final ComboBox comboBoxLikened;
+    private final ComboBox<DatabaseConnection> comboBoxSource;
+    private final ComboBox<DatabaseConnection> comboBoxDestination;
+    private final ComboBox<DatabaseConnection> comboBoxSearch;
+    private final ComboBox<DatabaseConnection> comboBoxLikened;
     private ComboBox searchResult;
 
     /**
@@ -54,7 +57,9 @@ public class MyScene extends Scene {
 
     private ObservableList<DatabaseConnection> optionsDatabase;
 
-    private ArrayList<Pair<StringCompared, Pair<ArrayList<StringCompared>, ArrayList<StringCompared>>>> strings;
+    private ArrayList<Pair<StringCompared, ArrayList<StringCompared>>> strings;
+
+    private ArrayList<DatabaseConnection> databaseConnections;
 
     /**
      * Valeurs afin de faire des statistiques
@@ -65,7 +70,7 @@ public class MyScene extends Scene {
     public MyScene(){
         super(new Group(), Main.WIDTH, Main.HEIGHT);
 
-        ArrayList<DatabaseConnection> databaseConnections = CSVUtils.readConnections();
+        databaseConnections = CSVUtils.readConnections();
 
         Group group = (Group) getRoot();
         setFill(Color.rgb(224,212,187));
@@ -88,10 +93,10 @@ public class MyScene extends Scene {
 
 
         optionsDatabase = FXCollections.observableArrayList(
-                        databaseConnections
-                );
+                databaseConnections
+        );
 
-        comboBoxSource = new ComboBox(optionsDatabase);
+        comboBoxSource = new ComboBox<>(optionsDatabase);
         comboBoxSource.getSelectionModel().selectFirst();
         comboBoxSource.setCellFactory(new Callback<ListView<DatabaseConnection>,ListCell<DatabaseConnection>>(){
             @Override
@@ -115,7 +120,7 @@ public class MyScene extends Scene {
         });
 
 
-        comboBoxDestination = new ComboBox(optionsDatabase);
+        comboBoxDestination = new ComboBox<>(optionsDatabase);
         comboBoxDestination.getSelectionModel().selectFirst();
         comboBoxDestination.getSelectionModel().selectNext();
         comboBoxDestination.setCellFactory(new Callback<ListView<DatabaseConnection>,ListCell<DatabaseConnection>>(){
@@ -139,25 +144,95 @@ public class MyScene extends Scene {
             }
         });
 
-        ObservableList<String> optionsAlgo =
-                FXCollections.observableArrayList(
-                        "Mots commun + Levenshtein",
-                        "Mots commun + Jaro",
-                        "Mots commun",
-                        "Levenshtein",
-                        "Jaro",
-                        "Mots commun + Levenshtein + Jaro"
-                );
-        comboBoxAlgo = new ComboBox(optionsAlgo);
-        comboBoxAlgo.getSelectionModel().selectFirst();
-
 
         Button okButton = new Button("Comparer");
         okButton.setOnMouseClicked(event -> {
-                startComparaison();
+            startComparaison();
         });
 
-        comboBoxLikened = new ComboBox(optionsDatabase);
+        Button uselessButton = new Button("Ajouter mots inutiles");
+        uselessButton.setOnMouseClicked(event -> {
+            Optional<String> result = new NewUselessDialog().showAndWait();
+            result.ifPresent(res -> {
+                if(!StringCompared.getUseless().contains(res)){
+                    StringCompared.getUseless().add(res);
+
+                    try {
+                        OutputStreamWriter writer = new OutputStreamWriter(
+                                new FileOutputStream("useless.csv"),
+                                Charset.forName("UTF-8").newEncoder());
+                        CSVUtils.writeLine(writer, StringCompared.getUseless(), ';', ' ');
+
+                        writer.flush();
+                        writer.close();
+                    } catch (FileNotFoundException e) {
+                        e.printStackTrace();
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
+
+                }
+                else {
+                    Alert alert = new Alert(Alert.AlertType.ERROR);
+                    alert.setContentText("Le mot '" + res + "' fait déja parti de cette liste");
+                    alert.showAndWait();
+                }
+            });
+        });
+
+        Button dictionnaryButton = new Button("Ajouter mots semblables");
+        dictionnaryButton.setOnMouseClicked(event -> {
+            Optional<Pair<String,String>> result = new NewSameDialog().showAndWait();
+            result.ifPresent(res -> {
+                boolean present = false;
+                for (Map.Entry<String, ArrayList<String>> entry : StringCompared.getSame().entrySet()){
+                    for (String s : entry.getValue()){
+                        if (res.getValue().equals(s))
+                            present = true;
+                    }
+                }
+
+                if(!present){
+                    StringCompared.getSame().get(res.getKey()).add(res.getValue());
+
+                    try {
+                        OutputStreamWriter writer = new OutputStreamWriter(
+                                new FileOutputStream("same.csv"),
+                                Charset.forName("UTF-8").newEncoder());
+
+                        for (Map.Entry<String, ArrayList<String>> entry : StringCompared.getSame().entrySet()){
+                            ArrayList<String> arrayList = new ArrayList<>();
+                            arrayList.add(entry.getKey());
+                            arrayList.addAll(entry.getValue());
+
+                            CSVUtils.writeLine(writer, arrayList, ';', ' ');
+                        }
+
+
+                        writer.flush();
+                        writer.close();
+                    } catch (FileNotFoundException e) {
+                        e.printStackTrace();
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
+
+                }
+                else{
+                    Alert alert = new Alert(Alert.AlertType.ERROR);
+                    alert.setContentText("Le mot '" + res.getValue() + "' fait déja parti d'une liste");
+                    alert.showAndWait();
+                }
+
+            });
+
+        });
+
+        HBox utilsHbox = new HBox();
+        utilsHbox.setSpacing(10);
+        utilsHbox.getChildren().addAll(uselessButton, dictionnaryButton);
+
+        comboBoxLikened = new ComboBox<>(optionsDatabase);
         comboBoxLikened.getSelectionModel().selectFirst();
         comboBoxLikened.setCellFactory(new Callback<ListView<DatabaseConnection>,ListCell<DatabaseConnection>>(){
             @Override
@@ -182,7 +257,7 @@ public class MyScene extends Scene {
 
         Button likenedButton = new Button("Apparenter");
         likenedButton.setOnMouseClicked(event -> {
-            DisplayTitlesDialog displayTitlesDialog = new DisplayTitlesDialog((DatabaseConnection) comboBoxLikened.getSelectionModel().getSelectedItem());
+            DisplayTitlesDialog displayTitlesDialog = new DisplayTitlesDialog(comboBoxLikened.getSelectionModel().getSelectedItem());
             displayTitlesDialog.displayLines();
             displayTitlesDialog.showAndWait();
             displayTitlesDialog.getPostGreSQL().deconnection();
@@ -190,10 +265,10 @@ public class MyScene extends Scene {
 
         Button wordStatisticsButton = new Button("Statistiques");
         wordStatisticsButton.setOnMouseClicked(event -> {
-            new WordStatisticsDialog((DatabaseConnection) comboBoxLikened.getSelectionModel().getSelectedItem()).show();
+            new WordStatisticsDialog(comboBoxLikened.getSelectionModel().getSelectedItem()).show();
         });
 
-        comboBoxSearch = new ComboBox(optionsDatabase);
+        comboBoxSearch = new ComboBox<>(optionsDatabase);
         comboBoxSearch.getSelectionModel().selectFirst();
         comboBoxSearch.setCellFactory(new Callback<ListView<DatabaseConnection>,ListCell<DatabaseConnection>>(){
             @Override
@@ -240,56 +315,100 @@ public class MyScene extends Scene {
                             databaseConnection.setTable(table);
                             Optional<ArrayList<Pair<String, Pair<String, String>>>> resultJoins = new JoinTableDialog(databaseConnection).showAndWait();
                             resultJoins.ifPresent(databaseConnection::setJoins);
-                            Optional<ArrayList<String>> resultColumns = new ColumnsDialog(databaseConnection).showAndWait();
-                            resultColumns.ifPresent(columns -> {
-                                databaseConnection.setColumns(columns);
+                            addDatabase(databaseConnection);
 
-                                databaseConnections.add(databaseConnection);
-                                try {
-                                    OutputStreamWriter writer = new OutputStreamWriter( new FileOutputStream("connexion.csv"),
-                                            Charset.forName("UTF-8").newEncoder());
-
-                                    for (DatabaseConnection db : databaseConnections) {
-                                        ArrayList<String> arrayList = new ArrayList<>();
-                                        arrayList.add(db.getTitle());
-                                        arrayList.add(db.getIp());
-                                        arrayList.add(db.getPort());
-                                        arrayList.add(db.getUser());
-                                        arrayList.add(db.getPassword());
-                                        arrayList.add(db.getDatabase());
-                                        arrayList.add(db.getSchema());
-                                        arrayList.add(db.getTable());
-                                        arrayList.addAll(db.getColumns());
-                                        arrayList.add("separator");
-                                        for (Pair<String, Pair<String, String>> p: db.getJoins()){
-                                            arrayList.add(p.getKey());
-                                            arrayList.add(p.getValue().getKey());
-                                            arrayList.add(p.getValue().getValue());
-                                        }
-
-                                        CSVUtils.writeLine(writer, arrayList, '²', ' ');
-                                    }
-                                    writer.flush();
-                                    writer.close();
-
-                                } catch (FileNotFoundException e) {
-                                    e.printStackTrace();
-                                } catch (IOException e) {
-                                    e.printStackTrace();
-                                }
-
-                                optionsDatabase = FXCollections.observableArrayList(
-                                        databaseConnections
-                                );
-                                comboBoxSource.setItems(optionsDatabase);
-                                comboBoxDestination.setItems(optionsDatabase);
-                                comboBoxSearch.setItems(optionsDatabase);
-                                comboBoxLikened.setItems(optionsDatabase);
-                            });
                         });
                     });
                 });
             });
+        });
+
+        Button importFromExcelButton = new Button("Importer Excel");
+        importFromExcelButton.setOnMouseClicked(event -> {
+            FileChooser fileChooser = new FileChooser();
+            fileChooser.setTitle("Fichier Excel (.xlsx , .csv");
+            File file = fileChooser.showOpenDialog(null);
+
+            if(file != null){
+
+                try {
+                    XSSFWorkbook wb;
+                    if(Utils.getFileExtension(file).equals("csv"))
+                        wb = CSVUtils.CSVtoXLS(file);
+
+                    else
+                        wb = new XSSFWorkbook(new FileInputStream(file));
+
+
+                    ArrayList<String> sheets = new ArrayList<>();
+                    for (int i = 0; i < wb.getNumberOfSheets(); i++) {
+                        sheets.add(wb.getSheetName(i));
+                    }
+
+                    Optional<ArrayList<String>> result = new ExcelFormatDialog(sheets).showAndWait();
+                    result.ifPresent(res -> {
+                        String title = Utils.SQLFormat(res.get(0));
+                        DatabaseConnection databaseConnection = new DatabaseConnection(title, "172.30.100.12", "5432", "admpostgres", "admpostgres", "bsd", "excel", title, null, null);
+
+                        int headerRowNum = Integer.parseInt(res.get(1));
+                        headerRowNum--;
+
+                        XSSFSheet sheet = wb.getSheet(res.get(2));
+
+
+                        int maxRow = sheet.getLastRowNum();
+                        Row row = sheet.getRow(headerRowNum);
+                        int maxCell = row.getLastCellNum();
+
+                        PostGreSQL postGreSQL = new PostGreSQL(databaseConnection);
+
+
+                        Boolean parsedHeaders = false;
+                        List < String > headers = new ArrayList<>();
+                        List < String > rowValues = null;
+
+                        for (int i = headerRowNum ; i < maxRow ; i++){
+                            row = sheet.getRow(i);
+                            if (parsedHeaders) {
+                                rowValues = new ArrayList<>();
+                            }
+                            for (int j = 0; j < maxCell ; j++){
+                                Cell cell = row.getCell(j);
+                                DataFormatter formatter = new DataFormatter();
+                                String val = Utils.SQLFormat(formatter.formatCellValue(cell));
+
+                                if (!parsedHeaders) {
+                                    headers.add(val);
+                                } else {
+                                    rowValues.add(val);
+                                }
+                            }
+                            if(!parsedHeaders){
+                                parsedHeaders = true;
+                                postGreSQL.createTableExcel(headers);
+                            }else{
+                                try {
+                                    postGreSQL.InsertRowInDB(rowValues);
+                                } catch (SQLException e) {
+
+                                } catch (ClassNotFoundException e) {
+                                    e.printStackTrace();
+                                }
+                            }
+                        }
+
+                        addDatabase(databaseConnection);
+
+                        postGreSQL.deconnection();
+                    });
+
+                } catch (FileNotFoundException e) {
+                    e.printStackTrace();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+
         });
 
         HBox searchBox = new HBox();
@@ -314,9 +433,9 @@ public class MyScene extends Scene {
 
         searchButton.setOnMouseClicked(event -> {
 
-            StringCompared stringCompared = new StringCompared(searchField.getText(), null);
+            StringCompared stringCompared = new StringCompared(searchField.getText(), null, null);
 
-            PostGreSQL postGreSQL = new PostGreSQL((DatabaseConnection) comboBoxSearch.getValue());
+            PostGreSQL postGreSQL = new PostGreSQL(comboBoxSearch.getValue());
 
             ArrayList<StringCompared> compareds = postGreSQL.getTitleByTableName(false);
 
@@ -336,7 +455,7 @@ public class MyScene extends Scene {
                 @Override
                 public ListCell<StringCompared> call(ListView<StringCompared> p) {
 
-                    final ListCell<StringCompared> cell = new ListCell<StringCompared>(){
+                    return new ListCell<StringCompared>(){
 
                         @Override
                         protected void updateItem(StringCompared t, boolean bln) {
@@ -350,15 +469,13 @@ public class MyScene extends Scene {
                         }
 
                     };
-
-                    return cell;
                 }
             });
             searchResult.valueProperty().addListener((observable, oldValue, newValue) -> idSearch.setText(((StringCompared) newValue).getUuid()));
 
-            Collections.sort(optionsResult, (o1, o2) -> {
+            optionsResult.sort((o1, o2) -> {
                 double res = Double.compare(o2.getCommonwords(), o1.getCommonwords());
-                if(res == 0){
+                if (res == 0) {
                     res = Double.compare(o1.getLeven(), o2.getLeven());
                 }
                 return (int) res;
@@ -403,9 +520,9 @@ public class MyScene extends Scene {
 
         HBox buttonBox = new HBox();
         buttonBox.setSpacing(10);
-        buttonBox.getChildren().addAll(okButton, newCoButton);
+        buttonBox.getChildren().addAll(okButton, newCoButton, importFromExcelButton);
 
-        wrapperCompared.getChildren().addAll(comboBoxSource, comboBoxDestination, comboBoxAlgo, buttonBox);
+        wrapperCompared.getChildren().addAll(comboBoxSource, comboBoxDestination, buttonBox, utilsHbox);
         wrapperLikened.getChildren().addAll(comboBoxLikened, likenedButton, wordStatisticsButton);
         wrapperSearch.getChildren().addAll(searchBox, searchResult, idSearch);
         wrapperUuid.getChildren().addAll(uuidBox, uuidResult);
@@ -417,7 +534,7 @@ public class MyScene extends Scene {
     private void startComparaison(){
         strings = getStringComparedsAndStartComparaison();
         longTask.setOnSucceeded(event1 -> {
-            ComparaisonDialog comparaisonDialog = new ComparaisonDialog(comboBoxAlgo.getValue().toString(), strings.size());
+            ComparaisonDialog comparaisonDialog = new ComparaisonDialog(strings.size());
             sort(comparaisonDialog.getSort_by_value());
             display(comparaisonDialog);
         });
@@ -425,13 +542,13 @@ public class MyScene extends Scene {
 
     public void display(ComparaisonDialog comparaisonDialog){
         for (int iterator = 1; iterator <= strings.size(); iterator++) {
-            comparaisonDialog.add(strings.get(iterator-1).getKey(), strings.get(iterator-1).getValue().getKey(), strings.get(iterator-1).getValue().getValue());
+            comparaisonDialog.add(strings.get(iterator-1).getKey(), strings.get(iterator-1).getValue());
             if(iterator%100 == 0 || iterator == strings.size()){
                 comparaisonDialog.drawGraphics(values);
                 Optional<ArrayList<ArrayList<Pair<StringCompared, StringCompared>>>> result = comparaisonDialog.showAndWait();
                 if(iterator == strings.size() || comparaisonDialog.getExportBD()){
                     for (int j = iterator; j <= strings.size(); j++)
-                        comparaisonDialog.add(strings.get(j-1).getKey(), strings.get(j-1).getValue().getKey());
+                        comparaisonDialog.add(strings.get(j-1).getKey(), strings.get(j-1).getValue());
                     comparaisonDialog.sortIfCheckOrNot();
 
                     result.ifPresent(list -> {
@@ -453,7 +570,7 @@ public class MyScene extends Scene {
                         }
                     });
 
-                    if(comboBoxAlgo != comboBoxDestination)
+                    if(comboBoxSource != comboBoxDestination)
                         exportToPostGre();
 
                     arrayListCheckedToExport.clear();
@@ -474,59 +591,25 @@ public class MyScene extends Scene {
         }
     }
 
-    public void sort(int sort_options){
-        Collections.sort(strings, new Comparator<Pair<StringCompared, Pair<ArrayList<StringCompared>, ArrayList<StringCompared>>>>() {
-            @Override
-            public int compare(Pair<StringCompared, Pair<ArrayList<StringCompared>, ArrayList<StringCompared>>> o1, Pair<StringCompared, Pair<ArrayList<StringCompared>, ArrayList<StringCompared>>> o2) {
-                double res;
-                switch (sort_options){
-                    case 1:
-                        res = o1.getKey().getOrganization().toLowerCase().compareTo(o2.getKey().getOrganization().toLowerCase());
-                        break;
-                    default:
-                        switch (comboBoxAlgo.getValue().toString()){
-                            case "Mots commun + Levenshtein":
-                                res = Double.compare(o2.getKey().getCommonwords(), o1.getKey().getCommonwords());
-                                if(res == 0){
-                                    res = Double.compare(o1.getKey().getLeven(), o2.getKey().getLeven());
-                                }
-                                break;
-                            case "Mots commun + Jaro":
-                                res = Double.compare(o2.getKey().getCommonwords(), o1.getKey().getCommonwords());
-                                if(res == 0){
-                                    res = Double.compare(o2.getKey().getJaro(), o1.getKey().getJaro());
-                                }
-                                break;
-                            case "Mots commun":
-                                res =  Double.compare(o2.getKey().getCommonwords(), o1.getKey().getCommonwords());
-                                break;
-                            case "Levenshtein":
-                                res = Double.compare(o1.getKey().getLeven(), o2.getKey().getLeven());
-                                break;
-                            case "Jaro":
-                                res =  Double.compare(o2.getKey().getJaro(), o1.getKey().getJaro());
-                                break;
-                            case "Mots commun + Levenshtein + Jaro":
-                                res = Double.compare(o2.getKey().getCommonwords(), o1.getKey().getCommonwords());
-                                if(res == 0){
-                                    res = Double.compare(o1.getKey().getLeven(), o2.getKey().getLeven());
-                                    if(res == 0){
-                                        res = Double.compare(o2.getKey().getJaro(), o1.getKey().getJaro());
-                                    }
-                                }
-                                break;
-                            default:
-                                res = Double.compare(o2.getKey().getCommonwords(), o1.getKey().getCommonwords());
-                                if(res == 0){
-                                    res = Double.compare(o1.getKey().getLeven(), o2.getKey().getLeven());
-                                }
-                                break;
-                        }
-                        break;
-                }
-
-                return (int) res;
+    private void sort(int sort_options){
+        strings.sort((o1, o2) -> {
+            double res;
+            switch (sort_options) {
+                case 1:
+                    res = Double.compare(o1.getKey().getCommonwords(), o2.getKey().getCommonwords());
+                    if (res == 0)
+                        res = Double.compare(o2.getKey().getLeven(), o1.getKey().getLeven());
+                    break;
+                case 2:
+                    res = o1.getKey().getOrganization().toLowerCase().compareTo(o2.getKey().getOrganization().toLowerCase());
+                    break;
+                default:
+                    res = Double.compare(o2.getKey().getCommonwords(), o1.getKey().getCommonwords());
+                    if (res == 0)
+                        res = Double.compare(o1.getKey().getLeven(), o2.getKey().getLeven());
+                    break;
             }
+            return (int) res;
         });
     }
 
@@ -535,16 +618,16 @@ public class MyScene extends Scene {
      * Effectue les calculs pour les statistiques.
      * @return
      */
-    private ArrayList<Pair<StringCompared, Pair<ArrayList<StringCompared>, ArrayList<StringCompared>>>> getStringComparedsAndStartComparaison(){
-        ArrayList<Pair<StringCompared, Pair<ArrayList<StringCompared>, ArrayList<StringCompared>>>> result = new ArrayList<>();
+    private ArrayList<Pair<StringCompared, ArrayList<StringCompared>>> getStringComparedsAndStartComparaison(){
+        ArrayList<Pair<StringCompared, ArrayList<StringCompared>>> result = new ArrayList<>();
 
         ArrayList<StringCompared> firstArrayList;
         ArrayList<StringCompared> secondArrayList;
 
-        PostGreSQL postGreSQLSource = new PostGreSQL((DatabaseConnection) comboBoxSource.getValue());
+        PostGreSQL postGreSQLSource = new PostGreSQL(comboBoxSource.getValue());
         firstArrayList = postGreSQLSource.getTitleByTableName(true);
 
-        PostGreSQL postGreSQLDestination = new PostGreSQL((DatabaseConnection) comboBoxDestination.getValue());
+        PostGreSQL postGreSQLDestination = new PostGreSQL(comboBoxDestination.getValue());
         secondArrayList = postGreSQLDestination.getTitleByTableName(false);
 
 
@@ -555,150 +638,41 @@ public class MyScene extends Scene {
             protected Void call() throws Exception {
                 values = new int[7];
                 for (StringCompared compared : finalFirstArrayList) {
-                        ArrayList<StringCompared> arrayListResult;
-                        ArrayList<StringCompared> secondArrayListResult = null;
-                        switch (comboBoxAlgo.getValue().toString()) {
-                            case "Mots commun + Levenshtein":
-                                arrayListResult = compared.levenshteinDistanceCW(finalSecondArrayList);
-                                break;
-                            case "Mots commun + Jaro":
-                                arrayListResult = compared.jaroDistanceCW(finalSecondArrayList);
-                                break;
-                            case "Mots commun":
-                                arrayListResult = compared.commonWords(finalSecondArrayList);
-                                break;
-                            case "Levenshtein":
-                                arrayListResult = compared.levenshteinDistance(finalSecondArrayList);
-                                break;
-                            case "Jaro":
-                                arrayListResult = compared.jaroDistance(finalSecondArrayList);
-                                break;
-                            case "Mots commun + Levenshtein + Jaro":
-                                arrayListResult = compared.levenshteinDistanceCW(finalSecondArrayList);
-                                secondArrayListResult = compared.jaroDistanceCW(finalSecondArrayList);
-                                break;
-                            default:
-                                arrayListResult = compared.levenshteinDistanceCW(finalSecondArrayList);
-                                break;
+                    ArrayList<StringCompared> arrayListResult;
+                    arrayListResult = compared.levenshteinDistanceCW(finalSecondArrayList);
+                    if (arrayListResult != null) {
+                        double common = compared.getCommonwords();
+                        double leven = compared.getLeven();
+                        double percentageCommonWord = common / compared.getArrayList().size();
+
+                        int nbChar = 0;
+                        for (String s : compared.getArrayList()) {
+                            nbChar += s.toCharArray().length;
                         }
-                        if (arrayListResult != null || (secondArrayListResult != null && comboBoxAlgo.getValue().toString() == "Mots commun + Levenshtein + Jaro" )) {
-                            double common = compared.getCommonwords();
-                            double leven = compared.getLeven();
-                            double jaro = compared.getJaro();
-                            switch (comboBoxAlgo.getValue().toString()){
-                                case "Mots commun + Levenshtein":
-                                    double percentageCommonWord = common/compared.getArrayList().size();
 
-                                    int nbChar = 0;
-                                    for (String s :
-                                            compared.getArrayList()) {
-                                        for (char c : s.toCharArray()) {
-                                            nbChar++;
-                                        }
-                                    }
+                        double percentageLeven = leven / nbChar;
 
-                                    double percentageLeven = leven/nbChar;
+                        if (percentageCommonWord == 1)
+                            values[0]++;
+                        else if (percentageCommonWord < 1 && percentageCommonWord >= 0.5 && percentageLeven < 0.5)
+                            values[1]++;
+                        else if (percentageCommonWord < 1 && percentageCommonWord >= 0.5 && percentageLeven >= 0.5)
+                            values[2]++;
+                        else if (percentageCommonWord < 0.5 && percentageCommonWord >= 0 && percentageLeven < 0.5)
+                            values[3]++;
+                        else if (percentageCommonWord < 0.5 && percentageCommonWord >= 0 && percentageLeven >= 0.5)
+                            values[4]++;
+                        else
+                            values[5]++;
 
-                                    if(percentageCommonWord == 1)
-                                        values[0]++;
-                                    else if(percentageCommonWord < 1 && percentageCommonWord >= 0.5 && percentageLeven < 0.5 )
-                                        values[1]++;
-                                    else if(percentageCommonWord < 1 && percentageCommonWord >= 0.5 && percentageLeven >= 0.5 )
-                                        values[2]++;
-                                    else if(percentageCommonWord < 0.5 && percentageCommonWord >= 0 && percentageLeven < 0.5 )
-                                        values[3]++;
-                                    else if(percentageCommonWord < 0.5 && percentageCommonWord >= 0 && percentageLeven >= 0.5 )
-                                        values[4]++;
-                                    else
-                                        values[5]++;
-                                    break;
-                                case "Mots commun + Jaro":
-                                    if(common >= 4.0 && jaro == 1.0)
-                                        values[0]++;
-                                    else if(common >= 4.0 && jaro >= 0.5)
-                                        values[1]++;
-                                    else if(common >= 4.0 && jaro < 0.5)
-                                        values[2]++;
-                                    else if(common < 4.0 && common > 0.0 && jaro >= 0.5)
-                                        values[3]++;
-                                    else if(common < 4.0 && common > 0.0 && jaro < 0.5)
-                                        values[4]++;
-                                    else if(common == 0.0 && jaro >= 0.5)
-                                        values[5]++;
-                                    else if(common == 0.0 && jaro < 0.5)
-                                        values[6]++;
-                                    break;
-                                case "Mots commun":
-                                    if(common >= 8)
-                                        values[0]++;
-                                    else if(common > 4 && common < 8)
-                                        values[1]++;
-                                    else if(common == 4)
-                                        values[2]++;
-                                    else if(common == 3)
-                                        values[3]++;
-                                    else if(common == 2)
-                                        values[4]++;
-                                    else if(common == 1)
-                                        values[5]++;
-                                    else if(common == 0)
-                                        values[6]++;
-                                    break;
-                                case "Levenshtein":
-                                    if(leven > 6.0)
-                                        values[0]++;
-                                    else if(leven <= 6.0 && leven > 4.0)
-                                        values[1]++;
-                                    else if(leven == 4.0)
-                                        values[2]++;
-                                    else if(leven == 3.0)
-                                        values[3]++;
-                                    else if(leven == 2.0)
-                                        values[4]++;
-                                    else if(leven == 1.0)
-                                        values[5]++;
-                                    else if(leven == 0.0)
-                                        values[6]++;
-                                    break;
-                                case "Jaro":
-                                    if(jaro == 1.0)
-                                        values[0]++;
-                                    else if(jaro >= 0.9)
-                                        values[1]++;
-                                    else if(jaro >= 0.75)
-                                        values[2]++;
-                                    else if(jaro >= 0.5)
-                                        values[3]++;
-                                    else if(jaro >= 0.3)
-                                        values[4]++;
-                                    else if(jaro >= 0.1)
-                                        values[5]++;
-                                    else if(jaro == 0.0)
-                                        values[6]++;
-                                    break;
-                                default:
-                                    if(common > 4.0)
-                                        values[0]++;
-                                    else if(common <= 4 && common > 1 && leven == 0)
-                                        values[1]++;
-                                    else if(common <= 4 && common > 1 && leven < 5)
-                                        values[2]++;
-                                    else if(common <= 4 && common > 1 && leven >= 5)
-                                        values[3]++;
-                                    else if(common == 1)
-                                        values[4]++;
-                                    else if(common == 0 && leven < 5)
-                                        values[5]++;
-                                    else if(common == 0 && leven >= 5)
-                                        values[6]++;
-                                    break;
-                            }
-
-                            Pair<ArrayList<StringCompared>, ArrayList<StringCompared>> arrayListPair = new Pair<>(arrayListResult, secondArrayListResult);
-                            Pair<StringCompared, Pair<ArrayList<StringCompared>, ArrayList<StringCompared>>> pair = new Pair<>(compared, arrayListPair);
-                            result.add(pair);
-                        }
                     }
+
+                    if (arrayListResult != null) {
+                        Pair<StringCompared, ArrayList<StringCompared>> pair = new Pair<>(compared, arrayListResult);
+                        result.add(pair);
+                    }
+
+                }
                 return null;
             }
         };
@@ -712,12 +686,14 @@ public class MyScene extends Scene {
     }
 
     private void exportToPostGre(){
-        DatabaseConnection databaseConnection = new DatabaseConnection("Communs", "172.30.100.12", "5432","admpostgres", "admpostgres", "bsd", "communs", null, null, null);
-        PostGreSQL postGreSQL = new PostGreSQL(databaseConnection);
-
-        String columnNameSource = "id" + comboBoxAlgo.getValue().toString();
+        String columnNameSource = "id" + comboBoxSource.getValue().toString();
         String columnNameDestination = "id" + comboBoxDestination.getValue().toString();
 
+        PostGreSQL postGreSQL;
+        DatabaseConnection databaseConnection;
+
+        databaseConnection = new DatabaseConnection("Communs", "172.30.100.12", "5432","admpostgres", "admpostgres", "bsd", "communs", "correspondance", null, null);
+        postGreSQL = new PostGreSQL(databaseConnection);
         postGreSQL.insertUpdateLines(arrayListCheckedToExport, columnNameSource, columnNameDestination);
 
         postGreSQL.deconnection();
@@ -728,8 +704,7 @@ public class MyScene extends Scene {
      */
     private void exportToCSV(){
         try {
-            OutputStreamWriter writer;
-            writer = new OutputStreamWriter(
+            OutputStreamWriter writer = new OutputStreamWriter(
                     new FileOutputStream(comboBoxSource.getValue().toString() + comboBoxDestination.getValue().toString() + "Check.csv"),
                     Charset.forName("UTF-8").newEncoder());
             ArrayList<String> titles = new ArrayList<>();
@@ -761,6 +736,54 @@ public class MyScene extends Scene {
         } catch (IOException e) {
             e.printStackTrace();
         }
+    }
+
+
+    private void saveDatabases(){
+        try {
+            OutputStreamWriter writer = new OutputStreamWriter( new FileOutputStream("connexion.csv"),
+                    Charset.forName("UTF-8").newEncoder());
+
+            for (DatabaseConnection db : databaseConnections) {
+                ArrayList<String> arrayList = new ArrayList<>();
+                arrayList.add(db.getTitle());
+                arrayList.add(db.getIp());
+                arrayList.add(db.getPort());
+                arrayList.add(db.getUser());
+                arrayList.add(db.getPassword());
+                arrayList.add(db.getDatabase());
+                arrayList.add(db.getSchema());
+                arrayList.add(db.getTable());
+                if(db.getJoins() != null){
+                    for (Pair<String, Pair<String, String>> p: db.getJoins()){
+                        arrayList.add(p.getKey());
+                        arrayList.add(p.getValue().getKey());
+                        arrayList.add(p.getValue().getValue());
+                    }
+                }
+
+                CSVUtils.writeLine(writer, arrayList, '²', ' ');
+            }
+            writer.flush();
+            writer.close();
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    private void addDatabase(DatabaseConnection databaseConnection){
+        databaseConnections.add(databaseConnection);
+        saveDatabases();
+
+        optionsDatabase = FXCollections.observableArrayList(
+                databaseConnections
+        );
+        comboBoxSource.setItems(optionsDatabase);
+        comboBoxDestination.setItems(optionsDatabase);
+        comboBoxSearch.setItems(optionsDatabase);
+        comboBoxLikened.setItems(optionsDatabase);
     }
 
 }

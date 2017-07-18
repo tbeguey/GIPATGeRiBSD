@@ -14,8 +14,12 @@ import java.util.ArrayList;
 
 public class ColumnsDialog extends Dialog<ArrayList<String>> {
 
+    private ArrayList<ComboBox> comboBoxes;
+
+    private ButtonType okButtonType;
+
     public ColumnsDialog(DatabaseConnection databaseConnection){
-        setTitle("Choix des colonnes");
+        setTitle("Choix des colonnes - " + databaseConnection.getTitle());
         DialogPane dialogPane = getDialogPane();
         dialogPane.setPrefWidth(400);
 
@@ -23,21 +27,24 @@ public class ColumnsDialog extends Dialog<ArrayList<String>> {
         wrapper.setSpacing(50);
         dialogPane.setContent(wrapper);
 
+
         PostGreSQL postGreSQL = new PostGreSQL(databaseConnection);
-        ArrayList<String> columns = postGreSQL.getColumns(databaseConnection.getTable());
-        for (Pair<String, Pair<String, String>> p: databaseConnection.getJoins()) {
-            columns.addAll(postGreSQL.getColumns(p.getKey()));
+        ArrayList<String> columns = new ArrayList<>();
+        columns.addAll(postGreSQL.getColumns(databaseConnection.getTable()));
+        if(databaseConnection.getJoins() != null) {
+            for (Pair<String, Pair<String, String>> p : databaseConnection.getJoins()) {
+                columns.addAll(postGreSQL.getColumns(p.getKey()));
+            }
         }
 
         ObservableList<String> options = FXCollections.observableArrayList(
                 columns
         );
 
-        ArrayList<Pair<ComboBox, RadioButton>> comboBoxes = new ArrayList<>();
-        String[] labels = {"Titre", "Identifiant", "Organisme", "Autre"};
+        String[] labels = {"Identifiant", "Mot fort", "Titre"};
+        comboBoxes = new ArrayList<>();
 
         for (int i=0; i<labels.length;i++) {
-            RadioButton radioButton = new RadioButton();
 
             ComboBox comboBox = new ComboBox(options);
             comboBox.getSelectionModel().select(i);
@@ -47,30 +54,20 @@ public class ColumnsDialog extends Dialog<ArrayList<String>> {
 
             HBox hbox = new HBox();
             hbox.setSpacing(10);
-            hbox.getChildren().addAll(label, comboBox, radioButton);
+            hbox.getChildren().addAll(label, comboBox);
 
             wrapper.getChildren().add(hbox);
 
-            Pair<ComboBox, RadioButton> pair = new Pair<>(comboBox, radioButton);
-            comboBoxes.add(pair);
+            comboBoxes.add(comboBox);
         }
 
-
-        wrapper.setAlignment(Pos.CENTER);
-
-        ButtonType okButtonType = new ButtonType("Suivant", ButtonBar.ButtonData.OK_DONE);
-        dialogPane.getButtonTypes().addAll(okButtonType, ButtonType.CANCEL);
-
-
         setResultConverter((ButtonType dialogButton) -> {
-            postGreSQL.deconnection();
 
             if(dialogButton == okButtonType) {
                 ArrayList<String> arrayList = new ArrayList<>();
 
-                for (Pair<ComboBox, RadioButton> p : comboBoxes) {
-                    if(p.getValue().isSelected())
-                        arrayList.add((String) p.getKey().getValue());
+                for (ComboBox c : comboBoxes) {
+                    arrayList.add(c.getValue().toString());
                 }
 
                 return arrayList;
@@ -79,5 +76,11 @@ public class ColumnsDialog extends Dialog<ArrayList<String>> {
                 return null;
 
         });
+
+        wrapper.setAlignment(Pos.CENTER);
+
+        okButtonType = new ButtonType("Suivant", ButtonBar.ButtonData.OK_DONE);
+        dialogPane.getButtonTypes().addAll(okButtonType, ButtonType.CANCEL);
     }
+
 }

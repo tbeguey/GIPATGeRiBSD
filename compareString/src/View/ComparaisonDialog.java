@@ -27,8 +27,6 @@ public class ComparaisonDialog extends Dialog<ArrayList<ArrayList<Pair<StringCom
     private static final double Dialog_HEIGHT = 700;
     private static final double Dialog_WIDTH = 1500;
 
-    private String algorithm;
-
     private boolean finish, export, changed;
 
     private ArrayList<Pair<StringCompared, StringCompared>> arrayListChecked;
@@ -36,8 +34,8 @@ public class ComparaisonDialog extends Dialog<ArrayList<ArrayList<Pair<StringCom
 
     private int sort_by_value;
 
-    public ComparaisonDialog(String a, int size){
-        algorithm = a;
+
+    public ComparaisonDialog(int size){
         finish = false;
         export = false;
         changed = false;
@@ -62,7 +60,7 @@ public class ComparaisonDialog extends Dialog<ArrayList<ArrayList<Pair<StringCom
 
         HBox sort_options = new HBox();
         sort_options.setSpacing(10);
-        ObservableList<String> options = FXCollections.observableArrayList("Score", "Organisme");
+        ObservableList<String> options = FXCollections.observableArrayList("Score", "Score inverse", "Organisme");
         ComboBox<String> sort_by = new ComboBox<>(options);
         sort_by.getSelectionModel().selectFirst();
         sort_by.valueProperty().addListener((observable, oldValue, newValue) -> {
@@ -109,52 +107,10 @@ public class ComparaisonDialog extends Dialog<ArrayList<ArrayList<Pair<StringCom
     }
 
     public void add(StringCompared first, ArrayList<StringCompared> second){
-        RadioButton radioButton = new RadioButton();
-        ObservableList<StringCompared> optionsSecond =
-                FXCollections.observableArrayList(
-                        second
-                );
-
-        ComboBox secondText = new ComboBox(optionsSecond);
-        secondText.getSelectionModel().selectFirst();
-        secondText.setCellFactory(new Callback<ListView<StringCompared>,ListCell<StringCompared>>(){
-            @Override
-            public ListCell<StringCompared> call(ListView<StringCompared> p) {
-                final ListCell<StringCompared> cell = new ListCell<StringCompared>(){
-
-                    @Override
-                    protected void updateItem(StringCompared t, boolean bln) {
-                        super.updateItem(t, bln);
-                        if(t != null){
-                            setText(t.getOriginalText());
-                        }else{
-                            setText(null);
-                        }
-                    }
-
-                };
-                return cell;
-            }
-        });
-
-
-        Pair<StringCompared, ComboBox<StringCompared>> stringPair = new Pair<>(first, secondText);
-        Pair<Pair<StringCompared, ComboBox<StringCompared>>, RadioButton> pairRadioButtonPair = new Pair<>(stringPair, radioButton);
-        pairArrayList.add(pairRadioButtonPair);
-    }
-
-    /**
-     * Ajoute une ligne à la fenetre de comparaison, avec les titres, les résultats correspondant et les scores
-     * @param first
-     * @param second
-     * @param third
-     */
-    public void add(StringCompared first, ArrayList<StringCompared> second, ArrayList<StringCompared> third){
         HBox hbox = new HBox();
         hbox.setSpacing(10);
 
         ArrayList<Text> texts = new ArrayList<>();
-
 
         ObservableList<StringCompared> optionsSecond =
                 FXCollections.observableArrayList(
@@ -187,13 +143,13 @@ public class ComparaisonDialog extends Dialog<ArrayList<ArrayList<Pair<StringCom
         secondText.setPrefWidth(Dialog_WIDTH/2.2);
 
         for (String wordFirst : first.getOriginalText().split(" ")) {
-                Text t = new Text(wordFirst + " ");
-                for (String wordSecond: ((StringCompared)secondText.getValue()).getArrayList()) {
-                    if(Utils.withOutAccents(wordFirst.toLowerCase()).equals(Utils.withOutAccents(wordSecond.toLowerCase()))){
-                        t.setStyle("-fx-font-weight:bold;");
-                        break;
-                    }
+            Text t = new Text(wordFirst + " ");
+            for (String wordSecond: ((StringCompared)secondText.getValue()).getArrayList()) {
+                if(Utils.withOutAccents(wordFirst.toLowerCase()).equals(Utils.withOutAccents(wordSecond.toLowerCase()))){
+                    t.setStyle("-fx-font-weight:bold;");
+                    break;
                 }
+            }
             texts.add(t);
         }
 
@@ -205,45 +161,6 @@ public class ComparaisonDialog extends Dialog<ArrayList<ArrayList<Pair<StringCom
             firstText.getChildren().add(t);
         }
 
-        ComboBox thirdText = null;
-        TextField thirdScoreText = null;
-        if(third != null){
-            ObservableList<StringCompared> optionsThird =
-                    FXCollections.observableArrayList(
-                            third
-                    );
-
-            thirdText = new ComboBox(optionsThird);
-            thirdText.getSelectionModel().selectFirst();
-            thirdText.setCellFactory(new Callback<ListView<StringCompared>,ListCell<StringCompared>>(){
-
-                @Override
-                public ListCell<StringCompared> call(ListView<StringCompared> p) {
-
-                    final ListCell<StringCompared> cell = new ListCell<StringCompared>(){
-
-                        @Override
-                        protected void updateItem(StringCompared t, boolean bln) {
-                            super.updateItem(t, bln);
-
-                            if(t != null){
-                                setText(t.getOriginalText());
-                            }else{
-                                setText(null);
-                            }
-                        }
-
-                    };
-
-                    return cell;
-                }
-            });
-            thirdText.setPrefWidth(Dialog_WIDTH/3);
-
-            thirdScoreText = new TextField(String.valueOf(first.getJaro()));
-            thirdScoreText.setPrefWidth(50);
-        }
-
 
         RadioButton radioButton = new RadioButton();
 
@@ -252,61 +169,22 @@ public class ComparaisonDialog extends Dialog<ArrayList<ArrayList<Pair<StringCom
         TextField secondScoreText = new TextField();
         secondScoreText.setPrefWidth(50);
 
-        double value;
-        double secondValue = 0;
-        switch (algorithm){
-            case "Mots commun + Levenshtein":
-                value = first.getCommonwords();
-                secondValue = first.getLeven();
+        double value = first.getCommonwords();
+        double secondValue = first.getLeven();
                 /*if(value >= 4)
                     radioButton.setSelected(true);
                 else if(value >= 3 && secondValue == 0)
                     radioButton.setSelected(true);*/
-                break;
-            case "Mots commun + Jaro":
-                value = first.getCommonwords();
-                secondValue = first.getJaro();
-                if(value >= 4)
-                    radioButton.setSelected(true);
-                else if (value >= 3 && secondValue >= 0.75)
-                    radioButton.setSelected(true);
-                break;
-            case "Mots commun":
-                value = first.getCommonwords();
-                if(value >= 4)
-                    radioButton.setSelected(true);
-                break;
-            case "Levenshtein":
-                value = first.getLeven();
-                if(value <= 3)
-                    radioButton.setSelected(true);
-                break;
-            case "Jaro":
-                value = first.getJaro();
-                if(value >= 0.75)
-                    radioButton.setSelected(true);
-                break;
-            default:
-                value = first.getCommonwords();
-                secondValue = first.getLeven();
-                if(value >= 4)
-                    radioButton.setSelected(true);
-                else if(value >= 3 && secondValue <= 3)
-                    radioButton.setSelected(true);
-                break;
-        }
         scoreText.setText(String.valueOf(value));
         secondScoreText.setText(String.valueOf(secondValue));
+
+
 
         Pair<StringCompared, ComboBox<StringCompared>> stringPair = new Pair<>(first, secondText);
         Pair<Pair<StringCompared, ComboBox<StringCompared>>, RadioButton> pairRadioButtonPair = new Pair<>(stringPair, radioButton);
         pairArrayList.add(pairRadioButtonPair);
 
         hbox.getChildren().addAll(firstText, radioButton, secondText, scoreText, secondScoreText);
-
-        if(third != null){
-            hbox.getChildren().addAll(thirdText, thirdScoreText);
-        }
 
         wrapperCompared.getChildren().add(hbox);
     }
@@ -333,15 +211,12 @@ public class ComparaisonDialog extends Dialog<ArrayList<ArrayList<Pair<StringCom
         ArrayList<String> objects = new ArrayList<>();
         ArrayList<Double> comparative = new ArrayList<>();
 
-        switch (algorithm) {
-            case "Mots commun + Levenshtein":
-                objects.add("100 % de mots");
-                objects.add("Entre 50% et 100% de mots, avec moins de 50% de Leven");
-                objects.add("Entre 50% et 100% de mots, avec plus de 50% de Leven");
-                objects.add("Entre 0 et 50% de mots, avec moins de 50% de Leven");
-                objects.add("Entre 0% et 50% de mots, avec plus de 50% de Leven");
-                break;
-        }
+        objects.add("100 % de mots");
+        objects.add("Entre 50% et 100% de mots, avec moins de 50% de Leven");
+        objects.add("Entre 50% et 100% de mots, avec plus de 50% de Leven");
+        objects.add("Entre 0 et 50% de mots, avec moins de 50% de Leven");
+        objects.add("Entre 0% et 50% de mots, avec plus de 50% de Leven");
+
 
         for (int i = 0; i < values.length; i++) {
             comparative.add((double) values[i]);

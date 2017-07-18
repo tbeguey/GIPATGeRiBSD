@@ -1,5 +1,6 @@
 package Main;
 
+import Element.StringCompared;
 import View.MyScene;
 import javafx.application.Application;
 import javafx.scene.Scene;
@@ -31,6 +32,5 @@ public class Main extends Application {
         Scene scene = new MyScene();
         stage.setScene(scene);
         stage.show();
-
     }
 }

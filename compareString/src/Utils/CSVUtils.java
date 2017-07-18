@@ -2,10 +2,14 @@ package Utils;
 
 import Element.DatabaseConnection;
 import javafx.util.Pair;
+import org.apache.poi.xssf.usermodel.XSSFRow;
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 import java.io.*;
+import java.nio.charset.Charset;
 import java.util.ArrayList;
-import java.util.List;
+import java.util.Collections;
 
 public class CSVUtils {
 
@@ -62,18 +66,10 @@ public class CSVUtils {
             while(line != null){
                 String[] words = line.split("²");
 
-                int index = words.length;
                 ArrayList<String> columns = new ArrayList<>();
-                for (int i = 8; i < words.length; i++) {
-                    if(words[i].equals("separator")){
-                        index = i+1;
-                        break;
-                    }
-                    columns.add(words[i]);
-                }
 
                 ArrayList<Pair<String, Pair<String, String>>> joins = new ArrayList<>();
-                for (int i = index; i < words.length; i+=3) {
+                for (int i = 8; i < words.length; i+=3) {
                     Pair<String, String> pair = new Pair<>(words[i+1], words[i+2]);
                     Pair<String, Pair<String, String>> pairPair = new Pair<>(words[i], pair);
                     joins.add(pairPair);
@@ -90,6 +86,57 @@ public class CSVUtils {
             e.printStackTrace();
         }
         return databaseConnections;
+    }
+
+    public static XSSFWorkbook CSVtoXLS(File file){
+        String name = file.getName();
+        name = name.replaceAll(".csv", ".xlsx");
+
+        XSSFWorkbook workbook = new XSSFWorkbook();
+        XSSFSheet sheet = workbook.createSheet("Feuille1");
+        String currentLine = null;
+        int RowNum = 0;
+        try {
+            Charset charset = Charset.forName("ISO-8859-1");
+            BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(new FileInputStream(file), charset));
+            while ((currentLine = bufferedReader.readLine()) != null){
+                String str[] = currentLine.split(";");
+                XSSFRow currentRow = sheet.createRow(RowNum);
+                for (int i = 0; i < str.length; i++) {
+                    currentRow.createCell(i).setCellValue(str[i]);
+                }
+                RowNum++;
+            }
+
+            FileOutputStream fileOutputStream = new FileOutputStream(name);
+            workbook.write(fileOutputStream);
+            fileOutputStream.close();
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        return workbook;
+    }
+
+    public static ArrayList<String> readUseless(){
+        ArrayList<String> useless = new ArrayList<>();
+        try {
+            BufferedReader reader = new BufferedReader(new FileReader("useless.csv"));
+            String line = reader.readLine();
+            String[] words = line.split(";");
+            Collections.addAll(useless, words);
+
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+
+
+        return useless;
     }
 
 }
