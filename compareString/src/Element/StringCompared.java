@@ -19,250 +19,15 @@ public class StringCompared {
 
     private double leven, jaro;
     private float commonwords;
-    private int sirets;
+
+    private double percentageCommonsWord, percentageLeven;
 
     private static Map<String, ArrayList<String>> same = new HashMap<>();
     private static ArrayList<String> useless = new ArrayList<>();
 
     static { // Gère les mots se ressemblant, ayant la meme signification et les mots "inutiles"
-        ArrayList<String> arrayListAURBA = new ArrayList<>();
-        arrayListAURBA.add("AURBA3");
-        same.put("AURBA", arrayListAURBA);
-
-        ArrayList<String> arrayListCACBA = new ArrayList<>();
-        arrayListCACBA.add("CA_COTE_BASQUE_ADOUR");
-        arrayListCACBA.add("CA Cote Basque Adour");
-        same.put("CACBA", arrayListCACBA);
-
-        ArrayList<String> arrayListCAP = new ArrayList<>();
-        arrayListCAP.add("CA_PERIGOURDINE");
-        arrayListCAP.add("CA Perigueux");
-        same.put("CAP", arrayListCAP);
-
-        ArrayList<String> arrayListCA33 = new ArrayList<>();
-        arrayListCA33.add("Chambre agriculture 33");
-        same.put("CA33", arrayListCA33);
-
-        ArrayList<String> arrayListCA64 = new ArrayList<>();
-        arrayListCA64.add("Chambre agriculture 64");
-        same.put("CA64", arrayListCA64);
-
-        ArrayList<String> arrayListCAGD = new ArrayList<>();
-        arrayListCAGD.add("CA Grand Dax");
-        same.put("CAGRANDDAX", arrayListCAGD);
-
-        ArrayList<String> arrayListCAGV = new ArrayList<>();
-        arrayListCAGV.add("CA Grand Villeneuvois");
-        same.put("CAGV", arrayListCAGV);
-
-        ArrayList<String> arrayListCCBG = new ArrayList<>();
-        arrayListCCBG.add("CDC Bourg en Gironde");
-        arrayListCCBG.add("CC_BOURG_GIRONDE");
-        same.put("CCBG", arrayListCCBG);
-
-        ArrayList<String> arrayListCCE = new ArrayList<>();
-        arrayListCCE.add("CC_ESTUAIRE");
-        arrayListCCE.add("CDC Estuaire");
-        same.put("CCE", arrayListCCE);
-
-        ArrayList<String> arrayListCCMEZ = new ArrayList<>();
-        arrayListCCMEZ.add("CC_MEZINAIS");
-        arrayListCCMEZ.add("CDC du Mézinais");
-        same.put("CCMEZ", arrayListCCMEZ);
-
-        ArrayList<String> arrayListCCPRAY = new ArrayList<>();
-        arrayListCCPRAY.add("CC_PRAYSSAS");
-        arrayListCCPRAY.add("CDC Prayssas");
-        same.put("CCPRAY", arrayListCCPRAY);
-
-        ArrayList<String> arrayListCCVA = new ArrayList<>();
-        arrayListCCVA.add("CC_VAL_ALBRET");
-        arrayListCCVA.add("CDC Val d Albret");
-        same.put("CCVA", arrayListCCVA);
-
-        ArrayList<String> arrayListCCM = new ArrayList<>();
-        arrayListCCM.add("CC Montesquieu");
-        same.put("CCM", arrayListCCM);
-
-        ArrayList<String> arrayListCCPA = new ArrayList<>();
-        arrayListCCPA.add("CDC Penne d Agenais");
-        same.put("CCPENNEDAGENAIS", arrayListCCPA);
-
-        ArrayList<String> arrayListCCPIE = new ArrayList<>();
-        arrayListCCPIE.add("CDC Piémont Oloronais");
-        same.put("CCPIEMONT", arrayListCCPIE);
-
-        ArrayList<String> arrayListCD24 = new ArrayList<>();
-        arrayListCD24.add("CG 24");
-        same.put("CD24", arrayListCD24);
-
-        ArrayList<String> arrayListCD33 = new ArrayList<>();
-        arrayListCD33.add("CG 33");
-        same.put("CD33", arrayListCD33);
-
-        ArrayList<String> arrayListCD40 = new ArrayList<>();
-        arrayListCD40.add("CG 40");
-        same.put("CD40", arrayListCD40);
-
-        ArrayList<String> arrayListCD47 = new ArrayList<>();
-        arrayListCD47.add("CG 47");
-        same.put("CD47", arrayListCD47);
-
-        ArrayList<String> arrayListCD64 = new ArrayList<>();
-        arrayListCD64.add("CG 64");
-        same.put("CD64", arrayListCD64);
-
-        ArrayList<String> arrayListCEN = new ArrayList<>();
-        arrayListCEN.add("CEN Aquitaine");
-        same.put("CEN", arrayListCEN);
-
-        ArrayList<String> arrayListCRA = new ArrayList<>();
-        arrayListCRA.add("CR Aquitaine");
-        same.put("CRA", arrayListCRA);
-
-        ArrayList<String> arrayListDDT47 = new ArrayList<>();
-        arrayListDDT47.add("DDT_47");
-        arrayListDDT47.add("DDT 47");
-        same.put("DDT47", arrayListDDT47);
-
-        ArrayList<String> arrayListDDT24 = new ArrayList<>();
-        arrayListDDT24.add("DDT 24");
-        same.put("DDT24", arrayListDDT24);
-
-        ArrayList<String> arrayListDDTM33 = new ArrayList<>();
-        arrayListDDTM33.add("DDTM 33");
-        same.put("DDTM33", arrayListDDTM33);
-
-        ArrayList<String> arrayListDFCIAQ = new ArrayList<>();
-        arrayListDFCIAQ.add("ARDFCI");
-        same.put("DFCIAQ", arrayListDFCIAQ);
-
-        ArrayList<String> arrayListDFCI47 = new ArrayList<>();
-        arrayListDFCI47.add("DFCIL47");
-        same.put("DFCI47", arrayListDFCI47);
-
-        ArrayList<String> arrayListDRAAF = new ArrayList<>();
-        arrayListDRAAF.add("DRAAF2");
-        same.put("DRAAF", arrayListDRAAF);
-
-        ArrayList<String> arrayListDREAL = new ArrayList<>();
-        arrayListDREAL.add("DREAL2");
-        same.put("DREAL", arrayListDREAL);
-
-        ArrayList<String> arrayListENSAP = new ArrayList<>();
-        arrayListENSAP.add("ENSAP Bordeaux");
-        same.put("ENSAP", arrayListENSAP);
-
-        ArrayList<String> arrayListEPI = new ArrayList<>();
-        arrayListEPI.add("EPIDROPT1");
-        same.put("EPIDROPT", arrayListEPI);
-
-        ArrayList<String> arrayListFDP64 = new ArrayList<>();
-        arrayListFDP64.add("FDP_64");
-        same.put("FDP64", arrayListFDP64);
-
-        ArrayList<String> arrayListFDP33 = new ArrayList<>();
-        arrayListFDP33.add("FD pêche 33");
-        same.put("FDP33", arrayListFDP33);
-
-        ArrayList<String> arrayListFNPHP = new ArrayList<>();
-        arrayListFNPHP.add("FNPHP1");
-        same.put("FNPHP", arrayListFNPHP);
-
-        ArrayList<String> arrayListGIP = new ArrayList<>();
-        arrayListGIP.add("GIP ATGeRi");
-        same.put("GIP", arrayListGIP);
-
-        ArrayList<String> arrayListGIPPQA = new ArrayList<>();
-        arrayListGIPPQA.add("GIP_PQA");
-        arrayListGIPPQA.add("GIP PQA");
-        same.put("GIPPQA", arrayListGIPPQA);
-
-        ArrayList<String> arrayListGIPLIT = new ArrayList<>();
-        arrayListGIPLIT.add("GIPLITTORAL1");
-        arrayListGIPLIT.add("GIP LITTORAL");
-        same.put("GIPLIT", arrayListGIPLIT);
-
-        ArrayList<String> arrayListGPMB = new ArrayList<>();
-        arrayListGPMB.add("GPMB");
-        same.put("GPMB", arrayListGPMB);
-
-        ArrayList<String> arrayListGRDF = new ArrayList<>();
-        arrayListGRDF.add("GRDF1");
-        same.put("GRDF", arrayListGRDF);
-
-        ArrayList<String> arrayListIMP = new ArrayList<>();
-        arrayListIMP.add("IMPOTS_LAST1");
-        arrayListIMP.add("IMPOTS_LAST");
-        same.put("IMP", arrayListIMP);
-
-        ArrayList<String> arrayListINSEE = new ArrayList<>();
-        arrayListINSEE.add("INSEE2");
-        same.put("INSEE", arrayListINSEE);
-
-        ArrayList<String> arrayListSDIS24 = new ArrayList<>();
-        arrayListSDIS24.add("SDIS 24");
-        arrayListSDIS24.add("LOGOSDIS241");
-        same.put("SDIS24", arrayListSDIS24);
-
-        ArrayList<String> arrayListSDIS33 = new ArrayList<>();
-        arrayListSDIS33.add("SDIS 33");
-        arrayListSDIS33.add("LOGOSDIS331");
-        same.put("SDIS33", arrayListSDIS33);
-
-        ArrayList<String> arrayListSDIS40 = new ArrayList<>();
-        arrayListSDIS40.add("SDIS 40");
-        arrayListSDIS40.add("LOGOSDIS401");
-        same.put("SDIS40", arrayListSDIS40);
-
-        ArrayList<String> arrayListSDIS47 = new ArrayList<>();
-        arrayListSDIS47.add("SDIS 47");
-        arrayListSDIS47.add("LOGOSDIS471");
-        same.put("SDIS47", arrayListSDIS47);
-
-        ArrayList<String> arrayListSDIS64 = new ArrayList<>();
-        arrayListSDIS64.add("SDID 64");
-        arrayListSDIS64.add("LOGOSDIS64");
-        same.put("SDIS64", arrayListSDIS64);
-
-        ArrayList<String> arrayListMEZ = new ArrayList<>();
-        arrayListMEZ.add("Commmune de Mézin");
-        same.put("MEZIN", arrayListMEZ);
-
-        ArrayList<String> arrayListMED = new ArrayList<>();
-        arrayListMED.add("MIN_ECOLOGIE");
-        same.put("MEDDE", arrayListMED);
-
-        ArrayList<String> arrayListPARC =  new ArrayList<>();
-        arrayListPARC.add("PARC4");
-        same.put("PARC", arrayListPARC);
-
-        ArrayList<String> arrayListRAUD = new ArrayList<>();
-        arrayListRAUD.add("RAUDIN2");
-        same.put("RAUDIN", arrayListRAUD);
-
-        ArrayList<String> arrayListSTMOR = new ArrayList<>();
-        arrayListSTMOR.add("SAINT_MORILLON2");
-        arrayListSTMOR.add("SAINT_MORILLON");
-        same.put("STMOR", arrayListSTMOR);
-
-        ArrayList<String> arrayListSIRT = new ArrayList<>();
-        arrayListSIRT.add("SIRTAQUI2");
-        same.put("SIRTAQUI", arrayListSIRT);
-
-        ArrayList<String> arrayListSNIA = new ArrayList<>();
-        arrayListSNIA.add("SNIA5");
-        same.put("SNIA", arrayListSNIA);
-
-        ArrayList<String> arrayListSYSD = new ArrayList<>();
-        arrayListSYSD.add("SYSDAU1");
-        same.put("SYSDAU", arrayListSYSD);
-
-        ArrayList<String> arrayListPGB = new ArrayList<>();
-        arrayListPGB.add("Pays du Grand Bergeracois");
-        same.put("PGB", arrayListPGB);
-
         useless = CSVUtils.readUseless();
+        same = CSVUtils.readSame();
     }
 
     /**
@@ -712,22 +477,6 @@ public class StringCompared {
         return bestResults;
     }
 
-    public ArrayList<StringCompared> siret(ArrayList<StringCompared> comparedArrayList){
-        ArrayList<StringCompared> results = new ArrayList<>();
-        sirets = 0;
-
-        for (StringCompared compared : comparedArrayList) {
-            if(compared.getOrganization().equals(organization))
-                results.add(compared);
-        }
-
-        sirets = results.size();
-
-        if(results.size() == 0)
-            return null;
-
-        return results;
-    }
 
     @Override
     public String toString() {
@@ -761,9 +510,16 @@ public class StringCompared {
 
     public void setCommonwords(float c) { commonwords = c;}
 
-    public int getSirets() { return sirets; }
-
     public static ArrayList<String> getUseless() { return useless; }
 
     public static Map<String, ArrayList<String>> getSame() { return same; }
+
+    public void setPercentageCommonsWord(double p) { percentageCommonsWord = p; }
+
+    public void setPercentageLeven(double p) { percentageLeven = p; }
+
+    public double getPercentageCommonsWord() { return percentageCommonsWord; }
+
+    public double getPercentageLeven() { return percentageLeven; }
+
 }

@@ -15,12 +15,16 @@ import javafx.scene.text.TextFlow;
 import javafx.util.Callback;
 import javafx.util.Pair;
 import java.util.ArrayList;
+import java.util.Optional;
 
 
 public class ComparaisonDialog extends Dialog<ArrayList<ArrayList<Pair<StringCompared, StringCompared>>>>{
 
+    private DialogPane dialogPane;
     private VBox wrapperCompared;
     private ScrollPane scrollPane;
+    private ButtonType okButtonType;
+
 
     private ArrayList<Pair<Pair<StringCompared, ComboBox<StringCompared>>, RadioButton>> pairArrayList = new ArrayList<>();
 
@@ -34,6 +38,8 @@ public class ComparaisonDialog extends Dialog<ArrayList<ArrayList<Pair<StringCom
 
     private int sort_by_value;
 
+    private ArrayList<Pair<Boolean, String>> exportChoises;
+
 
     public ComparaisonDialog(int size){
         finish = false;
@@ -42,7 +48,7 @@ public class ComparaisonDialog extends Dialog<ArrayList<ArrayList<Pair<StringCom
         sort_by_value = 0;
 
         setTitle("Comparer et cocher ceux qui vous paraissent logique");
-        DialogPane dialogPane = getDialogPane();
+        dialogPane = getDialogPane();
         dialogPane.setMaxHeight(Dialog_HEIGHT);
         dialogPane.setMaxWidth(Dialog_WIDTH);
 
@@ -50,7 +56,7 @@ public class ComparaisonDialog extends Dialog<ArrayList<ArrayList<Pair<StringCom
         wrapperCompared.setSpacing(20);
         scrollPane = new ScrollPane(wrapperCompared);
 
-        ButtonType okButtonType = new ButtonType("Suivant", ButtonBar.ButtonData.OK_DONE);
+        okButtonType = new ButtonType("Suivant", ButtonBar.ButtonData.OK_DONE);
         ButtonType exportButtonType = new ButtonType("Exporter", ButtonBar.ButtonData.OK_DONE);
         dialogPane.getButtonTypes().addAll(okButtonType, exportButtonType, ButtonType.CANCEL);
 
@@ -93,8 +99,12 @@ public class ComparaisonDialog extends Dialog<ArrayList<ArrayList<Pair<StringCom
             }
             else if(dialogButton == exportButtonType){
                 sortIfCheckOrNot();
-                export = true;
-                finish = true;
+                Optional<ArrayList<Pair<Boolean, String>>> result = new ExportDialog().showAndWait();
+                result.ifPresent(res -> {
+                    exportChoises = res;
+                    export = true;
+                    finish = true;
+                });
             }
             else{
                 finish = true;
@@ -169,12 +179,12 @@ public class ComparaisonDialog extends Dialog<ArrayList<ArrayList<Pair<StringCom
         TextField secondScoreText = new TextField();
         secondScoreText.setPrefWidth(50);
 
-        double value = first.getCommonwords();
-        double secondValue = first.getLeven();
-                /*if(value >= 4)
-                    radioButton.setSelected(true);
-                else if(value >= 3 && secondValue == 0)
-                    radioButton.setSelected(true);*/
+        double value = first.getPercentageCommonsWord();
+        double secondValue = first.getPercentageLeven();
+
+        if(value == 1)
+            radioButton.setSelected(true);
+
         scoreText.setText(String.valueOf(value));
         secondScoreText.setText(String.valueOf(secondValue));
 
@@ -211,11 +221,11 @@ public class ComparaisonDialog extends Dialog<ArrayList<ArrayList<Pair<StringCom
         ArrayList<String> objects = new ArrayList<>();
         ArrayList<Double> comparative = new ArrayList<>();
 
-        objects.add("100 % de mots");
-        objects.add("Entre 50% et 100% de mots, avec moins de 50% de Leven");
-        objects.add("Entre 50% et 100% de mots, avec plus de 50% de Leven");
-        objects.add("Entre 0 et 50% de mots, avec moins de 50% de Leven");
-        objects.add("Entre 0% et 50% de mots, avec plus de 50% de Leven");
+        objects.add("Très favorable");
+        objects.add("Favorable");
+        objects.add("Passable");
+        objects.add("Défavorable");
+        objects.add("Très défavorable");
 
 
         for (int i = 0; i < values.length; i++) {
@@ -241,6 +251,9 @@ public class ComparaisonDialog extends Dialog<ArrayList<ArrayList<Pair<StringCom
         }
     }
 
+    public DialogPane getTheDialogPane() { return dialogPane; }
+
+    public ButtonType getOkButtonType() {return okButtonType; }
 
     public boolean getFinish() { return finish; }
     public boolean getExportBD() { return export; }
@@ -250,4 +263,6 @@ public class ComparaisonDialog extends Dialog<ArrayList<ArrayList<Pair<StringCom
     public void setFinish(boolean f) { finish = f; }
 
     public int getSort_by_value() { return sort_by_value; }
+
+    public ArrayList<Pair<Boolean, String>> getExportChoises() { return exportChoises; }
 }

@@ -3,6 +3,7 @@ package Element;
 import NewConnectionDialogs.ColumnsDialog;
 import View.SkipDialog;
 
+import javax.xml.crypto.Data;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
@@ -86,10 +87,21 @@ public class PostGreSQL {
             db.createSelectQuery();
 
             if(except){
-                Optional<Boolean> result = new SkipDialog().showAndWait();
+                Optional<ArrayList<String>> result = new SkipDialog().showAndWait();
                 result.ifPresent(res -> {
-                    if(res)
-                        db.exceptCommunsQuery();
+                    String columnCorrespondance = res.get(0);
+                    Boolean remove = Boolean.parseBoolean(res.get(1));
+                    Boolean keep = Boolean.parseBoolean(res.get(2));
+                    ArrayList<String> columns = new ArrayList<>();
+                    for (int i = 3; i < res.size(); i++) {
+                        columns.add(res.get(i));
+                    }
+                    if(remove)
+                        db.exceptCommunsQuery(columnCorrespondance);
+
+                    if(keep){
+                        db.joinCommuns(columnCorrespondance, columns);
+                    }
                 });
             }
 
@@ -144,14 +156,14 @@ public class PostGreSQL {
         return false;
     }
 
-    public void insertUpdateLines(ArrayList<ArrayList<String>> arrayListCheckedToExport, String columnNameSource, String columnNameDestination){
+    public void insertUpdateLines(ArrayList<ArrayList<String>> arrayListCheckedToExport, String columnNameSource, String columnNameDestination, String booleanColumn){
         for (int i = 0; i < arrayListCheckedToExport.size(); i++){
             ArrayList<String> arrayList = arrayListCheckedToExport.get(i);
             for (int j = 0; j < arrayList.size(); j++) {
                 arrayList.set(j, arrayList.get(j).replace("'", "''"));
             }
 
-            String sourceId = arrayList.get(1);
+            String sourceId = arrayList.get(0);
             String destinationId = arrayList.get(3);
 
             boolean exists = rowExists(columnNameSource, sourceId);
@@ -162,12 +174,12 @@ public class PostGreSQL {
                 exists = rowExists(columnNameDestination, destinationId);
 
                 if (!exists)
-                    sql = "INSERT INTO " + db.getTable() + " (" + columnNameSource + ", " + columnNameDestination + ", date_derniere_modification) VALUES('" + sourceId + "', '" + destinationId + "', current_date);"; //insert
+                    sql = "INSERT INTO " + db.getTable() + " (" + columnNameSource + ", " + columnNameDestination + ", date_derniere_modification, " + booleanColumn + ") VALUES('" + sourceId + "', '" + destinationId + "', current_date, true);"; //insert
                 else
-                    sql = "UPDATE " + db.getTable() + " SET " + columnNameSource + " = '" + sourceId + "', date_derniere_modification = current_date where " + columnNameDestination + " = '" + destinationId + "';"; // update selon la destination
+                    sql = "UPDATE " + db.getTable() + " SET " + columnNameSource + " = '" + sourceId + "', date_derniere_modification = current_date, " + booleanColumn + " = true where " + columnNameDestination + " = '" + destinationId + "';"; // update selon la destination
             }
             else
-                sql = "UPDATE " + db.getTable() + " SET " + columnNameDestination + " = '" + destinationId + "', date_derniere_modification = current_date where " + columnNameSource + " = '" + sourceId + "';"; // update selon la source
+                sql = "UPDATE " + db.getTable() + " SET " + columnNameDestination + " = '" + destinationId + "', date_derniere_modification = current_date, " + booleanColumn + " = true where " + columnNameSource + " = '" + sourceId + "';"; // update selon la source
 
 
             try {
@@ -247,13 +259,30 @@ public class PostGreSQL {
         return columns;
     }
 
-    public void addParent(StringCompared parent, StringCompared child, String titleDatabase){
+    public ArrayList<String> getBooleans(String table){
+        ArrayList<String> columns = new ArrayList<>();
+
+        try {
+            String sql = "SELECT COLUMN_NAME FROM INFORMATION_SCHEMA.COLUMNS where table_name ='" + table + "' AND table_schema='" + db.getSchema() + "' AND data_type = 'boolean';";
+            PreparedStatement pst = c.prepareStatement(sql);
+            ResultSet rs = pst.executeQuery();
+            while (rs.next()) {
+                columns.add(rs.getString(1));
+            }
+            } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+        return columns;
+    }
+
+    public void addParent(StringCompared parent, StringCompared child){
         String sql = "UPDATE " + db.getTable() + " SET idparent = '" + parent.getUuid() + "' WHERE ";
-        switch (titleDatabase){
-            case "Geoserver":
+        switch (db.getTable()){
+            case "geoserver_xml":
                 sql += "idcouche";
                 break;
-            case "Geonetwork":
+            case "metadata":
                 sql += "uuid";
                 break;
             default:
@@ -324,45 +353,108 @@ public class PostGreSQL {
         }
     }
 
-    public void newColumnSiretCorrespondance(){
-        String sql = "ALTER TABLE excel.correspondance_inuav ADD COLUMN id" + db.getTable() + " text;";
+    public void newIdColumnCorrespondance(String correspondanceTable){
+        String requis = "SELECT EXISTS(SELECT 1 FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME='" + correspondanceTable +
+                "' AND TABLE_SCHEMA = 'communs' AND COLUMN_NAME = 'id" + db.getTable() + "');";
+        Boolean exists = false;
+
         try {
-            stmt.executeUpdate(sql);
+            PreparedStatement pst = c.prepareStatement(requis);
+            ResultSet rs = pst.executeQuery();
+            while (rs.next()) {
+                exists = rs.getBoolean(1);
+            }
         } catch (SQLException e) {
             e.printStackTrace();
         }
 
-        sql = "DELETE FROM excel." + db.getTable() + " where " + db.getColumns().get(4) + " is null;";
+        if(!exists){
+            String sql = "ALTER TABLE communs." + correspondanceTable + " ADD COLUMN id" + db.getTable() + " text;";
+            try {
+                stmt.executeUpdate(sql);
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+
+            sql = "DELETE FROM " + db.getSchema() + "." + db.getTable() + " where " + db.getColumns().get(1) + " is null;";
+            try {
+                stmt.executeUpdate(sql);
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+
+            sql = "DELETE FROM " + db.getSchema() + "." + db.getTable() + " where ctid not in (select min(ctid) from " + db.getSchema() + "." + db.getTable() + " group by " + db.getColumns().get(1) + ");";
+            try {
+                stmt.executeUpdate(sql);
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+
+            requis = "SELECT EXISTS(SELECT 1 FROM information_schema.constraint _column_usage where table_name='" + db.getTable() +"' and table_schema='" +
+            db.getSchema() + "' and constraint_name='id_" + db.getTable() + "_pk');";
+            exists = false;
+            try {
+                PreparedStatement pst = c.prepareStatement(requis);
+                ResultSet rs = pst.executeQuery();
+                while (rs.next()) {
+                    exists = rs.getBoolean(1);
+                }
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+
+            if(!exists){
+                sql = "ALTER TABLE " + db.getSchema() + "." + db.getTable() + " ADD CONSTRAINT id_" + db.getTable() + "_pk PRIMARY KEY(" + db.getColumns().get(1) + ");";
+                try {
+                    stmt.executeUpdate(sql);
+                } catch (SQLException e) {
+                    e.printStackTrace();
+                }
+            }
+
+            sql = "ALTER TABLE communs." + correspondanceTable + " ADD CONSTRAINT " + db.getTable() + "_fk FOREIGN KEY (id" + db.getTable() + ") REFERENCES " + db.getSchema() + "." + db.getTable() + ";";
+            try {
+                stmt.execute(sql);
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+        }
+
+    }
+
+    public void newBooleanColumnCorrespondance(String columnName){
+        String requis = "SELECT EXISTS(SELECT 1 FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME='" + db.getTable() +
+                "' AND TABLE_SCHEMA = 'communs' AND COLUMN_NAME = '" + columnName + "');";
+        Boolean exists = false;
+
         try {
-            stmt.executeUpdate(sql);
+            PreparedStatement pst = c.prepareStatement(requis);
+            ResultSet rs = pst.executeQuery();
+            while (rs.next()) {
+                exists = rs.getBoolean(1);
+            }
         } catch (SQLException e) {
             e.printStackTrace();
         }
 
-        sql = "DELETE FROM excel." + db.getTable() + " where ctid not in (select min(ctid) from excel." + db.getTable() + " group by " + db.getColumns().get(4) + ");";
-        try {
-            stmt.executeUpdate(sql);
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
+        if(!exists) {
+            String sql = "ALTER TABLE communs." + db.getTable() + " ADD COLUMN " + columnName + " boolean";
 
-        sql = "ALTER TABLE excel." + db.getTable() + " ADD CONSTRAINT id_" + db.getTable() + "_pk PRIMARY KEY(" + db.getColumns().get(4) + ");";
-        try {
-            stmt.executeUpdate(sql);
-        } catch (SQLException e) {
-            e.printStackTrace();
+            try {
+                stmt.execute(sql);
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
         }
+    }
 
-        sql = "ALTER TABLE excel.correspondance_inuav ADD CONSTRAINT " + db.getTable() + "_fk FOREIGN KEY (id" + db.getTable() + ") REFERENCES excel." + db.getTable() + ";";
+    public void addTableCorrespondance(String title){
+        String sql = "CREATE TABLE communs." + title + " (id serial PRIMARY KEY, date_derniere_modification date);";
         try {
             stmt.execute(sql);
         } catch (SQLException e) {
             e.printStackTrace();
         }
-
     }
 
-    public DatabaseConnection getDb() { return db; }
-
-    public Statement getStmt() { return stmt; }
 }

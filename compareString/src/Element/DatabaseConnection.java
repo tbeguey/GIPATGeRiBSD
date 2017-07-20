@@ -45,6 +45,7 @@ public class DatabaseConnection {
             query += columns.get(i);
         }
 
+
         query += " FROM ";
         query += schema;
         query += ".";
@@ -60,14 +61,26 @@ public class DatabaseConnection {
         System.out.println(query);
     }
 
-    public void exceptCommunsQuery(){
+    public void exceptCommunsQuery(String columnCorrespondance){
         String tmp = query;
         query += " EXCEPT ";
         query += tmp;
-        query += " JOIN communs.correspondance on " + table + "." + columns.get(1) + " = " + "id" + schema;
+        query += " JOIN communs." + columnCorrespondance + " on " + table + "." + columns.get(0) + " = " + "id" + table;
 
         System.out.println(query);
+    }
 
+    public void joinCommuns(String columnCorrespondance, ArrayList<String> booleans){
+        query += " JOIN communs." + columnCorrespondance + " on " + table + "." + columns.get(0) + " = " + "id" + table;
+        query += " WHERE ";
+        for (int i = 0; i<booleans.size(); i++){
+            if(i != 0)
+                query += " AND ";
+
+            query += booleans.get(i) + " = true";
+        }
+
+        System.out.println(query);
     }
 
     public String getTitle() {

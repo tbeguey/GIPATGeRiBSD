@@ -10,6 +10,8 @@ import java.io.*;
 import java.nio.charset.Charset;
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.HashMap;
+import java.util.Map;
 
 public class CSVUtils {
 
@@ -137,6 +139,29 @@ public class CSVUtils {
 
 
         return useless;
+    }
+
+    public static Map<String, ArrayList<String>> readSame(){
+        Map<String, ArrayList<String>> map = new HashMap<>();
+
+        try {
+            String currentLine;
+            Charset charset = Charset.forName("ISO-8859-1");
+            BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(new FileInputStream("same.csv"), charset));
+            while ((currentLine = bufferedReader.readLine()) != null){
+                String str[] = currentLine.split(";");
+                ArrayList<String> arrayList = new ArrayList<>();
+                for (int i=1; i<str.length;i++)
+                    arrayList.add(str[i]);
+                map.put(str[0], arrayList);
+            }
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        return map;
     }
 
 }

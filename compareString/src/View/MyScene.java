@@ -545,8 +545,12 @@ public class MyScene extends Scene {
             comparaisonDialog.add(strings.get(iterator-1).getKey(), strings.get(iterator-1).getValue());
             if(iterator%100 == 0 || iterator == strings.size()){
                 comparaisonDialog.drawGraphics(values);
+
+                if(iterator == strings.size())
+                    comparaisonDialog.getTheDialogPane().getButtonTypes().remove(comparaisonDialog.getOkButtonType());
+
                 Optional<ArrayList<ArrayList<Pair<StringCompared, StringCompared>>>> result = comparaisonDialog.showAndWait();
-                if(iterator == strings.size() || comparaisonDialog.getExportBD()){
+                if(comparaisonDialog.getExportBD()){
                     for (int j = iterator; j <= strings.size(); j++)
                         comparaisonDialog.add(strings.get(j-1).getKey(), strings.get(j-1).getValue());
                     comparaisonDialog.sortIfCheckOrNot();
@@ -554,24 +558,45 @@ public class MyScene extends Scene {
                     result.ifPresent(list -> {
                         for (Pair<StringCompared, StringCompared> pair : list.get(0)){
                             ArrayList<String> arrayList = new ArrayList<>();
-                            arrayList.add(pair.getKey().getOriginalText());
                             arrayList.add(pair.getKey().getUuid());
-                            arrayList.add(pair.getValue().getOriginalText());
+                            arrayList.add(pair.getKey().getOrganization());
+                            arrayList.add(pair.getKey().getOriginalText());
                             arrayList.add(pair.getValue().getUuid());
+                            arrayList.add(pair.getValue().getOrganization());
+                            arrayList.add(pair.getValue().getOriginalText());
                             arrayListCheckedToExport.add(arrayList);
                         }
                         for (Pair<StringCompared, StringCompared> pair : list.get(1)){
                             ArrayList<String> arrayList = new ArrayList<>();
-                            arrayList.add(pair.getKey().getOriginalText());
                             arrayList.add(pair.getKey().getUuid());
-                            arrayList.add(pair.getValue().getOriginalText());
+                            arrayList.add(pair.getKey().getOrganization());
+                            arrayList.add(pair.getKey().getOriginalText());
                             arrayList.add(pair.getValue().getUuid());
+                            arrayList.add(pair.getValue().getOrganization());
+                            arrayList.add(pair.getValue().getOriginalText());
                             arrayListNotCheckedToExport.add(arrayList);
                         }
                     });
 
-                    if(comboBoxSource != comboBoxDestination)
-                        exportToPostGre();
+                    if(comboBoxSource != comboBoxDestination){
+                        ArrayList<Pair<Boolean, String>> choises = comparaisonDialog.getExportChoises();
+                        if(choises.get(0).getKey()){
+                            String tableCorrespondance = choises.get(0).getValue();
+
+                            PostGreSQL postGreSQL = new PostGreSQL(comboBoxSource.getValue());
+                            postGreSQL.newIdColumnCorrespondance(tableCorrespondance);
+                            postGreSQL.deconnection();
+
+                            postGreSQL = new PostGreSQL(comboBoxDestination.getValue());
+                            postGreSQL.newIdColumnCorrespondance(tableCorrespondance);
+                            postGreSQL.deconnection();
+
+                            exportToPostGre(tableCorrespondance);
+                        }
+
+                        if(choises.get(1).getKey())
+                            exportToCSV();
+                    }
 
                     arrayListCheckedToExport.clear();
                     arrayListNotCheckedToExport.clear();
@@ -596,17 +621,17 @@ public class MyScene extends Scene {
             double res;
             switch (sort_options) {
                 case 1:
-                    res = Double.compare(o1.getKey().getCommonwords(), o2.getKey().getCommonwords());
+                    res = Double.compare(o1.getKey().getPercentageCommonsWord(), o2.getKey().getPercentageCommonsWord());
                     if (res == 0)
-                        res = Double.compare(o2.getKey().getLeven(), o1.getKey().getLeven());
+                        res = Double.compare(o2.getKey().getPercentageLeven(), o1.getKey().getPercentageLeven());
                     break;
                 case 2:
                     res = o1.getKey().getOrganization().toLowerCase().compareTo(o2.getKey().getOrganization().toLowerCase());
                     break;
                 default:
-                    res = Double.compare(o2.getKey().getCommonwords(), o1.getKey().getCommonwords());
+                    res = Double.compare(o2.getKey().getPercentageCommonsWord(), o1.getKey().getPercentageCommonsWord());
                     if (res == 0)
-                        res = Double.compare(o1.getKey().getLeven(), o2.getKey().getLeven());
+                        res = Double.compare(o1.getKey().getPercentageLeven(), o2.getKey().getPercentageLeven());
                     break;
             }
             return (int) res;
@@ -652,6 +677,9 @@ public class MyScene extends Scene {
 
                         double percentageLeven = leven / nbChar;
 
+                        compared.setPercentageCommonsWord(percentageCommonWord);
+                        compared.setPercentageLeven(percentageLeven);
+
                         if (percentageCommonWord == 1)
                             values[0]++;
                         else if (percentageCommonWord < 1 && percentageCommonWord >= 0.5 && percentageLeven < 0.5)
@@ -685,16 +713,17 @@ public class MyScene extends Scene {
         return result;
     }
 
-    private void exportToPostGre(){
-        String columnNameSource = "id" + comboBoxSource.getValue().toString();
-        String columnNameDestination = "id" + comboBoxDestination.getValue().toString();
+    private void exportToPostGre(String table){
+        String columnNameSource = "id" + comboBoxSource.getValue().getTable();
+        String columnNameDestination = "id" + comboBoxDestination.getValue().getTable();
 
-        PostGreSQL postGreSQL;
-        DatabaseConnection databaseConnection;
 
-        databaseConnection = new DatabaseConnection("Communs", "172.30.100.12", "5432","admpostgres", "admpostgres", "bsd", "communs", "correspondance", null, null);
-        postGreSQL = new PostGreSQL(databaseConnection);
-        postGreSQL.insertUpdateLines(arrayListCheckedToExport, columnNameSource, columnNameDestination);
+        DatabaseConnection databaseConnection = new DatabaseConnection("Communs", "172.30.100.12", "5432","admpostgres", "admpostgres", "bsd", "communs", table, null, null);
+        PostGreSQL postGreSQL = new PostGreSQL(databaseConnection);
+
+        String booleanColumn = comboBoxSource.getValue().getColumns().get(1) + "_commun";
+        postGreSQL.newBooleanColumnCorrespondance(booleanColumn);
+        postGreSQL.insertUpdateLines(arrayListCheckedToExport, columnNameSource, columnNameDestination, booleanColumn);
 
         postGreSQL.deconnection();
     }
@@ -704,34 +733,38 @@ public class MyScene extends Scene {
      */
     private void exportToCSV(){
         try {
-            OutputStreamWriter writer = new OutputStreamWriter(
+            OutputStreamWriter writerCheck = new OutputStreamWriter(
                     new FileOutputStream(comboBoxSource.getValue().toString() + comboBoxDestination.getValue().toString() + "Check.csv"),
                     Charset.forName("UTF-8").newEncoder());
             ArrayList<String> titles = new ArrayList<>();
-            titles.add(comboBoxSource.getValue().toString());
             titles.add("ID " + comboBoxSource.getValue().toString());
-            titles.add(comboBoxDestination.getValue().toString());
+            titles.add("ORGA " + comboBoxSource.getValue().toString());
+            titles.add("TEXT " + comboBoxSource.getValue().toString());
+
             titles.add("ID " + comboBoxDestination.getValue().toString());
-            CSVUtils.writeLine(writer, titles);
+            titles.add("ORGA " + comboBoxDestination.getValue().toString());
+            titles.add("TEXT " + comboBoxDestination.getValue().toString());
+
+            CSVUtils.writeLine(writerCheck, titles);
 
             for (ArrayList<String> arrayList: arrayListCheckedToExport){
-                CSVUtils.writeLine(writer, arrayList);
+                CSVUtils.writeLine(writerCheck, arrayList);
             }
 
-            writer.flush();
-            writer.close();
+            writerCheck.flush();
+            writerCheck.close();
 
-            writer = new OutputStreamWriter(
+            OutputStreamWriter writerNotCheck = new OutputStreamWriter(
                     new FileOutputStream(comboBoxSource.getValue().toString() + comboBoxDestination.getValue().toString() + "NotCheck.csv"),
                     Charset.forName("UTF-8").newEncoder());
-            CSVUtils.writeLine(writer, titles);
+            CSVUtils.writeLine(writerNotCheck, titles);
 
             for (ArrayList<String> arrayList: arrayListNotCheckedToExport){
-                CSVUtils.writeLine(writer, arrayList);
+                CSVUtils.writeLine(writerNotCheck, arrayList);
             }
 
-            writer.flush();
-            writer.close();
+            writerNotCheck.flush();
+            writerNotCheck.close();
 
         } catch (IOException e) {
             e.printStackTrace();

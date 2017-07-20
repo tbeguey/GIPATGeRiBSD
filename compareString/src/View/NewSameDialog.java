@@ -39,7 +39,7 @@ public class NewSameDialog extends Dialog<Pair<String,String>> {
 
        Button newSameKey = new Button("+");
        newSameKey.setOnMouseClicked(event -> {
-           Optional<String> result = new NewSameKeyDialog().showAndWait();
+           Optional<String> result = new TextFieldDialog("Clé de similitude à ajouter").showAndWait();
            result.ifPresent(res -> {
                StringCompared.getSame().put(res, new ArrayList<>());
                arrayListOptions.add(res);

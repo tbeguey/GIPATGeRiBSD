@@ -66,7 +66,7 @@ public class DisplayTitlesDialog extends Dialog {
                 Optional<ArrayList<StringCompared>> result = likenedDialog.showAndWait();
                 result.ifPresent(stringCompareds -> {
                     for (StringCompared stringCompared : stringCompareds) {
-                        postGreSQL.addParent(s, stringCompared, databaseConnection.getTitle());
+                        postGreSQL.addParent(s, stringCompared);
                     }
                 });
             });

@@ -5,10 +5,10 @@ import javafx.scene.control.*;
 import javafx.scene.layout.VBox;
 
 
-public class NewSameKeyDialog extends Dialog<String>{
+public class TextFieldDialog extends Dialog<String>{
 
-    public NewSameKeyDialog(){
-        setTitle("Clé de similitude à ajouter");
+    public TextFieldDialog(String title){
+        setTitle(title);
         DialogPane dialogPane = getDialogPane();
         dialogPane.setPrefWidth(400);
 
@@ -16,7 +16,7 @@ public class NewSameKeyDialog extends Dialog<String>{
         wrapper.setSpacing(10);
 
         TextField textField = new TextField();
-        textField.setPromptText("Clé de similitude à ajouter");
+        textField.setPromptText(title);
 
         wrapper.setAlignment(Pos.CENTER);
 

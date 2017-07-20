@@ -16,8 +16,6 @@ public class ColumnsDialog extends Dialog<ArrayList<String>> {
 
     private ArrayList<ComboBox> comboBoxes;
 
-    private ButtonType okButtonType;
-
     public ColumnsDialog(DatabaseConnection databaseConnection){
         setTitle("Choix des colonnes - " + databaseConnection.getTitle());
         DialogPane dialogPane = getDialogPane();
@@ -30,6 +28,7 @@ public class ColumnsDialog extends Dialog<ArrayList<String>> {
 
         PostGreSQL postGreSQL = new PostGreSQL(databaseConnection);
         ArrayList<String> columns = new ArrayList<>();
+        columns.add("null");
         columns.addAll(postGreSQL.getColumns(databaseConnection.getTable()));
         if(databaseConnection.getJoins() != null) {
             for (Pair<String, Pair<String, String>> p : databaseConnection.getJoins()) {
@@ -47,7 +46,7 @@ public class ColumnsDialog extends Dialog<ArrayList<String>> {
         for (int i=0; i<labels.length;i++) {
 
             ComboBox comboBox = new ComboBox(options);
-            comboBox.getSelectionModel().select(i);
+            comboBox.getSelectionModel().selectFirst();
 
             Label label = new Label(labels[i] + " : ");
             label.setLabelFor(comboBox);
@@ -60,6 +59,9 @@ public class ColumnsDialog extends Dialog<ArrayList<String>> {
 
             comboBoxes.add(comboBox);
         }
+
+        ButtonType okButtonType = new ButtonType("Suivant", ButtonBar.ButtonData.OK_DONE);
+        dialogPane.getButtonTypes().addAll(okButtonType, ButtonType.CANCEL);
 
         setResultConverter((ButtonType dialogButton) -> {
 
@@ -79,8 +81,6 @@ public class ColumnsDialog extends Dialog<ArrayList<String>> {
 
         wrapper.setAlignment(Pos.CENTER);
 
-        okButtonType = new ButtonType("Suivant", ButtonBar.ButtonData.OK_DONE);
-        dialogPane.getButtonTypes().addAll(okButtonType, ButtonType.CANCEL);
     }
 
 }

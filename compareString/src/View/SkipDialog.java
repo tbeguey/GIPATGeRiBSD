@@ -1,40 +1,114 @@
 package View;
 
+import Element.DatabaseConnection;
+import Element.PostGreSQL;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.geometry.Pos;
-import javafx.scene.control.ButtonBar;
-import javafx.scene.control.ButtonType;
-import javafx.scene.control.Dialog;
-import javafx.scene.control.DialogPane;
+import javafx.scene.control.*;
 import javafx.scene.layout.VBox;
 import javafx.scene.text.Text;
 
+import java.util.ArrayList;
 
-public class SkipDialog extends Dialog<Boolean> {
+
+public class SkipDialog extends Dialog<ArrayList<String>> {
+
+    private ArrayList<String> labelsColumns;
 
     public SkipDialog(){
         DialogPane dialogPane = getDialogPane();
-        dialogPane.setPrefHeight(100);
-        dialogPane.setPrefWidth(300);
+        dialogPane.setPrefHeight(200);
+        dialogPane.setPrefWidth(400);
 
         VBox wrapper = new VBox();
         wrapper.setSpacing(10);
         dialogPane.setContent(wrapper);
         wrapper.setAlignment(Pos.CENTER);
 
-        ButtonType okButtonType = new ButtonType("Oui", ButtonBar.ButtonData.OK_DONE);
-        ButtonType noButtonType = new ButtonType("Non", ButtonBar.ButtonData.OK_DONE);
-        dialogPane.getButtonTypes().addAll(okButtonType, noButtonType);
+        ButtonType okButtonType = new ButtonType("Suivant", ButtonBar.ButtonData.OK_DONE);
+        dialogPane.getButtonTypes().addAll(okButtonType, ButtonType.CANCEL);
 
-        Text text = new Text("Voulez vous enlever les titres déja validés ?");
-        wrapper.getChildren().add(text);
+        DatabaseConnection databaseConnection = new DatabaseConnection("Communs", "172.30.100.12", "5432","admpostgres", "admpostgres", "bsd", "communs", null, null, null);
+        PostGreSQL postGreSQL = new PostGreSQL(databaseConnection);
+        ArrayList<String> tables = postGreSQL.getTables();
+
+        ObservableList<String> options = FXCollections.observableArrayList(
+                tables
+        );
+
+        ComboBox<String> comboBox = new ComboBox<>(options);
+        comboBox.getSelectionModel().selectFirst();
+
+
+        VBox wrapperColumns = new VBox();
+        wrapperColumns.setSpacing(5);
+        ScrollPane scrollPane = new ScrollPane(wrapperColumns);
+
+        ArrayList<RadioButton> radioButtons = new ArrayList<>();
+
+        labelsColumns = postGreSQL.getBooleans(comboBox.getValue());
+        for (String s : labelsColumns) {
+            RadioButton radioButton = new RadioButton(s);
+            radioButton.setSelected(true);
+            radioButtons.add(radioButton);
+
+            wrapperColumns.getChildren().add(radioButton);
+        }
+
+        comboBox.valueProperty().addListener((observable, oldValue, newValue) -> {
+            wrapperColumns.getChildren().clear();
+            radioButtons.clear();
+
+            labelsColumns = postGreSQL.getBooleans(comboBox.getValue());
+            for (String s : labelsColumns) {
+                RadioButton radioButton = new RadioButton(s);
+                radioButton.setSelected(true);
+                radioButtons.add(radioButton);
+
+                wrapperColumns.getChildren().add(radioButton);
+            }
+
+        });
+
+        RadioButton radioButtonRemove = new RadioButton("Voulez vous enlever les titres déja validés ?");
+        RadioButton radioButtonKeep = new RadioButton("Voulez vous garder uniquement les titres déja en correspondance ?");
+
+        radioButtonKeep.setOnMouseClicked(event -> {
+            if(radioButtonKeep.isSelected()){
+                wrapper.getChildren().add(scrollPane);
+                radioButtonRemove.setSelected(false);
+            }
+            else
+                wrapper.getChildren().remove(scrollPane);
+
+        });
+
+        radioButtonRemove.setOnMouseClicked(event -> {
+            if(radioButtonRemove.isSelected()){
+                radioButtonKeep.setSelected(false);
+                wrapper.getChildren().remove(scrollPane);
+            }
+        });
+
+        wrapper.getChildren().addAll(comboBox, radioButtonRemove, radioButtonKeep);
 
         setResultConverter((ButtonType dialogButton) -> {
-            if(dialogButton == okButtonType)
-                return true;
-            else if(dialogButton == noButtonType)
-                return false;
+            ArrayList<String> arrayList = new ArrayList<>();
+            if(dialogButton == okButtonType){
+                arrayList.add(comboBox.getValue());
+                arrayList.add(Boolean.toString(radioButtonRemove.isSelected()));
+                arrayList.add(Boolean.toString(radioButtonKeep.isSelected()));
 
-            return null;
+                for (RadioButton radioButton : radioButtons){
+                    if(radioButton.isSelected())
+                        arrayList.add(radioButton.getText());
+                }
+
+                return arrayList;
+            }
+            else
+                return null;
 
         });
     }
