@@ -1,7 +1,9 @@
 package Element;
 
 import NewConnectionDialogs.ColumnsDialog;
+import Utils.Utils;
 import View.SkipDialog;
+import javafx.scene.control.ComboBox;
 
 import javax.xml.crypto.Data;
 import java.sql.*;
@@ -108,7 +110,6 @@ public class PostGreSQL {
             PreparedStatement pst = c.prepareStatement(db.getQuery());
             ResultSet rs = pst.executeQuery();
             while (rs.next()){
-
                 String id = rs.getString(1);
                 String strong_word = rs.getString(2);
                 String title = rs.getString(3);
@@ -129,7 +130,7 @@ public class PostGreSQL {
                 }*/
 
 
-                if(title != null){
+                if(title != null && id != null){
                     StringCompared stringCompared = new StringCompared(title, id, strong_word);
                     compareds.add(stringCompared);
                 }
@@ -304,7 +305,9 @@ public class PostGreSQL {
         sql += " (";
 
         for (int i = 0; i < headers.size(); i++) {
-            sql += headers.get(i);
+
+            sql += Utils.SQLFormat(headers.get(i), true);
+
             sql += " text";
 
             if(i != headers.size() - 1)
@@ -328,7 +331,7 @@ public class PostGreSQL {
         sql += " VALUES (";
 
         for (int i = 0; i < values.size(); i++) {
-            String val = values.get(i);
+            String val = Utils.SQLFormat(values.get(i), false);
             if(val.isEmpty())
                 val = null;
 
@@ -356,7 +359,7 @@ public class PostGreSQL {
     public void newIdColumnCorrespondance(String correspondanceTable){
         String requis = "SELECT EXISTS(SELECT 1 FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME='" + correspondanceTable +
                 "' AND TABLE_SCHEMA = 'communs' AND COLUMN_NAME = 'id" + db.getTable() + "');";
-        Boolean exists = false;
+        Boolean exists = true;
 
         try {
             PreparedStatement pst = c.prepareStatement(requis);
@@ -376,23 +379,23 @@ public class PostGreSQL {
                 e.printStackTrace();
             }
 
-            sql = "DELETE FROM " + db.getSchema() + "." + db.getTable() + " where " + db.getColumns().get(1) + " is null;";
+            sql = "DELETE FROM " + db.getSchema() + "." + db.getTable() + " where " + db.getColumns().get(0) + " is null;";
             try {
                 stmt.executeUpdate(sql);
             } catch (SQLException e) {
                 e.printStackTrace();
             }
 
-            sql = "DELETE FROM " + db.getSchema() + "." + db.getTable() + " where ctid not in (select min(ctid) from " + db.getSchema() + "." + db.getTable() + " group by " + db.getColumns().get(1) + ");";
+            sql = "DELETE FROM " + db.getSchema() + "." + db.getTable() + " where ctid not in (select min(ctid) from " + db.getSchema() + "." + db.getTable() + " group by " + db.getColumns().get(0) + ");";
             try {
                 stmt.executeUpdate(sql);
             } catch (SQLException e) {
                 e.printStackTrace();
             }
 
-            requis = "SELECT EXISTS(SELECT 1 FROM information_schema.constraint _column_usage where table_name='" + db.getTable() +"' and table_schema='" +
+            requis = "SELECT EXISTS(SELECT 1 FROM information_schema.constraint_column_usage where table_name='" + db.getTable() +"' and table_schema='" +
             db.getSchema() + "' and constraint_name='id_" + db.getTable() + "_pk');";
-            exists = false;
+            exists = true;
             try {
                 PreparedStatement pst = c.prepareStatement(requis);
                 ResultSet rs = pst.executeQuery();
@@ -404,7 +407,7 @@ public class PostGreSQL {
             }
 
             if(!exists){
-                sql = "ALTER TABLE " + db.getSchema() + "." + db.getTable() + " ADD CONSTRAINT id_" + db.getTable() + "_pk PRIMARY KEY(" + db.getColumns().get(1) + ");";
+                sql = "ALTER TABLE " + db.getSchema() + "." + db.getTable() + " ADD CONSTRAINT id_" + db.getTable() + "_pk PRIMARY KEY(" + db.getColumns().get(0) + ");";
                 try {
                     stmt.executeUpdate(sql);
                 } catch (SQLException e) {
@@ -455,6 +458,52 @@ public class PostGreSQL {
         } catch (SQLException e) {
             e.printStackTrace();
         }
+    }
+
+    public String createConcatenation(ArrayList<ComboBox> comboBoxes){
+        String columnsForQuery = "";
+        String columnName = "";
+        for (int i = 0; i < comboBoxes.size(); i++) {
+            if(i != 0){
+                columnsForQuery += ", ";
+                columnName += "_";
+            }
+
+            columnsForQuery += comboBoxes.get(i).getValue();
+            columnName += comboBoxes.get(i).getValue();
+        }
+
+        String sql = "ALTER TABLE " + db.getSchema() + "." + db.getTable() + " ADD COLUMN " + columnName + " text;";
+
+        try {
+            stmt.execute(sql);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+        sql = "SELECT " + columnsForQuery + " FROM " + db.getSchema() + "." + db.getTable();
+
+        try {
+            PreparedStatement pst = c.prepareStatement(sql);
+            ResultSet rs = pst.executeQuery();
+            while (rs.next()) {
+                String title = "";
+                for (int i = 1; i <= comboBoxes.size(); i++) {
+                    title += rs.getString(i) + " ";
+                }
+
+                String update = "UPDATE " + db.getSchema() + "." + db.getTable() + " SET " + columnName + "='" + title + "' WHERE ";
+                for (int i = 1; i <= comboBoxes.size(); i++) {
+                    if(i != 1)
+                        update += " AND ";
+                    update += comboBoxes.get(i-1).getValue() + "='" + rs.getString(i) + "'";
+                }
+                stmt.execute(update);
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return columnName;
     }
 
 }

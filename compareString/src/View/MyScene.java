@@ -326,7 +326,7 @@ public class MyScene extends Scene {
         Button importFromExcelButton = new Button("Importer Excel");
         importFromExcelButton.setOnMouseClicked(event -> {
             FileChooser fileChooser = new FileChooser();
-            fileChooser.setTitle("Fichier Excel (.xlsx , .csv");
+            fileChooser.setTitle("Fichier Excel (.xlsx, .csv, .xls)");
             File file = fileChooser.showOpenDialog(null);
 
             if(file != null){
@@ -334,8 +334,9 @@ public class MyScene extends Scene {
                 try {
                     XSSFWorkbook wb;
                     if(Utils.getFileExtension(file).equals("csv"))
-                        wb = CSVUtils.CSVtoXLS(file);
-
+                        wb = CSVUtils.CSVtoXLSX(file);
+                    else if(Utils.getFileExtension(file).equals("xls"))
+                        wb = CSVUtils.XLStoXLSX(file);
                     else
                         wb = new XSSFWorkbook(new FileInputStream(file));
 
@@ -347,7 +348,7 @@ public class MyScene extends Scene {
 
                     Optional<ArrayList<String>> result = new ExcelFormatDialog(sheets).showAndWait();
                     result.ifPresent(res -> {
-                        String title = Utils.SQLFormat(res.get(0));
+                        String title = Utils.SQLFormat(res.get(0), false);
                         DatabaseConnection databaseConnection = new DatabaseConnection(title, "172.30.100.12", "5432", "admpostgres", "admpostgres", "bsd", "excel", title, null, null);
 
                         int headerRowNum = Integer.parseInt(res.get(1));
@@ -375,7 +376,7 @@ public class MyScene extends Scene {
                             for (int j = 0; j < maxCell ; j++){
                                 Cell cell = row.getCell(j);
                                 DataFormatter formatter = new DataFormatter();
-                                String val = Utils.SQLFormat(formatter.formatCellValue(cell));
+                                String val = formatter.formatCellValue(cell);
 
                                 if (!parsedHeaders) {
                                     headers.add(val);
@@ -543,7 +544,7 @@ public class MyScene extends Scene {
     public void display(ComparaisonDialog comparaisonDialog){
         for (int iterator = 1; iterator <= strings.size(); iterator++) {
             comparaisonDialog.add(strings.get(iterator-1).getKey(), strings.get(iterator-1).getValue());
-            if(iterator%100 == 0 || iterator == strings.size()){
+            if(iterator%10 == 0 || iterator == strings.size()){
                 comparaisonDialog.drawGraphics(values);
 
                 if(iterator == strings.size())
@@ -595,7 +596,7 @@ public class MyScene extends Scene {
                         }
 
                         if(choises.get(1).getKey())
-                            exportToCSV();
+                            exportToCSV(choises.get(1).getValue());
                     }
 
                     arrayListCheckedToExport.clear();
@@ -663,8 +664,7 @@ public class MyScene extends Scene {
             protected Void call() throws Exception {
                 values = new int[7];
                 for (StringCompared compared : finalFirstArrayList) {
-                    ArrayList<StringCompared> arrayListResult;
-                    arrayListResult = compared.levenshteinDistanceCW(finalSecondArrayList);
+                    ArrayList<StringCompared> arrayListResult = compared.levenshteinDistanceCW(finalSecondArrayList);
                     if (arrayListResult != null) {
                         double common = compared.getCommonwords();
                         double leven = compared.getLeven();
@@ -690,7 +690,8 @@ public class MyScene extends Scene {
                             values[3]++;
                         else if (percentageCommonWord < 0.5 && percentageCommonWord >= 0 && percentageLeven >= 0.5)
                             values[4]++;
-                        else
+
+                        if(compared.getSameOrgaScore() == 0)
                             values[5]++;
 
                     }
@@ -721,7 +722,7 @@ public class MyScene extends Scene {
         DatabaseConnection databaseConnection = new DatabaseConnection("Communs", "172.30.100.12", "5432","admpostgres", "admpostgres", "bsd", "communs", table, null, null);
         PostGreSQL postGreSQL = new PostGreSQL(databaseConnection);
 
-        String booleanColumn = comboBoxSource.getValue().getColumns().get(1) + "_commun";
+        String booleanColumn = comboBoxSource.getValue().getColumns().get(2) + "_commun";
         postGreSQL.newBooleanColumnCorrespondance(booleanColumn);
         postGreSQL.insertUpdateLines(arrayListCheckedToExport, columnNameSource, columnNameDestination, booleanColumn);
 
@@ -731,10 +732,11 @@ public class MyScene extends Scene {
     /**
      * Lance l'écriture dans le fichier csv
      */
-    private void exportToCSV(){
+    private void exportToCSV(String fileName){
+        fileName = fileName.replace(".csv", "");
         try {
             OutputStreamWriter writerCheck = new OutputStreamWriter(
-                    new FileOutputStream(comboBoxSource.getValue().toString() + comboBoxDestination.getValue().toString() + "Check.csv"),
+                    new FileOutputStream(fileName + "Check.csv"),
                     Charset.forName("UTF-8").newEncoder());
             ArrayList<String> titles = new ArrayList<>();
             titles.add("ID " + comboBoxSource.getValue().toString());
@@ -755,7 +757,7 @@ public class MyScene extends Scene {
             writerCheck.close();
 
             OutputStreamWriter writerNotCheck = new OutputStreamWriter(
-                    new FileOutputStream(comboBoxSource.getValue().toString() + comboBoxDestination.getValue().toString() + "NotCheck.csv"),
+                    new FileOutputStream(fileName + "NotCheck.csv"),
                     Charset.forName("UTF-8").newEncoder());
             CSVUtils.writeLine(writerNotCheck, titles);
 

@@ -2,16 +2,15 @@ package Utils;
 
 import Element.DatabaseConnection;
 import javafx.util.Pair;
+import org.apache.poi.hssf.usermodel.HSSFWorkbook;
+import org.apache.poi.ss.usermodel.*;
 import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 import java.io.*;
 import java.nio.charset.Charset;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
 
 public class CSVUtils {
 
@@ -90,7 +89,7 @@ public class CSVUtils {
         return databaseConnections;
     }
 
-    public static XSSFWorkbook CSVtoXLS(File file){
+    public static XSSFWorkbook CSVtoXLSX(File file){
         String name = file.getName();
         name = name.replaceAll(".csv", ".xlsx");
 
@@ -120,6 +119,82 @@ public class CSVUtils {
         }
 
         return workbook;
+    }
+
+    public static XSSFWorkbook XLStoXLSX(File file) throws IOException {
+        String name = file.getName();
+        name += "x";
+
+        InputStream in = new BufferedInputStream(new FileInputStream(file));
+        try {
+            Workbook wbIn = new HSSFWorkbook(in);
+            File outF = new File(name);
+            if (outF.exists())
+                outF.delete();
+
+            XSSFWorkbook wbOut = new XSSFWorkbook();
+            int sheetCnt = wbIn.getNumberOfSheets();
+            for (int i = 0; i < sheetCnt; i++) {
+                Sheet sIn = wbIn.getSheetAt(i);
+                Sheet sOut = wbOut.createSheet(sIn.getSheetName());
+                Iterator<Row> rowIt = sIn.rowIterator();
+                while (rowIt.hasNext()) {
+                    Row rowIn = rowIt.next();
+                    Row rowOut = sOut.createRow(rowIn.getRowNum());
+
+                    Iterator<Cell> cellIt = rowIn.cellIterator();
+                    while (cellIt.hasNext()) {
+                        Cell cellIn = cellIt.next();
+                        Cell cellOut = rowOut.createCell(
+                                cellIn.getColumnIndex(), cellIn.getCellType());
+
+                        switch (cellIn.getCellType()) {
+                            case Cell.CELL_TYPE_BLANK:
+                                break;
+
+                            case Cell.CELL_TYPE_BOOLEAN:
+                                cellOut.setCellValue(cellIn.getBooleanCellValue());
+                                break;
+
+                            case Cell.CELL_TYPE_ERROR:
+                                cellOut.setCellValue(cellIn.getErrorCellValue());
+                                break;
+
+                            case Cell.CELL_TYPE_FORMULA:
+                                cellOut.setCellFormula(cellIn.getCellFormula());
+                                break;
+
+                            case Cell.CELL_TYPE_NUMERIC:
+                                cellOut.setCellValue(cellIn.getNumericCellValue());
+                                break;
+
+                            case Cell.CELL_TYPE_STRING:
+                                cellOut.setCellValue(cellIn.getStringCellValue());
+                                break;
+                        }
+
+                        {
+                            CellStyle styleIn = cellIn.getCellStyle();
+                            CellStyle styleOut = cellOut.getCellStyle();
+                            styleOut.setDataFormat(styleIn.getDataFormat());
+                        }
+                        cellOut.setCellComment(cellIn.getCellComment());
+
+                        // HSSFCellStyle cannot be cast to XSSFCellStyle
+                        // cellOut.setCellStyle(cellIn.getCellStyle());
+                    }
+                }
+            }
+            OutputStream out = new BufferedOutputStream(new FileOutputStream(outF));
+            try {
+                wbOut.write(out);
+            } finally {
+                out.close();
+            }
+            return wbOut;
+        } finally {
+            in.close();
+        }
     }
 
     public static ArrayList<String> readUseless(){

@@ -95,23 +95,25 @@ public class ComparaisonDialog extends Dialog<ArrayList<ArrayList<Pair<StringCom
             ArrayList<ArrayList<Pair<StringCompared, StringCompared>>> arrayList = new ArrayList<>();
 
             if(dialogButton == okButtonType){
-                sortIfCheckOrNot();
+                //sortIfCheckOrNot();
             }
             else if(dialogButton == exportButtonType){
-                sortIfCheckOrNot();
                 Optional<ArrayList<Pair<Boolean, String>>> result = new ExportDialog().showAndWait();
                 result.ifPresent(res -> {
+                    //sortIfCheckOrNot();
+
                     exportChoises = res;
                     export = true;
                     finish = true;
+
+                    arrayList.add(arrayListChecked);
+                    arrayList.add(arrayListNotChecked);
                 });
             }
             else{
                 finish = true;
             }
 
-            arrayList.add(arrayListChecked);
-            arrayList.add(arrayListNotChecked);
             return arrayList;
         });
     }
@@ -226,6 +228,7 @@ public class ComparaisonDialog extends Dialog<ArrayList<ArrayList<Pair<StringCom
         objects.add("Passable");
         objects.add("Défavorable");
         objects.add("Très défavorable");
+        objects.add("Ne possédant pas de matchages de mots forts");
 
 
         for (int i = 0; i < values.length; i++) {

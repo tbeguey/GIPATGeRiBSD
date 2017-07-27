@@ -125,16 +125,20 @@ public class Utils {
         return res;
     }
 
-    public static String SQLFormat(String value){
+    public static String SQLFormat(String value, Boolean header){
         String res = value;
 
-        res = res.replace(" ", "_");
         res = res.replace("'", "");
         res = res.replace("?", "");
         res = res.replace(":", "");
         res = res.replace("(", "_");
         res = res.replace(")", "");
         res = res.replace("-", "");
+        res = res.replace("#", "");
+
+        if(header){
+            res = res.replace(" ", "_");
+        }
 
         res = res.replace("__", "_");
 
@@ -148,13 +152,6 @@ public class Utils {
         } catch (Exception e) {
             return "";
         }
-    }
-
-    public static String exposantToSiret(String siret){
-        if(siret.contains("+E")){
-
-        }
-        return siret;
     }
 
 

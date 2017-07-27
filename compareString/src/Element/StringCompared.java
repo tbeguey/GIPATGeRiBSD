@@ -20,6 +20,8 @@ public class StringCompared {
     private double leven, jaro;
     private float commonwords;
 
+    private int sameOrgaScore;
+
     private double percentageCommonsWord, percentageLeven;
 
     private static Map<String, ArrayList<String>> same = new HashMap<>();
@@ -38,6 +40,7 @@ public class StringCompared {
         originalText = t; // on stock le texte orignale
         uuid = u; // on stock l'id
         organization = o;
+        sameOrgaScore = 0;
 
         if(organization != null)
             originalText = organization + " - " + originalText;
@@ -118,7 +121,7 @@ public class StringCompared {
      * @param comparedArrayList
      * @return
      */
-    public ArrayList<StringCompared> commonWords(ArrayList<StringCompared> comparedArrayList){
+    /*public ArrayList<StringCompared> commonWords(ArrayList<StringCompared> comparedArrayList){
         ArrayList<StringCompared> bestResults = new ArrayList<>();
         StringCompared bestResult;
         float bestSames = 0.f;
@@ -142,7 +145,6 @@ public class StringCompared {
         }
         else
             arrayListToCompare = comparedArrayList;
-
 
         for (StringCompared compared: arrayListToCompare) {
             ArrayList<String> sames = new ArrayList<>();
@@ -175,7 +177,7 @@ public class StringCompared {
             return null;
         
         return bestResults;
-    }
+    }*/
 
     /**
      * Retire les mots communs des deux phrases
@@ -242,23 +244,26 @@ public class StringCompared {
         int bestCommonWords = 0;
 
         ArrayList<StringCompared> arrayListToCompare;
-        if(!organization.isEmpty()){
+        if(organization != null){
             ArrayList<StringCompared> sameOrga = new ArrayList<>();
             for (StringCompared compared : comparedArrayList) {
-                if (organization.equals(compared.getOrganization())) {
-                    sameOrga.add(compared);
-                }
+                if(compared.getOrganization() != null)
+                    if (organization.equals(compared.getOrganization()))
+                        sameOrga.add(compared);
             }
 
             if(sameOrga.size() == 0){
                 arrayListToCompare = comparedArrayList;
+                sameOrgaScore = 0;
             }
             else {
                 arrayListToCompare = sameOrga;
+                sameOrgaScore = sameOrga.size();
             }
         }
         else
             arrayListToCompare = comparedArrayList;
+
 
         for (StringCompared stringCompared : arrayListToCompare) {
             int common = removeCommonWords(stringCompared);
@@ -521,5 +526,7 @@ public class StringCompared {
     public double getPercentageCommonsWord() { return percentageCommonsWord; }
 
     public double getPercentageLeven() { return percentageLeven; }
+
+    public int getSameOrgaScore() { return sameOrgaScore; }
 
 }

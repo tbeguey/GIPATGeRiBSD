@@ -2,6 +2,7 @@ package NewConnectionDialogs;
 
 import Element.DatabaseConnection;
 import Element.PostGreSQL;
+import View.ConcatenationDialog;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.geometry.Pos;
@@ -11,10 +12,13 @@ import javafx.scene.layout.VBox;
 import javafx.util.Pair;
 
 import java.util.ArrayList;
+import java.util.Optional;
 
 public class ColumnsDialog extends Dialog<ArrayList<String>> {
 
     private ArrayList<ComboBox> comboBoxes;
+
+    private ObservableList<String> options;
 
     public ColumnsDialog(DatabaseConnection databaseConnection){
         setTitle("Choix des colonnes - " + databaseConnection.getTitle());
@@ -24,7 +28,6 @@ public class ColumnsDialog extends Dialog<ArrayList<String>> {
         VBox wrapper = new VBox();
         wrapper.setSpacing(50);
         dialogPane.setContent(wrapper);
-
 
         PostGreSQL postGreSQL = new PostGreSQL(databaseConnection);
         ArrayList<String> columns = new ArrayList<>();
@@ -36,7 +39,7 @@ public class ColumnsDialog extends Dialog<ArrayList<String>> {
             }
         }
 
-        ObservableList<String> options = FXCollections.observableArrayList(
+        options = FXCollections.observableArrayList(
                 columns
         );
 
@@ -59,6 +62,20 @@ public class ColumnsDialog extends Dialog<ArrayList<String>> {
 
             comboBoxes.add(comboBox);
         }
+
+        Button concatenation = new Button("Concaténer");
+        concatenation.setOnMouseClicked(event -> {
+            Optional<String> result = new ConcatenationDialog(databaseConnection).showAndWait();
+            result.ifPresent(res -> {
+                columns.add(res);
+                options = FXCollections.observableArrayList(columns);
+                for (ComboBox comboBox : comboBoxes) {
+                    comboBox.setItems(options);
+                }
+                comboBoxes.get(comboBoxes.size()-1).getSelectionModel().selectLast();
+            });
+        });
+        wrapper.getChildren().add(concatenation);
 
         ButtonType okButtonType = new ButtonType("Suivant", ButtonBar.ButtonData.OK_DONE);
         dialogPane.getButtonTypes().addAll(okButtonType, ButtonType.CANCEL);

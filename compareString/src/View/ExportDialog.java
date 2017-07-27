@@ -57,6 +57,7 @@ public class ExportDialog extends Dialog<ArrayList<Pair<Boolean,String>>>{
                         tables
                 );
                 comboBox.setItems(options);
+                comboBox.getSelectionModel().selectLast();
             });
         });
 
