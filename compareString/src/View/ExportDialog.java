@@ -26,7 +26,7 @@ public class ExportDialog extends Dialog<ArrayList<Pair<Boolean,String>>>{
         wrapper.setSpacing(50);
         dialogPane.setContent(wrapper);
 
-        DatabaseConnection databaseConnection = new DatabaseConnection("Communs", "172.30.100.12", "5432","admpostgres", "admpostgres", "bsd", "communs", null, null, null);
+        DatabaseConnection databaseConnection = new DatabaseConnection("Communs", "172.30.100.12", "5432","admpostgres", "admpostgres", "bsd", "communs", "", null);
         PostGreSQL postGreSQL = new PostGreSQL(databaseConnection);
         ArrayList<String> tables = postGreSQL.getTables();
 

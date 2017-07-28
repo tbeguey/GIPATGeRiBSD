@@ -32,5 +32,8 @@ public class Main extends Application {
         Scene scene = new MyScene();
         stage.setScene(scene);
         stage.show();
+
+        StringCompared stringCompared = new StringCompared("COMMUNE DE CREON", "1", "");
+        stringCompared.getArrayList().forEach(System.out::println);
     }
 }

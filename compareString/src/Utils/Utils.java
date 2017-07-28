@@ -40,6 +40,10 @@ public class Utils {
         s = s.replace("ù", "u");
         s = s.replace("ç", "c");
 
+        s = s.replace(",", "");
+        s = s.replace(".", "");
+        s = s.replace(";", "");
+
         return s;
     }
 

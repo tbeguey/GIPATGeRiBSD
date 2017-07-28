@@ -20,16 +20,16 @@ public class DatabaseConnection {
         password = pass;
     }
 
-    public DatabaseConnection(String t, String i, String p, String u, String pass, String d, String s, String tb, ArrayList<String> c, ArrayList<Pair<String, Pair<String, String>>> j){
+    public DatabaseConnection(String t, String i, String p, String u, String pass, String d, String s, String tb, ArrayList<Pair<String, Pair<String, String>>> j){
         title = t;
         ip = i;
         port = p;
         user = u;
         password = pass;
-        database = d;
-        schema = s;
-        table = tb;
-        columns = c;
+        database = d.toLowerCase();
+        schema = s.toLowerCase();
+        table = tb.toLowerCase();
+        columns = new ArrayList<>();
         joins = j;
     }
 
@@ -111,29 +111,31 @@ public class DatabaseConnection {
 
     public String getTable() { return table; }
 
+    public ArrayList<String> getColumns() {
+        return columns;
+    }
+
+    public String getQuery() { return query; }
+
     @Override
     public String toString() {
         return title;
     }
 
     public void setDatabase(String database) {
-        this.database = database;
+        this.database = database.toLowerCase();
     }
 
     public void setSchema(String schema) {
-        this.schema = schema;
+        this.schema = schema.toLowerCase();
     }
 
     public void setTable(String table) {
-        this.table = table;
+        this.table = table.toLowerCase();
     }
 
     public void setColumns(ArrayList<String> columns) {
         this.columns = columns;
-    }
-
-    public ArrayList<String> getColumns() {
-        return columns;
     }
 
     public void setJoins(ArrayList<Pair<String, Pair<String, String>>> joins) {
@@ -144,5 +146,4 @@ public class DatabaseConnection {
         return joins;
     }
 
-    public String getQuery() { return query; }
 }

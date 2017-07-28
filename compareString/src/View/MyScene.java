@@ -13,6 +13,7 @@ import javafx.geometry.Insets;
 import javafx.scene.Group;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
+import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import javafx.scene.paint.Color;
@@ -324,7 +325,7 @@ public class MyScene extends Scene {
         });
 
         Button importFromExcelButton = new Button("Importer Excel");
-        importFromExcelButton.setOnMouseClicked(event -> {
+        importFromExcelButton.setOnMouseClicked((MouseEvent event) -> {
             FileChooser fileChooser = new FileChooser();
             fileChooser.setTitle("Fichier Excel (.xlsx, .csv, .xls)");
             File file = fileChooser.showOpenDialog(null);
@@ -349,52 +350,49 @@ public class MyScene extends Scene {
                     Optional<ArrayList<String>> result = new ExcelFormatDialog(sheets).showAndWait();
                     result.ifPresent(res -> {
                         String title = Utils.SQLFormat(res.get(0), false);
-                        DatabaseConnection databaseConnection = new DatabaseConnection(title, "172.30.100.12", "5432", "admpostgres", "admpostgres", "bsd", "excel", title, null, null);
+                        DatabaseConnection databaseConnection = new DatabaseConnection(title, "172.30.100.12", "5432", "admpostgres", "admpostgres", "bsd", "excel", title, null);
 
                         int headerRowNum = Integer.parseInt(res.get(1));
                         headerRowNum--;
 
-                        XSSFSheet sheet = wb.getSheet(res.get(2));
+                        int minRow = Integer.parseInt(res.get(2));
+                        minRow--;
+
+                        int maxRow = Integer.parseInt(res.get(3));
+
+                        XSSFSheet sheet = wb.getSheet(res.get(4));
 
 
-                        int maxRow = sheet.getLastRowNum();
                         Row row = sheet.getRow(headerRowNum);
                         int maxCell = row.getLastCellNum();
 
                         PostGreSQL postGreSQL = new PostGreSQL(databaseConnection);
 
+                        List<String> headers = new ArrayList<>();
+                        row = sheet.getRow(headerRowNum);
+                        for (int i = 0; i < maxCell; i++) {
+                            Cell cell = row.getCell(i);
+                            DataFormatter formatter = new DataFormatter();
+                            String val = formatter.formatCellValue(cell);
+                            headers.add(val);
 
-                        Boolean parsedHeaders = false;
-                        List < String > headers = new ArrayList<>();
-                        List < String > rowValues = null;
+                        }
+                        postGreSQL.createTableExcel(headers);
 
-                        for (int i = headerRowNum ; i < maxRow ; i++){
+                        List<String> rowValues;
+                        for (int i = minRow; i < maxRow ; i++){
                             row = sheet.getRow(i);
-                            if (parsedHeaders) {
-                                rowValues = new ArrayList<>();
-                            }
+                            rowValues = new ArrayList<>();
                             for (int j = 0; j < maxCell ; j++){
                                 Cell cell = row.getCell(j);
                                 DataFormatter formatter = new DataFormatter();
                                 String val = formatter.formatCellValue(cell);
-
-                                if (!parsedHeaders) {
-                                    headers.add(val);
-                                } else {
-                                    rowValues.add(val);
-                                }
+                                rowValues.add(val);
                             }
-                            if(!parsedHeaders){
-                                parsedHeaders = true;
-                                postGreSQL.createTableExcel(headers);
-                            }else{
-                                try {
-                                    postGreSQL.InsertRowInDB(rowValues);
-                                } catch (SQLException e) {
-
-                                } catch (ClassNotFoundException e) {
-                                    e.printStackTrace();
-                                }
+                            try {
+                                postGreSQL.InsertRowInDB(rowValues);
+                            } catch (SQLException | ClassNotFoundException e) {
+                                e.printStackTrace();
                             }
                         }
 
@@ -403,8 +401,6 @@ public class MyScene extends Scene {
                         postGreSQL.deconnection();
                     });
 
-                } catch (FileNotFoundException e) {
-                    e.printStackTrace();
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
@@ -544,7 +540,7 @@ public class MyScene extends Scene {
     public void display(ComparaisonDialog comparaisonDialog){
         for (int iterator = 1; iterator <= strings.size(); iterator++) {
             comparaisonDialog.add(strings.get(iterator-1).getKey(), strings.get(iterator-1).getValue());
-            if(iterator%10 == 0 || iterator == strings.size()){
+            if(iterator%50 == 0 || iterator == strings.size()){
                 comparaisonDialog.drawGraphics(values);
 
                 if(iterator == strings.size())
@@ -719,7 +715,7 @@ public class MyScene extends Scene {
         String columnNameDestination = "id" + comboBoxDestination.getValue().getTable();
 
 
-        DatabaseConnection databaseConnection = new DatabaseConnection("Communs", "172.30.100.12", "5432","admpostgres", "admpostgres", "bsd", "communs", table, null, null);
+        DatabaseConnection databaseConnection = new DatabaseConnection("Communs", "172.30.100.12", "5432","admpostgres", "admpostgres", "bsd", "communs", table, null);
         PostGreSQL postGreSQL = new PostGreSQL(databaseConnection);
 
         String booleanColumn = comboBoxSource.getValue().getColumns().get(2) + "_commun";

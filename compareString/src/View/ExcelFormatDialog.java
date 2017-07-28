@@ -32,7 +32,20 @@ public class ExcelFormatDialog extends Dialog<ArrayList<String>> {
         title.setPromptText("Titre");
 
         TextField headerRowNum = new TextField();
-        headerRowNum.setPromptText("A quelle ligne se trouve les en-têtes de chaque colonne ?");
+        headerRowNum.setPromptText("A quelle ligne se trouve les en-têtes ?");
+
+        TextField minRowNum = new TextField();
+        minRowNum.setPromptText("A quelle ligne se trouve la première valeur ?");
+        minRowNum.setMinWidth(240);
+
+        TextField maxRowNum = new TextField();
+        maxRowNum.setPromptText("A quelle ligne se trouve la dernière valeur ?");
+        maxRowNum.setMinWidth(240);
+
+
+        HBox rowBox = new HBox();
+        rowBox.setSpacing(10);
+        rowBox.getChildren().addAll(minRowNum, maxRowNum);
 
 
         ObservableList<String> options = FXCollections.observableArrayList(
@@ -51,7 +64,7 @@ public class ExcelFormatDialog extends Dialog<ArrayList<String>> {
         sheetBox.getChildren().addAll(labelSheet, sheetComboBox);
 
 
-        wrapper.getChildren().addAll(title, headerRowNum, sheetBox);
+        wrapper.getChildren().addAll(title, headerRowNum, rowBox, sheetBox);
 
         setResultConverter((ButtonType dialogButton) -> {
 
@@ -60,6 +73,8 @@ public class ExcelFormatDialog extends Dialog<ArrayList<String>> {
 
                 arrayList.add(title.getText());
                 arrayList.add(headerRowNum.getText());
+                arrayList.add(minRowNum.getText());
+                arrayList.add(maxRowNum.getText());
                 arrayList.add(sheetComboBox.getValue());
 
                 return arrayList;

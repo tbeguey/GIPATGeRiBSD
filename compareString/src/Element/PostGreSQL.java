@@ -161,7 +161,8 @@ public class PostGreSQL {
         for (int i = 0; i < arrayListCheckedToExport.size(); i++){
             ArrayList<String> arrayList = arrayListCheckedToExport.get(i);
             for (int j = 0; j < arrayList.size(); j++) {
-                arrayList.set(j, arrayList.get(j).replace("'", "''"));
+                if(arrayList.get(j) != null)
+                    arrayList.set(j, arrayList.get(j).replace("'", "''"));
             }
 
             String sourceId = arrayList.get(0);
@@ -370,6 +371,7 @@ public class PostGreSQL {
         } catch (SQLException e) {
             e.printStackTrace();
         }
+
 
         if(!exists){
             String sql = "ALTER TABLE communs." + correspondanceTable + " ADD COLUMN id" + db.getTable() + " text;";

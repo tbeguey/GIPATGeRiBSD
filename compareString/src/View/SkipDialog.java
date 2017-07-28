@@ -29,7 +29,7 @@ public class SkipDialog extends Dialog<ArrayList<String>> {
         ButtonType okButtonType = new ButtonType("Suivant", ButtonBar.ButtonData.OK_DONE);
         dialogPane.getButtonTypes().addAll(okButtonType, ButtonType.CANCEL);
 
-        DatabaseConnection databaseConnection = new DatabaseConnection("Communs", "172.30.100.12", "5432","admpostgres", "admpostgres", "bsd", "communs", null, null, null);
+        DatabaseConnection databaseConnection = new DatabaseConnection("Communs", "172.30.100.12", "5432","admpostgres", "admpostgres", "bsd", "communs", "",  null);
         PostGreSQL postGreSQL = new PostGreSQL(databaseConnection);
         ArrayList<String> tables = postGreSQL.getTables();
 

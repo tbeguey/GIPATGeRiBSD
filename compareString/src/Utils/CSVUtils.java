@@ -25,7 +25,8 @@ public class CSVUtils {
 
         String result = value;
         if (result.contains("\"")) {
-            result = result.replace("\"", "\"\"");
+            if(result != null)
+                result = result.replace("\"", "\"\"");
         }
         return result;
 
@@ -67,16 +68,14 @@ public class CSVUtils {
             while(line != null){
                 String[] words = line.split("²");
 
-                ArrayList<String> columns = new ArrayList<>();
-
                 ArrayList<Pair<String, Pair<String, String>>> joins = new ArrayList<>();
                 for (int i = 8; i < words.length; i+=3) {
-                    Pair<String, String> pair = new Pair<>(words[i+1], words[i+2]);
-                    Pair<String, Pair<String, String>> pairPair = new Pair<>(words[i], pair);
+                    Pair<String, String> pair = new Pair<>(words[i+1].toLowerCase(), words[i+2].toLowerCase());
+                    Pair<String, Pair<String, String>> pairPair = new Pair<>(words[i].toLowerCase(), pair);
                     joins.add(pairPair);
                 }
 
-                DatabaseConnection databaseConnection = new DatabaseConnection(words[0], words[1], words[2], words[3], words[4], words[5], words[6], words[7], columns, joins);
+                DatabaseConnection databaseConnection = new DatabaseConnection(words[0], words[1], words[2], words[3], words[4], words[5], words[6], words[7], joins);
                 databaseConnections.add(databaseConnection);
 
                 line = reader.readLine();
@@ -203,7 +202,9 @@ public class CSVUtils {
             BufferedReader reader = new BufferedReader(new FileReader("useless.csv"));
             String line = reader.readLine();
             String[] words = line.split(";");
-            Collections.addAll(useless, words);
+            for (String s : words) {
+                useless.add(s.toLowerCase());
+            }
 
         } catch (FileNotFoundException e) {
             e.printStackTrace();
@@ -227,7 +228,7 @@ public class CSVUtils {
                 String str[] = currentLine.split(";");
                 ArrayList<String> arrayList = new ArrayList<>();
                 for (int i=1; i<str.length;i++)
-                    arrayList.add(str[i]);
+                    arrayList.add(str[i].toLowerCase());
                 map.put(str[0], arrayList);
             }
         } catch (FileNotFoundException e) {
