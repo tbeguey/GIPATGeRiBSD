@@ -1,10 +1,13 @@
 package Main;
 
 import Element.StringCompared;
+import Utils.Utils;
 import View.MyScene;
 import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+
+import java.util.ArrayList;
 
 
 public class Main extends Application {
@@ -33,7 +36,12 @@ public class Main extends Application {
         stage.setScene(scene);
         stage.show();
 
-        StringCompared stringCompared = new StringCompared("COMMUNE DE CREON", "1", "");
-        stringCompared.getArrayList().forEach(System.out::println);
+        StringCompared stringCompared = new StringCompared("COMMUNE DE MIALET _24", "1", "");
+        StringCompared text = new StringCompared("Miallet", "2", "");
+        /*stringCompared.getArrayList().forEach(System.out::println);
+        text.getArrayList().forEach(System.out::println);
+
+        ArrayList
+        System.out.println();*/
     }
 }

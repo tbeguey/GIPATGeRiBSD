@@ -1,5 +1,7 @@
 package Utils;
 
+import Element.StringCompared;
+
 import java.io.File;
 
 public class Utils {
@@ -97,34 +99,37 @@ public class Utils {
                 (((double)matches - transpositions/2.0) / matches)) / 3.0;
     }
 
-    /**
-     * Algorithme de distance de Levenshtein (trouvé sur internet)
-     * @param text
-     * @param stringCompared
-     * @return
-     */
-    public static int leven(String text, String stringCompared){
-        int[][] distance = new int[text.length() + 1][stringCompared.length() + 1];
+
+    public static float leven(StringCompared textCompared, StringCompared stringCompared){
+        String text = textCompared.getTextWithoutCommon();
+        String compared = stringCompared.getTextWithoutCommon();
+        int[][] distance = new int[text.length() + 1][compared.length() + 1];
         for (int i = 0; i < text.length(); i++) {
             distance[i][0] = i;
         }
 
-        for (int j = 0; j < stringCompared.length(); j++) {
+        for (int j = 0; j < compared.length(); j++) {
             distance[0][j] = j;
         }
 
         for (int i = 1; i <= text.length(); i++) {
-            for (int j = 1; j <= stringCompared.length(); j++) {
+            for (int j = 1; j <= compared.length(); j++) {
                 distance[i][j] = Utils.minimum(
                         distance[i - 1][j] + 1,
                         distance[i][j - 1] + 1,
-                        distance[i - 1][j - 1] + ((text.charAt(i - 1) == stringCompared.charAt(j - 1)) ? 0 : 1));
+                        distance[i - 1][j - 1] + ((text.charAt(i - 1) == compared.charAt(j - 1)) ? 0 : 1));
             }
         }
 
-        int res = distance[text.length()][stringCompared.length()];
+        float res = distance[text.length()][compared.length()];
 
+        int maxLength;
+        if(textCompared.getNbChar() > stringCompared.getNbChar())
+            maxLength = textCompared.getNbChar();
+        else
+            maxLength = stringCompared.getNbChar();
 
+        res = res / maxLength;
 
         return res;
     }

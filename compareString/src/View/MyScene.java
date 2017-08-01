@@ -618,17 +618,17 @@ public class MyScene extends Scene {
             double res;
             switch (sort_options) {
                 case 1:
-                    res = Double.compare(o1.getKey().getPercentageCommonsWord(), o2.getKey().getPercentageCommonsWord());
+                    res = Double.compare(o1.getKey().getCommonwords(), o2.getKey().getCommonwords());
                     if (res == 0)
-                        res = Double.compare(o2.getKey().getPercentageLeven(), o1.getKey().getPercentageLeven());
+                        res = Double.compare(o1.getKey().getLeven(), o2.getKey().getCommonwords());
                     break;
                 case 2:
                     res = o1.getKey().getOrganization().toLowerCase().compareTo(o2.getKey().getOrganization().toLowerCase());
                     break;
                 default:
-                    res = Double.compare(o2.getKey().getPercentageCommonsWord(), o1.getKey().getPercentageCommonsWord());
+                    res = Double.compare(o2.getKey().getCommonwords(), o1.getKey().getCommonwords());
                     if (res == 0)
-                        res = Double.compare(o1.getKey().getPercentageLeven(), o2.getKey().getPercentageLeven());
+                        res = Double.compare(o2.getKey().getLeven(), o1.getKey().getLeven());
                     break;
             }
             return (int) res;
@@ -664,27 +664,17 @@ public class MyScene extends Scene {
                     if (arrayListResult != null) {
                         double common = compared.getCommonwords();
                         double leven = compared.getLeven();
-                        double percentageCommonWord = common / compared.getArrayList().size();
 
-                        int nbChar = 0;
-                        for (String s : compared.getArrayList()) {
-                            nbChar += s.toCharArray().length;
-                        }
 
-                        double percentageLeven = leven / nbChar;
-
-                        compared.setPercentageCommonsWord(percentageCommonWord);
-                        compared.setPercentageLeven(percentageLeven);
-
-                        if (percentageCommonWord == 1)
+                        if (common == 1)
                             values[0]++;
-                        else if (percentageCommonWord < 1 && percentageCommonWord >= 0.5 && percentageLeven < 0.5)
+                        else if (common < 1 && common >= 0.5 && leven < 0.5)
                             values[1]++;
-                        else if (percentageCommonWord < 1 && percentageCommonWord >= 0.5 && percentageLeven >= 0.5)
+                        else if (common < 1 && common >= 0.5 && leven >= 0.5)
                             values[2]++;
-                        else if (percentageCommonWord < 0.5 && percentageCommonWord >= 0 && percentageLeven < 0.5)
+                        else if (common < 0.5 && common >= 0 && leven < 0.5)
                             values[3]++;
-                        else if (percentageCommonWord < 0.5 && percentageCommonWord >= 0 && percentageLeven >= 0.5)
+                        else if (common < 0.5 && common >= 0 && leven >= 0.5)
                             values[4]++;
 
                         if(compared.getSameOrgaScore() == 0)

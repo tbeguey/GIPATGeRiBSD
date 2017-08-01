@@ -82,9 +82,9 @@ public class DisplayTitlesDialog extends Dialog {
 
         for (StringCompared compared : stringCompareds) {
             if(!compared.equals(s)){
-                int common = compared.removeCommonWords(s);
+                float common = compared.removeCommonWords(s);
                 compared.setCommonwords(common);
-                double leven = Utils.leven(s.getTextWithoutCommon(), compared.getTextWithoutCommon());
+                float leven = Utils.leven(s, compared);
                 compared.setLeven(leven);
 
                 if(common !=0 && leven !=0)

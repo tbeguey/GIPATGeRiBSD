@@ -181,8 +181,8 @@ public class ComparaisonDialog extends Dialog<ArrayList<ArrayList<Pair<StringCom
         TextField secondScoreText = new TextField();
         secondScoreText.setPrefWidth(50);
 
-        double value = first.getPercentageCommonsWord();
-        double secondValue = first.getPercentageLeven();
+        double value = first.getCommonwords();
+        double secondValue = first.getLeven();
 
         if(value == 1)
             radioButton.setSelected(true);

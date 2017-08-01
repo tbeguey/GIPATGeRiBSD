@@ -17,15 +17,15 @@ public class StringCompared {
     private String organization;
     private String uuid;
 
-    private double leven, jaro;
+    private float leven, jaro;
     private float commonwords;
 
     private int sameOrgaScore;
 
-    private double percentageCommonsWord, percentageLeven;
-
     private static Map<String, ArrayList<String>> same = new HashMap<>();
     private static ArrayList<String> useless = new ArrayList<>();
+
+    private int nbChar;
 
     static { // Gère les mots se ressemblant, ayant la meme signification et les mots "inutiles"
         useless = CSVUtils.readUseless();
@@ -91,6 +91,11 @@ public class StringCompared {
                 if(i + 1 < index)
                     organization += " ";
             }
+        }
+
+        nbChar = 0;
+        for (String s : arrayList) {
+            nbChar += s.toCharArray().length;
         }
 
 
@@ -185,7 +190,7 @@ public class StringCompared {
      * @param compared
      * @return
      */
-    public int removeCommonWords(StringCompared compared){
+    public float removeCommonWords(StringCompared compared){
         ArrayList<String> tmp = new ArrayList<>();
         ArrayList<String> tmpCompared = new ArrayList<>();
 
@@ -222,7 +227,14 @@ public class StringCompared {
                 compared.setTextWithoutCommon(compared.getTextWithoutCommon() + " ");
         }
 
-        return commons.size();
+        int maxLength;
+        if(arrayList.size() > compared.getArrayList().size())
+            maxLength = arrayList.size();
+        else
+            maxLength = compared.getArrayList().size();
+
+        float res = (float) commons.size() / (float) maxLength;
+        return res;
     }
 
 
@@ -239,9 +251,9 @@ public class StringCompared {
     public ArrayList<StringCompared> levenshteinDistanceCW(ArrayList<StringCompared> comparedArrayList){
         ArrayList<StringCompared> bestResults = new ArrayList<>();
         StringCompared bestResult;
-        int bestLevenshtein = 10000000;
-        int levenshtein;
-        int bestCommonWords = 0;
+        float bestLevenshtein = 10000000;
+        float levenshtein;
+        float bestCommonWords = 0;
 
         ArrayList<StringCompared> arrayListToCompare;
         if(organization != null){
@@ -266,15 +278,13 @@ public class StringCompared {
 
 
         for (StringCompared stringCompared : arrayListToCompare) {
-            int common = removeCommonWords(stringCompared);
+            float common = removeCommonWords(stringCompared);
 
             if(textWithoutCommon.isEmpty() || stringCompared.getTextWithoutCommon().isEmpty())
                 levenshtein = 0;
-            else{
-                levenshtein = Utils.leven(textWithoutCommon, stringCompared.getTextWithoutCommon());
-                if(levenshtein == originalText.length() || levenshtein == stringCompared.getOriginalText().length())
-                    levenshtein = 123456;
-            }
+            else
+                levenshtein = Utils.leven(this, stringCompared);
+
 
             if(common > bestCommonWords){
                 bestLevenshtein = levenshtein;
@@ -289,7 +299,7 @@ public class StringCompared {
                 if (levenshtein == bestLevenshtein)
                     bestResults.add(stringCompared);
 
-                else if (levenshtein < bestLevenshtein) {
+                else if (levenshtein > bestLevenshtein) {
                     bestLevenshtein = levenshtein;
                     bestResult = stringCompared;
                     bestCommonWords = common;
@@ -303,18 +313,14 @@ public class StringCompared {
         if(bestResults.size() == 0)
             return null;
 
-        if(bestCommonWords == 0)
-            return null;
+        /*if(bestCommonWords == 0)
+            return null;*/
 
         return bestResults;
     }
 
-    /**
-     * Meme chose sans les mots communs
-     * @param comparedArrayList
-     * @return
-     */
-    public ArrayList<StringCompared> levenshteinDistance(ArrayList<StringCompared> comparedArrayList){
+
+    /*public ArrayList<StringCompared> levenshteinDistance(ArrayList<StringCompared> comparedArrayList){
         ArrayList<StringCompared> bestResults = new ArrayList<>();
         StringCompared bestResult;
         int bestLevenshtein = 10000000;
@@ -341,7 +347,7 @@ public class StringCompared {
             arrayListToCompare = comparedArrayList;
 
         for (StringCompared stringCompared : arrayListToCompare) {
-            levenshtein = Utils.leven(text, stringCompared.getText());
+            levenshtein = Utils.leven(this, stringCompared);
             if(levenshtein == originalText.length() || levenshtein == stringCompared.getOriginalText().length())
                 levenshtein = 123456;
 
@@ -360,16 +366,9 @@ public class StringCompared {
             return null;
 
         return bestResults;
-    }
+    }*/
 
-    /**
-     * Meme boulot que la fonction de Levenshtein mais avec des calculs légèrement différent.
-     * La distance de Jaro mesure la similarité entre deux chaînes de caractères grâce à la longue de la chaine,
-     * le nombre de caractères correspondants, le nombre de transpositions.
-     * @param comparedArrayList
-     * @return
-     */
-    public ArrayList<StringCompared> jaroDistanceCW(ArrayList<StringCompared> comparedArrayList){
+    /*public ArrayList<StringCompared> jaroDistanceCW(ArrayList<StringCompared> comparedArrayList){
         ArrayList<StringCompared> bestResults = new ArrayList<>();
         StringCompared bestResult;
         double bestJaro = 0;
@@ -429,14 +428,9 @@ public class StringCompared {
             return null;
 
         return bestResults;
-    }
+    }*/
 
-    /**
-     * Meme chose sans les mots communs
-     * @param comparedArrayList
-     * @return
-     */
-    public ArrayList<StringCompared> jaroDistance(ArrayList<StringCompared> comparedArrayList){
+    /*public ArrayList<StringCompared> jaroDistance(ArrayList<StringCompared> comparedArrayList){
         ArrayList<StringCompared> bestResults = new ArrayList<>();
         StringCompared bestResult;
         double bestJaro = 0;
@@ -480,7 +474,7 @@ public class StringCompared {
             return null;
 
         return bestResults;
-    }
+    }*/
 
 
     @Override
@@ -505,13 +499,13 @@ public class StringCompared {
 
     public String getOrganization() {return organization; }
 
-    public double getLeven() { return leven; }
+    public float getLeven() { return leven; }
 
     public float getCommonwords() { return commonwords; }
 
     void setTextWithoutCommon(String t) { textWithoutCommon = t; }
 
-    public void setLeven(double l) { leven = l; }
+    public void setLeven(float l) { leven = l; }
 
     public void setCommonwords(float c) { commonwords = c;}
 
@@ -519,14 +513,7 @@ public class StringCompared {
 
     public static Map<String, ArrayList<String>> getSame() { return same; }
 
-    public void setPercentageCommonsWord(double p) { percentageCommonsWord = p; }
-
-    public void setPercentageLeven(double p) { percentageLeven = p; }
-
-    public double getPercentageCommonsWord() { return percentageCommonsWord; }
-
-    public double getPercentageLeven() { return percentageLeven; }
-
     public int getSameOrgaScore() { return sameOrgaScore; }
 
+    public int getNbChar() { return nbChar; }
 }

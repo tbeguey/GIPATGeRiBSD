@@ -75,7 +75,7 @@ public class DatabaseConnection {
         query += " WHERE ";
         for (int i = 0; i<booleans.size(); i++){
             if(i != 0)
-                query += " AND ";
+                query += " OR ";
 
             query += booleans.get(i) + " = true";
         }
