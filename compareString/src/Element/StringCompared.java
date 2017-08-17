@@ -27,7 +27,7 @@ public class StringCompared {
 
     private int nbChar;
 
-    static { // Gère les mots se ressemblant, ayant la meme signification et les mots "inutiles"
+    static { // Gère les mots se ressemblant, ayant la meme signification ainsi que les mots "inutiles"
         useless = CSVUtils.readUseless();
         same = CSVUtils.readSame();
     }
@@ -310,8 +310,11 @@ public class StringCompared {
             }
         }
 
-        if(bestResults.size() == 0)
-            return null;
+        if(bestResults.size() == 0){
+            StringCompared nullCompared = new StringCompared("null", "null", "");
+            leven = 999;
+            bestResults.add(nullCompared);
+        }
 
         /*if(bestCommonWords == 0)
             return null;*/

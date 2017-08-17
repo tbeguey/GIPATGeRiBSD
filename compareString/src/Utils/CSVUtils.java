@@ -10,6 +10,7 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 import java.io.*;
 import java.nio.charset.Charset;
+import java.nio.charset.StandardCharsets;
 import java.util.*;
 
 public class CSVUtils {
@@ -24,9 +25,10 @@ public class CSVUtils {
     private static String followCVSformat(String value) {
 
         String result = value;
-        if (result.contains("\"")) {
-            if(result != null)
+        if(result != null) {
+            if (result.contains("\"")) {
                 result = result.replace("\"", "\"\"");
+            }
         }
         return result;
 
@@ -43,7 +45,6 @@ public class CSVUtils {
 
         StringBuilder sb = new StringBuilder();
         for (String value : values) {
-            System.out.println(sb.toString());
             if (!first) {
                 sb.append(separators);
             }
@@ -63,7 +64,7 @@ public class CSVUtils {
     public static ArrayList<DatabaseConnection> readConnections(){
         ArrayList<DatabaseConnection> databaseConnections = new ArrayList<>();
         try {
-            BufferedReader reader = new BufferedReader(new FileReader("connexion.csv"));
+            BufferedReader reader = new BufferedReader(new InputStreamReader(new FileInputStream(new Utils().connexionPath), StandardCharsets.UTF_8));
             String line = reader.readLine();
             while(line != null){
                 String[] words = line.split("²");
@@ -199,7 +200,7 @@ public class CSVUtils {
     public static ArrayList<String> readUseless(){
         ArrayList<String> useless = new ArrayList<>();
         try {
-            BufferedReader reader = new BufferedReader(new FileReader("useless.csv"));
+            BufferedReader reader = new BufferedReader(new FileReader(new Utils().uselessPath));
             String line = reader.readLine();
             String[] words = line.split(";");
             for (String s : words) {
@@ -223,7 +224,7 @@ public class CSVUtils {
         try {
             String currentLine;
             Charset charset = Charset.forName("ISO-8859-1");
-            BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(new FileInputStream("same.csv"), charset));
+            BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(new FileInputStream(new Utils().samePath), charset));
             while ((currentLine = bufferedReader.readLine()) != null){
                 String str[] = currentLine.split(";");
                 ArrayList<String> arrayList = new ArrayList<>();

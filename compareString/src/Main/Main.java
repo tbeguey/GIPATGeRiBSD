@@ -36,12 +36,5 @@ public class Main extends Application {
         stage.setScene(scene);
         stage.show();
 
-        StringCompared stringCompared = new StringCompared("COMMUNE DE MIALET _24", "1", "");
-        StringCompared text = new StringCompared("Miallet", "2", "");
-        /*stringCompared.getArrayList().forEach(System.out::println);
-        text.getArrayList().forEach(System.out::println);
-
-        ArrayList
-        System.out.println();*/
     }
 }

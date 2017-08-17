@@ -8,8 +8,10 @@ import javafx.geometry.Pos;
 import javafx.scene.control.*;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
+import javafx.stage.FileChooser;
 import javafx.util.Pair;
 
+import java.io.File;
 import java.util.ArrayList;
 import java.util.Optional;
 
@@ -38,7 +40,6 @@ public class ExportDialog extends Dialog<ArrayList<Pair<Boolean,String>>>{
         comboBox.getSelectionModel().selectFirst();
 
         RadioButton radioButtonBD = new RadioButton("Export en base");
-        radioButtonBD.setSelected(true);
         radioButtonBD.setOnMouseClicked(event -> {
             if(!radioButtonBD.isSelected())
                 comboBox.setDisable(true);
@@ -69,21 +70,28 @@ public class ExportDialog extends Dialog<ArrayList<Pair<Boolean,String>>>{
         wrapperBD.setSpacing(10);
         wrapperBD.getChildren().addAll(radioButtonBD, BDBox);
 
-        TextField textField = new TextField();
-        textField.setPromptText("Titre du fichier (.csv)");
+        FileChooser fileChooser = new FileChooser();
+        fileChooser.setTitle("Fichier CSV");
+
+        final File[] file = new File[1];
+
+        Button openFileChooser = new Button("Parcourir");
+        openFileChooser.setText("Parcourir");
+        openFileChooser.setOnMouseClicked(event -> {
+            file[0] = fileChooser.showOpenDialog(null);
+        });
 
         RadioButton radioButtonCSV = new RadioButton("Export en CSV");
-        radioButtonCSV.setSelected(true);
         radioButtonCSV.setOnMouseClicked(event -> {
             if(!radioButtonCSV.isSelected())
-                textField.setDisable(true);
+                openFileChooser.setDisable(true);
             else
-                textField.setDisable(false);
+                openFileChooser.setDisable(false);
         });
 
         VBox wrapperCSV = new VBox();
         wrapperCSV.setSpacing(10);
-        wrapperCSV.getChildren().addAll(radioButtonCSV, textField);
+        wrapperCSV.getChildren().addAll(radioButtonCSV, openFileChooser);
 
         wrapper.getChildren().addAll(wrapperBD, wrapperCSV);
 
@@ -99,7 +107,7 @@ public class ExportDialog extends Dialog<ArrayList<Pair<Boolean,String>>>{
                 Pair<Boolean, String> pairBD = new Pair<>(radioButtonBD.isSelected(), comboBox.getValue());
                 arrayList.add(pairBD);
 
-                Pair<Boolean, String>  pairCSV = new Pair<>(radioButtonCSV.isSelected(), textField.getText());
+                Pair<Boolean, String>  pairCSV = new Pair<>(radioButtonCSV.isSelected(), file[0].getAbsolutePath());
                 arrayList.add(pairCSV);
 
                 return arrayList;

@@ -6,6 +6,11 @@ import java.io.File;
 
 public class Utils {
 
+    public String path = getClass().getProtectionDomain().getCodeSource().getLocation().getPath().replace("compareString.jar", "").replace("artifacts", "production");
+    public String samePath =  path + "same.csv";
+    public String uselessPath =  path + "useless.csv";
+    public String connexionPath =  path + "connexion.csv";
+
     /**
      * Détermine le minimum entre 3 nombres
      * @param a

@@ -4,8 +4,7 @@ import Element.DatabaseConnection;
 import Element.PostGreSQL;
 import Element.StringCompared;
 import NewConnectionDialogs.*;
-import Utils.CSVUtils;
-import Utils.Utils;
+import Utils.*;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.concurrent.Task;
@@ -151,82 +150,15 @@ public class MyScene extends Scene {
             startComparaison();
         });
 
-        Button uselessButton = new Button("Ajouter mots inutiles");
+
+        Button uselessButton = new Button("Gérer mots inutiles");
         uselessButton.setOnMouseClicked(event -> {
-            Optional<String> result = new NewUselessDialog().showAndWait();
-            result.ifPresent(res -> {
-                if(!StringCompared.getUseless().contains(res)){
-                    StringCompared.getUseless().add(res);
-
-                    try {
-                        OutputStreamWriter writer = new OutputStreamWriter(
-                                new FileOutputStream("useless.csv"),
-                                Charset.forName("UTF-8").newEncoder());
-                        CSVUtils.writeLine(writer, StringCompared.getUseless(), ';', ' ');
-
-                        writer.flush();
-                        writer.close();
-                    } catch (FileNotFoundException e) {
-                        e.printStackTrace();
-                    } catch (IOException e) {
-                        e.printStackTrace();
-                    }
-
-                }
-                else {
-                    Alert alert = new Alert(Alert.AlertType.ERROR);
-                    alert.setContentText("Le mot '" + res + "' fait déja parti de cette liste");
-                    alert.showAndWait();
-                }
-            });
+            new NewUselessDialog().showAndWait();
         });
 
-        Button dictionnaryButton = new Button("Ajouter mots semblables");
+        Button dictionnaryButton = new Button("Gérer mots semblables");
         dictionnaryButton.setOnMouseClicked(event -> {
-            Optional<Pair<String,String>> result = new NewSameDialog().showAndWait();
-            result.ifPresent(res -> {
-                boolean present = false;
-                for (Map.Entry<String, ArrayList<String>> entry : StringCompared.getSame().entrySet()){
-                    for (String s : entry.getValue()){
-                        if (res.getValue().equals(s))
-                            present = true;
-                    }
-                }
-
-                if(!present){
-                    StringCompared.getSame().get(res.getKey()).add(res.getValue());
-
-                    try {
-                        OutputStreamWriter writer = new OutputStreamWriter(
-                                new FileOutputStream("same.csv"),
-                                Charset.forName("UTF-8").newEncoder());
-
-                        for (Map.Entry<String, ArrayList<String>> entry : StringCompared.getSame().entrySet()){
-                            ArrayList<String> arrayList = new ArrayList<>();
-                            arrayList.add(entry.getKey());
-                            arrayList.addAll(entry.getValue());
-
-                            CSVUtils.writeLine(writer, arrayList, ';', ' ');
-                        }
-
-
-                        writer.flush();
-                        writer.close();
-                    } catch (FileNotFoundException e) {
-                        e.printStackTrace();
-                    } catch (IOException e) {
-                        e.printStackTrace();
-                    }
-
-                }
-                else{
-                    Alert alert = new Alert(Alert.AlertType.ERROR);
-                    alert.setContentText("Le mot '" + res.getValue() + "' fait déja parti d'une liste");
-                    alert.showAndWait();
-                }
-
-            });
-
+            new NewSameDialog().showAndWait();
         });
 
         HBox utilsHbox = new HBox();
@@ -719,10 +651,9 @@ public class MyScene extends Scene {
      * Lance l'écriture dans le fichier csv
      */
     private void exportToCSV(String fileName){
-        fileName = fileName.replace(".csv", "");
         try {
             OutputStreamWriter writerCheck = new OutputStreamWriter(
-                    new FileOutputStream(fileName + "Check.csv"),
+                    new FileOutputStream(fileName),
                     Charset.forName("UTF-8").newEncoder());
             ArrayList<String> titles = new ArrayList<>();
             titles.add("ID " + comboBoxSource.getValue().toString());
@@ -762,7 +693,7 @@ public class MyScene extends Scene {
 
     private void saveDatabases(){
         try {
-            OutputStreamWriter writer = new OutputStreamWriter( new FileOutputStream("connexion.csv"),
+            OutputStreamWriter writer = new OutputStreamWriter( new FileOutputStream(new Utils().connexionPath),
                     Charset.forName("UTF-8").newEncoder());
 
             for (DatabaseConnection db : databaseConnections) {

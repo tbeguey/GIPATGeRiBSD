@@ -50,7 +50,7 @@ public class PostGreSQL {
             if(db.getSchema() != null)
                 url += "?currentSchema=" + db.getSchema();
 
-            c = DriverManager.getConnection(url , // url comportant le nom de l'hote, le port et la base qu'on souhaite accéder (ici elle est créer automatiquement)
+            c = DriverManager.getConnection(url , // url comportant le nom de l'hote, le port et la base qu'on souhaite accéder
                     db.getUser(), db.getPassword()); // nom d'utilisateur + mot de passe
 
             stmt = c.createStatement();
@@ -183,7 +183,7 @@ public class PostGreSQL {
             else
                 sql = "UPDATE " + db.getTable() + " SET " + columnNameDestination + " = '" + destinationId + "', date_derniere_modification = current_date, " + booleanColumn + " = true where " + columnNameSource + " = '" + sourceId + "';"; // update selon la source
 
-
+            System.out.println(sql);
             try {
                 stmt.executeUpdate(sql);
             } catch (SQLException e) {

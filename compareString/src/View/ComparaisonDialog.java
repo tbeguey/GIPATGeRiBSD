@@ -81,7 +81,28 @@ public class ComparaisonDialog extends Dialog<ArrayList<ArrayList<Pair<StringCom
 
         sort_options.getChildren().addAll(sort_by_label, sort_by);
 
-        wrapper.getChildren().addAll(sort_options, scrollPane);
+        HBox titlesBox = new HBox();
+        titlesBox.setSpacing(460);
+
+        Text titleCompared = new Text("Titres comparés");
+        Text tileRes = new Text("Liste des potentiels résultats");
+
+        titlesBox.getChildren().addAll(titleCompared, tileRes);
+
+        HBox percentageBox = new HBox();
+        percentageBox.setSpacing(10);
+
+        Text percentageMC = new Text("% de mots communs");
+        Text percentageLeven = new Text("% de Levenshtein");
+
+        percentageBox.getChildren().addAll(percentageMC, percentageLeven);
+
+        HBox titlesAndPercentageBox = new HBox();
+        titlesAndPercentageBox.setSpacing(500);
+        titlesAndPercentageBox.getChildren().addAll(titlesBox, percentageBox);
+
+
+        wrapper.getChildren().addAll(sort_options, titlesAndPercentageBox, scrollPane);
         dialogPane.setContent(wrapper);
 
         Text numbers = new Text(size + " résultat(s)");
@@ -176,10 +197,15 @@ public class ComparaisonDialog extends Dialog<ArrayList<ArrayList<Pair<StringCom
 
         RadioButton radioButton = new RadioButton();
 
+        HBox scoreBox = new HBox();
+        scoreBox.setSpacing(50);
+
         TextField scoreText = new TextField();
         scoreText.setPrefWidth(50);
         TextField secondScoreText = new TextField();
         secondScoreText.setPrefWidth(50);
+
+        scoreBox.getChildren().addAll(scoreText, secondScoreText);
 
         double value = first.getCommonwords();
         double secondValue = first.getLeven();
@@ -196,7 +222,7 @@ public class ComparaisonDialog extends Dialog<ArrayList<ArrayList<Pair<StringCom
         Pair<Pair<StringCompared, ComboBox<StringCompared>>, RadioButton> pairRadioButtonPair = new Pair<>(stringPair, radioButton);
         pairArrayList.add(pairRadioButtonPair);
 
-        hbox.getChildren().addAll(firstText, radioButton, secondText, scoreText, secondScoreText);
+        hbox.getChildren().addAll(firstText, radioButton, secondText, scoreBox);
 
         wrapperCompared.getChildren().add(hbox);
     }
