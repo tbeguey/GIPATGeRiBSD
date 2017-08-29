@@ -8,10 +8,14 @@ import javafx.collections.ObservableList;
 import javafx.geometry.Pos;
 import javafx.scene.control.*;
 import javafx.scene.layout.VBox;
+import javafx.scene.text.Text;
 
 import java.util.ArrayList;
 
 
+/**
+ * Ecran listant les bases de données présentes selon la connexion choisie.
+ */
 public class DatabaseDialog extends Dialog<String>{
 
     public DatabaseDialog(DatabaseConnection databaseConnection){
@@ -21,6 +25,8 @@ public class DatabaseDialog extends Dialog<String>{
 
         VBox wrapper = new VBox();
         wrapper.setSpacing(10);
+
+        Text text = new Text("Selectionnez ci-dessous la base à laquelle vous voulez vous connectez.");
 
         PostGreSQL postGreSQL = new PostGreSQL(databaseConnection);
         ArrayList<String> databases = postGreSQL.getDatabases();
@@ -33,7 +39,7 @@ public class DatabaseDialog extends Dialog<String>{
         comboBox.getSelectionModel().selectFirst();
         wrapper.setAlignment(Pos.CENTER);
 
-        wrapper.getChildren().add(comboBox);
+        wrapper.getChildren().addAll(text, comboBox);
         dialogPane.setContent(wrapper);
 
         ButtonType okButtonType = new ButtonType("Suivant", ButtonBar.ButtonData.OK_DONE);

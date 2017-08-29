@@ -6,25 +6,36 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.geometry.Pos;
 import javafx.scene.control.*;
+import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import javafx.scene.text.Text;
 
 import java.util.ArrayList;
 
 
+/**
+ * Dialogue permettant d'utiliser les résultats précédents
+ */
 public class SkipDialog extends Dialog<ArrayList<String>> {
 
     private ArrayList<String> labelsColumns;
 
     public SkipDialog(){
         DialogPane dialogPane = getDialogPane();
-        dialogPane.setPrefHeight(200);
+        dialogPane.setPrefHeight(300);
         dialogPane.setPrefWidth(400);
 
         VBox wrapper = new VBox();
         wrapper.setSpacing(10);
         dialogPane.setContent(wrapper);
         wrapper.setAlignment(Pos.CENTER);
+
+        Text text = new Text("Vous avez la possibilité d'utiliser des résultats précédents. \n" +
+                "Par exemple, si vous avez déjà effectuer cette vérification mais que vous\n" +
+                "ne voulez pas voir les résultats que vous avez déjà parcourus.\n" +
+                "Ou bien vous pouvez retravaillez uniquement sur ceux où un résultat existe déja.\n" +
+                "Sinon il vous suffit de ne rien cocher pour passer cette étape.");
+        wrapper.getChildren().add(text);
 
         ButtonType okButtonType = new ButtonType("Suivant", ButtonBar.ButtonData.OK_DONE);
         dialogPane.getButtonTypes().addAll(okButtonType, ButtonType.CANCEL);
@@ -37,9 +48,14 @@ public class SkipDialog extends Dialog<ArrayList<String>> {
                 tables
         );
 
+        Text textComboBox = new Text("Table de résultats associés : ");
+
         ComboBox<String> comboBox = new ComboBox<>(options);
         comboBox.getSelectionModel().selectFirst();
 
+        HBox hBox = new HBox();
+        hBox.setSpacing(10);
+        hBox.getChildren().addAll(textComboBox, comboBox);
 
         VBox wrapperColumns = new VBox();
         wrapperColumns.setSpacing(5);
@@ -91,7 +107,7 @@ public class SkipDialog extends Dialog<ArrayList<String>> {
             }
         });
 
-        wrapper.getChildren().addAll(comboBox, radioButtonRemove, radioButtonKeep);
+        wrapper.getChildren().addAll(hBox, radioButtonRemove, radioButtonKeep);
 
         setResultConverter((ButtonType dialogButton) -> {
             ArrayList<String> arrayList = new ArrayList<>();

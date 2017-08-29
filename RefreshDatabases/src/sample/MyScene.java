@@ -38,7 +38,7 @@ public class MyScene extends Scene{
                     protected Void call() throws Exception {
                         PostgreSQL postGreSQL = new PostgreSQL();
                         postGreSQL.connection("172.30.100.12:5432/bsd", "admpostgres", "admpostgres");
-                        postGreSQL.createTableGeonetwork("geonetwork.metadata");
+                        postGreSQL.createTableGeonetwork();
 
                         String[] paths = {"(xpath('/gmd:MD_Metadata/gmd:fileIdentifier/gco:CharacterString/text()', data::xml, '{{gmd,http://www.isotc211.org/2005/gmd},{gco,http://www.isotc211.org/2005/gco}}'))[1]::text as uuid,\n" +
                                 "(xpath('/gmd:MD_Metadata/gmd:identificationInfo/fra:FRA_DataIdentification/gmd:citation/gmd:CI_Citation/gmd:title/gco:CharacterString/text()', data::xml, '{{gmd,http://www.isotc211.org/2005/gmd},{gco,http://www.isotc211.org/2005/gco}, {fra,http://www.cnig.gouv.fr/2005/fra}}'))[1]::text as title,\n",
@@ -64,7 +64,7 @@ public class MyScene extends Scene{
 
                         postGreSQL.getLinesOnFinalGeonetwork();
                         postGreSQL.deleteLinesOnFinalGeonetwork();
-                        postGreSQL.insertLineGeonetwork("geonetwork.metadata");
+                        postGreSQL.insertLineGeonetwork();
                         postGreSQL.dropTable("geonetwork.metadata_init");
                         postGreSQL.deconnection();
 
@@ -92,7 +92,7 @@ public class MyScene extends Scene{
 
                         PostgreSQL postGreSQL = new PostgreSQL(); // On créer un objet de type PostGreSQL (classe que j'ai créer)
                         postGreSQL.connection("172.30.100.12:5432/bsd", "admpostgres", "admpostgres");
-                        postGreSQL.createTableGeoserver("geoserver.geoserver_xml_init"); // On la recrée si elle existe pas
+                        postGreSQL.createTableGeoserver(); // On la recrée si elle existe pas
 
                         Utils.listeRepertoire(root, postGreSQL); // On parcourt les fichiers
 
@@ -128,10 +128,10 @@ public class MyScene extends Scene{
 
                         PostgreSQL postgreSQL = new PostgreSQL();
                         postgreSQL.connection("172.30.100.12:5432/bsd", "admpostgres", "admpostgres");
-                        postgreSQL.getLinesOnInitCartogip("cartogip.couche_init", "id_couche", "couche_libelle", "couche_schema");
-                        postgreSQL.getLinesOnFinalCartogip("cartogip.couche");
-                        postgreSQL.deleteLinesOnFinalCartogip("idcartogip", "cartogip.couche");
-                        postgreSQL.insertOrUpdateLinesCartogip("cartogip.couche");
+                        postgreSQL.getLinesOnInitCartogip();
+                        postgreSQL.getLinesOnFinalCartogip();
+                        postgreSQL.deleteLinesOnFinalCartogip();
+                        postgreSQL.insertOrUpdateLinesCartogip();
                         postgreSQL.dropTable("cartogip.couche_init");
                         postgreSQL.deconnection();
 
@@ -159,10 +159,11 @@ public class MyScene extends Scene{
 
                         PostgreSQL postgreSQL = new PostgreSQL();
                         postgreSQL.connection("172.30.100.12:5432/bsd", "admpostgres", "admpostgres");
-                        postgreSQL.getLinesOnInitBSD("bsd.type_donnees_echange_init", "no_type_donnees_echange", "type_donnees_echange_libelle");
-                        postgreSQL.getLinesOnFinalBSD("bsd.type_donnees_echange");
-                        postgreSQL.deleteLinesOnFinalBSD("idbsd", "bsd.type_donnees_echange");
-                        postgreSQL.insertOrUpdateLinesBSD("bsd.type_donnees_echange");
+                        postgreSQL.concatInitBSD();
+                        postgreSQL.getLinesOnInitBSD();
+                        postgreSQL.getLinesOnFinalBSD();
+                        postgreSQL.deleteLinesOnFinalBSD();
+                        postgreSQL.insertOrUpdateLinesBSD();
                         postgreSQL.dropTable("bsd.type_donnees_echange_init");
                         postgreSQL.deconnection();
 

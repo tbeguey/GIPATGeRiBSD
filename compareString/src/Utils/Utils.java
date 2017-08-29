@@ -6,11 +6,6 @@ import java.io.File;
 
 public class Utils {
 
-    public String path = getClass().getProtectionDomain().getCodeSource().getLocation().getPath().replace("compareString.jar", "").replace("artifacts", "production");
-    public String samePath =  path + "same.csv";
-    public String uselessPath =  path + "useless.csv";
-    public String connexionPath =  path + "connexion.csv";
-
     /**
      * Détermine le minimum entre 3 nombres
      * @param a
@@ -28,16 +23,6 @@ public class Utils {
      * @param word
      * @return
      */
-    public static boolean isUpperWord(String word){
-        boolean itIs = true;
-
-        for (char c : word.toCharArray()) {
-            if(Character.isLowerCase(c))
-                itIs = false;
-        }
-
-        return itIs;
-    }
 
     public static String withOutAccents(String s){
         s = s.replace("é", "e");
@@ -46,6 +31,13 @@ public class Utils {
         s = s.replace("à", "a");
         s = s.replace("ù", "u");
         s = s.replace("ç", "c");
+        s = s.replace("ô", "o");
+        s = s.replace("â", "a");
+        s = s.replace("î", "i");
+        s = s.replace("ï", "i");
+        s = s.replace("ë", "e");
+        s = s.replace("û", "u");
+        s = s.replace("ö", "o");
 
         s = s.replace(",", "");
         s = s.replace(".", "");
@@ -105,6 +97,12 @@ public class Utils {
     }
 
 
+    /**
+     * Algo trouvé sur internet
+     * @param textCompared
+     * @param stringCompared
+     * @return
+     */
     public static float leven(StringCompared textCompared, StringCompared stringCompared){
         String text = textCompared.getTextWithoutCommon();
         String compared = stringCompared.getTextWithoutCommon();
@@ -139,19 +137,28 @@ public class Utils {
         return res;
     }
 
+    /**
+     * Remplace les caractère interdits de SQL
+     * @param value
+     * @param header
+     * @return
+     */
     public static String SQLFormat(String value, Boolean header){
         String res = value;
 
-        res = res.replace("'", "");
         res = res.replace("?", "");
         res = res.replace(":", "");
         res = res.replace("(", "_");
         res = res.replace(")", "");
-        res = res.replace("-", "");
         res = res.replace("#", "");
 
         if(header){
+            res = res.replace("'", "_");
             res = res.replace(" ", "_");
+        }
+        else{
+            res = res.replace("'", " ");
+            res = res.replace("-", " ");
         }
 
         res = res.replace("__", "_");

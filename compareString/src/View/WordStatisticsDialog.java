@@ -11,13 +11,17 @@ import javafx.scene.control.DialogPane;
 import javafx.scene.layout.HBox;
 
 import java.util.ArrayList;
+import java.util.Collections;
 
+/**
+ * Dialogue sur les occurences de mots
+ */
 public class WordStatisticsDialog extends Dialog{
 
     public WordStatisticsDialog(DatabaseConnection databaseConnection){
-        setTitle("Statistiques sur la présence des mots");
+        setTitle("Statistiques sur l'occurence des mots");
         DialogPane dialogPane = getDialogPane();
-        dialogPane.setPrefWidth(1200);
+        dialogPane.setPrefWidth(475);
 
         HBox wrapper = new HBox();
         wrapper.setSpacing(10);
@@ -48,9 +52,9 @@ public class WordStatisticsDialog extends Dialog{
         ChartView chartView = new ChartView(objects, comparative);
         chartView.setLegendSide(Side.BOTTOM);
 
-        wrapper.getChildren().addAll(chartView.getTable(), chartView.getChart());
+        wrapper.getChildren().addAll(chartView.getTable());
 
         dialogPane.setContent(wrapper);
-        dialogPane.getButtonTypes().add(ButtonType.CANCEL);
+        dialogPane.getButtonTypes().add(ButtonType.CLOSE);
     }
 }

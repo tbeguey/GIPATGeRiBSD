@@ -8,6 +8,7 @@ import javafx.geometry.Pos;
 import javafx.scene.control.*;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
+import javafx.scene.text.Text;
 import javafx.util.Pair;
 
 import javax.xml.crypto.Data;
@@ -33,6 +34,13 @@ public class JoinTableDialog extends Dialog<ArrayList<Pair<String, Pair<String, 
         VBox wrapper = new VBox();
         wrapper.setSpacing(10);
 
+        Text text = new Text("Vous souhaitez accéder à certains champs depuis une jointure ? \n" +
+                "Vous n'avez qu'à cliquer sur le bouton ci-dessous. \n" +
+                "Tout d'abord choisissez la table concernée, \n" +
+                "puis les deux champs suivants correspondent aux clés pour effectuer cette joitnure. \n" +
+                "Sinon vous n'avez qu'a Valider pour passer cette étape.");
+
+
         databaseConnection = d;
         postGreSQL = new PostGreSQL(databaseConnection);
         ArrayList<String> tables = postGreSQL.getTables();
@@ -54,7 +62,7 @@ public class JoinTableDialog extends Dialog<ArrayList<Pair<String, Pair<String, 
         ScrollPane scrollPane = new ScrollPane(wrapperScroll);
         scrollPane.setHbarPolicy(ScrollPane.ScrollBarPolicy.NEVER);
 
-        wrapper.getChildren().addAll(newJoinButton, scrollPane);
+        wrapper.getChildren().addAll(text, newJoinButton, scrollPane);
 
         wrapper.setAlignment(Pos.CENTER);
 

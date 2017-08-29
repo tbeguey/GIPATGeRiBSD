@@ -1,11 +1,15 @@
 package Element;
 
+import PreconfigView.SameUselessScene;
 import Utils.*;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * Les enregistrements initiaux comparés
+ */
 public class StringCompared {
 
     private ArrayList<String> arrayList;
@@ -20,16 +24,17 @@ public class StringCompared {
     private float leven, jaro;
     private float commonwords;
 
-    private int sameOrgaScore;
+    private int sameOrgaScore; // calcule le nombre d'organismes identiques à cette enregistrements, utile pour calculer le nombre d'elements sans mot forts (graphique)
 
-    private static Map<String, ArrayList<String>> same = new HashMap<>();
+    private static Map<String, ArrayList<String>> same = new HashMap<>(); // les mots semblables dans une Map(mélange entre Pair et ArrayList)
     private static ArrayList<String> useless = new ArrayList<>();
 
     private int nbChar;
 
+    private Category category;
+
     static { // Gère les mots se ressemblant, ayant la meme signification ainsi que les mots "inutiles"
-        useless = CSVUtils.readUseless();
-        same = CSVUtils.readSame();
+        initializeWords();
     }
 
     /**
@@ -49,7 +54,7 @@ public class StringCompared {
 
         arrayList = new ArrayList<>();
 
-        for (Map.Entry<String, ArrayList<String>> entry : same.entrySet()){
+        for (Map.Entry<String, ArrayList<String>> entry : same.entrySet()){ // Remplace les mots semblables
             for (String s : entry.getValue()) {
                 if(text.toLowerCase().contains(s.toLowerCase())){
                     text = text.toLowerCase();
@@ -63,24 +68,15 @@ public class StringCompared {
         String[] array = text.split(" "); // on sépare la phrase en plusieurs mots
 
         for (String word : array) {
-            String s = word;
-            // On vérifie que le mot ne fais pas partie de la liste des mots identiques pour pouvoir trouver un de ses synonymes
-            for (Map.Entry<String, ArrayList<String>> entry : same.entrySet()) {
-                for (String s1 : entry.getValue()) {
-                    if(s.equals(s1))
-                        s = entry.getKey();
-                }
-            }
-
-            if(!arrayList.contains(s.toLowerCase())){
-                if(!useless.contains(s.toLowerCase()) && s.toLowerCase().length() > 1){ // si il ne fait pas parti des useless et que sa taille est d'au moins 2 caractères
-                    arrayList.add(Utils.withOutAccents(s.toLowerCase())); // on ajoute le mot en minuscule
+            if(!arrayList.contains(word.toLowerCase())){
+                if(!useless.contains(word.toLowerCase()) && word.toLowerCase().length() > 1){ // si il ne fait pas parti des useless et que sa taille est d'au moins 2 caractères
+                    arrayList.add(Utils.withOutAccents(word.toLowerCase())); // on ajoute le mot en minuscule
                 }
             }
         }
 
         if(organization == null){
-            // On cherche le nom de l'organisme
+            // On cherche le nom de l'organisme si pas trouver de mot fort
             int index = 0;
             for (int i = 0; i < arrayList.size(); i++) {
                 if(arrayList.get(i).equals("-"))
@@ -93,7 +89,7 @@ public class StringCompared {
             }
         }
 
-        nbChar = 0;
+        nbChar = 0; // On calcule le nombre de caractères total pour le taux de levenshtein
         for (String s : arrayList) {
             nbChar += s.toCharArray().length;
         }
@@ -255,12 +251,13 @@ public class StringCompared {
         float levenshtein;
         float bestCommonWords = 0;
 
-        ArrayList<StringCompared> arrayListToCompare;
+        ArrayList<StringCompared> arrayListToCompare; // Compare les organismes (mot-fort) pour diminuer le nombre de calculs de MC/Levenshtein
+        // pour calculer le Levenshtein uniquement sur ceux qui ont le meme mot fort. Sinon s'il n'en trouve pas il effectura le calcul sur la totalité des titres.
         if(organization != null){
             ArrayList<StringCompared> sameOrga = new ArrayList<>();
             for (StringCompared compared : comparedArrayList) {
                 if(compared.getOrganization() != null)
-                    if (organization.equals(compared.getOrganization()))
+                    if (organization.toLowerCase().equals(compared.getOrganization().toLowerCase()))
                         sameOrga.add(compared);
             }
 
@@ -299,7 +296,7 @@ public class StringCompared {
                 if (levenshtein == bestLevenshtein)
                     bestResults.add(stringCompared);
 
-                else if (levenshtein > bestLevenshtein) {
+                else if (levenshtein < bestLevenshtein) {
                     bestLevenshtein = levenshtein;
                     bestResult = stringCompared;
                     bestCommonWords = common;
@@ -502,6 +499,8 @@ public class StringCompared {
 
     public String getOrganization() {return organization; }
 
+    public void setOrganization(String o) { organization = o; }
+
     public float getLeven() { return leven; }
 
     public float getCommonwords() { return commonwords; }
@@ -519,4 +518,17 @@ public class StringCompared {
     public int getSameOrgaScore() { return sameOrgaScore; }
 
     public int getNbChar() { return nbChar; }
+
+    public Category getCategory() {
+        return category;
+    }
+
+    public void setCategory(Category category) {
+        this.category = category;
+    }
+
+    public static void initializeWords(){
+        useless = SameUselessScene.useless;
+        same = SameUselessScene.same;
+    }
 }

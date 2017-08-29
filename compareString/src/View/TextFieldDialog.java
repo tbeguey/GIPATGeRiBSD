@@ -28,7 +28,6 @@ public class TextFieldDialog extends Dialog<String>{
 
 
         setResultConverter((ButtonType dialogButton) ->{
-
             if(dialogButton == okButtonType) {
                 return textField.getText();
             }

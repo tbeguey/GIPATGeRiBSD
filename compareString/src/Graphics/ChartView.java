@@ -14,6 +14,9 @@ import javafx.scene.layout.HBox;
 
 import java.util.ArrayList;
 
+/**
+ *  Permets d'afficher le tableau ainsi que le graphique en camembert
+ */
 public class ChartView extends HBox {
 
     private Chart chart;

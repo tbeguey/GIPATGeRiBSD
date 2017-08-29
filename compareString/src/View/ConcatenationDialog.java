@@ -6,11 +6,16 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.geometry.Pos;
 import javafx.scene.control.*;
+import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
+import javafx.scene.text.Text;
 import javafx.util.Pair;
 
 import java.util.ArrayList;
 
+/**
+ * Dialogue pour la concatenation des champs
+ */
 public class ConcatenationDialog extends Dialog<String> {
 
     private ArrayList<ComboBox> comboBoxes;
@@ -26,6 +31,10 @@ public class ConcatenationDialog extends Dialog<String> {
         wrapper = new VBox();
         wrapper.setSpacing(10);
         dialogPane.setContent(wrapper);
+
+        Text text = new Text("Vous pouvez concaténer plusieurs champs pour en former qu'un seul \n" +
+                "que vous pourrez ensuite comparer.");
+        wrapper.getChildren().add(text);
 
         PostGreSQL postGreSQL = new PostGreSQL(databaseConnection);
         ArrayList<String> columns = new ArrayList<>();
@@ -46,7 +55,7 @@ public class ConcatenationDialog extends Dialog<String> {
            addCombobox(options);
         }
 
-        Button newCombobox = new Button("Ajouter");
+        Button newCombobox = new Button("Ajouter une colonne de plus");
         newCombobox.setOnMouseClicked(event -> {
             wrapper.getChildren().remove(newCombobox);
             addCombobox(options);
@@ -71,10 +80,21 @@ public class ConcatenationDialog extends Dialog<String> {
 
     }
 
+    /**
+     * Ajoute une ligne de concaténation (comboBox)
+     * @param options
+     */
     private void addCombobox(ObservableList<String> options){
+        Text t = new Text("Nom de la colonne : ");
+
         ComboBox comboBox = new ComboBox(options);
         comboBox.getSelectionModel().selectFirst();
         comboBoxes.add(comboBox);
-        wrapper.getChildren().add(comboBox);
+
+        HBox hBox = new HBox();
+        hBox.setSpacing(10);
+        hBox.getChildren().addAll(t, comboBox);
+
+        wrapper.getChildren().add(hBox);
     }
 }

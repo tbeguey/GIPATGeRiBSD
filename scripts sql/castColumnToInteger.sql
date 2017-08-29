@@ -1,0 +1,1 @@
+﻿ALTER TABLE communs.correspondance ALTER COLUMN idpigma_donnees_a_dispo TYPE integer USING(idpigma_donnees_a_dispo::integer);

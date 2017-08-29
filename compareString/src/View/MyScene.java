@@ -3,102 +3,77 @@ package View;
 import Element.DatabaseConnection;
 import Element.PostGreSQL;
 import Element.StringCompared;
-import NewConnectionDialogs.*;
 import Utils.*;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.concurrent.Task;
-import javafx.geometry.Insets;
+import javafx.geometry.Pos;
 import javafx.scene.Group;
+import javafx.scene.Node;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
-import javafx.scene.input.MouseEvent;
-import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
-import javafx.scene.paint.Color;
-import javafx.stage.FileChooser;
+import javafx.scene.shape.Line;
+import javafx.scene.text.Font;
+import javafx.scene.text.Text;
 import javafx.util.Callback;
 import javafx.util.Pair;
 
 import java.io.*;
 import java.nio.charset.Charset;
-import java.sql.*;
+import java.sql.SQLException;
 import java.util.*;
 
 import Main.Main;
-import org.apache.poi.ss.usermodel.*;
-import org.apache.poi.ss.usermodel.Cell;
-import org.apache.poi.xssf.usermodel.XSSFSheet;
-import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 
 public class MyScene extends Scene {
 
-    /**
-     * Les taches lancés asynchroniquement pour charger les données longues et laissé l'application tourné
-     */
-    private Task<Void> longTask;
+    private final int ELEMENTS_BY_PAGE = 50;
 
-    /**
-     * Les listes déroulantes du menu
-     */
+    private Task<Void> longTask; // effectue une tache de manière asynchronique
+
     private final ComboBox<DatabaseConnection> comboBoxSource;
     private final ComboBox<DatabaseConnection> comboBoxDestination;
-    private final ComboBox<DatabaseConnection> comboBoxSearch;
     private final ComboBox<DatabaseConnection> comboBoxLikened;
-    private ComboBox searchResult;
-
-    /**
-     * Liste des phrases à écrire dans le fichier .csv
-     */
-    private ArrayList<ArrayList<String>> arrayListCheckedToExport = new ArrayList<>();
-    private ArrayList<ArrayList<String>> arrayListNotCheckedToExport = new ArrayList<>();
+    private final ComboBox<DatabaseConnection> comboBoxStats;
 
 
-    private ObservableList<DatabaseConnection> optionsDatabase;
+    private ArrayList<ArrayList<StringCompared>> arrayListCheckedToExport = new ArrayList<>();
+    private ArrayList<ArrayList<StringCompared>> arrayListNotCheckedToExport = new ArrayList<>();
+    private ArrayList<ArrayList<StringCompared>> arrayListCheckedLikened = new ArrayList<>();
+
 
     private ArrayList<Pair<StringCompared, ArrayList<StringCompared>>> strings;
 
-    private ArrayList<DatabaseConnection> databaseConnections;
 
-    /**
-     * Valeurs afin de faire des statistiques
-     */
-    private int values[];
+    private int values[]; // stocke le nombre de données de tel catégorie pour le tableau du graphique
 
 
-    public MyScene(){
-        super(new Group(), Main.WIDTH, Main.HEIGHT);
-
-        databaseConnections = CSVUtils.readConnections();
+    public MyScene(DatabaseConnection databaseConnection){
+        super(new Group(), Main.WIDTH, Main.HEIGHT*2);
 
         Group group = (Group) getRoot();
-        setFill(Color.rgb(224,212,187));
+
+        PostGreSQL postGreSQL = new PostGreSQL(databaseConnection);
+        ArrayList<DatabaseConnection> databaseConnections = new ArrayList<>();
+        try {
+            databaseConnections = postGreSQL.getConnections(); // On récupère les connections
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
 
         VBox wrapper = new VBox();
-        wrapper.setSpacing(40);
-        wrapper.setPadding(new Insets(Main.WIDTH / 20,0,0, Main.WIDTH / 20));
+        wrapper.setSpacing(10);
 
-        VBox wrapperCompared = new VBox();
-        wrapperCompared.setSpacing(10);
-
-        VBox wrapperLikened = new VBox();
-        wrapperLikened.setSpacing(10);
-
-        VBox wrapperSearch = new VBox();
-        wrapperSearch.setSpacing(10);
-
-        VBox wrapperUuid = new VBox();
-        wrapperUuid.setSpacing(10);
-
-
-        optionsDatabase = FXCollections.observableArrayList(
+        ObservableList<DatabaseConnection> optionsDatabase = FXCollections.observableArrayList(
                 databaseConnections
         );
 
         comboBoxSource = new ComboBox<>(optionsDatabase);
         comboBoxSource.getSelectionModel().selectFirst();
-        comboBoxSource.setCellFactory(new Callback<ListView<DatabaseConnection>,ListCell<DatabaseConnection>>(){
+        comboBoxSource.setCellFactory(new Callback<ListView<DatabaseConnection>,ListCell<DatabaseConnection>>(){ // Etant donné que la comboBox de type différente de String, il faut alors indiquer au programme quel texte doit être affiché
             @Override
             public ListCell<DatabaseConnection> call(ListView<DatabaseConnection> p) {
                 final ListCell<DatabaseConnection> cell = new ListCell<DatabaseConnection>(){
@@ -108,7 +83,7 @@ public class MyScene extends Scene {
                         super.updateItem(t, bln);
 
                         if(t != null){
-                            setText(t.getTitle());
+                            setText(t.getTitle()); // donc on affiche ici le titre
                         }else{
                             setText(null);
                         }
@@ -144,27 +119,6 @@ public class MyScene extends Scene {
             }
         });
 
-
-        Button okButton = new Button("Comparer");
-        okButton.setOnMouseClicked(event -> {
-            startComparaison();
-        });
-
-
-        Button uselessButton = new Button("Gérer mots inutiles");
-        uselessButton.setOnMouseClicked(event -> {
-            new NewUselessDialog().showAndWait();
-        });
-
-        Button dictionnaryButton = new Button("Gérer mots semblables");
-        dictionnaryButton.setOnMouseClicked(event -> {
-            new NewSameDialog().showAndWait();
-        });
-
-        HBox utilsHbox = new HBox();
-        utilsHbox.setSpacing(10);
-        utilsHbox.getChildren().addAll(uselessButton, dictionnaryButton);
-
         comboBoxLikened = new ComboBox<>(optionsDatabase);
         comboBoxLikened.getSelectionModel().selectFirst();
         comboBoxLikened.setCellFactory(new Callback<ListView<DatabaseConnection>,ListCell<DatabaseConnection>>(){
@@ -188,22 +142,9 @@ public class MyScene extends Scene {
             }
         });
 
-        Button likenedButton = new Button("Apparenter");
-        likenedButton.setOnMouseClicked(event -> {
-            DisplayTitlesDialog displayTitlesDialog = new DisplayTitlesDialog(comboBoxLikened.getSelectionModel().getSelectedItem());
-            displayTitlesDialog.displayLines();
-            displayTitlesDialog.showAndWait();
-            displayTitlesDialog.getPostGreSQL().deconnection();
-        });
-
-        Button wordStatisticsButton = new Button("Statistiques");
-        wordStatisticsButton.setOnMouseClicked(event -> {
-            new WordStatisticsDialog(comboBoxLikened.getSelectionModel().getSelectedItem()).show();
-        });
-
-        comboBoxSearch = new ComboBox<>(optionsDatabase);
-        comboBoxSearch.getSelectionModel().selectFirst();
-        comboBoxSearch.setCellFactory(new Callback<ListView<DatabaseConnection>,ListCell<DatabaseConnection>>(){
+        comboBoxStats = new ComboBox<>(optionsDatabase);
+        comboBoxStats.getSelectionModel().selectFirst();
+        comboBoxStats.setCellFactory(new Callback<ListView<DatabaseConnection>,ListCell<DatabaseConnection>>(){
             @Override
             public ListCell<DatabaseConnection> call(ListView<DatabaseConnection> p) {
                 final ListCell<DatabaseConnection> cell = new ListCell<DatabaseConnection>(){
@@ -224,327 +165,165 @@ public class MyScene extends Scene {
             }
         });
 
-        Button newCoButton = new Button("Nouvelle connexion");
-        newCoButton.setOnMouseClicked(event -> {
-            Optional<ArrayList<String>> resultFirstParameters = new TitleIpPortUserPasswordDialog().showAndWait();
-            resultFirstParameters.ifPresent(firstParameters -> {
-                String title = firstParameters.get(0);
-                String ip = firstParameters.get(1);
-                String port = firstParameters.get(2);
-                String user = firstParameters.get(3);
-                String password = firstParameters.get(4);
-                DatabaseConnection databaseConnection = new DatabaseConnection(title, ip, port, user, password);
+        Text titleCompared = new Text("Comparaison");
+        titleCompared.setFont(new Font(30));
 
-                Optional<String> resultDatabase = new DatabaseDialog(databaseConnection).showAndWait();
-
-                resultDatabase.ifPresent(database -> {
-                    databaseConnection.setDatabase(database);
-                    Optional<String> resultSchema = new SchemaDialog(databaseConnection).showAndWait();
-
-                    resultSchema.ifPresent(schema -> {
-                        databaseConnection.setSchema(schema);
-                        Optional<String> resultTable = new TableDialog(databaseConnection).showAndWait();
-                        resultTable.ifPresent(table -> {
-                            databaseConnection.setTable(table);
-                            Optional<ArrayList<Pair<String, Pair<String, String>>>> resultJoins = new JoinTableDialog(databaseConnection).showAndWait();
-                            resultJoins.ifPresent(databaseConnection::setJoins);
-                            addDatabase(databaseConnection);
-
-                        });
-                    });
-                });
-            });
+        Button comparedButton = new Button("Lancer Comparaison");
+        comparedButton.setOnMouseClicked(event -> {
+            startComparaison();
         });
 
-        Button importFromExcelButton = new Button("Importer Excel");
-        importFromExcelButton.setOnMouseClicked((MouseEvent event) -> {
-            FileChooser fileChooser = new FileChooser();
-            fileChooser.setTitle("Fichier Excel (.xlsx, .csv, .xls)");
-            File file = fileChooser.showOpenDialog(null);
+        Line first_line = new Line(0,0, Main.WIDTH,0);
 
-            if(file != null){
+        Text titleLikened = new Text("Apparentement");
+        titleLikened.setFont(new Font(30));
 
-                try {
-                    XSSFWorkbook wb;
-                    if(Utils.getFileExtension(file).equals("csv"))
-                        wb = CSVUtils.CSVtoXLSX(file);
-                    else if(Utils.getFileExtension(file).equals("xls"))
-                        wb = CSVUtils.XLStoXLSX(file);
-                    else
-                        wb = new XSSFWorkbook(new FileInputStream(file));
-
-
-                    ArrayList<String> sheets = new ArrayList<>();
-                    for (int i = 0; i < wb.getNumberOfSheets(); i++) {
-                        sheets.add(wb.getSheetName(i));
-                    }
-
-                    Optional<ArrayList<String>> result = new ExcelFormatDialog(sheets).showAndWait();
-                    result.ifPresent(res -> {
-                        String title = Utils.SQLFormat(res.get(0), false);
-                        DatabaseConnection databaseConnection = new DatabaseConnection(title, "172.30.100.12", "5432", "admpostgres", "admpostgres", "bsd", "excel", title, null);
-
-                        int headerRowNum = Integer.parseInt(res.get(1));
-                        headerRowNum--;
-
-                        int minRow = Integer.parseInt(res.get(2));
-                        minRow--;
-
-                        int maxRow = Integer.parseInt(res.get(3));
-
-                        XSSFSheet sheet = wb.getSheet(res.get(4));
-
-
-                        Row row = sheet.getRow(headerRowNum);
-                        int maxCell = row.getLastCellNum();
-
-                        PostGreSQL postGreSQL = new PostGreSQL(databaseConnection);
-
-                        List<String> headers = new ArrayList<>();
-                        row = sheet.getRow(headerRowNum);
-                        for (int i = 0; i < maxCell; i++) {
-                            Cell cell = row.getCell(i);
-                            DataFormatter formatter = new DataFormatter();
-                            String val = formatter.formatCellValue(cell);
-                            headers.add(val);
-
-                        }
-                        postGreSQL.createTableExcel(headers);
-
-                        List<String> rowValues;
-                        for (int i = minRow; i < maxRow ; i++){
-                            row = sheet.getRow(i);
-                            rowValues = new ArrayList<>();
-                            for (int j = 0; j < maxCell ; j++){
-                                Cell cell = row.getCell(j);
-                                DataFormatter formatter = new DataFormatter();
-                                String val = formatter.formatCellValue(cell);
-                                rowValues.add(val);
-                            }
-                            try {
-                                postGreSQL.InsertRowInDB(rowValues);
-                            } catch (SQLException | ClassNotFoundException e) {
-                                e.printStackTrace();
-                            }
-                        }
-
-                        addDatabase(databaseConnection);
-
-                        postGreSQL.deconnection();
-                    });
-
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
-            }
-
+        Button likenedButton = new Button("Lancer Apparentement");
+        likenedButton.setOnMouseClicked(event -> {
+            DisplayTitlesDialog displayTitlesDialog = new DisplayTitlesDialog(comboBoxLikened.getSelectionModel().getSelectedItem());
+            displayTitlesDialog.displayLines();
+            displayTitlesDialog.showAndWait();
+            displayTitlesDialog.getPostGreSQL().deconnection();
         });
 
-        HBox searchBox = new HBox();
-        searchBox.setSpacing(20);
+        Line second_line = new Line(0,0, Main.WIDTH,0);
 
-        TextField searchField = new TextField();
-        searchField.setPromptText("Votre texte");
+        Text titleStats = new Text("Statistiques");
+        titleStats.setFont(new Font(30));
 
-
-        Button searchButton = new Button("Comparer");
-
-        searchBox.getChildren().addAll(searchField, comboBoxSearch, searchButton);
-
-        searchResult = new ComboBox<StringCompared>();
-        searchResult.setPrefWidth(Main.WIDTH - 50);
-
-        TextArea idSearch = new TextArea();
-        idSearch.setPromptText("Id du résultat");
-        idSearch.setMaxWidth(Main.WIDTH - 50);
-        idSearch.setMaxHeight(5);
-        idSearch.setEditable(false);
-
-        searchButton.setOnMouseClicked(event -> {
-
-            StringCompared stringCompared = new StringCompared(searchField.getText(), null, null);
-
-            PostGreSQL postGreSQL = new PostGreSQL(comboBoxSearch.getValue());
-
-            ArrayList<StringCompared> compareds = postGreSQL.getTitleByTableName(false);
-
-            ArrayList<StringCompared> results = stringCompared.levenshteinDistanceCW(compareds);
-
-            ObservableList<StringCompared> optionsResult =
-                    FXCollections.observableArrayList(
-                            results
-                    );
-
-
-            searchResult.setItems(optionsResult);
-            searchResult.getSelectionModel().selectFirst();
-            idSearch.setText(((StringCompared) searchResult.getValue()).getUuid());
-            searchResult.setCellFactory(new Callback<ListView<StringCompared>,ListCell<StringCompared>>(){
-
-                @Override
-                public ListCell<StringCompared> call(ListView<StringCompared> p) {
-
-                    return new ListCell<StringCompared>(){
-
-                        @Override
-                        protected void updateItem(StringCompared t, boolean bln) {
-                            super.updateItem(t, bln);
-
-                            if(t != null){
-                                setText(t.getOriginalText());
-                            }else{
-                                setText(null);
-                            }
-                        }
-
-                    };
-                }
-            });
-            searchResult.valueProperty().addListener((observable, oldValue, newValue) -> idSearch.setText(((StringCompared) newValue).getUuid()));
-
-            optionsResult.sort((o1, o2) -> {
-                double res = Double.compare(o2.getCommonwords(), o1.getCommonwords());
-                if (res == 0) {
-                    res = Double.compare(o1.getLeven(), o2.getLeven());
-                }
-                return (int) res;
-            });
-
-            postGreSQL.deconnection();
+        Button wordStatisticsButton = new Button("Calcul Nombre Occurence Mots");
+        wordStatisticsButton.setOnMouseClicked(event -> {
+            new WordStatisticsDialog(comboBoxStats.getSelectionModel().getSelectedItem()).show();
         });
 
-        HBox uuidBox = new HBox();
-        uuidBox.setSpacing(10);
+        wrapper.getChildren().addAll(titleCompared, comboBoxSource, comboBoxDestination, comparedButton, first_line, titleLikened, comboBoxLikened, likenedButton, second_line, titleStats, comboBoxStats, wordStatisticsButton);
+        wrapper.setAlignment(Pos.CENTER);
 
-        TextField uuidField = new TextField();
-        uuidField.setPromptText("Saissisez l'id que vous cherchez");
-        uuidField.setPrefWidth(Main.WIDTH - 110);
-
-        TextArea uuidResult = new TextArea();
-        uuidResult.setMaxWidth(Main.WIDTH - 50);
-        uuidResult.setPrefHeight(30);
-        uuidResult.setEditable(false);
-
-        Button uuidButton = new Button("Chercher");
-        uuidButton.setOnMouseClicked(event -> {
-            String text = "";
-            for (DatabaseConnection db : databaseConnections) {
-                if (text.isEmpty()) {
-                    PostGreSQL postGreSQL = new PostGreSQL(db);
-                    ArrayList<StringCompared> compareds = postGreSQL.getTitleByTableName(false);
-                    for (StringCompared compared :
-                            compareds) {
-                        if (uuidField.getText().equals(compared.getUuid())) {
-                            text = compared.getOriginalText();
-                            break;
-                        }
-                    }
-                    postGreSQL.deconnection();
-                }
-            }
-            uuidResult.setText(text);
-        });
-
-        uuidBox.getChildren().addAll(uuidField, uuidButton);
-
-        HBox buttonBox = new HBox();
-        buttonBox.setSpacing(10);
-        buttonBox.getChildren().addAll(okButton, newCoButton, importFromExcelButton);
-
-        wrapperCompared.getChildren().addAll(comboBoxSource, comboBoxDestination, buttonBox, utilsHbox);
-        wrapperLikened.getChildren().addAll(comboBoxLikened, likenedButton, wordStatisticsButton);
-        wrapperSearch.getChildren().addAll(searchBox, searchResult, idSearch);
-        wrapperUuid.getChildren().addAll(uuidBox, uuidResult);
-
-        wrapper.getChildren().addAll(wrapperCompared, wrapperLikened,wrapperSearch, wrapperUuid);
         group.getChildren().add(wrapper);
     }
 
+    /**
+     * Initile la fonction de comparaison en recuperant les données, lancant le traitement et affiche la boite de dialogue de comparaison
+     */
     private void startComparaison(){
         strings = getStringComparedsAndStartComparaison();
-        longTask.setOnSucceeded(event1 -> {
-            ComparaisonDialog comparaisonDialog = new ComparaisonDialog(strings.size());
+        longTask.setOnSucceeded(event1 -> { // une fois que la tache de comparaison MC/Levenshtein a fini
+            ComparaisonDialog comparaisonDialog = new ComparaisonDialog(strings.size()); // initialise la boite de dialogue de comparaison ( graphique + liste des matchages)
             sort(comparaisonDialog.getSort_by_value());
             display(comparaisonDialog);
+            arrayListCheckedLikened.clear();
+            arrayListCheckedToExport.clear();
+            arrayListNotCheckedToExport.clear();
         });
     }
 
+    /**
+     * Affiche toutes les données sur la ComparaisonDialog (graphique, les matchages, ...)
+     * Gere l'export aussi
+     * @param comparaisonDialog
+     */
     public void display(ComparaisonDialog comparaisonDialog){
         for (int iterator = 1; iterator <= strings.size(); iterator++) {
+            if (iterator == 1)
+                comparaisonDialog.drawGraphics(values); // j'affiche le graphique dès le début
+
             comparaisonDialog.add(strings.get(iterator-1).getKey(), strings.get(iterator-1).getValue());
-            if(iterator%50 == 0 || iterator == strings.size()){
-                comparaisonDialog.drawGraphics(values);
+            if(iterator%ELEMENTS_BY_PAGE == 0 || iterator == strings.size()){ // % = modulo; si iterator est un diviseur de 50 ou qu'on arrive à la fin de la liste
 
+                int page = iterator/ELEMENTS_BY_PAGE;
+                comparaisonDialog.setNum_page(page); // change le numero de la page
+
+                // Gestion de possibilité de clic sur les boutons précédents / suivants
+                Node nextButton = comparaisonDialog.getTheDialogPane().lookupButton(comparaisonDialog.getNextButtonType());
+                Node previousButton = comparaisonDialog.getTheDialogPane().lookupButton(comparaisonDialog.getPreviousButtonType());
                 if(iterator == strings.size())
-                    comparaisonDialog.getTheDialogPane().getButtonTypes().remove(comparaisonDialog.getOkButtonType());
+                    nextButton.setDisable(true);
+                else
+                    nextButton.setDisable(false);
 
-                Optional<ArrayList<ArrayList<Pair<StringCompared, StringCompared>>>> result = comparaisonDialog.showAndWait();
-                if(comparaisonDialog.getExportBD()){
-                    for (int j = iterator; j <= strings.size(); j++)
-                        comparaisonDialog.add(strings.get(j-1).getKey(), strings.get(j-1).getValue());
-                    comparaisonDialog.sortIfCheckOrNot();
+                if (iterator == ELEMENTS_BY_PAGE)
+                    previousButton.setDisable(true);
+                else
+                    previousButton.setDisable(false);
 
-                    result.ifPresent(list -> {
-                        for (Pair<StringCompared, StringCompared> pair : list.get(0)){
-                            ArrayList<String> arrayList = new ArrayList<>();
-                            arrayList.add(pair.getKey().getUuid());
-                            arrayList.add(pair.getKey().getOrganization());
-                            arrayList.add(pair.getKey().getOriginalText());
-                            arrayList.add(pair.getValue().getUuid());
-                            arrayList.add(pair.getValue().getOrganization());
-                            arrayList.add(pair.getValue().getOriginalText());
-                            arrayListCheckedToExport.add(arrayList);
-                        }
-                        for (Pair<StringCompared, StringCompared> pair : list.get(1)){
-                            ArrayList<String> arrayList = new ArrayList<>();
-                            arrayList.add(pair.getKey().getUuid());
-                            arrayList.add(pair.getKey().getOrganization());
-                            arrayList.add(pair.getKey().getOriginalText());
-                            arrayList.add(pair.getValue().getUuid());
-                            arrayList.add(pair.getValue().getOrganization());
-                            arrayList.add(pair.getValue().getOriginalText());
-                            arrayListNotCheckedToExport.add(arrayList);
-                        }
-                    });
 
-                    if(comboBoxSource != comboBoxDestination){
-                        ArrayList<Pair<Boolean, String>> choises = comparaisonDialog.getExportChoises();
-                        if(choises.get(0).getKey()){
-                            String tableCorrespondance = choises.get(0).getValue();
+                Optional<ArrayList<ArrayList<Pair<StringCompared, StringCompared>>>> result = comparaisonDialog.showAndWait(); // showAndWait, on attends la réponse de l'utilisateur
+                switch (comparaisonDialog.getState()){
+                    case NEXT:
+                        comparaisonDialog.clear();
+                        break;
+                    case PREVIOUS:
+                        comparaisonDialog.clear();
+                        iterator -= 100;
+                        break;
+                    case EXPORT:
+                        for (int j = iterator; j <= strings.size(); j++) // Récupérer tous les matchages (sans les afficher) mais les avoir pour l'export
+                            comparaisonDialog.add(strings.get(j-1).getKey(), strings.get(j-1).getValue());
+                        comparaisonDialog.sortIfCheckOrNot();
 
-                            PostGreSQL postGreSQL = new PostGreSQL(comboBoxSource.getValue());
-                            postGreSQL.newIdColumnCorrespondance(tableCorrespondance);
-                            postGreSQL.deconnection();
+                        result.ifPresent(list -> {
+                            for (Pair<StringCompared, StringCompared> pair : list.get(0)){
+                                ArrayList<StringCompared> arrayList = new ArrayList<>();
+                                arrayList.add(pair.getKey());
+                                arrayList.add(pair.getValue());
+                                arrayListCheckedToExport.add(arrayList);
+                            }
+                            for (Pair<StringCompared, StringCompared> pair : list.get(1)){
+                                ArrayList<StringCompared> arrayList = new ArrayList<>();
+                                arrayList.add(pair.getKey());
+                                arrayList.add(pair.getValue());
+                                arrayListNotCheckedToExport.add(arrayList);
+                            }
+                            for (Pair<StringCompared, StringCompared> pair : list.get(2)){
+                                ArrayList<StringCompared> arrayList = new ArrayList<>();
+                                arrayList.add(pair.getKey());
+                                arrayList.add(pair.getValue());
+                                arrayListCheckedLikened.add(arrayList);
+                            }
 
-                            postGreSQL = new PostGreSQL(comboBoxDestination.getValue());
-                            postGreSQL.newIdColumnCorrespondance(tableCorrespondance);
-                            postGreSQL.deconnection();
+                            ArrayList<Pair<Boolean, ArrayList<String>>> choises = comparaisonDialog.getExportChoises();
+                            if(choises.get(0).getKey()){ // si l'export bsd est coché
+                                String tableCorrespondance = choises.get(0).getValue().get(0);
 
-                            exportToPostGre(tableCorrespondance);
-                        }
+                                PostGreSQL postGreSQL = new PostGreSQL(comboBoxSource.getValue());
+                                postGreSQL.newIdColumnCorrespondance(tableCorrespondance);
+                                postGreSQL.deconnection();
 
-                        if(choises.get(1).getKey())
-                            exportToCSV(choises.get(1).getValue());
-                    }
+                                postGreSQL = new PostGreSQL(comboBoxDestination.getValue());
+                                postGreSQL.newIdColumnCorrespondance(tableCorrespondance);
+                                postGreSQL.deconnection();
 
-                    arrayListCheckedToExport.clear();
-                    arrayListNotCheckedToExport.clear();
+                                exportToPostGre(tableCorrespondance);
+                            }
+
+                            if(choises.get(1).getKey()) // si l'export CSV est coché
+                                exportToCSV(choises.get(1).getValue());
+
+                            exportLikened();
+                            comparaisonDialog.setState(State.CANCEL);
+                        });
+                        break;
                 }
-                comparaisonDialog.clear();
-            }
 
-            if(comparaisonDialog.getFinish()){
-                break;
+                if(comparaisonDialog.getState() == State.CANCEL){
+                    // avec le break on termine la boucle for et mets donc fin à la comparaison
+                    break;
+                }
             }
         }
+
         if(comparaisonDialog.getChanged()){
+            comparaisonDialog.clear();
             sort(comparaisonDialog.getSort_by_value());
             comparaisonDialog.setChanged(false);
-            comparaisonDialog.setFinish(false);
             display(comparaisonDialog);
         }
     }
 
+    /**
+     * Trie les éléments selon la valeur de la liste déroulante de trie de la boite de dialogue de comparaison
+     * @param sort_options
+     */
     private void sort(int sort_options){
         strings.sort((o1, o2) -> {
             double res;
@@ -568,7 +347,7 @@ public class MyScene extends Scene {
     }
 
     /**
-     * Récupere les titres à comparer selon les BD choisis et lance la comparaison selon l'algorithme choisis.
+     * Récupere les titres à comparer selon les BD choisis et lance la comparaison.
      * Effectue les calculs pour les statistiques.
      * @return
      */
@@ -591,30 +370,37 @@ public class MyScene extends Scene {
             @Override
             protected Void call() throws Exception {
                 values = new int[7];
-                for (StringCompared compared : finalFirstArrayList) {
-                    ArrayList<StringCompared> arrayListResult = compared.levenshteinDistanceCW(finalSecondArrayList);
+                for (StringCompared compared : finalFirstArrayList) { // sur chaque titre en entrée
+                    ArrayList<StringCompared> arrayListResult = compared.levenshteinDistanceCW(finalSecondArrayList); // on lance la comparaison de Levenshtein qui nous retourne une liste de titres
                     if (arrayListResult != null) {
-                        double common = compared.getCommonwords();
-                        double leven = compared.getLeven();
+                        double common = compared.getCommonwords(); // nombre de mots communs (calculé précédemment)
+                        double leven = compared.getLeven(); // distance de levenshtein
 
-
-                        if (common == 1)
+                        // Implementation des catégories et des values qui permettront d'alimenter le graphique
+                        if (common == 1){
                             values[0]++;
-                        else if (common < 1 && common >= 0.5 && leven < 0.5)
+                            compared.setCategory(Category.TFavorable);
+                        }
+                        else if (common < 1 && common >= 0.5 && leven < 0.5){
                             values[1]++;
-                        else if (common < 1 && common >= 0.5 && leven >= 0.5)
+                            compared.setCategory(Category.Favorable);
+                        }
+                        else if (common < 1 && common >= 0.5 && leven >= 0.5){
                             values[2]++;
-                        else if (common < 0.5 && common >= 0 && leven < 0.5)
+                            compared.setCategory(Category.Passable);
+                        }
+                        else if (common < 0.5 && common >= 0 && leven < 0.5){
                             values[3]++;
-                        else if (common < 0.5 && common >= 0 && leven >= 0.5)
+                            compared.setCategory(Category.Défavorable);
+                        }
+                        else if (common < 0.5 && common >= 0 && leven >= 0.5){
                             values[4]++;
+                            compared.setCategory(Category.TDéfavorable);
+                        }
 
                         if(compared.getSameOrgaScore() == 0)
                             values[5]++;
 
-                    }
-
-                    if (arrayListResult != null) {
                         Pair<StringCompared, ArrayList<StringCompared>> pair = new Pair<>(compared, arrayListResult);
                         result.add(pair);
                     }
@@ -624,7 +410,7 @@ public class MyScene extends Scene {
             }
         };
 
-        new Thread(longTask).start();
+        new Thread(longTask).start(); // lance la tache asynchronique
 
         postGreSQLSource.deconnection();
         postGreSQLDestination.deconnection();
@@ -633,8 +419,8 @@ public class MyScene extends Scene {
     }
 
     private void exportToPostGre(String table){
-        String columnNameSource = "id" + comboBoxSource.getValue().getTable();
-        String columnNameDestination = "id" + comboBoxDestination.getValue().getTable();
+        String tableNameSource = comboBoxSource.getValue().getTable();
+        String tableNameDestination = comboBoxDestination.getValue().getTable();
 
 
         DatabaseConnection databaseConnection = new DatabaseConnection("Communs", "172.30.100.12", "5432","admpostgres", "admpostgres", "bsd", "communs", table, null);
@@ -642,7 +428,11 @@ public class MyScene extends Scene {
 
         String booleanColumn = comboBoxSource.getValue().getColumns().get(2) + "_commun";
         postGreSQL.newBooleanColumnCorrespondance(booleanColumn);
-        postGreSQL.insertUpdateLines(arrayListCheckedToExport, columnNameSource, columnNameDestination, booleanColumn);
+        try {
+            postGreSQL.insertUpdateLines(arrayListCheckedToExport, tableNameSource, tableNameDestination, booleanColumn);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
 
         postGreSQL.deconnection();
     }
@@ -650,92 +440,85 @@ public class MyScene extends Scene {
     /**
      * Lance l'écriture dans le fichier csv
      */
-    private void exportToCSV(String fileName){
+    private void exportToCSV(ArrayList<String> fileNameAndCategories){
+        String fileName = fileNameAndCategories.get(0);
+        fileName = fileName.replace(".csv", "");
+        fileName = fileName + ".csv";
         try {
-            OutputStreamWriter writerCheck = new OutputStreamWriter(
+            OutputStreamWriter writer = new OutputStreamWriter( // classe Java permettant l'écriture dans les fichiers
                     new FileOutputStream(fileName),
                     Charset.forName("UTF-8").newEncoder());
             ArrayList<String> titles = new ArrayList<>();
             titles.add("ID " + comboBoxSource.getValue().toString());
             titles.add("ORGA " + comboBoxSource.getValue().toString());
-            titles.add("TEXT " + comboBoxSource.getValue().toString());
+            titles.add("TEXTE " + comboBoxSource.getValue().toString());
 
             titles.add("ID " + comboBoxDestination.getValue().toString());
             titles.add("ORGA " + comboBoxDestination.getValue().toString());
             titles.add("TEXT " + comboBoxDestination.getValue().toString());
+            titles.add("CATEGORIE");
+            titles.add("%MC");
+            titles.add("%Leven");
 
-            CSVUtils.writeLine(writerCheck, titles);
+            CSVUtils.writeLine(writer, titles, ';', ' '); // ecrire cette ligne
 
-            for (ArrayList<String> arrayList: arrayListCheckedToExport){
-                CSVUtils.writeLine(writerCheck, arrayList);
-            }
-
-            writerCheck.flush();
-            writerCheck.close();
-
-            OutputStreamWriter writerNotCheck = new OutputStreamWriter(
-                    new FileOutputStream(fileName + "NotCheck.csv"),
-                    Charset.forName("UTF-8").newEncoder());
-            CSVUtils.writeLine(writerNotCheck, titles);
-
-            for (ArrayList<String> arrayList: arrayListNotCheckedToExport){
-                CSVUtils.writeLine(writerNotCheck, arrayList);
-            }
-
-            writerNotCheck.flush();
-            writerNotCheck.close();
-
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
+            for (ArrayList<StringCompared> arrayList: arrayListCheckedToExport){
+                String category = arrayList.get(0).getCategory().toString();
+                if(fileNameAndCategories.contains(category)){
+                    ArrayList<String> elements = new ArrayList<>();
+                    elements.add(CSVUtils.notNull(arrayList.get(0).getUuid()));
+                    elements.add(CSVUtils.notNull(arrayList.get(0).getOrganization()));
+                    elements.add(CSVUtils.notNull(arrayList.get(0).getOriginalText()));
 
 
-    private void saveDatabases(){
-        try {
-            OutputStreamWriter writer = new OutputStreamWriter( new FileOutputStream(new Utils().connexionPath),
-                    Charset.forName("UTF-8").newEncoder());
+                    elements.add(CSVUtils.notNull(arrayList.get(1).getUuid()));
+                    elements.add(CSVUtils.notNull(arrayList.get(1).getOrganization()));
+                    elements.add(CSVUtils.notNull(arrayList.get(1).getOriginalText()));
 
-            for (DatabaseConnection db : databaseConnections) {
-                ArrayList<String> arrayList = new ArrayList<>();
-                arrayList.add(db.getTitle());
-                arrayList.add(db.getIp());
-                arrayList.add(db.getPort());
-                arrayList.add(db.getUser());
-                arrayList.add(db.getPassword());
-                arrayList.add(db.getDatabase());
-                arrayList.add(db.getSchema());
-                arrayList.add(db.getTable());
-                if(db.getJoins() != null){
-                    for (Pair<String, Pair<String, String>> p: db.getJoins()){
-                        arrayList.add(p.getKey());
-                        arrayList.add(p.getValue().getKey());
-                        arrayList.add(p.getValue().getValue());
-                    }
+                    elements.add(CSVUtils.notNull(category));
+                    elements.add(CSVUtils.notNull(Float.toString(arrayList.get(0).getCommonwords())));
+                    elements.add(CSVUtils.notNull(Float.toString(arrayList.get(0).getLeven())));
+
+                    CSVUtils.writeLine(writer, elements, ';', ' ');
                 }
-
-                CSVUtils.writeLine(writer, arrayList, '²', ' ');
             }
-            writer.flush();
+
+            for (ArrayList<StringCompared> arrayList: arrayListNotCheckedToExport){
+                String category = arrayList.get(0).getCategory().toString();
+                if(fileNameAndCategories.contains(category)) {
+                    ArrayList<String> elements = new ArrayList<>();
+                    elements.add(CSVUtils.notNull(arrayList.get(0).getUuid()));
+                    elements.add(CSVUtils.notNull(arrayList.get(0).getOrganization()));
+                    elements.add(CSVUtils.notNull(arrayList.get(0).getOriginalText()));
+
+                    elements.add(CSVUtils.notNull(arrayList.get(1).getUuid()));
+                    elements.add(CSVUtils.notNull(arrayList.get(1).getOrganization()));
+                    elements.add(CSVUtils.notNull(arrayList.get(1).getOriginalText()));
+
+                    elements.add(CSVUtils.notNull(category));
+                    elements.add(CSVUtils.notNull(Float.toString(arrayList.get(0).getCommonwords())));
+                    elements.add(CSVUtils.notNull(Float.toString(arrayList.get(0).getLeven())));
+
+                    CSVUtils.writeLine(writer, elements, ';', ' ');
+                }
+            }
+
+            writer.flush(); // ne pas oublie sinon pas écriture
             writer.close();
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
+
         } catch (IOException e) {
             e.printStackTrace();
         }
     }
 
-    private void addDatabase(DatabaseConnection databaseConnection){
-        databaseConnections.add(databaseConnection);
-        saveDatabases();
+    public void exportLikened(){
+        PostGreSQL postGreSQL = new PostGreSQL(comboBoxSource.getValue());
 
-        optionsDatabase = FXCollections.observableArrayList(
-                databaseConnections
-        );
-        comboBoxSource.setItems(optionsDatabase);
-        comboBoxDestination.setItems(optionsDatabase);
-        comboBoxSearch.setItems(optionsDatabase);
-        comboBoxLikened.setItems(optionsDatabase);
+        String tableNameDestination = comboBoxDestination.getValue().getTable();
+
+        postGreSQL.likenedLines(arrayListCheckedLikened, tableNameDestination);
+
+        postGreSQL.deconnection();
     }
 
 }

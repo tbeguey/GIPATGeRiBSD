@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="compareString.jnlp">
+  <information>
+    <title>MyApp</title>
+    <vendor>Unknown</vendor>
+    <description>compareString</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="ant-1.8.2.jar" size="1933743" download="eager" />
+    <jar href="ant-launcher-1.8.2.jar" size="12322" download="eager" />
+    <jar href="commons-codec-1.9.jar" size="263965" download="eager" />
+    <jar href="compareString.jar" size="113528" download="eager" />
+    <jar href="poi-3.13.jar" size="2497380" download="eager" />
+    <jar href="poi-excelant-3.13.jar" size="30520" download="eager" />
+    <jar href="poi-ooxml-3.13.jar" size="1142386" download="eager" />
+    <jar href="poi-ooxml-schemas-3.13.jar" size="5641539" download="eager" />
+    <jar href="postgresql-42.0.0.jar" size="707261" download="eager" />
+    <jar href="stax-api-1.0.1.jar" size="26514" download="eager" />
+    <jar href="xmlbeans-2.6.0.jar" size="2730866" download="eager" />
+  </resources>
+  <jfx:javafx-desc  width="600" height="400" main-class="Main.Main"  name="compareString" />
+  <update check="background"/>
+</jnlp>

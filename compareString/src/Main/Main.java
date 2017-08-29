@@ -1,19 +1,17 @@
 package Main;
 
-import Element.StringCompared;
-import Utils.Utils;
-import View.MyScene;
+import PreconfigView.ProfilScene;
 import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
-
-import java.util.ArrayList;
 
 
 public class Main extends Application {
 
     public static final double WIDTH = 400;
-    public static final double HEIGHT = 600;
+    public static final double HEIGHT = 400;
+
+    private static Stage stage;
 
     public static void main(String[] args) {
         launch(args);
@@ -26,15 +24,16 @@ public class Main extends Application {
      */
     @Override
     public void start(Stage primaryStage) throws Exception {
-        Stage stage = primaryStage;
-        stage.setTitle("Valider les comparaisons");
+        stage = primaryStage;
+        stage.setTitle("Logiciel de comparaison de chaînes de caractères");
         stage.setResizable(false);
         stage.setWidth(WIDTH);
         stage.setHeight(HEIGHT);
 
-        Scene scene = new MyScene();
+        Scene scene = new ProfilScene();
         stage.setScene(scene);
         stage.show();
-
     }
+
+    public static Stage getStage() { return stage; }
 }

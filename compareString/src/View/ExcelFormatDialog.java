@@ -9,6 +9,9 @@ import javafx.scene.layout.VBox;
 
 import java.util.ArrayList;
 
+/**
+ * Boite de dialogue parametrage de l'import de fichier Excel
+ */
 public class ExcelFormatDialog extends Dialog<ArrayList<String>> {
 
     private static final int Dialog_HEIGHT = 200;

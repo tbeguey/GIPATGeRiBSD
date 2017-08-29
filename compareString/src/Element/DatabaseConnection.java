@@ -26,13 +26,20 @@ public class DatabaseConnection {
         port = p;
         user = u;
         password = pass;
-        database = d.toLowerCase();
-        schema = s.toLowerCase();
-        table = tb.toLowerCase();
+        if(d != null)
+            database = d.toLowerCase();
+        if(s != null)
+            schema = s.toLowerCase();
+        if(tb != null)
+            table = tb.toLowerCase();
         columns = new ArrayList<>();
         joins = j;
+
     }
 
+    /**
+     * Créer la requête permettant de récuperer les données pour l'utilisation : comparaison, apparementement, stats ...
+     */
     public void createSelectQuery(){
         query = "SELECT ";
 
@@ -61,6 +68,10 @@ public class DatabaseConnection {
         System.out.println(query);
     }
 
+    /**
+     * Retire les éléments présents dans la table de résultat sélectionnée
+     * @param columnCorrespondance
+     */
     public void exceptCommunsQuery(String columnCorrespondance){
         String tmp = query;
         query += " EXCEPT ";
@@ -70,6 +81,11 @@ public class DatabaseConnection {
         System.out.println(query);
     }
 
+    /**
+     * Ne choisis que les éléments étant selon les colonnes choisis
+     * @param columnCorrespondance
+     * @param booleans
+     */
     public void joinCommuns(String columnCorrespondance, ArrayList<String> booleans){
         query += " JOIN communs." + columnCorrespondance + " on " + table + "." + columns.get(0) + " = " + "id" + table;
         query += " WHERE ";

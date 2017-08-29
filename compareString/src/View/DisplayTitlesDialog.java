@@ -12,6 +12,9 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.Optional;
 
+/**
+ * Dialogue affichant toutes les données pour l'apparentement
+ */
 public class DisplayTitlesDialog extends Dialog {
 
     private static final double Dialog_HEIGHT = 700;
@@ -22,8 +25,6 @@ public class DisplayTitlesDialog extends Dialog {
     private ArrayList<StringCompared> stringCompareds;
 
     private PostGreSQL postGreSQL;
-
-    private DatabaseConnection databaseConnection;
 
     public DisplayTitlesDialog(DatabaseConnection d) {
         setTitle(d.getTitle());
@@ -44,10 +45,10 @@ public class DisplayTitlesDialog extends Dialog {
         dialogPane.getButtonTypes().add(cancelButton);
         wrapper.getChildren().add(scrollPane);
 
-        databaseConnection = d;
+        DatabaseConnection databaseConnection = d;
         postGreSQL = new PostGreSQL(databaseConnection);
         stringCompareds = postGreSQL.getTitleByTableName(false);
-        Collections.sort(stringCompareds, Comparator.comparing(StringCompared::getOriginalText));
+        Collections.sort(stringCompareds, Comparator.comparing(StringCompared::getOriginalText)); // trie la liste selon l'ordre alphabétique (champ comparé)
 
     }
 

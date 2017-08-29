@@ -2,7 +2,7 @@ package View;
 
 import Element.StringCompared;
 import Graphics.ChartView;
-import Utils.Utils;
+import Utils.*;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.geometry.Insets;
@@ -18,32 +18,38 @@ import java.util.ArrayList;
 import java.util.Optional;
 
 
+/**
+ * Boite de dialogue permettant d'afficher tous les matchages et le graphique
+ */
 public class ComparaisonDialog extends Dialog<ArrayList<ArrayList<Pair<StringCompared, StringCompared>>>>{
 
     private DialogPane dialogPane;
     private VBox wrapperCompared;
     private ScrollPane scrollPane;
-    private ButtonType okButtonType;
+    private ButtonType nextButtonType, previousButtonType;
 
 
-    private ArrayList<Pair<Pair<StringCompared, ComboBox<StringCompared>>, RadioButton>> pairArrayList = new ArrayList<>();
+    private ArrayList<Pair<Pair<StringCompared, ComboBox<StringCompared>>, Pair<RadioButton, RadioButton>>> pairArrayList = new ArrayList<>();
 
     private static final double Dialog_HEIGHT = 700;
     private static final double Dialog_WIDTH = 1500;
 
-    private boolean finish, export, changed;
+    private boolean changed;
+
+    private State state;
 
     private ArrayList<Pair<StringCompared, StringCompared>> arrayListChecked;
     private ArrayList<Pair<StringCompared, StringCompared>> arrayListNotChecked;
+    private ArrayList<Pair<StringCompared, StringCompared>> arrayListLikened;
 
     private int sort_by_value;
 
-    private ArrayList<Pair<Boolean, String>> exportChoises;
+    private ArrayList<Pair<Boolean, ArrayList<String>>> exportChoises;
+
+    private Text page;
 
 
     public ComparaisonDialog(int size){
-        finish = false;
-        export = false;
         changed = false;
         sort_by_value = 0;
 
@@ -56,9 +62,10 @@ public class ComparaisonDialog extends Dialog<ArrayList<ArrayList<Pair<StringCom
         wrapperCompared.setSpacing(20);
         scrollPane = new ScrollPane(wrapperCompared);
 
-        okButtonType = new ButtonType("Suivant", ButtonBar.ButtonData.OK_DONE);
+        previousButtonType = new ButtonType("Précédent", ButtonBar.ButtonData.OK_DONE);
+        nextButtonType = new ButtonType("Suivant", ButtonBar.ButtonData.OK_DONE);
         ButtonType exportButtonType = new ButtonType("Exporter", ButtonBar.ButtonData.OK_DONE);
-        dialogPane.getButtonTypes().addAll(okButtonType, exportButtonType, ButtonType.CANCEL);
+        dialogPane.getButtonTypes().addAll( previousButtonType, nextButtonType, exportButtonType, ButtonType.CANCEL);
 
 
         VBox wrapper = new VBox();
@@ -73,7 +80,6 @@ public class ComparaisonDialog extends Dialog<ArrayList<ArrayList<Pair<StringCom
             clear();
             close();
             changed = true;
-            finish = true;
             sort_by_value = sort_by.getSelectionModel().getSelectedIndex();
         });
         Label sort_by_label = new Label("Trier par :");
@@ -81,64 +87,76 @@ public class ComparaisonDialog extends Dialog<ArrayList<ArrayList<Pair<StringCom
 
         sort_options.getChildren().addAll(sort_by_label, sort_by);
 
-        HBox titlesBox = new HBox();
-        titlesBox.setSpacing(460);
 
+        Text likened = new Text("Apparenter");
         Text titleCompared = new Text("Titres comparés");
-        Text tileRes = new Text("Liste des potentiels résultats");
-
-        titlesBox.getChildren().addAll(titleCompared, tileRes);
-
-        HBox percentageBox = new HBox();
-        percentageBox.setSpacing(10);
-
+        Text apparel = new Text("Appareiller");
+        Text titleRes = new Text("Liste des potentiels résultats");
         Text percentageMC = new Text("% de mots communs");
         Text percentageLeven = new Text("% de Levenshtein");
 
-        percentageBox.getChildren().addAll(percentageMC, percentageLeven);
 
-        HBox titlesAndPercentageBox = new HBox();
-        titlesAndPercentageBox.setSpacing(500);
-        titlesAndPercentageBox.getChildren().addAll(titlesBox, percentageBox);
+        HBox titlesBox = new HBox();
+        HBox.setMargin(titleCompared, new Insets(0,0,0,20));
+        HBox.setMargin(apparel, new Insets(0,0,0,350));
+        HBox.setMargin(titleRes, new Insets(0,0,0,50));
+        HBox.setMargin(percentageMC, new Insets(0,0,0,360));
+        HBox.setMargin(percentageLeven, new Insets(0,0,0,20));
+
+        titlesBox.getChildren().addAll(likened, titleCompared, apparel, titleRes, percentageMC, percentageLeven);
 
 
-        wrapper.getChildren().addAll(sort_options, titlesAndPercentageBox, scrollPane);
+        wrapper.getChildren().addAll(sort_options, titlesBox, scrollPane);
         dialogPane.setContent(wrapper);
 
         Text numbers = new Text(size + " résultat(s)");
-        wrapper.getChildren().add(numbers);
+
+        page = new Text("Page : 1");
+
+        HBox numbersBox = new HBox();
+        numbersBox.setSpacing(300);
+        numbersBox.getChildren().addAll(numbers, page);
+        wrapper.getChildren().add(numbersBox);
 
 
 
         arrayListChecked = new ArrayList<>();
         arrayListNotChecked = new ArrayList<>();
+        arrayListLikened = new ArrayList<>();
         setResultConverter((ButtonType dialogButton) ->{
             ArrayList<ArrayList<Pair<StringCompared, StringCompared>>> arrayList = new ArrayList<>();
 
-            if(dialogButton == okButtonType){
-                //sortIfCheckOrNot();
+            if(dialogButton == nextButtonType){
+                state = State.NEXT;
+            }
+            else if(dialogButton == previousButtonType){
+                state = State.PREVIOUS;
             }
             else if(dialogButton == exportButtonType){
-                Optional<ArrayList<Pair<Boolean, String>>> result = new ExportDialog().showAndWait();
+                Optional<ArrayList<Pair<Boolean, ArrayList<String>>>> result = new ExportDialog().showAndWait(); // affichage boite dialogue export
                 result.ifPresent(res -> {
-                    //sortIfCheckOrNot();
+                    exportChoises = res; // on stocke les choix d'exports
 
-                    exportChoises = res;
-                    export = true;
-                    finish = true;
+                    state = State.EXPORT;
 
-                    arrayList.add(arrayListChecked);
-                    arrayList.add(arrayListNotChecked);
+                    arrayList.add(arrayListChecked); // cochés matchage
+                    arrayList.add(arrayListNotChecked); // non cochés matchages
+                    arrayList.add(arrayListLikened); // coché apparentement
                 });
             }
             else{
-                finish = true;
+                state = State.CANCEL;
             }
 
             return arrayList;
         });
     }
 
+    /**
+     * Ajoute une ligne de matchage dans la boite de dialogue
+     * @param first
+     * @param second
+     */
     public void add(StringCompared first, ArrayList<StringCompared> second){
         HBox hbox = new HBox();
         hbox.setSpacing(10);
@@ -173,9 +191,9 @@ public class ComparaisonDialog extends Dialog<ArrayList<ArrayList<Pair<StringCom
                 return cell;
             }
         });
-        secondText.setPrefWidth(Dialog_WIDTH/2.2);
+        secondText.setPrefWidth(Dialog_WIDTH/2.5);
 
-        for (String wordFirst : first.getOriginalText().split(" ")) {
+        for (String wordFirst : first.getOriginalText().split(" ")) { // gère la mise en gras des mots communs
             Text t = new Text(wordFirst + " ");
             for (String wordSecond: ((StringCompared)secondText.getValue()).getArrayList()) {
                 if(Utils.withOutAccents(wordFirst.toLowerCase()).equals(Utils.withOutAccents(wordSecond.toLowerCase()))){
@@ -210,19 +228,43 @@ public class ComparaisonDialog extends Dialog<ArrayList<ArrayList<Pair<StringCom
         double value = first.getCommonwords();
         double secondValue = first.getLeven();
 
-        if(value == 1)
-            radioButton.setSelected(true);
 
         scoreText.setText(String.valueOf(value));
         secondScoreText.setText(String.valueOf(secondValue));
 
-
+        RadioButton likenedRadioButton = new RadioButton();
 
         Pair<StringCompared, ComboBox<StringCompared>> stringPair = new Pair<>(first, secondText);
-        Pair<Pair<StringCompared, ComboBox<StringCompared>>, RadioButton> pairRadioButtonPair = new Pair<>(stringPair, radioButton);
-        pairArrayList.add(pairRadioButtonPair);
+        Pair<RadioButton, RadioButton> radioButtonPair = new Pair<>(likenedRadioButton, radioButton);
+        Pair<Pair<StringCompared, ComboBox<StringCompared>>, Pair<RadioButton, RadioButton>> pairRadioButtonPair = new Pair<>(stringPair, radioButtonPair);
 
-        hbox.getChildren().addAll(firstText, radioButton, secondText, scoreBox);
+        // Gestion des sauvegardes des lignes cochés
+        boolean exists = false;
+        boolean firstCheck = false;
+        boolean secondCheck = false;
+        for (Pair<Pair<StringCompared, ComboBox<StringCompared>>, Pair<RadioButton, RadioButton>> p : pairArrayList) {
+            if(p.getKey().getKey().equals(first)){
+                exists = true;
+                firstCheck = p.getValue().getKey().isSelected();
+                secondCheck = p.getValue().getValue().isSelected();
+            }
+        }
+
+        if(!exists){
+            if(value == 1)
+                radioButton.setSelected(true);
+
+            pairArrayList.add(pairRadioButtonPair);
+        }
+        else{
+            if(firstCheck)
+                likenedRadioButton.setSelected(true);
+            if(secondCheck)
+                radioButton.setSelected(true);
+        }
+
+
+        hbox.getChildren().addAll(likenedRadioButton, firstText, radioButton, secondText, scoreBox);
 
         wrapperCompared.getChildren().add(hbox);
     }
@@ -270,28 +312,38 @@ public class ComparaisonDialog extends Dialog<ArrayList<ArrayList<Pair<StringCom
         wrapperCompared.getChildren().add(gridPane);
     }
 
+    /**
+     * Trie les enregistrements si ils sont cochés ou non
+     */
     public void sortIfCheckOrNot(){
-        for (Pair<Pair<StringCompared, ComboBox<StringCompared>>, RadioButton> pair : pairArrayList) {
+        for (Pair<Pair<StringCompared, ComboBox<StringCompared>>, Pair<RadioButton, RadioButton>> pair : pairArrayList) {
             Pair<StringCompared, StringCompared> stringPair = new Pair<>(pair.getKey().getKey(), pair.getKey().getValue().getValue());
-            if(pair.getValue().isSelected())
+            if(pair.getValue().getValue().isSelected())
                 arrayListChecked.add(stringPair);
             else
                 arrayListNotChecked.add(stringPair);
+
+            if(pair.getValue().getKey().isSelected())
+                arrayListLikened.add(stringPair);
         }
     }
 
     public DialogPane getTheDialogPane() { return dialogPane; }
 
-    public ButtonType getOkButtonType() {return okButtonType; }
+    public ButtonType getNextButtonType() {return nextButtonType; }
+    public ButtonType getPreviousButtonType() { return previousButtonType; }
 
-    public boolean getFinish() { return finish; }
-    public boolean getExportBD() { return export; }
+    public State getState() { return state; }
+
+    public void setState(State s) { state = s;}
+
     public boolean getChanged() { return changed; }
 
     public void setChanged(boolean c) { changed = c; }
-    public void setFinish(boolean f) { finish = f; }
 
     public int getSort_by_value() { return sort_by_value; }
 
-    public ArrayList<Pair<Boolean, String>> getExportChoises() { return exportChoises; }
+    public ArrayList<Pair<Boolean, ArrayList<String>>> getExportChoises() { return exportChoises; }
+
+    public void setNum_page(int n) { page.setText("Page : " + n); }
 }

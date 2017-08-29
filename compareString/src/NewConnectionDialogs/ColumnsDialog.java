@@ -9,11 +9,15 @@ import javafx.geometry.Pos;
 import javafx.scene.control.*;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
+import javafx.scene.text.Text;
 import javafx.util.Pair;
 
 import java.util.ArrayList;
 import java.util.Optional;
 
+/**
+ * Dialogue permettant de choisir les colonnes (id, mot fort, ...)
+ */
 public class ColumnsDialog extends Dialog<ArrayList<String>> {
 
     private ArrayList<ComboBox> comboBoxes;
@@ -29,6 +33,9 @@ public class ColumnsDialog extends Dialog<ArrayList<String>> {
         wrapper.setSpacing(50);
         dialogPane.setContent(wrapper);
 
+        Text text = new Text("Choisissez les champs correspondants à : ");
+        wrapper.getChildren().add(text);
+
         PostGreSQL postGreSQL = new PostGreSQL(databaseConnection);
         ArrayList<String> columns = new ArrayList<>();
         columns.add("null");
@@ -43,7 +50,7 @@ public class ColumnsDialog extends Dialog<ArrayList<String>> {
                 columns
         );
 
-        String[] labels = {"Identifiant", "Mot fort", "Titre"};
+        String[] labels = {"Identifiant", "Mot fort", "Champ à comparer"};
         comboBoxes = new ArrayList<>();
 
         for (int i=0; i<labels.length;i++) {
@@ -63,7 +70,7 @@ public class ColumnsDialog extends Dialog<ArrayList<String>> {
             comboBoxes.add(comboBox);
         }
 
-        Button concatenation = new Button("Concaténer");
+        Button concatenation = new Button("Options");
         concatenation.setOnMouseClicked(event -> {
             Optional<String> result = new ConcatenationDialog(databaseConnection).showAndWait();
             result.ifPresent(res -> {

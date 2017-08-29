@@ -65,9 +65,9 @@ public class PostgreSQL {
         }
     }
 
-    public void createTableGeonetwork(String table){
+    public void createTableGeonetwork(){
         try {
-            String sql = "CREATE TABLE IF NOT EXISTS " + table + " (id serial PRIMARY KEY, uuid text UNIQUE, title text, data text, isharvested character(1), source text); "; // notre requete
+            String sql = "CREATE TABLE IF NOT EXISTS geonetwork.metadata (id serial PRIMARY KEY, uuid text UNIQUE, title text, data text, isharvested character(1), source text); "; // notre requete
             stmt.executeUpdate(sql); // est éxécuté sur le statement
             System.out.println("Table created");
         } catch (SQLException e) {
@@ -75,8 +75,8 @@ public class PostgreSQL {
         }
     }
 
-    public boolean rowExistsGeonetwork(String id, String table){
-        String query = "select exists(select 1 from " + table + " where uuid = '" + id + "');";
+    public boolean rowExistsGeonetwork(String id){
+        String query = "select exists(select 1 from geonetwork.metadata where uuid = '" + id + "');";
         try {
             PreparedStatement pst = c.prepareStatement(query);
             ResultSet rs = pst.executeQuery();
@@ -131,16 +131,16 @@ public class PostgreSQL {
         }
     }
 
-    public void insertLineGeonetwork(String table){
+    public void insertLineGeonetwork(){
         for (Line l : linesInit) {
             try {
                 String sql;
-                if(!rowExistsGeonetwork(l.getUuid(), table)){
-                    sql = "INSERT INTO " + table + "(uuid, title, data, isharvested, source) VALUES( '" + l.getUuid() + "', '" + l.getTitle() + "', '" + l.getData()
+                if(!rowExistsGeonetwork(l.getUuid())){
+                    sql = "INSERT INTO geonetwork.metadata(uuid, title, data, isharvested, source) VALUES( '" + l.getUuid() + "', '" + l.getTitle() + "', '" + l.getData()
                             + "', '" + l.getHarvested() + "', '" + l.getSource() + "');";
                 }
                 else{
-                    sql = "UPDATE " + table + " SET title = '" + l.getTitle() + "', data = '" + l.getData() + "'  where uuid = '" + l.getUuid() + "';";
+                    sql = "UPDATE geonetwork.metadata SET title = '" + l.getTitle() + "', data = '" + l.getData() + "'  where uuid = '" + l.getUuid() + "';";
                 }
                 stmt.executeUpdate(sql);
             } catch (SQLException e) {
@@ -194,9 +194,9 @@ public class PostgreSQL {
         }
     }
 
-    public void createTableGeoserver(String table){
+    public void createTableGeoserver(){
         try {
-            String sql = "CREATE TABLE " + table + " (idCouche text UNIQUE," +
+            String sql = "CREATE TABLE geoserver.geoserver_xml_init (idCouche text UNIQUE," +
                     "idNamespace text," +
                     "FEATURETYPE text," +
                     "NAME text," +
@@ -224,7 +224,7 @@ public class PostgreSQL {
         return false;
     }
 
-    public void addLineInInitGeoserver(File xml, String workspace){
+    public void addLineInInitGeoserver(File xml, String workspace) {
         try {
             String content = "";
             String name = "";
@@ -281,13 +281,7 @@ public class PostgreSQL {
                     idNameSpace = idNameSpace.replace("'", "''");
                 }
 
-            } catch (ParserConfigurationException e) {
-                e.printStackTrace();
-            } catch (SAXException e) {
-                e.printStackTrace();
-            } catch (IOException e) {
-                e.printStackTrace();
-            } catch (XPathExpressionException e) {
+            } catch (ParserConfigurationException | SAXException | XPathExpressionException | IOException e) {
                 e.printStackTrace();
             }
 
@@ -383,10 +377,10 @@ public class PostgreSQL {
         return false;
     }
 
-    public void getLinesOnInitCartogip(String table, String idColumnName, String titleColumnName, String schemaColumnName){
-        String sql = "SELECT " + idColumnName +", " + titleColumnName + ", " + schemaColumnName;
+    public void getLinesOnInitCartogip(){
+        String sql = "SELECT id_couche" +", couche_libelle, couche_schema";
 
-        sql += " from " + table + ";";
+        sql += " from cartogip.couche_init;";
         try {
             PreparedStatement pst = c.prepareStatement(sql);
             ResultSet rs = pst.executeQuery();
@@ -403,8 +397,8 @@ public class PostgreSQL {
         }
     }
 
-    public void getLinesOnFinalCartogip(String table){
-        String sql = "SELECT id, titre from " + table + ";";
+    public void getLinesOnFinalCartogip(){
+        String sql = "SELECT id, titre from cartogip.couche;";
         try {
             PreparedStatement pst = c.prepareStatement(sql);
             ResultSet rs = pst.executeQuery();
@@ -420,7 +414,7 @@ public class PostgreSQL {
         }
     }
 
-    public void deleteLinesOnFinalCartogip(String nameCorrespondance, String table){
+    public void deleteLinesOnFinalCartogip(){
         for (Line lineFinal : linesFinal) {
             boolean exists = false;
             for (Line lineInit :linesInit) {
@@ -430,14 +424,14 @@ public class PostgreSQL {
                 }
             }
             if(!exists){
-                String sql = "UPDATE communs.correspondance SET " + nameCorrespondance + " = null where + " + nameCorrespondance + " = '" + lineFinal.getId() + "';";
+                String sql = "UPDATE communs.correspondance SET idcartogip = null where + idcartogip = '" + lineFinal.getId() + "';";
                 try {
                     stmt.executeUpdate(sql);
                 } catch (SQLException e) {
                     e.printStackTrace();
                 }
 
-                sql = "DELETE FROM " + table + " where id = '" + lineFinal.getId() + "';";
+                sql = "DELETE FROM cartogip.couche where id = '" + lineFinal.getId() + "';";
                 try {
                     stmt.executeUpdate(sql);
                 } catch (SQLException e) {
@@ -448,15 +442,15 @@ public class PostgreSQL {
         }
     }
 
-    public void insertOrUpdateLinesCartogip(String table){
+    public void insertOrUpdateLinesCartogip(){
         for (Line l : linesInit) {
             String sql;
-            if (rowExistsCartogipBSD(l.getId(), table)){
-                sql = "UPDATE " + table + " SET titre = '" + l.getTitle() + "' where id  = '" + l.getId() + "';";
+            if (rowExistsCartogipBSD(l.getId(), "cartogip.couche")){
+                sql = "UPDATE cartogip.couche SET titre = '" + l.getTitle() + "' where id  = '" + l.getId() + "';";
 
             }
             else{
-                sql = "INSERT INTO " + table + " VALUES ('" + l.getId() + "', '" + l.getTitle() + "', '" + l.getSchema() + "');";
+                sql = "INSERT INTO cartogip.couche VALUES ('" + l.getId() + "', '" + l.getTitle() + "', '" + l.getSchema() + "');";
             }
             try {
                 stmt.executeUpdate(sql);
@@ -467,8 +461,8 @@ public class PostgreSQL {
         }
     }
 
-    public void getLinesOnInitBSD(String table, String idColumnName, String titleColumnName){
-        String sql = "SELECT " + idColumnName +", " + titleColumnName + " from " + table + ";";
+    public void getLinesOnInitBSD(){
+        String sql = "SELECT id_donnee, type_donnees_echange_libelle from bsd.pigma_donnees_a_dispo_init join bsd.type_donnees_echange on type_donnee = no_type_donnees_echange";
         try {
             PreparedStatement pst = c.prepareStatement(sql);
             ResultSet rs = pst.executeQuery();
@@ -484,8 +478,8 @@ public class PostgreSQL {
         }
     }
 
-    public void getLinesOnFinalBSD(String table){
-        String sql = "SELECT id, titre from " + table + ";";
+    public void getLinesOnFinalBSD(){
+        String sql = "SELECT id_donnee, type_donnees_echange_libelle from bsd.pigma_donnees_a_dispo join bsd.type_donnees_echange on type_donnee = no_type_donnees_echange";
         try {
             PreparedStatement pst = c.prepareStatement(sql);
             ResultSet rs = pst.executeQuery();
@@ -501,7 +495,7 @@ public class PostgreSQL {
         }
     }
 
-    public void deleteLinesOnFinalBSD(String nameCorrespondance, String table){
+    public void deleteLinesOnFinalBSD(){
         for (Line lineFinal : linesFinal) {
             boolean exists = false;
             for (Line lineInit :linesInit) {
@@ -511,14 +505,14 @@ public class PostgreSQL {
                 }
             }
             if(!exists){
-                String sql = "UPDATE communs.correspondance SET " + nameCorrespondance + " = null where + " + nameCorrespondance + " = '" + lineFinal.getId() + "';";
+                String sql = "UPDATE communs.correspondance SET idbsd = null where idbsd = '" + lineFinal.getId() + "';";
                 try {
                     stmt.executeUpdate(sql);
                 } catch (SQLException e) {
                     e.printStackTrace();
                 }
 
-                sql = "DELETE FROM " + table + " where id = '" + lineFinal.getId() + "';";
+                sql = "DELETE FROM bsd.type_donnees_echange where id = '" + lineFinal.getId() + "';";
                 try {
                     stmt.executeUpdate(sql);
                 } catch (SQLException e) {
@@ -529,15 +523,15 @@ public class PostgreSQL {
         }
     }
 
-    public void insertOrUpdateLinesBSD(String table){
+    public void insertOrUpdateLinesBSD(){
         for (Line l : linesInit) {
             String sql;
-            if (rowExistsCartogipBSD(l.getId(), table)){
-                sql = "UPDATE " + table + " SET titre = '" + l.getTitle() + "' where id  = '" + l.getId() + "';";
+            if (rowExistsCartogipBSD(l.getId(), "bsd.type_donnees_echange")){
+                sql = "UPDATE bsd.type_donnees_echange SET titre = '" + l.getTitle() + "' where id  = '" + l.getId() + "';";
 
             }
             else{
-                sql = "INSERT INTO " + table + " VALUES ('" + l.getId() + "', '" + l.getTitle() + "');";
+                sql = "INSERT INTO bsd.type_donnees_echange VALUES ('" + l.getId() + "', '" + l.getTitle() + "');";
             }
             try {
                 stmt.executeUpdate(sql);
@@ -548,10 +542,11 @@ public class PostgreSQL {
         }
     }
 
-    public void deleteCorrespondanceEmpty(){
-        String sql = "DELETE FROM communs.correspondance where idgeonetwork = null AND idgeoserver = null AND idcartogip = null AND idbsd = null;";
+    public void concatInitBSD(){
+        String sql = "UPDATE bsd.pigma_donnees_a_dispo_init SET id_donnee = concat(id_entreprise::text, ',', type_donnee::text) where 1=1;";
+
         try {
-            stmt.executeUpdate(sql);
+            stmt.execute(sql);
         } catch (SQLException e) {
             e.printStackTrace();
         }

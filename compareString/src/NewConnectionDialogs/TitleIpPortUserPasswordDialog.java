@@ -2,8 +2,14 @@ package NewConnectionDialogs;
 
 import javafx.scene.control.*;
 import javafx.scene.layout.VBox;
+import javafx.scene.text.Text;
+
 import java.util.ArrayList;
 
+/**
+ * Boite de dialogue pour remplir le titre, ip, permettant de connecter.
+ * Retourne un ArrayList comportant les éléments de connection.
+ */
 public class TitleIpPortUserPasswordDialog extends Dialog<ArrayList<String>> {
 
     public TitleIpPortUserPasswordDialog(){
@@ -13,6 +19,9 @@ public class TitleIpPortUserPasswordDialog extends Dialog<ArrayList<String>> {
 
         VBox wrapper = new VBox();
         wrapper.setSpacing(10);
+
+        Text text = new Text("Veuillez s'il-vous-plait renseigner le titre que vous souhaitez, une IP, le port, le nom d'utlisateur \n" +
+                "et mot de passe afin de se connecter à la base de donnée");
 
         TextField title = new TextField();
         title.setPromptText("Titre que vous souhaitez");
@@ -33,7 +42,7 @@ public class TitleIpPortUserPasswordDialog extends Dialog<ArrayList<String>> {
         password.setPromptText("Mot de passe");
         password.setText("admpostgres");
 
-        wrapper.getChildren().addAll(title, ip, port, user, password);
+        wrapper.getChildren().addAll(text, title, ip, port, user, password);
         dialogPane.setContent(wrapper);
 
         ButtonType okButtonType = new ButtonType("Suivant", ButtonBar.ButtonData.OK_DONE);

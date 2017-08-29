@@ -1,6 +1,7 @@
 package Utils;
 
 import Element.DatabaseConnection;
+import Element.StringCompared;
 import javafx.util.Pair;
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 import org.apache.poi.ss.usermodel.*;
@@ -13,14 +14,19 @@ import java.nio.charset.Charset;
 import java.nio.charset.StandardCharsets;
 import java.util.*;
 
+/**
+ * Classe static (ne depend pas d'être instancié) permettant de manipuler
+ */
 public class CSVUtils {
 
     private static final char DEFAULT_SEPARATOR = ',';
 
-    public static void writeLine(Writer w, ArrayList<String> values) throws IOException {
-        writeLine(w, values, DEFAULT_SEPARATOR, ' ');
-    }
 
+    /**
+     * Permet de suivre la convention CSV
+     * @param value
+     * @return
+     */
     //https://tools.ietf.org/html/rfc4180
     private static String followCVSformat(String value) {
 
@@ -34,6 +40,14 @@ public class CSVUtils {
 
     }
 
+    /**
+     * Prend une liste de mot et l'écrit en la séparant par le caractère choisi
+     * @param w
+     * @param values
+     * @param separators
+     * @param customQuote
+     * @throws IOException
+     */
     public static void writeLine(Writer w, ArrayList<String> values, char separators, char customQuote) throws IOException {
         boolean first = true;
 
@@ -61,34 +75,12 @@ public class CSVUtils {
         w.append(sb.toString());
     }
 
-    public static ArrayList<DatabaseConnection> readConnections(){
-        ArrayList<DatabaseConnection> databaseConnections = new ArrayList<>();
-        try {
-            BufferedReader reader = new BufferedReader(new InputStreamReader(new FileInputStream(new Utils().connexionPath), StandardCharsets.UTF_8));
-            String line = reader.readLine();
-            while(line != null){
-                String[] words = line.split("²");
 
-                ArrayList<Pair<String, Pair<String, String>>> joins = new ArrayList<>();
-                for (int i = 8; i < words.length; i+=3) {
-                    Pair<String, String> pair = new Pair<>(words[i+1].toLowerCase(), words[i+2].toLowerCase());
-                    Pair<String, Pair<String, String>> pairPair = new Pair<>(words[i].toLowerCase(), pair);
-                    joins.add(pairPair);
-                }
-
-                DatabaseConnection databaseConnection = new DatabaseConnection(words[0], words[1], words[2], words[3], words[4], words[5], words[6], words[7], joins);
-                databaseConnections.add(databaseConnection);
-
-                line = reader.readLine();
-            }
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        return databaseConnections;
-    }
-
+    /**
+     * Converti en fichier Excel
+     * @param file
+     * @return
+     */
     public static XSSFWorkbook CSVtoXLSX(File file){
         String name = file.getName();
         name = name.replaceAll(".csv", ".xlsx");
@@ -121,6 +113,12 @@ public class CSVUtils {
         return workbook;
     }
 
+    /**
+     * Converti en fichier Excel
+     * @param file
+     * @return
+     * @throws IOException
+     */
     public static XSSFWorkbook XLStoXLSX(File file) throws IOException {
         String name = file.getName();
         name += "x";
@@ -197,48 +195,13 @@ public class CSVUtils {
         }
     }
 
-    public static ArrayList<String> readUseless(){
-        ArrayList<String> useless = new ArrayList<>();
-        try {
-            BufferedReader reader = new BufferedReader(new FileReader(new Utils().uselessPath));
-            String line = reader.readLine();
-            String[] words = line.split(";");
-            for (String s : words) {
-                useless.add(s.toLowerCase());
-            }
-
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
 
 
-
-        return useless;
-    }
-
-    public static Map<String, ArrayList<String>> readSame(){
-        Map<String, ArrayList<String>> map = new HashMap<>();
-
-        try {
-            String currentLine;
-            Charset charset = Charset.forName("ISO-8859-1");
-            BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(new FileInputStream(new Utils().samePath), charset));
-            while ((currentLine = bufferedReader.readLine()) != null){
-                String str[] = currentLine.split(";");
-                ArrayList<String> arrayList = new ArrayList<>();
-                for (int i=1; i<str.length;i++)
-                    arrayList.add(str[i].toLowerCase());
-                map.put(str[0], arrayList);
-            }
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-
-        return map;
+    public static String notNull(String s){
+        if(s != null)
+            return s;
+        else
+            return "-";
     }
 
 }
