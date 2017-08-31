@@ -151,6 +151,7 @@ public class SameDialog extends Dialog<Map<String, ArrayList<String>>> {
                 e.printStackTrace();
             }
 
+            postGreSQL.deconnection();
             return map;
         });
 

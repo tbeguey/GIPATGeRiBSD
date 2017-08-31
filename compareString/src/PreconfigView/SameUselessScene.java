@@ -69,7 +69,7 @@ public class SameUselessScene extends Scene {
         Button next = new Button("Suivant");
         next.setOnMouseClicked(event -> {
             StringCompared.initializeWords();
-            Scene scene = new MyScene(databaseConnection);
+            Scene scene = new MyScene(databaseConnection, profil);
             Main.getStage().setHeight(Main.HEIGHT+100);
             Main.getStage().setScene(scene);
         });

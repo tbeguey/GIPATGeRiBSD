@@ -77,6 +77,7 @@ public class ProfilScene extends Scene{
 
         Button next = new Button("Suivant");
         next.setOnMouseClicked(event -> {
+            postGreSQL.deconnection();
             Scene scene = new ConnexionScene(profilComboBox.getValue());
             Main.getStage().setScene(scene);
         });

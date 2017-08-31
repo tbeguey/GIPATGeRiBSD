@@ -196,6 +196,20 @@ public class CSVUtils {
     }
 
 
+    public static ArrayList<String> readUseless(File f) {
+        ArrayList<String> useless = new ArrayList<>();
+        try {
+            BufferedReader reader = new BufferedReader(new FileReader(f));
+            String line = reader.readLine();
+            String[] words = line.split(";");
+            for (String s : words)
+                useless.add(s.toLowerCase());
+        }
+        catch (IOException e) {
+            e.printStackTrace();
+        }
+        return useless;
+    }
 
     public static String notNull(String s){
         if(s != null)

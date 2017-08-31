@@ -111,6 +111,7 @@ public class SkipDialog extends Dialog<ArrayList<String>> {
 
         setResultConverter((ButtonType dialogButton) -> {
             ArrayList<String> arrayList = new ArrayList<>();
+            postGreSQL.deconnection();
             if(dialogButton == okButtonType){
                 arrayList.add(comboBox.getValue());
                 arrayList.add(Boolean.toString(radioButtonRemove.isSelected()));

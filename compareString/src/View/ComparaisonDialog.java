@@ -191,6 +191,7 @@ public class ComparaisonDialog extends Dialog<ArrayList<ArrayList<Pair<StringCom
                 return cell;
             }
         });
+
         secondText.setPrefWidth(Dialog_WIDTH/2.5);
 
         for (String wordFirst : first.getOriginalText().split(" ")) { // gère la mise en gras des mots communs
@@ -264,7 +265,18 @@ public class ComparaisonDialog extends Dialog<ArrayList<ArrayList<Pair<StringCom
         }
 
 
-        hbox.getChildren().addAll(likenedRadioButton, firstText, radioButton, secondText, scoreBox);
+        hbox.getChildren().addAll(likenedRadioButton, firstText, radioButton);
+
+        if(second.size() == 1){
+            TextFlow cheatText = new TextFlow(); // utiliser pour tricher lorsqu'on a l'une phrase et qu'on veut pas afficher de comboBox
+            cheatText.getChildren().add(new Text(second.get(0).getOriginalText()));
+            cheatText.setPrefWidth(Dialog_WIDTH/2.5);
+            hbox.getChildren().add(cheatText);
+        }
+        else
+            hbox.getChildren().add(secondText);
+
+        hbox.getChildren().add(scoreBox);
 
         wrapperCompared.getChildren().add(hbox);
     }

@@ -45,6 +45,7 @@ public class ColumnsDialog extends Dialog<ArrayList<String>> {
                 columns.addAll(postGreSQL.getColumns(p.getKey()));
             }
         }
+        postGreSQL.deconnection();
 
         options = FXCollections.observableArrayList(
                 columns

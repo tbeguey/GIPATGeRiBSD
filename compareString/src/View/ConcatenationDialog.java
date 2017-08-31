@@ -71,7 +71,9 @@ public class ConcatenationDialog extends Dialog<String> {
         setResultConverter((ButtonType dialogButton) -> {
 
             if(dialogButton == okButtonType) {
-                return postGreSQL.createConcatenation(comboBoxes);
+                String s = postGreSQL.createConcatenation(comboBoxes);
+                postGreSQL.deconnection();
+                return s;
             }
             else
                 return null;

@@ -225,8 +225,20 @@ public class PostGreSQL {
      * @param arrayListLikened
      * @param tableNameDestination
      */
-    public void likenedLines(ArrayList<ArrayList<StringCompared>> arrayListLikened, String tableNameDestination){
+    public void likenedLines(ArrayList<ArrayList<StringCompared>> arrayListLikened, String tableNameDestination) throws SQLException {
         String columnNameDestination = "idparent_" + tableNameDestination;
+
+        String requis = "select exists(select 1 from information_schema.columns where table_name='" + db.getTable() + "' and column_name='" + columnNameDestination + "');";
+        PreparedStatement pst = c.prepareStatement(requis);
+        ResultSet rs = pst.executeQuery();
+        rs.next();
+
+        boolean exists = rs.getBoolean(1);
+        if(!exists){
+            String create = "ALTER TABLE " + db.getTable() + " ADD COLUMN " + columnNameDestination + " text;";
+            stmt.execute(create);
+        }
+
         for (int i = 0; i < arrayListLikened.size(); i++) {
             ArrayList<StringCompared> arrayList = arrayListLikened.get(i);
 
@@ -236,11 +248,7 @@ public class PostGreSQL {
             String sql = "UPDATE " + db.getTable() + " SET " + columnNameDestination + " = '" + destinationId + "' WHERE " + db.getColumns().get(0) + " = '" + sourceId + "';" ;
 
             System.out.println(sql);
-            try {
-                stmt.executeUpdate(sql);
-            } catch (SQLException e) {
-                e.printStackTrace();
-            }
+            stmt.executeUpdate(sql);
         }
     }
 
@@ -342,27 +350,21 @@ public class PostGreSQL {
         return columns;
     }
 
-    public void addParent(StringCompared parent, StringCompared child){
-        String sql = "UPDATE " + db.getTable() + " SET idparent = '" + parent.getUuid() + "' WHERE ";
-        switch (db.getTable()){
-            case "geoserver_xml":
-                sql += "idcouche";
-                break;
-            case "metadata":
-                sql += "uuid";
-                break;
-            default:
-                sql += "id";
-                break;
+    public void addParent(StringCompared parent, StringCompared child) throws SQLException {
+        String requis = "select exists(select 1 from information_schema.columns where table_name='" + db.getTable() + "' and column_name='idparent');";
+        PreparedStatement pst = c.prepareStatement(requis);
+        ResultSet rs = pst.executeQuery();
+        rs.next();
+
+        boolean exists = rs.getBoolean(1);
+        if(!exists){
+            String create = "ALTER TABLE " + db.getTable() + " ADD COLUMN idparent text;";
+            stmt.execute(create);
         }
 
-        sql += " = '" + child.getUuid() + "';";
-        try {
-            System.out.println(sql);
-            stmt.executeUpdate(sql);
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
+        String sql = "UPDATE " + db.getTable() + " SET idparent = '" + parent.getUuid() + "' WHERE " + db.getColumns().get(0) + " = '" + child.getUuid() + "';";
+        System.out.println(sql);
+        stmt.executeUpdate(sql);
     }
 
     /**
@@ -761,6 +763,7 @@ public class PostGreSQL {
      * @throws SQLException
      */
     public boolean uselessContainsWord(String word, String table) throws SQLException {
+        word = word.replace("'", "''");
         String sql = "SELECT exists (select 1 from " + table + " where mot = '" + word + "');";
         PreparedStatement pst = c.prepareStatement(sql);
         ResultSet rs = pst.executeQuery();

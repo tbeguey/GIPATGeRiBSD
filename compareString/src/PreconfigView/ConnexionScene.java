@@ -202,6 +202,7 @@ public class ConnexionScene extends Scene {
 
         Button next = new Button("Suivant");
         next.setOnMouseClicked(event -> {
+            postGreSQL.deconnection();
             Scene scene = new SameUselessScene(databaseConnection, profil);
             Main.getStage().setScene(scene);
         });

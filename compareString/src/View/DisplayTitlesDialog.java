@@ -7,6 +7,8 @@ import Utils.Utils;
 import javafx.scene.control.*;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
+
+import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
@@ -45,10 +47,9 @@ public class DisplayTitlesDialog extends Dialog {
         dialogPane.getButtonTypes().add(cancelButton);
         wrapper.getChildren().add(scrollPane);
 
-        DatabaseConnection databaseConnection = d;
-        postGreSQL = new PostGreSQL(databaseConnection);
+        postGreSQL = new PostGreSQL(d);
         stringCompareds = postGreSQL.getTitleByTableName(false);
-        Collections.sort(stringCompareds, Comparator.comparing(StringCompared::getOriginalText)); // trie la liste selon l'ordre alphabétique (champ comparé)
+        stringCompareds.sort(Comparator.comparing(StringCompared::getOriginalText)); // trie la liste selon l'ordre alphabétique (champ comparé)
 
     }
 
@@ -67,7 +68,11 @@ public class DisplayTitlesDialog extends Dialog {
                 Optional<ArrayList<StringCompared>> result = likenedDialog.showAndWait();
                 result.ifPresent(stringCompareds -> {
                     for (StringCompared stringCompared : stringCompareds) {
-                        postGreSQL.addParent(s, stringCompared);
+                        try {
+                            postGreSQL.addParent(s, stringCompared);
+                        } catch (SQLException e) {
+                            e.printStackTrace();
+                        }
                     }
                 });
             });
@@ -93,14 +98,11 @@ public class DisplayTitlesDialog extends Dialog {
             }
         }
 
-        Collections.sort(compareds, new Comparator<StringCompared>() {
-            @Override
-            public int compare(StringCompared o1, StringCompared o2) {
-                int res = (int) (o2.getCommonwords() - o1.getCommonwords());
-                if(res == 0)
-                    res = (int) (o1.getLeven() - o2.getLeven());
-                return res;
-            }
+        Collections.sort(compareds, (o1, o2) -> {
+            int res = (int) (o2.getCommonwords() - o1.getCommonwords());
+            if(res == 0)
+                res = (int) (o1.getLeven() - o2.getLeven());
+            return res;
         });
         return compareds;
     }

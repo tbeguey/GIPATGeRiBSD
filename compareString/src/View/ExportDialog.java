@@ -179,6 +179,7 @@ public class ExportDialog extends Dialog<ArrayList<Pair<Boolean,ArrayList<String
                 Pair<Boolean, ArrayList<String>>  pairCSV = new Pair<>(radioButtonCSV.isSelected(), categoriesSelected);
                 arrayList.add(pairCSV);
 
+                postGreSQL.deconnection();
                 return arrayList;
             }
             else

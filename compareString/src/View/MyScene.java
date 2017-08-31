@@ -3,6 +3,7 @@ package View;
 import Element.DatabaseConnection;
 import Element.PostGreSQL;
 import Element.StringCompared;
+import PreconfigView.SameUselessScene;
 import Utils.*;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -50,7 +51,7 @@ public class MyScene extends Scene {
     private int values[]; // stocke le nombre de données de tel catégorie pour le tableau du graphique
 
 
-    public MyScene(DatabaseConnection databaseConnection){
+    public MyScene(DatabaseConnection databaseConnection, String profil){
         super(new Group(), Main.WIDTH, Main.HEIGHT*2);
 
         Group group = (Group) getRoot();
@@ -59,6 +60,7 @@ public class MyScene extends Scene {
         ArrayList<DatabaseConnection> databaseConnections = new ArrayList<>();
         try {
             databaseConnections = postGreSQL.getConnections(); // On récupère les connections
+            postGreSQL.deconnection();
         } catch (SQLException e) {
             e.printStackTrace();
         }
@@ -196,7 +198,16 @@ public class MyScene extends Scene {
             new WordStatisticsDialog(comboBoxStats.getSelectionModel().getSelectedItem()).show();
         });
 
-        wrapper.getChildren().addAll(titleCompared, comboBoxSource, comboBoxDestination, comparedButton, first_line, titleLikened, comboBoxLikened, likenedButton, second_line, titleStats, comboBoxStats, wordStatisticsButton);
+        Line third_line = new Line(0,0,Main.WIDTH, 0);
+
+        Button back_to_uselessSame = new Button("Retour aux mots inutiles/semblables");
+        back_to_uselessSame.setOnMouseClicked(event -> {
+            Scene scene = new SameUselessScene(databaseConnection, profil);
+            Main.getStage().setHeight(Main.HEIGHT);
+            Main.getStage().setScene(scene);
+        });
+
+        wrapper.getChildren().addAll(titleCompared, comboBoxSource, comboBoxDestination, comparedButton, first_line, titleLikened, comboBoxLikened, likenedButton, second_line, titleStats, comboBoxStats, wordStatisticsButton, third_line, back_to_uselessSame);
         wrapper.setAlignment(Pos.CENTER);
 
         group.getChildren().add(wrapper);
@@ -516,7 +527,11 @@ public class MyScene extends Scene {
 
         String tableNameDestination = comboBoxDestination.getValue().getTable();
 
-        postGreSQL.likenedLines(arrayListCheckedLikened, tableNameDestination);
+        try {
+            postGreSQL.likenedLines(arrayListCheckedLikened, tableNameDestination);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
 
         postGreSQL.deconnection();
     }
